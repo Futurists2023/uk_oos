@@ -1,0 +1,66 @@
+name: 24/7 UK Stockist & OOS Intelligence Monitor (24 SME Brands)
+
+on:
+  schedule:
+    # Runs automatically every 4 hours (6x/day * 4 brands/run = all 24 UK SME brands audited every 24h)
+    - cron: '15 */4 * * *'
+  workflow_dispatch:
+    inputs:
+      brands:
+        description: 'Space-separated brand slugs (e.g. "balmonds bare-biology"), "auto" (next 4 brands), or "all"'
+        required: false
+        default: 'auto'
+      discover:
+        description: 'Run UK stockist discovery if a brand has no stockist file yet (true/false)'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+jobs:
+  audit-uk-stockists:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies & Playwright Chromium
+        run: |
+          pip install playwright requests beautifulsoup4 python-dotenv
+          playwright install --with-deps chromium
+
+      - name: Run Multi-Brand UK Stockist Audit & Sync to Supabase
+        working-directory: oos
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          BRANDS_INPUT="${{ github.event.inputs.brands || 'auto' }}"
+          DISCOVER_FLAG=""
+          if [ "${{ github.event.inputs.discover || 'true' }}" = "true" ]; then
+            DISCOVER_FLAG="--discover"
+          fi
+          if [ "$BRANDS_INPUT" = "auto" ]; then
+            python monitor_brand.py --auto-batch 4 $DISCOVER_FLAG
+          elif [ "$BRANDS_INPUT" = "all" ]; then
+            python monitor_brand.py --all $DISCOVER_FLAG
+          else
+            python monitor_brand.py --brands $BRANDS_INPUT $DISCOVER_FLAG
+          fi
+
+      - name: Commit updated SQLite OOS state, Stockists & HTML/MD Reports
+        run: |
+          git config user.name "OOS Intelligence Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add oos/oos_state.db oos/stockists/ oos/reports/ oos/balmonds_intelligence_report.*
+          git diff --staged --quiet || git commit -m "chore(audit): update multi-brand UK stockist OOS state and reports [skip ci]"
+          git push

@@ -1,0 +1,63 @@
+{
+  "brand": "Balmonds",
+  "brand_slug": "balmonds",
+  "generated_at": "2026-10-21T13:45:00+00:00",
+  "verified_uk_independent_stockists_count": 11,
+  "verified_stockists": [
+    {
+      "domain": "bodykind.com",
+      "platform": "Magento",
+      "brand_url": "https://www.bodykind.com/balmonds-m245?currency=1"
+    },
+    {
+      "domain": "biggreensmile.com",
+      "platform": "Custom (.aspx)",
+      "brand_url": "https://www.biggreensmile.com/brands/balmonds.aspx?brand=Balmonds"
+    },
+    {
+      "domain": "mypure.co.uk",
+      "platform": "Shopify",
+      "brand_url": "https://www.mypure.co.uk/collections/balmonds"
+    },
+    {
+      "domain": "expresschemist.co.uk",
+      "platform": "Magento",
+      "brand_url": "https://www.expresschemist.co.uk/balmonds.html"
+    },
+    {
+      "domain": "onlynaturals.co.uk",
+      "platform": "Shopify",
+      "brand_url": "https://onlynaturals.co.uk/collections/balmonds"
+    },
+    {
+      "domain": "quickvit.co.uk",
+      "platform": "Shopify",
+      "brand_url": "https://quickvit.co.uk/collections/balmonds"
+    },
+    {
+      "domain": "planetorganic.com",
+      "platform": "Shopify",
+      "brand_url": "https://www.planetorganic.com/search?q=Balmonds"
+    },
+    {
+      "domain": "dulwichhealth.co.uk",
+      "platform": "Shopify",
+      "brand_url": "https://dulwichhealth.co.uk/collections/balmonds"
+    },
+    {
+      "domain": "johnandginger.co.uk",
+      "platform": "Magento",
+      "brand_url": "https://www.johnandginger.co.uk/balmonds-skin-salvation-120ml.html"
+    },
+    {
+      "domain": "contentbeautywellbeing.com",
+      "platform": "Shopify",
+      "brand_url": "https://www.contentbeautywellbeing.com/collections/balmonds"
+    },
+    {
+      "domain": "baldwins.co.uk",
+      "platform": "Shopify",
+      "brand_url": "https://www.baldwins.co.uk/products/balmonds-skin-salvation-moisturising-salve"
+    }
+  ]
+}

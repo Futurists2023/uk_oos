@@ -1,0 +1,544 @@
+{
+  "brand": "Balmonds",
+  "generated_at": "2026-10-21T13:17:16+00:00",
+  "total_candidates_checked": 12,
+  "verified_uk_independent_stockists_count": 11,
+  "verified_stockists": [
+    {
+      "domain": "bodykind.com",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.bodykind.com/balmonds-m245",
+      "product_count": 19,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Balmonds Tea Tree Balm - 15ml",
+        "Balmonds Daily Moisturiser - 300ml",
+        "Balmonds Skin Salvation - 30ml",
+        "Balmonds Intensive Hand Cream - 100ml",
+        "Balmonds Skin Salvation - 50ml"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "mypure.co.uk",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.mypure.co.uk/collections/balmonds",
+      "product_count": 15,
+      "in_stock_count": 7,
+      "out_of_stock_count": 8,
+      "sample_products": [
+        "Skin Salvation",
+        "Intensive Hand Cream | Calendula, Sea Buckthorn & Hemp",
+        "Body, Hand & Hair Wash | Chamomile, Lemongrass & Sweet Basil",
+        "Hair & Scalp Oil | Tea Tree, Rosemary & Nettle",
+        "Daily Moisturiser | Hemp, Calendula & Shea"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "expresschemist.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.expresschemist.co.uk/balmonds.html",
+      "product_count": 12,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "£16.65(incl VAT) Balmonds Skin Salvation Intensive Moisturising Ointment 120ml",
+        "£6.85(incl VAT) Balmonds Skin Salvation Moisturising Ointment 30ml",
+        "£32.99(incl VAT) Balmonds Daily Moisturising Cream 300ml",
+        "£19.00(incl VAT) Balmonds Skin Salvation 50ml",
+        "Balmonds Daily Moisturising Cream 100ml"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "onlynaturals.co.uk",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://onlynaturals.co.uk/collections/balmonds",
+      "product_count": 11,
+      "in_stock_count": 4,
+      "out_of_stock_count": 7,
+      "sample_products": [
+        "Balmonds Gentle Face Wash 125ml",
+        "Balmonds Super 7 Serum 30ml",
+        "Balmonds Cooling Cream 100ml",
+        "Balmonds Omega Rich Cleansing Oil 125ml",
+        "Balmonds Skin Salvation"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "quickvit.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://quickvit.co.uk/collections/balmonds",
+      "product_count": 7,
+      "in_stock_count": 7,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Balmonds Hair & Scalp Oil 50ml",
+        "Balmonds Skin Salvation 30ml",
+        "Balmonds Skin Salvation 120ml",
+        "Balmonds Intensive Hand Cream 50ml",
+        "Balmonds Daily Moisturiser 100ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "planetorganic.com",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.planetorganic.com/search?q=Balmonds",
+      "product_count": 6,
+      "in_stock_count": 6,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Balmonds Body Hand & Hair Wash 200ml",
+        "Balmonds Daily Moisturiser 100ml",
+        "Balmonds Gentle Face Wash 125ml",
+        "Balmonds Intensive Hand Cream 50ml",
+        "Balmonds Skin Salvation 120ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "dulwichhealth.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://dulwichhealth.co.uk/collections/balmonds",
+      "product_count": 4,
+      "in_stock_count": 4,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Balmonds Super 7 Serum 30ml",
+        "Balmonds Skin Salvation 50ml",
+        "Balmonds Tea Tree Balm 15ml",
+        "Balmonds Scar & Stretch Mark Oil 50ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "johnandginger.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.johnandginger.co.uk/balmonds-skin-salvation-120ml.html",
+      "product_count": 4,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "balmonds-scar-and-stretch-mark-oil.html",
+        "balmonds-hair-and-scalp-oil.html",
+        "balmonds-gentle-face-wash.html",
+        "Next product"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "contentbeautywellbeing.com",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.contentbeautywellbeing.com/collections/balmonds",
+      "product_count": 3,
+      "in_stock_count": 2,
+      "out_of_stock_count": 1,
+      "sample_products": [
+        "Balmonds Skin Salvation",
+        "Balmonds Scar & Stretch Mark Oil",
+        "Balmonds Hair & Scalp Oil"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "baldwins.co.uk",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.baldwins.co.uk/products/balmonds-skin-salvation-moisturising-salve",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "baldwins-e-gift-card"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "organicbargains.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://organicbargains.co.uk/?s=Balmonds&post_type=product",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "balmonds-skin-salvation-moisturising-balm"
+      ],
+      "platform": "unknown",
+      "notes": ""
+    }
+  ],
+  "all_candidates_checked": [
+    {
+      "domain": "contentbeautywellbeing.com",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.contentbeautywellbeing.com/collections/balmonds",
+      "product_count": 3,
+      "in_stock_count": 2,
+      "out_of_stock_count": 1,
+      "sample_products": [
+        "Balmonds Skin Salvation",
+        "Balmonds Scar & Stretch Mark Oil",
+        "Balmonds Hair & Scalp Oil"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "bodykind.com",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.bodykind.com/balmonds-m245",
+      "product_count": 19,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Balmonds Tea Tree Balm - 15ml",
+        "Balmonds Daily Moisturiser - 300ml",
+        "Balmonds Skin Salvation - 30ml",
+        "Balmonds Intensive Hand Cream - 100ml",
+        "Balmonds Skin Salvation - 50ml"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "mypure.co.uk",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.mypure.co.uk/collections/balmonds",
+      "product_count": 15,
+      "in_stock_count": 7,
+      "out_of_stock_count": 8,
+      "sample_products": [
+        "Skin Salvation",
+        "Intensive Hand Cream | Calendula, Sea Buckthorn & Hemp",
+        "Body, Hand & Hair Wash | Chamomile, Lemongrass & Sweet Basil",
+        "Hair & Scalp Oil | Tea Tree, Rosemary & Nettle",
+        "Daily Moisturiser | Hemp, Calendula & Shea"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "biggreensmile.com",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": false,
+      "balmonds_url": null,
+      "product_count": 0,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "onlynaturals.co.uk",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://onlynaturals.co.uk/collections/balmonds",
+      "product_count": 11,
+      "in_stock_count": 4,
+      "out_of_stock_count": 7,
+      "sample_products": [
+        "Balmonds Gentle Face Wash 125ml",
+        "Balmonds Super 7 Serum 30ml",
+        "Balmonds Cooling Cream 100ml",
+        "Balmonds Omega Rich Cleansing Oil 125ml",
+        "Balmonds Skin Salvation"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "organicbargains.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://organicbargains.co.uk/?s=Balmonds&post_type=product",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "balmonds-skin-salvation-moisturising-balm"
+      ],
+      "platform": "unknown",
+      "notes": ""
+    },
+    {
+      "domain": "expresschemist.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.expresschemist.co.uk/balmonds.html",
+      "product_count": 12,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "£16.65(incl VAT) Balmonds Skin Salvation Intensive Moisturising Ointment 120ml",
+        "£6.85(incl VAT) Balmonds Skin Salvation Moisturising Ointment 30ml",
+        "£32.99(incl VAT) Balmonds Daily Moisturising Cream 300ml",
+        "£19.00(incl VAT) Balmonds Skin Salvation 50ml",
+        "Balmonds Daily Moisturising Cream 100ml"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "planetorganic.com",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.planetorganic.com/search?q=Balmonds",
+      "product_count": 6,
+      "in_stock_count": 6,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Balmonds Body Hand & Hair Wash 200ml",
+        "Balmonds Daily Moisturiser 100ml",
+        "Balmonds Gentle Face Wash 125ml",
+        "Balmonds Intensive Hand Cream 50ml",
+        "Balmonds Skin Salvation 120ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "quickvit.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://quickvit.co.uk/collections/balmonds",
+      "product_count": 7,
+      "in_stock_count": 7,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Balmonds Hair & Scalp Oil 50ml",
+        "Balmonds Skin Salvation 30ml",
+        "Balmonds Skin Salvation 120ml",
+        "Balmonds Intensive Hand Cream 50ml",
+        "Balmonds Daily Moisturiser 100ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "baldwins.co.uk",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.baldwins.co.uk/products/balmonds-skin-salvation-moisturising-salve",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "baldwins-e-gift-card"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "dulwichhealth.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://dulwichhealth.co.uk/collections/balmonds",
+      "product_count": 4,
+      "in_stock_count": 4,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Balmonds Super 7 Serum 30ml",
+        "Balmonds Skin Salvation 50ml",
+        "Balmonds Tea Tree Balm 15ml",
+        "Balmonds Scar & Stretch Mark Oil 50ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "johnandginger.co.uk",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_balmonds": true,
+      "balmonds_url": "https://www.johnandginger.co.uk/balmonds-skin-salvation-120ml.html",
+      "product_count": 4,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "balmonds-scar-and-stretch-mark-oil.html",
+        "balmonds-hair-and-scalp-oil.html",
+        "balmonds-gentle-face-wash.html",
+        "Next product"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    }
+  ]
+}

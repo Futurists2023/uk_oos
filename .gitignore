@@ -1,0 +1,11 @@
+# Never commit secrets
+.env
+.env.*
+*.env
+oos/.env.local
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
