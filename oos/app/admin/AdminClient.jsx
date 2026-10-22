@@ -200,9 +200,7 @@ export default function AdminClient({ initialData }) {
     return list;
   }, [data.skus]);
 
-  const [expandedGlobalKeys, setExpandedGlobalKeys] = useState(() =>
-    globalOosProductGroups.length > 0 ? new Set([globalOosProductGroups[0].key]) : new Set()
-  );
+  const [expandedGlobalKeys, setExpandedGlobalKeys] = useState(() => new Set());
 
   function toggleGlobalKey(k) {
     setExpandedGlobalKeys(prev => {

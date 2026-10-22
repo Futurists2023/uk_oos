@@ -195,18 +195,11 @@ export default function BrandClient({ initialData }) {
     };
   }, [data.stores, data.skus, brand.name]);
 
-  // First product expanded by default; subsequent products collapsed into their heading
-  const [expandedProducts, setExpandedProducts] = useState(() => {
-    if (oosProductGroups.length > 0) {
-      return new Set([oosProductGroups[0].productKey]);
-    }
-    return new Set();
-  });
+  // All products collapsed by default so the account manager can pick which product to inspect first
+  const [expandedProducts, setExpandedProducts] = useState(() => new Set());
 
   useEffect(() => {
-    if (oosProductGroups.length > 0) {
-      setExpandedProducts(new Set([oosProductGroups[0].productKey]));
-    }
+    setExpandedProducts(new Set());
   }, [brand.slug]);
 
   function toggleProduct(pKey) {
