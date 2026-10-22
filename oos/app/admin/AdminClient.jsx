@@ -202,6 +202,18 @@ export default function AdminClient({ initialData }) {
 
   const [expandedGlobalKeys, setExpandedGlobalKeys] = useState(() => new Set());
 
+  const allGlobalExpanded =
+    globalOosProductGroups.length > 0 &&
+    globalOosProductGroups.every(g => expandedGlobalKeys.has(g.key));
+
+  function toggleGlobalExpandAll() {
+    if (allGlobalExpanded) {
+      setExpandedGlobalKeys(new Set());
+    } else {
+      setExpandedGlobalKeys(new Set(globalOosProductGroups.map(g => g.key)));
+    }
+  }
+
   function toggleGlobalKey(k) {
     setExpandedGlobalKeys(prev => {
       const next = new Set(prev);
@@ -225,19 +237,10 @@ export default function AdminClient({ initialData }) {
       };
 
       return (
-        <div>
-          <div
-            style={{
-              maxWidth: 1120,
-              margin: '0 auto',
-              padding: '18px 24px 0',
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center'
-            }}
-          >
+        <div className="admin-preview-shell">
+          <div className="admin-preview-bar">
             <button
-              className="btn-plain"
+              className="btn-action"
               onClick={() => {
                 setViewMode('directory');
                 setSelectedBrandSlug(null);
@@ -250,7 +253,7 @@ export default function AdminClient({ initialData }) {
                 Customer Link: <code>{bMeta.sharePath}</code>
               </span>
               <button
-                className="btn-plain"
+                className="btn-action"
                 onClick={() => copyShareLink(bMeta.sharePath, bMeta.name)}
               >
                 Copy Secret Link
@@ -259,7 +262,7 @@ export default function AdminClient({ initialData }) {
                 href={bMeta.sharePath}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-plain"
+                className="btn-action"
               >
                 Open Standalone ↗
               </a>
@@ -273,7 +276,7 @@ export default function AdminClient({ initialData }) {
   }
 
   return (
-    <div className="sheet">
+    <div className="sheet sheet-matrix">
       <header className="sheet-header">
         <div>
           <h1 className="sheet-title">UK Out of Stock Products — Admin</h1>
@@ -310,7 +313,7 @@ export default function AdminClient({ initialData }) {
 
       {/* VIEW 1: CLEAN 43-BRAND DIRECTORY */}
       {viewMode === 'directory' && (
-        <div>
+        <div className="list-scroll-body">
           <div className="search-line">
             <input
               type="text"
@@ -420,7 +423,17 @@ export default function AdminClient({ initialData }) {
 
       {/* VIEW 2: ALL OOS PRODUCTS ACROSS ALL BRANDS (CONSOLIDATED PER STOCKIST) */}
       {viewMode === 'all_oos' && (
-        <div>
+        <div className="list-scroll-body">
+          {globalOosProductGroups.length > 0 && (
+            <div className="list-toolbar">
+              <span className="list-toolbar-label">
+                All Out of Stock Products ({globalOosProductGroups.length})
+              </span>
+              <button className="list-expand-btn" onClick={toggleGlobalExpandAll}>
+                {allGlobalExpanded ? 'Collapse all ▴' : 'Expand all ▾'}
+              </button>
+            </div>
+          )}
           {globalOosProductGroups.map(grp => {
             const isExpanded = expandedGlobalKeys.has(grp.key);
             const storePreview = Array.from(grp.oosStores).join(', ');

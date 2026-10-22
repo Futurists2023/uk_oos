@@ -200,10 +200,39 @@ export default function BrandClient({ initialData }) {
 
   // All products collapsed by default so the account manager can pick which product to inspect first
   const [expandedProducts, setExpandedProducts] = useState(() => new Set());
+  const [hoverPopover, setHoverPopover] = useState(null);
 
   useEffect(() => {
     setExpandedProducts(new Set());
   }, [brand.slug]);
+
+  const allOosExpanded =
+    oosProductGroups.length > 0 && oosProductGroups.every(g => expandedProducts.has(g.productKey));
+
+  function toggleExpandAll() {
+    if (allOosExpanded) {
+      setExpandedProducts(new Set());
+    } else {
+      setExpandedProducts(new Set(oosProductGroups.map(g => g.productKey)));
+    }
+  }
+
+  function showCellPopover(e, info) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const flipBelow = rect.top < 110;
+    const rawX = rect.left + rect.width / 2;
+    const clampedX = Math.max(150, Math.min(window.innerWidth - 150, rawX));
+    setHoverPopover({
+      x: clampedX,
+      y: flipBelow ? rect.bottom + 8 : rect.top - 6,
+      flipBelow,
+      ...info
+    });
+  }
+
+  function hideCellPopover() {
+    setHoverPopover(null);
+  }
 
   function toggleProduct(pKey) {
     setExpandedProducts(prev => {
@@ -283,6 +312,32 @@ export default function BrandClient({ initialData }) {
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
       showToast('Copied buyer-ready OOS summary (grouped by stockist)');
+    });
+  }
+
+  function copyStoreOosList(domain) {
+    const col = sortedStoreColumns.find(c => c.domain === domain);
+    if (!col || col.oosProductCount === 0) {
+      showToast(`All ${brand.name} products at ${domain} are in stock.`);
+      return;
+    }
+
+    const lines = [
+      `${brand.name} — Out of Stock at ${domain} (${col.oosProductCount} product${col.oosProductCount === 1 ? '' : 's'})`,
+      `Checked: ${fmtShortTime(latestCheck)}`,
+      ''
+    ];
+
+    for (const grp of oosProductGroups) {
+      const stCell = grp.oosByStore.get(domain);
+      if (!stCell) continue;
+      const varText = formatVariantList(stCell.variants);
+      const age = calcOosAge(stCell.oldestOosAt);
+      lines.push(`• ${grp.displayName} — ${varText} [${age}]`);
+    }
+
+    navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
+      showToast(`Copied ${domain} OOS list (${col.oosProductCount} product${col.oosProductCount === 1 ? '' : 's'})`);
     });
   }
 
@@ -385,6 +440,17 @@ export default function BrandClient({ initialData }) {
             <p style={{ padding: '16px 0', color: 'var(--green)', fontWeight: 500 }}>
               All tracked {brand.name} products across all {totalStores} UK stockists are currently in stock.
             </p>
+          )}
+
+          {oosProductGroups.length > 0 && (
+            <div className="list-toolbar">
+              <span className="list-toolbar-label">
+                Out of Stock Products ({oosProductGroups.length})
+              </span>
+              <button className="list-expand-btn" onClick={toggleExpandAll}>
+                {allOosExpanded ? 'Collapse all ▴' : 'Expand all ▾'}
+              </button>
+            </div>
           )}
 
           {oosProductGroups.map(grp => {
@@ -566,7 +632,7 @@ export default function BrandClient({ initialData }) {
       {/* MODE 2: COMPACT OVERVIEW MATRIX (PRODUCT x STOCKIST HOLISTIC GRID) */}
       {displayMode === 'matrix' && totalStores > 0 && (
         <div className="matrix-container">
-          <div className="matrix-wrap">
+          <div className="matrix-wrap" onScroll={hideCellPopover}>
             <table className="matrix-table">
               <thead>
                 <tr>
@@ -574,7 +640,16 @@ export default function BrandClient({ initialData }) {
                     Product ({allProductGroups.length})
                   </th>
                   {sortedStoreColumns.map(col => (
-                    <th key={col.domain} title={col.domain}>
+                    <th
+                      key={col.domain}
+                      className={col.oosProductCount > 0 ? 'matrix-th-clickable' : ''}
+                      onClick={() => col.oosProductCount > 0 && copyStoreOosList(col.domain)}
+                      title={
+                        col.oosProductCount > 0
+                          ? `Click to copy ${col.domain}'s ${col.oosProductCount} OOS product${col.oosProductCount === 1 ? '' : 's'}`
+                          : `${col.domain} (100% In Stock)`
+                      }
+                    >
                       <span>{col.shortLabel}</span>
                       <span
                         className="matrix-store-sub"
@@ -613,12 +688,8 @@ export default function BrandClient({ initialData }) {
                         if (oosCell) {
                           const vCount = oosCell.variants.length;
                           const label = vCount > 1 ? `${vCount} OOS` : 'OOS';
-                          const tipParts = oosCell.variants.map(v => {
-                            const sz = v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard' ? v.variant_title : '';
-                            const pr = v.current_price ? `£${Number(v.current_price).toFixed(2)}` : '';
-                            return [sz, pr].filter(Boolean).join(' ');
-                          });
-                          const tooltip = `${col.domain}: ${tipParts.join(', ')} (${calcOosAge(oosCell.oldestOosAt)})`;
+                          const varSummary = formatVariantList(oosCell.variants);
+                          const age = calcOosAge(oosCell.oldestOosAt);
 
                           return (
                             <td key={col.domain}>
@@ -627,7 +698,14 @@ export default function BrandClient({ initialData }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cell-oos"
-                                title={tooltip}
+                                onMouseEnter={e =>
+                                  showCellPopover(e, {
+                                    title: `${grp.displayName} · ${col.domain}`,
+                                    detail: `${varSummary} — ${age}`,
+                                    isOos: true
+                                  })
+                                }
+                                onMouseLeave={hideCellPopover}
                               >
                                 {label}
                               </a>
@@ -636,12 +714,7 @@ export default function BrandClient({ initialData }) {
                         }
 
                         if (inCell) {
-                          const tipParts = inCell.variants.map(v => {
-                            const sz = v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard' ? v.variant_title : '';
-                            const pr = v.current_price ? `£${Number(v.current_price).toFixed(2)}` : '';
-                            return [sz, pr].filter(Boolean).join(' ');
-                          });
-                          const tooltip = `${col.domain}: In Stock (${tipParts.join(', ')})`;
+                          const varSummary = formatVariantList(inCell.variants);
 
                           return (
                             <td key={col.domain}>
@@ -650,7 +723,14 @@ export default function BrandClient({ initialData }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cell-in"
-                                title={tooltip}
+                                onMouseEnter={e =>
+                                  showCellPopover(e, {
+                                    title: `${grp.displayName} · ${col.domain}`,
+                                    detail: `In Stock (${varSummary})`,
+                                    isOos: false
+                                  })
+                                }
+                                onMouseLeave={hideCellPopover}
                               >
                                 ✓
                               </a>
@@ -660,7 +740,7 @@ export default function BrandClient({ initialData }) {
 
                         return (
                           <td key={col.domain}>
-                            <span className="cell-none" title={`Not stocked at ${col.domain}`}>
+                            <span className="cell-none">
                               ·
                             </span>
                           </td>
@@ -675,15 +755,32 @@ export default function BrandClient({ initialData }) {
 
           <div className="matrix-legend">
             <span>
-              <strong style={{ color: 'var(--red)' }}>OOS</strong> = Out of Stock (click cell to open product page, hover for sizes &amp; duration)
+              <strong style={{ color: 'var(--red)' }}>OOS</strong> = Out of Stock (hover for instant size &amp; duration, click cell to open product page)
             </span>
             <span>
               <strong style={{ color: 'var(--green)' }}>✓</strong> = In Stock
             </span>
             <span>
-              <strong>·</strong> = Not listed at this stockist
+              <strong>·</strong> = Not listed
+            </span>
+            <span style={{ marginLeft: 'auto' }}>
+              Tip: Click any stockist header to copy its OOS list
             </span>
           </div>
+        </div>
+      )}
+
+      {hoverPopover && (
+        <div
+          className="cell-popover"
+          style={{
+            left: hoverPopover.x,
+            top: hoverPopover.y,
+            transform: hoverPopover.flipBelow ? 'translate(-50%, 0)' : 'translate(-50%, -100%)'
+          }}
+        >
+          <div className="cell-popover-title">{hoverPopover.title}</div>
+          <div className="cell-popover-sub">{hoverPopover.detail}</div>
         </div>
       )}
 

@@ -49,11 +49,37 @@ a:hover {
 
 .sheet.sheet-matrix {
   max-width: 1120px;
+  width: 100%;
   height: 100vh;
   padding: 28px 24px 14px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.admin-preview-shell {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.admin-preview-bar {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.admin-preview-shell .sheet.sheet-matrix {
+  flex: 1;
+  height: auto;
+  min-height: 0;
+  padding-top: 14px;
 }
 
 /* Header */
@@ -424,6 +450,79 @@ a:hover {
   font-size: 0.68rem;
   font-weight: 500;
   margin-top: 2px;
+}
+
+.matrix-table th.matrix-th-clickable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.matrix-table th.matrix-th-clickable:hover {
+  background: #e6e3db;
+}
+
+/* Instant Zero-Delay Cell Popover */
+.cell-popover {
+  position: fixed;
+  z-index: 9990;
+  pointer-events: none;
+  background: #1c1917;
+  color: #f7f6f2;
+  padding: 8px 11px;
+  border-radius: 6px;
+  font-size: 0.77rem;
+  line-height: 1.45;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 280px;
+  transform: translate(-50%, -100%);
+  margin-top: -6px;
+}
+
+.cell-popover-title {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.cell-popover-sub {
+  color: #d6d3cb;
+  font-size: 0.74rem;
+}
+
+/* List View Top Utility Bar (Expand all / Collapse all) */
+.list-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 8px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 4px;
+}
+
+.list-toolbar-label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.list-expand-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.list-expand-btn:hover {
+  color: var(--ink);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .matrix-table td {
