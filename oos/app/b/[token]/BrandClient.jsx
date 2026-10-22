@@ -34,10 +34,18 @@ function cleanProductDisplayName(rawTitle, brandName) {
   return t || String(rawTitle || '').trim();
 }
 
+function shortStoreLabel(domain) {
+  return String(domain || '')
+    .toLowerCase()
+    .replace(/^www\./, '')
+    .replace(/^shop\./, '')
+    .replace(/\.(co\.uk|com|org\.uk|org|earth)$/i, '');
+}
+
 export default function BrandClient({ initialData }) {
   const [data] = useState(initialData);
+  const [displayMode, setDisplayMode] = useState('list'); // 'list' | 'matrix'
   const [showHealthyProducts, setShowHealthyProducts] = useState(false);
-  const [showInStockStores, setShowInStockStores] = useState(false);
   const [toastMsg, setToastMsg] = useState(null);
 
   const brand = data.brand;
@@ -56,19 +64,29 @@ export default function BrandClient({ initialData }) {
     setTimeout(() => setToastMsg(null), 2400);
   }
 
-  // Group active SKUs by Canonical Product Family -> then consolidate variations per Stockist!
-  const { oosProductGroups, healthyProductGroups, totalOosVariants, totalStores, latestCheck } = useMemo(() => {
+  // Group active SKUs by Canonical Product Family -> then consolidate variations per Stockist
+  const {
+    oosProductGroups,
+    healthyProductGroups,
+    allProductGroups,
+    sortedStoreColumns,
+    totalStores,
+    latestCheck
+  } = useMemo(() => {
     const activeSkus = data.skus.filter(s => s.is_listed === 1);
     const byProdKey = new Map();
+    const storeOosCounter = new Map();
 
     let maxTs = '';
     for (const st of data.stores) {
+      storeOosCounter.set(st.domain, 0);
       if (st.last_checked_at && st.last_checked_at > maxTs) {
         maxTs = st.last_checked_at;
       }
     }
 
     for (const s of activeSkus) {
+      if (!storeOosCounter.has(s.domain)) storeOosCounter.set(s.domain, 0);
       const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, brand.name).toLowerCase();
       if (!byProdKey.has(pKey)) {
         byProdKey.set(pKey, {
@@ -128,9 +146,11 @@ export default function BrandClient({ initialData }) {
 
     const withOos = [];
     const healthy = [];
-    let oosVariantSum = 0;
 
     for (const grp of byProdKey.values()) {
+      for (const dom of grp.oosStores) {
+        storeOosCounter.set(dom, (storeOosCounter.get(dom) || 0) + 1);
+      }
       grp.consolidatedOosStores = Array.from(grp.oosByStore.values()).sort((a, b) => {
         if (b.variants.length !== a.variants.length) return b.variants.length - a.variants.length;
         return a.domain.localeCompare(b.domain);
@@ -139,7 +159,6 @@ export default function BrandClient({ initialData }) {
         a.domain.localeCompare(b.domain)
       );
 
-      oosVariantSum += grp.oosItems.length;
       if (grp.oosItems.length > 0) {
         withOos.push(grp);
       } else {
@@ -154,11 +173,24 @@ export default function BrandClient({ initialData }) {
     });
     healthy.sort((a, b) => a.displayName.localeCompare(b.displayName));
 
+    // Sort store columns for the Compact Overview Grid: most OOS products first, then alphabetical
+    const cols = Array.from(storeOosCounter.entries())
+      .map(([domain, oosProductCount]) => ({
+        domain,
+        shortLabel: shortStoreLabel(domain),
+        oosProductCount
+      }))
+      .sort((a, b) => {
+        if (b.oosProductCount !== a.oosProductCount) return b.oosProductCount - a.oosProductCount;
+        return a.domain.localeCompare(b.domain);
+      });
+
     return {
       oosProductGroups: withOos,
       healthyProductGroups: healthy,
-      totalOosVariants: oosVariantSum,
-      totalStores: data.stores.length,
+      allProductGroups: [...withOos, ...healthy],
+      sortedStoreColumns: cols,
+      totalStores: cols.length,
       latestCheck: maxTs
     };
   }, [data.stores, data.skus, brand.name]);
@@ -184,16 +216,6 @@ export default function BrandClient({ initialData }) {
       else next.add(pKey);
       return next;
     });
-  }
-
-  const allExpanded = oosProductGroups.length > 1 && expandedProducts.size === oosProductGroups.length;
-
-  function toggleExpandAll() {
-    if (allExpanded) {
-      setExpandedProducts(oosProductGroups.length > 0 ? new Set([oosProductGroups[0].productKey]) : new Set());
-    } else {
-      setExpandedProducts(new Set(oosProductGroups.map(g => g.productKey)));
-    }
   }
 
   function copyList(singleProductKey = null) {
@@ -242,11 +264,7 @@ export default function BrandClient({ initialData }) {
     const rows = [headers.join(',')];
 
     for (const grp of oosProductGroups) {
-      const storeRows = showInStockStores
-        ? [...grp.consolidatedOosStores, ...grp.consolidatedInStockStores]
-        : grp.consolidatedOosStores;
-
-      for (const stRow of storeRows) {
+      for (const stRow of grp.consolidatedOosStores) {
         const tier = isTier1(stRow.domain) ? 'Major Retailer' : 'Independent';
         const varDesc = stRow.variants
           .map(v => {
@@ -255,7 +273,7 @@ export default function BrandClient({ initialData }) {
             return `${sz} ${pr}`.trim();
           })
           .join(' | ');
-        const age = stRow.isOos ? calcOosAge(stRow.oldestOosAt) : 'In Stock';
+        const age = calcOosAge(stRow.oldestOosAt);
 
         const vals = [
           brand.name,
@@ -299,16 +317,17 @@ export default function BrandClient({ initialData }) {
         </div>
 
         <div className="sheet-actions">
-          {oosProductGroups.length > 1 && (
-            <button className="btn-plain" onClick={toggleExpandAll}>
-              {allExpanded ? 'Collapse Others' : 'Expand All'}
-            </button>
-          )}
           <button
-            className={`btn-plain ${showInStockStores ? 'active' : ''}`}
-            onClick={() => setShowInStockStores(v => !v)}
+            className={`btn-plain ${displayMode === 'list' ? 'active' : ''}`}
+            onClick={() => setDisplayMode('list')}
           >
-            {showInStockStores ? 'Hide In-Stock Stores' : 'Show In-Stock Stores'}
+            List View
+          </button>
+          <button
+            className={`btn-plain ${displayMode === 'matrix' ? 'active' : ''}`}
+            onClick={() => setDisplayMode('matrix')}
+          >
+            Compact Overview
           </button>
           <button className="btn-plain" onClick={() => copyList(null)}>
             Copy List
@@ -319,148 +338,268 @@ export default function BrandClient({ initialData }) {
         </div>
       </header>
 
-      {oosProductGroups.length === 0 && totalStores > 0 && (
+      {oosProductGroups.length === 0 && totalStores > 0 && displayMode === 'list' && (
         <p style={{ padding: '24px 0', color: 'var(--green)', fontWeight: 500 }}>
           All tracked {brand.name} products across all {totalStores} UK stockists are currently in stock.
         </p>
       )}
 
-      {/* PRODUCT-CENTERED ACCORDION (FIRST PRODUCT EXPANDED, SUBSEQUENT COLLAPSED) */}
-      {oosProductGroups.map(grp => {
-        const isExpanded = expandedProducts.has(grp.productKey);
-        const singleSize = grp.distinctSizes.size === 1 ? ` (${Array.from(grp.distinctSizes)[0]})` : '';
-        const storeListPreview = Array.from(grp.oosStores).join(', ');
-        const storeCount = grp.oosStores.size;
+      {/* MODE 1: PRODUCT-CENTERED LIST VIEW (FIRST PRODUCT EXPANDED, SUBSEQUENT COLLAPSED) */}
+      {displayMode === 'list' && (
+        <>
+          {oosProductGroups.map(grp => {
+            const isExpanded = expandedProducts.has(grp.productKey);
+            const singleSize = grp.distinctSizes.size === 1 ? ` (${Array.from(grp.distinctSizes)[0]})` : '';
+            const storeListPreview = Array.from(grp.oosStores).join(', ');
+            const storeCount = grp.oosStores.size;
 
-        const storeRowsToRender = showInStockStores
-          ? [...grp.consolidatedOosStores, ...grp.consolidatedInStockStores]
-          : grp.consolidatedOosStores;
-
-        return (
-          <section key={grp.productKey} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
-            <div className="store-group-header" onClick={() => toggleProduct(grp.productKey)}>
-              <div className="store-header-left">
-                <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
-                <span className="store-domain">
-                  {grp.displayName}
-                  {singleSize && <span className="sku-variant">{singleSize}</span>}
-                </span>
-                {!isExpanded && <span className="collapsed-preview">{storeListPreview}</span>}
-              </div>
-
-              <div className="store-meta" onClick={e => e.stopPropagation()}>
-                <span
-                  className="store-oos-count"
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => toggleProduct(grp.productKey)}
-                >
-                  Out of Stock at {storeCount} store{storeCount === 1 ? '' : 's'}
-                </span>
-                <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
-                  Copy
-                </button>
-              </div>
-            </div>
-
-            {isExpanded && (
-              <ul className="sku-list">
-                {storeRowsToRender.map(stRow => {
-                  const major = isTier1(stRow.domain);
-
-                  return (
-                    <li key={`${stRow.domain}-${stRow.isOos ? 'oos' : 'in'}`} className="sku-item">
-                      <div>
-                        <span className="sku-name">{stRow.domain}</span>
-                        {major && (
-                          <span className="tier-tag" style={{ marginLeft: 8 }}>
-                            Major Retailer
-                          </span>
-                        )}
-                      </div>
-
-                      {/* CONSOLIDATED VARIATIONS ON THIS STOCKIST */}
-                      <div className="var-pills-wrap">
-                        {stRow.variants.map(v => {
-                          const hasNamedSize =
-                            v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
-                          const price =
-                            v.current_price !== null && v.current_price !== undefined
-                              ? `£${Number(v.current_price).toFixed(2)}`
-                              : '';
-
-                          if (!hasNamedSize && stRow.variants.length === 1) {
-                            return (
-                              <span key={v.sku_key} className="sku-price">
-                                {price}
-                              </span>
-                            );
-                          }
-
-                          return (
-                            <span key={v.sku_key} className="var-pill">
-                              {hasNamedSize && <span>{v.variant_title}</span>}
-                              {price && <span className="var-pill-price">{price}</span>}
-                            </span>
-                          );
-                        })}
-                      </div>
-
-                      {stRow.isOos ? (
-                        <div className="sku-oos-age">{calcOosAge(stRow.oldestOosAt)}</div>
-                      ) : (
-                        <div className="sku-in-badge">In Stock</div>
-                      )}
-
-                      <a
-                        href={stRow.primaryUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="sku-open"
-                        title="Open product page on stockist"
-                      >
-                        ↗
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
-          </section>
-        );
-      })}
-
-      {/* COLLAPSIBLE FOOTER FOR PRODUCTS THAT ARE 100% IN STOCK ACROSS ALL UK STOCKISTS */}
-      {healthyProductGroups.length > 0 && (
-        <div className="healthy-section">
-          <button
-            className="healthy-toggle"
-            onClick={() => setShowHealthyProducts(v => !v)}
-          >
-            {showHealthyProducts ? '▾' : '▸'} {healthyProductGroups.length} other {brand.name} product
-            {healthyProductGroups.length === 1 ? ' is' : 's are'} 100% in stock across all monitored UK stockists (
-            {healthyProductGroups
-              .slice(0, 4)
-              .map(g => g.displayName)
-              .join(', ')}
-            {healthyProductGroups.length > 4 ? ', …' : ''})
-          </button>
-
-          {showHealthyProducts && (
-            <div className="healthy-list">
-              {healthyProductGroups.map(g => (
-                <div key={g.productKey} className="healthy-card">
-                  <div>
-                    <strong>{g.displayName}</strong>
-                    <div style={{ fontSize: '0.76rem', color: 'var(--muted)' }}>
-                      In stock at {g.allStores.size} UK stockist{g.allStores.size === 1 ? '' : 's'} (
-                      {Array.from(g.allStores).join(', ')})
-                    </div>
+            return (
+              <section key={grp.productKey} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
+                <div className="store-group-header" onClick={() => toggleProduct(grp.productKey)}>
+                  <div className="store-header-left">
+                    <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
+                    <span className="store-domain">
+                      {grp.displayName}
+                      {singleSize && <span className="sku-variant">{singleSize}</span>}
+                    </span>
+                    {!isExpanded && <span className="collapsed-preview">{storeListPreview}</span>}
                   </div>
-                  <span style={{ color: 'var(--green)', fontSize: '0.78rem', fontWeight: 600 }}>100% In Stock</span>
+
+                  <div className="store-meta" onClick={e => e.stopPropagation()}>
+                    <span
+                      className="store-oos-count"
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => toggleProduct(grp.productKey)}
+                    >
+                      Out of Stock at {storeCount} store{storeCount === 1 ? '' : 's'}
+                    </span>
+                    <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
+                      Copy
+                    </button>
+                  </div>
                 </div>
-              ))}
+
+                {isExpanded && (
+                  <ul className="sku-list">
+                    {grp.consolidatedOosStores.map(stRow => {
+                      const major = isTier1(stRow.domain);
+
+                      return (
+                        <li key={stRow.domain} className="sku-item">
+                          <div>
+                            <span className="sku-name">{stRow.domain}</span>
+                            {major && (
+                              <span className="tier-tag" style={{ marginLeft: 8 }}>
+                                Major Retailer
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="var-pills-wrap">
+                            {stRow.variants.map(v => {
+                              const hasNamedSize =
+                                v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
+                              const price =
+                                v.current_price !== null && v.current_price !== undefined
+                                  ? `£${Number(v.current_price).toFixed(2)}`
+                                  : '';
+
+                              if (!hasNamedSize && stRow.variants.length === 1) {
+                                return (
+                                  <span key={v.sku_key} className="sku-price">
+                                    {price}
+                                  </span>
+                                );
+                              }
+
+                              return (
+                                <span key={v.sku_key} className="var-pill">
+                                  {hasNamedSize && <span>{v.variant_title}</span>}
+                                  {price && <span className="var-pill-price">{price}</span>}
+                                </span>
+                              );
+                            })}
+                          </div>
+
+                          <div className="sku-oos-age">{calcOosAge(stRow.oldestOosAt)}</div>
+
+                          <a
+                            href={stRow.primaryUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="sku-open"
+                            title="Open product page on stockist"
+                          >
+                            ↗
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </section>
+            );
+          })}
+
+          {healthyProductGroups.length > 0 && (
+            <div className="healthy-section">
+              <button
+                className="healthy-toggle"
+                onClick={() => setShowHealthyProducts(v => !v)}
+              >
+                {showHealthyProducts ? '▾' : '▸'} {healthyProductGroups.length} other {brand.name} product
+                {healthyProductGroups.length === 1 ? ' is' : 's are'} 100% in stock across all monitored UK stockists (
+                {healthyProductGroups
+                  .slice(0, 4)
+                  .map(g => g.displayName)
+                  .join(', ')}
+                {healthyProductGroups.length > 4 ? ', …' : ''})
+              </button>
+
+              {showHealthyProducts && (
+                <div className="healthy-list">
+                  {healthyProductGroups.map(g => (
+                    <div key={g.productKey} className="healthy-card">
+                      <div>
+                        <strong>{g.displayName}</strong>
+                        <div style={{ fontSize: '0.76rem', color: 'var(--muted)' }}>
+                          In stock at {g.allStores.size} UK stockist{g.allStores.size === 1 ? '' : 's'} (
+                          {Array.from(g.allStores).join(', ')})
+                        </div>
+                      </div>
+                      <span style={{ color: 'var(--green)', fontSize: '0.78rem', fontWeight: 600 }}>
+                        100% In Stock
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
+        </>
+      )}
+
+      {/* MODE 2: COMPACT OVERVIEW MATRIX (PRODUCT x STOCKIST HOLISTIC GRID) */}
+      {displayMode === 'matrix' && totalStores > 0 && (
+        <div>
+          <div className="matrix-wrap">
+            <table className="matrix-table">
+              <thead>
+                <tr>
+                  <th className="col-product">
+                    Product ({allProductGroups.length})
+                  </th>
+                  {sortedStoreColumns.map(col => (
+                    <th key={col.domain} title={col.domain}>
+                      <span>{col.shortLabel}</span>
+                      <span
+                        className="matrix-store-sub"
+                        style={{ color: col.oosProductCount > 0 ? 'var(--red)' : 'var(--green)' }}
+                      >
+                        {col.oosProductCount > 0 ? `${col.oosProductCount} OOS` : '100% In'}
+                      </span>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {allProductGroups.map(grp => {
+                  const singleSize = grp.distinctSizes.size === 1 ? ` (${Array.from(grp.distinctSizes)[0]})` : '';
+                  return (
+                    <tr key={grp.productKey}>
+                      <td className="col-product">
+                        <a
+                          href="#"
+                          onClick={e => {
+                            e.preventDefault();
+                            setExpandedProducts(new Set([grp.productKey]));
+                            setDisplayMode('list');
+                          }}
+                          title="Click to inspect product in List View"
+                        >
+                          {grp.displayName}
+                          {singleSize && <span className="sku-variant">{singleSize}</span>}
+                        </a>
+                      </td>
+
+                      {sortedStoreColumns.map(col => {
+                        const oosCell = grp.oosByStore.get(col.domain);
+                        const inCell = grp.inStockByStore.get(col.domain);
+
+                        if (oosCell) {
+                          const vCount = oosCell.variants.length;
+                          const label = vCount > 1 ? `${vCount} OOS` : 'OOS';
+                          const tipParts = oosCell.variants.map(v => {
+                            const sz = v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard' ? v.variant_title : '';
+                            const pr = v.current_price ? `£${Number(v.current_price).toFixed(2)}` : '';
+                            return [sz, pr].filter(Boolean).join(' ');
+                          });
+                          const tooltip = `${col.domain}: ${tipParts.join(', ')} (${calcOosAge(oosCell.oldestOosAt)})`;
+
+                          return (
+                            <td key={col.domain}>
+                              <a
+                                href={oosCell.primaryUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cell-oos"
+                                title={tooltip}
+                              >
+                                {label}
+                              </a>
+                            </td>
+                          );
+                        }
+
+                        if (inCell) {
+                          const tipParts = inCell.variants.map(v => {
+                            const sz = v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard' ? v.variant_title : '';
+                            const pr = v.current_price ? `£${Number(v.current_price).toFixed(2)}` : '';
+                            return [sz, pr].filter(Boolean).join(' ');
+                          });
+                          const tooltip = `${col.domain}: In Stock (${tipParts.join(', ')})`;
+
+                          return (
+                            <td key={col.domain}>
+                              <a
+                                href={inCell.primaryUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cell-in"
+                                title={tooltip}
+                              >
+                                ✓
+                              </a>
+                            </td>
+                          );
+                        }
+
+                        return (
+                          <td key={col.domain}>
+                            <span className="cell-none" title={`Not stocked at ${col.domain}`}>
+                              ·
+                            </span>
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="matrix-legend">
+            <span>
+              <strong style={{ color: 'var(--red)' }}>OOS</strong> = Out of Stock (click cell to open product page, hover for sizes &amp; duration)
+            </span>
+            <span>
+              <strong style={{ color: 'var(--green)' }}>✓</strong> = In Stock
+            </span>
+            <span>
+              <strong>·</strong> = Not listed at this stockist
+            </span>
+          </div>
         </div>
       )}
 

@@ -36,7 +36,7 @@ a:hover {
 }
 
 .sheet {
-  max-width: 920px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 44px 24px 88px;
 }
@@ -292,6 +292,125 @@ a:hover {
 
 .sku-open:hover {
   color: var(--ink);
+}
+
+/* Compact Overview Matrix (Product x Stockist Grid) */
+.matrix-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.matrix-table th {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--ink);
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
+  white-space: nowrap;
+  background: #f9fafb;
+}
+
+.matrix-table th.col-product {
+  text-align: left;
+  padding-left: 14px;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #f9fafb;
+  border-right: 1px solid var(--line);
+}
+
+.matrix-store-sub {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.matrix-table td {
+  padding: 7px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.matrix-table tr:last-child td {
+  border-bottom: none;
+}
+
+.matrix-table tr:hover td {
+  background: #f9fafb;
+}
+
+.matrix-table td.col-product {
+  text-align: left;
+  padding-left: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+}
+
+.matrix-table tr:hover td.col-product {
+  background: #f9fafb;
+}
+
+.cell-oos {
+  display: inline-block;
+  background: var(--red-soft);
+  color: var(--red);
+  border: 1px solid #fecaca;
+  font-weight: 600;
+  font-size: 0.73rem;
+  padding: 1px 7px;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cell-oos:hover {
+  background: #fee2e2;
+  text-decoration: none;
+}
+
+.cell-in {
+  display: inline-block;
+  color: var(--green);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 1px 6px;
+}
+
+.cell-in:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.cell-none {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.matrix-legend {
+  display: flex;
+  gap: 18px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 10px;
+  padding-left: 2px;
 }
 
 /* Healthy Products Accordion */
