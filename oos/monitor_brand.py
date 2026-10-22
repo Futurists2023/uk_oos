@@ -25,7 +25,6 @@ from playwright.async_api import async_playwright
 
 import db
 import discover_uk_stockists
-import generate_html_report
 import sme_brands
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -609,7 +608,6 @@ async def run_cli(args) -> None:
     if args.report_only:
         for b in target_brands:
             generate_intelligence_report_for_brand(conn, b)
-        generate_html_report.generate_all_html_dashboards(conn)
         conn.close()
         return
 
@@ -639,7 +637,6 @@ async def run_cli(args) -> None:
 
         await browser.close()
 
-    generate_html_report.generate_all_html_dashboards(conn)
     conn.close()
 
 

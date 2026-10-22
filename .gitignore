@@ -5,6 +5,14 @@
 oos/.env.local
 oos/reports/admin_local_config.js
 
+# Next.js / Node
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+.vercel/
+**/.vercel/
+
 # Python cache
 __pycache__/
 *.py[cod]
