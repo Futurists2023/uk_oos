@@ -261,8 +261,8 @@
 <div class="container">
   <header>
     <div>
-      <div class="brand-title">Bare Biology — UK Independent Stockist Intelligence</div>
-      <div class="brand-sub">Live Shelf Availability, Out-of-Stock Aging &amp; Peer Hero SKU Assortment Benchmark • Updated 21 Oct 2026, 14:11 UTC</div>
+      <div class="brand-title">Bare Biology — UK Retail &amp; Stockist Intelligence</div>
+      <div class="brand-sub">Live Shelf Availability, Out-of-Stock Aging &amp; Peer Hero SKU Assortment Benchmark (Tier 1 &amp; Tier 2) • Updated 21 Oct 2026, 14:11 UTC</div>
     </div>
     <div class="header-actions">
       <a href="index.html" class="btn btn-outline">← All Monitored Brands</a>
@@ -272,9 +272,9 @@
 
   <div class="kpi-grid">
     <div class="kpi-card">
-      <div class="kpi-label">UK Independent Stockists</div>
+      <div class="kpi-label">UK Retail Stockists</div>
       <div class="kpi-value">6</div>
-      <div class="kpi-note">Verified UK e-commerce accounts</div>
+      <div class="kpi-note">Major UK Retailers + Independent Stockists</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Active Variants Tracked</div>
@@ -307,6 +307,11 @@
   <!-- TAB 1: SKU TABLE -->
   <div id="tab-skus" class="tab-panel active">
     <div class="filter-bar">
+      <select id="filterTier" onchange="applyFilters()">
+        <option value="ALL">All Stockist Tiers</option>
+        <option value="TIER_1">Tier 1: Major UK Retailers</option>
+        <option value="TIER_2">Tier 2: Independent Stockists</option>
+      </select>
       <select id="filterStore" onchange="applyFilters()">
         <option value="ALL">All Independent UK Stores (6)</option>
         <option value="citysurvivor.co.uk">citysurvivor.co.uk</option>
@@ -345,10 +350,12 @@
           
             <tr class="sku-row row-oos"
                 data-store="citysurvivor.co.uk"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="citysurvivor.co.uk life &amp; soul pure omega-3 liquid standard"
                 data-csv-store="citysurvivor.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp; Soul Pure Omega-3 Liquid"
                 data-csv-variant="Standard"
                 data-csv-price="51.95"
@@ -357,7 +364,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="155.85"
                 data-csv-url="https://citysurvivor.co.uk/products/life-soul-pure-omega-3-liquid">
-                <td class="font-mono store-cell">citysurvivor.co.uk</td>
+                <td class="font-mono store-cell">citysurvivor.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp; Soul Pure Omega-3 Liquid</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£51.95</td>
@@ -369,10 +376,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="contentbeautywellbeing.com bare biology life &amp; soul pure omega 3 liquid standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Life &amp; Soul Pure Omega 3 Liquid"
                 data-csv-variant="Standard"
                 data-csv-price="51.95"
@@ -381,7 +390,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="155.85"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/bare-biology-life-soul-pure-omega-3-liquid">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Life &amp; Soul Pure Omega 3 Liquid</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£51.95</td>
@@ -393,10 +402,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="shop.zenhealthcare.co.uk bare biology pure marine collagen powder 300g 300g"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Pure Marine Collagen Powder 300g"
                 data-csv-variant="300g"
                 data-csv-price="40.0"
@@ -405,7 +416,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="120.0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-pure-marine-collagen-powder-300g">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Pure Marine Collagen Powder 300g</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£40.00</td>
@@ -417,10 +428,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="contentbeautywellbeing.com bare biology skinful pure marine collagen powder standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Skinful Pure Marine Collagen Powder"
                 data-csv-variant="Standard"
                 data-csv-price="39.95"
@@ -429,7 +442,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="119.85"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/bare-biology-skinful-pure-marine-collagen-powder">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Skinful Pure Marine Collagen Powder</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£39.95</td>
@@ -441,10 +454,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="contentbeautywellbeing.com bare biology ready &amp; rested magnesium standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Ready &amp; Rested Magnesium"
                 data-csv-variant="Standard"
                 data-csv-price="34.99"
@@ -453,7 +468,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="104.97"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/bare-biology-ready-rested-magnesium">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Ready &amp; Rested Magnesium</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£34.99</td>
@@ -465,10 +480,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="contentbeautywellbeing.com bare biology life &amp; soul pure omega 3 daily capsules standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Life &amp; Soul Pure Omega 3 Daily Capsules"
                 data-csv-variant="Standard"
                 data-csv-price="32.95"
@@ -477,7 +494,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="98.85"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/bare-biology-life-soul-pure-omega-3-daily-capsules">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Life &amp; Soul Pure Omega 3 Daily Capsules</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£32.95</td>
@@ -489,10 +506,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="shop.zenhealthcare.co.uk bare biology beam &amp; balance, vitamin d3 + k2 peppermint spray 25 ml 25 ml"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Beam &amp; Balance, Vitamin D3 + K2 Peppermint Spray 25 ml"
                 data-csv-variant="25 ml"
                 data-csv-price="17.99"
@@ -501,7 +520,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="53.97"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-beam-balance-vitamin-d3-k2-peppermint-spray-25-ml">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Beam &amp; Balance, Vitamin D3 + K2 Peppermint Spray 25 ml</strong></td>
                 <td><span class="pill">25 ml</span></td>
                 <td class="num-cell">£17.99 <del class="muted">£22.99</del></td>
@@ -513,10 +532,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="citysurvivor.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="citysurvivor.co.uk bare biology beam and balance - vitamin d3 and k2 standard"
                 data-csv-store="citysurvivor.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Beam and Balance - Vitamin D3 and K2"
                 data-csv-variant="Standard"
                 data-csv-price="21.95"
@@ -525,7 +546,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://citysurvivor.co.uk/products/beam-and-balance">
-                <td class="font-mono store-cell">citysurvivor.co.uk</td>
+                <td class="font-mono store-cell">citysurvivor.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Beam and Balance - Vitamin D3 and K2</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£21.95</td>
@@ -537,10 +558,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="citysurvivor.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="citysurvivor.co.uk bare biology pure bovine collagen powder standard"
                 data-csv-store="citysurvivor.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Pure Bovine Collagen Powder"
                 data-csv-variant="Standard"
                 data-csv-price="29.95"
@@ -549,7 +572,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://citysurvivor.co.uk/products/pure-bovine-collagen-powder">
-                <td class="font-mono store-cell">citysurvivor.co.uk</td>
+                <td class="font-mono store-cell">citysurvivor.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Pure Bovine Collagen Powder</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£29.95</td>
@@ -561,10 +584,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="citysurvivor.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="citysurvivor.co.uk bare biology skinful pure marine collagen powder standard"
                 data-csv-store="citysurvivor.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Skinful Pure Marine Collagen Powder"
                 data-csv-variant="Standard"
                 data-csv-price="39.95"
@@ -573,7 +598,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://citysurvivor.co.uk/products/skinful-marine-collagen-powder">
-                <td class="font-mono store-cell">citysurvivor.co.uk</td>
+                <td class="font-mono store-cell">citysurvivor.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Skinful Pure Marine Collagen Powder</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£39.95</td>
@@ -585,10 +610,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="citysurvivor.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="citysurvivor.co.uk life &amp; soul omega-3 fish oil capsules standard"
                 data-csv-store="citysurvivor.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp; Soul Omega-3 Fish Oil capsules"
                 data-csv-variant="Standard"
                 data-csv-price="32.95"
@@ -597,7 +624,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://citysurvivor.co.uk/products/life-soul-omega-3-fish-oil-capsules">
-                <td class="font-mono store-cell">citysurvivor.co.uk</td>
+                <td class="font-mono store-cell">citysurvivor.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp; Soul Omega-3 Fish Oil capsules</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£32.95</td>
@@ -609,10 +636,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="citysurvivor.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="citysurvivor.co.uk vim &amp; vigour vegan omega-3 capsules 3 capsules"
                 data-csv-store="citysurvivor.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Vim &amp; Vigour Vegan Omega-3 Capsules"
                 data-csv-variant="3 Capsules"
                 data-csv-price="32.95"
@@ -621,7 +650,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://citysurvivor.co.uk/products/vim-vigour-vegan-omega-3-capsules">
-                <td class="font-mono store-cell">citysurvivor.co.uk</td>
+                <td class="font-mono store-cell">citysurvivor.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Vim &amp; Vigour Vegan Omega-3 Capsules</strong></td>
                 <td><span class="pill">3 Capsules</span></td>
                 <td class="num-cell">£32.95</td>
@@ -633,10 +662,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="contentbeautywellbeing.com bare biology beam &amp; balance unflavoured - vitamin d3 &amp; k2 spray standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Beam &amp; Balance Unflavoured - Vitamin D3 &amp; K2 Spray"
                 data-csv-variant="Standard"
                 data-csv-price="21.95"
@@ -645,7 +676,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/bare-biology-beam-balance-unflavoured-vitamin-d3-k2-spray">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Beam &amp; Balance Unflavoured - Vitamin D3 &amp; K2 Spray</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£21.95</td>
@@ -657,10 +688,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="contentbeautywellbeing.com bare biology high flyer creatine monohydrate standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology High Flyer Creatine Monohydrate"
                 data-csv-variant="Standard"
                 data-csv-price="34.95"
@@ -669,7 +702,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/bare-biology-high-flyer-creatine-monohydrate">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology High Flyer Creatine Monohydrate</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£34.95</td>
@@ -681,10 +714,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="contentbeautywellbeing.com bare biology mums &amp; bumps omega 3 fish oil capsules standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Mums &amp; Bumps Omega 3 Fish Oil Capsules"
                 data-csv-variant="Standard"
                 data-csv-price="23.95"
@@ -693,7 +728,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/bare-biology-mums-bumps-omega-3-fish-oil-capsules">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Mums &amp; Bumps Omega 3 Fish Oil Capsules</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£23.95</td>
@@ -705,10 +740,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com &quot;bare biology rise &amp; shine, omega-3 + vitamin d3 capsules&quot; 60 caps 42341"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="&quot;Bare Biology Rise &amp; Shine, Omega-3 + Vitamin D3 Capsules&quot; 60 caps"
                 data-csv-variant="42341"
                 data-csv-price="34.0"
@@ -717,7 +754,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-rise-shine-omega-3-vitamin-d3-capsules-60-caps">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>&quot;Bare Biology Rise &amp; Shine, Omega-3 + Vitamin D3 Capsules&quot; 60 caps</strong></td>
                 <td><span class="pill">42341</span></td>
                 <td class="num-cell">£34.00</td>
@@ -729,10 +766,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology action heroes pure omega-3 100ml 25735"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Action Heroes Pure Omega-3 100ml"
                 data-csv-variant="25735"
                 data-csv-price="33.0"
@@ -741,7 +780,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-super-hero-pure-omega-3-for-kids-100ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Action Heroes Pure Omega-3 100ml</strong></td>
                 <td><span class="pill">25735</span></td>
                 <td class="num-cell">£33.00</td>
@@ -753,10 +792,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology creatine monohydrate powder 300g 47481"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Creatine Monohydrate Powder 300g"
                 data-csv-variant="47481"
                 data-csv-price="35.0"
@@ -765,7 +806,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-creatine-monohydrate-powder-300g">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Creatine Monohydrate Powder 300g</strong></td>
                 <td><span class="pill">47481</span></td>
                 <td class="num-cell">£35.00</td>
@@ -777,10 +818,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology life &amp; soul liquid pure omega-3 150ml 25733"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Life &amp; Soul Liquid Pure Omega-3 150ml"
                 data-csv-variant="25733"
                 data-csv-price="52.0"
@@ -789,7 +832,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-life-soul-liquid-pure-omega-3-150ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Life &amp; Soul Liquid Pure Omega-3 150ml</strong></td>
                 <td><span class="pill">25733</span></td>
                 <td class="num-cell">£52.00</td>
@@ -801,10 +844,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology life &amp; soul pure omega-3 120 caps 25734"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Life &amp; Soul Pure Omega-3 120 Caps"
                 data-csv-variant="25734"
                 data-csv-price="33.0"
@@ -813,7 +858,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-lion-heart-pure-omega-3-mini-caps-120-caps">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Life &amp; Soul Pure Omega-3 120 Caps</strong></td>
                 <td><span class="pill">25734</span></td>
                 <td class="num-cell">£33.00</td>
@@ -825,10 +870,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology life &amp; soul pure omega-3 60 caps 30577"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Life &amp; Soul Pure Omega-3 60 caps"
                 data-csv-variant="30577"
                 data-csv-price="33.0"
@@ -837,7 +884,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-lion-heart-maxis-60-caps">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Life &amp; Soul Pure Omega-3 60 caps</strong></td>
                 <td><span class="pill">30577</span></td>
                 <td class="num-cell">£33.00</td>
@@ -849,10 +896,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology mindful pure omega-3 30 caps 30371"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Mindful Pure Omega-3 30 caps"
                 data-csv-variant="30371"
                 data-csv-price="24.0"
@@ -861,7 +910,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-mindful-omega-3-30-caps">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Mindful Pure Omega-3 30 caps</strong></td>
                 <td><span class="pill">30371</span></td>
                 <td class="num-cell">£24.00</td>
@@ -873,10 +922,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology mums &amp; bumps pure omega 30 caps 25736"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Mums &amp; Bumps Pure Omega 30 Caps"
                 data-csv-variant="25736"
                 data-csv-price="24.0"
@@ -885,7 +936,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-bump-glory-pure-omega-3-for-pregnancy-30-caps">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Mums &amp; Bumps Pure Omega 30 Caps</strong></td>
                 <td><span class="pill">25736</span></td>
                 <td class="num-cell">£24.00</td>
@@ -897,10 +948,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology skinful pure marine collagen 300g 37453"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Skinful Pure Marine Collagen 300g"
                 data-csv-variant="37453"
                 data-csv-price="39.99"
@@ -909,7 +962,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-skinful-pure-marine-collagen-type-i-peptides-300g">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Skinful Pure Marine Collagen 300g</strong></td>
                 <td><span class="pill">37453</span></td>
                 <td class="num-cell">£39.99</td>
@@ -921,10 +974,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com bare biology vim &amp; vigour vegan omega 3 + astaxanthin 60 caps 41651"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Vim &amp; Vigour Vegan Omega 3 + Astaxanthin 60 caps"
                 data-csv-variant="41651"
                 data-csv-price="32.95"
@@ -933,7 +988,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/bare-biology-vim-vigour-vegan-omega-3-astaxanthin-60-caps">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Vim &amp; Vigour Vegan Omega 3 + Astaxanthin 60 caps</strong></td>
                 <td><span class="pill">41651</span></td>
                 <td class="num-cell">£32.95</td>
@@ -945,10 +1000,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com skinful marine collagen plus vitamin c strawberry flavour 300g 40467"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Skinful Marine Collagen Plus Vitamin C Strawberry Flavour 300g"
                 data-csv-variant="40467"
                 data-csv-price="45.99"
@@ -957,7 +1014,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/skinful-marine-collagen-plus-vitamin-c-strawberry-flavour-300g">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Skinful Marine Collagen Plus Vitamin C Strawberry Flavour 300g</strong></td>
                 <td><span class="pill">40467</span></td>
                 <td class="num-cell">£45.99</td>
@@ -969,10 +1026,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="shop.zenhealthcare.co.uk bare biology action heroes kids omega 3 liquid dha 100 ml 100 ml"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Action Heroes Kids Omega 3 Liquid DHA 100 ml"
                 data-csv-variant="100 ml"
                 data-csv-price="26.4"
@@ -981,7 +1040,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-action-heroes-kids-omega-3-liquid-dha-100-ml">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Action Heroes Kids Omega 3 Liquid DHA 100 ml</strong></td>
                 <td><span class="pill">100 ml</span></td>
                 <td class="num-cell">£26.40 <del class="muted">£32.99</del></td>
@@ -993,10 +1052,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="shop.zenhealthcare.co.uk bare biology fundamental collagen powder 300 g 300 g"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Fundamental Collagen Powder 300 g"
                 data-csv-variant="300 g"
                 data-csv-price="29.95"
@@ -1005,7 +1066,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-fundamental-collagen-powder-300-g">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Fundamental Collagen Powder 300 g</strong></td>
                 <td><span class="pill">300 g</span></td>
                 <td class="num-cell">£29.95</td>
@@ -1017,10 +1078,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="shop.zenhealthcare.co.uk bare biology life &amp; soul omega 3, 60 capsules 60 capsules"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Life &amp; Soul Omega 3, 60 Capsules"
                 data-csv-variant="60 Capsules"
                 data-csv-price="26.4"
@@ -1029,7 +1092,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-life-soul-omega-3-60-capsules">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Life &amp; Soul Omega 3, 60 Capsules</strong></td>
                 <td><span class="pill">60 Capsules</span></td>
                 <td class="num-cell">£26.40 <del class="muted">£33.00</del></td>
@@ -1041,10 +1104,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="shop.zenhealthcare.co.uk bare biology life and soul omega 3 liquid ultra strength fish oil brain heart support 150 ml 150 ml"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Life And Soul Omega 3 Liquid Ultra Strength Fish Oil Brain Heart Support 150 ml"
                 data-csv-variant="150 ml"
                 data-csv-price="44.2"
@@ -1053,7 +1118,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-life-and-soul-omega-3-liquid-ultra-strength-fish-oil-brain-heart-support-150-ml">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Life And Soul Omega 3 Liquid Ultra Strength Fish Oil Brain Heart Support 150 ml</strong></td>
                 <td><span class="pill">150 ml</span></td>
                 <td class="num-cell">£44.20 <del class="muted">£52.00</del></td>
@@ -1065,10 +1130,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="shop.zenhealthcare.co.uk bare biology ready and rested magnesium bisglycinate, 180 capsules 180 capsules"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Ready And Rested Magnesium Bisglycinate, 180 Capsules"
                 data-csv-variant="180 Capsules"
                 data-csv-price="27.99"
@@ -1077,7 +1144,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-ready-and-rested-magnesium-bisglycinate-180-capsules">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Ready And Rested Magnesium Bisglycinate, 180 Capsules</strong></td>
                 <td><span class="pill">180 Capsules</span></td>
                 <td class="num-cell">£27.99 <del class="muted">£34.99</del></td>
@@ -1089,10 +1156,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="shop.zenhealthcare.co.uk bare biology rise &amp; shine omega 3 + vitamin d3, 60 capsules 60 capsules"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Rise &amp; Shine Omega 3 + Vitamin D3, 60 Capsules"
                 data-csv-variant="60 Capsules"
                 data-csv-price="27.16"
@@ -1101,7 +1170,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-rise-shine-omega-3-vitamin-d3-60-capsules">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Rise &amp; Shine Omega 3 + Vitamin D3, 60 Capsules</strong></td>
                 <td><span class="pill">60 Capsules</span></td>
                 <td class="num-cell">£27.16 <del class="muted">£33.95</del></td>
@@ -1113,10 +1182,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="shop.zenhealthcare.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="shop.zenhealthcare.co.uk bare biology skinful pure marine collagen powder 300g 300g"
                 data-csv-store="shop.zenhealthcare.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Skinful Pure Marine Collagen Powder 300g"
                 data-csv-variant="300g"
                 data-csv-price="32.0"
@@ -1125,7 +1196,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://shop.zenhealthcare.co.uk/products/bare-biology-skinful-pure-marine-collagen-powder-300g">
-                <td class="font-mono store-cell">shop.zenhealthcare.co.uk</td>
+                <td class="font-mono store-cell">shop.zenhealthcare.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Skinful Pure Marine Collagen Powder 300g</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£32.00 <del class="muted">£40.00</del></td>
@@ -1137,10 +1208,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk action heroes omega-3 fish oil for kids - 100ml | bare biology 100ml"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Action Heroes Omega-3 Fish Oil for Kids - 100ml | Bare Biology"
                 data-csv-variant="100ml"
                 data-csv-price="32.95"
@@ -1149,7 +1222,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/action-hero-for-kids-pure-omega-3-fish-oil-100-ml">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Action Heroes Omega-3 Fish Oil for Kids - 100ml | Bare Biology</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£32.95</td>
@@ -1161,10 +1234,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk bare biology skinful pure marine collagen powder (300g) 300g"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Bare Biology Skinful Pure Marine Collagen Powder (300g)"
                 data-csv-variant="300g"
                 data-csv-price="39.95"
@@ -1173,7 +1248,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/skinful-pure-marine-collagen-powder-300g">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Bare Biology Skinful Pure Marine Collagen Powder (300g)</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£39.95</td>
@@ -1185,10 +1260,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk beam &amp; balance vitamin d3 + k2 (unflavoured) - 25ml | bare biology 25ml"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Beam &amp; Balance Vitamin D3 + K2 (Unflavoured) - 25ml | Bare Biology"
                 data-csv-variant="25ml"
                 data-csv-price="21.95"
@@ -1197,7 +1274,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/beam-balance-vitamin-d3-k2-unflavoured-25ml-bare-biology">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Beam &amp; Balance Vitamin D3 + K2 (Unflavoured) - 25ml | Bare Biology</strong></td>
                 <td><span class="pill">25ml</span></td>
                 <td class="num-cell">£21.95</td>
@@ -1209,10 +1286,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk beam &amp; balance vitamin d3 + k2 - 25ml | bare biology 25ml"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Beam &amp; Balance Vitamin D3 + K2 - 25ml | Bare Biology"
                 data-csv-variant="25ml"
                 data-csv-price="21.95"
@@ -1221,7 +1300,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/beam-balance-vitamin-d3-k2-25ml-bare-biology">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Beam &amp; Balance Vitamin D3 + K2 - 25ml | Bare Biology</strong></td>
                 <td><span class="pill">25ml</span></td>
                 <td class="num-cell">£21.95</td>
@@ -1233,10 +1312,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk fundamental bovine collagen powder - 300g | bare biology 300g"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Fundamental Bovine Collagen Powder - 300g | Bare Biology"
                 data-csv-variant="300g"
                 data-csv-price="29.95"
@@ -1245,7 +1326,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/fundamental-bovine-collagen-bare-biology">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Fundamental Bovine Collagen Powder - 300g | Bare Biology</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£29.95</td>
@@ -1257,10 +1338,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk high flyer creatine monohydrate powder - 300g | bare biology 300g"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="High Flyer Creatine Monohydrate Powder - 300g | Bare Biology"
                 data-csv-variant="300g"
                 data-csv-price="34.96"
@@ -1269,7 +1352,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/high-flyer-creatine-monohydrate-powder-300g-bare-biology">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>High Flyer Creatine Monohydrate Powder - 300g | Bare Biology</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£34.96</td>
@@ -1281,10 +1364,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk life &amp; soul high strength omega-3 fish oil - 150ml | bare biology 150ml"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp; Soul High Strength Omega-3 Fish Oil - 150ml | Bare Biology"
                 data-csv-variant="150ml"
                 data-csv-price="51.95"
@@ -1293,7 +1378,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/lion-heart-liquid-150-ml">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp; Soul High Strength Omega-3 Fish Oil - 150ml | Bare Biology</strong></td>
                 <td><span class="pill">150ml</span></td>
                 <td class="num-cell">£51.95</td>
@@ -1305,10 +1390,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk life &amp; soul high strength omega-3 fish oil - 60 capsules | bare biology 60 capsules"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp; Soul High Strength Omega-3 Fish Oil - 60 Capsules | Bare Biology"
                 data-csv-variant="60 Capsules"
                 data-csv-price="32.95"
@@ -1317,7 +1404,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/life-soul-omega-3-60-capsules">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp; Soul High Strength Omega-3 Fish Oil - 60 Capsules | Bare Biology</strong></td>
                 <td><span class="pill">60 Capsules</span></td>
                 <td class="num-cell">£32.95</td>
@@ -1329,10 +1416,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk life &amp; soul high strength omega-3 fish oil mini capsules - 120 capsules | bare biology 120 capsules"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp; Soul High Strength Omega-3 Fish Oil Mini Capsules - 120 Capsules | Bare Biology"
                 data-csv-variant="120 Capsules"
                 data-csv-price="32.95"
@@ -1341,7 +1430,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/lion-heart-pure-omega-3-fish-oil-120-capsules">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp; Soul High Strength Omega-3 Fish Oil Mini Capsules - 120 Capsules | Bare Biology</strong></td>
                 <td><span class="pill">120 Capsules</span></td>
                 <td class="num-cell">£32.95</td>
@@ -1353,10 +1442,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk mindful pure dha omega-3 - 30 capsules | bare biology 30 capsules"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Mindful Pure DHA Omega-3 - 30 Capsules | Bare Biology"
                 data-csv-variant="30 Capsules"
                 data-csv-price="23.95"
@@ -1365,7 +1456,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/mindful-omega-3-fish-oil-30-capsules">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Mindful Pure DHA Omega-3 - 30 Capsules | Bare Biology</strong></td>
                 <td><span class="pill">30 Capsules</span></td>
                 <td class="num-cell">£23.95</td>
@@ -1377,10 +1468,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk mum&#x27;s &amp; bumps omega-3 fish oil for pregnancy - 30 capsules | bare biology 30 capsules"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Mum&#x27;s &amp; Bumps Omega-3 Fish Oil For Pregnancy - 30 Capsules | Bare Biology"
                 data-csv-variant="30 Capsules"
                 data-csv-price="23.95"
@@ -1389,7 +1482,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/mums-bumps-omega-3-fish-oil-30-capsules">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Mum&#x27;s &amp; Bumps Omega-3 Fish Oil For Pregnancy - 30 Capsules | Bare Biology</strong></td>
                 <td><span class="pill">30 Capsules</span></td>
                 <td class="num-cell">£23.95</td>
@@ -1401,10 +1494,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk ready &amp; rested magnesium bisglycinate - 180 capsules | bare biology 180 capsules"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Ready &amp; Rested Magnesium Bisglycinate - 180 Capsules | Bare Biology"
                 data-csv-variant="180 Capsules"
                 data-csv-price="34.99"
@@ -1413,7 +1508,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/ready-rested-magnesium-bisglycinate-180-capsules-bare-biology">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Ready &amp; Rested Magnesium Bisglycinate - 180 Capsules | Bare Biology</strong></td>
                 <td><span class="pill">180 Capsules</span></td>
                 <td class="num-cell">£34.99</td>
@@ -1425,10 +1520,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk rise &amp; shine (omega-3 + vitamin d3) - 60 capsules | bare biology 60 capsules"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Rise &amp; Shine (Omega-3 + Vitamin D3) - 60 Capsules | Bare Biology"
                 data-csv-variant="60 Capsules"
                 data-csv-price="33.95"
@@ -1437,7 +1534,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/rise-shine-60-capsules">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Rise &amp; Shine (Omega-3 + Vitamin D3) - 60 Capsules | Bare Biology</strong></td>
                 <td><span class="pill">60 Capsules</span></td>
                 <td class="num-cell">£33.95</td>
@@ -1449,10 +1546,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk skinful marine collagen + vitamin c - 300g | bare biology 300g"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Skinful Marine Collagen + Vitamin C - 300g | Bare Biology"
                 data-csv-variant="300g"
                 data-csv-price="45.0"
@@ -1461,7 +1560,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/skinful-marine-collagen-vitamin-c-strawberry-flavour-300g">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Skinful Marine Collagen + Vitamin C - 300g | Bare Biology</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£45.00</td>
@@ -1473,10 +1572,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="supplementhub.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="supplementhub.co.uk vim &amp; vigour (vegan omega-3) - 60 capsules | bare biology 60 capsules"
                 data-csv-store="supplementhub.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Vim &amp; Vigour (Vegan Omega-3) - 60 Capsules | Bare Biology"
                 data-csv-variant="60 Capsules"
                 data-csv-price="32.95"
@@ -1485,7 +1586,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://supplementhub.co.uk/products/vim-vigour-60-capsules">
-                <td class="font-mono store-cell">supplementhub.co.uk</td>
+                <td class="font-mono store-cell">supplementhub.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Vim &amp; Vigour (Vegan Omega-3) - 60 Capsules | Bare Biology</strong></td>
                 <td><span class="pill">60 Capsules</span></td>
                 <td class="num-cell">£32.95</td>
@@ -1497,10 +1598,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk beam &amp;#038; balance vitamins d3 + k2 peppermint (blue) 25ml &amp;#8211; bare biology 25ml"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Beam &amp;#038; Balance Vitamins D3 + K2 Peppermint (BLUE) 25ml &amp;#8211; Bare Biology"
                 data-csv-variant="25ml"
                 data-csv-price="21.95"
@@ -1509,7 +1612,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/beam-balance-vitamins-d3-k2-peppermint-blue-25ml-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Beam &amp;#038; Balance Vitamins D3 + K2 Peppermint (BLUE) 25ml &amp;#8211; Bare Biology</strong></td>
                 <td><span class="pill">25ml</span></td>
                 <td class="num-cell">£21.95</td>
@@ -1521,10 +1624,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk beam &amp;#038; balance vitamins d3 + k2 unflavoured (red) 25ml &amp;#8211; bare biology 25ml"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Beam &amp;#038; Balance Vitamins D3 + K2 Unflavoured (RED) 25ml &amp;#8211; Bare Biology"
                 data-csv-variant="25ml"
                 data-csv-price="21.95"
@@ -1533,7 +1638,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/beam-balance-vitamins-d3-k2-unflavoured-red-25ml-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Beam &amp;#038; Balance Vitamins D3 + K2 Unflavoured (RED) 25ml &amp;#8211; Bare Biology</strong></td>
                 <td><span class="pill">25ml</span></td>
                 <td class="num-cell">£21.95</td>
@@ -1545,10 +1650,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk life &amp;#038; soul pure omega-3 120 mini capsules &amp;#8211; bare biology standard"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp;#038; Soul Pure Omega-3 120 Mini Capsules &amp;#8211; Bare Biology"
                 data-csv-variant="Standard"
                 data-csv-price="32.95"
@@ -1557,7 +1664,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/life-soul-pure-omega-3-120-mini-capsules-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp;#038; Soul Pure Omega-3 120 Mini Capsules &amp;#8211; Bare Biology</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£32.95</td>
@@ -1569,10 +1676,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk life &amp;amp; soul pure omega-3 150ml bare biology 150ml"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp;amp; Soul Pure Omega-3 150ml Bare Biology"
                 data-csv-variant="150ml"
                 data-csv-price="51.95"
@@ -1581,7 +1690,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/life-soul-pure-omega-3-150ml-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp;amp; Soul Pure Omega-3 150ml Bare Biology</strong></td>
                 <td><span class="pill">150ml</span></td>
                 <td class="num-cell">£51.95</td>
@@ -1593,10 +1702,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk life &amp;amp; soul pure omega-3 60 capsules &amp;#8211; bare biology 60 capsules"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Life &amp;amp; Soul Pure Omega-3 60 capsules &amp;#8211; Bare Biology"
                 data-csv-variant="60 capsules"
                 data-csv-price="32.95"
@@ -1605,7 +1716,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/life-soul-pure-omega-3-60-capsules-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Life &amp;amp; Soul Pure Omega-3 60 capsules &amp;#8211; Bare Biology</strong></td>
                 <td><span class="pill">60 capsules</span></td>
                 <td class="num-cell">£32.95</td>
@@ -1617,10 +1728,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk mums &amp;#038; bumps pure omega-3, 30 capsules &amp;#8211; bare biology 30 capsules"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Mums &amp;#038; Bumps Pure Omega-3, 30 Capsules &amp;#8211; Bare Biology"
                 data-csv-variant="30 Capsules"
                 data-csv-price="23.95"
@@ -1629,7 +1742,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/mums-bumps-pure-omega-3-30-capsules-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Mums &amp;#038; Bumps Pure Omega-3, 30 Capsules &amp;#8211; Bare Biology</strong></td>
                 <td><span class="pill">30 Capsules</span></td>
                 <td class="num-cell">£23.95</td>
@@ -1641,10 +1754,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk skinful marine collagen + vitamin c (natural strawberry flavour) 300g &amp;#8211; bare biology 300g"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Skinful Marine Collagen + Vitamin C (Natural Strawberry Flavour) 300g &amp;#8211; Bare Biology"
                 data-csv-variant="300g"
                 data-csv-price="45.0"
@@ -1653,7 +1768,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/skinful-marine-collagen-vitamin-c-natural-strawberry-flavour-300g-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Skinful Marine Collagen + Vitamin C (Natural Strawberry Flavour) 300g &amp;#8211; Bare Biology</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£45.00</td>
@@ -1665,10 +1780,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk skinful pure marine collagen powder 300g bare biology 300g"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Skinful Pure Marine Collagen Powder 300g Bare Biology"
                 data-csv-variant="300g"
                 data-csv-price="39.95"
@@ -1677,7 +1794,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/skinful-pure-marine-collagen-powder-300g-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Skinful Pure Marine Collagen Powder 300g Bare Biology</strong></td>
                 <td><span class="pill">300g</span></td>
                 <td class="num-cell">£39.95</td>
@@ -1689,10 +1806,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="yourhealthbasket.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="yourhealthbasket.co.uk vegan omega-3 &amp;#038; astaxanthin (60 capsules) &amp;#8211; bare biology 60 capsules"
                 data-csv-store="yourhealthbasket.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Vegan Omega-3 &amp;#038; Astaxanthin (60 capsules) &amp;#8211; Bare Biology"
                 data-csv-variant="60 capsules"
                 data-csv-price="32.95"
@@ -1701,7 +1820,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://yourhealthbasket.co.uk/product/vegan-omega-3-astaxanthin-60-capsules-bare-biology/">
-                <td class="font-mono store-cell">yourhealthbasket.co.uk</td>
+                <td class="font-mono store-cell">yourhealthbasket.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Vegan Omega-3 &amp;#038; Astaxanthin (60 capsules) &amp;#8211; Bare Biology</strong></td>
                 <td><span class="pill">60 capsules</span></td>
                 <td class="num-cell">£32.95</td>
@@ -2190,24 +2309,27 @@ function switchTab(tabId, btn) {
 }
 
 function applyFilters() {
+  const tierVal = document.getElementById('filterTier').value;
   const storeVal = document.getElementById('filterStore').value;
   const sigVal = document.getElementById('filterSignal').value;
   const q = document.getElementById('filterSearch').value.trim().toLowerCase();
   let shown = 0;
 
   document.querySelectorAll('#skuTable tbody tr.sku-row').forEach(row => {
+    const rTier = row.getAttribute('data-tier');
     const rStore = row.getAttribute('data-store');
     const rSig = row.getAttribute('data-signal');
     const rAvail = row.getAttribute('data-avail');
     const rSearch = row.getAttribute('data-search');
 
+    let matchTier = (tierVal === 'ALL' || rTier === tierVal);
     let matchStore = (storeVal === 'ALL' || rStore === storeVal);
     let matchSig = true;
     if (sigVal === 'OOS_ONLY') matchSig = (rAvail === 'oos');
     else if (sigVal !== 'ALL') matchSig = (rSig === sigVal);
 
     let matchQ = (!q || rSearch.includes(q));
-    if (matchStore && matchSig && matchQ) {
+    if (matchTier && matchStore && matchSig && matchQ) {
       row.style.display = '';
       shown++;
     } else {
@@ -2218,12 +2340,13 @@ function applyFilters() {
 }
 
 function exportVisibleToCSV(filename) {
-  const headers = ['Store', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'Signal', 'Est_6Unit_PO_GBP', 'Product_URL'];
+  const headers = ['Store', 'Tier', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'Signal', 'Est_6Unit_PO_GBP', 'Product_URL'];
   const rows = [headers.join(',')];
   document.querySelectorAll('#skuTable tbody tr.sku-row').forEach(row => {
     if (row.style.display === 'none') return;
     const vals = [
       row.getAttribute('data-csv-store'),
+      row.getAttribute('data-csv-tier'),
       row.getAttribute('data-csv-product'),
       row.getAttribute('data-csv-variant'),
       row.getAttribute('data-csv-price'),

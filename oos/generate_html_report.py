@@ -13,6 +13,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import sme_brands
+
 HERE = Path(__file__).resolve().parent
 REPORTS_DIR = HERE / "reports"
 REPORTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -71,8 +73,12 @@ def build_brand_html(report: dict, all_skus: list[dict], stores: list[dict]) -> 
                 signal_type = "FULL_PRICE_OOS"
                 signal_badge = '<span class="badge badge-red">🔥 Sold Out at Full RRP (Reorder Now)</span>'
 
+        tier_label = sme_brands.stockist_tier(s["domain"])
+        tier_code = "TIER_1" if "Tier 1" in tier_label else "TIER_2"
         table_rows_data.append({
             "domain": s["domain"],
+            "tier_label": tier_label,
+            "tier_code": tier_code,
             "product_title": s["product_title"],
             "variant_title": s["variant_title"],
             "price": price,
@@ -102,13 +108,20 @@ def build_brand_html(report: dict, all_skus: list[dict], stores: list[dict]) -> 
             p_str += f' <del class="muted">£{r["compare_at_price"]:.2f}</del>'
         po_str = f"£{r['est_po']:.2f}" if r["est_po"] > 0 else "—"
         row_cls = "row-oos" if not r["is_available"] else "row-instock"
+        tier_badge_small = (
+            '<span class="platform-tag" style="color:#d8b4fe;border:1px solid rgba(168,85,247,0.4);">Tier 1 Major</span>'
+            if r["tier_code"] == "TIER_1"
+            else '<span class="platform-tag">Tier 2 Independent</span>'
+        )
         sku_rows_html.append(f"""
             <tr class="sku-row {row_cls}"
                 data-store="{esc(r['domain'])}"
+                data-tier="{esc(r['tier_code'])}"
                 data-signal="{esc(r['signal_type'])}"
                 data-avail="{'in' if r['is_available'] else 'oos'}"
                 data-search="{esc((r['domain'] + ' ' + r['product_title'] + ' ' + r['variant_title']).lower())}"
                 data-csv-store="{esc(r['domain'])}"
+                data-csv-tier="{esc(r['tier_label'])}"
                 data-csv-product="{esc(r['product_title'])}"
                 data-csv-variant="{esc(r['variant_title'])}"
                 data-csv-price="{r['price'] if r['price'] is not None else ''}"
@@ -117,7 +130,7 @@ def build_brand_html(report: dict, all_skus: list[dict], stores: list[dict]) -> 
                 data-csv-signal="{esc(r['signal_type'])}"
                 data-csv-po="{r['est_po'] if r['est_po'] > 0 else '0'}"
                 data-csv-url="{esc(r['product_url'])}">
-                <td class="font-mono store-cell">{esc(r['domain'])}</td>
+                <td class="font-mono store-cell">{esc(r['domain'])} {tier_badge_small}</td>
                 <td class="product-cell"><strong>{esc(r['product_title'])}</strong></td>
                 <td><span class="pill">{esc(r['variant_title'])}</span></td>
                 <td class="num-cell">{p_str}</td>
@@ -477,8 +490,8 @@ def build_brand_html(report: dict, all_skus: list[dict], stores: list[dict]) -> 
 <div class="container">
   <header>
     <div>
-      <div class="brand-title">{esc(brand)} — UK Independent Stockist Intelligence</div>
-      <div class="brand-sub">Live Shelf Availability, Out-of-Stock Aging &amp; Peer Hero SKU Assortment Benchmark • Updated {esc(gen_fmt)}</div>
+      <div class="brand-title">{esc(brand)} — UK Retail &amp; Stockist Intelligence</div>
+      <div class="brand-sub">Live Shelf Availability, Out-of-Stock Aging &amp; Peer Hero SKU Assortment Benchmark (Tier 1 &amp; Tier 2) • Updated {esc(gen_fmt)}</div>
     </div>
     <div class="header-actions">
       <a href="index.html" class="btn btn-outline">← All Monitored Brands</a>
@@ -488,9 +501,9 @@ def build_brand_html(report: dict, all_skus: list[dict], stores: list[dict]) -> 
 
   <div class="kpi-grid">
     <div class="kpi-card">
-      <div class="kpi-label">UK Independent Stockists</div>
+      <div class="kpi-label">UK Retail Stockists</div>
       <div class="kpi-value">{total_stores}</div>
-      <div class="kpi-note">Verified UK e-commerce accounts</div>
+      <div class="kpi-note">Major UK Retailers + Independent Stockists</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Active Variants Tracked</div>
@@ -523,6 +536,11 @@ def build_brand_html(report: dict, all_skus: list[dict], stores: list[dict]) -> 
   <!-- TAB 1: SKU TABLE -->
   <div id="tab-skus" class="tab-panel active">
     <div class="filter-bar">
+      <select id="filterTier" onchange="applyFilters()">
+        <option value="ALL">All Stockist Tiers</option>
+        <option value="TIER_1">Tier 1: Major UK Retailers</option>
+        <option value="TIER_2">Tier 2: Independent Stockists</option>
+      </select>
       <select id="filterStore" onchange="applyFilters()">
         <option value="ALL">All Independent UK Stores ({total_stores})</option>
         {store_options_html}
@@ -595,24 +613,27 @@ function switchTab(tabId, btn) {{
 }}
 
 function applyFilters() {{
+  const tierVal = document.getElementById('filterTier').value;
   const storeVal = document.getElementById('filterStore').value;
   const sigVal = document.getElementById('filterSignal').value;
   const q = document.getElementById('filterSearch').value.trim().toLowerCase();
   let shown = 0;
 
   document.querySelectorAll('#skuTable tbody tr.sku-row').forEach(row => {{
+    const rTier = row.getAttribute('data-tier');
     const rStore = row.getAttribute('data-store');
     const rSig = row.getAttribute('data-signal');
     const rAvail = row.getAttribute('data-avail');
     const rSearch = row.getAttribute('data-search');
 
+    let matchTier = (tierVal === 'ALL' || rTier === tierVal);
     let matchStore = (storeVal === 'ALL' || rStore === storeVal);
     let matchSig = true;
     if (sigVal === 'OOS_ONLY') matchSig = (rAvail === 'oos');
     else if (sigVal !== 'ALL') matchSig = (rSig === sigVal);
 
     let matchQ = (!q || rSearch.includes(q));
-    if (matchStore && matchSig && matchQ) {{
+    if (matchTier && matchStore && matchSig && matchQ) {{
       row.style.display = '';
       shown++;
     }} else {{
@@ -623,12 +644,13 @@ function applyFilters() {{
 }}
 
 function exportVisibleToCSV(filename) {{
-  const headers = ['Store', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'Signal', 'Est_6Unit_PO_GBP', 'Product_URL'];
+  const headers = ['Store', 'Tier', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'Signal', 'Est_6Unit_PO_GBP', 'Product_URL'];
   const rows = [headers.join(',')];
   document.querySelectorAll('#skuTable tbody tr.sku-row').forEach(row => {{
     if (row.style.display === 'none') return;
     const vals = [
       row.getAttribute('data-csv-store'),
+      row.getAttribute('data-csv-tier'),
       row.getAttribute('data-csv-product'),
       row.getAttribute('data-csv-variant'),
       row.getAttribute('data-csv-price'),

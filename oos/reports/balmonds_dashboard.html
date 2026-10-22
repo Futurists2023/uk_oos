@@ -261,8 +261,8 @@
 <div class="container">
   <header>
     <div>
-      <div class="brand-title">Balmonds — UK Independent Stockist Intelligence</div>
-      <div class="brand-sub">Live Shelf Availability, Out-of-Stock Aging &amp; Peer Hero SKU Assortment Benchmark • Updated 21 Oct 2026, 13:59 UTC</div>
+      <div class="brand-title">Balmonds — UK Retail &amp; Stockist Intelligence</div>
+      <div class="brand-sub">Live Shelf Availability, Out-of-Stock Aging &amp; Peer Hero SKU Assortment Benchmark (Tier 1 &amp; Tier 2) • Updated 21 Oct 2026, 13:59 UTC</div>
     </div>
     <div class="header-actions">
       <a href="index.html" class="btn btn-outline">← All Monitored Brands</a>
@@ -272,9 +272,9 @@
 
   <div class="kpi-grid">
     <div class="kpi-card">
-      <div class="kpi-label">UK Independent Stockists</div>
+      <div class="kpi-label">UK Retail Stockists</div>
       <div class="kpi-value">11</div>
-      <div class="kpi-note">Verified UK e-commerce accounts</div>
+      <div class="kpi-note">Major UK Retailers + Independent Stockists</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Active Variants Tracked</div>
@@ -307,6 +307,11 @@
   <!-- TAB 1: SKU TABLE -->
   <div id="tab-skus" class="tab-panel active">
     <div class="filter-bar">
+      <select id="filterTier" onchange="applyFilters()">
+        <option value="ALL">All Stockist Tiers</option>
+        <option value="TIER_1">Tier 1: Major UK Retailers</option>
+        <option value="TIER_2">Tier 2: Independent Stockists</option>
+      </select>
       <select id="filterStore" onchange="applyFilters()">
         <option value="ALL">All Independent UK Stores (11)</option>
         <option value="baldwins.co.uk">baldwins.co.uk</option>
@@ -350,10 +355,12 @@
           
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk daily moisturiser | hemp, calendula &amp; shea 300ml"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Daily Moisturiser | Hemp, Calendula &amp; Shea"
                 data-csv-variant="300ml"
                 data-csv-price="22.94"
@@ -362,7 +369,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="68.82"
                 data-csv-url="https://www.mypure.co.uk/products/daily-moisturising-cream">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Daily Moisturiser | Hemp, Calendula &amp; Shea</strong></td>
                 <td><span class="pill">300ml</span></td>
                 <td class="num-cell">£22.94 <del class="muted">£26.99</del></td>
@@ -374,10 +381,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk omega-rich facial oil | rosehip, chamomile &amp; vitamin e standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Omega-Rich Facial Oil | Rosehip, Chamomile &amp; Vitamin E"
                 data-csv-variant="Standard"
                 data-csv-price="21.25"
@@ -386,7 +395,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="63.75"
                 data-csv-url="https://www.mypure.co.uk/products/omega-rich-facial-oil">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Omega-Rich Facial Oil | Rosehip, Chamomile &amp; Vitamin E</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£21.25 <del class="muted">£25.00</del></td>
@@ -398,10 +407,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds body, hand &amp; hair wash 200ml 200ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Body, Hand &amp; Hair Wash 200ml"
                 data-csv-variant="200ml"
                 data-csv-price="19.8"
@@ -410,7 +421,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="59.4"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-body-hand-hair-wash-200ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Body, Hand &amp; Hair Wash 200ml</strong></td>
                 <td><span class="pill">200ml</span></td>
                 <td class="num-cell">£19.80 <del class="muted">£22.00</del></td>
@@ -422,10 +433,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds skin salvation 120ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation"
                 data-csv-variant="120ml"
                 data-csv-price="19.8"
@@ -434,7 +447,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="59.4"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-skin-salvation-intensive-moisturising-ointment">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation</strong></td>
                 <td><span class="pill">120ml</span></td>
                 <td class="num-cell">£19.80 <del class="muted">£22.00</del></td>
@@ -446,10 +459,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds cooling cream 100ml 100ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Cooling Cream 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="18.9"
@@ -458,7 +473,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="56.7"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-cooling-cream-100ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Cooling Cream 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£18.90 <del class="muted">£21.00</del></td>
@@ -470,10 +485,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk body, hand &amp; hair wash | chamomile, lemongrass &amp; sweet basil standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Body, Hand &amp; Hair Wash | Chamomile, Lemongrass &amp; Sweet Basil"
                 data-csv-variant="Standard"
                 data-csv-price="18.7"
@@ -482,7 +499,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="56.1"
                 data-csv-url="https://www.mypure.co.uk/products/body-hand-hair-wash">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Body, Hand &amp; Hair Wash | Chamomile, Lemongrass &amp; Sweet Basil</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£18.70 <del class="muted">£22.00</del></td>
@@ -494,10 +511,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk cooling cream | menthol, lavender &amp; aloe standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Cooling Cream | Menthol, Lavender &amp; Aloe"
                 data-csv-variant="Standard"
                 data-csv-price="17.85"
@@ -506,7 +525,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="53.55"
                 data-csv-url="https://www.mypure.co.uk/products/cooling-cream">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Cooling Cream | Menthol, Lavender &amp; Aloe</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£17.85 <del class="muted">£21.00</del></td>
@@ -518,10 +537,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="expresschemist.co.uk balmonds scar &amp; stretch mark oil 50ml 50ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Scar &amp; Stretch Mark Oil 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="15.45"
@@ -530,7 +551,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="46.35"
                 data-csv-url="https://www.expresschemist.co.uk/balmonds-rosehip-scar-oil-50ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Scar &amp; Stretch Mark Oil 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£15.45</td>
@@ -542,10 +563,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="FULL_PRICE_OOS"
                 data-avail="oos"
                 data-search="contentbeautywellbeing.com balmonds skin salvation standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation"
                 data-csv-variant="Standard"
                 data-csv-price="15.0"
@@ -554,7 +577,7 @@
                 data-csv-signal="FULL_PRICE_OOS"
                 data-csv-po="45.0"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/balmonds-skin-salvation">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£15.00</td>
@@ -566,10 +589,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds daily moisturiser 100ml 100ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturiser 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="14.4"
@@ -578,7 +603,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="43.2"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-daily-moisturiser-100ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturiser 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£14.40 <del class="muted">£16.00</del></td>
@@ -590,10 +615,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds gentle face wash 125ml 125ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Gentle Face Wash 125ml"
                 data-csv-variant="125ml"
                 data-csv-price="14.4"
@@ -602,7 +629,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="43.2"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-gentle-face-wash-125ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Gentle Face Wash 125ml</strong></td>
                 <td><span class="pill">125ml</span></td>
                 <td class="num-cell">£14.40 <del class="muted">£16.00</del></td>
@@ -614,10 +641,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds omega rich cleansing oil 125ml 125ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Omega Rich Cleansing Oil 125ml"
                 data-csv-variant="125ml"
                 data-csv-price="14.4"
@@ -626,7 +655,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="43.2"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-omega-rich-cleansing-oil-200ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Omega Rich Cleansing Oil 125ml</strong></td>
                 <td><span class="pill">125ml</span></td>
                 <td class="num-cell">£14.40 <del class="muted">£16.00</del></td>
@@ -638,10 +667,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk daily moisturiser | hemp, calendula &amp; shea 100ml"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Daily Moisturiser | Hemp, Calendula &amp; Shea"
                 data-csv-variant="100ml"
                 data-csv-price="13.6"
@@ -650,7 +681,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="40.8"
                 data-csv-url="https://www.mypure.co.uk/products/daily-moisturising-cream">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Daily Moisturiser | Hemp, Calendula &amp; Shea</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£13.60 <del class="muted">£16.00</del></td>
@@ -662,10 +693,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk hair &amp; scalp oil | tea tree, rosemary &amp; nettle standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Hair &amp; Scalp Oil | Tea Tree, Rosemary &amp; Nettle"
                 data-csv-variant="Standard"
                 data-csv-price="13.6"
@@ -674,7 +707,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="40.8"
                 data-csv-url="https://www.mypure.co.uk/products/scalp-oil">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Hair &amp; Scalp Oil | Tea Tree, Rosemary &amp; Nettle</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£13.60 <del class="muted">£16.00</del></td>
@@ -686,10 +719,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk omega rich cleansing oil | rosehip &amp; calendula standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Omega Rich Cleansing Oil | Rosehip &amp; Calendula"
                 data-csv-variant="Standard"
                 data-csv-price="13.6"
@@ -698,7 +733,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="40.8"
                 data-csv-url="https://www.mypure.co.uk/products/omega-rich-cleansing-oil">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Omega Rich Cleansing Oil | Rosehip &amp; Calendula</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£13.60 <del class="muted">£16.00</del></td>
@@ -710,10 +745,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds hydrating body oil 200ml 200ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Hydrating Body Oil 200ml"
                 data-csv-variant="200ml"
                 data-csv-price="13.5"
@@ -722,7 +759,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="40.5"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-hydrating-body-oil-200ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Hydrating Body Oil 200ml</strong></td>
                 <td><span class="pill">200ml</span></td>
                 <td class="num-cell">£13.50 <del class="muted">£15.00</del></td>
@@ -734,10 +771,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds skin salvation 50ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation"
                 data-csv-variant="50ml"
                 data-csv-price="13.5"
@@ -746,7 +785,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="40.5"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-skin-salvation-intensive-moisturising-ointment">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£13.50 <del class="muted">£15.00</del></td>
@@ -758,10 +797,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk hydrating body oil | lavender, chamomile &amp; hemp standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Hydrating Body Oil | Lavender, Chamomile &amp; Hemp"
                 data-csv-variant="Standard"
                 data-csv-price="12.75"
@@ -770,7 +811,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="38.25"
                 data-csv-url="https://www.mypure.co.uk/products/bath-body-emollient-oil">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Hydrating Body Oil | Lavender, Chamomile &amp; Hemp</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£12.75 <del class="muted">£15.00</del></td>
@@ -782,10 +823,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk skin salvation 50ml"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Skin Salvation"
                 data-csv-variant="50ml"
                 data-csv-price="12.75"
@@ -794,7 +837,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="38.25"
                 data-csv-url="https://www.mypure.co.uk/products/skin-salvation">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Skin Salvation</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£12.75 <del class="muted">£15.00</del></td>
@@ -806,10 +849,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="onlynaturals.co.uk balmonds skin salvation 30ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation"
                 data-csv-variant="30ml"
                 data-csv-price="8.1"
@@ -818,7 +863,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="24.3"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-skin-salvation-intensive-moisturising-ointment">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£8.10 <del class="muted">£9.00</del></td>
@@ -830,10 +875,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk skin salvation 30ml"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Skin Salvation"
                 data-csv-variant="30ml"
                 data-csv-price="7.65"
@@ -842,7 +889,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="22.95"
                 data-csv-url="https://www.mypure.co.uk/products/skin-salvation">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Skin Salvation</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£7.65 <del class="muted">£9.00</del></td>
@@ -854,10 +901,12 @@
         
             <tr class="sku-row row-oos"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="CLEARANCE_OOS"
                 data-avail="oos"
                 data-search="mypure.co.uk tea tree balm | tea tree &amp; safflower standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Tea Tree Balm | Tea Tree &amp; Safflower"
                 data-csv-variant="Standard"
                 data-csv-price="3.95"
@@ -866,7 +915,7 @@
                 data-csv-signal="CLEARANCE_OOS"
                 data-csv-po="11.85"
                 data-csv-url="https://www.mypure.co.uk/products/tea-tree-balm">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Tea Tree Balm | Tea Tree &amp; Safflower</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£3.95 <del class="muted">£4.65</del></td>
@@ -878,10 +927,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="baldwins.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="baldwins.co.uk balmonds skin salvation moisturising salve balmonds skin salvation moisturising salve 30ml"
                 data-csv-store="baldwins.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation Moisturising Salve"
                 data-csv-variant="Balmonds Skin Salvation Moisturising Salve 30ml"
                 data-csv-price="8.33"
@@ -890,7 +941,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.baldwins.co.uk/products/balmonds-skin-salvation-moisturising-salve">
-                <td class="font-mono store-cell">baldwins.co.uk</td>
+                <td class="font-mono store-cell">baldwins.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation Moisturising Salve</strong></td>
                 <td><span class="pill">Balmonds Skin Salvation Moisturising Salve 30ml</span></td>
                 <td class="num-cell">£8.33</td>
@@ -902,10 +953,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds bath &amp; body oil standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Bath &amp; Body Oil"
                 data-csv-variant="Standard"
                 data-csv-price="15.45"
@@ -914,7 +967,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-bath-body-oil/blmbbemoil.aspx?productid=blmbbemoil">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Bath &amp; Body Oil</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£15.45</td>
@@ -926,10 +979,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds body, hand &amp; hair wash standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Body, Hand &amp; Hair Wash"
                 data-csv-variant="Standard"
                 data-csv-price="22.65"
@@ -938,7 +993,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-body-hand-hair-wash/blmshmpbdywsh.aspx?productid=blmshmpbdywsh">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Body, Hand &amp; Hair Wash</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£22.65</td>
@@ -950,10 +1005,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds cooling cream standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Cooling Cream"
                 data-csv-variant="Standard"
                 data-csv-price="21.65"
@@ -962,7 +1019,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-cooling-cream/blmcoolcrm.aspx?productid=blmcoolcrm">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Cooling Cream</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£21.65</td>
@@ -974,10 +1031,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds daily moisturising cream 100ml 100ml"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturising Cream 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="16.5"
@@ -986,7 +1045,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-daily-moisturising-cream-100ml/blmdaycrm100ml.aspx?productid=blmdaycrm100ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturising Cream 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£16.50</td>
@@ -998,10 +1057,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds daily moisturising cream 300ml 300ml"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturising Cream 300ml"
                 data-csv-variant="300ml"
                 data-csv-price="29.85"
@@ -1010,7 +1071,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-daily-moisturising-cream-300ml/blmdaycrm300ml.aspx?productid=blmdaycrm300ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturising Cream 300ml</strong></td>
                 <td><span class="pill">300ml</span></td>
                 <td class="num-cell">£29.85</td>
@@ -1022,10 +1083,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds face the day spf30 sunscreen standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Face the Day SPF30 Sunscreen"
                 data-csv-variant="Standard"
                 data-csv-price="25.0"
@@ -1034,7 +1097,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-face-the-day-spf30-sunscreen/blmfcdayspf30.aspx?productid=blmfcdayspf30">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Face the Day SPF30 Sunscreen</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£25.00</td>
@@ -1046,10 +1109,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds gentle face wash standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Gentle Face Wash"
                 data-csv-variant="Standard"
                 data-csv-price="16.0"
@@ -1058,7 +1123,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-gentle-face-wash/blmfcwsh125ml.aspx?productid=blmfcwsh125ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Gentle Face Wash</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£16.00</td>
@@ -1070,10 +1135,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds intensive facial oil standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Facial Oil"
                 data-csv-variant="Standard"
                 data-csv-price="25.75"
@@ -1082,7 +1149,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-intensive-facial-oil/blmfcloil.aspx?productid=blmfcloil">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Facial Oil</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£25.75</td>
@@ -1094,10 +1161,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds intensive hand cream 50ml 50ml"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Hand Cream 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="12.35"
@@ -1106,7 +1175,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-intensive-hand-cream-50ml/blmhndcrm50ml.aspx?productid=blmhndcrm50ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Hand Cream 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£12.35</td>
@@ -1118,10 +1187,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds omega rich cleansing oil standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Omega Rich Cleansing Oil"
                 data-csv-variant="Standard"
                 data-csv-price="16.5"
@@ -1130,7 +1201,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-omega-rich-cleansing-oil/blmclnsoil.aspx?productid=blmclnsoil">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Omega Rich Cleansing Oil</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£16.50</td>
@@ -1142,10 +1213,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds scalp oil standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Scalp Oil"
                 data-csv-variant="Standard"
                 data-csv-price="16.5"
@@ -1154,7 +1227,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-scalp-oil/blmsclpoil.aspx?productid=blmsclpoil">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Scalp Oil</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£16.50</td>
@@ -1166,10 +1239,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds skin salvation 120ml 120ml"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 120ml"
                 data-csv-variant="120ml"
                 data-csv-price="22.65"
@@ -1178,7 +1253,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-skin-salvation-120ml/blmsknslvtn120ml.aspx?productid=blmsknslvtn120ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 120ml</strong></td>
                 <td><span class="pill">120ml</span></td>
                 <td class="num-cell">£22.65</td>
@@ -1190,10 +1265,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds skin salvation 30ml 30ml"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="9.25"
@@ -1202,7 +1279,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-skin-salvation-30ml/blmsknslvtn30ml.aspx?productid=blmsknslvtn30ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£9.25</td>
@@ -1214,10 +1291,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds skin salvation 50ml 50ml"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="15.0"
@@ -1226,7 +1305,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-skin-salvation-50ml/blmsknslvtn50ml.aspx?productid=blmsknslvtn50ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£15.00</td>
@@ -1238,10 +1317,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds super 7 serum standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Super 7 Serum"
                 data-csv-variant="Standard"
                 data-csv-price="20.0"
@@ -1250,7 +1331,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-super-7-serum/blm7srm30ml.aspx?productid=blm7srm30ml">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Super 7 Serum</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£20.00</td>
@@ -1262,10 +1343,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="biggreensmile.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="biggreensmile.com balmonds top to toe spf30 sunscreen standard"
                 data-csv-store="biggreensmile.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Top to Toe SPF30 Sunscreen"
                 data-csv-variant="Standard"
                 data-csv-price="28.0"
@@ -1274,7 +1357,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.biggreensmile.com/products/balmonds-top-to-toe-spf30-sunscreen/blmtoptoespf30.aspx?productid=blmtoptoespf30">
-                <td class="font-mono store-cell">biggreensmile.com</td>
+                <td class="font-mono store-cell">biggreensmile.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Top to Toe SPF30 Sunscreen</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£28.00</td>
@@ -1286,10 +1369,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds body, hand &amp; hair wash - 200ml 200ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Body, Hand &amp; Hair Wash - 200ml"
                 data-csv-variant="200ml"
                 data-csv-price="30.8"
@@ -1298,7 +1383,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/bath-and-shower-c73/body-wash-and-shower-gel-c74/balmonds-body-hand-hair-wash-200ml-p6999">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Body, Hand &amp; Hair Wash - 200ml</strong></td>
                 <td><span class="pill">200ml</span></td>
                 <td class="num-cell">£30.80</td>
@@ -1310,10 +1395,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds cooling cream - 100ml 100ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Cooling Cream - 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="29.4"
@@ -1322,7 +1409,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-moisturisers-c64/balmonds-cooling-cream-100ml-p6993">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Cooling Cream - 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£29.40</td>
@@ -1334,10 +1421,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds daily moisturiser - 100ml 100ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturiser - 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="22.4"
@@ -1346,7 +1435,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-moisturisers-c64/balmonds-daily-moisturiser-100ml-p6994">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturiser - 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£22.40</td>
@@ -1358,10 +1447,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds daily moisturiser - 300ml 300ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturiser - 300ml"
                 data-csv-variant="300ml"
                 data-csv-price="37.79"
@@ -1370,7 +1461,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-moisturisers-c64/balmonds-daily-moisturiser-300ml-p6995">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturiser - 300ml</strong></td>
                 <td><span class="pill">300ml</span></td>
                 <td class="num-cell">£37.79</td>
@@ -1382,10 +1473,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds face the day spf30 - 50ml 50ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Face the Day SPF30 - 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="35.0"
@@ -1394,7 +1487,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/sun-care-and-travel-c8/sun-protection-c215/balmonds-face-the-day-spf30-50ml-p8731">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Face the Day SPF30 - 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£35.00</td>
@@ -1406,10 +1499,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds gentle face wash - 125ml 125ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Gentle Face Wash - 125ml"
                 data-csv-variant="125ml"
                 data-csv-price="22.4"
@@ -1418,7 +1513,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/face-care-c2/face-washes-c188/balmonds-gentle-face-wash-125ml-p8024">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Gentle Face Wash - 125ml</strong></td>
                 <td><span class="pill">125ml</span></td>
                 <td class="num-cell">£22.40</td>
@@ -1430,10 +1525,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds hair &amp; scalp oil - 50ml 50ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Hair &amp; Scalp Oil - 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="19.04"
@@ -1442,7 +1539,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/hair-care-c59/hair-oils-c550/balmonds-hair-scalp-oil-50ml-p7001">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Hair &amp; Scalp Oil - 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£19.04 <del class="muted">£22.40</del></td>
@@ -1454,10 +1551,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds hydrating body oil - 200ml 200ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Hydrating Body Oil - 200ml"
                 data-csv-variant="200ml"
                 data-csv-price="21.0"
@@ -1466,7 +1565,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-oils-c77/balmonds-hydrating-body-oil-200ml-p6992">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Hydrating Body Oil - 200ml</strong></td>
                 <td><span class="pill">200ml</span></td>
                 <td class="num-cell">£21.00</td>
@@ -1478,10 +1577,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds intensive hand cream - 100ml 100ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Hand Cream - 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="26.59"
@@ -1490,7 +1591,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/hands-feet-and-nails-c222/hand-creams-c235/balmonds-intensive-hand-cream-100ml-p6998">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Hand Cream - 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£26.59</td>
@@ -1502,10 +1603,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds intensive hand cream - 50ml 50ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Hand Cream - 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="16.8"
@@ -1514,7 +1617,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/hands-feet-and-nails-c222/hand-creams-c235/balmonds-intensive-hand-cream-50ml-p6997">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Hand Cream - 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£16.80</td>
@@ -1526,10 +1629,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds omega-rich cleansing oil - 125ml 125ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Omega-Rich Cleansing Oil - 125ml"
                 data-csv-variant="125ml"
                 data-csv-price="22.4"
@@ -1538,7 +1643,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/face-care-c2/cleansers-c4/balmonds-omega-rich-cleansing-oil-125ml-p7000">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Omega-Rich Cleansing Oil - 125ml</strong></td>
                 <td><span class="pill">125ml</span></td>
                 <td class="num-cell">£22.40</td>
@@ -1550,10 +1655,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds omega-rich facial oil - 30ml 30ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Omega-Rich Facial Oil - 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="35.0"
@@ -1562,7 +1669,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/face-care-c2/face-oils-c3/balmonds-omega-rich-facial-oil-30ml-p6996">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Omega-Rich Facial Oil - 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£35.00</td>
@@ -1574,10 +1681,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds scar &amp; stretch mark oil - 50ml 50ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Scar &amp; Stretch Mark Oil - 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="28.0"
@@ -1586,7 +1695,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-oils-c77/balmonds-scar-stretch-mark-oil-50ml-p7002">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Scar &amp; Stretch Mark Oil - 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£28.00</td>
@@ -1598,10 +1707,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds skin salvation - 120ml 120ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation - 120ml"
                 data-csv-variant="120ml"
                 data-csv-price="30.8"
@@ -1610,7 +1721,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-moisturisers-c64/balmonds-skin-salvation-120ml-p7005">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation - 120ml</strong></td>
                 <td><span class="pill">120ml</span></td>
                 <td class="num-cell">£30.80</td>
@@ -1622,10 +1733,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds skin salvation - 30ml 30ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation - 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="12.6"
@@ -1634,7 +1747,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-moisturisers-c64/balmonds-skin-salvation-30ml-p7003">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation - 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£12.60</td>
@@ -1646,10 +1759,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds skin salvation - 50ml 50ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation - 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="21.0"
@@ -1658,7 +1773,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/body-care-c36/body-moisturisers-c64/balmonds-skin-salvation-50ml-p7004">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation - 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£21.00</td>
@@ -1670,10 +1785,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds super 7 serum - 30ml 30ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Super 7 Serum - 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="28.0"
@@ -1682,7 +1799,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/face-care-c2/serums-c184/balmonds-super-7-serum-30ml-p8023">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Super 7 Serum - 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£28.00</td>
@@ -1694,10 +1811,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds tea tree balm - 15ml 15ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Tea Tree Balm - 15ml"
                 data-csv-variant="15ml"
                 data-csv-price="6.51"
@@ -1706,7 +1825,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/house-home-c66/first-aid-and-safety-c67/balms-gels-and-massage-oils-c68/balmonds-tea-tree-balm-15ml-p7006">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Tea Tree Balm - 15ml</strong></td>
                 <td><span class="pill">15ml</span></td>
                 <td class="num-cell">£6.51</td>
@@ -1718,10 +1837,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="bodykind.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="bodykind.com balmonds top-to-toe spf30 - 100ml 100ml"
                 data-csv-store="bodykind.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Top-to-Toe SPF30 - 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="39.2"
@@ -1730,7 +1851,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.bodykind.com/beauty-c1/sun-care-and-travel-c8/sun-protection-c215/balmonds-top-to-toe-spf30-100ml-p8732">
-                <td class="font-mono store-cell">bodykind.com</td>
+                <td class="font-mono store-cell">bodykind.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Top-to-Toe SPF30 - 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£39.20</td>
@@ -1742,10 +1863,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="contentbeautywellbeing.com balmonds hair &amp; scalp oil standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Hair &amp; Scalp Oil"
                 data-csv-variant="Standard"
                 data-csv-price="16.0"
@@ -1754,7 +1877,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/balmonds-hair-scalp-oil">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Hair &amp; Scalp Oil</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£16.00</td>
@@ -1766,10 +1889,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="contentbeautywellbeing.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="contentbeautywellbeing.com balmonds scar &amp; stretch mark oil standard"
                 data-csv-store="contentbeautywellbeing.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Scar &amp; Stretch Mark Oil"
                 data-csv-variant="Standard"
                 data-csv-price="20.0"
@@ -1778,7 +1903,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.contentbeautywellbeing.com/products/balmonds-scar-stretch-mark-oil">
-                <td class="font-mono store-cell">contentbeautywellbeing.com</td>
+                <td class="font-mono store-cell">contentbeautywellbeing.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Scar &amp; Stretch Mark Oil</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£20.00</td>
@@ -1790,10 +1915,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="dulwichhealth.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="dulwichhealth.co.uk balmonds scar &amp; stretch mark oil 50ml 50ml"
                 data-csv-store="dulwichhealth.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Scar &amp; Stretch Mark Oil 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="16.63"
@@ -1802,7 +1929,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://dulwichhealth.co.uk/products/balmonds-scar-stretch-mark-oil-50ml">
-                <td class="font-mono store-cell">dulwichhealth.co.uk</td>
+                <td class="font-mono store-cell">dulwichhealth.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Scar &amp; Stretch Mark Oil 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£16.63</td>
@@ -1814,10 +1941,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="dulwichhealth.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="dulwichhealth.co.uk balmonds skin salvation 50ml 50ml"
                 data-csv-store="dulwichhealth.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="12.46"
@@ -1826,7 +1955,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://dulwichhealth.co.uk/products/balmonds-skin-salvation-50ml">
-                <td class="font-mono store-cell">dulwichhealth.co.uk</td>
+                <td class="font-mono store-cell">dulwichhealth.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£12.46</td>
@@ -1838,10 +1967,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="dulwichhealth.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="dulwichhealth.co.uk balmonds super 7 serum 30ml 30ml"
                 data-csv-store="dulwichhealth.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Super 7 Serum 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="16.63"
@@ -1850,7 +1981,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://dulwichhealth.co.uk/products/balmonds-super-7-serum-30ml">
-                <td class="font-mono store-cell">dulwichhealth.co.uk</td>
+                <td class="font-mono store-cell">dulwichhealth.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Super 7 Serum 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£16.63</td>
@@ -1862,10 +1993,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="dulwichhealth.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="dulwichhealth.co.uk balmonds tea tree balm 15ml 15ml"
                 data-csv-store="dulwichhealth.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Tea Tree Balm 15ml"
                 data-csv-variant="15ml"
                 data-csv-price="4.96"
@@ -1874,7 +2007,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://dulwichhealth.co.uk/products/balmonds-tea-tree-balm-15ml">
-                <td class="font-mono store-cell">dulwichhealth.co.uk</td>
+                <td class="font-mono store-cell">dulwichhealth.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Tea Tree Balm 15ml</strong></td>
                 <td><span class="pill">15ml</span></td>
                 <td class="num-cell">£4.96</td>
@@ -1886,10 +2019,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds bath and body oil 200ml 200ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Bath and Body Oil 200ml"
                 data-csv-variant="200ml"
                 data-csv-price="18.99"
@@ -1898,7 +2033,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/purepotions-skin-salvation-bath-oil-200ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Bath and Body Oil 200ml</strong></td>
                 <td><span class="pill">200ml</span></td>
                 <td class="num-cell">£18.99</td>
@@ -1910,10 +2045,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds daily moisturising cream 100ml 100ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturising Cream 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="19.59"
@@ -1922,7 +2059,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/balmonds-daily-moisturising-cream-100ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturising Cream 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£19.59</td>
@@ -1934,10 +2071,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds daily moisturising cream 300ml 300ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturising Cream 300ml"
                 data-csv-variant="300ml"
                 data-csv-price="32.99"
@@ -1946,7 +2085,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/balmonds-daily-moisturising-cream-300ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturising Cream 300ml</strong></td>
                 <td><span class="pill">300ml</span></td>
                 <td class="num-cell">£32.99</td>
@@ -1958,10 +2097,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds gentle face wash 125ml 125ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Gentle Face Wash 125ml"
                 data-csv-variant="125ml"
                 data-csv-price="21.0"
@@ -1970,7 +2111,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/balmonds-gentle-face-wash-125ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Gentle Face Wash 125ml</strong></td>
                 <td><span class="pill">125ml</span></td>
                 <td class="num-cell">£21.00</td>
@@ -1982,10 +2123,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds hair &amp; scalp oil 50ml 50ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Hair &amp; Scalp Oil 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="20.25"
@@ -1994,7 +2137,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/balmonds-scalp-oil-with-borage-and-rosemary-50ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Hair &amp; Scalp Oil 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£20.25</td>
@@ -2006,10 +2149,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds intensive hand cream 50ml 50ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Hand Cream 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="8.95"
@@ -2018,7 +2163,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/purepotions-skin-salvation-intensive-hand-cream-50ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Hand Cream 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£8.95</td>
@@ -2030,10 +2175,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds natural shampoo and body wash 200ml 200ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Natural Shampoo And Body Wash 200ml"
                 data-csv-variant="200ml"
                 data-csv-price="17.85"
@@ -2042,7 +2189,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/balmonds-natural-shampoo-and-body-wash-200ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Natural Shampoo And Body Wash 200ml</strong></td>
                 <td><span class="pill">200ml</span></td>
                 <td class="num-cell">£17.85</td>
@@ -2054,10 +2201,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds skin salvation 50ml 50ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="19.0"
@@ -2066,7 +2215,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/balmonds-skin-salvation-50ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£19.00</td>
@@ -2078,10 +2227,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds skin salvation intensive moisturising ointment 120ml 120ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation Intensive Moisturising Ointment 120ml"
                 data-csv-variant="120ml"
                 data-csv-price="16.65"
@@ -2090,7 +2241,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/purepotions-skin-salvation-moisturising-ointment-120ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation Intensive Moisturising Ointment 120ml</strong></td>
                 <td><span class="pill">120ml</span></td>
                 <td class="num-cell">£16.65</td>
@@ -2102,10 +2253,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds skin salvation moisturising ointment 30ml 30ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation Moisturising Ointment 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="6.85"
@@ -2114,7 +2267,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/purepotions-skin-salvation-moisturising-ointment-30ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation Moisturising Ointment 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£6.85</td>
@@ -2126,10 +2279,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="expresschemist.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="expresschemist.co.uk balmonds tea tree rescue salve 15ml 15ml"
                 data-csv-store="expresschemist.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Tea Tree Rescue Salve 15ml"
                 data-csv-variant="15ml"
                 data-csv-price="4.75"
@@ -2138,7 +2293,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.expresschemist.co.uk/purepotions-tea-tree-rescue-salve-15ml.html">
-                <td class="font-mono store-cell">expresschemist.co.uk</td>
+                <td class="font-mono store-cell">expresschemist.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Tea Tree Rescue Salve 15ml</strong></td>
                 <td><span class="pill">15ml</span></td>
                 <td class="num-cell">£4.75</td>
@@ -2150,10 +2305,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="johnandginger.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="johnandginger.co.uk balmonds standard"
                 data-csv-store="johnandginger.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="BALMONDS"
                 data-csv-variant="Standard"
                 data-csv-price=""
@@ -2162,7 +2319,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.johnandginger.co.uk/brands/balmonds.html">
-                <td class="font-mono store-cell">johnandginger.co.uk</td>
+                <td class="font-mono store-cell">johnandginger.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>BALMONDS</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">—</td>
@@ -2174,10 +2331,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="johnandginger.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="johnandginger.co.uk balmonds skin salvation 120ml 120ml"
                 data-csv-store="johnandginger.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 120ml"
                 data-csv-variant="120ml"
                 data-csv-price="22.0"
@@ -2186,7 +2345,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.johnandginger.co.uk/balmonds-skin-salvation-120ml.html">
-                <td class="font-mono store-cell">johnandginger.co.uk</td>
+                <td class="font-mono store-cell">johnandginger.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 120ml</strong></td>
                 <td><span class="pill">120ml</span></td>
                 <td class="num-cell">£22.00</td>
@@ -2198,10 +2357,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="johnandginger.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="johnandginger.co.uk next product standard"
                 data-csv-store="johnandginger.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Next product"
                 data-csv-variant="Standard"
                 data-csv-price=""
@@ -2210,7 +2371,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.johnandginger.co.uk/balmonds-skin-salvation.html">
-                <td class="font-mono store-cell">johnandginger.co.uk</td>
+                <td class="font-mono store-cell">johnandginger.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Next product</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">—</td>
@@ -2222,10 +2383,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="johnandginger.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="johnandginger.co.uk balmonds-gentle-face-wash.html standard"
                 data-csv-store="johnandginger.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="balmonds-gentle-face-wash.html"
                 data-csv-variant="Standard"
                 data-csv-price=""
@@ -2234,7 +2397,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.johnandginger.co.uk/balmonds-gentle-face-wash.html">
-                <td class="font-mono store-cell">johnandginger.co.uk</td>
+                <td class="font-mono store-cell">johnandginger.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>balmonds-gentle-face-wash.html</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">—</td>
@@ -2246,10 +2409,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="johnandginger.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="johnandginger.co.uk balmonds-hair-and-scalp-oil.html standard"
                 data-csv-store="johnandginger.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="balmonds-hair-and-scalp-oil.html"
                 data-csv-variant="Standard"
                 data-csv-price=""
@@ -2258,7 +2423,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.johnandginger.co.uk/balmonds-hair-and-scalp-oil.html">
-                <td class="font-mono store-cell">johnandginger.co.uk</td>
+                <td class="font-mono store-cell">johnandginger.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>balmonds-hair-and-scalp-oil.html</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">—</td>
@@ -2270,10 +2435,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="johnandginger.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="johnandginger.co.uk balmonds-scar-and-stretch-mark-oil.html standard"
                 data-csv-store="johnandginger.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="balmonds-scar-and-stretch-mark-oil.html"
                 data-csv-variant="Standard"
                 data-csv-price=""
@@ -2282,7 +2449,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.johnandginger.co.uk/balmonds-scar-and-stretch-mark-oil.html">
-                <td class="font-mono store-cell">johnandginger.co.uk</td>
+                <td class="font-mono store-cell">johnandginger.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>balmonds-scar-and-stretch-mark-oil.html</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">—</td>
@@ -2294,10 +2461,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk face the day spf30 sunscreen standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Face The Day SPF30 Sunscreen"
                 data-csv-variant="Standard"
                 data-csv-price="21.25"
@@ -2306,7 +2475,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/face-the-day-spf30-sunscreen">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Face The Day SPF30 Sunscreen</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£21.25 <del class="muted">£25.00</del></td>
@@ -2318,10 +2487,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk gentle face wash | rosehip &amp; sea buckthorn standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Gentle Face Wash | Rosehip &amp; Sea Buckthorn"
                 data-csv-variant="Standard"
                 data-csv-price="13.6"
@@ -2330,7 +2501,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/gentle-face-wash">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Gentle Face Wash | Rosehip &amp; Sea Buckthorn</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£13.60 <del class="muted">£16.00</del></td>
@@ -2342,10 +2513,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk intensive hand cream | calendula, sea buckthorn &amp; hemp 50ml"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Intensive Hand Cream | Calendula, Sea Buckthorn &amp; Hemp"
                 data-csv-variant="50ml"
                 data-csv-price="10.2"
@@ -2354,7 +2527,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/intensive-hand-cream">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Intensive Hand Cream | Calendula, Sea Buckthorn &amp; Hemp</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£10.20 <del class="muted">£12.00</del></td>
@@ -2366,10 +2539,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk intensive hand cream | calendula, sea buckthorn &amp; hemp 100ml"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Intensive Hand Cream | Calendula, Sea Buckthorn &amp; Hemp"
                 data-csv-variant="100ml"
                 data-csv-price="16.14"
@@ -2378,7 +2553,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/intensive-hand-cream">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Intensive Hand Cream | Calendula, Sea Buckthorn &amp; Hemp</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£16.14 <del class="muted">£18.99</del></td>
@@ -2390,10 +2565,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk scar &amp; stretch mark oil | rosehip, sea buckthorn &amp; chamomile standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Scar &amp; Stretch Mark Oil | Rosehip, Sea Buckthorn &amp; Chamomile"
                 data-csv-variant="Standard"
                 data-csv-price="17.0"
@@ -2402,7 +2579,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/rosehip-scar-oil">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Scar &amp; Stretch Mark Oil | Rosehip, Sea Buckthorn &amp; Chamomile</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£17.00 <del class="muted">£20.00</del></td>
@@ -2414,10 +2591,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk skin salvation 120ml"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Skin Salvation"
                 data-csv-variant="120ml"
                 data-csv-price="18.7"
@@ -2426,7 +2605,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/skin-salvation">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Skin Salvation</strong></td>
                 <td><span class="pill">120ml</span></td>
                 <td class="num-cell">£18.70 <del class="muted">£22.00</del></td>
@@ -2438,10 +2617,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk super 7 serum | niacinamide, sea buckthorn &amp; rosehip standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Super 7 Serum | Niacinamide, Sea Buckthorn &amp; Rosehip"
                 data-csv-variant="Standard"
                 data-csv-price="17.0"
@@ -2450,7 +2631,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/super-7-serum">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Super 7 Serum | Niacinamide, Sea Buckthorn &amp; Rosehip</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£17.00 <del class="muted">£20.00</del></td>
@@ -2462,10 +2643,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="mypure.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="mypure.co.uk top-to-toe spf30 sunscreen standard"
                 data-csv-store="mypure.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Top-To-Toe SPF30 Sunscreen"
                 data-csv-variant="Standard"
                 data-csv-price="23.8"
@@ -2474,7 +2657,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.mypure.co.uk/products/top-to-toe-spf30-sunscreen">
-                <td class="font-mono store-cell">mypure.co.uk</td>
+                <td class="font-mono store-cell">mypure.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Top-To-Toe SPF30 Sunscreen</strong></td>
                 <td><span class="pill">Standard</span></td>
                 <td class="num-cell">£23.80 <del class="muted">£28.00</del></td>
@@ -2486,10 +2669,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="onlynaturals.co.uk balmonds hair &amp; scalp oil 50ml 50ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Hair &amp; Scalp Oil 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="14.4"
@@ -2498,7 +2683,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-hair-and-scalp-oil-50ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Hair &amp; Scalp Oil 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£14.40 <del class="muted">£16.00</del></td>
@@ -2510,10 +2695,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="onlynaturals.co.uk balmonds intensive hand cream 50ml 50ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Hand Cream 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="10.8"
@@ -2522,7 +2709,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-intensive-hand-cream-50ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Hand Cream 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£10.80 <del class="muted">£12.00</del></td>
@@ -2534,10 +2721,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="onlynaturals.co.uk balmonds omega rich facial oil 30ml 30ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Omega Rich Facial Oil 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="22.5"
@@ -2546,7 +2735,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-omega-rich-facial-oil-30ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Omega Rich Facial Oil 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£22.50 <del class="muted">£25.00</del></td>
@@ -2558,10 +2747,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="onlynaturals.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="onlynaturals.co.uk balmonds super 7 serum 30ml 30ml"
                 data-csv-store="onlynaturals.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Super 7 Serum 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="18.0"
@@ -2570,7 +2761,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://onlynaturals.co.uk/products/balmonds-super-7-serum-30ml">
-                <td class="font-mono store-cell">onlynaturals.co.uk</td>
+                <td class="font-mono store-cell">onlynaturals.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Super 7 Serum 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£18.00 <del class="muted">£20.00</del></td>
@@ -2582,10 +2773,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com balmonds body hand &amp; hair wash 200ml 47419"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Body Hand &amp; Hair Wash 200ml"
                 data-csv-variant="47419"
                 data-csv-price="19.0"
@@ -2594,7 +2787,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/balmonds-body-hand-hair-wash-200ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Body Hand &amp; Hair Wash 200ml</strong></td>
                 <td><span class="pill">47419</span></td>
                 <td class="num-cell">£19.00</td>
@@ -2606,10 +2799,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com balmonds daily moisturiser 100ml 47418"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturiser 100ml"
                 data-csv-variant="47418"
                 data-csv-price="16.0"
@@ -2618,7 +2813,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/balmonds-daily-moisturiser-100ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturiser 100ml</strong></td>
                 <td><span class="pill">47418</span></td>
                 <td class="num-cell">£16.00</td>
@@ -2630,10 +2825,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com balmonds gentle face wash 125ml 47417"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Gentle Face Wash 125ml"
                 data-csv-variant="47417"
                 data-csv-price="16.0"
@@ -2642,7 +2839,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/balmonds-gentle-face-wash-125ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Gentle Face Wash 125ml</strong></td>
                 <td><span class="pill">47417</span></td>
                 <td class="num-cell">£16.00</td>
@@ -2654,10 +2851,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com balmonds intensive hand cream 50ml 47420"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Hand Cream 50ml"
                 data-csv-variant="47420"
                 data-csv-price="12.0"
@@ -2666,7 +2865,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/balmonds-intensive-hand-cream-50ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Hand Cream 50ml</strong></td>
                 <td><span class="pill">47420</span></td>
                 <td class="num-cell">£12.00</td>
@@ -2678,10 +2877,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com balmonds skin salvation 120ml 47415"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 120ml"
                 data-csv-variant="47415"
                 data-csv-price="22.0"
@@ -2690,7 +2891,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/balmonds-skin-salvation-120ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 120ml</strong></td>
                 <td><span class="pill">47415</span></td>
                 <td class="num-cell">£22.00</td>
@@ -2702,10 +2903,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="planetorganic.com"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="planetorganic.com balmonds skin salvation 50ml 47416"
                 data-csv-store="planetorganic.com"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 50ml"
                 data-csv-variant="47416"
                 data-csv-price="15.0"
@@ -2714,7 +2917,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://www.planetorganic.com/products/balmonds-skin-salvation-50ml">
-                <td class="font-mono store-cell">planetorganic.com</td>
+                <td class="font-mono store-cell">planetorganic.com <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 50ml</strong></td>
                 <td><span class="pill">47416</span></td>
                 <td class="num-cell">£15.00</td>
@@ -2726,10 +2929,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="quickvit.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="quickvit.co.uk balmonds body hand &amp; hair wash 200ml 200ml"
                 data-csv-store="quickvit.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Body Hand &amp; Hair Wash 200ml"
                 data-csv-variant="200ml"
                 data-csv-price="21.08"
@@ -2738,7 +2943,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://quickvit.co.uk/products/body-hand-hair-wash-200ml">
-                <td class="font-mono store-cell">quickvit.co.uk</td>
+                <td class="font-mono store-cell">quickvit.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Body Hand &amp; Hair Wash 200ml</strong></td>
                 <td><span class="pill">200ml</span></td>
                 <td class="num-cell">£21.08</td>
@@ -2750,10 +2955,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="quickvit.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="quickvit.co.uk balmonds daily moisturiser 100ml 100ml"
                 data-csv-store="quickvit.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Daily Moisturiser 100ml"
                 data-csv-variant="100ml"
                 data-csv-price="15.58"
@@ -2762,7 +2969,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://quickvit.co.uk/products/daily-moisturiser-100ml">
-                <td class="font-mono store-cell">quickvit.co.uk</td>
+                <td class="font-mono store-cell">quickvit.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Daily Moisturiser 100ml</strong></td>
                 <td><span class="pill">100ml</span></td>
                 <td class="num-cell">£15.58</td>
@@ -2774,10 +2981,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="quickvit.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="quickvit.co.uk balmonds hair &amp; scalp oil 50ml 50ml"
                 data-csv-store="quickvit.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Hair &amp; Scalp Oil 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="15.58"
@@ -2786,7 +2995,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://quickvit.co.uk/products/hair-scalp-oil-50ml">
-                <td class="font-mono store-cell">quickvit.co.uk</td>
+                <td class="font-mono store-cell">quickvit.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Hair &amp; Scalp Oil 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£15.58</td>
@@ -2798,10 +3007,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="quickvit.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="quickvit.co.uk balmonds intensive hand cream 50ml 50ml"
                 data-csv-store="quickvit.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Intensive Hand Cream 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="11.91"
@@ -2810,7 +3021,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://quickvit.co.uk/products/intensive-hand-cream-50ml">
-                <td class="font-mono store-cell">quickvit.co.uk</td>
+                <td class="font-mono store-cell">quickvit.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Intensive Hand Cream 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£11.91</td>
@@ -2822,10 +3033,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="quickvit.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="quickvit.co.uk balmonds skin salvation 120ml 120ml"
                 data-csv-store="quickvit.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 120ml"
                 data-csv-variant="120ml"
                 data-csv-price="21.08"
@@ -2834,7 +3047,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://quickvit.co.uk/products/balmonds-skin-salvation">
-                <td class="font-mono store-cell">quickvit.co.uk</td>
+                <td class="font-mono store-cell">quickvit.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 120ml</strong></td>
                 <td><span class="pill">120ml</span></td>
                 <td class="num-cell">£21.08</td>
@@ -2846,10 +3059,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="quickvit.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="quickvit.co.uk balmonds skin salvation 30ml 30ml"
                 data-csv-store="quickvit.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 30ml"
                 data-csv-variant="30ml"
                 data-csv-price="9.16"
@@ -2858,7 +3073,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://quickvit.co.uk/products/balmonds-skin-salvation-1">
-                <td class="font-mono store-cell">quickvit.co.uk</td>
+                <td class="font-mono store-cell">quickvit.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 30ml</strong></td>
                 <td><span class="pill">30ml</span></td>
                 <td class="num-cell">£9.16</td>
@@ -2870,10 +3085,12 @@
         
             <tr class="sku-row row-instock"
                 data-store="quickvit.co.uk"
+                data-tier="TIER_2"
                 data-signal="IN_STOCK"
                 data-avail="in"
                 data-search="quickvit.co.uk balmonds skin salvation 50ml 50ml"
                 data-csv-store="quickvit.co.uk"
+                data-csv-tier="Tier 2 (Independent Stockist)"
                 data-csv-product="Balmonds Skin Salvation 50ml"
                 data-csv-variant="50ml"
                 data-csv-price="14.66"
@@ -2882,7 +3099,7 @@
                 data-csv-signal="IN_STOCK"
                 data-csv-po="0"
                 data-csv-url="https://quickvit.co.uk/products/skin-salvation-50ml">
-                <td class="font-mono store-cell">quickvit.co.uk</td>
+                <td class="font-mono store-cell">quickvit.co.uk <span class="platform-tag">Tier 2 Independent</span></td>
                 <td class="product-cell"><strong>Balmonds Skin Salvation 50ml</strong></td>
                 <td><span class="pill">50ml</span></td>
                 <td class="num-cell">£14.66</td>
@@ -3486,24 +3703,27 @@ function switchTab(tabId, btn) {
 }
 
 function applyFilters() {
+  const tierVal = document.getElementById('filterTier').value;
   const storeVal = document.getElementById('filterStore').value;
   const sigVal = document.getElementById('filterSignal').value;
   const q = document.getElementById('filterSearch').value.trim().toLowerCase();
   let shown = 0;
 
   document.querySelectorAll('#skuTable tbody tr.sku-row').forEach(row => {
+    const rTier = row.getAttribute('data-tier');
     const rStore = row.getAttribute('data-store');
     const rSig = row.getAttribute('data-signal');
     const rAvail = row.getAttribute('data-avail');
     const rSearch = row.getAttribute('data-search');
 
+    let matchTier = (tierVal === 'ALL' || rTier === tierVal);
     let matchStore = (storeVal === 'ALL' || rStore === storeVal);
     let matchSig = true;
     if (sigVal === 'OOS_ONLY') matchSig = (rAvail === 'oos');
     else if (sigVal !== 'ALL') matchSig = (rSig === sigVal);
 
     let matchQ = (!q || rSearch.includes(q));
-    if (matchStore && matchSig && matchQ) {
+    if (matchTier && matchStore && matchSig && matchQ) {
       row.style.display = '';
       shown++;
     } else {
@@ -3514,12 +3734,13 @@ function applyFilters() {
 }
 
 function exportVisibleToCSV(filename) {
-  const headers = ['Store', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'Signal', 'Est_6Unit_PO_GBP', 'Product_URL'];
+  const headers = ['Store', 'Tier', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'Signal', 'Est_6Unit_PO_GBP', 'Product_URL'];
   const rows = [headers.join(',')];
   document.querySelectorAll('#skuTable tbody tr.sku-row').forEach(row => {
     if (row.style.display === 'none') return;
     const vals = [
       row.getAttribute('data-csv-store'),
+      row.getAttribute('data-csv-tier'),
       row.getAttribute('data-csv-product'),
       row.getAttribute('data-csv-variant'),
       row.getAttribute('data-csv-price'),

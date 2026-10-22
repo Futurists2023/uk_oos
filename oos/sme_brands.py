@@ -28,6 +28,13 @@ SME_BRANDS: list[dict] = [
         "search_hint": '"Altitude Oil" OR "Gravity Fix" OR "Facial Oil"',
     },
     {
+        "slug": "disciple-skincare",
+        "name": "Disciple Skincare",
+        "aliases": ["Disciple Skincare", "Disciple", "Disciple London"],
+        "dtc_domains": ["discipleskincare.com", "discipleskincare.co.uk"],
+        "search_hint": '"Good Skin" OR "Dreamy Skin" OR "What Spot" OR "Disciple Skincare"',
+    },
+    {
         "slug": "earth-tan",
         "name": "Earth Tan",
         "aliases": ["Earth Tan"],
@@ -180,6 +187,47 @@ SME_BRANDS: list[dict] = [
 ]
 
 BRANDS_BY_SLUG = {b["slug"]: b for b in SME_BRANDS}
+
+# Tier 1: Major & Prestige UK National Retailers (captured & tagged distinctly from Tier 2 Independents)
+TIER_1_MAJOR_UK_RETAILERS = {
+    "boots.com",
+    "hollandandbarrett.com",
+    "superdrug.com",
+    "spacenk.com",
+    "cultbeauty.co.uk",
+    "cultbeauty.com",
+    "lookfantastic.com",
+    "selfridges.com",
+    "johnlewis.com",
+    "libertylondon.com",
+    "harrods.com",
+    "harveynichols.com",
+    "fenwick.co.uk",
+    "marksandspencer.com",
+    "waitrose.com",
+    "ocado.com",
+    "sainsburys.co.uk",
+    "tesco.com",
+    "asda.com",
+    "morrisons.com",
+    "lloydspharmacy.com",
+    "well.co.uk",
+    "sephora.co.uk",
+    "beautybay.com",
+    "escentual.com",
+    "feelunique.com",
+    "asos.com",
+    "next.co.uk",
+}
+
+
+def stockist_tier(domain: str) -> str:
+    """Return 'Tier 1 (Major UK Retailer)' or 'Tier 2 (Independent Stockist)'."""
+    d = (domain or "").lower().removeprefix("www.")
+    for major in TIER_1_MAJOR_UK_RETAILERS:
+        if d == major or d.endswith("." + major):
+            return "Tier 1 (Major UK Retailer)"
+    return "Tier 2 (Independent Stockist)"
 
 
 def get_brand(name_or_slug: str) -> dict:

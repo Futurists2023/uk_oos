@@ -29,29 +29,19 @@ HERE = Path(__file__).resolve().parent
 STOCKISTS_DIR = HERE / "stockists"
 STOCKISTS_DIR.mkdir(parents=True, exist_ok=True)
 
-# 1. Exclusion lists: Large chains, marketplaces, supermarkets, department stores, and all 24 brands' DTC sites
+# 1. Exclusion lists: Strictly exclude Marketplaces/Reseller Platforms and all 25 brands' own DTC sites.
+#    Major UK Retailers (Boots, Holland & Barrett, Space NK, Selfridges, John Lewis, Cult Beauty, etc.)
+#    are ALLOWED and tagged as "Tier 1 (Major UK Retailer)".
 ALL_DTC_DOMAINS = {
     dom for b in sme_brands.SME_BRANDS for dom in b.get("dtc_domains", [])
 }
 
 EXCLUDED_CHAINS_AND_MARKETPLACES = ALL_DTC_DOMAINS | {
-    # Marketplaces
+    # Marketplaces & Grey-Market Reseller Platforms (Excluded)
     "amazon.co.uk", "amazon.com", "ebay.co.uk", "ebay.com", "etsy.com",
     "onbuy.com", "fruugo.co.uk", "fruugo.com", "aliexpress.com", "temu.com",
     "notonthehighstreet.com", "ebay.ie", "ubuy.co.uk", "desertcart.co.uk",
-    # High-street chains & major pharmacy chains
-    "boots.com", "hollandandbarrett.com", "superdrug.com", "lloydspharmacy.com",
-    "well.co.uk", "rowlandspharmacy.co.uk", "daylewis.co.uk", "numarknet.com",
-    # Supermarkets
-    "tesco.com", "sainsburys.co.uk", "asda.com", "morrisons.com",
-    "waitrose.com", "ocado.com", "aldi.co.uk", "lidl.co.uk", "iceland.co.uk",
-    # Department stores & major beauty conglomerates
-    "johnlewis.com", "selfridges.com", "harrods.com", "libertylondon.com",
-    "marksandspencer.com", "next.co.uk", "debenhams.com", "houseoffraser.co.uk",
-    "fenwick.co.uk", "harveynichols.com",
-    "lookfantastic.com", "cultbeauty.co.uk", "cultbeauty.com", "feelunique.com",
-    "sephora.co.uk", "sephora.com", "spacenk.com", "notino.co.uk", "beautybay.com",
-    "escentual.com", "asos.com", "very.co.uk", "argos.co.uk", "tkmaxx.com",
+    "tkmaxx.com", "very.co.uk", "argos.co.uk",
 }
 
 EXCLUDED_NON_RETAIL = {
@@ -257,6 +247,7 @@ async def check_storefront_for_brand(
 
     result = {
         "domain": domain,
+        "tier": sme_brands.stockist_tier(domain),
         "brand": brand["name"],
         "brand_slug": slug,
         "source": source,
