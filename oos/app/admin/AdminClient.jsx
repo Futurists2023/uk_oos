@@ -230,7 +230,7 @@ export default function AdminClient({ initialData }) {
         <div>
           <div
             style={{
-              maxWidth: 920,
+              maxWidth: 1120,
               margin: '0 auto',
               padding: '18px 24px 0',
               display: 'flex',

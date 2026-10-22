@@ -298,7 +298,7 @@ export default function BrandClient({ initialData }) {
 
   return (
     <div className={`sheet ${displayMode === 'matrix' ? 'sheet-matrix' : ''}`}>
-      <header className="sheet-header" style={displayMode === 'matrix' ? { marginBottom: 14, paddingBottom: 12 } : undefined}>
+      <header className="sheet-header">
         <div>
           <h1 className="sheet-title">{brand.name} — Out of Stock Products</h1>
           <p className="sheet-summary">

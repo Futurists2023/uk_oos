@@ -19,6 +19,10 @@
   padding: 0;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
   background: var(--bg);
@@ -38,15 +42,15 @@ a:hover {
 }
 
 .sheet {
-  max-width: 980px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 44px 24px 88px;
+  padding: 28px 24px 64px;
 }
 
 .sheet.sheet-matrix {
-  max-width: 1200px;
+  max-width: 1120px;
   height: 100vh;
-  padding: 22px 24px 14px;
+  padding: 28px 24px 14px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -59,9 +63,10 @@ a:hover {
   align-items: flex-end;
   flex-wrap: wrap;
   gap: 16px;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
   border-bottom: 2px solid var(--line-strong);
-  margin-bottom: 26px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
 }
 
 .sheet-title {
