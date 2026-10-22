@@ -24,10 +24,21 @@ function calcOosAge(isoStr) {
   return `${mins}m OOS`;
 }
 
+function cleanProductDisplayName(rawTitle, brandName) {
+  let t = String(rawTitle || '').split('|')[0].trim();
+  if (brandName) {
+    const escaped = brandName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    t = t.replace(new RegExp(`^${escaped}\\s*[-–—:]?\\s*`, 'i'), '').trim();
+  }
+  // Remove trailing size suffix like " 200ml" or ", 25 ml" so product family title is clean
+  t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
+  return t || String(rawTitle || '').trim();
+}
+
 export default function BrandClient({ initialData }) {
   const [data] = useState(initialData);
-  const [showHealthyStores, setShowHealthyStores] = useState(false);
-  const [showInStockProducts, setShowInStockProducts] = useState(false);
+  const [showHealthyProducts, setShowHealthyProducts] = useState(false);
+  const [showInStockStores, setShowInStockStores] = useState(false);
   const [toastMsg, setToastMsg] = useState(null);
 
   const brand = data.brand;
@@ -46,34 +57,46 @@ export default function BrandClient({ initialData }) {
     setTimeout(() => setToastMsg(null), 2400);
   }
 
-  // Group active SKUs by store & detect cross-store OOS bottlenecks
-  const { oosStoreGroups, healthyStores, totalOos, totalStores, latestCheck, oosStoresByNormKey } = useMemo(() => {
+  // Group active SKUs by Canonical Product Family (Product-Centered)
+  const { oosProductGroups, healthyProductGroups, totalOosVariants, totalStores, latestCheck } = useMemo(() => {
     const activeSkus = data.skus.filter(s => s.is_listed === 1);
-    const byDomain = new Map();
-    const normKeyStores = new Map();
+    const byProdKey = new Map();
 
+    let maxTs = '';
     for (const st of data.stores) {
-      byDomain.set(st.domain, {
-        store: st,
-        oosItems: [],
-        inStockItems: []
-      });
+      if (st.last_checked_at && st.last_checked_at > maxTs) {
+        maxTs = st.last_checked_at;
+      }
     }
 
     for (const s of activeSkus) {
-      if (!byDomain.has(s.domain)) {
-        byDomain.set(s.domain, {
-          store: { domain: s.domain, brand_url: s.product_url },
+      const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, brand.name).toLowerCase();
+      if (!byProdKey.has(pKey)) {
+        byProdKey.set(pKey, {
+          productKey: pKey,
+          displayName: cleanProductDisplayName(s.product_title, brand.name),
           oosItems: [],
-          inStockItems: []
+          inStockItems: [],
+          distinctSizes: new Set(),
+          oosStores: new Set(),
+          allStores: new Set()
         });
       }
-      const grp = byDomain.get(s.domain);
+      const grp = byProdKey.get(pKey);
+      grp.allStores.add(s.domain);
+
+      // Prefer shorter/cleaner display name if one store has a cleaner title
+      const candName = cleanProductDisplayName(s.product_title, brand.name);
+      if (candName.length > 2 && candName.length < grp.displayName.length) {
+        grp.displayName = candName;
+      }
+
+      const vTitle = s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard' ? s.variant_title : '';
+      if (vTitle) grp.distinctSizes.add(vTitle);
+
       if (s.is_available === 0) {
         grp.oosItems.push(s);
-        const nk = s.normalized_product_key || String(s.product_title || '').toLowerCase();
-        if (!normKeyStores.has(nk)) normKeyStores.set(nk, new Set());
-        normKeyStores.get(nk).add(s.domain);
+        grp.oosStores.add(s.domain);
       } else {
         grp.inStockItems.push(s);
       }
@@ -81,16 +104,17 @@ export default function BrandClient({ initialData }) {
 
     const withOos = [];
     const healthy = [];
-    let oosSum = 0;
-    let maxTs = '';
+    let oosVariantSum = 0;
 
-    for (const grp of byDomain.values()) {
-      if (grp.store.last_checked_at && grp.store.last_checked_at > maxTs) {
-        maxTs = grp.store.last_checked_at;
-      }
-      grp.oosItems.sort((a, b) => (a.first_seen_oos_at || '9999').localeCompare(b.first_seen_oos_at || '9999'));
-      oosSum += grp.oosItems.length;
+    for (const grp of byProdKey.values()) {
+      // Sort OOS rows inside a product by store domain, then variant size
+      grp.oosItems.sort((a, b) => {
+        if (a.domain !== b.domain) return a.domain.localeCompare(b.domain);
+        return (a.variant_title || '').localeCompare(b.variant_title || '');
+      });
+      grp.inStockItems.sort((a, b) => a.domain.localeCompare(b.domain));
 
+      oosVariantSum += grp.oosItems.length;
       if (grp.oosItems.length > 0) {
         withOos.push(grp);
       } else {
@@ -98,118 +122,132 @@ export default function BrandClient({ initialData }) {
       }
     }
 
-    withOos.sort((a, b) => b.oosItems.length - a.oosItems.length);
-    healthy.sort((a, b) => a.store.domain.localeCompare(b.store.domain));
+    // Sort products by number of OOS stores (desc), then number of OOS variants (desc), then name
+    withOos.sort((a, b) => {
+      if (b.oosStores.size !== a.oosStores.size) return b.oosStores.size - a.oosStores.size;
+      if (b.oosItems.length !== a.oosItems.length) return b.oosItems.length - a.oosItems.length;
+      return a.displayName.localeCompare(b.displayName);
+    });
+    healthy.sort((a, b) => a.displayName.localeCompare(b.displayName));
 
     return {
-      oosStoreGroups: withOos,
-      healthyStores: healthy,
-      totalOos: oosSum,
-      totalStores: byDomain.size,
-      latestCheck: maxTs,
-      oosStoresByNormKey: normKeyStores
+      oosProductGroups: withOos,
+      healthyProductGroups: healthy,
+      totalOosVariants: oosVariantSum,
+      totalStores: data.stores.length,
+      latestCheck: maxTs
     };
-  }, [data.stores, data.skus]);
+  }, [data.stores, data.skus, brand.name]);
 
-  // First stockist expanded by default; subsequent stockists collapsed
-  const [expandedDomains, setExpandedDomains] = useState(() => {
-    if (oosStoreGroups.length > 0) {
-      return new Set([oosStoreGroups[0].store.domain]);
+  // First product expanded by default; subsequent products collapsed into their heading
+  const [expandedProducts, setExpandedProducts] = useState(() => {
+    if (oosProductGroups.length > 0) {
+      return new Set([oosProductGroups[0].productKey]);
     }
     return new Set();
   });
 
   useEffect(() => {
-    if (oosStoreGroups.length > 0) {
-      setExpandedDomains(new Set([oosStoreGroups[0].store.domain]));
+    if (oosProductGroups.length > 0) {
+      setExpandedProducts(new Set([oosProductGroups[0].productKey]));
     }
   }, [brand.slug]);
 
-  function toggleDomain(dom) {
-    setExpandedDomains(prev => {
+  function toggleProduct(pKey) {
+    setExpandedProducts(prev => {
       const next = new Set(prev);
-      if (next.has(dom)) next.delete(dom);
-      else next.add(dom);
+      if (next.has(pKey)) next.delete(pKey);
+      else next.add(pKey);
       return next;
     });
   }
 
-  const allExpanded = oosStoreGroups.length > 1 && expandedDomains.size === oosStoreGroups.length;
+  const allExpanded = oosProductGroups.length > 1 && expandedProducts.size === oosProductGroups.length;
 
   function toggleExpandAll() {
     if (allExpanded) {
-      // Collapse back to first stockist only
-      setExpandedDomains(oosStoreGroups.length > 0 ? new Set([oosStoreGroups[0].store.domain]) : new Set());
+      setExpandedProducts(oosProductGroups.length > 0 ? new Set([oosProductGroups[0].productKey]) : new Set());
     } else {
-      setExpandedDomains(new Set(oosStoreGroups.map(g => g.store.domain)));
+      setExpandedProducts(new Set(oosProductGroups.map(g => g.productKey)));
     }
   }
 
-  function copyList(singleDomain = null) {
-    const groups = singleDomain
-      ? oosStoreGroups.filter(g => g.store.domain === singleDomain)
-      : oosStoreGroups;
+  function copyList(singleProductKey = null) {
+    const groups = singleProductKey
+      ? oosProductGroups.filter(g => g.productKey === singleProductKey)
+      : oosProductGroups;
 
     if (groups.length === 0) {
-      showToast('All tracked items are currently in stock.');
+      showToast('All tracked products are currently in stock.');
       return;
     }
 
     const lines = [];
-    if (!singleDomain) {
-      lines.push(`${brand.name} — UK Stockist Out of Stock (${totalOos} items across ${oosStoreGroups.length} stockists)`);
+    if (!singleProductKey) {
+      lines.push(
+        `${brand.name} — Out of Stock Products (${oosProductGroups.length} products / ${totalOosVariants} variants)`
+      );
       lines.push(`Checked: ${fmtShortTime(latestCheck)}`);
       lines.push('');
     }
 
     for (const grp of groups) {
-      lines.push(`${grp.store.domain} (${grp.oosItems.length} Out of Stock)`);
+      const singleSize = grp.distinctSizes.size === 1 ? ` (${Array.from(grp.distinctSizes)[0]})` : '';
+      lines.push(
+        `${grp.displayName}${singleSize} — Out of Stock at ${grp.oosStores.size} store${grp.oosStores.size === 1 ? '' : 's'}:`
+      );
       for (const s of grp.oosItems) {
-        const title = String(s.product_title || '').split('|')[0].trim();
-        const variant = s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard' ? ` (${s.variant_title})` : '';
-        const price = s.current_price !== null && s.current_price !== undefined ? `£${Number(s.current_price).toFixed(2)}` : '';
+        const vLabel =
+          grp.distinctSizes.size > 1 && s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
+            ? ` (${s.variant_title})`
+            : '';
+        const price =
+          s.current_price !== null && s.current_price !== undefined
+            ? `£${Number(s.current_price).toFixed(2)}`
+            : '';
         const age = calcOosAge(s.first_seen_oos_at);
-        lines.push(`- ${title}${variant}  ${price}  [${age}]  ${s.product_url || ''}`);
+        lines.push(`  • ${s.domain}${vLabel}  ${price}  [${age}]  ${s.product_url || ''}`);
       }
       lines.push('');
     }
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-      showToast(singleDomain ? `Copied ${singleDomain} OOS list` : 'Copied OOS list to clipboard');
+      showToast(singleProductKey ? 'Copied product OOS list' : 'Copied full OOS product list');
     });
   }
 
   function downloadCSV() {
-    const headers = ['Brand', 'Stockist', 'Tier', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'First_Seen_OOS_UTC', 'URL'];
+    const headers = ['Brand', 'Product', 'Variant', 'Stockist', 'Tier', 'Price_GBP', 'Status', 'OOS_Duration', 'First_Seen_OOS_UTC', 'URL'];
     const rows = [headers.join(',')];
 
-    const activeSkus = data.skus.filter(s => s.is_listed === 1 && (showInStockProducts || s.is_available === 0));
-    for (const s of activeSkus) {
-      const title = String(s.product_title || '').split('|')[0].trim();
-      const tier = isTier1(s.domain) ? 'Major Retailer' : 'Independent';
-      const status = s.is_available === 0 ? 'Out of Stock' : 'In Stock';
-      const age = s.is_available === 0 ? calcOosAge(s.first_seen_oos_at) : '';
-      const price = s.current_price !== null && s.current_price !== undefined ? Number(s.current_price).toFixed(2) : '';
+    for (const grp of oosProductGroups) {
+      const items = showInStockStores ? [...grp.oosItems, ...grp.inStockItems] : grp.oosItems;
+      for (const s of items) {
+        const tier = isTier1(s.domain) ? 'Major Retailer' : 'Independent';
+        const status = s.is_available === 0 ? 'Out of Stock' : 'In Stock';
+        const age = s.is_available === 0 ? calcOosAge(s.first_seen_oos_at) : '';
+        const price = s.current_price !== null && s.current_price !== undefined ? Number(s.current_price).toFixed(2) : '';
 
-      const vals = [
-        brand.name,
-        s.domain,
-        tier,
-        title,
-        s.variant_title || '',
-        price,
-        status,
-        age,
-        s.first_seen_oos_at || '',
-        s.product_url || ''
-      ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`);
-      rows.push(vals.join(','));
+        const vals = [
+          brand.name,
+          grp.displayName,
+          s.variant_title || '',
+          s.domain,
+          tier,
+          price,
+          status,
+          age,
+          s.first_seen_oos_at || '',
+          s.product_url || ''
+        ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`);
+        rows.push(vals.join(','));
+      }
     }
 
     const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = `${brand.slug}-oos.csv`;
+    link.download = `${brand.slug}-oos-products.csv`;
     link.click();
   }
 
@@ -217,31 +255,33 @@ export default function BrandClient({ initialData }) {
     <div className="sheet">
       <header className="sheet-header">
         <div>
-          <h1 className="sheet-title">{brand.name} — UK Stockist Out of Stock</h1>
+          <h1 className="sheet-title">{brand.name} — Out of Stock Products</h1>
           <p className="sheet-summary">
             {totalStores === 0 ? (
               <span>Initial UK stockist scan is queued.</span>
             ) : (
               <>
-                <strong className="oos-num">{totalOos} out of stock</strong> across{' '}
-                <strong>{oosStoreGroups.length}</strong> of <strong>{totalStores}</strong> UK stockists · Checked{' '}
-                {fmtShortTime(latestCheck)}
+                <strong className="oos-num">
+                  {oosProductGroups.length} product{oosProductGroups.length === 1 ? '' : 's'}
+                </strong>{' '}
+                ({totalOosVariants} variant{totalOosVariants === 1 ? '' : 's'}) out of stock across{' '}
+                <strong>{totalStores}</strong> monitored UK stockists · Checked {fmtShortTime(latestCheck)}
               </>
             )}
           </p>
         </div>
 
         <div className="sheet-actions">
-          {oosStoreGroups.length > 1 && (
+          {oosProductGroups.length > 1 && (
             <button className="btn-plain" onClick={toggleExpandAll}>
               {allExpanded ? 'Collapse Others' : 'Expand All'}
             </button>
           )}
           <button
-            className={`btn-plain ${showInStockProducts ? 'active' : ''}`}
-            onClick={() => setShowInStockProducts(v => !v)}
+            className={`btn-plain ${showInStockStores ? 'active' : ''}`}
+            onClick={() => setShowInStockStores(v => !v)}
           >
-            {showInStockProducts ? 'Hide In-Stock' : 'Show In-Stock'}
+            {showInStockStores ? 'Hide In-Stock Stores' : 'Show In-Stock Stores'}
           </button>
           <button className="btn-plain" onClick={() => copyList(null)}>
             Copy List
@@ -252,69 +292,60 @@ export default function BrandClient({ initialData }) {
         </div>
       </header>
 
-      {oosStoreGroups.length === 0 && totalStores > 0 && (
+      {oosProductGroups.length === 0 && totalStores > 0 && (
         <p style={{ padding: '24px 0', color: 'var(--green)', fontWeight: 500 }}>
-          All tracked products across all {totalStores} UK stockists are currently in stock.
+          All tracked {brand.name} products across all {totalStores} UK stockists are currently in stock.
         </p>
       )}
 
-      {oosStoreGroups.map(grp => {
-        const dom = grp.store.domain;
-        const isExpanded = expandedDomains.has(dom);
-        const major = isTier1(dom);
-        const itemsToRender = showInStockProducts
+      {/* PRODUCT-CENTERED ACCORDION (FIRST PRODUCT EXPANDED, SUBSEQUENT COLLAPSED) */}
+      {oosProductGroups.map(grp => {
+        const isExpanded = expandedProducts.has(grp.productKey);
+        const singleSize = grp.distinctSizes.size === 1 ? ` (${Array.from(grp.distinctSizes)[0]})` : '';
+        const storeListPreview = Array.from(grp.oosStores).join(', ');
+        const storeCount = grp.oosStores.size;
+        const variantCount = grp.oosItems.length;
+        const rightCountText =
+          variantCount > storeCount
+            ? `Out of Stock at ${storeCount} store${storeCount === 1 ? '' : 's'} (${variantCount} sizes)`
+            : `Out of Stock at ${storeCount} store${storeCount === 1 ? '' : 's'}`;
+
+        const rowsToRender = showInStockStores
           ? [...grp.oosItems, ...grp.inStockItems]
           : grp.oosItems;
 
-        // Build inline preview snippet when collapsed
-        const previewTitles = grp.oosItems.slice(0, 2).map(s => {
-          const t = String(s.product_title || '').split('|')[0].trim();
-          const v = s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard' ? ` (${s.variant_title})` : '';
-          return `${t}${v}`;
-        });
-        const extraCnt = grp.oosItems.length - previewTitles.length;
-        const previewText = previewTitles.join(', ') + (extraCnt > 0 ? `, +${extraCnt} more` : '');
-
         return (
-          <section key={dom} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
-            <div className="store-group-header" onClick={() => toggleDomain(dom)}>
+          <section key={grp.productKey} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
+            <div className="store-group-header" onClick={() => toggleProduct(grp.productKey)}>
               <div className="store-header-left">
                 <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
-                <span className="store-domain">{dom}</span>
-                {major && <span className="tier-tag">Major Retailer</span>}
-                {!isExpanded && <span className="collapsed-preview">{previewText}</span>}
+                <span className="store-domain">
+                  {grp.displayName}
+                  {singleSize && <span className="sku-variant">{singleSize}</span>}
+                </span>
+                {!isExpanded && <span className="collapsed-preview">{storeListPreview}</span>}
               </div>
 
               <div className="store-meta" onClick={e => e.stopPropagation()}>
                 <span
                   className="store-oos-count"
                   style={{ cursor: 'pointer' }}
-                  onClick={() => toggleDomain(dom)}
+                  onClick={() => toggleProduct(grp.productKey)}
                 >
-                  {grp.oosItems.length} Out of Stock
+                  {rightCountText}
                 </span>
-                <button className="btn-plain btn-xs" onClick={() => copyList(dom)}>
+                <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
                   Copy
                 </button>
-                <a
-                  href={grp.store.brand_url || '#'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="store-ext-link"
-                >
-                  Storefront ↗
-                </a>
               </div>
             </div>
 
             {isExpanded && (
               <ul className="sku-list">
-                {itemsToRender.map(s => {
-                  const title = String(s.product_title || '').split('|')[0].trim();
-                  const variant =
-                    s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
-                      ? `(${s.variant_title})`
-                      : '';
+                {rowsToRender.map(s => {
+                  const major = isTier1(s.domain);
+                  const showVariantTag =
+                    s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard';
                   const price =
                     s.current_price !== null && s.current_price !== undefined
                       ? `£${Number(s.current_price).toFixed(2)}`
@@ -324,17 +355,15 @@ export default function BrandClient({ initialData }) {
                     s.current_price &&
                     Number(s.compare_at_price) > Number(s.current_price);
                   const isOos = s.is_available === 0;
-                  const nk = s.normalized_product_key || String(s.product_title || '').toLowerCase();
-                  const crossStoreCount = isOos && oosStoresByNormKey.has(nk) ? oosStoresByNormKey.get(nk).size : 0;
 
                   return (
                     <li key={s.sku_key} className="sku-item">
                       <div>
-                        <span className="sku-name">{title}</span>
-                        {variant && <span className="sku-variant">{variant}</span>}
-                        {crossStoreCount >= 2 && (
-                          <span className="tier-tag" style={{ marginLeft: 8, color: 'var(--red)', borderColor: '#fecaca', background: '#fef2f2' }}>
-                            OOS at {crossStoreCount} stores
+                        <span className="sku-name">{s.domain}</span>
+                        {showVariantTag && <span className="sku-variant">({s.variant_title})</span>}
+                        {major && (
+                          <span className="tier-tag" style={{ marginLeft: 8 }}>
+                            Major Retailer
                           </span>
                         )}
                       </div>
@@ -354,7 +383,7 @@ export default function BrandClient({ initialData }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="sku-open"
-                        title="Open product page"
+                        title="Open product page on stockist"
                       >
                         ↗
                       </a>
@@ -367,40 +396,34 @@ export default function BrandClient({ initialData }) {
         );
       })}
 
-      {/* COLLAPSIBLE FOOTER FOR 100% IN-STOCK STOCKISTS */}
-      {healthyStores.length > 0 && (
+      {/* COLLAPSIBLE FOOTER FOR PRODUCTS THAT ARE 100% IN STOCK ACROSS ALL UK STOCKISTS */}
+      {healthyProductGroups.length > 0 && (
         <div className="healthy-section">
           <button
             className="healthy-toggle"
-            onClick={() => setShowHealthyStores(v => !v)}
+            onClick={() => setShowHealthyProducts(v => !v)}
           >
-            {showHealthyStores ? '▾' : '▸'} {healthyStores.length} UK stockist
-            {healthyStores.length === 1 ? '' : 's'} with 100% stock availability (
-            {healthyStores
-              .slice(0, 5)
-              .map(g => g.store.domain)
+            {showHealthyProducts ? '▾' : '▸'} {healthyProductGroups.length} other {brand.name} product
+            {healthyProductGroups.length === 1 ? ' is' : 's are'} 100% in stock across all monitored UK stockists (
+            {healthyProductGroups
+              .slice(0, 4)
+              .map(g => g.displayName)
               .join(', ')}
-            {healthyStores.length > 5 ? ', …' : ''})
+            {healthyProductGroups.length > 4 ? ', …' : ''})
           </button>
 
-          {showHealthyStores && (
+          {showHealthyProducts && (
             <div className="healthy-list">
-              {healthyStores.map(g => (
-                <div key={g.store.domain} className="healthy-card">
+              {healthyProductGroups.map(g => (
+                <div key={g.productKey} className="healthy-card">
                   <div>
-                    <strong>{g.store.domain}</strong>
+                    <strong>{g.displayName}</strong>
                     <div style={{ fontSize: '0.76rem', color: 'var(--muted)' }}>
-                      {g.inStockItems.length} variant{g.inStockItems.length === 1 ? '' : 's'} in stock
+                      In stock at {g.allStores.size} UK stockist{g.allStores.size === 1 ? '' : 's'} (
+                      {Array.from(g.allStores).join(', ')})
                     </div>
                   </div>
-                  <a
-                    href={g.store.brand_url || '#'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="store-ext-link"
-                  >
-                    Storefront ↗
-                  </a>
+                  <span style={{ color: 'var(--green)', fontSize: '0.78rem', fontWeight: 600 }}>100% In Stock</span>
                 </div>
               ))}
             </div>

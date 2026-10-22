@@ -25,6 +25,16 @@ function calcOosAge(isoStr) {
   return `${mins}m OOS`;
 }
 
+function cleanProductDisplayName(rawTitle, brandName) {
+  let t = String(rawTitle || '').split('|')[0].trim();
+  if (brandName) {
+    const escaped = brandName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    t = t.replace(new RegExp(`^${escaped}\\s*[-–—:]?\\s*`, 'i'), '').trim();
+  }
+  t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
+  return t || String(rawTitle || '').trim();
+}
+
 export default function AdminClient({ initialData }) {
   const [data, setData] = useState(initialData);
   const [viewMode, setViewMode] = useState('directory'); // 'directory' | 'all_oos' | 'brand_sheet'
@@ -75,7 +85,8 @@ export default function AdminClient({ initialData }) {
   const brandRows = useMemo(() => {
     const storesByBrand = new Map();
     const lastCheckByBrand = new Map();
-    const oosByBrand = new Map();
+    const oosProductsByBrand = new Map();
+    const oosVariantsByBrand = new Map();
     const activeSkusByBrand = new Map();
 
     for (const st of data.stores) {
@@ -90,20 +101,25 @@ export default function AdminClient({ initialData }) {
       if (s.is_listed === 1) {
         activeSkusByBrand.set(s.brand, (activeSkusByBrand.get(s.brand) || 0) + 1);
         if (s.is_available === 0) {
-          oosByBrand.set(s.brand, (oosByBrand.get(s.brand) || 0) + 1);
+          oosVariantsByBrand.set(s.brand, (oosVariantsByBrand.get(s.brand) || 0) + 1);
+          const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, s.brand).toLowerCase();
+          if (!oosProductsByBrand.has(s.brand)) oosProductsByBrand.set(s.brand, new Set());
+          oosProductsByBrand.get(s.brand).add(pKey);
         }
       }
     }
 
     const enriched = data.brandsMeta.map(b => {
       const storeCount = storesByBrand.get(b.name) || 0;
-      const oosCount = oosByBrand.get(b.name) || 0;
+      const oosProdCount = oosProductsByBrand.get(b.name)?.size || 0;
+      const oosVarCount = oosVariantsByBrand.get(b.name) || 0;
       const skuCount = activeSkusByBrand.get(b.name) || 0;
       const lastChecked = lastCheckByBrand.get(b.name) || '';
       return {
         ...b,
         storeCount,
-        oosCount,
+        oosProdCount,
+        oosVarCount,
         skuCount,
         lastChecked,
         isActive: storeCount > 0
@@ -112,7 +128,7 @@ export default function AdminClient({ initialData }) {
 
     enriched.sort((a, b) => {
       if (a.isActive !== b.isActive) return a.isActive ? -1 : 1;
-      if (a.oosCount !== b.oosCount) return b.oosCount - a.oosCount;
+      if (a.oosProdCount !== b.oosProdCount) return b.oosProdCount - a.oosProdCount;
       return a.name.localeCompare(b.name);
     });
 
@@ -129,43 +145,48 @@ export default function AdminClient({ initialData }) {
     });
   }, [brandRows, searchQuery, filterMode]);
 
-  const totalOosGlobal = useMemo(
-    () => data.skus.filter(s => s.is_listed === 1 && s.is_available === 0).length,
-    [data.skus]
-  );
   const activeBrandCount = useMemo(
     () => brandRows.filter(b => b.isActive).length,
     [brandRows]
   );
 
-  // Global OOS grouped by Brand + Store
-  const globalOosGroups = useMemo(() => {
+  // Global OOS grouped by Brand + Canonical Product (Product-Centered)
+  const globalOosProductGroups = useMemo(() => {
     const oosSkus = data.skus.filter(s => s.is_listed === 1 && s.is_available === 0);
     const byKey = new Map();
 
     for (const s of oosSkus) {
-      const key = `${s.brand} || ${s.domain}`;
+      const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, s.brand).toLowerCase();
+      const key = `${s.brand} || ${pKey}`;
       if (!byKey.has(key)) {
-        const stObj = data.stores.find(st => st.brand === s.brand && st.domain === s.domain);
         byKey.set(key, {
           key,
           brand: s.brand,
-          domain: s.domain,
-          brandUrl: stObj?.brand_url || s.product_url,
+          displayName: cleanProductDisplayName(s.product_title, s.brand),
+          oosStores: new Set(),
           items: []
         });
       }
-      byKey.get(key).items.push(s);
+      const grp = byKey.get(key);
+      const cand = cleanProductDisplayName(s.product_title, s.brand);
+      if (cand.length > 2 && cand.length < grp.displayName.length) {
+        grp.displayName = cand;
+      }
+      grp.oosStores.add(s.domain);
+      grp.items.push(s);
     }
 
     const list = Array.from(byKey.values());
-    list.sort((a, b) => b.items.length - a.items.length);
+    list.sort((a, b) => {
+      if (b.oosStores.size !== a.oosStores.size) return b.oosStores.size - a.oosStores.size;
+      if (b.items.length !== a.items.length) return b.items.length - a.items.length;
+      return a.displayName.localeCompare(b.displayName);
+    });
     return list;
-  }, [data.skus, data.stores]);
+  }, [data.skus]);
 
-  // First group expanded by default in All OOS view
   const [expandedGlobalKeys, setExpandedGlobalKeys] = useState(() =>
-    globalOosGroups.length > 0 ? new Set([globalOosGroups[0].key]) : new Set()
+    globalOosProductGroups.length > 0 ? new Set([globalOosProductGroups[0].key]) : new Set()
   );
 
   function toggleGlobalKey(k) {
@@ -242,9 +263,9 @@ export default function AdminClient({ initialData }) {
     <div className="sheet">
       <header className="sheet-header">
         <div>
-          <h1 className="sheet-title">UK Stockist Out of Stock — Admin</h1>
+          <h1 className="sheet-title">UK Out of Stock Products — Admin</h1>
           <p className="sheet-summary">
-            <strong className="oos-num">{totalOosGlobal} out of stock</strong> across{' '}
+            <strong className="oos-num">{globalOosProductGroups.length} products out of stock</strong> across{' '}
             <strong>{activeBrandCount}</strong> active brands ({data.brandsMeta.length} total in directory) ·{' '}
             {fmtShortTime(data.syncedAt)}
           </p>
@@ -261,7 +282,7 @@ export default function AdminClient({ initialData }) {
             className={`btn-plain ${viewMode === 'all_oos' ? 'active' : ''}`}
             onClick={() => setViewMode('all_oos')}
           >
-            All OOS ({totalOosGlobal})
+            All OOS Products ({globalOosProductGroups.length})
           </button>
           <button className="btn-plain" onClick={refreshLive} disabled={syncing}>
             {syncing ? 'Syncing…' : 'Refresh'}
@@ -306,7 +327,7 @@ export default function AdminClient({ initialData }) {
                 <th>Brand</th>
                 <th>Category</th>
                 <th>UK Stockists</th>
-                <th>Out of Stock</th>
+                <th>OOS Products</th>
                 <th>Checked</th>
                 <th style={{ textAlign: 'right' }}>Share / View</th>
               </tr>
@@ -331,7 +352,7 @@ export default function AdminClient({ initialData }) {
                   <td>
                     {b.isActive ? (
                       <span>
-                        {b.storeCount} stockist{b.storeCount === 1 ? '' : 's'} ({b.skuCount} SKUs)
+                        {b.storeCount} stockist{b.storeCount === 1 ? '' : 's'}
                       </span>
                     ) : (
                       <span style={{ color: 'var(--subtle)' }}>Queued</span>
@@ -339,9 +360,9 @@ export default function AdminClient({ initialData }) {
                   </td>
                   <td>
                     {b.isActive ? (
-                      b.oosCount > 0 ? (
+                      b.oosProdCount > 0 ? (
                         <span style={{ color: 'var(--red)', fontWeight: 600 }}>
-                          {b.oosCount} OOS
+                          {b.oosProdCount} product{b.oosProdCount === 1 ? '' : 's'} ({b.oosVarCount} sizes)
                         </span>
                       ) : (
                         <span style={{ color: 'var(--green)' }}>0 OOS</span>
@@ -379,15 +400,13 @@ export default function AdminClient({ initialData }) {
         </div>
       )}
 
-      {/* VIEW 2: ALL OOS ACROSS ALL BRANDS (FIRST EXPANDED, OTHERS COLLAPSED) */}
+      {/* VIEW 2: ALL OOS PRODUCTS ACROSS ALL BRANDS (PRODUCT-CENTERED, FIRST EXPANDED) */}
       {viewMode === 'all_oos' && (
         <div>
-          {globalOosGroups.map(grp => {
+          {globalOosProductGroups.map(grp => {
             const isExpanded = expandedGlobalKeys.has(grp.key);
-            const major = isTier1(grp.domain);
-            const previewTitles = grp.items.slice(0, 2).map(s => String(s.product_title || '').split('|')[0].trim());
-            const extraCnt = grp.items.length - previewTitles.length;
-            const previewText = previewTitles.join(', ') + (extraCnt > 0 ? `, +${extraCnt} more` : '');
+            const storePreview = Array.from(grp.oosStores).join(', ');
+            const storeCount = grp.oosStores.size;
 
             return (
               <section key={grp.key} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
@@ -395,10 +414,9 @@ export default function AdminClient({ initialData }) {
                   <div className="store-header-left">
                     <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
                     <span className="store-domain">
-                      {grp.brand} · {grp.domain}
+                      {grp.brand} · {grp.displayName}
                     </span>
-                    {major && <span className="tier-tag">Major Retailer</span>}
-                    {!isExpanded && <span className="collapsed-preview">{previewText}</span>}
+                    {!isExpanded && <span className="collapsed-preview">{storePreview}</span>}
                   </div>
                   <div className="store-meta" onClick={e => e.stopPropagation()}>
                     <span
@@ -406,23 +424,15 @@ export default function AdminClient({ initialData }) {
                       style={{ cursor: 'pointer' }}
                       onClick={() => toggleGlobalKey(grp.key)}
                     >
-                      {grp.items.length} Out of Stock
+                      Out of Stock at {storeCount} store{storeCount === 1 ? '' : 's'}
                     </span>
-                    <a
-                      href={grp.brandUrl || '#'}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="store-ext-link"
-                    >
-                      Storefront ↗
-                    </a>
                   </div>
                 </div>
 
                 {isExpanded && (
                   <ul className="sku-list">
                     {grp.items.map(s => {
-                      const title = String(s.product_title || '').split('|')[0].trim();
+                      const major = isTier1(s.domain);
                       const variant =
                         s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
                           ? `(${s.variant_title})`
@@ -435,8 +445,13 @@ export default function AdminClient({ initialData }) {
                       return (
                         <li key={s.sku_key} className="sku-item">
                           <div>
-                            <span className="sku-name">{title}</span>
+                            <span className="sku-name">{s.domain}</span>
                             {variant && <span className="sku-variant">{variant}</span>}
+                            {major && (
+                              <span className="tier-tag" style={{ marginLeft: 8 }}>
+                                Major Retailer
+                              </span>
+                            )}
                           </div>
                           <div className="sku-price">{price}</div>
                           <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
