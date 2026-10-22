@@ -1,745 +1,14 @@
 {
   "brand": "Bare Biology",
   "brand_slug": "bare-biology",
-  "generated_at": "2026-10-21T14:11:43+00:00",
+  "generated_at": "2026-10-22T13:25:11+00:00",
   "summary": {
-    "monitored_uk_independent_stores": 6,
+    "monitored_uk_stores": 6,
     "total_listed_skus_variants": 57,
+    "in_stock_skus_variants": 50,
     "out_of_stock_skus_variants": 7,
-    "silent_removed_skus": 0,
-    "estimated_immediate_replenishment_po_gbp": 809.34
+    "silent_removed_skus": 0
   },
-  "hero_sku_benchmarks": [
-    {
-      "normalized_key": "skinful_pure_marine_collagen_powder",
-      "product_family": "Bare Biology Skinful Pure Marine Collagen Powder",
-      "stores_carrying": 5,
-      "total_stores": 6,
-      "penetration_pct": 83,
-      "is_hero": true,
-      "missing_in": [
-        "planetorganic.com"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_pure_omega_3_liquid",
-      "product_family": "Life & Soul Pure Omega-3 Liquid",
-      "stores_carrying": 2,
-      "total_stores": 6,
-      "penetration_pct": 33,
-      "is_hero": false,
-      "missing_in": [
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "rise_shine_omega_3_vitamin_d3",
-      "product_family": "Bare Biology Rise & Shine Omega 3 + Vitamin D3, 60 Capsules",
-      "stores_carrying": 2,
-      "total_stores": 6,
-      "penetration_pct": 33,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "action_heroes_kids_omega_3_liquid_dha",
-      "product_family": "Bare Biology Action Heroes Kids Omega 3 Liquid DHA 100 ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "action_heroes_omega_3_fish_oil_for_kids",
-      "product_family": "Action Heroes Omega-3 Fish Oil for Kids - 100ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "action_heroes_pure_omega_3",
-      "product_family": "Bare Biology Action Heroes Pure Omega-3 100ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "beam_038_balance_vitamins_d3_k2_peppermint_blue_8211",
-      "product_family": "Beam &#038; Balance Vitamins D3 + K2 Peppermint (BLUE) 25ml &#8211; Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "beam_038_balance_vitamins_d3_k2_unflavoured_red_8211",
-      "product_family": "Beam &#038; Balance Vitamins D3 + K2 Unflavoured (RED) 25ml &#8211; Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "beam_and_balance_vitamin_d3_and_k2",
-      "product_family": "Bare Biology Beam and Balance - Vitamin D3 and K2",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "beam_balance_unflavoured_vitamin_d3_k2_spray",
-      "product_family": "Bare Biology Beam & Balance Unflavoured - Vitamin D3 & K2 Spray",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "beam_balance_vitamin_d3_k2",
-      "product_family": "Beam & Balance Vitamin D3 + K2 - 25ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "beam_balance_vitamin_d3_k2_peppermint_spray",
-      "product_family": "Bare Biology Beam & Balance, Vitamin D3 + K2 Peppermint Spray 25 ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "beam_balance_vitamin_d3_k2_unflavoured",
-      "product_family": "Beam & Balance Vitamin D3 + K2 (Unflavoured) - 25ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "creatine_monohydrate_powder",
-      "product_family": "Bare Biology Creatine Monohydrate Powder 300g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "fundamental_bovine_collagen_powder",
-      "product_family": "Fundamental Bovine Collagen Powder - 300g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "fundamental_collagen_powder",
-      "product_family": "Bare Biology Fundamental Collagen Powder 300 g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "high_flyer_creatine_monohydrate",
-      "product_family": "Bare Biology High Flyer Creatine Monohydrate",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "high_flyer_creatine_monohydrate_powder",
-      "product_family": "High Flyer Creatine Monohydrate Powder - 300g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_038_soul_pure_omega_3_120_mini_capsules_8211",
-      "product_family": "Life &#038; Soul Pure Omega-3 120 Mini Capsules &#8211; Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_amp_soul_pure_omega_3",
-      "product_family": "Life &amp; Soul Pure Omega-3 150ml Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_amp_soul_pure_omega_3_8211",
-      "product_family": "Life &amp; Soul Pure Omega-3 60 capsules &#8211; Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_and_soul_omega_3_liquid_ultra_strength_fish_oil_brain_heart_support",
-      "product_family": "Bare Biology Life And Soul Omega 3 Liquid Ultra Strength Fish Oil Brain Heart Support 150 ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_high_strength_omega_3_fish_oil",
-      "product_family": "Life & Soul High Strength Omega-3 Fish Oil - 150ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_high_strength_omega_3_fish_oil_mini_capsules",
-      "product_family": "Life & Soul High Strength Omega-3 Fish Oil Mini Capsules - 120 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_liquid_pure_omega_3",
-      "product_family": "Bare Biology Life & Soul Liquid Pure Omega-3 150ml",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_omega_3",
-      "product_family": "Bare Biology Life & Soul Omega 3, 60 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_omega_3_fish_oil_capsules",
-      "product_family": "Life & Soul Omega-3 Fish Oil capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_pure_omega_3",
-      "product_family": "Bare Biology Life & Soul Pure Omega-3 120 Caps",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "life_soul_pure_omega_3_daily_capsules",
-      "product_family": "Bare Biology Life & Soul Pure Omega 3 Daily Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "mindful_pure_dha_omega_3",
-      "product_family": "Mindful Pure DHA Omega-3 - 30 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "mindful_pure_omega_3",
-      "product_family": "Bare Biology Mindful Pure Omega-3 30 caps",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "mum_s_bumps_omega_3_fish_oil_for_pregnancy",
-      "product_family": "Mum's & Bumps Omega-3 Fish Oil For Pregnancy - 30 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "mums_038_bumps_pure_omega_3_8211",
-      "product_family": "Mums &#038; Bumps Pure Omega-3, 30 Capsules &#8211; Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "mums_bumps_omega_3_fish_oil_capsules",
-      "product_family": "Bare Biology Mums & Bumps Omega 3 Fish Oil Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "mums_bumps_pure_omega",
-      "product_family": "Bare Biology Mums & Bumps Pure Omega 30 Caps",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "pure_bovine_collagen_powder",
-      "product_family": "Bare Biology Pure Bovine Collagen Powder",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "pure_marine_collagen_powder",
-      "product_family": "Bare Biology Pure Marine Collagen Powder 300g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "ready_and_rested_magnesium_bisglycinate",
-      "product_family": "Bare Biology Ready And Rested Magnesium Bisglycinate, 180 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "ready_rested_magnesium",
-      "product_family": "Bare Biology Ready & Rested Magnesium",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "ready_rested_magnesium_bisglycinate",
-      "product_family": "Ready & Rested Magnesium Bisglycinate - 180 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "rise_shine_omega_3_vitamin_d3_capsules",
-      "product_family": "\"Bare Biology Rise & Shine, Omega-3 + Vitamin D3 Capsules\" 60 caps",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "skinful_marine_collagen_plus_vitamin_c_strawberry_flavour",
-      "product_family": "Skinful Marine Collagen Plus Vitamin C Strawberry Flavour 300g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "skinful_marine_collagen_vitamin_c",
-      "product_family": "Skinful Marine Collagen + Vitamin C - 300g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "skinful_marine_collagen_vitamin_c_strawberry_flavour_8211",
-      "product_family": "Skinful Marine Collagen + Vitamin C (Natural Strawberry Flavour) 300g &#8211; Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "skinful_pure_marine_collagen",
-      "product_family": "Bare Biology Skinful Pure Marine Collagen 300g",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "vegan_omega_3_038_astaxanthin_8211",
-      "product_family": "Vegan Omega-3 &#038; Astaxanthin (60 capsules) &#8211; Bare Biology",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "vim_vigour_vegan_omega",
-      "product_family": "Vim & Vigour Vegan Omega-3 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "vim_vigour_vegan_omega_3",
-      "product_family": "Vim & Vigour (Vegan Omega-3) - 60 Capsules",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "planetorganic.com",
-        "shop.zenhealthcare.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "vim_vigour_vegan_omega_3_astaxanthin",
-      "product_family": "Bare Biology Vim & Vigour Vegan Omega 3 + Astaxanthin 60 caps",
-      "stores_carrying": 1,
-      "total_stores": 6,
-      "penetration_pct": 17,
-      "is_hero": false,
-      "missing_in": [
-        "citysurvivor.co.uk",
-        "contentbeautywellbeing.com",
-        "shop.zenhealthcare.co.uk",
-        "supplementhub.co.uk",
-        "yourhealthbasket.co.uk"
-      ]
-    }
-  ],
   "out_of_stock_alerts": [
     {
       "sku_key": "citysurvivor.co.uk::bare-biology::life-soul-pure-omega-3-liquid::41278406295690",
@@ -761,10 +30,9 @@
       "first_seen_oos_at": "2026-10-21T14:08:36+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 14:08 UTC)",
-      "days_oos": 0.0,
-      "est_case_po_gbp": 155.85,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 14:08 UTC)",
+      "days_oos": 0.97,
+      "price_note": "Full Price"
     },
     {
       "sku_key": "contentbeautywellbeing.com::bare-biology::bare-biology-life-soul-pure-omega-3-daily-capsules::56576119112061",
@@ -786,10 +54,9 @@
       "first_seen_oos_at": "2026-10-21T14:08:30+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 14:08 UTC)",
-      "days_oos": 0.0,
-      "est_case_po_gbp": 98.85,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 14:08 UTC)",
+      "days_oos": 0.97,
+      "price_note": "Full Price"
     },
     {
       "sku_key": "contentbeautywellbeing.com::bare-biology::bare-biology-life-soul-pure-omega-3-liquid::32819112935505",
@@ -811,10 +78,9 @@
       "first_seen_oos_at": "2026-10-21T14:08:30+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 14:08 UTC)",
-      "days_oos": 0.0,
-      "est_case_po_gbp": 155.85,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 14:08 UTC)",
+      "days_oos": 0.97,
+      "price_note": "Full Price"
     },
     {
       "sku_key": "contentbeautywellbeing.com::bare-biology::bare-biology-ready-rested-magnesium::55078444564861",
@@ -836,10 +102,9 @@
       "first_seen_oos_at": "2026-10-21T14:08:30+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 14:08 UTC)",
-      "days_oos": 0.0,
-      "est_case_po_gbp": 104.97,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 14:08 UTC)",
+      "days_oos": 0.97,
+      "price_note": "Full Price"
     },
     {
       "sku_key": "contentbeautywellbeing.com::bare-biology::bare-biology-skinful-pure-marine-collagen-powder::32819113033809",
@@ -861,10 +126,9 @@
       "first_seen_oos_at": "2026-10-21T14:08:30+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 14:08 UTC)",
-      "days_oos": 0.0,
-      "est_case_po_gbp": 119.85,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 14:08 UTC)",
+      "days_oos": 0.97,
+      "price_note": "Full Price"
     },
     {
       "sku_key": "shop.zenhealthcare.co.uk::bare-biology::bare-biology-beam-balance-vitamin-d3-k2-peppermint-spray-25-ml::57901800653145",
@@ -886,10 +150,9 @@
       "first_seen_oos_at": "2026-10-21T14:08:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 14:08 UTC)",
-      "days_oos": 0.0,
-      "est_case_po_gbp": 53.97,
-      "price_signal": "⚠️ Discounted -22% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 14:08 UTC)",
+      "days_oos": 0.97,
+      "price_note": "Discounted -22% (was £22.99)"
     },
     {
       "sku_key": "shop.zenhealthcare.co.uk::bare-biology::bare-biology-pure-marine-collagen-powder-300g::58644140458329",
@@ -911,10 +174,9 @@
       "first_seen_oos_at": "2026-10-21T14:08:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 14:08 UTC)",
-      "days_oos": 0.0,
-      "est_case_po_gbp": 120.0,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 14:08 UTC)",
+      "days_oos": 0.97,
+      "price_note": "Full Price"
     }
   ],
   "silent_removals": [],

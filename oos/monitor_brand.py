@@ -378,25 +378,19 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
 
     hero_map = {h["normalized_key"]: h["product_family"] for h in hero_benchmarks if h["is_hero"]}
 
-    total_est_po_gbp = 0.0
     oos_enriched = []
     for s in oos_skus:
         dur_str, days_float = format_duration_since(s["first_seen_oos_at"], now)
-        rrp = s["current_price"] or s["last_in_stock_price"] or 16.0
-        est_case_po = round((rrp * 0.5) * 6, 2)
-        total_est_po_gbp += est_case_po
-
-        clearance_flag = "Sold out at Full RRP (Strong Reorder Signal)"
+        price_note = "Full Price"
         if s["compare_at_price"] and s["current_price"] and s["compare_at_price"] > s["current_price"]:
             disc_pct = round(100 * (1 - s["current_price"] / s["compare_at_price"]))
-            clearance_flag = f"⚠️ Discounted -{disc_pct}% before OOS (Clearance/Delist Risk)"
+            price_note = f"Discounted -{disc_pct}% (was £{s['compare_at_price']:.2f})"
 
         oos_enriched.append({
             **s,
             "duration_label": dur_str,
             "days_oos": days_float,
-            "est_case_po_gbp": est_case_po,
-            "price_signal": clearance_flag,
+            "price_note": price_note,
         })
 
     report_payload = {
@@ -404,13 +398,12 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
         "brand_slug": slug,
         "generated_at": now.isoformat(timespec="seconds"),
         "summary": {
-            "monitored_uk_independent_stores": len(stores),
+            "monitored_uk_stores": len(stores),
             "total_listed_skus_variants": len(active_skus),
+            "in_stock_skus_variants": len(active_skus) - len(oos_enriched),
             "out_of_stock_skus_variants": len(oos_enriched),
             "silent_removed_skus": len(silent_removed),
-            "estimated_immediate_replenishment_po_gbp": round(total_est_po_gbp, 2),
         },
-        "hero_sku_benchmarks": hero_benchmarks,
         "out_of_stock_alerts": oos_enriched,
         "silent_removals": silent_removed,
         "recent_events": events,
@@ -421,31 +414,32 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
     report_json_path.write_text(json.dumps(report_payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
     lines = [
-        f"# Wholesale Revenue & Shelf Intelligence Dispatch: {brand_name} (UK Independents)",
+        f"# UK Stockist Out-of-Stock (OOS) Report: {brand_name}",
         "",
         f"- **Generated:** {now.strftime('%Y-%m-%d %H:%M UTC')}",
-        f"- **Monitored Independent UK Stockists:** {len(stores)}",
-        f"- **Total Active SKU/Variant Listings Tracked:** {len(active_skus)}",
-        f"- **Active Out-of-Stock (OOS) Variants:** **{len(oos_enriched)}**",
-        f"- **Silently Removed / Unlisted SKUs:** **{len(silent_removed)}**",
-        f"- **Estimated Immediate Replenishment PO Value (6-unit wholesale cases):** **£{total_est_po_gbp:,.2f}**",
+        f"- **Monitored UK Stockists:** {len(stores)}",
+        f"- **Total Tracked Variants:** {len(active_skus)}",
+        f"- **In Stock Variants:** {len(active_skus) - len(oos_enriched)}",
+        f"- **Out-of-Stock (OOS) Variants:** **{len(oos_enriched)}**",
+        f"- **Removed / Unlisted Variants:** **{len(silent_removed)}**",
         "",
         "---",
         "",
-        "## 1. Out-of-Stock (OOS) Aging & Demand vs. Clearance Signals",
+        "## 1. Out-of-Stock (OOS) Variants",
         "",
     ]
     if oos_enriched:
         lines += [
-            "| Store | Product | Size / Variant | Price | OOS Duration | Demand / Price Signal | Est. 6-Unit Case PO |",
-            "|---|---|---|---|---|---|---|",
+            "| Store | Tier | Product | Size / Variant | Shelf Price | First Seen OOS | Time OOS | Price Note |",
+            "|---|---|---|---|---|---|---|---|",
         ]
         for item in oos_enriched:
             p_str = f"£{item['current_price']:.2f}" if item["current_price"] else "-"
             safe_title = item["product_title"].replace("|", "—")
+            tier_lbl = sme_brands.stockist_tier(item["domain"])
             lines.append(
-                f"| `{item['domain']}` | {safe_title} | {item['variant_title']} | {p_str} | "
-                f"**{item['duration_label']}** | {item['price_signal']} | **£{item['est_case_po_gbp']:.2f}** |"
+                f"| `{item['domain']}` | {tier_lbl} | {safe_title} | {item['variant_title']} | {p_str} | "
+                f"{item['first_seen_oos_at'] or '-'} | **{item['duration_label']}** | {item['price_note']} |"
             )
     else:
         lines.append("_All tracked variants across monitored UK stockists are currently In Stock._")
@@ -454,7 +448,7 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
         "",
         "---",
         "",
-        "## 2. Silent Removals / Ghost Stockouts (Diffed Against Previous Scans)",
+        "## 2. Removed / Delisted Variants (Diffed Against Previous Scans)",
         "",
     ]
     if silent_removed:
@@ -469,53 +463,27 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
             )
     else:
         lines.append(
-            "_No silent product removals detected yet (baseline snapshot recorded in `oos_state.db`; any product removed by a store on future runs will be flagged here automatically)._"
+            "_No removed variants detected yet._"
         )
 
     lines += [
         "",
         "---",
         "",
-        "## 3. UK Independent Peer Benchmark & Missing Hero SKU Upsell Gaps",
+        "## 3. Stockist Summary",
         "",
-        "| Product Family | UK Stockist Penetration | Hero Status | Active UK Stockists Missing This SKU (Upsell Targets) |",
-        "|---|---|---|---|",
-    ]
-    for h in hero_benchmarks[:20]:
-        badge = "★ HERO" if h["is_hero"] else "Secondary"
-        missing_str = ", ".join(f"`{d}`" for d in h["missing_in"]) if h["missing_in"] else "_Stocked by 100% of stores_"
-        lines.append(
-            f"| **{h['product_family'].replace('|', '—')}** | **{h['penetration_pct']}%** ({h['stores_carrying']}/{h['total_stores']} stores) | {badge} | {missing_str} |"
-        )
-
-    lines += [
-        "",
-        "---",
-        "",
-        "## 4. Store-by-Store Wholesale Account Action Cards",
-        "",
+        "| Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |",
+        "|---|---|---|---|---|---|---|",
     ]
     for st in stores:
         dom = st["domain"]
+        tier_lbl = sme_brands.stockist_tier(dom)
         st_skus = [s for s in active_skus if s["domain"] == dom]
         st_oos = [s for s in oos_enriched if s["domain"] == dom]
         st_in = len(st_skus) - len(st_oos)
-        carried_norm = {sme_brands.normalize_product_family_key(brand_cfg, s["product_title"]) for s in st_skus}
-        missing_heroes = [lbl for k, lbl in hero_map.items() if k not in carried_norm]
-        po_val = sum(s["est_case_po_gbp"] for s in st_oos)
-
-        lines.append(f"### `{dom}` ({st['platform']}) — {st_in} In Stock / {len(st_oos)} OOS")
-        lines.append(f"- **Storefront URL:** {st['brand_url']}")
-        if st_oos:
-            oos_names = ", ".join(f"*{s['product_title'].replace('|', '—')} ({s['variant_title']})*" for s in st_oos[:6])
-            lines.append(f"- **Immediate Replenishment Alert (£{po_val:.2f} est. PO):** {len(st_oos)} variant(s) out of stock: {oos_names}")
-        else:
-            lines.append("- **Replenishment Status:** 100% of listed variants are currently In Stock.")
-        if missing_heroes:
-            lines.append(f"- **Hero Assortment Gaps (Upsell):** Missing **{len(missing_heroes)}** Hero SKU(s): {', '.join(missing_heroes[:6])}")
-        else:
-            lines.append("- **Assortment Coverage:** Carries 100% of UK Hero SKUs.")
-        lines.append("")
+        lines.append(
+            f"| `{dom}` | {tier_lbl} | {st['platform']} | {len(st_skus)} | {st_in} | **{len(st_oos)}** | {st['brand_url']} |"
+        )
 
     content = "\n".join(lines) + "\n"
     report_md_path.write_text(content, encoding="utf-8")

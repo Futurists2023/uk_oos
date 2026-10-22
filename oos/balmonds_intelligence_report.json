@@ -1,578 +1,14 @@
 {
   "brand": "Balmonds",
   "brand_slug": "balmonds",
-  "generated_at": "2026-10-21T13:59:11+00:00",
+  "generated_at": "2026-10-22T13:25:11+00:00",
   "summary": {
-    "monitored_uk_independent_stores": 11,
+    "monitored_uk_stores": 11,
     "total_listed_skus_variants": 106,
+    "in_stock_skus_variants": 84,
     "out_of_stock_skus_variants": 22,
-    "silent_removed_skus": 0,
-    "estimated_immediate_replenishment_po_gbp": 977.67
+    "silent_removed_skus": 0
   },
-  "hero_sku_benchmarks": [
-    {
-      "normalized_key": "skin_salvation",
-      "product_family": "Balmonds Skin Salvation 50ml",
-      "stores_carrying": 10,
-      "total_stores": 11,
-      "penetration_pct": 91,
-      "is_hero": true,
-      "missing_in": [
-        "baldwins.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "gentle_face_wash",
-      "product_family": "Balmonds Gentle Face Wash 125ml",
-      "stores_carrying": 7,
-      "total_stores": 11,
-      "penetration_pct": 64,
-      "is_hero": true,
-      "missing_in": [
-        "baldwins.co.uk",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "intensive_hand_cream",
-      "product_family": "Balmonds Intensive Hand Cream 50ml",
-      "stores_carrying": 7,
-      "total_stores": 11,
-      "penetration_pct": 64,
-      "is_hero": true,
-      "missing_in": [
-        "baldwins.co.uk",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "body_hand_hair_wash",
-      "product_family": "Balmonds Body Hand & Hair Wash 200ml",
-      "stores_carrying": 6,
-      "total_stores": 11,
-      "penetration_pct": 55,
-      "is_hero": true,
-      "missing_in": [
-        "baldwins.co.uk",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "hair_scalp_oil",
-      "product_family": "Balmonds Hair & Scalp Oil 50ml",
-      "stores_carrying": 6,
-      "total_stores": 11,
-      "penetration_pct": 55,
-      "is_hero": true,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk",
-        "planetorganic.com"
-      ]
-    },
-    {
-      "normalized_key": "daily_moisturiser",
-      "product_family": "Balmonds Daily Moisturiser 100ml",
-      "stores_carrying": 5,
-      "total_stores": 11,
-      "penetration_pct": 45,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "scar_stretch_mark_oil",
-      "product_family": "Balmonds Scar & Stretch Mark Oil 50ml",
-      "stores_carrying": 5,
-      "total_stores": 11,
-      "penetration_pct": 45,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "johnandginger.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "super_7_serum",
-      "product_family": "Balmonds Super 7 Serum 30ml",
-      "stores_carrying": 5,
-      "total_stores": 11,
-      "penetration_pct": 45,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "contentbeautywellbeing.com",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "cooling_cream",
-      "product_family": "Balmonds Cooling Cream",
-      "stores_carrying": 4,
-      "total_stores": 11,
-      "penetration_pct": 36,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "omega_rich_cleansing_oil",
-      "product_family": "Balmonds Omega Rich Cleansing Oil",
-      "stores_carrying": 4,
-      "total_stores": 11,
-      "penetration_pct": 36,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "hydrating_body_oil",
-      "product_family": "Balmonds Hydrating Body Oil - 200ml",
-      "stores_carrying": 3,
-      "total_stores": 11,
-      "penetration_pct": 27,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "omega_rich_facial_oil",
-      "product_family": "Balmonds Omega-Rich Facial Oil - 30ml",
-      "stores_carrying": 3,
-      "total_stores": 11,
-      "penetration_pct": 27,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "tea_tree_balm",
-      "product_family": "Balmonds Tea Tree Balm - 15ml",
-      "stores_carrying": 3,
-      "total_stores": 11,
-      "penetration_pct": 27,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "contentbeautywellbeing.com",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "daily_moisturising_cream",
-      "product_family": "Balmonds Daily Moisturising Cream 100ml",
-      "stores_carrying": 2,
-      "total_stores": 11,
-      "penetration_pct": 18,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "face_the_day_spf30_sunscreen",
-      "product_family": "Balmonds Face the Day SPF30 Sunscreen",
-      "stores_carrying": 2,
-      "total_stores": 11,
-      "penetration_pct": 18,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "top_to_toe_spf30_sunscreen",
-      "product_family": "Balmonds Top to Toe SPF30 Sunscreen",
-      "stores_carrying": 2,
-      "total_stores": 11,
-      "penetration_pct": 18,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "balmonds_sku",
-      "product_family": "BALMONDS",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "bath_and_body_oil",
-      "product_family": "Balmonds Bath and Body Oil 200ml",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "bath_body_oil",
-      "product_family": "Balmonds Bath & Body Oil",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "face_the_day_spf30",
-      "product_family": "Balmonds Face the Day SPF30 - 50ml",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "hair_and_scalp_oil",
-      "product_family": "balmonds-hair-and-scalp-oil.html",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "intensive_facial_oil",
-      "product_family": "Balmonds Intensive Facial Oil",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "next_product",
-      "product_family": "Next product",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "scalp_oil",
-      "product_family": "Balmonds Scalp Oil",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "scar_and_stretch_mark_oil",
-      "product_family": "balmonds-scar-and-stretch-mark-oil.html",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "shampoo_and_body_wash",
-      "product_family": "Balmonds Natural Shampoo And Body Wash 200ml",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "skin_salvation_intensive_moisturising_ointment",
-      "product_family": "Balmonds Skin Salvation Intensive Moisturising Ointment 120ml",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "skin_salvation_moisturising_ointment",
-      "product_family": "Balmonds Skin Salvation Moisturising Ointment 30ml",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "skin_salvation_moisturising_salve",
-      "product_family": "Balmonds Skin Salvation Moisturising Salve",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "tea_tree_rescue_salve",
-      "product_family": "Balmonds Tea Tree Rescue Salve 15ml",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "bodykind.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    },
-    {
-      "normalized_key": "top_to_toe_spf30",
-      "product_family": "Balmonds Top-to-Toe SPF30 - 100ml",
-      "stores_carrying": 1,
-      "total_stores": 11,
-      "penetration_pct": 9,
-      "is_hero": false,
-      "missing_in": [
-        "baldwins.co.uk",
-        "biggreensmile.com",
-        "contentbeautywellbeing.com",
-        "dulwichhealth.co.uk",
-        "expresschemist.co.uk",
-        "johnandginger.co.uk",
-        "mypure.co.uk",
-        "onlynaturals.co.uk",
-        "planetorganic.com",
-        "quickvit.co.uk"
-      ]
-    }
-  ],
   "out_of_stock_alerts": [
     {
       "sku_key": "contentbeautywellbeing.com::balmonds-skin-salvation::55535489352061",
@@ -594,10 +30,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:51+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 45.0,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Full Price"
     },
     {
       "sku_key": "expresschemist.co.uk::balmonds-rosehip-scar-oil-50ml.html",
@@ -619,10 +54,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:02+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 46.35,
-      "price_signal": "Sold out at Full RRP (Strong Reorder Signal)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Full Price"
     },
     {
       "sku_key": "mypure.co.uk::body-hand-hair-wash::42621749821615",
@@ -644,10 +78,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 56.1,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £22.00)"
     },
     {
       "sku_key": "mypure.co.uk::cooling-cream::42621740581039",
@@ -669,10 +102,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 53.55,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £21.00)"
     },
     {
       "sku_key": "mypure.co.uk::daily-moisturising-cream::42621742710959",
@@ -694,10 +126,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 40.8,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £16.00)"
     },
     {
       "sku_key": "mypure.co.uk::daily-moisturising-cream::42621742743727",
@@ -719,10 +150,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 68.82,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £26.99)"
     },
     {
       "sku_key": "mypure.co.uk::scalp-oil::42621756211375",
@@ -744,10 +174,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 40.8,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £16.00)"
     },
     {
       "sku_key": "mypure.co.uk::bath-body-emollient-oil::42621737402543",
@@ -769,10 +198,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 38.25,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £15.00)"
     },
     {
       "sku_key": "mypure.co.uk::omega-rich-cleansing-oil::42621752311983",
@@ -794,10 +222,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 40.8,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £16.00)"
     },
     {
       "sku_key": "mypure.co.uk::omega-rich-facial-oil::42621744251055",
@@ -819,10 +246,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 63.75,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £25.00)"
     },
     {
       "sku_key": "mypure.co.uk::skin-salvation::42621766467759",
@@ -844,10 +270,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 22.95,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £9.00)"
     },
     {
       "sku_key": "mypure.co.uk::skin-salvation::44354788655279",
@@ -869,10 +294,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 38.25,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £15.00)"
     },
     {
       "sku_key": "mypure.co.uk::tea-tree-balm::42621768499375",
@@ -894,10 +318,9 @@
       "first_seen_oos_at": "2026-10-21T13:44:53+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:44 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 11.85,
-      "price_signal": "⚠️ Discounted -15% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:44 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -15% (was £4.65)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-body-hand-hair-wash-200ml::37612016664775",
@@ -919,10 +342,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 59.4,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £22.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-cooling-cream-100ml::55829190771065",
@@ -944,10 +366,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 56.7,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £21.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-daily-moisturiser-100ml::37612014502087",
@@ -969,10 +390,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 43.2,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £16.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-gentle-face-wash-125ml::37612018106567",
@@ -994,10 +414,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 43.2,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £16.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-hydrating-body-oil-200ml::37612015616199",
@@ -1019,10 +438,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 40.5,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £15.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-omega-rich-cleansing-oil-200ml::37612013879495",
@@ -1044,10 +462,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 43.2,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £16.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-skin-salvation-intensive-moisturising-ointment::37612022956231",
@@ -1069,10 +486,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 24.3,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £9.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-skin-salvation-intensive-moisturising-ointment::37612023021767",
@@ -1094,10 +510,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 40.5,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £15.00)"
     },
     {
       "sku_key": "onlynaturals.co.uk::balmonds-skin-salvation-intensive-moisturising-ointment::37612022988999",
@@ -1119,10 +534,9 @@
       "first_seen_oos_at": "2026-10-21T13:45:09+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-21 13:45 UTC)",
-      "days_oos": 0.01,
-      "est_case_po_gbp": 59.4,
-      "price_signal": "⚠️ Discounted -10% before OOS (Clearance/Delist Risk)"
+      "duration_label": "23h (first detected 2026-10-21 13:45 UTC)",
+      "days_oos": 0.99,
+      "price_note": "Discounted -10% (was £22.00)"
     }
   ],
   "silent_removals": [],
