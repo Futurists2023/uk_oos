@@ -44,7 +44,7 @@ def parse_gbp_price(text: str | float | int | None) -> float | None:
     return round(float(m.group(1)), 2) if m else None
 
 
-async def human_pause(min_s: float = 2.0, max_s: float = 3.8, label: str = "") -> None:
+async def human_pause(min_s: float = 2.2, max_s: float = 4.2, label: str = "") -> None:
     delay = random.uniform(min_s, max_s)
     if label:
         print(f"    [human pause {delay:.1f}s] {label}")
@@ -52,9 +52,22 @@ async def human_pause(min_s: float = 2.0, max_s: float = 3.8, label: str = "") -
 
 
 async def smooth_scroll(page, steps: int = 3) -> None:
-    for _ in range(steps):
-        await page.mouse.wheel(0, random.randint(260, 480))
-        await asyncio.sleep(random.uniform(0.7, 1.3))
+    """Mimic natural human mouse movement across the viewport, variable wheel scrolling, and reading pauses."""
+    try:
+        await page.mouse.move(
+            random.randint(240, 1180),
+            random.randint(180, 720),
+            steps=random.randint(12, 25),
+        )
+    except Exception:
+        pass
+    for i in range(steps):
+        await page.mouse.wheel(0, random.randint(240, 490))
+        await asyncio.sleep(random.uniform(0.8, 1.5))
+        if i == steps - 1 and random.random() < 0.35:
+            # Occasional slight scroll back up like a shopper re-reading a product card
+            await page.mouse.wheel(0, -random.randint(80, 160))
+            await asyncio.sleep(random.uniform(0.5, 1.0))
 
 
 async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]:
@@ -89,6 +102,7 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
             ];
             for (const path of candidatePaths) {
                 try {
+                    await new Promise(res => setTimeout(res, 350 + Math.random() * 450));
                     const r = await fetch(path);
                     if (r.ok) {
                         const data = await r.json();
@@ -100,6 +114,7 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
             }
 
             try {
+                await new Promise(res => setTimeout(res, 450 + Math.random() * 550));
                 const r = await fetch(`/search/suggest.json?q=${encodeURIComponent(brandName)}&resources[type]=product&resources[limit]=25`);
                 if (r.ok) {
                     const data = await r.json();
@@ -108,6 +123,7 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
                     for (const c of candidates) {
                         const cleanPath = (c.url || '').split('?')[0];
                         try {
+                            await new Promise(res => setTimeout(res, 400 + Math.random() * 500));
                             const pr = await fetch(cleanPath + '.js');
                             if (pr.ok) {
                                 full.push(await pr.json());
@@ -543,6 +559,8 @@ async def audit_single_brand(
                 print(f"    -> Recorded {stats['seen']} SKU/variants ({in_cnt} in stock, {oos_cnt} OOS)")
             except Exception as exc:
                 print(f"    -> Error auditing {dom} for {brand_name}: {exc}")
+            if idx < len(targets):
+                await human_pause(2.5, 4.8, f"Natural pause before next retailer")
         await page.close()
 
     return generate_intelligence_report_for_brand(conn, brand_cfg)
@@ -620,6 +638,9 @@ async def run_cli(args) -> None:
             viewport={"width": 1440, "height": 900},
             locale="en-GB",
             timezone_id="Europe/London",
+            extra_http_headers={
+                "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+            },
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -627,13 +648,19 @@ async def run_cli(args) -> None:
             ),
         )
         await context.add_init_script(
-            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+            """
+            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+            Object.defineProperty(navigator, 'languages', {get: () => ['en-GB', 'en']});
+            window.chrome = window.chrome || { runtime: {} };
+            """
         )
 
-        for b in target_brands:
+        for idx, b in enumerate(target_brands, 1):
             await audit_single_brand(
                 context, conn, b, only_set, args.report_only, args.discover
             )
+            if idx < len(target_brands):
+                await human_pause(4.0, 7.5, "Natural breather before next brand")
 
         await browser.close()
 

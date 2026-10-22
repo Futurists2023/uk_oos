@@ -137,7 +137,7 @@ def is_excluded_domain(domain: str) -> tuple[bool, str]:
     return False, ""
 
 
-async def human_pause(min_s: float = 1.8, max_s: float = 3.5, label: str = "") -> None:
+async def human_pause(min_s: float = 2.1, max_s: float = 4.2, label: str = "") -> None:
     delay = random.uniform(min_s, max_s)
     if label:
         print(f"    [pause {delay:.1f}s] {label}")
@@ -145,9 +145,22 @@ async def human_pause(min_s: float = 1.8, max_s: float = 3.5, label: str = "") -
 
 
 async def smooth_scroll(page, steps: int = 2) -> None:
-    for _ in range(steps):
-        await page.mouse.wheel(0, random.randint(250, 480))
-        await asyncio.sleep(random.uniform(0.6, 1.2))
+    """Mimic natural human mouse movement, variable-speed wheel scrolling, and reading pauses."""
+    try:
+        await page.mouse.move(
+            random.randint(240, 1180),
+            random.randint(180, 720),
+            steps=random.randint(12, 24),
+        )
+    except Exception:
+        pass
+    for i in range(steps):
+        await page.mouse.wheel(0, random.randint(240, 490))
+        await asyncio.sleep(random.uniform(0.75, 1.45))
+        if i == steps - 1 and random.random() < 0.35:
+            # Occasional slight scroll back up like a human re-reading a product card
+            await page.mouse.wheel(0, -random.randint(70, 150))
+            await asyncio.sleep(random.uniform(0.45, 0.9))
 
 
 def extract_organic_yahoo(hrefs: list[str]) -> list[str]:
@@ -598,6 +611,9 @@ async def run_cli(args) -> None:
             viewport={"width": 1440, "height": 900},
             locale="en-GB",
             timezone_id="Europe/London",
+            extra_http_headers={
+                "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+            },
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -605,11 +621,17 @@ async def run_cli(args) -> None:
             ),
         )
         await context.add_init_script(
-            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+            """
+            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+            Object.defineProperty(navigator, 'languages', {get: () => ['en-GB', 'en']});
+            window.chrome = window.chrome || { runtime: {} };
+            """
         )
 
-        for b in target_brands:
+        for idx, b in enumerate(target_brands, 1):
             await discover_for_brand(context, b, skip_search=args.skip_search)
+            if idx < len(target_brands):
+                await human_pause(3.5, 6.5, "Natural pause before next brand")
 
         await browser.close()
 
