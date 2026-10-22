@@ -294,9 +294,10 @@ a:hover {
   color: var(--ink);
 }
 
-/* Compact Overview Matrix (Product x Stockist Grid) */
+/* Compact Overview Matrix (Frozen Top Row + Frozen Left Column + Internal Scroll Box) */
 .matrix-wrap {
-  overflow-x: auto;
+  max-height: calc(100vh - 210px);
+  overflow: auto;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--surface);
@@ -304,12 +305,16 @@ a:hover {
 
 .matrix-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 0.82rem;
 }
 
 .matrix-table th {
-  padding: 10px 8px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px 12px;
   border-bottom: 1px solid var(--ink);
   font-weight: 600;
   color: var(--ink);
@@ -319,11 +324,10 @@ a:hover {
 }
 
 .matrix-table th.col-product {
+  left: 0;
+  z-index: 20;
   text-align: left;
   padding-left: 14px;
-  position: sticky;
-  left: 0;
-  z-index: 2;
   background: #f9fafb;
   border-right: 1px solid var(--line);
 }
@@ -336,10 +340,11 @@ a:hover {
 }
 
 .matrix-table td {
-  padding: 7px 8px;
+  padding: 8px 12px;
   border-bottom: 1px solid var(--line);
   text-align: center;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .matrix-table tr:last-child td {
@@ -351,13 +356,14 @@ a:hover {
 }
 
 .matrix-table td.col-product {
+  position: sticky;
+  left: 0;
+  z-index: 5;
   text-align: left;
   padding-left: 14px;
   font-weight: 600;
   color: var(--ink);
   white-space: nowrap;
-  position: sticky;
-  left: 0;
   background: var(--surface);
   border-right: 1px solid var(--line);
 }
