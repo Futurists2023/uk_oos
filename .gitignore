@@ -3,6 +3,7 @@
 .env.*
 *.env
 oos/.env.local
+oos/reports/admin_local_config.js
 
 # Python cache
 __pycache__/
