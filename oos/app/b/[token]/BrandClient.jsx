@@ -44,7 +44,7 @@ function shortStoreLabel(domain) {
 
 export default function BrandClient({ initialData }) {
   const [data] = useState(initialData);
-  const [displayMode, setDisplayMode] = useState('list'); // 'list' | 'matrix'
+  const [displayMode, setDisplayMode] = useState('matrix'); // 'matrix' (default) | 'list'
   const [showHealthyProducts, setShowHealthyProducts] = useState(false);
   const [toastMsg, setToastMsg] = useState(null);
 
@@ -318,16 +318,16 @@ export default function BrandClient({ initialData }) {
 
         <div className="sheet-actions">
           <button
-            className={`btn-plain ${displayMode === 'list' ? 'active' : ''}`}
-            onClick={() => setDisplayMode('list')}
-          >
-            List View
-          </button>
-          <button
             className={`btn-plain ${displayMode === 'matrix' ? 'active' : ''}`}
             onClick={() => setDisplayMode('matrix')}
           >
             Compact Overview
+          </button>
+          <button
+            className={`btn-plain ${displayMode === 'list' ? 'active' : ''}`}
+            onClick={() => setDisplayMode('list')}
+          >
+            List View
           </button>
           <button className="btn-plain" onClick={() => copyList(null)}>
             Copy List
