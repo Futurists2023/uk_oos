@@ -3,6 +3,7 @@
 Includes brand aliases, DTC domains (to exclude from 3rd-party stockist results),
 and disambiguation rules for short/common brand names (e.g. 'YES', 'Ede', 'MOA').
 """
+import html
 import re
 
 SME_BRANDS: list[dict] = [
@@ -453,24 +454,81 @@ def matches_brand(brand: dict, vendor: str, title: str) -> bool:
 
 
 def normalize_product_family_key(brand: dict, title: str) -> str:
-    """Create a cross-store canonical product key for any of the 24 SME brands.
+    """Create a cross-store canonical product key for any of the 43 SME brands.
 
-    Strips brand names/aliases, sizes/weights/counts (e.g. 50ml, 100g, 60 caps),
-    and punctuation so the same SKU across different UK retailers groups together
-    for Hero SKU penetration benchmarking.
+    Decodes HTML entities, strips file extensions (.html/.aspx), brand names/aliases,
+    conjunctions ('and'/'&'/'plus'), sizes/weights/counts (e.g. 50ml, 100g, 60 caps),
+    and punctuation so the same SKU across different UK retailers groups together.
     """
-    low = (title or "").lower().replace(".html", "").replace(".aspx", "")
-    # Remove anything after pipe '|' or ' - ' if it's an ingredient subtitle or size suffix
-    low = low.split("|")[0]
+    low = html.unescape(title or "").lower()
+    low = re.sub(r"\.(?:html?|aspx|php)$", "", low)
+    low = low.replace("-", " ")
+    # Remove anything after pipe '|' or ' – ' if it's an ingredient subtitle or brand suffix
+    low = low.split("|")[0].split("–")[0].split("—")[0]
 
     # Strip brand aliases from start/anywhere
     for al in sorted(brand["aliases"], key=len, reverse=True):
-        low = re.sub(r"\b" + re.escape(al.lower()) + r"\b", " ", low)
+        low = re.sub(r"\b" + re.escape(al.lower().replace("-", " ")) + r"\b", " ", low)
 
     # Strip sizes, weights, capsule/tablet counts, pack sizes, prices
     low = re.sub(r"£\d+(?:\.\d{2})?", " ", low)
     low = re.sub(r"\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|fl\s*oz|l|caps|capsules|tablets|tabs|sachets|pieces|pcs|pack|pk|m)\b", " ", low, flags=re.I)
-    low = re.sub(r"\b(?:pack\s+of\s+\d+|size|default\s+title|standard|incl\s+vat|new|organic|natural)\b", " ", low, flags=re.I)
+    low = re.sub(r"\b(?:pack\s+of\s+\d+|size|default\s+title|standard|incl\s+vat|new|organic|natural|and|plus|with|for)\b", " ", low, flags=re.I)
     low = re.sub(r"[^a-z0-9]+", " ", low).strip()
     low = re.sub(r"\s+", "_", low)
+
+    # Canonical family unification across UK stockist naming variations
+    if brand["slug"] == "balmonds":
+        if "skin_salvation" in low and "bath" not in low and "hand" not in low:
+            return "skin_salvation"
+        if "daily_moisturis" in low:
+            return "daily_moisturiser"
+        if "face_the_day" in low:
+            return "face_the_day_spf30"
+        if "top_to_toe" in low:
+            return "top_to_toe_spf30"
+        if "scalp_oil" in low:
+            return "hair_scalp_oil"
+        if "tea_tree" in low:
+            return "tea_tree_balm"
+        if "bath_body" in low or "hydrating_body_oil" in low or "bath_oil" in low:
+            return "hydrating_body_oil"
+        if "body_hand_hair_wash" in low or "shampoo_body_wash" in low:
+            return "body_hand_hair_wash"
+        if "omega_rich_facial_oil" in low or "intensive_facial_oil" in low:
+            return "omega_facial_oil"
+        if "omega_rich_cleansing_oil" in low:
+            return "omega_cleansing_oil"
+        if "rosehip_scar_oil" in low or "scar_stretch_mark_oil" in low:
+            return "scar_stretch_mark_oil"
+    elif brand["slug"] == "bare-biology":
+        if "action_hero" in low or "super_hero" in low:
+            return "action_heroes_omega_3"
+        if "mums_bumps" in low or "mum_s_bumps" in low:
+            return "mums_bumps_omega_3"
+        if "vim_vigour" in low or "vegan_omega_3" in low:
+            return "vim_vigour_vegan_omega_3"
+        if "rise_shine" in low:
+            return "rise_shine_omega_3_vitamin_d3"
+        if "mindful" in low:
+            return "mindful_omega_3"
+        if "ready_rested" in low:
+            return "ready_rested_magnesium"
+        if "high_flyer" in low or "creatine_monohydrate" in low:
+            return "high_flyer_creatine"
+        if "fundamental" in low:
+            return "fundamental_collagen"
+        if "skinful" in low and "strawberry" in low:
+            return "skinful_marine_collagen_vitamin_c"
+        if "skinful" in low:
+            return "skinful_pure_marine_collagen"
+        if "beam" in low and "balance" in low:
+            return "beam_balance_vitamin_d3_k2"
+        if "life_soul" in low and "mini" in low:
+            return "life_soul_omega_3_mini_capsules"
+        if "life_soul" in low and ("liquid" in low or "daily_omega" in low and "cap" not in title.lower()):
+            return "life_soul_liquid_omega_3"
+        if "life_soul" in low:
+            return "life_soul_omega_3_capsules"
+
     return low or f"{brand['slug']}_sku"

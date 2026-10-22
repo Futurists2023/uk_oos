@@ -24,14 +24,42 @@ function calcOosAge(isoStr) {
   return `${mins}m OOS`;
 }
 
+function decodeHtmlEntities(str) {
+  return String(str || '')
+    .replace(/&#0*38;|&amp;/gi, '&')
+    .replace(/&#8211;|&ndash;/gi, '–')
+    .replace(/&#8212;|&mdash;/gi, '—')
+    .replace(/&#8217;|&#0*39;|&apos;/gi, "'")
+    .replace(/&quot;/gi, '"');
+}
+
 function cleanProductDisplayName(rawTitle, brandName) {
-  let t = String(rawTitle || '').split('|')[0].trim();
+  let t = decodeHtmlEntities(rawTitle).split('|')[0].trim();
+  if (/\.(?:html?|aspx|php)$/i.test(t) || (t.includes('-') && !t.includes(' '))) {
+    t = t
+      .replace(/\.(?:html?|aspx|php)$/i, '')
+      .replace(/-/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase());
+  }
   if (brandName) {
     const escaped = brandName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     t = t.replace(new RegExp(`^${escaped}\\s*[-–—:]?\\s*`, 'i'), '').trim();
+    t = t.replace(new RegExp(`\\s*[-–—:]\\s*${escaped}$`, 'i'), '').trim();
   }
   t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
-  return t || String(rawTitle || '').trim();
+  return t || decodeHtmlEntities(rawTitle).trim();
+}
+
+function isJunkProductRow(s, brandName, brandSlug) {
+  const raw = decodeHtmlEntities(s.product_title || '').trim();
+  const low = raw.toLowerCase();
+  const nk = String(s.normalized_product_key || '').toLowerCase();
+  if (!raw) return true;
+  if (low === String(brandName || '').toLowerCase()) return true;
+  if (/^(?:next|prev|previous|next\s+product|previous\s+product|view\s+all|read\s+more)$/i.test(raw)) return true;
+  if (nk === `${brandSlug}_sku` || nk === `other_${brandSlug}_sku` || nk === 'next_product') return true;
+  if (/\/(?:brands|collections|category|categories)\//i.test(String(s.product_url || '')) && !s.current_price) return true;
+  return false;
 }
 
 function shortStoreLabel(domain) {
@@ -86,6 +114,7 @@ export default function BrandClient({ initialData }) {
     }
 
     for (const s of activeSkus) {
+      if (isJunkProductRow(s, brand.name, brand.slug)) continue;
       if (!storeOosCounter.has(s.domain)) storeOosCounter.set(s.domain, 0);
       const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, brand.name).toLowerCase();
       if (!byProdKey.has(pKey)) {

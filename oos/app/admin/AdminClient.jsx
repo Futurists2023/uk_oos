@@ -25,14 +25,30 @@ function calcOosAge(isoStr) {
   return `${mins}m OOS`;
 }
 
+function decodeHtmlEntities(str) {
+  return String(str || '')
+    .replace(/&#0*38;|&amp;/gi, '&')
+    .replace(/&#8211;|&ndash;/gi, '–')
+    .replace(/&#8212;|&mdash;/gi, '—')
+    .replace(/&#8217;|&#0*39;|&apos;/gi, "'")
+    .replace(/&quot;/gi, '"');
+}
+
 function cleanProductDisplayName(rawTitle, brandName) {
-  let t = String(rawTitle || '').split('|')[0].trim();
+  let t = decodeHtmlEntities(rawTitle).split('|')[0].trim();
+  if (/\.(?:html?|aspx|php)$/i.test(t) || (t.includes('-') && !t.includes(' '))) {
+    t = t
+      .replace(/\.(?:html?|aspx|php)$/i, '')
+      .replace(/-/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase());
+  }
   if (brandName) {
     const escaped = brandName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     t = t.replace(new RegExp(`^${escaped}\\s*[-–—:]?\\s*`, 'i'), '').trim();
+    t = t.replace(new RegExp(`\\s*[-–—:]\\s*${escaped}$`, 'i'), '').trim();
   }
   t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
-  return t || String(rawTitle || '').trim();
+  return t || decodeHtmlEntities(rawTitle).trim();
 }
 
 export default function AdminClient({ initialData }) {

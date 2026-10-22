@@ -12,6 +12,7 @@ Usage:
 """
 import argparse
 import asyncio
+import html
 import json
 import random
 import re
@@ -231,7 +232,7 @@ async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
         if woo_items:
             skus = []
             for p in woo_items:
-                title = (p.get("name") or "").strip()
+                title = html.unescape(p.get("name") or "").strip()
                 b_tag = (p.get("brands") or [{}])[0].get("name", "") if p.get("brands") else ""
                 if not sme_brands.matches_brand(brand_cfg, b_tag, title):
                     continue
@@ -310,11 +311,32 @@ async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
 
     skus = []
     for item in items:
-        raw_title = re.sub(r"^£\d+\.\d{2}\s*\(incl VAT\)\s*", "", item["title"]).strip()
+        raw_title = html.unescape(re.sub(r"^£\d+\.\d{2}\s*\(incl VAT\)\s*", "", item["title"])).strip()
         if not sme_brands.matches_brand(brand_cfg, "", f"{raw_title} {item['url']}"):
             continue
-        if raw_title.lower() in (brand_name.lower(), f"› {brand_name.lower()}", f"see all {brand_name.lower()} products"):
+        # Reject brand collection pages, pagination links, or generic navigation links
+        if re.search(r"/(?:brands|collections|category|categories)/", item["url"], re.I):
             continue
+        if re.search(
+            r"^(?:next|prev|previous|next\s+product|previous\s+product|view\s+all|read\s+more|back\s+to)\b",
+            raw_title,
+            re.I,
+        ):
+            continue
+        if raw_title.lower() in (
+            brand_name.lower(),
+            f"› {brand_name.lower()}",
+            f"see all {brand_name.lower()} products",
+        ):
+            continue
+        # If raw_title is a filename/slug like 'balmonds-gentle-face-wash.html', humanize it
+        if re.search(r"\.(?:html?|aspx|php)$", raw_title, re.I) or ("-" in raw_title and " " not in raw_title):
+            raw_title = re.sub(r"\.(?:html?|aspx|php)$", "", raw_title, flags=re.I).replace("-", " ").title()
+
+        norm_key = sme_brands.normalize_product_family_key(brand_cfg, raw_title)
+        if not norm_key or norm_key in (f"{slug}_sku", f"other_{slug}_sku", "next_product", "previous_product"):
+            continue
+
         m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets))\b", raw_title, re.I)
         v_title = m_size.group(1) if m_size else "Standard"
         prices = [float(x) for x in re.findall(r"[£$](\d+\.\d{2})", item["text"])]
@@ -327,7 +349,7 @@ async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
             "sku_key": sku_key,
             "product_title": raw_title,
             "variant_title": v_title,
-            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, raw_title),
+            "normalized_product_key": norm_key,
             "product_url": item["url"],
             "sku_code": "",
             "price": price_val,
