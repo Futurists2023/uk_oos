@@ -1,0 +1,33 @@
+{
+  "brand": "Earth Tan",
+  "brand_slug": "earth-tan",
+  "generated_at": "2026-10-22T23:56:38+00:00",
+  "total_candidates_checked": 36,
+  "verified_uk_independent_stockists_count": 1,
+  "verified_stockists": [
+    {
+      "domain": "contentbeautywellbeing.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Earth Tan",
+      "brand_slug": "earth-tan",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.contentbeautywellbeing.com/collections/earth-tan",
+      "product_count": 2,
+      "in_stock_count": 2,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Earth Tan Carrot Tan Accelerator & Extender",
+        "Earth Tan Acacia Tan Accelerator & Extender"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    }
+  ]
+}

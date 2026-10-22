@@ -1,0 +1,59 @@
+{
+  "brand": "De Mamiel",
+  "brand_slug": "de-mamiel",
+  "generated_at": "2026-10-22T23:42:57+00:00",
+  "total_candidates_checked": 36,
+  "verified_uk_independent_stockists_count": 2,
+  "verified_stockists": [
+    {
+      "domain": "contentbeautywellbeing.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "De Mamiel",
+      "brand_slug": "de-mamiel",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.contentbeautywellbeing.com/collections/de-mamiel",
+      "product_count": 15,
+      "in_stock_count": 11,
+      "out_of_stock_count": 4,
+      "sample_products": [
+        "de Mamiel Restorative Cleansing Balm",
+        "de Mamiel Brightening Cleansing Oil",
+        "de Mamiel Multi-Active HydraMist",
+        "de Mamiel Autumn Facial Oil",
+        "de Mamiel First Fix"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "thelighttechnique.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "De Mamiel",
+      "brand_slug": "de-mamiel",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.thelighttechnique.com/",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "de Mamiel Collection"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    }
+  ]
+}

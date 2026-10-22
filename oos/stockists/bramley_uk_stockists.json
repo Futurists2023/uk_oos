@@ -1,0 +1,33 @@
+{
+  "brand": "Bramley",
+  "brand_slug": "bramley",
+  "generated_at": "2026-10-22T23:33:53+00:00",
+  "total_candidates_checked": 36,
+  "verified_uk_independent_stockists_count": 1,
+  "verified_stockists": [
+    {
+      "domain": "quickvit.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Bramley",
+      "brand_slug": "bramley",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://quickvit.co.uk/search?q=Bramley",
+      "product_count": 1,
+      "in_stock_count": 0,
+      "out_of_stock_count": 1,
+      "sample_products": [
+        "James White Bramley Apple Juice 750ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    }
+  ]
+}

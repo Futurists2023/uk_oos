@@ -1,0 +1,120 @@
+{
+  "brand": "Corinne Taylor",
+  "brand_slug": "corinne-taylor",
+  "generated_at": "2026-10-22T23:38:46+00:00",
+  "summary": {
+    "monitored_uk_stores": 2,
+    "total_listed_skus_variants": 8,
+    "in_stock_skus_variants": 8,
+    "out_of_stock_skus_variants": 0,
+    "silent_removed_skus": 0
+  },
+  "out_of_stock_alerts": [],
+  "silent_removals": [],
+  "recent_events": [
+    {
+      "id": 190,
+      "occurred_at": "2026-10-22T23:38:45+00:00",
+      "domain": "regn.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "regn.co.uk::corinne-taylor::corinne-taylor-dry-shampoo-powder-85g::57100023955834",
+      "product_title": "Corinne Taylor Dry Shampoo Powder 85g | 100% Natural Talc-Free Dry Shampoo | Vegan Volumising Hair Powder",
+      "variant_title": "85g",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 189,
+      "occurred_at": "2026-10-22T23:38:45+00:00",
+      "domain": "regn.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "regn.co.uk::corinne-taylor::dark-dry-shampoo-powder-85g::57100024021370",
+      "product_title": "Corinne Taylor Dark Dry Shampoo Powder 85g | 100% Natural Talc-Free Dry Shampoo for Brunettes & Dark Hair",
+      "variant_title": "85g",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 188,
+      "occurred_at": "2026-10-22T23:38:45+00:00",
+      "domain": "regn.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "regn.co.uk::corinne-taylor::body-powder-talcum-free-powder-100::57100024054138",
+      "product_title": "Body Powder | 100% Talc-Free Natural Body Powder | Chamomile & Lavender | 85g",
+      "variant_title": "85g",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 187,
+      "occurred_at": "2026-10-22T23:38:31+00:00",
+      "domain": "plasticfreedom.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "plasticfreedom.co.uk::corinne-taylor::corinne-taylor-argan-hair-oil-100ml::55812902388090",
+      "product_title": "Corinne Taylor Argan Hair Oil - 100ml",
+      "variant_title": "100ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 19.7,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 186,
+      "occurred_at": "2026-10-22T23:38:31+00:00",
+      "domain": "plasticfreedom.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "plasticfreedom.co.uk::corinne-taylor::corinne-taylor-chafe-away-balm-50g::55812895900026",
+      "product_title": "Corinne Taylor Chafe Away Balm - 50g",
+      "variant_title": "50g",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 16.21,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 185,
+      "occurred_at": "2026-10-22T23:38:31+00:00",
+      "domain": "plasticfreedom.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "plasticfreedom.co.uk::corinne-taylor::corinne-taylor-talc-free-body-powder-85g::55812812964218",
+      "product_title": "Corinne Taylor Talc Free Body Powder - 85g",
+      "variant_title": "85g",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 17.09,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 184,
+      "occurred_at": "2026-10-22T23:38:31+00:00",
+      "domain": "plasticfreedom.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "plasticfreedom.co.uk::corinne-taylor::corinne-taylor-dry-shampoo::55812823384442",
+      "product_title": "Corinne Taylor Dry Shampoo - 85g",
+      "variant_title": "Dark Hair",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 17.09,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 183,
+      "occurred_at": "2026-10-22T23:38:31+00:00",
+      "domain": "plasticfreedom.co.uk",
+      "brand": "Corinne Taylor",
+      "sku_key": "plasticfreedom.co.uk::corinne-taylor::corinne-taylor-dry-shampoo::55812823351674",
+      "product_title": "Corinne Taylor Dry Shampoo - 85g",
+      "variant_title": "Light Hair",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 17.09,
+      "details": "Initial discovery"
+    }
+  ]
+}

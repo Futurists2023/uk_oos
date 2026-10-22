@@ -1,0 +1,138 @@
+{
+  "brand": "Austin Austin",
+  "brand_slug": "austin-austin",
+  "generated_at": "2026-10-22T23:28:36+00:00",
+  "total_candidates_checked": 41,
+  "verified_uk_independent_stockists_count": 5,
+  "verified_stockists": [
+    {
+      "domain": "mazeclothing.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Austin Austin",
+      "brand_slug": "austin-austin",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://mazeclothing.co.uk/collections/austin-austin",
+      "product_count": 9,
+      "in_stock_count": 9,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Austin Austin Limited Edition Hand Soap & Cream Gift Set",
+        "Austin Austin Palmarosa & Vetiver Hand Soap",
+        "Austin Austin Cedar & Ylang Soap Bar",
+        "Austin Austin Palmarosa & Vetiver Hand Cream",
+        "Austin Austin Neroli & Petitgrain Body Cream"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "lifestoreshop.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Austin Austin",
+      "brand_slug": "austin-austin",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.lifestoreshop.co.uk/collections/austin-austin",
+      "product_count": 6,
+      "in_stock_count": 6,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Body Wash, Neroli Petitgrain",
+        "Neroli & Petitgrain Body Cream",
+        "Austin Austin Cedar & Patchouli Hand Cream",
+        "Palmarosa & Vetiver Hand Cream",
+        "Cedar & Patchouli Exfoliating Hand Soap"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "earlofeast.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Austin Austin",
+      "brand_slug": "austin-austin",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.earlofeast.com/collections/austin-austin",
+      "product_count": 4,
+      "in_stock_count": 4,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Neroli & Petitgrain Body Soap - 300ml",
+        "Palmarosa & Vetiver Hand Soap - 300ml",
+        "Palmarosa & Vetiver Hand Cream - 300ml",
+        "Bergamot & Juniper Conditioner - 300ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "heals.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Austin Austin",
+      "brand_slug": "austin-austin",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.heals.com/collections/austin-austin",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Go to Bergamot & Juniper Conditioner"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "ulyandro.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Austin Austin",
+      "brand_slug": "austin-austin",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.ulyandro.co.uk/shop/p/neroli-petitgrain-body-soap",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "AUSTIN AUSTIN NEROLI & PETITGRAIN BODY SOAP"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    }
+  ]
+}

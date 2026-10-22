@@ -1,0 +1,90 @@
+{
+  "brand": "Earth Conscious",
+  "brand_slug": "earth-conscious",
+  "generated_at": "2026-10-22T23:51:52+00:00",
+  "total_candidates_checked": 36,
+  "verified_uk_independent_stockists_count": 3,
+  "verified_stockists": [
+    {
+      "domain": "ethicalhouse.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Earth Conscious",
+      "brand_slug": "earth-conscious",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://ethicalhouse.co.uk/collections/earth-conscious",
+      "product_count": 13,
+      "in_stock_count": 2,
+      "out_of_stock_count": 11,
+      "sample_products": [
+        "Grapefruit and Lemon Deodorant Tin",
+        "Grapefruit and Lemon Stick Deodorant",
+        "Indian Bay Leaf and Orange Deodorant Tin",
+        "Jasmine and Rose Deodorant Tin",
+        "Jasmine and Rose Stick Deodorant"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "babipur.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Earth Conscious",
+      "brand_slug": "earth-conscious",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.babipur.co.uk/collections/earth-conscious",
+      "product_count": 6,
+      "in_stock_count": 6,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Earth Conscious Solid Deodorant Stick - 90g",
+        "Earth Conscious Moisturising Body Bar - May Chang & Cocoa",
+        "Earth Conscious Baby Balm",
+        "Earth Conscious Bare Bar Solid Deodorant",
+        "Earth Conscious Deodorant Tin"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "peacewiththewild.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Earth Conscious",
+      "brand_slug": "earth-conscious",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.peacewiththewild.co.uk/",
+      "product_count": 2,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Earth Conscious Natural Deodorant Stick – Indian Bay Leaf & Orange – Delicate 80g",
+        "Earth Conscious Natural Deodorant Stick – Lime & Ylang Ylang – 90g"
+      ],
+      "platform": "WooCommerce",
+      "notes": ""
+    }
+  ]
+}
