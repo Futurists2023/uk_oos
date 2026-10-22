@@ -219,8 +219,8 @@ a:hover {
 }
 
 .sku-name {
-  color: var(--ink);
-  font-weight: 500;
+  color: #374151;
+  font-weight: 400;
 }
 
 .sku-variant {
@@ -246,7 +246,8 @@ a:hover {
   border-radius: 4px;
   padding: 2px 8px;
   font-size: 0.8rem;
-  color: var(--ink);
+  font-weight: 400;
+  color: #374151;
   font-variant-numeric: tabular-nums;
 }
 

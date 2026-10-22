@@ -479,7 +479,7 @@ export default function AdminClient({ initialData }) {
 
                               return (
                                 <span key={v.sku_key} className="var-pill">
-                                  {hasNamedSize && <strong>{v.variant_title}</strong>}
+                                  {hasNamedSize && <span>{v.variant_title}</span>}
                                   {price && <span className="var-pill-price">{price}</span>}
                                 </span>
                               );
