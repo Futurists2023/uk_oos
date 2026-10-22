@@ -214,44 +214,75 @@ export default function BrandClient({ initialData }) {
     });
   }
 
-  function copyList(singleProductKey = null) {
-    const groups = singleProductKey
-      ? oosProductGroups.filter(g => g.productKey === singleProductKey)
-      : oosProductGroups;
+  function formatVariantList(variants) {
+    return variants
+      .map(v => {
+        const sz =
+          v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard'
+            ? v.variant_title
+            : '';
+        const pr =
+          v.current_price !== null && v.current_price !== undefined
+            ? `£${Number(v.current_price).toFixed(2)}`
+            : '';
+        if (sz && pr) return `${sz} (${pr})`;
+        return sz || pr || 'Standard';
+      })
+      .join(', ');
+  }
 
-    if (groups.length === 0) {
+  function copyList(singleProductKey = null) {
+    if (oosProductGroups.length === 0) {
       showToast('All tracked products are currently in stock.');
       return;
     }
 
     const lines = [];
-    if (!singleProductKey) {
-      lines.push(
-        `${brand.name} — Out of Stock Products (${oosProductGroups.length} products across UK stockists)`
-      );
-      lines.push(`Checked: ${fmtShortTime(latestCheck)}`);
-      lines.push('');
-    }
 
-    for (const grp of groups) {
+    // Single-product copy (from a product row in List View)
+    if (singleProductKey) {
+      const grp = oosProductGroups.find(g => g.productKey === singleProductKey);
+      if (!grp) return;
       const singleSize = grp.distinctSizes.size === 1 ? ` (${Array.from(grp.distinctSizes)[0]})` : '';
       lines.push(
         `${grp.displayName}${singleSize} — Out of Stock at ${grp.oosStores.size} store${grp.oosStores.size === 1 ? '' : 's'}:`
       );
       for (const stRow of grp.consolidatedOosStores) {
-        const varParts = stRow.variants.map(v => {
-          const sz = v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard' ? v.variant_title : '';
-          const pr = v.current_price !== null && v.current_price !== undefined ? `£${Number(v.current_price).toFixed(2)}` : '';
-          return [sz, pr].filter(Boolean).join(' ');
-        });
+        const varText = formatVariantList(stRow.variants);
         const age = calcOosAge(stRow.oldestOosAt);
-        lines.push(`  • ${stRow.domain} — ${varParts.join(', ')} [${age}] ${stRow.primaryUrl}`);
+        lines.push(`• ${stRow.domain} — ${varText} [${age}]`);
+      }
+
+      navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
+        showToast(`Copied ${grp.displayName} OOS summary`);
+      });
+      return;
+    }
+
+    // Full-sheet copy: clean Stockist-grouped summary ready for buyer emails / Slack (zero raw URL clutter)
+    lines.push(
+      `${brand.name} — Out of Stock Summary (${oosProductGroups.length} product${oosProductGroups.length === 1 ? '' : 's'} across ${totalStores} UK stockists)`
+    );
+    lines.push(`Checked: ${fmtShortTime(latestCheck)}`);
+    lines.push('');
+
+    const storesWithOos = sortedStoreColumns.filter(col => col.oosProductCount > 0);
+    for (const col of storesWithOos) {
+      lines.push(
+        `${col.domain} (${col.oosProductCount} product${col.oosProductCount === 1 ? '' : 's'} OOS):`
+      );
+      for (const grp of oosProductGroups) {
+        const stCell = grp.oosByStore.get(col.domain);
+        if (!stCell) continue;
+        const varText = formatVariantList(stCell.variants);
+        const age = calcOosAge(stCell.oldestOosAt);
+        lines.push(`• ${grp.displayName} — ${varText} [${age}]`);
       }
       lines.push('');
     }
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-      showToast(singleProductKey ? 'Copied product OOS list' : 'Copied full OOS product list');
+      showToast('Copied buyer-ready OOS summary (grouped by stockist)');
     });
   }
 
@@ -313,22 +344,35 @@ export default function BrandClient({ initialData }) {
         </div>
 
         <div className="sheet-actions">
+          <div className="view-segmented" role="tablist" aria-label="View mode">
+            <button
+              className={`view-tab ${displayMode === 'matrix' ? 'active' : ''}`}
+              onClick={() => setDisplayMode('matrix')}
+            >
+              Compact Overview
+            </button>
+            <button
+              className={`view-tab ${displayMode === 'list' ? 'active' : ''}`}
+              onClick={() => setDisplayMode('list')}
+            >
+              List View
+            </button>
+          </div>
+
+          <span className="actions-divider" aria-hidden="true" />
+
           <button
-            className={`btn-plain ${displayMode === 'matrix' ? 'active' : ''}`}
-            onClick={() => setDisplayMode('matrix')}
+            className="btn-action"
+            onClick={() => copyList(null)}
+            title="Copy clean OOS summary grouped by stockist for buyer emails or Slack"
           >
-            Compact Overview
-          </button>
-          <button
-            className={`btn-plain ${displayMode === 'list' ? 'active' : ''}`}
-            onClick={() => setDisplayMode('list')}
-          >
-            List View
-          </button>
-          <button className="btn-plain" onClick={() => copyList(null)}>
             Copy List
           </button>
-          <button className="btn-plain" onClick={downloadCSV}>
+          <button
+            className="btn-action"
+            onClick={downloadCSV}
+            title="Download CSV spreadsheet"
+          >
             CSV
           </button>
         </div>

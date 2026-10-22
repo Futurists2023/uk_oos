@@ -285,19 +285,24 @@ export default function AdminClient({ initialData }) {
         </div>
 
         <div className="sheet-actions">
-          <button
-            className={`btn-plain ${viewMode === 'directory' ? 'active' : ''}`}
-            onClick={() => setViewMode('directory')}
-          >
-            Brands ({data.brandsMeta.length})
-          </button>
-          <button
-            className={`btn-plain ${viewMode === 'all_oos' ? 'active' : ''}`}
-            onClick={() => setViewMode('all_oos')}
-          >
-            All OOS Products ({globalOosProductGroups.length})
-          </button>
-          <button className="btn-plain" onClick={refreshLive} disabled={syncing}>
+          <div className="view-segmented" role="tablist" aria-label="Admin view mode">
+            <button
+              className={`view-tab ${viewMode === 'directory' ? 'active' : ''}`}
+              onClick={() => setViewMode('directory')}
+            >
+              Brands ({data.brandsMeta.length})
+            </button>
+            <button
+              className={`view-tab ${viewMode === 'all_oos' ? 'active' : ''}`}
+              onClick={() => setViewMode('all_oos')}
+            >
+              All OOS Products ({globalOosProductGroups.length})
+            </button>
+          </div>
+
+          <span className="actions-divider" aria-hidden="true" />
+
+          <button className="btn-action" onClick={refreshLive} disabled={syncing}>
             {syncing ? 'Syncing…' : 'Refresh'}
           </button>
         </div>

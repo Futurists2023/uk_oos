@@ -93,6 +93,69 @@ a:hover {
   align-items: center;
 }
 
+.view-segmented {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-header);
+  border: 1px solid #d6d3cb;
+  border-radius: 6px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.view-tab {
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.81rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.12s, color 0.12s;
+}
+
+.view-tab:hover {
+  color: var(--ink);
+}
+
+.view-tab.active {
+  background: var(--ink);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.actions-divider {
+  width: 1px;
+  height: 20px;
+  background: #d6d3cb;
+  margin: 0 4px;
+}
+
+.btn-action {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid #d6d3cb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: inherit;
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+}
+
+.btn-action:hover {
+  background: var(--surface-header);
+  color: var(--ink);
+  border-color: #a8a29e;
+  text-decoration: none;
+}
+
 .btn-plain {
   background: var(--surface);
   color: var(--ink);
