@@ -2,37 +2,32 @@
 
 import React, { useState, useMemo } from 'react';
 
-function fmtUtc(isoStr) {
-  if (!isoStr) return '—';
+function fmtShortTime(isoStr) {
+  if (!isoStr) return 'recently';
   const d = new Date(isoStr);
   if (isNaN(d.getTime())) return String(isoStr);
   const pad = n => String(n).padStart(2, '0');
-  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return `${d.getUTCDate()} ${months[d.getUTCMonth()]}, ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
 }
 
-function calcDuration(isoStr) {
-  if (!isoStr) return { label: '—', hours: 0 };
+function calcOosAge(isoStr) {
+  if (!isoStr) return 'OOS';
   const d = new Date(isoStr);
-  if (isNaN(d.getTime())) return { label: '—', hours: 0 };
+  if (isNaN(d.getTime())) return 'OOS';
   const hours = Math.max(0, (Date.now() - d.getTime()) / 3600000);
   const days = Math.floor(hours / 24);
   const remH = Math.floor(hours % 24);
   const mins = Math.max(1, Math.floor((hours * 60) % 60));
-  if (days > 0) return { label: `${days}d ${remH}h`, hours };
-  if (remH > 0) return { label: `${remH}h ${mins}m`, hours };
-  return { label: `${mins}m`, hours };
+  if (days > 0) return `${days}d ${remH}h OOS`;
+  if (remH > 0) return `${remH}h OOS`;
+  return `${mins}m OOS`;
 }
 
 export default function BrandClient({ initialData }) {
-  const [data, setData] = useState(initialData);
-  const [syncing, setSyncing] = useState(false);
-  const [activeTab, setActiveTab] = useState('skus');
-
-  const [statusFilter, setStatusFilter] = useState('OOS');
-  const [tierFilter, setTierFilter] = useState('ALL');
-  const [storeFilter, setStoreFilter] = useState('ALL');
-  const [sortOrder, setSortOrder] = useState('LONGEST_OOS');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [data] = useState(initialData);
+  const [showHealthyStores, setShowHealthyStores] = useState(false);
+  const [showInStockProducts, setShowInStockProducts] = useState(false);
   const [toastMsg, setToastMsg] = useState(null);
 
   const brand = data.brand;
@@ -48,195 +43,127 @@ export default function BrandClient({ initialData }) {
 
   function showToast(msg) {
     setToastMsg(msg);
-    setTimeout(() => setToastMsg(null), 2600);
+    setTimeout(() => setToastMsg(null), 2400);
   }
 
-  async function refreshBrandData() {
-    try {
-      setSyncing(true);
-      const res = await fetch(`/api/brand/${brand.token}`, { cache: 'no-store' });
-      if (res.ok) {
-        const fresh = await res.json();
-        setData(fresh);
-        showToast('Refreshed live shelf data');
-      }
-    } finally {
-      setSyncing(false);
-    }
-  }
-
-  const storeDomains = useMemo(
-    () => Array.from(new Set(data.stores.map(s => s.domain))).sort(),
-    [data.stores]
-  );
-
-  const kpis = useMemo(() => {
+  // Group active SKUs by store
+  const { oosStoreGroups, healthyStores, totalOos, totalStores, latestCheck } = useMemo(() => {
     const activeSkus = data.skus.filter(s => s.is_listed === 1);
-    const oosSkus = activeSkus.filter(s => s.is_available === 0);
-    const inSkus = activeSkus.filter(s => s.is_available === 1);
-    const removedSkus = data.skus.filter(s => s.is_listed === 0);
-    const oosRate = activeSkus.length > 0 ? Math.round((oosSkus.length / activeSkus.length) * 100) : 0;
+    const byDomain = new Map();
 
-    const t1Count = storeDomains.filter(d => isTier1(d)).length;
-    const t2Count = storeDomains.length - t1Count;
+    for (const st of data.stores) {
+      byDomain.set(st.domain, {
+        store: st,
+        oosItems: [],
+        inStockItems: []
+      });
+    }
 
-    let maxHours = 0;
-    let maxLabel = '—';
-    for (const s of oosSkus) {
-      const dur = calcDuration(s.first_seen_oos_at);
-      if (dur.hours > maxHours) {
-        maxHours = dur.hours;
-        maxLabel = dur.label;
+    for (const s of activeSkus) {
+      if (!byDomain.has(s.domain)) {
+        byDomain.set(s.domain, {
+          store: { domain: s.domain, brand_url: s.product_url },
+          oosItems: [],
+          inStockItems: []
+        });
+      }
+      const grp = byDomain.get(s.domain);
+      if (s.is_available === 0) {
+        grp.oosItems.push(s);
+      } else {
+        grp.inStockItems.push(s);
       }
     }
 
-    let latestCheck = '';
-    for (const st of data.stores) {
-      if (st.last_checked_at && st.last_checked_at > latestCheck) latestCheck = st.last_checked_at;
+    const withOos = [];
+    const healthy = [];
+    let oosSum = 0;
+    let maxTs = '';
+
+    for (const grp of byDomain.values()) {
+      if (grp.store.last_checked_at && grp.store.last_checked_at > maxTs) {
+        maxTs = grp.store.last_checked_at;
+      }
+      // Sort OOS items oldest first
+      grp.oosItems.sort((a, b) => (a.first_seen_oos_at || '9999').localeCompare(b.first_seen_oos_at || '9999'));
+      oosSum += grp.oosItems.length;
+
+      if (grp.oosItems.length > 0) {
+        withOos.push(grp);
+      } else {
+        healthy.push(grp);
+      }
     }
+
+    // Sort store groups by most OOS items first
+    withOos.sort((a, b) => b.oosItems.length - a.oosItems.length);
+    healthy.sort((a, b) => a.store.domain.localeCompare(b.store.domain));
 
     return {
-      activeCount: activeSkus.length,
-      oosCount: oosSkus.length,
-      inCount: inSkus.length,
-      removedCount: removedSkus.length,
-      oosRate,
-      uniqueStoreCount: storeDomains.length,
-      t1Count,
-      t2Count,
-      maxLabel,
-      latestCheck
+      oosStoreGroups: withOos,
+      healthyStores: healthy,
+      totalOos: oosSum,
+      totalStores: byDomain.size,
+      latestCheck: maxTs
     };
-  }, [data.skus, data.stores, storeDomains]);
+  }, [data.stores, data.skus]);
 
-  const visibleSkus = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
-    const filtered = data.skus.filter(s => {
-      const statusCode = s.is_listed === 0 ? 'REMOVED' : s.is_available === 0 ? 'OOS' : 'IN_STOCK';
-      if (statusFilter !== 'ALL' && statusCode !== statusFilter) return false;
+  function copyList(singleDomain = null) {
+    const groups = singleDomain
+      ? oosStoreGroups.filter(g => g.store.domain === singleDomain)
+      : oosStoreGroups;
 
-      const tierCode = isTier1(s.domain) ? 'TIER_1' : 'TIER_2';
-      if (tierFilter !== 'ALL' && tierCode !== tierFilter) return false;
-
-      if (storeFilter !== 'ALL' && s.domain !== storeFilter) return false;
-
-      if (q) {
-        const hay = `${s.domain} ${s.product_title} ${s.variant_title}`.toLowerCase();
-        if (!hay.includes(q)) return false;
-      }
-      return true;
-    });
-
-    filtered.sort((a, b) => {
-      const aOos = a.is_listed === 1 && a.is_available === 0 ? 0 : a.is_listed === 0 ? 1 : 2;
-      const bOos = b.is_listed === 1 && b.is_available === 0 ? 0 : b.is_listed === 0 ? 1 : 2;
-      if (aOos !== bOos) return aOos - bOos;
-
-      if (sortOrder === 'LONGEST_OOS') {
-        const tA = a.first_seen_oos_at || '9999';
-        const tB = b.first_seen_oos_at || '9999';
-        if (tA !== tB) return tA.localeCompare(tB);
-      } else if (sortOrder === 'NEWEST_OOS') {
-        const tA = a.first_seen_oos_at || '';
-        const tB = b.first_seen_oos_at || '';
-        if (tA !== tB) return tB.localeCompare(tA);
-      } else if (sortOrder === 'STORE_AZ') {
-        if (a.domain !== b.domain) return a.domain.localeCompare(b.domain);
-      } else if (sortOrder === 'PRODUCT_AZ') {
-        if (a.product_title !== b.product_title) return a.product_title.localeCompare(b.product_title);
-      }
-      return (a.product_title || '').localeCompare(b.product_title || '');
-    });
-
-    return filtered;
-  }, [data.skus, statusFilter, tierFilter, storeFilter, sortOrder, searchQuery]);
-
-  function copyReport() {
-    const oosItems = visibleSkus.filter(s => s.is_listed === 1 && s.is_available === 0);
-    const targetList = oosItems.length > 0 ? oosItems : visibleSkus;
-    if (targetList.length === 0) {
-      showToast('No Out-of-Stock items in current view to copy.');
+    if (groups.length === 0) {
+      showToast('All tracked items are currently in stock.');
       return;
     }
 
-    const lines = [
-      `${brand.name} — UK Stockist Out-of-Stock Report`,
-      `Generated: ${fmtUtc(new Date().toISOString())}`,
-      `Total Out-of-Stock Variants: ${targetList.length}`,
-      `------------------------------------------------------------`
-    ];
-
-    const grouped = new Map();
-    for (const s of targetList) {
-      if (!grouped.has(s.domain)) grouped.set(s.domain, []);
-      grouped.get(s.domain).push(s);
-    }
-
-    for (const [dom, items] of grouped.entries()) {
-      const tierLbl = isTier1(dom) ? 'Tier 1 Major Retailer' : 'Tier 2 Independent Stockist';
+    const lines = [];
+    if (!singleDomain) {
+      lines.push(`${brand.name} — UK Stockist Out of Stock (${totalOos} items across ${oosStoreGroups.length} stockists)`);
+      lines.push(`Checked: ${fmtShortTime(latestCheck)}`);
       lines.push('');
-      lines.push(`[${dom}] (${tierLbl}) — ${items.length} OOS variant(s):`);
-      for (const item of items) {
-        const cleanTitle = String(item.product_title || '').split('|')[0].trim();
-        const priceStr =
-          item.current_price !== null && item.current_price !== undefined
-            ? `£${Number(item.current_price).toFixed(2)}`
-            : '—';
-        const dur = calcDuration(item.first_seen_oos_at).label;
-        const since = fmtUtc(item.first_seen_oos_at);
-        lines.push(
-          `  • ${cleanTitle} (${item.variant_title || 'Default'}) | Price: ${priceStr} | OOS for ${dur} (since ${since}) | ${item.product_url || ''}`
-        );
-      }
     }
 
-    navigator.clipboard.writeText(lines.join('\n')).then(() => {
-      showToast(`Copied ${targetList.length} OOS variant(s) to clipboard!`);
+    for (const grp of groups) {
+      lines.push(`${grp.store.domain} (${grp.oosItems.length} Out of Stock)`);
+      for (const s of grp.oosItems) {
+        const title = String(s.product_title || '').split('|')[0].trim();
+        const variant = s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard' ? ` (${s.variant_title})` : '';
+        const price = s.current_price !== null && s.current_price !== undefined ? `£${Number(s.current_price).toFixed(2)}` : '';
+        const age = calcOosAge(s.first_seen_oos_at);
+        lines.push(`- ${title}${variant}  ${price}  [${age}]  ${s.product_url || ''}`);
+      }
+      lines.push('');
+    }
+
+    navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
+      showToast(singleDomain ? `Copied ${singleDomain} OOS list` : 'Copied OOS list to clipboard');
     });
   }
 
-  function exportCSV() {
-    const headers = [
-      'Brand',
-      'Retailer',
-      'Tier',
-      'Product',
-      'Variant',
-      'Shelf_Price_GBP',
-      'Status',
-      'First_Seen_OOS_UTC',
-      'Time_OOS',
-      'Last_Checked_UTC',
-      'Product_URL'
-    ];
+  function downloadCSV() {
+    const headers = ['Brand', 'Stockist', 'Tier', 'Product', 'Variant', 'Price_GBP', 'Status', 'OOS_Duration', 'First_Seen_OOS_UTC', 'URL'];
     const rows = [headers.join(',')];
 
-    for (const s of visibleSkus) {
-      const tierStr = isTier1(s.domain) ? 'Tier 1 (Major UK Retailer)' : 'Tier 2 (Independent Stockist)';
-      const statusStr = s.is_listed === 0 ? 'REMOVED' : s.is_available === 0 ? 'OUT_OF_STOCK' : 'IN_STOCK';
-      const oosSince =
-        s.is_listed === 0 ? fmtUtc(s.silent_removed_at) : s.is_available === 0 ? fmtUtc(s.first_seen_oos_at) : '';
-      const durStr =
-        s.is_listed === 0
-          ? calcDuration(s.silent_removed_at).label
-          : s.is_available === 0
-          ? calcDuration(s.first_seen_oos_at).label
-          : '';
-      const cleanTitle = String(s.product_title || '').split('|')[0].trim();
-      const priceStr =
-        s.current_price !== null && s.current_price !== undefined ? Number(s.current_price).toFixed(2) : '';
+    const activeSkus = data.skus.filter(s => s.is_listed === 1 && (showInStockProducts || s.is_available === 0));
+    for (const s of activeSkus) {
+      const title = String(s.product_title || '').split('|')[0].trim();
+      const tier = isTier1(s.domain) ? 'Major Retailer' : 'Independent';
+      const status = s.is_available === 0 ? 'Out of Stock' : 'In Stock';
+      const age = s.is_available === 0 ? calcOosAge(s.first_seen_oos_at) : '';
+      const price = s.current_price !== null && s.current_price !== undefined ? Number(s.current_price).toFixed(2) : '';
 
       const vals = [
         brand.name,
         s.domain,
-        tierStr,
-        cleanTitle,
-        s.variant_title || 'Default',
-        priceStr,
-        statusStr,
-        oosSince,
-        durStr,
-        fmtUtc(s.last_seen_at),
+        tier,
+        title,
+        s.variant_title || '',
+        price,
+        status,
+        age,
+        s.first_seen_oos_at || '',
         s.product_url || ''
       ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`);
       rows.push(vals.join(','));
@@ -245,342 +172,170 @@ export default function BrandClient({ initialData }) {
     const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = `${brand.slug}_uk_oos_export.csv`;
+    link.download = `${brand.slug}-oos.csv`;
     link.click();
   }
 
   return (
-    <div className="customer-container">
-      <div className="ws-header">
+    <div className="sheet">
+      <header className="sheet-header">
         <div>
-          <div className="ws-title">{brand.name} — UK Retail Out-of-Stock Monitor</div>
-          <div className="ws-subtitle">
-            <span>{brand.category}</span>
-            <span>•</span>
-            <span className="sync-pill">● Live Shelf Snapshot ({fmtUtc(data.syncedAt)})</span>
-          </div>
+          <h1 className="sheet-title">{brand.name} — UK Stockist Out of Stock</h1>
+          <p className="sheet-summary">
+            {totalStores === 0 ? (
+              <span>Initial UK stockist scan is queued.</span>
+            ) : (
+              <>
+                <strong className="oos-num">{totalOos} out of stock</strong> across{' '}
+                <strong>{oosStoreGroups.length}</strong> of <strong>{totalStores}</strong> UK stockists · Checked{' '}
+                {fmtShortTime(latestCheck)}
+              </>
+            )}
+          </p>
         </div>
-        <div className="ws-actions">
-          <button className="btn btn-outline" onClick={refreshBrandData} disabled={syncing}>
-            {syncing ? '↻ Refreshing...' : '↻ Refresh Live Data'}
+
+        <div className="sheet-actions">
+          <button
+            className={`btn-plain ${showInStockProducts ? 'active' : ''}`}
+            onClick={() => setShowInStockProducts(v => !v)}
+          >
+            {showInStockProducts ? 'Hide In-Stock' : 'Show In-Stock'}
           </button>
-          <button className="btn btn-outline" onClick={copyReport}>
-            📋 Copy OOS Summary
+          <button className="btn-plain" onClick={() => copyList(null)}>
+            Copy List
           </button>
-          <button className="btn" onClick={exportCSV}>
-            ⬇ Export CSV
+          <button className="btn-plain" onClick={downloadCSV}>
+            CSV
           </button>
         </div>
-      </div>
+      </header>
 
-      {/* KPI STRIP */}
-      <div className="kpi-grid">
-        <div className="kpi-card">
-          <div className="kpi-label">Out of Stock Now</div>
-          <div className="kpi-value text-red">{kpis.oosCount}</div>
-          <div className="kpi-note">{kpis.oosRate}% of active shelf variants</div>
-        </div>
-        <div className="kpi-card">
-          <div className="kpi-label">In Stock Variants</div>
-          <div className="kpi-value text-green">{kpis.inCount}</div>
-          <div className="kpi-note">{kpis.activeCount} total listed variants</div>
-        </div>
-        <div className="kpi-card">
-          <div className="kpi-label">Removed / Delisted</div>
-          <div className="kpi-value text-amber">{kpis.removedCount}</div>
-          <div className="kpi-note">Previously listed, now 404/removed</div>
-        </div>
-        <div className="kpi-card">
-          <div className="kpi-label">Monitored UK Retailers</div>
-          <div className="kpi-value">{kpis.uniqueStoreCount}</div>
-          <div className="kpi-note">
-            {kpis.t1Count} Tier 1 Major • {kpis.t2Count} Tier 2 Indie
-          </div>
-        </div>
-        <div className="kpi-card">
-          <div className="kpi-label">Longest Active OOS</div>
-          <div className="kpi-value text-accent">{kpis.maxLabel}</div>
-          <div className="kpi-note">
-            Last scan: {kpis.latestCheck ? fmtUtc(kpis.latestCheck) : 'Pending first scan'}
-          </div>
-        </div>
-      </div>
-
-      <div className="tabs">
-        <button
-          className={`tab-btn ${activeTab === 'skus' ? 'active' : ''}`}
-          onClick={() => setActiveTab('skus')}
-        >
-          1. Out-of-Stock &amp; Product Availability ({kpis.oosCount} OOS / {data.skus.length} Total)
-        </button>
-        <button
-          className={`tab-btn ${activeTab === 'stores' ? 'active' : ''}`}
-          onClick={() => setActiveTab('stores')}
-        >
-          2. By UK Retailer ({data.stores.length} Stockists)
-        </button>
-        <button
-          className={`tab-btn ${activeTab === 'events' ? 'active' : ''}`}
-          onClick={() => setActiveTab('events')}
-        >
-          3. Recent Stock Transitions ({data.events.length})
-        </button>
-      </div>
-
-      {activeTab === 'skus' && (
-        <div>
-          <div className="filter-bar">
-            <select value={statusFilter} onChange={e => setStatusFilter(e.target.value)}>
-              <option value="OOS">Out of Stock Only ({kpis.oosCount})</option>
-              <option value="ALL">All Tracked Variants ({data.skus.length})</option>
-              <option value="IN_STOCK">In Stock Only ({kpis.inCount})</option>
-              <option value="REMOVED">Removed / Delisted ({kpis.removedCount})</option>
-            </select>
-            <select value={tierFilter} onChange={e => setTierFilter(e.target.value)}>
-              <option value="ALL">All Stockist Tiers</option>
-              <option value="TIER_1">Tier 1: Major UK Retailers</option>
-              <option value="TIER_2">Tier 2: Independent Stockists</option>
-            </select>
-            <select value={storeFilter} onChange={e => setStoreFilter(e.target.value)}>
-              <option value="ALL">All UK Retailers ({storeDomains.length})</option>
-              {storeDomains.map(d => (
-                <option key={d} value={d}>
-                  {d}
-                </option>
-              ))}
-            </select>
-            <select value={sortOrder} onChange={e => setSortOrder(e.target.value)}>
-              <option value="LONGEST_OOS">Sort: Longest OOS First</option>
-              <option value="NEWEST_OOS">Sort: Newest OOS First</option>
-              <option value="STORE_AZ">Sort: Retailer (A–Z)</option>
-              <option value="PRODUCT_AZ">Sort: Product (A–Z)</option>
-            </select>
-            <input
-              type="text"
-              placeholder="Search product, variant, size, or retailer..."
-              value={searchQuery}
-              onChange={e => setSearchQuery(e.target.value)}
-            />
-            <span className="filter-count">{visibleSkus.length} variant(s) shown</span>
-          </div>
-
-          <div className="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Retailer</th>
-                  <th>Tier</th>
-                  <th>Product</th>
-                  <th>Variant / Size</th>
-                  <th>Shelf Price</th>
-                  <th>Status</th>
-                  <th>First Seen OOS (UTC)</th>
-                  <th>Time OOS</th>
-                  <th>Last Checked (UTC)</th>
-                  <th>Link</th>
-                </tr>
-              </thead>
-              <tbody>
-                {visibleSkus.length === 0 ? (
-                  <tr>
-                    <td colSpan={10} style={{ textAlign: 'center', padding: 28, color: 'var(--muted)' }}>
-                      No matching variants found. Switch the dropdown from &ldquo;Out of Stock Only&rdquo; to &ldquo;All Tracked Variants&rdquo; to view in-stock items.
-                    </td>
-                  </tr>
-                ) : (
-                  visibleSkus.map(s => {
-                    const t1 = isTier1(s.domain);
-                    const isRemoved = s.is_listed === 0;
-                    const isOos = s.is_listed === 1 && s.is_available === 0;
-                    const oosSinceStr = isRemoved
-                      ? fmtUtc(s.silent_removed_at)
-                      : isOos
-                      ? fmtUtc(s.first_seen_oos_at)
-                      : '—';
-                    const durStr = isRemoved
-                      ? calcDuration(s.silent_removed_at).label
-                      : isOos
-                      ? calcDuration(s.first_seen_oos_at).label
-                      : '—';
-                    const cleanTitle = String(s.product_title || '').split('|')[0].trim();
-                    const cp =
-                      s.current_price !== null && s.current_price !== undefined
-                        ? `£${Number(s.current_price).toFixed(2)}`
-                        : '—';
-                    const hasDiscount =
-                      s.compare_at_price &&
-                      s.current_price &&
-                      Number(s.compare_at_price) > Number(s.current_price);
-
-                    return (
-                      <tr key={s.sku_key} className={isOos || isRemoved ? 'row-oos' : ''}>
-                        <td className="mono">{s.domain}</td>
-                        <td>
-                          {t1 ? (
-                            <span className="badge badge-t1">Tier 1 Major</span>
-                          ) : (
-                            <span className="badge badge-t2">Tier 2 Indie</span>
-                          )}
-                        </td>
-                        <td>
-                          <strong>{cleanTitle}</strong>
-                        </td>
-                        <td>{s.variant_title || 'Default'}</td>
-                        <td className="mono">
-                          {cp}
-                          {hasDiscount && (
-                            <span className="price-was">£{Number(s.compare_at_price).toFixed(2)}</span>
-                          )}
-                        </td>
-                        <td>
-                          {isRemoved ? (
-                            <span className="badge badge-removed">REMOVED</span>
-                          ) : isOos ? (
-                            <span className="badge badge-oos">OUT OF STOCK</span>
-                          ) : (
-                            <span className="badge badge-in">IN STOCK</span>
-                          )}
-                        </td>
-                        <td className="mono">{oosSinceStr}</td>
-                        <td className="mono">
-                          <strong>{durStr}</strong>
-                        </td>
-                        <td className="mono" style={{ color: 'var(--muted)' }}>
-                          {fmtUtc(s.last_seen_at)}
-                        </td>
-                        <td>
-                          <a href={s.product_url || '#'} target="_blank" rel="noopener noreferrer">
-                            Open ↗
-                          </a>
-                        </td>
-                      </tr>
-                    );
-                  })
-                )}
-              </tbody>
-            </table>
-          </div>
-        </div>
+      {/* STOCKISTS WITH OUT OF STOCK ITEMS */}
+      {oosStoreGroups.length === 0 && totalStores > 0 && (
+        <p style={{ padding: '24px 0', color: 'var(--green)', fontWeight: 500 }}>
+          All tracked products across all {totalStores} UK stockists are currently in stock.
+        </p>
       )}
 
-      {activeTab === 'stores' && (
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Retailer</th>
-                <th>Tier</th>
-                <th>Platform</th>
-                <th>Listed Variants</th>
-                <th>In Stock</th>
-                <th>Out of Stock</th>
-                <th>OOS %</th>
-                <th>Last Checked (UTC)</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.stores.map(st => {
-                const t1 = isTier1(st.domain);
-                const stActive = data.skus.filter(s => s.domain === st.domain && s.is_listed === 1);
-                const stOos = stActive.filter(s => s.is_available === 0);
-                const stIn = stActive.length - stOos.length;
-                const oosPct = stActive.length > 0 ? Math.round((stOos.length / stActive.length) * 100) : 0;
+      {oosStoreGroups.map(grp => {
+        const dom = grp.store.domain;
+        const major = isTier1(dom);
+        const itemsToRender = showInStockProducts
+          ? [...grp.oosItems, ...grp.inStockItems]
+          : grp.oosItems;
+
+        return (
+          <section key={dom} className="store-group">
+            <div className="store-group-header">
+              <div className="store-domain">
+                <span>{dom}</span>
+                {major && <span className="tier-tag">Major Retailer</span>}
+              </div>
+              <div className="store-meta">
+                <span className="store-oos-count">{grp.oosItems.length} Out of Stock</span>
+                <button className="btn-plain btn-xs" onClick={() => copyList(dom)}>
+                  Copy
+                </button>
+                <a
+                  href={grp.store.brand_url || '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="store-ext-link"
+                >
+                  Storefront ↗
+                </a>
+              </div>
+            </div>
+
+            <ul className="sku-list">
+              {itemsToRender.map(s => {
+                const title = String(s.product_title || '').split('|')[0].trim();
+                const variant =
+                  s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
+                    ? `(${s.variant_title})`
+                    : '';
+                const price =
+                  s.current_price !== null && s.current_price !== undefined
+                    ? `£${Number(s.current_price).toFixed(2)}`
+                    : '';
+                const hasDiscount =
+                  s.compare_at_price &&
+                  s.current_price &&
+                  Number(s.compare_at_price) > Number(s.current_price);
+                const isOos = s.is_available === 0;
 
                 return (
-                  <tr key={st.domain}>
-                    <td className="mono">
-                      <strong>{st.domain}</strong>
-                    </td>
-                    <td>
-                      {t1 ? (
-                        <span className="badge badge-t1">Tier 1 Major</span>
-                      ) : (
-                        <span className="badge badge-t2">Tier 2 Indie</span>
+                  <li key={s.sku_key} className="sku-item">
+                    <div>
+                      <span className="sku-name">{title}</span>
+                      {variant && <span className="sku-variant">{variant}</span>}
+                    </div>
+                    <div className="sku-price">
+                      {price}
+                      {hasDiscount && (
+                        <span className="sku-price-was">£{Number(s.compare_at_price).toFixed(2)}</span>
                       )}
-                    </td>
-                    <td>{st.platform || 'Custom'}</td>
-                    <td>{stActive.length}</td>
-                    <td className="text-green">{stIn}</td>
-                    <td className={stOos.length > 0 ? 'text-red' : ''}>
-                      <strong>{stOos.length}</strong>
-                    </td>
-                    <td>{oosPct}%</td>
-                    <td className="mono" style={{ color: 'var(--muted)' }}>
-                      {fmtUtc(st.last_checked_at)}
-                    </td>
-                    <td style={{ display: 'flex', gap: 6 }}>
-                      <button
-                        className="btn btn-outline btn-sm"
-                        onClick={() => {
-                          setStoreFilter(st.domain);
-                          setStatusFilter('ALL');
-                          setActiveTab('skus');
-                        }}
-                      >
-                        View SKUs
-                      </button>
-                      <a
-                        href={st.brand_url || '#'}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-outline btn-sm"
-                      >
-                        Storefront ↗
-                      </a>
-                    </td>
-                  </tr>
+                    </div>
+                    {isOos ? (
+                      <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
+                    ) : (
+                      <div className="sku-in-badge">In Stock</div>
+                    )}
+                    <a
+                      href={s.product_url || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="sku-open"
+                      title="Open product page"
+                    >
+                      ↗
+                    </a>
+                  </li>
                 );
               })}
-            </tbody>
-          </table>
-        </div>
-      )}
+            </ul>
+          </section>
+        );
+      })}
 
-      {activeTab === 'events' && (
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Timestamp (UTC)</th>
-                <th>Event</th>
-                <th>Retailer</th>
-                <th>Product</th>
-                <th>Variant</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.events.length === 0 ? (
-                <tr>
-                  <td colSpan={6} style={{ textAlign: 'center', padding: 28, color: 'var(--muted)' }}>
-                    No status transitions logged yet.
-                  </td>
-                </tr>
-              ) : (
-                data.events.map((ev, idx) => (
-                  <tr key={ev.id || idx}>
-                    <td className="mono">{fmtUtc(ev.occurred_at)}</td>
-                    <td>
-                      {ev.event_type === 'WENT_OOS' ? (
-                        <span className="badge badge-oos">WENT OOS</span>
-                      ) : ev.event_type === 'RESTOCKED' ? (
-                        <span className="badge badge-in">RESTOCKED</span>
-                      ) : ev.event_type === 'SILENT_REMOVED' ? (
-                        <span className="badge badge-removed">REMOVED</span>
-                      ) : (
-                        <span className="badge badge-t2">{ev.event_type}</span>
-                      )}
-                    </td>
-                    <td className="mono">{ev.domain}</td>
-                    <td>{String(ev.product_title || '').split('|')[0].trim()}</td>
-                    <td>{ev.variant_title || 'Default'}</td>
-                    <td style={{ color: 'var(--muted)' }}>{ev.details || ''}</td>
-                  </tr>
-                ))
-              )}
-            </tbody>
-          </table>
+      {/* COLLAPSIBLE FOOTER FOR 100% IN-STOCK STOCKISTS */}
+      {healthyStores.length > 0 && (
+        <div className="healthy-section">
+          <button
+            className="healthy-toggle"
+            onClick={() => setShowHealthyStores(v => !v)}
+          >
+            {showHealthyStores ? '▾' : '▸'} {healthyStores.length} UK stockist
+            {healthyStores.length === 1 ? '' : 's'} with 100% stock availability (
+            {healthyStores
+              .slice(0, 5)
+              .map(g => g.store.domain)
+              .join(', ')}
+            {healthyStores.length > 5 ? ', …' : ''})
+          </button>
+
+          {showHealthyStores && (
+            <div className="healthy-list">
+              {healthyStores.map(g => (
+                <div key={g.store.domain} className="healthy-card">
+                  <div>
+                    <strong>{g.store.domain}</strong>
+                    <div style={{ fontSize: '0.76rem', color: 'var(--muted)' }}>
+                      {g.inStockItems.length} variant{g.inStockItems.length === 1 ? '' : 's'} in stock
+                    </div>
+                  </div>
+                  <a
+                    href={g.store.brand_url || '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="store-ext-link"
+                  >
+                    Storefront ↗
+                  </a>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
