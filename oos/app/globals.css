@@ -110,7 +110,7 @@ a:hover {
   color: var(--muted);
 }
 
-/* Store Group Block (Collapsible Accordion) */
+/* Product Group Block (Collapsible Accordion) */
 .store-group {
   margin-bottom: 10px;
 }
@@ -202,7 +202,7 @@ a:hover {
   font-size: 0.8rem;
 }
 
-/* Product Rows inside Store Group */
+/* Consolidated Stockist Rows inside a Product Group */
 .sku-list {
   list-style: none;
   padding-left: 22px;
@@ -210,9 +210,9 @@ a:hover {
 
 .sku-item {
   display: grid;
-  grid-template-columns: 1fr auto auto auto;
-  gap: 18px;
-  align-items: baseline;
+  grid-template-columns: minmax(190px, auto) 1fr auto auto;
+  gap: 16px;
+  align-items: center;
   padding: 9px 0;
   border-bottom: 1px solid var(--line);
   font-size: 0.9rem;
@@ -229,10 +229,36 @@ a:hover {
   margin-left: 6px;
 }
 
+.var-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.var-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.var-pill-price {
+  color: var(--muted);
+}
+
 .sku-price {
   font-variant-numeric: tabular-nums;
   color: var(--muted);
   font-size: 0.85rem;
+  text-align: right;
 }
 
 .sku-price-was {
@@ -267,7 +293,7 @@ a:hover {
   color: var(--ink);
 }
 
-/* Healthy Stockists Accordion */
+/* Healthy Products Accordion */
 .healthy-section {
   margin-top: 32px;
   padding-top: 16px;

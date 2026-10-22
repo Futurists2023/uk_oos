@@ -86,7 +86,6 @@ export default function AdminClient({ initialData }) {
     const storesByBrand = new Map();
     const lastCheckByBrand = new Map();
     const oosProductsByBrand = new Map();
-    const oosVariantsByBrand = new Map();
     const activeSkusByBrand = new Map();
 
     for (const st of data.stores) {
@@ -101,7 +100,6 @@ export default function AdminClient({ initialData }) {
       if (s.is_listed === 1) {
         activeSkusByBrand.set(s.brand, (activeSkusByBrand.get(s.brand) || 0) + 1);
         if (s.is_available === 0) {
-          oosVariantsByBrand.set(s.brand, (oosVariantsByBrand.get(s.brand) || 0) + 1);
           const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, s.brand).toLowerCase();
           if (!oosProductsByBrand.has(s.brand)) oosProductsByBrand.set(s.brand, new Set());
           oosProductsByBrand.get(s.brand).add(pKey);
@@ -112,14 +110,12 @@ export default function AdminClient({ initialData }) {
     const enriched = data.brandsMeta.map(b => {
       const storeCount = storesByBrand.get(b.name) || 0;
       const oosProdCount = oosProductsByBrand.get(b.name)?.size || 0;
-      const oosVarCount = oosVariantsByBrand.get(b.name) || 0;
       const skuCount = activeSkusByBrand.get(b.name) || 0;
       const lastChecked = lastCheckByBrand.get(b.name) || '';
       return {
         ...b,
         storeCount,
         oosProdCount,
-        oosVarCount,
         skuCount,
         lastChecked,
         isActive: storeCount > 0
@@ -150,7 +146,7 @@ export default function AdminClient({ initialData }) {
     [brandRows]
   );
 
-  // Global OOS grouped by Brand + Canonical Product (Product-Centered)
+  // Global OOS grouped by Brand + Canonical Product -> consolidated per Stockist
   const globalOosProductGroups = useMemo(() => {
     const oosSkus = data.skus.filter(s => s.is_listed === 1 && s.is_available === 0);
     const byKey = new Map();
@@ -164,7 +160,7 @@ export default function AdminClient({ initialData }) {
           brand: s.brand,
           displayName: cleanProductDisplayName(s.product_title, s.brand),
           oosStores: new Set(),
-          items: []
+          byStore: new Map()
         });
       }
       const grp = byKey.get(key);
@@ -173,13 +169,32 @@ export default function AdminClient({ initialData }) {
         grp.displayName = cand;
       }
       grp.oosStores.add(s.domain);
-      grp.items.push(s);
+
+      if (!grp.byStore.has(s.domain)) {
+        grp.byStore.set(s.domain, {
+          domain: s.domain,
+          variants: [],
+          oldestOosAt: s.first_seen_oos_at || '',
+          primaryUrl: s.product_url || '#'
+        });
+      }
+      const stRow = grp.byStore.get(s.domain);
+      stRow.variants.push(s);
+      if (s.first_seen_oos_at && (!stRow.oldestOosAt || s.first_seen_oos_at < stRow.oldestOosAt)) {
+        stRow.oldestOosAt = s.first_seen_oos_at;
+      }
     }
 
-    const list = Array.from(byKey.values());
+    const list = Array.from(byKey.values()).map(g => ({
+      ...g,
+      consolidatedStores: Array.from(g.byStore.values()).sort((a, b) => {
+        if (b.variants.length !== a.variants.length) return b.variants.length - a.variants.length;
+        return a.domain.localeCompare(b.domain);
+      })
+    }));
+
     list.sort((a, b) => {
       if (b.oosStores.size !== a.oosStores.size) return b.oosStores.size - a.oosStores.size;
-      if (b.items.length !== a.items.length) return b.items.length - a.items.length;
       return a.displayName.localeCompare(b.displayName);
     });
     return list;
@@ -362,7 +377,7 @@ export default function AdminClient({ initialData }) {
                     {b.isActive ? (
                       b.oosProdCount > 0 ? (
                         <span style={{ color: 'var(--red)', fontWeight: 600 }}>
-                          {b.oosProdCount} product{b.oosProdCount === 1 ? '' : 's'} ({b.oosVarCount} sizes)
+                          {b.oosProdCount} product{b.oosProdCount === 1 ? '' : 's'}
                         </span>
                       ) : (
                         <span style={{ color: 'var(--green)' }}>0 OOS</span>
@@ -400,7 +415,7 @@ export default function AdminClient({ initialData }) {
         </div>
       )}
 
-      {/* VIEW 2: ALL OOS PRODUCTS ACROSS ALL BRANDS (PRODUCT-CENTERED, FIRST EXPANDED) */}
+      {/* VIEW 2: ALL OOS PRODUCTS ACROSS ALL BRANDS (CONSOLIDATED PER STOCKIST) */}
       {viewMode === 'all_oos' && (
         <div>
           {globalOosProductGroups.map(grp => {
@@ -431,32 +446,49 @@ export default function AdminClient({ initialData }) {
 
                 {isExpanded && (
                   <ul className="sku-list">
-                    {grp.items.map(s => {
-                      const major = isTier1(s.domain);
-                      const variant =
-                        s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
-                          ? `(${s.variant_title})`
-                          : '';
-                      const price =
-                        s.current_price !== null && s.current_price !== undefined
-                          ? `£${Number(s.current_price).toFixed(2)}`
-                          : '';
+                    {grp.consolidatedStores.map(stRow => {
+                      const major = isTier1(stRow.domain);
 
                       return (
-                        <li key={s.sku_key} className="sku-item">
+                        <li key={stRow.domain} className="sku-item">
                           <div>
-                            <span className="sku-name">{s.domain}</span>
-                            {variant && <span className="sku-variant">{variant}</span>}
+                            <span className="sku-name">{stRow.domain}</span>
                             {major && (
                               <span className="tier-tag" style={{ marginLeft: 8 }}>
                                 Major Retailer
                               </span>
                             )}
                           </div>
-                          <div className="sku-price">{price}</div>
-                          <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
+
+                          <div className="var-pills-wrap">
+                            {stRow.variants.map(v => {
+                              const hasNamedSize =
+                                v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
+                              const price =
+                                v.current_price !== null && v.current_price !== undefined
+                                  ? `£${Number(v.current_price).toFixed(2)}`
+                                  : '';
+
+                              if (!hasNamedSize && stRow.variants.length === 1) {
+                                return (
+                                  <span key={v.sku_key} className="sku-price">
+                                    {price}
+                                  </span>
+                                );
+                              }
+
+                              return (
+                                <span key={v.sku_key} className="var-pill">
+                                  {hasNamedSize && <strong>{v.variant_title}</strong>}
+                                  {price && <span className="var-pill-price">{price}</span>}
+                                </span>
+                              );
+                            })}
+                          </div>
+
+                          <div className="sku-oos-age">{calcOosAge(stRow.oldestOosAt)}</div>
                           <a
-                            href={s.product_url || '#'}
+                            href={stRow.primaryUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="sku-open"

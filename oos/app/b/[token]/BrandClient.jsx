@@ -30,7 +30,6 @@ function cleanProductDisplayName(rawTitle, brandName) {
     const escaped = brandName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     t = t.replace(new RegExp(`^${escaped}\\s*[-–—:]?\\s*`, 'i'), '').trim();
   }
-  // Remove trailing size suffix like " 200ml" or ", 25 ml" so product family title is clean
   t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
   return t || String(rawTitle || '').trim();
 }
@@ -57,7 +56,7 @@ export default function BrandClient({ initialData }) {
     setTimeout(() => setToastMsg(null), 2400);
   }
 
-  // Group active SKUs by Canonical Product Family (Product-Centered)
+  // Group active SKUs by Canonical Product Family -> then consolidate variations per Stockist!
   const { oosProductGroups, healthyProductGroups, totalOosVariants, totalStores, latestCheck } = useMemo(() => {
     const activeSkus = data.skus.filter(s => s.is_listed === 1);
     const byProdKey = new Map();
@@ -75,6 +74,8 @@ export default function BrandClient({ initialData }) {
         byProdKey.set(pKey, {
           productKey: pKey,
           displayName: cleanProductDisplayName(s.product_title, brand.name),
+          oosByStore: new Map(),
+          inStockByStore: new Map(),
           oosItems: [],
           inStockItems: [],
           distinctSizes: new Set(),
@@ -85,7 +86,6 @@ export default function BrandClient({ initialData }) {
       const grp = byProdKey.get(pKey);
       grp.allStores.add(s.domain);
 
-      // Prefer shorter/cleaner display name if one store has a cleaner title
       const candName = cleanProductDisplayName(s.product_title, brand.name);
       if (candName.length > 2 && candName.length < grp.displayName.length) {
         grp.displayName = candName;
@@ -97,8 +97,32 @@ export default function BrandClient({ initialData }) {
       if (s.is_available === 0) {
         grp.oosItems.push(s);
         grp.oosStores.add(s.domain);
+        if (!grp.oosByStore.has(s.domain)) {
+          grp.oosByStore.set(s.domain, {
+            domain: s.domain,
+            isOos: true,
+            variants: [],
+            oldestOosAt: s.first_seen_oos_at || '',
+            primaryUrl: s.product_url || '#'
+          });
+        }
+        const stRow = grp.oosByStore.get(s.domain);
+        stRow.variants.push(s);
+        if (s.first_seen_oos_at && (!stRow.oldestOosAt || s.first_seen_oos_at < stRow.oldestOosAt)) {
+          stRow.oldestOosAt = s.first_seen_oos_at;
+        }
       } else {
         grp.inStockItems.push(s);
+        if (!grp.inStockByStore.has(s.domain)) {
+          grp.inStockByStore.set(s.domain, {
+            domain: s.domain,
+            isOos: false,
+            variants: [],
+            oldestOosAt: '',
+            primaryUrl: s.product_url || '#'
+          });
+        }
+        grp.inStockByStore.get(s.domain).variants.push(s);
       }
     }
 
@@ -107,12 +131,13 @@ export default function BrandClient({ initialData }) {
     let oosVariantSum = 0;
 
     for (const grp of byProdKey.values()) {
-      // Sort OOS rows inside a product by store domain, then variant size
-      grp.oosItems.sort((a, b) => {
-        if (a.domain !== b.domain) return a.domain.localeCompare(b.domain);
-        return (a.variant_title || '').localeCompare(b.variant_title || '');
+      grp.consolidatedOosStores = Array.from(grp.oosByStore.values()).sort((a, b) => {
+        if (b.variants.length !== a.variants.length) return b.variants.length - a.variants.length;
+        return a.domain.localeCompare(b.domain);
       });
-      grp.inStockItems.sort((a, b) => a.domain.localeCompare(b.domain));
+      grp.consolidatedInStockStores = Array.from(grp.inStockByStore.values()).sort((a, b) =>
+        a.domain.localeCompare(b.domain)
+      );
 
       oosVariantSum += grp.oosItems.length;
       if (grp.oosItems.length > 0) {
@@ -122,7 +147,6 @@ export default function BrandClient({ initialData }) {
       }
     }
 
-    // Sort products by number of OOS stores (desc), then number of OOS variants (desc), then name
     withOos.sort((a, b) => {
       if (b.oosStores.size !== a.oosStores.size) return b.oosStores.size - a.oosStores.size;
       if (b.oosItems.length !== a.oosItems.length) return b.oosItems.length - a.oosItems.length;
@@ -185,7 +209,7 @@ export default function BrandClient({ initialData }) {
     const lines = [];
     if (!singleProductKey) {
       lines.push(
-        `${brand.name} — Out of Stock Products (${oosProductGroups.length} products / ${totalOosVariants} variants)`
+        `${brand.name} — Out of Stock Products (${oosProductGroups.length} products across UK stockists)`
       );
       lines.push(`Checked: ${fmtShortTime(latestCheck)}`);
       lines.push('');
@@ -196,17 +220,14 @@ export default function BrandClient({ initialData }) {
       lines.push(
         `${grp.displayName}${singleSize} — Out of Stock at ${grp.oosStores.size} store${grp.oosStores.size === 1 ? '' : 's'}:`
       );
-      for (const s of grp.oosItems) {
-        const vLabel =
-          grp.distinctSizes.size > 1 && s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
-            ? ` (${s.variant_title})`
-            : '';
-        const price =
-          s.current_price !== null && s.current_price !== undefined
-            ? `£${Number(s.current_price).toFixed(2)}`
-            : '';
-        const age = calcOosAge(s.first_seen_oos_at);
-        lines.push(`  • ${s.domain}${vLabel}  ${price}  [${age}]  ${s.product_url || ''}`);
+      for (const stRow of grp.consolidatedOosStores) {
+        const varParts = stRow.variants.map(v => {
+          const sz = v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard' ? v.variant_title : '';
+          const pr = v.current_price !== null && v.current_price !== undefined ? `£${Number(v.current_price).toFixed(2)}` : '';
+          return [sz, pr].filter(Boolean).join(' ');
+        });
+        const age = calcOosAge(stRow.oldestOosAt);
+        lines.push(`  • ${stRow.domain} — ${varParts.join(', ')} [${age}] ${stRow.primaryUrl}`);
       }
       lines.push('');
     }
@@ -217,28 +238,34 @@ export default function BrandClient({ initialData }) {
   }
 
   function downloadCSV() {
-    const headers = ['Brand', 'Product', 'Variant', 'Stockist', 'Tier', 'Price_GBP', 'Status', 'OOS_Duration', 'First_Seen_OOS_UTC', 'URL'];
+    const headers = ['Brand', 'Product', 'Stockist', 'Tier', 'Variations_OOS', 'OOS_Duration', 'First_Seen_OOS_UTC', 'URL'];
     const rows = [headers.join(',')];
 
     for (const grp of oosProductGroups) {
-      const items = showInStockStores ? [...grp.oosItems, ...grp.inStockItems] : grp.oosItems;
-      for (const s of items) {
-        const tier = isTier1(s.domain) ? 'Major Retailer' : 'Independent';
-        const status = s.is_available === 0 ? 'Out of Stock' : 'In Stock';
-        const age = s.is_available === 0 ? calcOosAge(s.first_seen_oos_at) : '';
-        const price = s.current_price !== null && s.current_price !== undefined ? Number(s.current_price).toFixed(2) : '';
+      const storeRows = showInStockStores
+        ? [...grp.consolidatedOosStores, ...grp.consolidatedInStockStores]
+        : grp.consolidatedOosStores;
+
+      for (const stRow of storeRows) {
+        const tier = isTier1(stRow.domain) ? 'Major Retailer' : 'Independent';
+        const varDesc = stRow.variants
+          .map(v => {
+            const sz = v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard' ? v.variant_title : 'Standard';
+            const pr = v.current_price !== null && v.current_price !== undefined ? `£${Number(v.current_price).toFixed(2)}` : '';
+            return `${sz} ${pr}`.trim();
+          })
+          .join(' | ');
+        const age = stRow.isOos ? calcOosAge(stRow.oldestOosAt) : 'In Stock';
 
         const vals = [
           brand.name,
           grp.displayName,
-          s.variant_title || '',
-          s.domain,
+          stRow.domain,
           tier,
-          price,
-          status,
+          varDesc,
           age,
-          s.first_seen_oos_at || '',
-          s.product_url || ''
+          stRow.oldestOosAt || '',
+          stRow.primaryUrl || ''
         ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`);
         rows.push(vals.join(','));
       }
@@ -264,8 +291,8 @@ export default function BrandClient({ initialData }) {
                 <strong className="oos-num">
                   {oosProductGroups.length} product{oosProductGroups.length === 1 ? '' : 's'}
                 </strong>{' '}
-                ({totalOosVariants} variant{totalOosVariants === 1 ? '' : 's'}) out of stock across{' '}
-                <strong>{totalStores}</strong> monitored UK stockists · Checked {fmtShortTime(latestCheck)}
+                out of stock across <strong>{totalStores}</strong> monitored UK stockists · Checked{' '}
+                {fmtShortTime(latestCheck)}
               </>
             )}
           </p>
@@ -304,15 +331,10 @@ export default function BrandClient({ initialData }) {
         const singleSize = grp.distinctSizes.size === 1 ? ` (${Array.from(grp.distinctSizes)[0]})` : '';
         const storeListPreview = Array.from(grp.oosStores).join(', ');
         const storeCount = grp.oosStores.size;
-        const variantCount = grp.oosItems.length;
-        const rightCountText =
-          variantCount > storeCount
-            ? `Out of Stock at ${storeCount} store${storeCount === 1 ? '' : 's'} (${variantCount} sizes)`
-            : `Out of Stock at ${storeCount} store${storeCount === 1 ? '' : 's'}`;
 
-        const rowsToRender = showInStockStores
-          ? [...grp.oosItems, ...grp.inStockItems]
-          : grp.oosItems;
+        const storeRowsToRender = showInStockStores
+          ? [...grp.consolidatedOosStores, ...grp.consolidatedInStockStores]
+          : grp.consolidatedOosStores;
 
         return (
           <section key={grp.productKey} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
@@ -332,7 +354,7 @@ export default function BrandClient({ initialData }) {
                   style={{ cursor: 'pointer' }}
                   onClick={() => toggleProduct(grp.productKey)}
                 >
-                  {rightCountText}
+                  Out of Stock at {storeCount} store{storeCount === 1 ? '' : 's'}
                 </span>
                 <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
                   Copy
@@ -342,44 +364,55 @@ export default function BrandClient({ initialData }) {
 
             {isExpanded && (
               <ul className="sku-list">
-                {rowsToRender.map(s => {
-                  const major = isTier1(s.domain);
-                  const showVariantTag =
-                    s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard';
-                  const price =
-                    s.current_price !== null && s.current_price !== undefined
-                      ? `£${Number(s.current_price).toFixed(2)}`
-                      : '';
-                  const hasDiscount =
-                    s.compare_at_price &&
-                    s.current_price &&
-                    Number(s.compare_at_price) > Number(s.current_price);
-                  const isOos = s.is_available === 0;
+                {storeRowsToRender.map(stRow => {
+                  const major = isTier1(stRow.domain);
 
                   return (
-                    <li key={s.sku_key} className="sku-item">
+                    <li key={`${stRow.domain}-${stRow.isOos ? 'oos' : 'in'}`} className="sku-item">
                       <div>
-                        <span className="sku-name">{s.domain}</span>
-                        {showVariantTag && <span className="sku-variant">({s.variant_title})</span>}
+                        <span className="sku-name">{stRow.domain}</span>
                         {major && (
                           <span className="tier-tag" style={{ marginLeft: 8 }}>
                             Major Retailer
                           </span>
                         )}
                       </div>
-                      <div className="sku-price">
-                        {price}
-                        {hasDiscount && (
-                          <span className="sku-price-was">£{Number(s.compare_at_price).toFixed(2)}</span>
-                        )}
+
+                      {/* CONSOLIDATED VARIATIONS ON THIS STOCKIST */}
+                      <div className="var-pills-wrap">
+                        {stRow.variants.map(v => {
+                          const hasNamedSize =
+                            v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
+                          const price =
+                            v.current_price !== null && v.current_price !== undefined
+                              ? `£${Number(v.current_price).toFixed(2)}`
+                              : '';
+
+                          if (!hasNamedSize && stRow.variants.length === 1) {
+                            return (
+                              <span key={v.sku_key} className="sku-price">
+                                {price}
+                              </span>
+                            );
+                          }
+
+                          return (
+                            <span key={v.sku_key} className="var-pill">
+                              {hasNamedSize && <strong>{v.variant_title}</strong>}
+                              {price && <span className="var-pill-price">{price}</span>}
+                            </span>
+                          );
+                        })}
                       </div>
-                      {isOos ? (
-                        <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
+
+                      {stRow.isOos ? (
+                        <div className="sku-oos-age">{calcOosAge(stRow.oldestOosAt)}</div>
                       ) : (
                         <div className="sku-in-badge">In Stock</div>
                       )}
+
                       <a
-                        href={s.product_url || '#'}
+                        href={stRow.primaryUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="sku-open"
