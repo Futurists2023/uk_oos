@@ -50,7 +50,7 @@ a:hover {
   gap: 16px;
   padding-bottom: 18px;
   border-bottom: 2px solid var(--line-strong);
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .sheet-title {
@@ -110,48 +110,91 @@ a:hover {
   color: var(--muted);
 }
 
-/* Store Group Block */
+/* Store Group Block (Collapsible Accordion) */
 .store-group {
-  margin-bottom: 34px;
+  margin-bottom: 10px;
+}
+
+.store-group.expanded {
+  margin-bottom: 28px;
 }
 
 .store-group-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding-bottom: 8px;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 4px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.store-group.expanded .store-group-header {
   border-bottom: 1px solid var(--ink);
+  padding-bottom: 9px;
+}
+
+.store-group-header:hover {
+  background: rgba(0, 0, 0, 0.018);
+}
+
+.store-header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
+.store-chevron {
+  font-size: 0.78rem;
+  color: var(--muted);
+  width: 14px;
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .store-domain {
-  font-size: 1.02rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  flex-shrink: 0;
 }
 
 .tier-tag {
-  font-size: 0.7rem;
+  font-size: 0.69rem;
   font-weight: 500;
   color: var(--muted);
   border: 1px solid var(--line);
   padding: 1px 6px;
   border-radius: 3px;
   background: #f9fafb;
+  flex-shrink: 0;
+}
+
+.collapsed-preview {
+  font-size: 0.82rem;
+  color: var(--subtle);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 4px;
 }
 
 .store-meta {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   font-size: 0.84rem;
+  flex-shrink: 0;
 }
 
 .store-oos-count {
   color: var(--red);
   font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
 
 .store-ext-link {
@@ -162,6 +205,7 @@ a:hover {
 /* Product Rows inside Store Group */
 .sku-list {
   list-style: none;
+  padding-left: 22px;
 }
 
 .sku-item {
@@ -225,8 +269,8 @@ a:hover {
 
 /* Healthy Stockists Accordion */
 .healthy-section {
-  margin-top: 36px;
-  padding-top: 18px;
+  margin-top: 32px;
+  padding-top: 16px;
   border-top: 1px solid var(--line);
 }
 

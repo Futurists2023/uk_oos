@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 
 function fmtShortTime(isoStr) {
   if (!isoStr) return 'recently';
@@ -46,10 +46,11 @@ export default function BrandClient({ initialData }) {
     setTimeout(() => setToastMsg(null), 2400);
   }
 
-  // Group active SKUs by store
-  const { oosStoreGroups, healthyStores, totalOos, totalStores, latestCheck } = useMemo(() => {
+  // Group active SKUs by store & detect cross-store OOS bottlenecks
+  const { oosStoreGroups, healthyStores, totalOos, totalStores, latestCheck, oosStoresByNormKey } = useMemo(() => {
     const activeSkus = data.skus.filter(s => s.is_listed === 1);
     const byDomain = new Map();
+    const normKeyStores = new Map();
 
     for (const st of data.stores) {
       byDomain.set(st.domain, {
@@ -70,6 +71,9 @@ export default function BrandClient({ initialData }) {
       const grp = byDomain.get(s.domain);
       if (s.is_available === 0) {
         grp.oosItems.push(s);
+        const nk = s.normalized_product_key || String(s.product_title || '').toLowerCase();
+        if (!normKeyStores.has(nk)) normKeyStores.set(nk, new Set());
+        normKeyStores.get(nk).add(s.domain);
       } else {
         grp.inStockItems.push(s);
       }
@@ -84,7 +88,6 @@ export default function BrandClient({ initialData }) {
       if (grp.store.last_checked_at && grp.store.last_checked_at > maxTs) {
         maxTs = grp.store.last_checked_at;
       }
-      // Sort OOS items oldest first
       grp.oosItems.sort((a, b) => (a.first_seen_oos_at || '9999').localeCompare(b.first_seen_oos_at || '9999'));
       oosSum += grp.oosItems.length;
 
@@ -95,7 +98,6 @@ export default function BrandClient({ initialData }) {
       }
     }
 
-    // Sort store groups by most OOS items first
     withOos.sort((a, b) => b.oosItems.length - a.oosItems.length);
     healthy.sort((a, b) => a.store.domain.localeCompare(b.store.domain));
 
@@ -104,9 +106,44 @@ export default function BrandClient({ initialData }) {
       healthyStores: healthy,
       totalOos: oosSum,
       totalStores: byDomain.size,
-      latestCheck: maxTs
+      latestCheck: maxTs,
+      oosStoresByNormKey: normKeyStores
     };
   }, [data.stores, data.skus]);
+
+  // First stockist expanded by default; subsequent stockists collapsed
+  const [expandedDomains, setExpandedDomains] = useState(() => {
+    if (oosStoreGroups.length > 0) {
+      return new Set([oosStoreGroups[0].store.domain]);
+    }
+    return new Set();
+  });
+
+  useEffect(() => {
+    if (oosStoreGroups.length > 0) {
+      setExpandedDomains(new Set([oosStoreGroups[0].store.domain]));
+    }
+  }, [brand.slug]);
+
+  function toggleDomain(dom) {
+    setExpandedDomains(prev => {
+      const next = new Set(prev);
+      if (next.has(dom)) next.delete(dom);
+      else next.add(dom);
+      return next;
+    });
+  }
+
+  const allExpanded = oosStoreGroups.length > 1 && expandedDomains.size === oosStoreGroups.length;
+
+  function toggleExpandAll() {
+    if (allExpanded) {
+      // Collapse back to first stockist only
+      setExpandedDomains(oosStoreGroups.length > 0 ? new Set([oosStoreGroups[0].store.domain]) : new Set());
+    } else {
+      setExpandedDomains(new Set(oosStoreGroups.map(g => g.store.domain)));
+    }
+  }
 
   function copyList(singleDomain = null) {
     const groups = singleDomain
@@ -195,6 +232,11 @@ export default function BrandClient({ initialData }) {
         </div>
 
         <div className="sheet-actions">
+          {oosStoreGroups.length > 1 && (
+            <button className="btn-plain" onClick={toggleExpandAll}>
+              {allExpanded ? 'Collapse Others' : 'Expand All'}
+            </button>
+          )}
           <button
             className={`btn-plain ${showInStockProducts ? 'active' : ''}`}
             onClick={() => setShowInStockProducts(v => !v)}
@@ -210,7 +252,6 @@ export default function BrandClient({ initialData }) {
         </div>
       </header>
 
-      {/* STOCKISTS WITH OUT OF STOCK ITEMS */}
       {oosStoreGroups.length === 0 && totalStores > 0 && (
         <p style={{ padding: '24px 0', color: 'var(--green)', fontWeight: 500 }}>
           All tracked products across all {totalStores} UK stockists are currently in stock.
@@ -219,20 +260,39 @@ export default function BrandClient({ initialData }) {
 
       {oosStoreGroups.map(grp => {
         const dom = grp.store.domain;
+        const isExpanded = expandedDomains.has(dom);
         const major = isTier1(dom);
         const itemsToRender = showInStockProducts
           ? [...grp.oosItems, ...grp.inStockItems]
           : grp.oosItems;
 
+        // Build inline preview snippet when collapsed
+        const previewTitles = grp.oosItems.slice(0, 2).map(s => {
+          const t = String(s.product_title || '').split('|')[0].trim();
+          const v = s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard' ? ` (${s.variant_title})` : '';
+          return `${t}${v}`;
+        });
+        const extraCnt = grp.oosItems.length - previewTitles.length;
+        const previewText = previewTitles.join(', ') + (extraCnt > 0 ? `, +${extraCnt} more` : '');
+
         return (
-          <section key={dom} className="store-group">
-            <div className="store-group-header">
-              <div className="store-domain">
-                <span>{dom}</span>
+          <section key={dom} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
+            <div className="store-group-header" onClick={() => toggleDomain(dom)}>
+              <div className="store-header-left">
+                <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
+                <span className="store-domain">{dom}</span>
                 {major && <span className="tier-tag">Major Retailer</span>}
+                {!isExpanded && <span className="collapsed-preview">{previewText}</span>}
               </div>
-              <div className="store-meta">
-                <span className="store-oos-count">{grp.oosItems.length} Out of Stock</span>
+
+              <div className="store-meta" onClick={e => e.stopPropagation()}>
+                <span
+                  className="store-oos-count"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => toggleDomain(dom)}
+                >
+                  {grp.oosItems.length} Out of Stock
+                </span>
                 <button className="btn-plain btn-xs" onClick={() => copyList(dom)}>
                   Copy
                 </button>
@@ -247,53 +307,62 @@ export default function BrandClient({ initialData }) {
               </div>
             </div>
 
-            <ul className="sku-list">
-              {itemsToRender.map(s => {
-                const title = String(s.product_title || '').split('|')[0].trim();
-                const variant =
-                  s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
-                    ? `(${s.variant_title})`
-                    : '';
-                const price =
-                  s.current_price !== null && s.current_price !== undefined
-                    ? `£${Number(s.current_price).toFixed(2)}`
-                    : '';
-                const hasDiscount =
-                  s.compare_at_price &&
-                  s.current_price &&
-                  Number(s.compare_at_price) > Number(s.current_price);
-                const isOos = s.is_available === 0;
+            {isExpanded && (
+              <ul className="sku-list">
+                {itemsToRender.map(s => {
+                  const title = String(s.product_title || '').split('|')[0].trim();
+                  const variant =
+                    s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
+                      ? `(${s.variant_title})`
+                      : '';
+                  const price =
+                    s.current_price !== null && s.current_price !== undefined
+                      ? `£${Number(s.current_price).toFixed(2)}`
+                      : '';
+                  const hasDiscount =
+                    s.compare_at_price &&
+                    s.current_price &&
+                    Number(s.compare_at_price) > Number(s.current_price);
+                  const isOos = s.is_available === 0;
+                  const nk = s.normalized_product_key || String(s.product_title || '').toLowerCase();
+                  const crossStoreCount = isOos && oosStoresByNormKey.has(nk) ? oosStoresByNormKey.get(nk).size : 0;
 
-                return (
-                  <li key={s.sku_key} className="sku-item">
-                    <div>
-                      <span className="sku-name">{title}</span>
-                      {variant && <span className="sku-variant">{variant}</span>}
-                    </div>
-                    <div className="sku-price">
-                      {price}
-                      {hasDiscount && (
-                        <span className="sku-price-was">£{Number(s.compare_at_price).toFixed(2)}</span>
+                  return (
+                    <li key={s.sku_key} className="sku-item">
+                      <div>
+                        <span className="sku-name">{title}</span>
+                        {variant && <span className="sku-variant">{variant}</span>}
+                        {crossStoreCount >= 2 && (
+                          <span className="tier-tag" style={{ marginLeft: 8, color: 'var(--red)', borderColor: '#fecaca', background: '#fef2f2' }}>
+                            OOS at {crossStoreCount} stores
+                          </span>
+                        )}
+                      </div>
+                      <div className="sku-price">
+                        {price}
+                        {hasDiscount && (
+                          <span className="sku-price-was">£{Number(s.compare_at_price).toFixed(2)}</span>
+                        )}
+                      </div>
+                      {isOos ? (
+                        <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
+                      ) : (
+                        <div className="sku-in-badge">In Stock</div>
                       )}
-                    </div>
-                    {isOos ? (
-                      <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
-                    ) : (
-                      <div className="sku-in-badge">In Stock</div>
-                    )}
-                    <a
-                      href={s.product_url || '#'}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="sku-open"
-                      title="Open product page"
-                    >
-                      ↗
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
+                      <a
+                        href={s.product_url || '#'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="sku-open"
+                        title="Open product page"
+                      >
+                        ↗
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
           </section>
         );
       })}

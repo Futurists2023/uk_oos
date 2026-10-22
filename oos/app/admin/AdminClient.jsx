@@ -110,7 +110,6 @@ export default function AdminClient({ initialData }) {
       };
     });
 
-    // Sort active brands with OOS first, then alphabetical
     enriched.sort((a, b) => {
       if (a.isActive !== b.isActive) return a.isActive ? -1 : 1;
       if (a.oosCount !== b.oosCount) return b.oosCount - a.oosCount;
@@ -149,6 +148,7 @@ export default function AdminClient({ initialData }) {
       if (!byKey.has(key)) {
         const stObj = data.stores.find(st => st.brand === s.brand && st.domain === s.domain);
         byKey.set(key, {
+          key,
           brand: s.brand,
           domain: s.domain,
           brandUrl: stObj?.brand_url || s.product_url,
@@ -159,12 +159,23 @@ export default function AdminClient({ initialData }) {
     }
 
     const list = Array.from(byKey.values());
-    list.sort((a, b) => {
-      if (a.brand !== b.brand) return a.brand.localeCompare(b.brand);
-      return b.items.length - a.items.length;
-    });
+    list.sort((a, b) => b.items.length - a.items.length);
     return list;
   }, [data.skus, data.stores]);
+
+  // First group expanded by default in All OOS view
+  const [expandedGlobalKeys, setExpandedGlobalKeys] = useState(() =>
+    globalOosGroups.length > 0 ? new Set([globalOosGroups[0].key]) : new Set()
+  );
+
+  function toggleGlobalKey(k) {
+    setExpandedGlobalKeys(prev => {
+      const next = new Set(prev);
+      if (next.has(k)) next.delete(k);
+      else next.add(k);
+      return next;
+    });
+  }
 
   // If viewing a single brand sheet inline inside Admin
   if (viewMode === 'brand_sheet' && selectedBrandSlug) {
@@ -368,22 +379,35 @@ export default function AdminClient({ initialData }) {
         </div>
       )}
 
-      {/* VIEW 2: ALL OOS ACROSS ALL BRANDS, GROUPED BY BRAND + STOCKIST */}
+      {/* VIEW 2: ALL OOS ACROSS ALL BRANDS (FIRST EXPANDED, OTHERS COLLAPSED) */}
       {viewMode === 'all_oos' && (
         <div>
           {globalOosGroups.map(grp => {
+            const isExpanded = expandedGlobalKeys.has(grp.key);
             const major = isTier1(grp.domain);
+            const previewTitles = grp.items.slice(0, 2).map(s => String(s.product_title || '').split('|')[0].trim());
+            const extraCnt = grp.items.length - previewTitles.length;
+            const previewText = previewTitles.join(', ') + (extraCnt > 0 ? `, +${extraCnt} more` : '');
+
             return (
-              <section key={`${grp.brand}-${grp.domain}`} className="store-group">
-                <div className="store-group-header">
-                  <div className="store-domain">
-                    <span>
+              <section key={grp.key} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
+                <div className="store-group-header" onClick={() => toggleGlobalKey(grp.key)}>
+                  <div className="store-header-left">
+                    <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
+                    <span className="store-domain">
                       {grp.brand} · {grp.domain}
                     </span>
                     {major && <span className="tier-tag">Major Retailer</span>}
+                    {!isExpanded && <span className="collapsed-preview">{previewText}</span>}
                   </div>
-                  <div className="store-meta">
-                    <span className="store-oos-count">{grp.items.length} Out of Stock</span>
+                  <div className="store-meta" onClick={e => e.stopPropagation()}>
+                    <span
+                      className="store-oos-count"
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => toggleGlobalKey(grp.key)}
+                    >
+                      {grp.items.length} Out of Stock
+                    </span>
                     <a
                       href={grp.brandUrl || '#'}
                       target="_blank"
@@ -395,38 +419,40 @@ export default function AdminClient({ initialData }) {
                   </div>
                 </div>
 
-                <ul className="sku-list">
-                  {grp.items.map(s => {
-                    const title = String(s.product_title || '').split('|')[0].trim();
-                    const variant =
-                      s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
-                        ? `(${s.variant_title})`
-                        : '';
-                    const price =
-                      s.current_price !== null && s.current_price !== undefined
-                        ? `£${Number(s.current_price).toFixed(2)}`
-                        : '';
+                {isExpanded && (
+                  <ul className="sku-list">
+                    {grp.items.map(s => {
+                      const title = String(s.product_title || '').split('|')[0].trim();
+                      const variant =
+                        s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard'
+                          ? `(${s.variant_title})`
+                          : '';
+                      const price =
+                        s.current_price !== null && s.current_price !== undefined
+                          ? `£${Number(s.current_price).toFixed(2)}`
+                          : '';
 
-                    return (
-                      <li key={s.sku_key} className="sku-item">
-                        <div>
-                          <span className="sku-name">{title}</span>
-                          {variant && <span className="sku-variant">{variant}</span>}
-                        </div>
-                        <div className="sku-price">{price}</div>
-                        <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
-                        <a
-                          href={s.product_url || '#'}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="sku-open"
-                        >
-                          ↗
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
+                      return (
+                        <li key={s.sku_key} className="sku-item">
+                          <div>
+                            <span className="sku-name">{title}</span>
+                            {variant && <span className="sku-variant">{variant}</span>}
+                          </div>
+                          <div className="sku-price">{price}</div>
+                          <div className="sku-oos-age">{calcOosAge(s.first_seen_oos_at)}</div>
+                          <a
+                            href={s.product_url || '#'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="sku-open"
+                          >
+                            ↗
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
               </section>
             );
           })}
