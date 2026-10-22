@@ -297,8 +297,8 @@ export default function BrandClient({ initialData }) {
   }
 
   return (
-    <div className="sheet">
-      <header className="sheet-header">
+    <div className={`sheet ${displayMode === 'matrix' ? 'sheet-matrix' : ''}`}>
+      <header className="sheet-header" style={displayMode === 'matrix' ? { marginBottom: 14, paddingBottom: 12 } : undefined}>
         <div>
           <h1 className="sheet-title">{brand.name} — Out of Stock Products</h1>
           <p className="sheet-summary">
@@ -481,7 +481,7 @@ export default function BrandClient({ initialData }) {
 
       {/* MODE 2: COMPACT OVERVIEW MATRIX (PRODUCT x STOCKIST HOLISTIC GRID) */}
       {displayMode === 'matrix' && totalStores > 0 && (
-        <div>
+        <div className="matrix-container">
           <div className="matrix-wrap">
             <table className="matrix-table">
               <thead>

@@ -41,6 +41,15 @@ a:hover {
   padding: 44px 24px 88px;
 }
 
+.sheet.sheet-matrix {
+  max-width: 1200px;
+  height: 100vh;
+  padding: 22px 24px 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 /* Header */
 .sheet-header {
   display: flex;
@@ -294,9 +303,17 @@ a:hover {
   color: var(--ink);
 }
 
-/* Compact Overview Matrix (Frozen Top Row + Frozen Left Column + Internal Scroll Box) */
+/* Compact Overview Matrix (Frozen Top Row + Frozen Left Column + Full-Height Internal Scroll Box) */
+.matrix-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
 .matrix-wrap {
-  max-height: calc(100vh - 210px);
+  flex: 1;
+  min-height: 0;
   overflow: auto;
   border: 1px solid var(--line);
   border-radius: 6px;
