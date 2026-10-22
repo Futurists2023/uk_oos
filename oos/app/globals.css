@@ -1,13 +1,15 @@
 :root {
-  --bg: #fcfcfb;
-  --surface: #ffffff;
-  --ink: #111827;
-  --muted: #6b7280;
-  --subtle: #9ca3af;
-  --line: #e5e7eb;
-  --line-strong: #111827;
+  --bg: #f7f6f2;
+  --surface: #fcfbf9;
+  --surface-header: #f1efe9;
+  --surface-hover: #f3f1eb;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --subtle: #a8a29e;
+  --line: #e4e2dc;
+  --line-strong: #1c1917;
   --red: #dc2626;
-  --red-soft: #fef2f2;
+  --red-soft: #faeaea;
   --green: #15803d;
 }
 
@@ -317,7 +319,7 @@ a:hover {
   overflow: auto;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: var(--surface);
+  background: var(--bg);
 }
 
 .matrix-table {
@@ -337,7 +339,7 @@ a:hover {
   color: var(--ink);
   text-align: center;
   white-space: nowrap;
-  background: #f9fafb;
+  background: var(--surface-header);
 }
 
 .matrix-table th.col-product {
@@ -345,7 +347,7 @@ a:hover {
   z-index: 20;
   text-align: left;
   padding-left: 14px;
-  background: #f9fafb;
+  background: var(--surface-header);
   border-right: 1px solid var(--line);
 }
 
@@ -362,6 +364,7 @@ a:hover {
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
+  background: var(--bg);
 }
 
 .matrix-table tr:last-child td {
@@ -369,7 +372,7 @@ a:hover {
 }
 
 .matrix-table tr:hover td {
-  background: #f9fafb;
+  background: var(--surface-hover);
 }
 
 .matrix-table td.col-product {
@@ -381,12 +384,12 @@ a:hover {
   font-weight: 600;
   color: var(--ink);
   white-space: nowrap;
-  background: var(--surface);
+  background: var(--bg);
   border-right: 1px solid var(--line);
 }
 
 .matrix-table tr:hover td.col-product {
-  background: #f9fafb;
+  background: var(--surface-hover);
 }
 
 .cell-oos {
