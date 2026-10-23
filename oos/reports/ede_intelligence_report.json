@@ -1,0 +1,68 @@
+{
+  "brand": "Ede",
+  "brand_slug": "ede",
+  "generated_at": "2026-10-23T04:56:43+00:00",
+  "summary": {
+    "monitored_uk_stores": 2,
+    "total_listed_skus_variants": 4,
+    "in_stock_skus_variants": 4,
+    "out_of_stock_skus_variants": 0,
+    "silent_removed_skus": 0
+  },
+  "out_of_stock_alerts": [],
+  "silent_removals": [],
+  "recent_events": [
+    {
+      "id": 252,
+      "occurred_at": "2026-10-23T04:56:41+00:00",
+      "domain": "contentbeautywellbeing.com",
+      "brand": "Ede",
+      "sku_key": "contentbeautywellbeing.com::ede::ede-morning-brew-roll-on-therapist::41593699663953",
+      "product_title": "Ede Morning Brew Roll On Therapist - Feel Energised",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 30.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 251,
+      "occurred_at": "2026-10-23T04:56:41+00:00",
+      "domain": "contentbeautywellbeing.com",
+      "brand": "Ede",
+      "sku_key": "contentbeautywellbeing.com::ede::ede-burnout-roll-on-therapist::41593816252497",
+      "product_title": "Ede Burnout Roll On Therapist - Feel Grounded",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 30.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 250,
+      "occurred_at": "2026-10-23T04:56:41+00:00",
+      "domain": "contentbeautywellbeing.com",
+      "brand": "Ede",
+      "sku_key": "contentbeautywellbeing.com::ede::ede-press-pause-roll-on-therapist::41593854951505",
+      "product_title": "Ede Press Pause Roll On Therapist - Feel Present",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 30.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 249,
+      "occurred_at": "2026-10-23T04:56:41+00:00",
+      "domain": "contentbeautywellbeing.com",
+      "brand": "Ede",
+      "sku_key": "contentbeautywellbeing.com::ede::ede-best-day-ever-roll-on-therapist::41593930809425",
+      "product_title": "Ede Best Day Ever Roll On Therapist - Feel Confident",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 30.0,
+      "details": "Initial discovery"
+    }
+  ]
+}

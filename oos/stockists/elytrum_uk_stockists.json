@@ -1,0 +1,61 @@
+{
+  "brand": "Elytrum",
+  "brand_slug": "elytrum",
+  "generated_at": "2026-10-23T05:01:02+00:00",
+  "total_candidates_checked": 36,
+  "verified_uk_independent_stockists_count": 2,
+  "verified_stockists": [
+    {
+      "domain": "elysiantheory.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Elytrum",
+      "brand_slug": "elytrum",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.elysiantheory.co.uk/collections/elytrum",
+      "product_count": 12,
+      "in_stock_count": 8,
+      "out_of_stock_count": 4,
+      "sample_products": [
+        "ELYTRUM - Revive Body Brush with Cotton Handle, Sisal Collection",
+        "ELYTRUM - Foot / Nail Brush - Coconut Body Brush",
+        "ELYTRUM - Oval Soft Dry Body Brush - Jute Collection",
+        "ELYTRUM - Exfoliating Dry Body Brush Soft - Jute Collection",
+        "ELYTRUM - Travel Body Brush- Sisal Collection"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "contentbeautywellbeing.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Elytrum",
+      "brand_slug": "elytrum",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.contentbeautywellbeing.com/collections/elytrum",
+      "product_count": 2,
+      "in_stock_count": 1,
+      "out_of_stock_count": 1,
+      "sample_products": [
+        "Elytrum Oval Soft Dry Body Brush",
+        "Elytrum Revive Body Brush with Coir Handle"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    }
+  ]
+}
