@@ -1,0 +1,252 @@
+{
+  "brand": "Green People",
+  "brand_slug": "green-people",
+  "generated_at": "2026-10-23T13:33:18+00:00",
+  "total_candidates_checked": 37,
+  "verified_uk_independent_stockists_count": 9,
+  "verified_stockists": [
+    {
+      "domain": "biggreensmile.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.biggreensmile.com/brands/green-people.aspx?brand=Green+People",
+      "product_count": 45,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "FIND OUT MORE »",
+        "shampoos",
+        "sunscreens",
+        "skincare",
+        "sensitive skin"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "uorganic.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.uorganic.co.uk/collections/green-people",
+      "product_count": 43,
+      "in_stock_count": 36,
+      "out_of_stock_count": 7,
+      "sample_products": [
+        "Green People Scent Free Sun Lotion SPF30 200ml",
+        "Green People Scent Free Shampoo 200ml",
+        "Green People Facial Sun Cream Scent Free SPF30 50ml",
+        "Green People Volumising Mascara - Black 7ml",
+        "Green People Oy! My Skin Goals Gift Set"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "onlynaturals.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://onlynaturals.co.uk/collections/green-people",
+      "product_count": 42,
+      "in_stock_count": 20,
+      "out_of_stock_count": 22,
+      "sample_products": [
+        "Green People Gentle Cleanse & Make-Up Remover 150ml",
+        "Green People Foaming Face Wash 100ml",
+        "Green People Vita Min Fix 24h Cream 50ml",
+        "Green People Anti-Blemish Oil Balance Moisturiser (formerly Day Solution Moisturiser) 50ml",
+        "Green People Day Solution Cream SPF15 50ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "planetorganic.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.planetorganic.com/collections/green-people",
+      "product_count": 39,
+      "in_stock_count": 29,
+      "out_of_stock_count": 10,
+      "sample_products": [
+        "Green People Children Spearmint &amp; Aloe Vera Toothpaste 50ml",
+        "Green People Suncream SPF30 Scent-free 200ml",
+        "Green People Suncream SPF30 Scent-Free 100ml",
+        "Green People Kids Suncream SPF30 Scent-Free 150ml",
+        "Green People Facial SunCream SPF30 50ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "mypure.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.mypure.co.uk/search?q=Green%20People",
+      "product_count": 10,
+      "in_stock_count": 0,
+      "out_of_stock_count": 10,
+      "sample_products": [
+        "Organic Children | Scent Free Sun Cream SPF30",
+        "Green People for Men | No. 9 Mint & Prebiotics Deodorant",
+        "Moisturising After Sun with Insect Repellent | Aloe Vera & Peppermint",
+        "Scent-Free Sun Cream SPF30",
+        "Green People for Men | No. 2 Soothing Wash & Shave"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "contentbeautywellbeing.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.contentbeautywellbeing.com/collections/green-people",
+      "product_count": 8,
+      "in_stock_count": 2,
+      "out_of_stock_count": 6,
+      "sample_products": [
+        "Green People Scent Free Facial Mineral Suncream SPF30 - Organic",
+        "Green People Scent Free Facial Sun Cream SPF30 - Invisible",
+        "Green People Glow & Protect SPF30",
+        "Green People Scent Free Body Sun Cream SPF30 - Invisible",
+        "Green People Liquid Gold Tanning Drops"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "quickvit.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://quickvit.co.uk/search?q=Green%20People",
+      "product_count": 6,
+      "in_stock_count": 0,
+      "out_of_stock_count": 6,
+      "sample_products": [
+        "Green People Fennel & Propolis Toothpaste 50ml",
+        "Green People Foaming Face Wash",
+        "Green People Childrens Spearmint Toothpaste 50ml",
+        "Green People Mandarin & Fluoride Toothpaste 50ml",
+        "Green People Peppermint Toothpaste 50ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "expresschemist.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.expresschemist.co.uk/green-people.html",
+      "product_count": 3,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Green People Irritated Scalp Conditioner 200ml",
+        "Green People Minty Cool Toothpaste 50ml",
+        "Green People Body Care Moisturising Shower Gel 200ml"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "yourhealthbasket.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Green People",
+      "brand_slug": "green-people",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://yourhealthbasket.co.uk/?s=Green+People&post_type=product",
+      "product_count": 1,
+      "in_stock_count": 1,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Anti-Ageing Vita Min Fix 24-Hour Cream 50ml &#8211; Green People"
+      ],
+      "platform": "WooCommerce",
+      "notes": ""
+    }
+  ]
+}
