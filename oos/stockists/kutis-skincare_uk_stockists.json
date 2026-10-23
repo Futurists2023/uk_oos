@@ -1,0 +1,142 @@
+{
+  "brand": "Kutis Skincare",
+  "brand_slug": "kutis-skincare",
+  "generated_at": "2026-10-23T20:02:49+00:00",
+  "total_candidates_checked": 37,
+  "verified_uk_independent_stockists_count": 5,
+  "verified_stockists": [
+    {
+      "domain": "kutis-skincare.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Kutis Skincare",
+      "brand_slug": "kutis-skincare",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://kutis-skincare.co.uk/search?q=Kutis%20Skincare",
+      "product_count": 10,
+      "in_stock_count": 0,
+      "out_of_stock_count": 10,
+      "sample_products": [
+        "Radiance Rose & Frankincense Serum",
+        "Restorative Lavender & Sandalwood Serum",
+        "Lavender & Geranium Vegan Deodorant",
+        "Orange & Patchouli Deodorant",
+        "Lavender & Bergamot Deodorant"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "quickvit.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Kutis Skincare",
+      "brand_slug": "kutis-skincare",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://quickvit.co.uk/search?q=Kutis%20Skincare",
+      "product_count": 10,
+      "in_stock_count": 0,
+      "out_of_stock_count": 10,
+      "sample_products": [
+        "Kutis Skincare Cypress & Mint BF Deodorant 50g",
+        "Kutis Skincare Patchouli & Rose BF Deodorant 50g",
+        "Kutis Lemongrass & Teatree Deodroant 55g",
+        "Kutis Orange & Patchouli Deodroant 50g",
+        "Kutis Lavender & Bergamot Deodroant 55g"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "justbeyoutiful.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Kutis Skincare",
+      "brand_slug": "kutis-skincare",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.justbeyoutiful.co.uk/search?q=Kutis%20Skincare",
+      "product_count": 6,
+      "in_stock_count": 0,
+      "out_of_stock_count": 6,
+      "sample_products": [
+        "Grapefruit & Mandarin Bicarb Free Vegan Deodorant",
+        "Kutis Vegan Cedarwood & Rose Natural Deodorant",
+        "Kutis Patchouli & Rose Bicarb Free Deodorant",
+        "Kutis Lavender & Bergamot Natural Beeswax Deodorant – 55g",
+        "Kutis Unscented Bicarb Free Vegan Deodorant"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "plasticfreedom.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Kutis Skincare",
+      "brand_slug": "kutis-skincare",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://plasticfreedom.co.uk/collections/kutis-skincare",
+      "product_count": 2,
+      "in_stock_count": 2,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Kutis Skincare VEGAN Deodorant 55g",
+        "Kutis Skincare BICARB FREE VEGAN Deodorant 50g"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "peacewiththewild.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Kutis Skincare",
+      "brand_slug": "kutis-skincare",
+      "source": "seed_pool+search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.peacewiththewild.co.uk/?s=Kutis+Skincare&post_type=product",
+      "product_count": 1,
+      "in_stock_count": 1,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Kutis Skincare Gift Set"
+      ],
+      "platform": "WooCommerce",
+      "notes": ""
+    }
+  ]
+}
