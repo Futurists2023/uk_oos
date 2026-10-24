@@ -1,0 +1,32 @@
+{
+  "brand": "Nathalie Bond",
+  "brand_slug": "nathalie-bond",
+  "generated_at": "2026-10-24T12:47:17+00:00",
+  "total_candidates_checked": 41,
+  "verified_uk_independent_stockists_count": 1,
+  "verified_stockists": [
+    {
+      "domain": "naturiabeauty.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Nathalie Bond",
+      "brand_slug": "nathalie-bond",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://naturiabeauty.com/nathalie-bond-unwind-body-oil/",
+      "product_count": 1,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Nathalie Bond Unwind Organic Body Oil Review"
+      ],
+      "platform": "WooCommerce",
+      "notes": ""
+    }
+  ]
+}
