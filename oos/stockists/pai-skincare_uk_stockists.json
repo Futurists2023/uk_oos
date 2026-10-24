@@ -1,0 +1,91 @@
+{
+  "brand": "Pai Skincare",
+  "brand_slug": "pai-skincare",
+  "generated_at": "2026-10-24T22:40:52+00:00",
+  "total_candidates_checked": 36,
+  "verified_uk_independent_stockists_count": 3,
+  "verified_stockists": [
+    {
+      "domain": "naturisimo.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Pai Skincare",
+      "brand_slug": "pai-skincare",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://ohmycream.co.uk/collections/pai-skincare",
+      "product_count": 36,
+      "in_stock_count": 30,
+      "out_of_stock_count": 6,
+      "sample_products": [
+        "BioRegenerate Rosehip Oil",
+        "Anthemis Soothing Moisturizer",
+        "Light Work Rosehip Cleansing Oil",
+        "Gentle Genius™ Barrier Care Replenishing Body Wash",
+        "Middlemist Seven Camellia & Rose Gentle Cream Cleanser"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "ohmycream.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Pai Skincare",
+      "brand_slug": "pai-skincare",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://ohmycream.co.uk/collections/pai-skincare",
+      "product_count": 36,
+      "in_stock_count": 30,
+      "out_of_stock_count": 6,
+      "sample_products": [
+        "BioRegenerate Rosehip Oil",
+        "Anthemis Soothing Moisturizer",
+        "Light Work Rosehip Cleansing Oil",
+        "Gentle Genius™ Barrier Care Replenishing Body Wash",
+        "Middlemist Seven Camellia & Rose Gentle Cream Cleanser"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "contentbeautywellbeing.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Pai Skincare",
+      "brand_slug": "pai-skincare",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.contentbeautywellbeing.com/collections/pai-skincare",
+      "product_count": 29,
+      "in_stock_count": 4,
+      "out_of_stock_count": 25,
+      "sample_products": [
+        "Pai Middlemist Seven Gentle Cream Cleanser",
+        "Pai Light Work Cleansing Oil",
+        "Pai Phaze Clarifying Face Wash",
+        "Pai Virtuous Circle Eco-Bead Exfoliator",
+        "Pai Bright Now PHA & Rosehip Exfoliating Toner"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    }
+  ]
+}
