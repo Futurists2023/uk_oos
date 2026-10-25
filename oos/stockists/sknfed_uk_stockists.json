@@ -1,0 +1,90 @@
+{
+  "brand": "Sknfed",
+  "brand_slug": "sknfed",
+  "generated_at": "2026-10-25T19:09:59+00:00",
+  "total_candidates_checked": 42,
+  "verified_uk_independent_stockists_count": 3,
+  "verified_stockists": [
+    {
+      "domain": "planetorganic.com",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Sknfed",
+      "brand_slug": "sknfed",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.planetorganic.com/search?q=Sknfed",
+      "product_count": 10,
+      "in_stock_count": 0,
+      "out_of_stock_count": 10,
+      "sample_products": [
+        "Sknfed Organic Botanical Elixir 30ml",
+        "Sknfed Organic Lip Balm - Mango&Avocado 15g",
+        "Sknfed Organic Rose Water 100g",
+        "Sknfed Organic Lip Balm - Peppermint 15g",
+        "Sknfed Organic Night Cream - Youth Boost 50g"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "justbeyoutiful.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Sknfed",
+      "brand_slug": "sknfed",
+      "source": "seed_pool",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.justbeyoutiful.co.uk/collections/sknfed",
+      "product_count": 6,
+      "in_stock_count": 4,
+      "out_of_stock_count": 2,
+      "sample_products": [
+        "Organic Turmeric Soap SKNFED",
+        "Travel Organic SPF30 Face Cream - SKNFED",
+        "Travel Size Organic Rose Face Moisturiser SKNFED",
+        "Travel Face Mask Trio SKNFED",
+        "Travel Cream Deodorant SKNFED"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "botanivie.co.uk",
+      "tier": "Tier 2 (Independent Stockist)",
+      "brand": "Sknfed",
+      "brand_slug": "sknfed",
+      "source": "web_search",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://botanivie.co.uk/collections/sknfed",
+      "product_count": 3,
+      "in_stock_count": 3,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Sknfed Superfood Cream Deodorant",
+        "Sknfed Organic Body Cream with Raspberry Seed Extract",
+        "Sknfed Organic Cleansing Lotion"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    }
+  ]
+}
