@@ -319,6 +319,57 @@ a:hover {
 }
 
 /* Consolidated Stockist Rows inside a Product Group */
+.retailer-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 32px;
+}
+
+.retailer-block {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 18px 6px;
+}
+
+.retailer-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.retailer-block-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.retailer-domain-name {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+
+.retailer-oos-summary {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--red);
+}
+
+.retailer-healthy-footer {
+  padding: 14px 16px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .flat-oos-list {
   list-style: none;
   padding: 0;
@@ -326,9 +377,13 @@ a:hover {
 }
 
 .flat-oos-entry {
-  padding: 18px 6px;
+  padding: 16px 4px;
   border-bottom: 1px solid var(--line);
   transition: background 0.12s;
+}
+
+.flat-oos-entry:last-child {
+  border-bottom: none;
 }
 
 .flat-oos-entry:hover {
