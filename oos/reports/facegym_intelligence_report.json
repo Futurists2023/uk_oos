@@ -1,0 +1,1034 @@
+{
+  "brand": "FACEGYM",
+  "brand_slug": "facegym",
+  "generated_at": "2026-10-26T21:08:29+00:00",
+  "summary": {
+    "monitored_uk_stores": 4,
+    "monitored_retail_stockists": 3,
+    "total_listed_skus_variants": 71,
+    "in_stock_skus_variants": 70,
+    "out_of_stock_skus_variants": 1,
+    "retail_out_of_stock_variants": 1,
+    "unforced_retail_outages": 0,
+    "factory_shortages_on_dtc": 0,
+    "silent_removed_skus": 0
+  },
+  "out_of_stock_alerts": [
+    {
+      "sku_key": "cultbeauty.co.uk::facegym::p_facegym-signature-skin-mini-kit_14407685",
+      "domain": "cultbeauty.co.uk",
+      "brand": "FACEGYM",
+      "product_title": "FaceGym Signature Skin Mini Kit (Worth £82.00)",
+      "variant_title": "Standard",
+      "normalized_product_key": "signature_skin_mini_kit_worth",
+      "product_url": "https://www.cultbeauty.co.uk/p/facegym-signature-skin-mini-kit/14407685/",
+      "sku_code": "p_facegym-signature-skin-mini-kit_14407685",
+      "current_price": 55.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T21:07:52+00:00",
+      "last_seen_at": "2026-10-26T21:07:52+00:00",
+      "first_seen_oos_at": "2026-10-26T21:07:52+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 21:07 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    }
+  ],
+  "retail_out_of_stock_alerts": [
+    {
+      "sku_key": "cultbeauty.co.uk::facegym::p_facegym-signature-skin-mini-kit_14407685",
+      "domain": "cultbeauty.co.uk",
+      "brand": "FACEGYM",
+      "product_title": "FaceGym Signature Skin Mini Kit (Worth £82.00)",
+      "variant_title": "Standard",
+      "normalized_product_key": "signature_skin_mini_kit_worth",
+      "product_url": "https://www.cultbeauty.co.uk/p/facegym-signature-skin-mini-kit/14407685/",
+      "sku_code": "p_facegym-signature-skin-mini-kit_14407685",
+      "current_price": 55.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T21:07:52+00:00",
+      "last_seen_at": "2026-10-26T21:07:52+00:00",
+      "first_seen_oos_at": "2026-10-26T21:07:52+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 21:07 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    }
+  ],
+  "dtc_out_of_stock": [],
+  "hero_benchmarks": [
+    {
+      "normalized_key": "facial_cupping_set",
+      "product_family": "FaceGym Facial Cupping Set",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "powerlift_ems_activator_gel",
+      "product_family": "FaceGym Powerlift Ems Activator Gel 100ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "acne_light_shot_device_refill_strips",
+      "product_family": "FaceGym Acne Light Shot Device Refill Strips 6g",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "active_blast_instant_release_collagen_booster_spheres_7_days",
+      "product_family": "FaceGym Active Blast Instant Release Collagen Booster Spheres - 7 Days",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "active_collagen_wonder_moisturiser_triple_peptide_complex",
+      "product_family": "FaceGym Active Collagen Wonder Moisturiser with Triple Peptide Complex 45ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "active_collagen_wonder_serum_phyto_retinol_hyaluronic_acid",
+      "product_family": "FaceGym Active Collagen Wonder Serum with Phyto-Retinol and Hyaluronic Acid 30ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "electro_lite_energizing_brightening_gel_cleanser",
+      "product_family": "FaceGym Electro-lite Energizing and Brightening Gel Cleanser 100ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "face_coach_lifting_q10_mastic_tree_enzymatically_activated_face_oil",
+      "product_family": "FaceGym Face Coach Lifting Q10 and Mastic Tree Enzymatically-Activated Face Oil 30ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "hydro_bound_hydrating_hyaluronic_acid_niacinamide_serum",
+      "product_family": "FaceGym Hydro-Bound Hydrating Hyaluronic Acid and Niacinamide Serum 30ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "isamaya_x_sculpt_01",
+      "product_family": "ISAMAYA x FaceGym Sculpt 01",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "liftwear_lift_brighten_vitamin_c_bioferment_gel_cream",
+      "product_family": "FaceGym Liftwear Lift and Brighten Vitamin C and Bioferment Gel-Cream 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "lightwear_led_face_mask",
+      "product_family": "FaceGym LIGHTWEAR LED Face Mask",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "multi_sculpt_high_performance_contouring_tool",
+      "product_family": "FaceGym Multi-Sculpt High Performance Contouring Tool",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "pro_electrical_muscle_stimulation_device",
+      "product_family": "FaceGym Pro - Electrical Muscle Stimulation Device",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "weighted_ball_tension_release_tool",
+      "product_family": "FaceGym Weighted Ball Tension Release Tool",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "youthful_active_roller_crystallised_microneedles_niacinamide",
+      "product_family": "FaceGym Youthful Active Roller Crystallised Microneedles - Niacinamide",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    }
+  ],
+  "silent_removals": [],
+  "recent_events": [
+    {
+      "id": 3165,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::active-collagen-wonder-cleansing-balm-MUK200041423",
+      "product_title": "Active Collagen Wonder Cleansing Balm",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 45.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3164,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::active-collagen-wonder-moisturiser-MUK200041424",
+      "product_title": "Active Collagen Wonder Moisturiser",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 75.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3163,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::protect-hydrate-broad-spectrum-invisible-fluid-spf-50-MUK200050766",
+      "product_title": "Protect + Hydrate Broad Spectrum Invisible Fluid SPF 50",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 39.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3162,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::hydro-bound-serum-MUK200039402",
+      "product_title": "Hydro-Bound Serum",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 71.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3161,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::liftwear-gel-moisturiser-MUK200039400",
+      "product_title": "Liftwear Gel Moisturiser",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 58.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3160,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::youthful-roller-refill-MUK200039422",
+      "product_title": "Youthful Roller Refill",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 66.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3159,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::skin-changer-essence-toner-MUK200039409",
+      "product_title": "Skin Changer Essence Toner",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 47.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3158,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::acne-light-shot-strips-MUK200039417",
+      "product_title": "Acne Light Shot Strips",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 17.75,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3157,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::active-collagen-wonder-serum-MUK200048852",
+      "product_title": "Active Collagen Wonder Serum",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 95.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3156,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::facial-cupping-set-MUK200062843",
+      "product_title": "Facial Cupping Set",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 35.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3155,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::youth-reformer-serum-MUK200039401",
+      "product_title": "Youth Reformer Serum",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 92.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3154,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::UK200039420",
+      "product_title": "FACEGYM Active Blast Vegan Collagen + Hydro-Bound Serum 28 pack",
+      "variant_title": "28 PACK",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 194.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3153,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::UK200039419",
+      "product_title": "FACEGYM Active Blast Vegan Collagen + Hydro-Bound Serum 7 pack",
+      "variant_title": "7 PACK",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 58.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3152,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::powerlift-ems-activator-gel-MUK200056837",
+      "product_title": "Powerlift Ems Activator Gel",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 40.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3151,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::electro-lite-cleanser-MUK200039397",
+      "product_title": "Electro Lite Cleanser",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 38.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3150,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::youthful-active-roller-MUK200039421",
+      "product_title": "Youthful Active Roller",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 66.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3149,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::face-coach-oil-MUK200039406",
+      "product_title": "Face Coach Oil",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 56.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3148,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::facegym-pro---edition-MUK200062844",
+      "product_title": "FaceGym Pro - Edition",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 500.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3147,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::facegym-pro-MUK200053571",
+      "product_title": "FaceGym Pro",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 633.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3146,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::multisculpt-MUK200039425",
+      "product_title": "Multisculpt",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 53.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3145,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::face-ball-MUK200039423",
+      "product_title": "Face Ball",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 28.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3144,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::weighted-face-ball-MUK200039424",
+      "product_title": "Weighted Face Ball",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 35.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3143,
+      "occurred_at": "2026-10-26T21:08:28+00:00",
+      "domain": "spacenk.com",
+      "brand": "FACEGYM",
+      "sku_key": "spacenk.com::facegym::acne-light-shot-MUK200039416",
+      "product_title": "Acne Light Shot",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 63.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3142,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-cleanse-and-tone-duo_16237114",
+      "product_title": "FaceGym Cleanse and Tone Duo",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 85.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3141,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-lift-hydrate-duo_16237117",
+      "product_title": "FaceGym Lift & Hydrate Duo",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 129.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3140,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-active-blast-instant-release-collagen-booster-spheres-28-days_13798787",
+      "product_title": "FaceGym Active Blast Instant Release Collagen Booster Spheres - 28 Days",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 145.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3139,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-sculpt-and-tension-release-facial-duo_16237121",
+      "product_title": "FaceGym Sculpt and Tension Release Facial Duo",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 88.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3138,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-acne-light-shot-refill-trio_16237115",
+      "product_title": "FaceGym Acne Light Shot Refill Trio",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 53.25,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3137,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-acne-light-shot-set_16237113",
+      "product_title": "FaceGym Acne Light Shot Set",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 80.75,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3136,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-active-collagen-wonder-moisturiser-with-triple-peptide-complex-45ml_14980119",
+      "product_title": "FaceGym Active Collagen Wonder Moisturiser with Triple Peptide Complex 45ml",
+      "variant_title": "45ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 60.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3135,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-liftwear-lift-and-brighten-vitamin-c-and-bioferment-gel-cream-10ml_15866370",
+      "product_title": "FaceGym Liftwear Lift and Brighten Vitamin C and Bioferment Gel-Cream 10ml",
+      "variant_title": "10ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 16.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3134,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-acne-light-shot-device-refill-strips-6g_14228090",
+      "product_title": "FaceGym Acne Light Shot Device Refill Strips 6g",
+      "variant_title": "6g",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 14.2,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3133,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-sculpt-and-lift-facial-duo_16237119",
+      "product_title": "FaceGym Sculpt and Lift Facial Duo",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 109.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3132,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-youthful-active-roller-crystallised-microneedles-niacinamide_13903578",
+      "product_title": "FaceGym Youthful Active Roller Crystallised Microneedles - Niacinamide",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 49.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3131,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-active-blast-instant-release-collagen-booster-spheres-7-days_13798786",
+      "product_title": "FaceGym Active Blast Instant Release Collagen Booster Spheres - 7 Days",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 46.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3130,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-active-collagen-wonder-serum-with-phyto-retinol-and-hyaluronic-acid-30ml_15227381",
+      "product_title": "FaceGym Active Collagen Wonder Serum with Phyto-Retinol and Hyaluronic Acid 30ml",
+      "variant_title": "30ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 76.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3129,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-electro-lite-energizing-and-brightening-gel-cleanser-100ml_13467638",
+      "product_title": "FaceGym Electro-lite Energizing and Brightening Gel Cleanser 100ml",
+      "variant_title": "100ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 30.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3128,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-liftwear-lift-and-brighten-vitamin-c-and-bioferment-gel-cream-50ml_13798829",
+      "product_title": "FaceGym Liftwear Lift and Brighten Vitamin C and Bioferment Gel-Cream 50ml",
+      "variant_title": "50ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 43.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3127,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-hydro-bound-hydrating-hyaluronic-acid-and-niacinamide-serum-30ml_13467635",
+      "product_title": "FaceGym Hydro-Bound Hydrating Hyaluronic Acid and Niacinamide Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 56.8,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3126,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-youth-reformer-firming-vitamin-c-and-nootropic-oil-in-serum-30ml_13467636",
+      "product_title": "FaceGym Youth Reformer Firming Vitamin C and Nootropic Oil-in-Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 73.6,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3125,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_isamaya-x-facegym-sculpt-01_15451173",
+      "product_title": "ISAMAYA x FaceGym Sculpt 01",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 40.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3124,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-facial-cupping-set_17703181",
+      "product_title": "FaceGym Facial Cupping Set",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 28.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3123,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-face-coach-lifting-q10-and-mastic-tree-enzymatically-activated-face-oil-30ml_13467637",
+      "product_title": "FaceGym Face Coach Lifting Q10 and Mastic Tree Enzymatically-Activated Face Oil 30ml",
+      "variant_title": "30ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 44.8,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3122,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-powerlift-ems-activator-gel-100ml_16378055",
+      "product_title": "FaceGym Powerlift Ems Activator Gel 100ml",
+      "variant_title": "100ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 32.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3121,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-lightwear-led-face-mask_17029236",
+      "product_title": "FaceGym LIGHTWEAR LED Face Mask",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 360.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3120,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-acne-light-shot-device_14228089",
+      "product_title": "FaceGym Acne Light Shot LED Device",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 50.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3119,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-weighted-ball-tension-release-tool_13467652",
+      "product_title": "FaceGym Weighted Ball Tension Release Tool",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 28.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3118,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-pro-electrical-muscle-stimulation-device_17716077",
+      "product_title": "FaceGym Pro - Electrical Muscle Stimulation Device",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 400.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3117,
+      "occurred_at": "2026-10-26T21:08:07+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-multi-sculpt-high-performance-contouring-tool_13467634",
+      "product_title": "FaceGym Multi-Sculpt High Performance Contouring Tool",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 42.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3116,
+      "occurred_at": "2026-10-26T21:07:52+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "FACEGYM",
+      "sku_key": "cultbeauty.co.uk::facegym::p_facegym-signature-skin-mini-kit_14407685",
+      "product_title": "FaceGym Signature Skin Mini Kit (Worth £82.00)",
+      "variant_title": "Standard",
+      "event_type": "NEW_OOS",
+      "old_price": null,
+      "new_price": 55.0,
+      "details": "Initial discovery"
+    }
+  ]
+}
