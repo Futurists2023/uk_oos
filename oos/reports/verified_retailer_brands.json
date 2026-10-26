@@ -1,0 +1,1680 @@
+{
+  "verified_43": [
+    {
+      "slug": "mirror-water",
+      "name": "Mirror Water",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [
+        "spacenk.com",
+        "cultbeauty.co.uk",
+        "naturisimo.com"
+      ],
+      "count": 3
+    },
+    {
+      "slug": "pai-skincare",
+      "name": "Pai Skincare",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com"
+      ],
+      "count": 3
+    },
+    {
+      "slug": "votary",
+      "name": "Votary",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [
+        "spacenk.com",
+        "cultbeauty.co.uk"
+      ],
+      "count": 2
+    },
+    {
+      "slug": "de-mamiel",
+      "name": "De Mamiel",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [
+        "cultbeauty.co.uk"
+      ],
+      "count": 1
+    },
+    {
+      "slug": "evolve",
+      "name": "Evolve Organic Beauty",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [
+        "naturisimo.com"
+      ],
+      "count": 1
+    },
+    {
+      "slug": "kiki-health",
+      "name": "Kiki Health",
+      "category": "Wellness & Supplements",
+      "major_retailers": [
+        "lookfantastic.com"
+      ],
+      "count": 1
+    },
+    {
+      "slug": "olverum",
+      "name": "Olverum",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [
+        "spacenk.com"
+      ],
+      "count": 1
+    },
+    {
+      "slug": "wild-nutrition",
+      "name": "Wild Nutrition",
+      "category": "Wellness & Supplements",
+      "major_retailers": [
+        "naturisimo.com"
+      ],
+      "count": 1
+    },
+    {
+      "slug": "austin-austin",
+      "name": "Austin Austin",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "balmonds",
+      "name": "Balmonds",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "bare-biology",
+      "name": "Bare Biology",
+      "category": "Wellness & Supplements",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "bramley",
+      "name": "Bramley",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "corinne-taylor",
+      "name": "Corinne Taylor",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "disciple-skincare",
+      "name": "Disciple Skincare",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "earth-conscious",
+      "name": "Earth Conscious",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "earth-tan",
+      "name": "Earth Tan",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "ede",
+      "name": "Ede",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "elytrum",
+      "name": "Elytrum",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "faace",
+      "name": "Faace",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "flawless-vegan-beauty",
+      "name": "Flawless Vegan Beauty",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "georganics",
+      "name": "Georganics",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "green-people",
+      "name": "Green People",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "haeckels",
+      "name": "Haeckels",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "inlight-beauty",
+      "name": "Inlight Beauty",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "kutis-skincare",
+      "name": "Kutis Skincare",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "lily-lolo",
+      "name": "Lily Lolo",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "lolas-apothecary",
+      "name": "Lola's Apothecary",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "love-bites-only",
+      "name": "Love Bites Only",
+      "category": "Wellness & Supplements",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "moa",
+      "name": "MOA",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "megi-wellness",
+      "name": "Megi Wellness",
+      "category": "Wellness & Supplements",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "nathalie-bond",
+      "name": "Nathalie Bond",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "neighbourhood-botanicals",
+      "name": "Neighbourhood Botanicals",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "nini-organics",
+      "name": "Nini Organics",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "nourish-london",
+      "name": "Nourish London",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "plum-and-ashby",
+      "name": "Plum & Ashby",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "sister-and-co",
+      "name": "Sister & Co.",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "skin-sapiens",
+      "name": "Skin Sapiens",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "sknfed",
+      "name": "Sknfed",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "therapi",
+      "name": "Therapi",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "this-is-silk",
+      "name": "This Is Silk",
+      "category": "Bath, Body & Apothecary",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "upcircle",
+      "name": "UpCircle",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "wilder-botanics",
+      "name": "Wilder Botanics",
+      "category": "Skincare & Facial Botanicals",
+      "major_retailers": [],
+      "count": 0
+    },
+    {
+      "slug": "yes",
+      "name": "YES",
+      "category": "Wellness & Supplements",
+      "major_retailers": [],
+      "count": 0
+    }
+  ],
+  "multi_retailer_candidates": [
+    {
+      "brand": "Augustinus Bader",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Beauty of Joseon",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Biodance",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Dr. Barbara Sturm",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Manucurist",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Oskia",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "SKIN1004",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Slip",
+      "retailer_count": 4,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "111SKIN",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Allies of Skin",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Anastasia Beverly Hills",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Anua",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "BIOEFFECT",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com"
+      ]
+    },
+    {
+      "brand": "Beautyblender",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "By Terry",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Ceremonia",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Chloé",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Christophe Robin",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com"
+      ]
+    },
+    {
+      "brand": "Coco & Eve",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Coola",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Dr. Althea",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com"
+      ]
+    },
+    {
+      "brand": "FACEGYM",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Hair by Sam McKnight",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Hermès",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Isle of Paradise",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "JVN Hair",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Joonbyrd",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Juliette Has A Gun",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Kora Organics",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Laura Mercier",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "MIRROR WATER",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "MZ SKIN",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Mario Badescu",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Medik8",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Omorovicza",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "RevitaLash",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Rms Beauty",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Sarah Chapman",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Shark Beauty",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Sunday Riley",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Supergoop!",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Surratt",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Tan-Luxe",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Tata Harper",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "The INKEY List",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "The Nue Co",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Vida Glow",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "Westman Atelier",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "brand": "medicube",
+      "retailer_count": 3,
+      "retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    }
+  ],
+  "uk_sweet_spot_scaleups": [
+    {
+      "name": "Oskia",
+      "dtc_domain": "oskiaskincare.com",
+      "dtc_url": "https://www.oskiaskincare.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK luxury bio-nutritional skincare (Monmouth / London, founded by Georgie Cleeve)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 4
+    },
+    {
+      "name": "Philip Kingsley",
+      "dtc_domain": "philipkingsley.co.uk",
+      "dtc_url": "https://www.philipkingsley.co.uk",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Family-owned UK trichology scalp & haircare scale-up (Mayfair London)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "hollandandbarrett.com",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 4
+    },
+    {
+      "name": "111SKIN",
+      "dtc_domain": "111skin.co.uk",
+      "dtc_url": "https://111skin.co.uk",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK Harley Street luxury clinical skincare (founded by Dr Yannis & Eva Alexandrides)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Artah",
+      "dtc_domain": "artah.co",
+      "dtc_url": "https://artah.co",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK cellular nutrition & metabolic supplements (London, founded by Rhian Stephenson)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Emma Hardie",
+      "dtc_domain": "emmahardie.com",
+      "dtc_url": "https://www.emmahardie.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK botanical facialist skincare famous for Moringa Cleansing Balm (London)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "FACEGYM",
+      "dtc_domain": "facegym.com",
+      "dtc_url": "https://uk.facegym.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK active skincare & facial fitness brand (London, founded by Inge Theron)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Floral Street",
+      "dtc_domain": "floralstreet.com",
+      "dtc_url": "https://floralstreet.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK sustainable vegan fine fragrance scale-up (Covent Garden, founded by Michelle Feeney)",
+      "verified_retailers": [
+        "lookfantastic.com",
+        "naturisimo.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Hair Gain",
+      "dtc_domain": "hairgainnow.com",
+      "dtc_url": "https://www.hairgainnow.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK phytonutrient hair supplements & scalp care scale-up (London, founded by Lucy Palmer)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Hair by Sam McKnight",
+      "dtc_domain": "sammcknight.com",
+      "dtc_url": "https://sammcknight.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK prestige haircare scale-up (London, founded by Sam McKnight)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Hello Sunday",
+      "dtc_domain": "hellosundayspf.com",
+      "dtc_url": "https://hellosundayspf.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK everyday SPF & sun protection challenger (founded by Amy Ford)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Isle of Paradise",
+      "dtc_domain": "theisleofparadise.com",
+      "dtc_url": "https://theisleofparadise.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK colour-correcting self-tan challenger (founded by Jules Von Hep)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Joonbyrd",
+      "dtc_domain": "joonbyrd.com",
+      "dtc_url": "https://joonbyrd.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK dermatologist-led affective bodycare (London, founded by Dr Alexis Granite)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Luna Daily",
+      "dtc_domain": "luna-daily.com",
+      "dtc_url": "https://www.luna-daily.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK microbiome body & intimate care scale-up (London, founded by Katy Cottam)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "MZ SKIN",
+      "dtc_domain": "mzskin.com",
+      "dtc_url": "https://www.mzskin.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK doctor-led luxury skincare (London, founded by Dr Maryam Zamani)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Mirror Water",
+      "dtc_domain": "mirrorwater.earth",
+      "dtc_url": "https://mirrorwater.earth",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK bath & body care (founded by Estée Lalonde)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "NEOM Wellbeing",
+      "dtc_domain": "neomwellbeing.com",
+      "dtc_url": "https://neomwellbeing.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK natural wellbeing, sleep & bodycare B-Corp (Harrogate/London, founded by Nicola Elliott)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Sarah Chapman",
+      "dtc_domain": "sarahchapman.com",
+      "dtc_url": "https://www.sarahchapman.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK Skinesis clinical facialist skincare (London, founded by Sarah Chapman)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Tan-Luxe",
+      "dtc_domain": "tan-luxe.com",
+      "dtc_url": "https://tan-luxe.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK skincare-infused luxury self-tanning brand (founded by Marc Elrick)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "The Nue Co.",
+      "dtc_domain": "uk.thenueco.com",
+      "dtc_url": "https://uk.thenueco.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK-founded clinical supplements, gut health & functional fragrance (founded by Jules Miller)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "VIEVE",
+      "dtc_domain": "vieve.co.uk",
+      "dtc_url": "https://www.vieve.co.uk",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK cruelty-free makeup & skincare scale-up (Glasgow/London, founded by Jamie Genevieve)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "hollandandbarrett.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Medik8",
+      "dtc_domain": "medik8.com",
+      "dtc_url": "https://www.medik8.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "UK Breakout Scale-Up",
+      "notes": "UK clinical CSA/retinal skincare powerhouse (Hertfordshire, founded by Elliot Isaacs)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "The INKEY List",
+      "dtc_domain": "uk.theinkeylist.com",
+      "dtc_url": "https://uk.theinkeylist.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "UK Breakout Scale-Up",
+      "notes": "UK single-ingredient knowledge-powered skincare challenger (founded by Colette Laxton & Mark Curry)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 3
+    },
+    {
+      "name": "Aromatherapy Associates",
+      "dtc_domain": "aromatherapyassociates.com",
+      "dtc_url": "https://www.aromatherapyassociates.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK B-Corp therapeutic essential oil bath, body & wellbeing apothecary (London)",
+      "verified_retailers": [
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "BEAUTYPRO",
+      "dtc_domain": "beautypro.com",
+      "dtc_url": "https://www.beautypro.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK sheet mask, serum & LED skincare challenger (Sussex)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "BLEACH London",
+      "dtc_domain": "bleachlondon.com",
+      "dtc_url": "https://bleachlondon.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK vegan hair colour & care scale-up (London, founded by Alex Brownsell)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Bouclème",
+      "dtc_domain": "boucleme.co.uk",
+      "dtc_url": "https://www.boucleme.co.uk",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK plant-powered curl care B-Corp (London, founded by Michele Scott-Lynch)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "DIRTEA",
+      "dtc_domain": "dirteaworld.com",
+      "dtc_url": "https://www.dirteaworld.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK functional mushroom extracts & wellness powders (London, founded by Simon & Andrew Salter)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Evolve Organic Beauty",
+      "dtc_domain": "evolvebeauty.co.uk",
+      "dtc_url": "https://www.evolvebeauty.co.uk",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK artisan organic skincare B-Corp (Hertfordshire, founded by Laura Rudoe)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "naturisimo.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Fussy",
+      "dtc_domain": "getfussy.com",
+      "dtc_url": "https://www.getfussy.com",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK refillable probiotic deodorant B-Corp (London, founded by Matt Kennedy)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Hairburst",
+      "dtc_domain": "hairburst.com",
+      "dtc_url": "https://www.hairburst.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK hair growth vitamins & scalp care scale-up",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "ICONIC LONDON",
+      "dtc_domain": "iconiclondoninc.com",
+      "dtc_url": "https://www.iconiclondoninc.com",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK cruelty-free glow & complexion cosmetics scale-up (founded by Jade Elliott)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Jo Loves",
+      "dtc_domain": "joloves.com",
+      "dtc_url": "https://www.joloves.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK luxury fragrance, bath & body brand (London, founded by Jo Malone CBE)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Kiki Health",
+      "dtc_domain": "kiki-health.com",
+      "dtc_url": "https://kiki-health.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK superfood, mushroom & mineral supplements",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Laboratory Perfumes",
+      "dtc_domain": "laboratoryperfumes.com",
+      "dtc_url": "https://www.laboratoryperfumes.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK sustainable botanical fragrance & candle brand",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Margaret Dabbs London",
+      "dtc_domain": "margaretdabbs.co.uk",
+      "dtc_url": "https://www.margaretdabbs.co.uk",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK medical-grade foot, hand & leg care scale-up (London, founded by Margaret Dabbs OBE)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Nailberry",
+      "dtc_domain": "nailberry.co.uk",
+      "dtc_url": "https://www.nailberry.co.uk",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK breathable oxygenated vegan nail care (Chelsea London, founded by Sonia Hully)",
+      "verified_retailers": [
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Noughty",
+      "dtc_domain": "lovenoughty.co.uk",
+      "dtc_url": "https://lovenoughty.co.uk",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK B-Corp 97% natural vegan haircare scale-up (London)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Nursem",
+      "dtc_domain": "nursem.co.uk",
+      "dtc_url": "https://www.nursem.co.uk",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK nurse-founded therapeutic hand & skin care B-Corp (founded by Antonia & Jonny Philp)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "ORDO",
+      "dtc_domain": "ordolife.com",
+      "dtc_url": "https://www.ordolife.com",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK oral care & sonic brush challenger (Manchester, founded by Barty Walsh)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Pai Skincare",
+      "dtc_domain": "paiskincare.com",
+      "dtc_url": "https://www.paiskincare.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK organic sensitive skincare (London, founded by Sarah Brown, certified B-Corp)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "naturisimo.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Revive Collagen",
+      "dtc_domain": "revivecollagen.com",
+      "dtc_url": "https://revivecollagen.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK ready-to-drink hydrolysed marine collagen scale-up (London)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Rodial",
+      "dtc_domain": "rodial.com",
+      "dtc_url": "https://www.rodial.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK targeted performance skincare & complexion scale-up (London, founded by Maria Hatzistefanis)",
+      "verified_retailers": [
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Spectrum Collections",
+      "dtc_domain": "spectrumcollections.com",
+      "dtc_url": "https://www.spectrumcollections.com",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK vegan makeup brushes & cosmetics scale-up (Barry, Wales, founded by Sophie & Hannah Pycroft)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "This Works",
+      "dtc_domain": "thisworks.com",
+      "dtc_url": "https://www.thisworks.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK circadian sleep & targeted skincare brand (London)",
+      "verified_retailers": [
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Votary",
+      "dtc_domain": "votary.co.uk",
+      "dtc_url": "https://www.votary.co.uk",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK botanical luxury skincare (founded by Arabella Preston & Charlotte Semler)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Vyrao",
+      "dtc_domain": "vyrao.com",
+      "dtc_url": "https://vyrao.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK energetic wellbeing fragrance & incense scale-up (London, founded by Yasmin Sewell)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Wild Nutrition",
+      "dtc_domain": "wildnutrition.com",
+      "dtc_url": "https://www.wildnutrition.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK Food-Grown women's nutritional supplements B-Corp (Lewes, founded by Henrietta Norton)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "naturisimo.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Zelens",
+      "dtc_domain": "zelens.com",
+      "dtc_url": "https://www.zelens.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK biotechnology & botanical clinical skincare (London, founded by Dr Marko Lens)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "Zooki",
+      "dtc_domain": "yourzooki.com",
+      "dtc_url": "https://yourzooki.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK liposomal vitamins & marine collagen scale-up (Lancashire, founded by Marcus Mollinga & Jack Morrison)",
+      "verified_retailers": [
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "BYOMA",
+      "dtc_domain": "byoma.com",
+      "dtc_url": "https://byoma.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "UK Breakout Scale-Up",
+      "notes": "UK barrier-boosting ceramide skincare challenger (founded by Marc Elrick)",
+      "verified_retailers": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "retailer_count": 2
+    },
+    {
+      "name": "ARKIVE Headcare",
+      "dtc_domain": "arkiveheadcare.com",
+      "dtc_url": "https://www.arkiveheadcare.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK scalp & headcare challenger brand (London, founded by Adam Reed)",
+      "verified_retailers": [
+        "lookfantastic.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "Balmonds",
+      "dtc_domain": "balmonds.co.uk",
+      "dtc_url": "https://balmonds.co.uk",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK natural eczema/sensitive skin care (Brighton)",
+      "verified_retailers": [
+        "hollandandbarrett.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "Cowshed",
+      "dtc_domain": "cowshed.com",
+      "dtc_url": "https://www.cowshed.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK botanical bath, body & spa apothecary (Somerset / London)",
+      "verified_retailers": [
+        "lookfantastic.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "De Mamiel",
+      "dtc_domain": "demamiel.com",
+      "dtc_url": "https://demamiel.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK holistic luxury facial oils & wellness (founded by Annee de Mamiel)",
+      "verified_retailers": [
+        "cultbeauty.co.uk"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "Faith in Nature",
+      "dtc_domain": "faithinnature.co.uk",
+      "dtc_url": "https://www.faithinnature.co.uk",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK ethical natural hair & body care B-Corp (Manchester)",
+      "verified_retailers": [
+        "hollandandbarrett.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "Neal's Yard Remedies",
+      "dtc_domain": "nealsyardremedies.com",
+      "dtc_url": "https://www.nealsyardremedies.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Family-owned UK organic apothecary & skincare (Covent Garden / Dorset)",
+      "verified_retailers": [
+        "lookfantastic.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "Olverum",
+      "dtc_domain": "olverum.com",
+      "dtc_url": "https://www.olverum.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK luxury botanical bath & body apothecary (London)",
+      "verified_retailers": [
+        "spacenk.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "Percy & Reed",
+      "dtc_domain": "percyandreed.com",
+      "dtc_url": "https://www.percyandreed.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK salon-grade haircare (London, founded by Paul Percival & Adam Reed)",
+      "verified_retailers": [
+        "lookfantastic.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "Together Health",
+      "dtc_domain": "togetherhealth.co.uk",
+      "dtc_url": "https://www.togetherhealth.co.uk",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK clean whole-food & ocean mineral vitamins",
+      "verified_retailers": [
+        "hollandandbarrett.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "UpCircle",
+      "dtc_domain": "upcirclebeauty.com",
+      "dtc_url": "https://upcirclebeauty.com",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK circular beauty B-Corp (London, founded by Anna & William Brightman)",
+      "verified_retailers": [
+        "hollandandbarrett.com"
+      ],
+      "retailer_count": 1
+    },
+    {
+      "name": "BYBI",
+      "dtc_domain": "bybi.com",
+      "dtc_url": "https://bybi.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "UK eco-conscious skincare boosters & barrier care (founded by Elsie Rutterford & Dominika Minarovic)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "Bare Biology",
+      "dtc_domain": "barebiology.com",
+      "dtc_url": "https://www.barebiology.com",
+      "category": "Wellness & Supplements",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK marine omega-3 & collagen supplements (Brighton, founded by Melanie Lawson)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "Bloom and Blossom",
+      "dtc_domain": "bloomandblossom.com",
+      "dtc_url": "https://bloomandblossom.com",
+      "category": "Bath, Body & Apothecary",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK sleep, body & family wellness skincare (London, founded by Julia Yule & Christina Moss)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "By Sarah",
+      "dtc_domain": "bysarahlondon.com",
+      "dtc_url": "https://bysarahlondon.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK B-Corp sensitive skin & gut-skin barrier care (founded by Sarah & Lauren Murrell)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "Faace",
+      "dtc_domain": "wearefaace.com",
+      "dtc_url": "https://wearefaace.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK solution-led face masks & skincare (founded by Jasmine Wicks-Stephens)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "Green People",
+      "dtc_domain": "greenpeople.co.uk",
+      "dtc_url": "https://www.greenpeople.co.uk",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK certified organic family & sensitive skincare (West Sussex, founded by Charlotte Vøhtz)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "Nourish London",
+      "dtc_domain": "nourishskinrange.com",
+      "dtc_url": "https://www.nourishskinrange.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK organic vegan skincare (London, founded by Dr Pauline Hili)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "Odylique",
+      "dtc_domain": "odylique.co.uk",
+      "dtc_url": "https://www.odylique.co.uk",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK Soil Association certified organic sensitive skincare (Suffolk)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "delilah",
+      "dtc_domain": "delilahcosmetics.com",
+      "dtc_url": "https://delilahcosmetics.com",
+      "category": "Zero-Waste & Eco-Cosmetics",
+      "tier": "Sweet-Spot UK Scale-Up",
+      "notes": "Independent UK B-Corp luxury vegan colour cosmetics (founded by Rupert Kingston)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    },
+    {
+      "name": "Trinny London",
+      "dtc_domain": "trinnylondon.com",
+      "dtc_url": "https://trinnylondon.com",
+      "category": "Skincare & Facial Botanicals",
+      "tier": "UK Breakout Scale-Up",
+      "notes": "Independent UK skincare & stackable makeup scale-up (London, founded by Trinny Woodall)",
+      "verified_retailers": [],
+      "retailer_count": 0
+    }
+  ],
+  "retailer_directory_counts": {
+    "spacenk.com": 246,
+    "cultbeauty.co.uk": 303,
+    "lookfantastic.com": 430,
+    "naturisimo.com": 202,
+    "hollandandbarrett.com": 1206
+  }
+}
