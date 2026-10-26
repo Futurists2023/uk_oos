@@ -581,11 +581,11 @@ export default function BrandClient({ initialData }) {
                 <div className="store-group-header" onClick={() => toggleProduct(grp.productKey)}>
                   <div className="store-header-left">
                     <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
-                    <span className="list-duration-lead">{fmtForDuration(grp.oldestOosAt)},</span>
+                    <span className="list-duration-lead">{calcOosAge(grp.oldestOosAt)}</span>
                     <span className="store-domain">{grp.displayName}</span>
-                    <span className="collapsed-preview">
-                      has been out of stock at <strong style={{ color: 'var(--ink)', fontWeight: 600 }}>{storeListPreview}</strong>
-                    </span>
+                    {!isExpanded && (
+                      <span className="collapsed-preview">— {storeListPreview}</span>
+                    )}
                   </div>
 
                   <div className="store-meta" onClick={e => e.stopPropagation()}>
@@ -594,7 +594,7 @@ export default function BrandClient({ initialData }) {
                       style={{ cursor: 'pointer' }}
                       onClick={() => toggleProduct(grp.productKey)}
                     >
-                      {storeCount}/{grp.allRetailStores.size} stockists
+                      {storeCount}/{grp.allRetailStores.size} stockists OOS
                     </span>
                     <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
                       Copy
@@ -607,10 +607,9 @@ export default function BrandClient({ initialData }) {
                     {grp.consolidatedOosStores.map(stRow => {
                       return (
                         <li key={stRow.domain} className="sku-item">
-                          <div className="sku-oos-age">{fmtForDuration(stRow.oldestOosAt)},</div>
+                          <div className="sku-store-domain">{stRow.domain}</div>
 
-                          <div className="sku-statement">
-                            <span className="sku-prod-name">{grp.displayName}</span>
+                          <div className="var-pills-wrap">
                             {stRow.variants.map(v => {
                               const hasNamedSize =
                                 v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
@@ -628,9 +627,9 @@ export default function BrandClient({ initialData }) {
                                 </span>
                               );
                             })}
-                            <span className="sku-at-text">has been out of stock at</span>
-                            <strong className="sku-store-domain">{stRow.domain}</strong>
                           </div>
+
+                          <div className="sku-oos-age">{calcOosAge(stRow.oldestOosAt)}</div>
 
                           <a
                             href={stRow.primaryUrl}
@@ -644,14 +643,31 @@ export default function BrandClient({ initialData }) {
                         </li>
                       );
                     })}
-                    {grp.inStockStores.size > 0 && (
-                      <li className="sku-item sku-item-instock">
-                        <span>
-                          <strong style={{ color: 'var(--green)' }}>In stock at ({grp.inStockStores.size}/{grp.allRetailStores.size}):</strong>{' '}
-                          {Array.from(grp.inStockStores).join(', ')}
-                        </span>
-                      </li>
-                    )}
+                    <li className="sku-item sku-item-instock">
+                      <span>
+                        {grp.inStockStores.size > 0 ? (
+                          <>
+                            <strong style={{ color: 'var(--green)' }}>
+                              In stock at {grp.inStockStores.size}/{grp.allRetailStores.size} stockists:
+                            </strong>{' '}
+                            {Array.from(grp.inStockStores).join(', ')}
+                          </>
+                        ) : (
+                          <strong style={{ color: 'var(--red)' }}>Out of stock at all tracked retail stockists</strong>
+                        )}
+                        {grp.dtcStatus !== 'RETAIL_ONLY' && (
+                          <>
+                            {' · '}
+                            <strong>Official DTC:</strong>{' '}
+                            <span style={{ color: grp.dtcStatus === 'IN_STOCK' ? 'var(--green)' : 'var(--red)', fontWeight: 600 }}>
+                              {grp.dtcStatus === 'IN_STOCK'
+                                ? `In Stock${grp.dtcRrp ? ` (£${grp.dtcRrp.toFixed(2)})` : ''}`
+                                : 'OOS'}
+                            </span>
+                          </>
+                        )}
+                      </span>
+                    </li>
                   </ul>
                 )}
               </section>

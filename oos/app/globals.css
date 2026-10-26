@@ -262,9 +262,13 @@ a:hover {
 }
 
 .list-duration-lead {
-  font-size: 0.92rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: var(--red);
+  background: var(--red-soft);
+  border: 1px solid #fecaca;
+  padding: 2px 7px;
+  border-radius: 4px;
   font-variant-numeric: tabular-nums;
   flex-shrink: 0;
 }
@@ -288,7 +292,7 @@ a:hover {
 }
 
 .collapsed-preview {
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
@@ -322,12 +326,12 @@ a:hover {
 
 .sku-item {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 10px;
+  grid-template-columns: minmax(190px, auto) 1fr auto auto;
+  gap: 14px;
   align-items: center;
   padding: 9px 0;
   border-bottom: 1px solid var(--line);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .sku-item.sku-item-instock {
@@ -338,26 +342,9 @@ a:hover {
   color: var(--muted);
 }
 
-.sku-statement {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 7px;
-  min-width: 0;
-}
-
-.sku-prod-name {
-  color: var(--ink);
-  font-weight: 600;
-}
-
-.sku-at-text {
-  color: var(--muted);
-}
-
 .sku-store-domain {
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .sku-name {
