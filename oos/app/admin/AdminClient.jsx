@@ -34,7 +34,11 @@ function decodeHtmlEntities(str) {
     .replace(/&quot;/gi, '"');
 }
 
-function cleanProductDisplayName(rawTitle, brandName) {
+function cleanProductDisplayName(rawTitle, brandName, normKey = '') {
+  if (normKey === 'renaissance_cleansing_gel_200ml') return 'Renaissance Cleansing Gel (200ml Supersize)';
+  if (normKey === 'renaissance_cleansing_gel_35ml') return 'Renaissance Cleansing Gel (35ml Travel)';
+  if (normKey === 'renaissance_cleansing_gel_100ml') return 'Renaissance Cleansing Gel (100ml)';
+
   let t = decodeHtmlEntities(rawTitle).split('|')[0].trim();
   if (/\.(?:html?|aspx|php)$/i.test(t) || (t.includes('-') && !t.includes(' '))) {
     t = t
@@ -44,7 +48,7 @@ function cleanProductDisplayName(rawTitle, brandName) {
   }
   if (brandName) {
     const escaped = brandName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    t = t.replace(new RegExp(`^${escaped}\\s*[-–—:]?\\s*`, 'i'), '').trim();
+    t = t.replace(new RegExp(`^${escaped}\\s*(?:skincare|london)?\\s*[-–—:]?\\s*`, 'i'), '').trim();
     t = t.replace(new RegExp(`\\s*[-–—:]\\s*${escaped}$`, 'i'), '').trim();
   }
   t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
@@ -61,6 +65,20 @@ export default function AdminClient({ initialData }) {
   const [toastMsg, setToastMsg] = useState(null);
 
   const tier1Set = useMemo(() => new Set(data.tier1Domains || []), [data.tier1Domains]);
+  const allDtcSet = useMemo(() => {
+    const s = new Set();
+    for (const b of data.brandsMeta || []) {
+      for (const d of b.dtcDomains || []) {
+        s.add(String(d).toLowerCase().replace(/^www\./, ''));
+      }
+    }
+    return s;
+  }, [data.brandsMeta]);
+
+  function isDtcDomain(domain) {
+    const d = String(domain || '').toLowerCase().replace(/^www\./, '');
+    return allDtcSet.has(d);
+  }
 
   function isTier1(domain) {
     const d = String(domain || '').toLowerCase().replace(/^www\./, '');
@@ -115,7 +133,7 @@ export default function AdminClient({ initialData }) {
     for (const s of data.skus) {
       if (s.is_listed === 1) {
         activeSkusByBrand.set(s.brand, (activeSkusByBrand.get(s.brand) || 0) + 1);
-        if (s.is_available === 0) {
+        if (s.is_available === 0 && !isDtcDomain(s.domain)) {
           const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, s.brand).toLowerCase();
           if (!oosProductsByBrand.has(s.brand)) oosProductsByBrand.set(s.brand, new Set());
           oosProductsByBrand.get(s.brand).add(pKey);
@@ -162,9 +180,9 @@ export default function AdminClient({ initialData }) {
     [brandRows]
   );
 
-  // Global OOS grouped by Brand + Canonical Product -> consolidated per Stockist
+  // Global OOS grouped by Brand + Canonical Product -> consolidated per Retail Stockist (excluding Brand DTC)
   const globalOosProductGroups = useMemo(() => {
-    const oosSkus = data.skus.filter(s => s.is_listed === 1 && s.is_available === 0);
+    const oosSkus = data.skus.filter(s => s.is_listed === 1 && s.is_available === 0 && !isDtcDomain(s.domain));
     const byKey = new Map();
 
     for (const s of oosSkus) {
@@ -174,14 +192,14 @@ export default function AdminClient({ initialData }) {
         byKey.set(key, {
           key,
           brand: s.brand,
-          displayName: cleanProductDisplayName(s.product_title, s.brand),
+          displayName: cleanProductDisplayName(s.product_title, s.brand, pKey),
           oosStores: new Set(),
           byStore: new Map()
         });
       }
       const grp = byKey.get(key);
-      const cand = cleanProductDisplayName(s.product_title, s.brand);
-      if (cand.length > 2 && cand.length < grp.displayName.length) {
+      const cand = cleanProductDisplayName(s.product_title, s.brand, pKey);
+      if (pKey.startsWith('renaissance_cleansing_gel_') || (cand.length > 2 && cand.length < grp.displayName.length)) {
         grp.displayName = cand;
       }
       grp.oosStores.add(s.domain);
