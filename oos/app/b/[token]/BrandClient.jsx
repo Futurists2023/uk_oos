@@ -24,6 +24,23 @@ function calcOosAge(isoStr) {
   return `${mins}m OOS`;
 }
 
+function fmtForDuration(isoStr) {
+  if (!isoStr) return 'Currently';
+  const d = new Date(isoStr);
+  if (isNaN(d.getTime())) return 'Currently';
+  const hours = Math.max(0, (Date.now() - d.getTime()) / 3600000);
+  const days = Math.floor(hours / 24);
+  const remH = Math.floor(hours % 24);
+  const mins = Math.max(1, Math.floor((hours * 60) % 60));
+  if (days > 0) {
+    return remH > 0 ? `For ${days}d ${remH}h` : `For ${days} day${days === 1 ? '' : 's'}`;
+  }
+  if (remH > 0) {
+    return `For ${remH}h ${mins}m`;
+  }
+  return `For ${mins}m`;
+}
+
 function decodeHtmlEntities(str) {
   return String(str || '')
     .replace(/&#0*38;|&amp;/gi, '&')
@@ -255,9 +272,12 @@ export default function BrandClient({ initialData }) {
         storeOosCounter.set(dom, (storeOosCounter.get(dom) || 0) + 1);
       }
       grp.consolidatedOosStores = Array.from(grp.oosByStore.values()).sort((a, b) => {
-        if (b.variants.length !== a.variants.length) return b.variants.length - a.variants.length;
+        const aTs = a.oldestOosAt || '9999';
+        const bTs = b.oldestOosAt || '9999';
+        if (aTs !== bTs) return aTs.localeCompare(bTs);
         return a.domain.localeCompare(b.domain);
       });
+      grp.oldestOosAt = grp.consolidatedOosStores[0]?.oldestOosAt || '';
       grp.consolidatedInStockStores = Array.from(grp.inStockByStore.values()).sort((a, b) =>
         a.domain.localeCompare(b.domain)
       );
@@ -270,10 +290,10 @@ export default function BrandClient({ initialData }) {
     }
 
     withOos.sort((a, b) => {
-      // Unforced outages first, then by number of OOS stores
-      if (a.diagnosisType !== b.diagnosisType) {
-        return a.diagnosisType === 'UNFORCED_OUTAGE' ? -1 : 1;
-      }
+      // Longest OOS duration first, then by number of OOS stockists
+      const aTs = a.oldestOosAt || '9999';
+      const bTs = b.oldestOosAt || '9999';
+      if (aTs !== bTs) return aTs.localeCompare(bTs);
       if (b.oosStores.size !== a.oosStores.size) return b.oosStores.size - a.oosStores.size;
       return a.displayName.localeCompare(b.displayName);
     });
@@ -382,15 +402,15 @@ export default function BrandClient({ initialData }) {
       const grp = oosProductGroups.find(g => g.productKey === singleProductKey);
       if (!grp) return;
       lines.push(
-        `${grp.displayName} — ${grp.diagnosisLabel} — Out of Stock at ${grp.oosStores.size}/${totalRetailStores} UK stockists:`
+        `${grp.displayName} — Out of Stock at ${grp.oosStores.size}/${grp.allRetailStores.size} UK stockists:`
       );
       for (const stRow of grp.consolidatedOosStores) {
         const varText = formatVariantList(stRow.variants, grp.dtcRrp);
-        const age = calcOosAge(stRow.oldestOosAt);
-        lines.push(`• ${stRow.domain} — ${varText} [${age}]`);
+        const dur = fmtForDuration(stRow.oldestOosAt);
+        lines.push(`• ${dur}, ${grp.displayName} (${varText}) has been out of stock at ${stRow.domain}`);
       }
       if (grp.inStockStores.size > 0) {
-        lines.push(`In Stock right now at: ${Array.from(grp.inStockStores).join(', ')}`);
+        lines.push(`In stock at (${grp.inStockStores.size}): ${Array.from(grp.inStockStores).join(', ')}`);
       }
 
       navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
@@ -400,29 +420,21 @@ export default function BrandClient({ initialData }) {
     }
 
     lines.push(
-      `${brand.name} — UK Retail Out of Stock Summary (${unforcedOutageCount} Unforced Retail Outages, ${factoryShortageCount} Factory Shortages across ${totalRetailStores} UK stockists)`
+      `${brand.name} — UK Retail Out of Stock Report (${oosProductGroups.length} products out of stock across ${totalRetailStores} UK stockists)`
     );
     lines.push(`Checked: ${fmtShortTime(latestCheck)}`);
     lines.push('');
 
-    const storesWithOos = sortedStoreColumns.filter(col => col.oosProductCount > 0);
-    for (const col of storesWithOos) {
-      lines.push(
-        `${col.domain} (${col.oosProductCount} product${col.oosProductCount === 1 ? '' : 's'} OOS):`
-      );
-      for (const grp of oosProductGroups) {
-        const stCell = grp.oosByStore.get(col.domain);
-        if (!stCell) continue;
-        const varText = formatVariantList(stCell.variants, grp.dtcRrp);
-        const age = calcOosAge(stCell.oldestOosAt);
-        const tag = grp.dtcStatus === 'OOS' ? 'Also OOS on DTC' : 'In Stock on DTC';
-        lines.push(`• ${grp.displayName} — ${varText} [${age} · ${tag}]`);
+    for (const grp of oosProductGroups) {
+      for (const stRow of grp.consolidatedOosStores) {
+        const varText = formatVariantList(stRow.variants, grp.dtcRrp);
+        const dur = fmtForDuration(stRow.oldestOosAt);
+        lines.push(`• ${dur}, ${grp.displayName} (${varText}) has been out of stock at ${stRow.domain}`);
       }
-      lines.push('');
     }
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-      showToast('Copied buyer-ready OOS summary (grouped by stockist)');
+      showToast('Copied OOS report (duration first)');
     });
   }
 
@@ -443,9 +455,8 @@ export default function BrandClient({ initialData }) {
       const stCell = grp.oosByStore.get(domain);
       if (!stCell) continue;
       const varText = formatVariantList(stCell.variants, grp.dtcRrp);
-      const age = calcOosAge(stCell.oldestOosAt);
-      const tag = grp.dtcStatus === 'OOS' ? 'Also OOS on DTC' : 'In Stock on DTC';
-      lines.push(`• ${grp.displayName} — ${varText} [${age} · ${tag}]`);
+      const dur = fmtForDuration(stCell.oldestOosAt);
+      lines.push(`• ${dur}, ${grp.displayName} (${varText}) has been out of stock at ${domain}`);
     }
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
@@ -454,7 +465,7 @@ export default function BrandClient({ initialData }) {
   }
 
   function downloadCSV() {
-    const headers = ['Brand', 'Product', 'Stockist', 'Diagnosis', 'DTC_RRP', 'Variations_OOS', 'In_Stock_Competing_Retailers', 'OOS_Duration', 'First_Seen_OOS_UTC', 'URL'];
+    const headers = ['OOS_Duration', 'Product', 'Stockist', 'Variations_OOS', 'DTC_RRP', 'Stockists_OOS_Ratio', 'In_Stock_Stockists', 'First_Seen_OOS_UTC', 'URL'];
     const rows = [headers.join(',')];
 
     for (const grp of oosProductGroups) {
@@ -464,14 +475,13 @@ export default function BrandClient({ initialData }) {
         const competing = Array.from(grp.inStockStores).join(' | ');
 
         const vals = [
-          brand.name,
+          age,
           grp.displayName,
           stRow.domain,
-          grp.diagnosisLabel,
-          grp.dtcRrp ? `£${grp.dtcRrp.toFixed(2)}` : '',
           varDesc,
+          grp.dtcRrp ? `£${grp.dtcRrp.toFixed(2)}` : '',
+          `${grp.oosStores.size}/${grp.allRetailStores.size}`,
           competing,
-          age,
           stRow.oldestOosAt || '',
           stRow.primaryUrl || ''
         ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`);
@@ -497,14 +507,8 @@ export default function BrandClient({ initialData }) {
             ) : (
               <>
                 <strong className="oos-num">
-                  {unforcedOutageCount} unforced retail outage{unforcedOutageCount === 1 ? '' : 's'}
-                </strong>
-                {factoryShortageCount > 0 && (
-                  <>
-                    {' '}
-                    (+ <strong>{factoryShortageCount}</strong> also OOS on DTC)
-                  </>
-                )}{' '}
+                  {oosProductGroups.length} product{oosProductGroups.length === 1 ? '' : 's'} out of stock
+                </strong>{' '}
                 across <strong>{totalRetailStores}</strong> UK retail stockists &amp; Official DTC · Checked{' '}
                 {fmtShortTime(latestCheck)}
               </>
@@ -533,7 +537,7 @@ export default function BrandClient({ initialData }) {
           <button
             className="btn-action"
             onClick={() => copyList(null)}
-            title="Copy clean OOS summary grouped by stockist for buyer emails or Slack"
+            title="Copy clean OOS report ordered by duration"
           >
             Copy List
           </button>
@@ -559,7 +563,7 @@ export default function BrandClient({ initialData }) {
           {oosProductGroups.length > 0 && (
             <div className="list-toolbar">
               <span className="list-toolbar-label">
-                Retail Out-of-Stock Products ({oosProductGroups.length}) — Cross-Checked vs. Official DTC
+                Out-of-Stock Products ({oosProductGroups.length}) — Ordered by OOS Duration
               </span>
               <button className="list-expand-btn" onClick={toggleExpandAll}>
                 {allOosExpanded ? 'Collapse all ▴' : 'Expand all ▾'}
@@ -571,26 +575,17 @@ export default function BrandClient({ initialData }) {
             const isExpanded = expandedProducts.has(grp.productKey);
             const storeListPreview = Array.from(grp.oosStores).join(', ');
             const storeCount = grp.oosStores.size;
-            const isFactoryShortage = grp.diagnosisType === 'FACTORY_SHORTAGE';
 
             return (
               <section key={grp.productKey} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
                 <div className="store-group-header" onClick={() => toggleProduct(grp.productKey)}>
                   <div className="store-header-left">
                     <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
+                    <span className="list-duration-lead">{fmtForDuration(grp.oldestOosAt)},</span>
                     <span className="store-domain">{grp.displayName}</span>
-                    <span
-                      className="tier-tag"
-                      style={{
-                        marginLeft: 8,
-                        background: isFactoryShortage ? '#fef3c7' : '#fee2e2',
-                        color: isFactoryShortage ? '#92400e' : '#b91c1c',
-                        borderColor: isFactoryShortage ? '#fde68a' : '#fecaca'
-                      }}
-                    >
-                      {grp.diagnosisLabel}
+                    <span className="collapsed-preview">
+                      has been out of stock at <strong style={{ color: 'var(--ink)', fontWeight: 600 }}>{storeListPreview}</strong>
                     </span>
-                    {!isExpanded && <span className="collapsed-preview">{storeListPreview}</span>}
                   </div>
 
                   <div className="store-meta" onClick={e => e.stopPropagation()}>
@@ -599,7 +594,7 @@ export default function BrandClient({ initialData }) {
                       style={{ cursor: 'pointer' }}
                       onClick={() => toggleProduct(grp.productKey)}
                     >
-                      OOS at {storeCount}/{grp.allRetailStores.size} stockists
+                      {storeCount}/{grp.allRetailStores.size} stockists
                     </span>
                     <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
                       Copy
@@ -610,20 +605,12 @@ export default function BrandClient({ initialData }) {
                 {isExpanded && (
                   <ul className="sku-list">
                     {grp.consolidatedOosStores.map(stRow => {
-                      const major = isTier1(stRow.domain);
-
                       return (
                         <li key={stRow.domain} className="sku-item">
-                          <div>
-                            <span className="sku-name">{stRow.domain}</span>
-                            {major && (
-                              <span className="tier-tag" style={{ marginLeft: 8 }}>
-                                Major Retailer
-                              </span>
-                            )}
-                          </div>
+                          <div className="sku-oos-age">{fmtForDuration(stRow.oldestOosAt)},</div>
 
-                          <div className="var-pills-wrap">
+                          <div className="sku-statement">
+                            <span className="sku-prod-name">{grp.displayName}</span>
                             {stRow.variants.map(v => {
                               const hasNamedSize =
                                 v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
@@ -632,26 +619,18 @@ export default function BrandClient({ initialData }) {
                                   ? Number(v.current_price)
                                   : null;
                               const price = numP !== null ? `£${numP.toFixed(2)}` : '';
-                              const undercutPct =
-                                numP !== null && grp.dtcRrp && numP < grp.dtcRrp * 0.92
-                                  ? Math.round(100 * (1 - numP / grp.dtcRrp))
-                                  : 0;
 
+                              if (!hasNamedSize && !price) return null;
                               return (
                                 <span key={v.sku_key} className="var-pill">
                                   {hasNamedSize && <span>{v.variant_title}</span>}
                                   {price && <span className="var-pill-price">{price}</span>}
-                                  {undercutPct > 0 && (
-                                    <span style={{ color: '#b45309', fontSize: '0.72rem', marginLeft: 4 }}>
-                                      (-{undercutPct}% vs RRP)
-                                    </span>
-                                  )}
                                 </span>
                               );
                             })}
+                            <span className="sku-at-text">has been out of stock at</span>
+                            <strong className="sku-store-domain">{stRow.domain}</strong>
                           </div>
-
-                          <div className="sku-oos-age">{calcOosAge(stRow.oldestOosAt)}</div>
 
                           <a
                             href={stRow.primaryUrl}
@@ -666,9 +645,9 @@ export default function BrandClient({ initialData }) {
                       );
                     })}
                     {grp.inStockStores.size > 0 && (
-                      <li className="sku-item" style={{ background: '#f8fafc', fontSize: '0.8rem', color: 'var(--subtle)' }}>
+                      <li className="sku-item sku-item-instock">
                         <span>
-                          <strong style={{ color: 'var(--green)' }}>✓ Currently In Stock at ({grp.inStockStores.size}):</strong>{' '}
+                          <strong style={{ color: 'var(--green)' }}>In stock at ({grp.inStockStores.size}/{grp.allRetailStores.size}):</strong>{' '}
                           {Array.from(grp.inStockStores).join(', ')}
                         </span>
                       </li>

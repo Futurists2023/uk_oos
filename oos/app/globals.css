@@ -261,8 +261,16 @@ a:hover {
   flex-shrink: 0;
 }
 
+.list-duration-lead {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--red);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
 .store-domain {
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   flex-shrink: 0;
@@ -280,12 +288,11 @@ a:hover {
 }
 
 .collapsed-preview {
-  font-size: 0.82rem;
-  color: var(--subtle);
+  font-size: 0.86rem;
+  color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-left: 4px;
 }
 
 .store-meta {
@@ -310,17 +317,47 @@ a:hover {
 /* Consolidated Stockist Rows inside a Product Group */
 .sku-list {
   list-style: none;
-  padding-left: 22px;
+  padding-left: 24px;
 }
 
 .sku-item {
   display: grid;
-  grid-template-columns: minmax(190px, auto) 1fr auto auto;
-  gap: 16px;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
   align-items: center;
   padding: 9px 0;
   border-bottom: 1px solid var(--line);
   font-size: 0.9rem;
+}
+
+.sku-item.sku-item-instock {
+  display: block;
+  background: #f8fafc;
+  padding: 8px 10px;
+  font-size: 0.81rem;
+  color: var(--muted);
+}
+
+.sku-statement {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px;
+  min-width: 0;
+}
+
+.sku-prod-name {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.sku-at-text {
+  color: var(--muted);
+}
+
+.sku-store-domain {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .sku-name {
@@ -349,9 +386,9 @@ a:hover {
   background: #f3f4f6;
   border: 1px solid #e5e7eb;
   border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 0.8rem;
-  font-weight: 400;
+  padding: 1px 7px;
+  font-size: 0.78rem;
+  font-weight: 500;
   color: #374151;
   font-variant-numeric: tabular-nums;
 }
@@ -377,10 +414,10 @@ a:hover {
 .sku-oos-age {
   font-variant-numeric: tabular-nums;
   color: var(--red);
-  font-weight: 600;
-  font-size: 0.84rem;
-  min-width: 84px;
-  text-align: right;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .sku-in-badge {
