@@ -21,6 +21,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
+import urllib.request
 
 from playwright.async_api import async_playwright
 
@@ -98,6 +99,7 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
 
             const candidatePaths = [
                 `/collections/${slug}/products.json?limit=250`,
+                `/collections/${slug}-skincare/products.json?limit=250`,
                 `/collections/${slug.replace(/-/g, '')}/products.json?limit=250`,
                 `/products.json?limit=250`,
             ];
@@ -140,6 +142,26 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
         }""",
         {"slug": slug, "brandName": brand_name},
     )
+
+    if not raw_products.get("products"):
+        for cand_path in [
+            f"/collections/{slug}/products.json?limit=250",
+            f"/collections/{slug}-skincare/products.json?limit=250",
+            f"/collections/{slug.replace('-', '')}/products.json?limit=250",
+            "/products.json?limit=250",
+        ]:
+            try:
+                req = urllib.request.Request(
+                    f"{origin}{cand_path}",
+                    headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"},
+                )
+                body = urllib.request.urlopen(req, timeout=15).read().decode("utf-8")
+                prods = json.loads(body).get("products") or []
+                if prods:
+                    raw_products = {"mode": "products_json", "products": prods}
+                    break
+            except Exception:
+                pass
 
     skus = []
     mode = raw_products.get("mode")
@@ -576,6 +598,149 @@ async def scrape_boots_store(page, store: dict, brand_cfg: dict) -> list[dict]:
     return skus
 
 
+async def scrape_frasers_store(page, store: dict, brand_cfg: dict) -> list[dict]:
+    """Calibrated Frasers Group Engine (Harvey Nichols, Flannels, House of Fraser): extracts `[class*='productCard']` tiles."""
+    domain = store["domain"]
+    brand_url = store["brand_url"]
+    slug = brand_cfg["slug"]
+    brand_name = brand_cfg["name"]
+
+    await page.goto(brand_url, wait_until="domcontentloaded", timeout=35000)
+    await human_pause(3.0, 4.8, f"Browsing {domain} ({brand_name})")
+    await accept_cookies(page)
+    await smooth_scroll(page, steps=6)
+
+    raw = await page.evaluate(
+        """({ slug, brandName }) => {
+            const out = [];
+            const seen = new Set();
+            const bEsc = brandName.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
+            const anchors = Array.from(document.querySelectorAll('a[href]'));
+            for (const a of anchors) {
+                const rawHref = a.getAttribute('href') || '';
+                if (!new RegExp(slug, 'i').test(rawHref)) continue;
+                const fullUrl = a.href.split('?')[0];
+                const basePath = fullUrl.split('#')[0];
+                if (basePath.endsWith('/' + slug) || seen.has(basePath)) continue;
+
+                const card = a.closest('[class*="productCard"], [data-testid*="product"], li, article') || a.parentElement;
+                if (!card) continue;
+                const fullText = (card.innerText || '').replace(/\\s+/g, ' ').trim();
+                if (!/£\\d+/.test(fullText)) continue;
+                seen.add(basePath);
+
+                // Extract clean product title starting from brandName up to the first £ price
+                let title = '';
+                const m = fullText.match(new RegExp('(' + bEsc + '\\\\s+.+?)(?:\\\\s+£\\\\d+)', 'i'));
+                if (m && m[1]) {
+                    title = m[1].trim();
+                } else {
+                    title = fullText.split(/£\\d+/)[0].replace(/^.*?CODE:\\s*\\S+\\s*/i, '').trim();
+                }
+                if (!title || title.length < 4) continue;
+
+                const priceMatches = fullText.match(/£(\\d+(?:\\.\\d{2})?)/g) || [];
+                const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
+                const price = prices.length > 0 ? prices[0] : null;
+                const compareAt = prices.length > 1 && prices[1] > price ? prices[1] : null;
+                const isOos = /\\bout of stock\\b|\\bsold out\\b|\\bunavailable\\b/i.test(fullText);
+
+                out.push({ title, url: fullUrl, basePath, price, compareAt, available: !isOos });
+            }
+            return out;
+        }""",
+        {"slug": slug, "brandName": brand_name},
+    )
+
+    skus = []
+    for item in raw:
+        title = item["title"]
+        m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
+        v_title = m_size.group(1) if m_size else "Standard"
+        path_slug = item["basePath"].split("/")[-1]
+        skus.append({
+            "sku_key": f"{domain}::{slug}::{path_slug}",
+            "product_title": title,
+            "variant_title": v_title,
+            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title),
+            "product_url": item["url"],
+            "sku_code": path_slug,
+            "price": item["price"],
+            "compare_at_price": item["compareAt"],
+            "currency": "GBP",
+            "available": bool(item["available"]),
+        })
+    return skus
+
+
+async def scrape_bathandunwind_store(page, store: dict, brand_cfg: dict) -> list[dict]:
+    """Calibrated Bath & Unwind Engine: extracts `.card.category-processed` tiles and stock/pre-order states."""
+    domain = store["domain"]
+    brand_url = store["brand_url"]
+    slug = brand_cfg["slug"]
+    brand_name = brand_cfg["name"]
+
+    await page.goto(brand_url, wait_until="domcontentloaded", timeout=35000)
+    await human_pause(2.5, 4.2, f"Browsing {domain} ({brand_name})")
+    await accept_cookies(page)
+    await smooth_scroll(page, steps=5)
+
+    raw = await page.evaluate(
+        """(brandName) => {
+            const out = [];
+            const seen = new Set();
+            const cards = document.querySelectorAll('.card.category-processed, article.card, .productGrid .product');
+            for (const card of cards) {
+                const a = card.querySelector('a[href]');
+                if (!a) continue;
+                const url = (a.href || '').split('?')[0].split('#')[0];
+                if (!url || url.includes('/brands/') || seen.has(url)) continue;
+                seen.add(url);
+
+                const fullText = (card.innerText || '').replace(/\\s+/g, ' ').trim();
+                const h = card.querySelector('.card-title, h2, h3, h4');
+                let title = h ? h.innerText.replace(/\\s+/g, ' ').trim() : (a.innerText || '').replace(/\\s+/g, ' ').trim();
+                if (!title || title.length < 4) {
+                    const slugPart = url.replace(/\\/$/, '').split('/').slice(-1)[0];
+                    title = slugPart.replace(/-/g, ' ');
+                }
+
+                // Exclude "Worth: £XX.XX" when picking shelf price
+                const cleanedPriceText = fullText.replace(/Worth:\\s*£\\d+(?:\\.\\d{2})?/gi, '');
+                const priceMatches = cleanedPriceText.match(/£(\\d+\\.\\d{2})/g) || [];
+                const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
+                const price = prices.length > 0 ? prices[prices.length - 1] : null;
+                const compareAt = prices.length > 1 && prices[0] > price ? prices[0] : null;
+                const isOos = /\\bout of stock\\b|\\bsold out\\b|\\bpre-order\\b|\\bunavailable\\b/i.test(fullText);
+
+                out.push({ title, url, price, compareAt, available: !isOos });
+            }
+            return out;
+        }""",
+        brand_name,
+    )
+
+    skus = []
+    for item in raw:
+        title = item["title"]
+        m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
+        v_title = m_size.group(1) if m_size else "Standard"
+        path_slug = item["url"].rstrip("/").split("/")[-1]
+        skus.append({
+            "sku_key": f"{domain}::{slug}::{path_slug}",
+            "product_title": title,
+            "variant_title": v_title,
+            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title),
+            "product_url": item["url"],
+            "sku_code": path_slug,
+            "price": item["price"],
+            "compare_at_price": item["compareAt"],
+            "currency": "GBP",
+            "available": bool(item["available"]),
+        })
+    return skus
+
+
 async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
     """Dispatch to calibrated Major UK Retailer engine or generic custom UK store scraper."""
     domain = store["domain"].lower().removeprefix("www.")
@@ -587,6 +752,10 @@ async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
         return await scrape_hb_store(page, store, brand_cfg)
     if domain == "boots.com":
         return await scrape_boots_store(page, store, brand_cfg)
+    if domain in ("harveynichols.com", "flannels.com", "houseoffraser.co.uk"):
+        return await scrape_frasers_store(page, store, brand_cfg)
+    if domain == "bathandunwind.com":
+        return await scrape_bathandunwind_store(page, store, brand_cfg)
 
     brand_url = store["brand_url"]
     slug = brand_cfg["slug"]
@@ -1037,14 +1206,15 @@ async def run_cli(args) -> None:
         return
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=True,
-            args=[
-                "--headless=new",
-                "--disable-blink-features=AutomationControlled",
-                "--window-size=1440,900",
-            ],
-        )
+        launch_args = [
+            "--headless=new",
+            "--disable-blink-features=AutomationControlled",
+            "--window-size=1440,900",
+        ]
+        try:
+            browser = await p.chromium.launch(channel="chrome", headless=True, args=launch_args)
+        except Exception:
+            browser = await p.chromium.launch(headless=True, args=launch_args)
         context = await browser.new_context(
             viewport={"width": 1440, "height": 900},
             locale="en-GB",

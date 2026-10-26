@@ -18,7 +18,18 @@ SME_BRANDS: list[dict] = [
         "category": "Skincare & Facial Botanicals",
         "aliases": ["Oskia", "OSKIA", "Oskia Skincare", "Oskia London"],
         "dtc_domains": ["oskiaskincare.com"],
-        "verified_retailers": ["spacenk.com", "cultbeauty.co.uk", "lookfantastic.com", "ohmycream.co.uk"],
+        "verified_retailers": [
+            "spacenk.com",
+            "cultbeauty.co.uk",
+            "lookfantastic.com",
+            "ohmycream.co.uk",
+            "facethefuture.co.uk",
+            "harveynichols.com",
+            "flannels.com",
+            "houseoffraser.co.uk",
+            "bathandunwind.com",
+            "alyaka.com",
+        ],
         "search_hint": '"Oskia" ("Renaissance Cleansing Gel" OR "Super 16" OR "Isotonic Hydra-Serum" OR "Micro-Exfoliating Balm")',
     },
     {
@@ -519,6 +530,11 @@ TIER_1_MAJOR_UK_RETAILERS = {
     "libertylondon.com",
     "harrods.com",
     "harveynichols.com",
+    "flannels.com",
+    "houseoffraser.co.uk",
+    "facethefuture.co.uk",
+    "bathandunwind.com",
+    "alyaka.com",
     "fenwick.co.uk",
     "marksandspencer.com",
     "waitrose.com",
@@ -537,9 +553,18 @@ TIER_1_MAJOR_UK_RETAILERS = {
 }
 
 
+ALL_DTC_DOMAINS = {
+    d.lower().removeprefix("www.")
+    for b in SME_BRANDS
+    for d in b.get("dtc_domains", [])
+}
+
+
 def stockist_tier(domain: str) -> str:
-    """Return 'Tier 1 (Major UK Retailer)' or 'Tier 2 (Independent Stockist)'."""
+    """Return 'Official Brand DTC (Master Catalog)', 'Tier 1 (Major UK Retailer)', or 'Tier 2 (Independent Stockist)'."""
     d = (domain or "").lower().removeprefix("www.")
+    if d in ALL_DTC_DOMAINS:
+        return "Official Brand DTC (Master Catalog)"
     for major in TIER_1_MAJOR_UK_RETAILERS:
         if d == major or d.endswith("." + major):
             return "Tier 1 (Major UK Retailer)"

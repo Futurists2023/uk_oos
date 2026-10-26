@@ -39,6 +39,19 @@ def build_retailer_brand_url(retailer: str, brand_cfg: dict) -> tuple[str, str]:
         return ("Shopify", f"https://www.planetorganic.com/collections/{slug}")
     if retailer == "healf.com":
         return ("Shopify", f"https://healf.com/collections/{slug}")
+    if retailer == "facethefuture.co.uk":
+        return ("Shopify", f"https://www.facethefuture.co.uk/collections/{slug}")
+    if retailer == "alyaka.com":
+        col = f"{slug}-skincare" if slug == "oskia" else slug
+        return ("Shopify", f"https://www.alyaka.com/collections/{col}")
+    if retailer == "harveynichols.com":
+        return ("Frasers", f"https://www.harveynichols.com/{slug}")
+    if retailer == "flannels.com":
+        return ("Frasers", f"https://www.flannels.com/{slug}")
+    if retailer == "houseoffraser.co.uk":
+        return ("Frasers", f"https://www.houseoffraser.co.uk/brand/{slug}")
+    if retailer == "bathandunwind.com":
+        return ("BathAndUnwind", f"https://www.bathandunwind.com/brands/{slug}/")
 
     # Default / Official DTC store (Step 1A)
     return ("Shopify", f"https://{retailer}")
