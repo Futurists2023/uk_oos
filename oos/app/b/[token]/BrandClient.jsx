@@ -551,21 +551,31 @@ export default function BrandClient({ initialData }) {
     link.click();
   }
 
+  const retailersWithOosCount = sortedStoreColumns.filter(col => col.oosProductCount > 0).length;
+  const inStockOnParentCount = oosProductGroups.filter(grp => grp.dtcStatus === 'IN_STOCK').length;
+  const parentSiteDomain = dtcStoreColumn?.domain || (brand?.dtcDomains || [])[0] || null;
+
   return (
     <div className="sheet sheet-matrix">
       <header className="sheet-header">
         <div>
-          <h1 className="sheet-title">{brand.name} — UK Retail Out-of-Stock Intelligence</h1>
+          <h1 className="sheet-title">{brand.name} — UK Retail Stockist Report</h1>
           <p className="sheet-summary">
             {totalRetailStores === 0 ? (
               <span>Initial UK stockist scan is queued.</span>
             ) : (
               <>
-                <strong className="oos-num">
+                <strong>
                   {oosProductGroups.length} product{oosProductGroups.length === 1 ? '' : 's'} out of stock
                 </strong>{' '}
-                across <strong>{totalRetailStores}</strong> UK retail stockists &amp; Official DTC · Checked{' '}
-                {fmtShortTime(latestCheck)}
+                at <strong>{retailersWithOosCount} of {totalRetailStores}</strong> UK stockists
+                {parentSiteDomain && inStockOnParentCount > 0 && (
+                  <>
+                    {' '}
+                    (<strong>{inStockOnParentCount} in stock at {parentSiteDomain}</strong>)
+                  </>
+                )}{' '}
+                · Checked {fmtShortTime(latestCheck)}
               </>
             )}
           </p>

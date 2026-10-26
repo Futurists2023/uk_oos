@@ -108,8 +108,8 @@ a:hover {
   margin-top: 4px;
 }
 
-.sheet-summary strong.oos-num {
-  color: var(--red);
+.sheet-summary strong {
+  color: var(--ink);
   font-weight: 600;
 }
 
