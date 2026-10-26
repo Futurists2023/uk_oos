@@ -192,6 +192,7 @@ export default function BrandClient({ initialData }) {
     const activeSkus = data.skus.filter(s => s.is_listed === 1);
     const byProdKey = new Map();
     const storeOosCounter = new Map();
+    const storeTotalCounter = new Map();
     let dtcDomainFound = (brand?.dtcDomains || [])[0] || null;
 
     let maxTs = '';
@@ -200,6 +201,7 @@ export default function BrandClient({ initialData }) {
         dtcDomainFound = st.domain;
       } else {
         storeOosCounter.set(st.domain, 0);
+        storeTotalCounter.set(st.domain, 0);
       }
       if (st.last_checked_at && st.last_checked_at > maxTs) {
         maxTs = st.last_checked_at;
@@ -323,6 +325,9 @@ export default function BrandClient({ initialData }) {
         }
       }
 
+      for (const dom of grp.allRetailStores) {
+        storeTotalCounter.set(dom, (storeTotalCounter.get(dom) || 0) + 1);
+      }
       for (const dom of grp.oosStores) {
         storeOosCounter.set(dom, (storeOosCounter.get(dom) || 0) + 1);
       }
@@ -361,7 +366,8 @@ export default function BrandClient({ initialData }) {
       .map(([domain, oosProductCount]) => ({
         domain,
         shortLabel: shortStoreLabel(domain),
-        oosProductCount
+        oosProductCount,
+        totalProductCount: storeTotalCounter.get(domain) || oosProductCount
       }))
       .sort((a, b) => {
         if (b.oosProductCount !== a.oosProductCount) return b.oosProductCount - a.oosProductCount;
@@ -381,49 +387,55 @@ export default function BrandClient({ initialData }) {
     };
   }, [data.stores, data.skus, brand]);
 
-  const [expandedProducts, setExpandedProducts] = useState(() => new Set());
-  const [hoverPopover, setHoverPopover] = useState(null);
+  const retailersWithOosCount = sortedStoreColumns.filter(col => col.oosProductCount > 0).length;
+  const inStockOnParentCount = oosProductGroups.filter(grp => grp.dtcStatus === 'IN_STOCK').length;
+  const parentSiteDomain = dtcStoreColumn?.domain || (brand?.dtcDomains || [])[0] || null;
 
-  useEffect(() => {
-    setExpandedProducts(new Set());
-  }, [brand.slug]);
+  const { retailersWithOos, healthyRetailers } = useMemo(() => {
+    const withOos = sortedStoreColumns
+      .filter(col => col.oosProductCount > 0)
+      .map(col => {
+        const items = [];
+        for (const grp of oosProductGroups) {
+          const stRow = grp.oosByStore.get(col.domain);
+          if (stRow) {
+            items.push({ grp, stRow });
+          }
+        }
+        items.sort((a, b) => {
+          const aTs = a.stRow.oldestOosAt || '9999';
+          const bTs = b.stRow.oldestOosAt || '9999';
+          if (aTs !== bTs) return aTs.localeCompare(bTs);
+          return a.grp.displayName.localeCompare(b.grp.displayName);
+        });
+        return {
+          domain: col.domain,
+          oosCount: items.length,
+          totalCount: col.totalProductCount,
+          priorityRank: getRetailerPriorityRank(col.domain, isTier1),
+          items
+        };
+      })
+      .sort((a, b) => {
+        if (a.priorityRank !== b.priorityRank) return a.priorityRank - b.priorityRank;
+        if (b.oosCount !== a.oosCount) return b.oosCount - a.oosCount;
+        return a.domain.localeCompare(b.domain);
+      });
 
-  const allOosExpanded =
-    oosProductGroups.length > 0 && oosProductGroups.every(g => expandedProducts.has(g.productKey));
+    const healthy = sortedStoreColumns
+      .filter(col => col.oosProductCount === 0)
+      .map(col => ({
+        domain: col.domain,
+        totalCount: col.totalProductCount,
+        priorityRank: getRetailerPriorityRank(col.domain, isTier1)
+      }))
+      .sort((a, b) => {
+        if (a.priorityRank !== b.priorityRank) return a.priorityRank - b.priorityRank;
+        return a.domain.localeCompare(b.domain);
+      });
 
-  function toggleExpandAll() {
-    if (allOosExpanded) {
-      setExpandedProducts(new Set());
-    } else {
-      setExpandedProducts(new Set(oosProductGroups.map(g => g.productKey)));
-    }
-  }
-
-  function showCellPopover(e, info) {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const flipBelow = rect.top < 110;
-    const rawX = rect.left + rect.width / 2;
-    const clampedX = Math.max(150, Math.min(window.innerWidth - 150, rawX));
-    setHoverPopover({
-      x: clampedX,
-      y: flipBelow ? rect.bottom + 8 : rect.top - 6,
-      flipBelow,
-      ...info
-    });
-  }
-
-  function hideCellPopover() {
-    setHoverPopover(null);
-  }
-
-  function toggleProduct(pKey) {
-    setExpandedProducts(prev => {
-      const next = new Set(prev);
-      if (next.has(pKey)) next.delete(pKey);
-      else next.add(pKey);
-      return next;
-    });
-  }
+    return { retailersWithOos: withOos, healthyRetailers: healthy };
+  }, [sortedStoreColumns, oosProductGroups]);
 
   function formatVariantList(variants, dtcRrp = null) {
     return variants
@@ -434,109 +446,95 @@ export default function BrandClient({ initialData }) {
             : '';
         const numP = v.current_price !== null && v.current_price !== undefined ? Number(v.current_price) : null;
         const pr = numP !== null ? `£${numP.toFixed(2)}` : '';
-        let rrpNote = '';
-        if (numP !== null && dtcRrp && numP < dtcRrp * 0.92) {
-          const pct = Math.round(100 * (1 - numP / dtcRrp));
-          rrpNote = ` [-${pct}% vs RRP]`;
-        }
-        if (sz && pr) return `${sz} (${pr}${rrpNote})`;
-        return `${sz || pr || 'Standard'}${rrpNote}`;
+        if (sz && pr) return `${sz} ${pr}`;
+        return sz || pr || 'Standard';
       })
       .join(', ');
   }
 
-  function copyList(singleProductKey = null) {
-    if (oosProductGroups.length === 0) {
+  function copyList() {
+    if (retailersWithOos.length === 0) {
       showToast('All tracked products are currently in stock.');
       return;
     }
 
-    const lines = [];
+    const lines = [
+      `${brand.name} — UK Retail Stockist Report`,
+      `${oosProductGroups.length} products out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists${parentSiteDomain && inStockOnParentCount > 0 ? ` (${inStockOnParentCount} in stock at ${parentSiteDomain})` : ''} · Checked ${fmtShortTime(latestCheck)}`,
+      ''
+    ];
 
-    if (singleProductKey) {
-      const grp = oosProductGroups.find(g => g.productKey === singleProductKey);
-      if (!grp) return;
+    for (const ret of retailersWithOos) {
       lines.push(
-        `${grp.displayName} — Out of Stock at ${grp.oosStores.size}/${grp.allRetailStores.size} UK stockists:`
+        `${ret.domain} — ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock:`
       );
-      for (const stRow of grp.consolidatedOosStores) {
+      for (const { grp, stRow } of ret.items) {
+        const badge = calcOutOfStockBadge(stRow.oldestOosAt);
         const varText = formatVariantList(stRow.variants, grp.dtcRrp);
-        const dur = fmtForDuration(stRow.oldestOosAt);
-        lines.push(`• ${dur}, ${grp.displayName} (${varText}) has been out of stock at ${stRow.domain}`);
+        lines.push(`• [${badge}] ${grp.displayName} (${varText})`);
       }
-      if (grp.inStockStores.size > 0) {
-        lines.push(`In stock at (${grp.inStockStores.size}): ${Array.from(grp.inStockStores).join(', ')}`);
-      }
-
-      navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-        showToast(`Copied ${grp.displayName} OOS summary`);
-      });
-      return;
+      lines.push('');
     }
 
-    lines.push(
-      `${brand.name} — UK Retail Out of Stock Report (${oosProductGroups.length} products out of stock across ${totalRetailStores} UK stockists)`
-    );
-    lines.push(`Checked: ${fmtShortTime(latestCheck)}`);
-    lines.push('');
-
-    for (const grp of oosProductGroups) {
-      for (const stRow of grp.consolidatedOosStores) {
-        const varText = formatVariantList(stRow.variants, grp.dtcRrp);
-        const dur = fmtForDuration(stRow.oldestOosAt);
-        lines.push(`• ${dur}, ${grp.displayName} (${varText}) has been out of stock at ${stRow.domain}`);
-      }
+    if (healthyRetailers.length > 0) {
+      lines.push(
+        `100% in stock at (${healthyRetailers.length}): ${healthyRetailers.map(h => `${h.domain} (${h.totalCount})`).join(', ')}`
+      );
     }
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-      showToast('Copied OOS report (duration first)');
+      showToast('Copied retailer-first OOS report');
     });
   }
 
   function copyStoreOosList(domain) {
-    const col = sortedStoreColumns.find(c => c.domain === domain);
-    if (!col || col.oosProductCount === 0) {
+    const ret = retailersWithOos.find(r => r.domain === domain);
+    if (!ret || ret.oosCount === 0) {
       showToast(`All ${brand.name} products at ${domain} are in stock.`);
       return;
     }
 
     const lines = [
-      `${brand.name} — Out of Stock at ${domain} (${col.oosProductCount} product${col.oosProductCount === 1 ? '' : 's'})`,
+      `${brand.name} — ${ret.domain} (${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock)`,
       `Checked: ${fmtShortTime(latestCheck)}`,
       ''
     ];
 
-    for (const grp of oosProductGroups) {
-      const stCell = grp.oosByStore.get(domain);
-      if (!stCell) continue;
-      const varText = formatVariantList(stCell.variants, grp.dtcRrp);
-      const dur = fmtForDuration(stCell.oldestOosAt);
-      lines.push(`• ${dur}, ${grp.displayName} (${varText}) has been out of stock at ${domain}`);
+    for (const { grp, stRow } of ret.items) {
+      const badge = calcOutOfStockBadge(stRow.oldestOosAt);
+      const varText = formatVariantList(stRow.variants, grp.dtcRrp);
+      lines.push(`• [${badge}] ${grp.displayName} (${varText})`);
     }
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-      showToast(`Copied ${domain} OOS list (${col.oosProductCount} product${col.oosProductCount === 1 ? '' : 's'})`);
+      showToast(`Copied ${domain} OOS list (${ret.oosCount} of ${ret.totalCount})`);
     });
   }
 
   function downloadCSV() {
-    const headers = ['OOS_Duration', 'Product', 'Stockist', 'Variations_OOS', 'DTC_RRP', 'Stockists_OOS_Ratio', 'In_Stock_Stockists', 'First_Seen_OOS_UTC', 'URL'];
+    const headers = ['Stockist', 'Stockist_OOS_Ratio', 'OOS_Duration', 'Product', 'Variations_OOS', 'DTC_RRP', 'In_Stock_At', 'First_Seen_OOS_UTC', 'URL'];
     const rows = [headers.join(',')];
 
-    for (const grp of oosProductGroups) {
-      for (const stRow of grp.consolidatedOosStores) {
+    for (const ret of retailersWithOos) {
+      for (const { grp, stRow } of ret.items) {
         const varDesc = formatVariantList(stRow.variants, grp.dtcRrp);
-        const age = calcOosAge(stRow.oldestOosAt);
-        const competing = Array.from(grp.inStockStores).join(' | ');
+        const age = calcOutOfStockBadge(stRow.oldestOosAt);
+        const inStockList = [];
+        if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
+          inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
+        }
+        for (const dom of grp.inStockStores) {
+          inStockList.push(dom);
+        }
 
         const vals = [
+          ret.domain,
+          `${ret.oosCount} of ${ret.totalCount}`,
           age,
           grp.displayName,
-          stRow.domain,
           varDesc,
           grp.dtcRrp ? `£${grp.dtcRrp.toFixed(2)}` : '',
-          `${grp.oosStores.size}/${grp.allRetailStores.size}`,
-          competing,
+          inStockList.join(' | '),
           stRow.oldestOosAt || '',
           stRow.primaryUrl || ''
         ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`);
@@ -547,13 +545,9 @@ export default function BrandClient({ initialData }) {
     const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = `${brand.slug}-oos-intelligence.csv`;
+    link.download = `${brand.slug}-oos-report.csv`;
     link.click();
   }
-
-  const retailersWithOosCount = sortedStoreColumns.filter(col => col.oosProductCount > 0).length;
-  const inStockOnParentCount = oosProductGroups.filter(grp => grp.dtcStatus === 'IN_STOCK').length;
-  const parentSiteDomain = dtcStoreColumn?.domain || (brand?.dtcDomains || [])[0] || null;
 
   return (
     <div className="sheet">
@@ -584,8 +578,8 @@ export default function BrandClient({ initialData }) {
         <div className="sheet-actions">
           <button
             className="btn-action"
-            onClick={() => copyList(null)}
-            title="Copy clean OOS report ordered by duration"
+            onClick={copyList}
+            title="Copy clean retailer-first OOS report"
           >
             Copy List
           </button>
@@ -607,133 +601,97 @@ export default function BrandClient({ initialData }) {
           </p>
         )}
 
-        {oosProductGroups.length > 0 && (() => {
-          const retailersWithOos = sortedStoreColumns
-            .filter(col => col.oosProductCount > 0)
-            .map(col => {
-              const items = [];
-              for (const grp of oosProductGroups) {
-                const stRow = grp.oosByStore.get(col.domain);
-                if (stRow) {
-                  items.push({ grp, stRow });
-                }
-              }
-              items.sort((a, b) => {
-                const aTs = a.stRow.oldestOosAt || '9999';
-                const bTs = b.stRow.oldestOosAt || '9999';
-                if (aTs !== bTs) return aTs.localeCompare(bTs);
-                return a.grp.displayName.localeCompare(b.grp.displayName);
-              });
-              return {
-                domain: col.domain,
-                oosCount: items.length,
-                priorityRank: getRetailerPriorityRank(col.domain, isTier1),
-                items
-              };
-            })
-            .sort((a, b) => {
-              if (a.priorityRank !== b.priorityRank) return a.priorityRank - b.priorityRank;
-              if (b.oosCount !== a.oosCount) return b.oosCount - a.oosCount;
-              return a.domain.localeCompare(b.domain);
-            });
-
-          const healthyRetailers = sortedStoreColumns
-            .filter(col => col.oosProductCount === 0)
-            .map(col => col.domain)
-            .sort((a, b) => a.localeCompare(b));
-
-          return (
-            <div className="retailer-feed">
-              {retailersWithOos.map(ret => (
-                <section key={ret.domain} className="retailer-block">
-                  <div className="retailer-block-header">
-                    <div className="retailer-block-title">
-                      <span className="retailer-domain-name">{ret.domain}</span>
-                      <span className="retailer-oos-summary">
-                        — {ret.oosCount} product{ret.oosCount === 1 ? '' : 's'} out of stock
-                      </span>
-                    </div>
-                    <button
-                      className="btn-plain btn-xs"
-                      onClick={() => copyStoreOosList(ret.domain)}
-                    >
-                      Copy {shortStoreLabel(ret.domain)}
-                    </button>
+        {oosProductGroups.length > 0 && (
+          <div className="retailer-feed">
+            {retailersWithOos.map(ret => (
+              <section key={ret.domain} className="retailer-block">
+                <div className="retailer-block-header">
+                  <div className="retailer-block-title">
+                    <span className="retailer-domain-name">{ret.domain}</span>
+                    <span className="retailer-oos-summary">
+                      — {ret.oosCount} of {ret.totalCount} product{ret.totalCount === 1 ? '' : 's'} out of stock
+                    </span>
                   </div>
-
-                  <ul className="flat-oos-list">
-                    {ret.items.map(({ grp, stRow }) => {
-                      const firstVar = stRow.variants?.[0];
-                      const hasNamedSize =
-                        firstVar?.variant_title &&
-                        firstVar.variant_title !== 'Default' &&
-                        firstVar.variant_title !== 'Standard';
-                      const rawPrice =
-                        firstVar?.current_price !== null && firstVar?.current_price !== undefined
-                          ? Number(firstVar.current_price)
-                          : grp.dtcRrp;
-                      const priceStr =
-                        rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
-
-                      const inStockList = [];
-                      if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
-                        inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
-                      }
-                      for (const dom of grp.inStockStores) {
-                        inStockList.push(dom);
-                      }
-
-                      return (
-                        <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
-                          <div className="flat-oos-main">
-                            <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
-                            <span className="store-domain">{grp.displayName}</span>
-
-                            {(hasNamedSize || priceStr) && (
-                              <span className="var-pill">
-                                {hasNamedSize && <span>{firstVar.variant_title}</span>}
-                                {priceStr && <span className="var-pill-price">{priceStr}</span>}
-                              </span>
-                            )}
-
-                            <a
-                              href={stRow.primaryUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flat-oos-store-link"
-                              title={`Open ${grp.displayName} on ${ret.domain}`}
-                            >
-                              <span className="sku-open">↗</span>
-                            </a>
-                          </div>
-
-                          <div className="flat-oos-sub">
-                            {inStockList.length > 0 ? (
-                              <>
-                                <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
-                              </>
-                            ) : (
-                              <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
-                            )}
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </section>
-              ))}
-
-              {healthyRetailers.length > 0 && (
-                <div className="retailer-healthy-footer">
-                  <strong style={{ color: 'var(--green)' }}>
-                    ✓ 100% in stock at ({healthyRetailers.length}):
-                  </strong>{' '}
-                  {healthyRetailers.join(', ')}
+                  <button
+                    className="btn-plain btn-xs"
+                    onClick={() => copyStoreOosList(ret.domain)}
+                  >
+                    Copy {shortStoreLabel(ret.domain)}
+                  </button>
                 </div>
-              )}
-            </div>
-          );
-        })()}
+
+                <ul className="flat-oos-list">
+                  {ret.items.map(({ grp, stRow }) => {
+                    const firstVar = stRow.variants?.[0];
+                    const hasNamedSize =
+                      firstVar?.variant_title &&
+                      firstVar.variant_title !== 'Default' &&
+                      firstVar.variant_title !== 'Standard';
+                    const rawPrice =
+                      firstVar?.current_price !== null && firstVar?.current_price !== undefined
+                        ? Number(firstVar.current_price)
+                        : grp.dtcRrp;
+                    const priceStr =
+                      rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
+
+                    const inStockList = [];
+                    if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
+                      inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
+                    }
+                    for (const dom of grp.inStockStores) {
+                      inStockList.push(dom);
+                    }
+
+                    return (
+                      <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
+                        <div className="flat-oos-main">
+                          <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
+                          <span className="store-domain">{grp.displayName}</span>
+
+                          {(hasNamedSize || priceStr) && (
+                            <span className="var-pill">
+                              {hasNamedSize && <span>{firstVar.variant_title}</span>}
+                              {priceStr && <span className="var-pill-price">{priceStr}</span>}
+                            </span>
+                          )}
+
+                          <a
+                            href={stRow.primaryUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flat-oos-store-link"
+                            title={`Open ${grp.displayName} on ${ret.domain}`}
+                          >
+                            <span className="sku-open">↗</span>
+                          </a>
+                        </div>
+
+                        <div className="flat-oos-sub">
+                          {inStockList.length > 0 ? (
+                            <>
+                              <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
+                            </>
+                          ) : (
+                            <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            ))}
+
+            {healthyRetailers.length > 0 && (
+              <div className="retailer-healthy-footer">
+                <strong style={{ color: 'var(--green)' }}>
+                  ✓ 100% in stock at ({healthyRetailers.length}):
+                </strong>{' '}
+                {healthyRetailers.map(h => `${h.domain} (${h.totalCount})`).join(', ')}
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {toastMsg && <div className="toast">{toastMsg}</div>}
