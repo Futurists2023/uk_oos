@@ -262,12 +262,12 @@ a:hover {
 }
 
 .list-duration-lead {
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-size: 0.76rem;
+  font-weight: 600;
   color: var(--red);
   background: var(--red-soft);
   border: 1px solid #fecaca;
-  padding: 2px 7px;
+  padding: 1px 7px;
   border-radius: 4px;
   font-variant-numeric: tabular-nums;
   flex-shrink: 0;
@@ -325,11 +325,11 @@ a:hover {
 }
 
 .sku-item {
-  display: grid;
-  grid-template-columns: minmax(190px, auto) 1fr auto auto;
-  gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   align-items: center;
-  padding: 9px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--line);
   font-size: 0.88rem;
 }
@@ -359,10 +359,9 @@ a:hover {
 }
 
 .var-pills-wrap {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 6px;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -401,9 +400,12 @@ a:hover {
 .sku-oos-age {
   font-variant-numeric: tabular-nums;
   color: var(--red);
-  font-weight: 700;
-  font-size: 0.88rem;
-  text-align: left;
+  background: var(--red-soft);
+  border: 1px solid #fecaca;
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.76rem;
   white-space: nowrap;
 }
 

@@ -24,6 +24,22 @@ function calcOosAge(isoStr) {
   return `${mins}m OOS`;
 }
 
+function calcOutOfStockBadge(isoStr) {
+  if (!isoStr) return 'Out of stock';
+  const d = new Date(isoStr);
+  if (isNaN(d.getTime())) return 'Out of stock';
+  const hours = Math.max(0, (Date.now() - d.getTime()) / 3600000);
+  const days = Math.floor(hours / 24);
+  const remH = Math.round(hours % 24);
+  const roundedH = Math.round(hours);
+  const mins = Math.max(1, Math.floor((hours * 60) % 60));
+  if (days > 0) {
+    return remH > 0 && remH < 24 ? `${days}d ${remH}h Out of stock` : `${days + (remH === 24 ? 1 : 0)}d Out of stock`;
+  }
+  if (roundedH > 0) return `${roundedH}h Out of stock`;
+  return `${mins}m Out of stock`;
+}
+
 function fmtForDuration(isoStr) {
   if (!isoStr) return 'Currently';
   const d = new Date(isoStr);
@@ -581,7 +597,7 @@ export default function BrandClient({ initialData }) {
                 <div className="store-group-header" onClick={() => toggleProduct(grp.productKey)}>
                   <div className="store-header-left">
                     <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
-                    <span className="list-duration-lead">{calcOosAge(grp.oldestOosAt)}</span>
+                    <span className="list-duration-lead">{calcOutOfStockBadge(grp.oldestOosAt)}</span>
                     <span className="store-domain">{grp.displayName}</span>
                     {!isExpanded && (
                       <span className="collapsed-preview">— {storeListPreview}</span>
@@ -594,7 +610,7 @@ export default function BrandClient({ initialData }) {
                       style={{ cursor: 'pointer' }}
                       onClick={() => toggleProduct(grp.productKey)}
                     >
-                      {storeCount}/{grp.allRetailStores.size} stockists OOS
+                      {storeCount}/{grp.allRetailStores.size} stockists
                     </span>
                     <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
                       Copy
@@ -607,29 +623,27 @@ export default function BrandClient({ initialData }) {
                     {grp.consolidatedOosStores.map(stRow => {
                       return (
                         <li key={stRow.domain} className="sku-item">
-                          <div className="sku-store-domain">{stRow.domain}</div>
+                          <span className="sku-store-domain">{stRow.domain}</span>
 
-                          <div className="var-pills-wrap">
-                            {stRow.variants.map(v => {
-                              const hasNamedSize =
-                                v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
-                              const numP =
-                                v.current_price !== null && v.current_price !== undefined
-                                  ? Number(v.current_price)
-                                  : null;
-                              const price = numP !== null ? `£${numP.toFixed(2)}` : '';
+                          {stRow.variants.map(v => {
+                            const hasNamedSize =
+                              v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
+                            const numP =
+                              v.current_price !== null && v.current_price !== undefined
+                                ? Number(v.current_price)
+                                : null;
+                            const price = numP !== null ? `£${numP.toFixed(2)}` : '';
 
-                              if (!hasNamedSize && !price) return null;
-                              return (
-                                <span key={v.sku_key} className="var-pill">
-                                  {hasNamedSize && <span>{v.variant_title}</span>}
-                                  {price && <span className="var-pill-price">{price}</span>}
-                                </span>
-                              );
-                            })}
-                          </div>
+                            if (!hasNamedSize && !price) return null;
+                            return (
+                              <span key={v.sku_key} className="var-pill">
+                                {hasNamedSize && <span>{v.variant_title}</span>}
+                                {price && <span className="var-pill-price">{price}</span>}
+                              </span>
+                            );
+                          })}
 
-                          <div className="sku-oos-age">{calcOosAge(stRow.oldestOosAt)}</div>
+                          <span className="sku-oos-age">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
 
                           <a
                             href={stRow.primaryUrl}
