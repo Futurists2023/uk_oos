@@ -699,5 +699,103 @@ def normalize_product_family_key(brand: dict, title: str) -> str:
             return "life_soul_liquid_omega_3"
         if "life_soul" in low:
             return "life_soul_omega_3_capsules"
+    elif brand["slug"] == "oskia":
+        raw_t = (title or "").lower()
+        if "cleansing_gel" in low and ("duo" in low or "double" in low or "2 x 100" in raw_t):
+            return "renaissance_cleansing_gel_duo"
+        if "renaissance" in low and "cleansing_gel" in low:
+            if "200" in raw_t or "supersize" in raw_t:
+                return "renaissance_cleansing_gel_200ml"
+            if "35" in raw_t or "travel" in raw_t:
+                return "renaissance_cleansing_gel_35ml"
+            return "renaissance_cleansing_gel_100ml"
+        if "renaissance_mask" in low:
+            return "renaissance_mask"
+        if "renaissance_360" in low:
+            return "renaissance_360"
+        if "brightlight" in low:
+            return "renaissance_brightlight_serum"
+        if "renaissance_hand" in low:
+            return "renaissance_hand_cream"
+        if "renaissance_body_scrub" in low:
+            return "renaissance_body_scrub"
+        if "renaissance_body" in low and "milk" in low:
+            return "renaissance_body_treatment_milk"
+        if "micro_exfoliating_balm" in low:
+            return "micro_exfoliating_balm"
+        if "adaptive_tan" in low and ("drop" in low or "tri_phase" in low):
+            return "adaptive_tan_drops"
+        if "adaptive_tan" in low and "mist" in low:
+            return "adaptive_tan_mist"
+        if "nutri_bronze" in low:
+            return "nutri_bronze_tinted_serum"
+        if "citylife" in low and "mist" in low:
+            return "citylife_facial_mist"
+        if "citylife" in low and "booster" in low:
+            return "citylife_facial_booster"
+        if "citylife" in low and "balm" in low:
+            return "citylife_eye_balm"
+        if "citylife" in low and "cleans" in low:
+            return "citylife_cleansing_concentrate"
+        if "citylife" in low and "concentrate" in low:
+            return "citylife_defence_concentrate"
+        if "floral_water" in low:
+            return "floral_water_toner"
+        if "midnight_elixir" in low:
+            return "midnight_elixir_serum"
+        if "moon_salts" in low:
+            return "moon_salts"
+        if "d_spot" in low or "d spot" in raw_t:
+            return "violet_water_d_spot"
+        if "eye" in low and ("make" in low or "remover" in low):
+            return "vitamin_eye_makeup_remover"
+        if "super_16" in low:
+            return "super_16_pro_collagen_serum"
+        if "super_c" in low and ("super_r" in low or "duo" in low):
+            return "super_c_super_r_duo"
+        if "super_c" in low or ("super" in low and "nutrient_beauty_capsules" in low):
+            return "super_c_beauty_capsules"
+        if "super_r" in low:
+            return "super_r_retinoid_capsules"
+        if "bedtime_beauty_boost" in low:
+            return "bedtime_beauty_boost"
+        if "restoration_oil" in low:
+            return "restoration_oil"
+        if "get_up" in low and "glow" in low:
+            return "get_up_and_glow_serum"
+        if "isotonic" in low and "hydra" in low:
+            return "isotonic_hydra_serum"
+        if "h2glow" in low:
+            return "h2glow_serum"
+        if "liquid_mask" in low:
+            return "liquid_mask_lactic_acid"
+        if "midnight_eye" in low:
+            return "midnight_eye_q"
+        if "eye_wonder" in low:
+            return "eye_wonder_serum"
+        if "perfect_cleanser" in low:
+            return "perfect_cleanser"
+        if "rest_day" in low and ("milk" in low or "cleans" in low):
+            return "rest_day_cleansing_milk"
+        if "rest_day" in low and ("mist" in low or "spray" in low):
+            return "rest_day_barrier_mist"
+        if "rest_day" in low and "cream" in low:
+            return "rest_day_comfort_cream"
+        if "violet_water" in low and "cleans" in low and "duo" not in low:
+            return "violet_water_clearing_cleanser"
+        if "violet_water" in low and "tonic" in low and "duo" not in low:
+            return "violet_water_bha_tonic"
+        if "violet_water" in low and "hydra_gel" in low:
+            return "violet_water_hydra_gel"
+        if "msm_bio" in low:
+            return "msm_bio_plus_supplement"
+        if "lactoferrin" in low:
+            return "lactoferrin_plus_supplement"
+        if "nutri_active_day_cream" in low:
+            return "nutri_active_day_cream"
+        if ("spf30" in low or "spf_30" in low) and "milk" in low:
+            return "spf30_vitamin_milk_sunscreen"
+        if "spf30" in low or "spf_30" in low:
+            return "spf30_vitamin_face_cream"
 
     return low or f"{brand['slug']}_sku"

@@ -319,13 +319,14 @@ async def scrape_spacenk_store(page, store: dict, brand_cfg: dict) -> list[dict]
                     }
                 }
 
+                const hasPriceRange = /£\\d+\\.\\d{2}\\s*-\\s*£\\d+\\.\\d{2}/.test(fullText);
                 const priceMatches = fullText.match(/£(\\d+\\.\\d{2})/g) || [];
                 const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
                 const price = prices.length > 0 ? prices[prices.length - 1] : null;
-                const compareAt = prices.length > 1 && prices[0] > price ? prices[0] : null;
+                const compareAt = (!hasPriceRange && prices.length > 1 && prices[0] > price) ? prices[0] : null;
                 const isOos = /\\bout of stock\\b|\\bsold out\\b|\\bnotify me\\b|\\bwaitlist\\b|\\bunavailable\\b/i.test(fullText);
 
-                out.push({ title, url, price, compareAt, available: !isOos });
+                out.push({ title, url, price, compareAt, available: !isOos, hasPriceRange });
             }
             return out;
         }""",
@@ -334,6 +335,55 @@ async def scrape_spacenk_store(page, store: dict, brand_cfg: dict) -> list[dict]
 
     skus = []
     for item in raw:
+        if item.get("hasPriceRange"):
+            try:
+                await human_pause(1.8, 3.0, f"Expanding multi-size variants on {domain}: {item['title']}")
+                await page.goto(item["url"], wait_until="domcontentloaded", timeout=30000)
+                variants_ld = await page.evaluate(
+                    """() => {
+                        const out = [];
+                        for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+                            try {
+                                const d = JSON.parse(s.innerText);
+                                if (Array.isArray(d.hasVariant)) {
+                                    for (const v of d.hasVariant) {
+                                        const offer = v.offers || {};
+                                        out.push({
+                                            name: v.name || '',
+                                            size: v.size || '',
+                                            sku: v.sku || offer.sku || '',
+                                            url: v.url || offer.url || location.href,
+                                            price: offer.price ? parseFloat(offer.price) : null,
+                                            avail: /InStock/i.test(offer.availability || ''),
+                                        });
+                                    }
+                                }
+                            } catch (e) {}
+                        }
+                        return out;
+                    }"""
+                )
+                if variants_ld:
+                    for v in variants_ld:
+                        v_name = v["name"] or item["title"]
+                        v_size = v["size"] or "Standard"
+                        v_code = v["sku"] or v_size
+                        skus.append({
+                            "sku_key": f"{domain}::{slug}::{v_code}",
+                            "product_title": v_name,
+                            "variant_title": v_size,
+                            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, v_name),
+                            "product_url": v["url"],
+                            "sku_code": v_code,
+                            "price": v["price"],
+                            "compare_at_price": None,
+                            "currency": "GBP",
+                            "available": bool(v["avail"]),
+                        })
+                    continue
+            except Exception:
+                pass
+
         title = item["title"]
         m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
         v_title = m_size.group(1) if m_size else "Standard"
@@ -384,30 +434,27 @@ async def scrape_thg_store(page, store: dict, brand_cfg: dict) -> list[dict]:
     await smooth_scroll(page, steps=5)
 
     raw = await page.evaluate(
-        """(brandName) => {
+        """({ brandName, slug }) => {
             const out = [];
             const seen = new Set();
-            for (const a of document.querySelectorAll('a[href*="/p/"], a[href*=".html"]')) {
-                const href = (a.href || '').split('?')[0];
+            const bEsc = brandName.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
+            const cards = document.querySelectorAll('product-card-wrapper, .product-card, article, [data-testid*="product"], .productListProducts_product');
+            for (const card of cards) {
+                const titleLink = card.querySelector('a.product-item-title, a[data-testid*="title"], h2 a, h3 a') || card.querySelector('a[href*="/p/"], a[href*=".html"]');
+                if (!titleLink) continue;
+                const href = (titleLink.href || '').split('?')[0];
                 if (!href || seen.has(href)) continue;
-
-                let card = a.closest('article, [data-testid*="product"], [class*="productCard"], [class*="product-card"], .productListProducts_product, li') || a.parentElement;
-                for (let i = 0; i < 5 && card; i++) {
-                    if (/£\\d+/.test(card.innerText || '')) break;
-                    card = card.parentElement;
-                }
-                if (!card) continue;
+                if (!new RegExp(slug, 'i').test(href) && !new RegExp(bEsc, 'i').test(titleLink.innerText || '')) continue;
 
                 const fullText = (card.innerText || '').replace(/\\s+/g, ' ').trim();
-                const bEsc = brandName.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
-                if (!new RegExp(bEsc, 'i').test(fullText) && !new RegExp(bEsc.replace(/\\s+/g, '-'), 'i').test(href)) continue;
-
                 seen.add(href);
-                const h = card.querySelector('h2, h3, h4, [class*="title"], [class*="name"], [data-testid*="title"]');
-                const title = h ? h.innerText.replace(/\\s+/g, ' ').trim() : (a.innerText || '').replace(/\\s+/g, ' ').trim();
+
+                const h = card.querySelector('a.product-item-title, h2, h3, h4, [class*="title"], [class*="name"], [data-testid*="title"]');
+                let title = h ? h.innerText.replace(/\\s+/g, ' ').trim() : (titleLink.innerText || '').replace(/\\s+/g, ' ').trim();
                 if (!title || title.length < 4) continue;
 
-                const priceMatches = fullText.match(/£(\\d+\\.\\d{2})/g) || [];
+                const cleanPriceText = fullText.replace(/(?:FREE GOODY BAG WITH|SPEND|WORTH|SAVE UP TO)\\s*£\\d+(?:\\.\\d{2})?/gi, '');
+                const priceMatches = cleanPriceText.match(/£(\\d+\\.\\d{2})/g) || [];
                 const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
                 const price = prices.length > 0 ? prices[prices.length - 1] : null;
                 const compareAt = prices.length > 1 && prices[0] > price ? prices[0] : null;
@@ -417,7 +464,7 @@ async def scrape_thg_store(page, store: dict, brand_cfg: dict) -> list[dict]:
             }
             return out;
         }""",
-        brand_name,
+        {"brandName": brand_name, "slug": slug},
     )
 
     skus = []
@@ -707,13 +754,14 @@ async def scrape_bathandunwind_store(page, store: dict, brand_cfg: dict) -> list
 
                 // Exclude "Worth: £XX.XX" when picking shelf price
                 const cleanedPriceText = fullText.replace(/Worth:\\s*£\\d+(?:\\.\\d{2})?/gi, '');
+                const hasPriceRange = /£\\d+\\.\\d{2}\\s*-\\s*£\\d+\\.\\d{2}/.test(cleanedPriceText);
                 const priceMatches = cleanedPriceText.match(/£(\\d+\\.\\d{2})/g) || [];
                 const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
                 const price = prices.length > 0 ? prices[prices.length - 1] : null;
-                const compareAt = prices.length > 1 && prices[0] > price ? prices[0] : null;
+                const compareAt = (!hasPriceRange && prices.length > 1 && prices[0] > price) ? prices[0] : null;
                 const isOos = /\\bout of stock\\b|\\bsold out\\b|\\bpre-order\\b|\\bunavailable\\b/i.test(fullText);
 
-                out.push({ title, url, price, compareAt, available: !isOos });
+                out.push({ title, url, price, compareAt, available: !isOos, hasPriceRange, prices });
             }
             return out;
         }""",
@@ -722,10 +770,38 @@ async def scrape_bathandunwind_store(page, store: dict, brand_cfg: dict) -> list
 
     skus = []
     for item in raw:
+        path_slug = item["url"].rstrip("/").split("/")[-1]
+        if item.get("hasPriceRange"):
+            try:
+                await human_pause(1.8, 3.0, f"Expanding multi-size options on {domain}: {item['title']}")
+                await page.goto(item["url"], wait_until="domcontentloaded", timeout=30000)
+                opts = await page.evaluate(
+                    """() => Array.from(document.querySelectorAll('.form-option-variant')).map(el => el.innerText.replace(/\\s+/g, ' ').trim()).filter(Boolean)"""
+                )
+                if opts:
+                    prices_list = item.get("prices") or [item["price"]]
+                    for idx_o, opt_txt in enumerate(opts):
+                        opt_price = prices_list[idx_o] if idx_o < len(prices_list) else prices_list[-1]
+                        opt_slug = re.sub(r"[^a-z0-9]+", "-", opt_txt.lower()).strip("-")
+                        skus.append({
+                            "sku_key": f"{domain}::{slug}::{path_slug}::{opt_slug}",
+                            "product_title": f"{item['title']} ({opt_txt})",
+                            "variant_title": opt_txt,
+                            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, item["title"]),
+                            "product_url": item["url"],
+                            "sku_code": f"{path_slug}-{opt_slug}",
+                            "price": opt_price,
+                            "compare_at_price": None,
+                            "currency": "GBP",
+                            "available": bool(item["available"]),
+                        })
+                    continue
+            except Exception:
+                pass
+
         title = item["title"]
         m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
         v_title = m_size.group(1) if m_size else "Standard"
-        path_slug = item["url"].rstrip("/").split("/")[-1]
         skus.append({
             "sku_key": f"{domain}::{slug}::{path_slug}",
             "product_title": title,
@@ -936,49 +1012,145 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
     oos_skus = [s for s in active_skus if s["is_available"] == 0]
     silent_removed = [s for s in skus if s["is_listed"] == 0]
 
-    # Group products across stores by normalized product family key to find Hero SKUs
-    total_stores = max(1, len(stores))
-    stores_by_norm_key: dict[str, set[str]] = defaultdict(set)
+    dtc_set = {d.lower().removeprefix("www.") for d in brand_cfg.get("dtc_domains", [])}
+    retail_stores = [st for st in stores if st["domain"].lower().removeprefix("www.") not in dtc_set]
+    total_retail_stores = max(1, len(retail_stores))
+
+    # Refresh canonical normalized_product_key across all SKUs and build DTC + Retailer lookup maps
+    dtc_by_norm: dict[str, list[dict]] = defaultdict(list)
+    retail_in_stock_by_norm: dict[str, set[str]] = defaultdict(set)
+    retail_oos_by_norm: dict[str, set[str]] = defaultdict(set)
+    retail_stores_by_norm: dict[str, set[str]] = defaultdict(set)
     labels_by_norm_key: dict[str, Counter] = defaultdict(Counter)
+    retail_prices_by_norm: dict[str, dict[str, float]] = defaultdict(dict)
 
     for s in active_skus:
-        nk = sme_brands.normalize_product_family_key(brand_cfg, s["product_title"])
+        combined_title = f"{s['product_title']} {s.get('variant_title') or ''}"
+        nk = sme_brands.normalize_product_family_key(brand_cfg, combined_title)
+        if nk == "renaissance_cleansing_gel_100ml" and s.get("current_price") and s["current_price"] < 25.0:
+            nk = "renaissance_cleansing_gel_35ml"
+            if s.get("variant_title") == "Standard":
+                s["variant_title"] = "35ml (Travel)"
+        if nk != s.get("normalized_product_key"):
+            s["normalized_product_key"] = nk
+            conn.execute("UPDATE skus SET normalized_product_key = ? WHERE sku_key = ?", (nk, s["sku_key"]))
         if not nk or len(nk) < 3:
             continue
-        stores_by_norm_key[nk].add(s["domain"])
+        dom = s["domain"]
+        is_dtc_dom = dom.lower().removeprefix("www.") in dtc_set
         clean_lbl = s["product_title"].split("|")[0].strip()
-        labels_by_norm_key[nk][clean_lbl] += 1
+        if nk == "renaissance_cleansing_gel_200ml":
+            clean_lbl = "Renaissance Cleansing Gel (200ml Supersize)"
+        elif nk == "renaissance_cleansing_gel_35ml":
+            clean_lbl = "Renaissance Cleansing Gel (35ml Travel)"
+        elif nk == "renaissance_cleansing_gel_100ml":
+            clean_lbl = "Renaissance Cleansing Gel (100ml)"
+        labels_by_norm_key[nk][clean_lbl] += (3 if is_dtc_dom else 1)
+
+        if is_dtc_dom:
+            dtc_by_norm[nk].append(s)
+        else:
+            retail_stores_by_norm[nk].add(dom)
+            if s["is_available"] == 1:
+                retail_in_stock_by_norm[nk].add(dom)
+            else:
+                retail_oos_by_norm[nk].add(dom)
+            if s.get("current_price"):
+                prev_p = retail_prices_by_norm[nk].get(dom)
+                if prev_p is None or s["current_price"] > prev_p:
+                    retail_prices_by_norm[nk][dom] = s["current_price"]
+    conn.commit()
+
+    def get_dtc_reference(norm_key: str, variant_hint: str = "") -> tuple[str, float | None]:
+        """Return (dtc_status_code, dtc_rrp) for a normalized product key."""
+        dtc_matches = dtc_by_norm.get(norm_key, [])
+        if not dtc_matches:
+            return ("NOT_ON_DTC", None)
+        vh = (variant_hint or "").lower().replace(" ", "")
+        sized = [m for m in dtc_matches if vh and vh != "standard" and vh in (m.get("variant_title") or "").lower().replace(" ", "")]
+        if sized:
+            pool = sized
+        else:
+            # Prefer full-size standard retail variants over travel minis, refills, or 5L spa trade sizes
+            std_pool = [
+                m for m in dtc_matches
+                if not re.search(r"\b(?:travel|refill|5\s*litre|10\s*ml|7\s*ml|5\.5\s*ml|14\s*ml|15\s*ml|7\s*capsules|14\s*capsules)\b", (m.get("variant_title") or ""), re.I)
+            ]
+            pool = std_pool if std_pool else dtc_matches
+        any_in_stock = any(m["is_available"] == 1 for m in pool)
+        prices = [m["current_price"] for m in pool if m.get("current_price")]
+        rrp = max(prices) if prices else None
+        return ("IN_STOCK_ON_DTC" if any_in_stock else "OOS_ON_DTC", rrp)
 
     hero_benchmarks = []
-    for norm_key, dom_set in sorted(stores_by_norm_key.items(), key=lambda kv: (-len(kv[1]), kv[0])):
-        pct = round(100.0 * len(dom_set) / total_stores)
+    all_retail_doms = {st["domain"] for st in retail_stores}
+    for norm_key, dom_set in sorted(retail_stores_by_norm.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+        pct = round(100.0 * len(dom_set) / total_retail_stores)
         best_label = labels_by_norm_key[norm_key].most_common(1)[0][0] if labels_by_norm_key[norm_key] else norm_key.replace("_", " ").title()
+        dtc_state, dtc_rrp = get_dtc_reference(norm_key)
+        undercut_notes = []
+        if dtc_rrp:
+            for r_dom, r_price in sorted(retail_prices_by_norm[norm_key].items()):
+                if r_price < dtc_rrp * 0.92:
+                    diff_pct = round(100 * (1 - r_price / dtc_rrp))
+                    undercut_notes.append(f"`{r_dom}` £{r_price:.2f} (-{diff_pct}% vs RRP)")
         hero_benchmarks.append({
             "normalized_key": norm_key,
             "product_family": best_label,
+            "dtc_status": dtc_state,
+            "dtc_rrp": dtc_rrp,
             "stores_carrying": len(dom_set),
-            "total_stores": total_stores,
+            "total_stores": total_retail_stores,
             "penetration_pct": pct,
-            "is_hero": pct >= 50 and len(dom_set) >= 2,
-            "missing_in": sorted(set(st["domain"] for st in stores) - dom_set),
+            "is_hero": len(dom_set) >= 2,
+            "in_stock_in": sorted(retail_in_stock_by_norm.get(norm_key, set())),
+            "oos_in": sorted(retail_oos_by_norm.get(norm_key, set()) - retail_in_stock_by_norm.get(norm_key, set())),
+            "missing_in": sorted(all_retail_doms - dom_set),
+            "undercut_alerts": undercut_notes,
         })
 
-    hero_map = {h["normalized_key"]: h["product_family"] for h in hero_benchmarks if h["is_hero"]}
-
     oos_enriched = []
+    retail_oos_enriched = []
+    dtc_oos_enriched = []
     for s in oos_skus:
         dur_str, days_float = format_duration_since(s["first_seen_oos_at"], now)
+        nk = s["normalized_product_key"]
+        dtc_state, dtc_rrp = get_dtc_reference(nk, s.get("variant_title") or "")
+        is_dtc_dom = s["domain"].lower().removeprefix("www.") in dtc_set
+
         price_note = "Full Price"
         if s["compare_at_price"] and s["current_price"] and s["compare_at_price"] > s["current_price"]:
             disc_pct = round(100 * (1 - s["current_price"] / s["compare_at_price"]))
             price_note = f"Discounted -{disc_pct}% (was £{s['compare_at_price']:.2f})"
+        elif dtc_rrp and s["current_price"] and s["current_price"] < dtc_rrp * 0.92:
+            disc_pct = round(100 * (1 - s["current_price"] / dtc_rrp))
+            price_note = f"Below DTC RRP -{disc_pct}% (DTC £{dtc_rrp:.2f})"
 
-        oos_enriched.append({
+        competing_in_stock = sorted(d for d in retail_in_stock_by_norm.get(nk, set()) if d != s["domain"])
+        if is_dtc_dom:
+            diagnosis = "Brand DTC Warehouse OOS"
+        elif dtc_state == "IN_STOCK_ON_DTC":
+            diagnosis = "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)"
+        elif dtc_state == "OOS_ON_DTC":
+            diagnosis = "⚠️ FACTORY SHORTAGE (Also OOS on DTC)"
+        else:
+            diagnosis = f"🚨 RETAIL OUTAGE (In Stock at {len(competing_in_stock)} other retailers)" if competing_in_stock else "Retail Exclusive OOS"
+
+        enriched_item = {
             **s,
             "duration_label": dur_str,
             "days_oos": days_float,
             "price_note": price_note,
-        })
+            "dtc_status": dtc_state,
+            "dtc_rrp": dtc_rrp,
+            "diagnosis": diagnosis,
+            "in_stock_elsewhere": competing_in_stock,
+        }
+        oos_enriched.append(enriched_item)
+        if is_dtc_dom:
+            dtc_oos_enriched.append(enriched_item)
+        else:
+            retail_oos_enriched.append(enriched_item)
 
     report_payload = {
         "brand": brand_name,
@@ -986,12 +1158,19 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
         "generated_at": now.isoformat(timespec="seconds"),
         "summary": {
             "monitored_uk_stores": len(stores),
+            "monitored_retail_stockists": len(retail_stores),
             "total_listed_skus_variants": len(active_skus),
             "in_stock_skus_variants": len(active_skus) - len(oos_enriched),
             "out_of_stock_skus_variants": len(oos_enriched),
+            "retail_out_of_stock_variants": len(retail_oos_enriched),
+            "unforced_retail_outages": sum(1 for x in retail_oos_enriched if "UNFORCED" in x["diagnosis"] or "RETAIL OUTAGE" in x["diagnosis"]),
+            "factory_shortages_on_dtc": sum(1 for x in retail_oos_enriched if "FACTORY SHORTAGE" in x["diagnosis"]),
             "silent_removed_skus": len(silent_removed),
         },
         "out_of_stock_alerts": oos_enriched,
+        "retail_out_of_stock_alerts": retail_oos_enriched,
+        "dtc_out_of_stock": dtc_oos_enriched,
+        "hero_benchmarks": [h for h in hero_benchmarks if h["is_hero"]],
         "silent_removals": silent_removed,
         "recent_events": events,
     }
@@ -1001,41 +1180,82 @@ def generate_intelligence_report_for_brand(conn, brand_cfg: dict) -> dict:
     report_json_path.write_text(json.dumps(report_payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
     lines = [
-        f"# UK Stockist Out-of-Stock (OOS) Report: {brand_name}",
+        f"# UK Stockist Out-of-Stock (OOS) Intelligence Report: {brand_name}",
         "",
         f"- **Generated:** {now.strftime('%Y-%m-%d %H:%M UTC')}",
-        f"- **Monitored UK Stockists:** {len(stores)}",
-        f"- **Total Tracked Variants:** {len(active_skus)}",
-        f"- **In Stock Variants:** {len(active_skus) - len(oos_enriched)}",
-        f"- **Out-of-Stock (OOS) Variants:** **{len(oos_enriched)}**",
-        f"- **Removed / Unlisted Variants:** **{len(silent_removed)}**",
+        f"- **Monitored Storefronts:** {len(stores)} (1 Official DTC Master Catalog + {len(retail_stores)} Major UK Stockists)",
+        f"- **Total Tracked Variants:** {len(active_skus)} ({len(active_skus) - len(oos_enriched)} In Stock | **{len(oos_enriched)} OOS**)",
+        f"- **Retailer Out-of-Stock Alerts:** **{len(retail_oos_enriched)}** (**{report_payload['summary']['unforced_retail_outages']} Unforced Retail Outages** vs. **{report_payload['summary']['factory_shortages_on_dtc']} Brand Warehouse Shortages**)",
+        f"- **Removed / Delisted Variants:** **{len(silent_removed)}**",
         "",
         "---",
         "",
-        "## 1. Out-of-Stock (OOS) Variants",
+        "## 1A. Major UK Retailer Out-of-Stock Alerts (Cross-Checked Against Official DTC)",
         "",
     ]
-    if oos_enriched:
+    if retail_oos_enriched:
         lines += [
-            "| Store | Tier | Product | Size / Variant | Shelf Price | First Seen OOS | Time OOS | Price Note |",
+            "| Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |",
             "|---|---|---|---|---|---|---|---|",
         ]
-        for item in oos_enriched:
+        for item in retail_oos_enriched:
             p_str = f"£{item['current_price']:.2f}" if item["current_price"] else "-"
+            rrp_str = f"£{item['dtc_rrp']:.2f}" if item.get("dtc_rrp") else "-"
             safe_title = item["product_title"].replace("|", "—")
-            tier_lbl = sme_brands.stockist_tier(item["domain"])
+            elsewhere = ", ".join(f"`{d}`" for d in item["in_stock_elsewhere"][:5]) if item["in_stock_elsewhere"] else "_None_"
             lines.append(
-                f"| `{item['domain']}` | {tier_lbl} | {safe_title} | {item['variant_title']} | {p_str} | "
-                f"{item['first_seen_oos_at'] or '-'} | **{item['duration_label']}** | {item['price_note']} |"
+                f"| `{item['domain']}` | {safe_title} | {item['variant_title']} | {p_str} ({item['price_note']}) | {rrp_str} | "
+                f"**{item['diagnosis']}** | {elsewhere} | **{item['duration_label']}** |"
             )
     else:
-        lines.append("_All tracked variants across monitored UK stockists are currently In Stock._")
+        lines.append("_All tracked variants across monitored UK retail stockists are currently In Stock._")
+
+    lines += [
+        "",
+        "### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)",
+        "",
+    ]
+    if dtc_oos_enriched:
+        lines += [
+            "| Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |",
+            "|---|---|---|---|---|",
+        ]
+        for item in dtc_oos_enriched:
+            p_str = f"£{item['current_price']:.2f}" if item["current_price"] else "-"
+            lines.append(
+                f"| `{item['domain']}` | {item['product_title'].replace('|', '—')} | {item['variant_title']} | {p_str} | {item['first_seen_oos_at'] or '-'} |"
+            )
+    else:
+        lines.append("_100% of active products on the official Brand DTC storefront are currently In Stock._")
 
     lines += [
         "",
         "---",
         "",
-        "## 2. Removed / Delisted Variants (Diffed Against Previous Scans)",
+        "## 2. Cross-Retailer Hero Assortment & RRP Price Comparison Matrix",
+        "",
+        "| Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |",
+        "|---|---|---|---|---|---|---|",
+    ]
+    for h in hero_benchmarks:
+        if not h["is_hero"]:
+            continue
+        dtc_lbl = f"✅ £{h['dtc_rrp']:.2f}" if (h["dtc_status"] == "IN_STOCK_ON_DTC" and h["dtc_rrp"]) else (
+            f"⚠️ OOS (£{h['dtc_rrp']:.2f})" if (h["dtc_status"] == "OOS_ON_DTC" and h["dtc_rrp"]) else "Retail Only"
+        )
+        in_str = ", ".join(f"`{d}`" for d in h["in_stock_in"]) or "-"
+        oos_str = ", ".join(f"**`{d}`**" for d in h["oos_in"]) or "-"
+        undercut_str = "; ".join(h["undercut_alerts"]) if h["undercut_alerts"] else "At RRP"
+        miss_str = ", ".join(f"`{d}`" for d in h["missing_in"][:5]) + (f" (+{len(h['missing_in'])-5} more)" if len(h["missing_in"]) > 5 else "")
+        lines.append(
+            f"| **{h['product_family']}** | {dtc_lbl} | **{h['stores_carrying']}/{h['total_stores']}** ({h['penetration_pct']}%) | {in_str} | {oos_str} | {undercut_str} | {miss_str or '_All Stockists_'} |"
+        )
+
+    lines += [
+        "",
+        "---",
+        "",
+        "## 3. Removed / Delisted Variants (Diffed Against Previous Scans)",
         "",
     ]
     if silent_removed:

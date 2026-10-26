@@ -1,12 +1,16 @@
 {
   "brand": "Oskia",
   "brand_slug": "oskia",
-  "generated_at": "2026-10-26T16:28:14+00:00",
+  "generated_at": "2026-10-26T17:11:01+00:00",
   "summary": {
     "monitored_uk_stores": 11,
-    "total_listed_skus_variants": 420,
-    "in_stock_skus_variants": 389,
+    "monitored_retail_stockists": 10,
+    "total_listed_skus_variants": 424,
+    "in_stock_skus_variants": 393,
     "out_of_stock_skus_variants": 31,
+    "retail_out_of_stock_variants": 18,
+    "unforced_retail_outages": 16,
+    "factory_shortages_on_dtc": 2,
     "silent_removed_skus": 0
   },
   "out_of_stock_alerts": [
@@ -31,8 +35,16 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £60.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-bedtime-beauty-boost-50ml::42904218304675",
@@ -55,8 +67,20 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £95.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 95.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-get-up-and-glow-serum-30ml::42904218042531",
@@ -64,7 +88,7 @@
       "brand": "Oskia",
       "product_title": "Oskia Skincare Get Up And Glow Serum 30ml",
       "variant_title": "30ml",
-      "normalized_product_key": "get_up_glow_serum",
+      "normalized_product_key": "get_up_and_glow_serum",
       "product_url": "https://www.alyaka.com/products/oskia-skincare-get-up-and-glow-serum-30ml",
       "sku_code": "5032410042719",
       "current_price": 62.5,
@@ -79,8 +103,17 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £75.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-micro-exfoliating-balm-50ml::42904217911459",
@@ -103,8 +136,18 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £60.00)",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "⚠️ FACTORY SHORTAGE (Also OOS on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-nutri-bronze-adaptive-sheer-tinted-serum-30ml::42904280826019",
@@ -112,7 +155,7 @@
       "brand": "Oskia",
       "product_title": "Oskia Skincare Nutri-Bronze Adaptive Sheer Tinted Serum 30ml",
       "variant_title": "30ml",
-      "normalized_product_key": "nutri_bronze_adaptive_sheer_tinted_serum",
+      "normalized_product_key": "nutri_bronze_tinted_serum",
       "product_url": "https://www.alyaka.com/products/oskia-skincare-nutri-bronze-adaptive-sheer-tinted-serum-30ml",
       "sku_code": "5032410042139",
       "current_price": 54.17,
@@ -127,8 +170,22 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £65.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-renaissance-brightlight-serum-30ml::42904218173603",
@@ -151,8 +208,18 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £95.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 95.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-renaissance-cleansing-gel-100ml::42904217878691",
@@ -160,7 +227,7 @@
       "brand": "Oskia",
       "product_title": "Oskia Skincare Renaissance Cleansing Gel 100ml",
       "variant_title": "100ml",
-      "normalized_product_key": "renaissance_cleansing_gel",
+      "normalized_product_key": "renaissance_cleansing_gel_100ml",
       "product_url": "https://www.alyaka.com/products/oskia-skincare-renaissance-cleansing-gel-100ml",
       "sku_code": "5032410041743",
       "current_price": 34.17,
@@ -175,8 +242,21 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £41.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 41.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-renaissance-cleansing-gel-35ml::42904258216099",
@@ -184,7 +264,7 @@
       "brand": "Oskia",
       "product_title": "Oskia Skincare Renaissance Cleansing Gel 35ml",
       "variant_title": "35ml",
-      "normalized_product_key": "renaissance_cleansing_gel",
+      "normalized_product_key": "renaissance_cleansing_gel_35ml",
       "product_url": "https://www.alyaka.com/products/oskia-renaissance-cleansing-gel-35ml",
       "sku_code": "5032410041170",
       "current_price": 15.83,
@@ -199,8 +279,18 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £19.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 19.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-renaissance-mask-50ml::42904218402979",
@@ -223,8 +313,22 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £75.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-restoration-oil-30ml::42904218435747",
@@ -247,8 +351,21 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -16% (DTC £80.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 80.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-super-16-procollagen-serum-30ml::42904218140835",
@@ -256,7 +373,7 @@
       "brand": "Oskia",
       "product_title": "Oskia Skincare Super 16 ProCollagen Serum 30ml",
       "variant_title": "30ml",
-      "normalized_product_key": "super_16_procollagen_serum",
+      "normalized_product_key": "super_16_pro_collagen_serum",
       "product_url": "https://www.alyaka.com/products/oskia-skincare-super-16-procollagen-serum-30ml",
       "sku_code": "5032410042016",
       "current_price": 83.33,
@@ -271,8 +388,22 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £100.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 100.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "alyaka.com::oskia::oskia-skincare-super-c-smart-nutrient-beauty-capsules::43206157336739",
@@ -280,7 +411,7 @@
       "brand": "Oskia",
       "product_title": "Oskia Skincare Super С Smart Nutrient Beauty Capsules",
       "variant_title": "Standard",
-      "normalized_product_key": "super_smart_nutrient_beauty_capsules",
+      "normalized_product_key": "super_c_beauty_capsules",
       "product_url": "https://www.alyaka.com/products/oskia-skincare-super-c-smart-nutrient-beauty-capsules",
       "sku_code": "5032410042061",
       "current_price": 62.5,
@@ -295,8 +426,22 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £75.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "bathandunwind.com::oskia::oskia-cleansing-gel-duo-worth-76",
@@ -304,7 +449,7 @@
       "brand": "Oskia",
       "product_title": "OSKIA Cleansing Gel Duo (Worth £76)",
       "variant_title": "Standard",
-      "normalized_product_key": "cleansing_gel_duo_worth",
+      "normalized_product_key": "renaissance_cleansing_gel_duo",
       "product_url": "https://www.bathandunwind.com/oskia-cleansing-gel-duo-worth-76/",
       "sku_code": "oskia-cleansing-gel-duo-worth-76",
       "current_price": 64.6,
@@ -314,13 +459,19 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T16:25:36+00:00",
-      "last_seen_at": "2026-10-26T16:25:36+00:00",
+      "last_seen_at": "2026-10-26T17:05:23+00:00",
       "first_seen_oos_at": "2026-10-26T16:25:36+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk"
+      ]
     },
     {
       "sku_key": "facethefuture.co.uk::oskia::oskia-adaptive-tan-drops::36275093635234",
@@ -328,7 +479,7 @@
       "brand": "Oskia",
       "product_title": "OSKIA Adaptive Tan Tri-Phase Self-Tanning Drops",
       "variant_title": "Standard",
-      "normalized_product_key": "adaptive_tan_tri_phase_self_tanning_drops",
+      "normalized_product_key": "adaptive_tan_drops",
       "product_url": "https://row.facethefuture.store/products/oskia-adaptive-tan-drops",
       "sku_code": "PCOD5957",
       "current_price": 75.0,
@@ -343,8 +494,17 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 4 other retailers)",
+      "in_stock_elsewhere": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "facethefuture.co.uk::oskia::oskia-citylife-facial-mist::36274985992354",
@@ -352,7 +512,7 @@
       "brand": "Oskia",
       "product_title": "OSKIA Citylife Facial Mist Anti-Pollution Beautifying Mist",
       "variant_title": "Standard",
-      "normalized_product_key": "citylife_facial_mist_anti_pollution_beautifying_mist",
+      "normalized_product_key": "citylife_facial_mist",
       "product_url": "https://row.facethefuture.store/products/oskia-citylife-facial-mist",
       "sku_code": "PCOD3362",
       "current_price": 47.0,
@@ -367,8 +527,16 @@
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
       "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price"
+      "days_oos": 0.03,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 3 other retailers)",
+      "in_stock_elsewhere": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
     },
     {
       "sku_key": "oskiaskincare.com::oskia::lactoferrin::48343960813890",
@@ -376,7 +544,7 @@
       "brand": "Oskia",
       "product_title": "Lactoferrin +",
       "variant_title": "Lactoferrin (60 capsules)",
-      "normalized_product_key": "lactoferrin",
+      "normalized_product_key": "lactoferrin_plus_supplement",
       "product_url": "https://www.oskiaskincare.com/products/lactoferrin",
       "sku_code": "OS194",
       "current_price": 70.0,
@@ -390,9 +558,13 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 70.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "oskiaskincare.com::oskia::lactoferrin::48344113119554",
@@ -400,7 +572,7 @@
       "brand": "Oskia",
       "product_title": "Lactoferrin +",
       "variant_title": "Lactoferrin Refill (60 capsules)",
-      "normalized_product_key": "lactoferrin",
+      "normalized_product_key": "lactoferrin_plus_supplement",
       "product_url": "https://www.oskiaskincare.com/products/lactoferrin",
       "sku_code": "OS181",
       "current_price": 62.0,
@@ -414,9 +586,13 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 62.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "oskiaskincare.com::oskia::micro-exfoliating-balm-50ml::45990684688706",
@@ -438,9 +614,19 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
     },
     {
       "sku_key": "oskiaskincare.com::oskia::nutri-active-day-cream-40ml::56794424148349",
@@ -462,9 +648,22 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 21.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "alyaka.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "oskiaskincare.com::oskia::oskia-vanity-case::53499299463549",
@@ -486,9 +685,13 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 65.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "oskiaskincare.com::oskia::red-mirror::57222089933181",
@@ -510,9 +713,13 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 18.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "oskiaskincare.com::oskia::renaissance-360-40ml::56794422182269",
@@ -534,9 +741,22 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 24.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "oskiaskincare.com::oskia::renaissance-body-treatment-milk-150ml::56794423755133",
@@ -558,9 +778,20 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 16.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "oskiaskincare.com::oskia::restoration-oil-30ml::56794434961789",
@@ -582,9 +813,22 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 22.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "oskiaskincare.com::oskia::rose-de-mai-massage-candle::46233258918210",
@@ -606,9 +850,13 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 58.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "oskiaskincare.com::oskia::super-c-capsules::55785120366973",
@@ -616,7 +864,7 @@
       "brand": "Oskia",
       "product_title": "Super C Beauty Capsules",
       "variant_title": "Travel Size Duo - 14 Capsules",
-      "normalized_product_key": "super_c_beauty_capsules",
+      "normalized_product_key": "super_c_super_r_duo",
       "product_url": "https://www.oskiaskincare.com/products/super-c-capsules",
       "sku_code": "OS258",
       "current_price": 21.0,
@@ -630,9 +878,16 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 21.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "oskiaskincare.com::oskia::super-skin-set::57366327132541",
@@ -654,9 +909,13 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 66.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "oskiaskincare.com::oskia::theraface-pro::46233494323522",
@@ -678,9 +937,13 @@
       "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:32 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 79.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "spacenk.com::oskia::adaptive-tan-tri-phase-self-tanning-drops-MUK200049855",
@@ -688,7 +951,7 @@
       "brand": "Oskia",
       "product_title": "Adaptive Tan Tri-Phase Self-Tanning Drops",
       "variant_title": "Standard",
-      "normalized_product_key": "adaptive_tan_tri_phase_self_tanning_drops",
+      "normalized_product_key": "adaptive_tan_drops",
       "product_url": "https://www.spacenk.com/uk/sun-tan/tanning/self-tanning/adaptive-tan-tri-phase-self-tanning-drops-MUK200049855.html",
       "sku_code": "adaptive-tan-tri-phase-self-tanning-drops-MUK200049855",
       "current_price": 75.0,
@@ -698,13 +961,22 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:34:21+00:00",
-      "last_seen_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_at": "2026-10-26T17:07:13+00:00",
       "first_seen_oos_at": "2026-10-26T15:34:21+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:34 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:34 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 4 other retailers)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
     },
     {
       "sku_key": "spacenk.com::oskia::msm-bio-plus-supplement-MUK200023519",
@@ -712,7 +984,7 @@
       "brand": "Oskia",
       "product_title": "MSM Bio-Plus Supplement",
       "variant_title": "Standard",
-      "normalized_product_key": "msm_bio_supplement",
+      "normalized_product_key": "msm_bio_plus_supplement",
       "product_url": "https://www.spacenk.com/uk/bath-body/wellness-gifts/supplements/msm-bio-plus-supplement-MUK200023519.html",
       "sku_code": "msm-bio-plus-supplement-MUK200023519",
       "current_price": null,
@@ -722,13 +994,25 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:34:21+00:00",
-      "last_seen_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_at": "2026-10-26T17:07:13+00:00",
       "first_seen_oos_at": "2026-10-26T15:34:21+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:34 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:34 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 70.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ]
     },
     {
       "sku_key": "spacenk.com::oskia::micro-exfoliating-balm-MUK200012768",
@@ -746,17 +1030,2648 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:34:21+00:00",
-      "last_seen_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_at": "2026-10-26T17:07:13+00:00",
       "first_seen_oos_at": "2026-10-26T15:34:21+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-10-26 15:34 UTC)",
-      "days_oos": 0.04,
-      "price_note": "Full Price"
+      "duration_label": "1h (first detected 2026-10-26 15:34 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "⚠️ FACTORY SHORTAGE (Also OOS on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    }
+  ],
+  "retail_out_of_stock_alerts": [
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-adaptive-tan-mist-100ml::42904249008291",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Adaptive Tan Mist 100ml",
+      "variant_title": "100ml",
+      "normalized_product_key": "adaptive_tan_mist",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-adaptive-tan-mist-100ml",
+      "sku_code": "5032410041156",
+      "current_price": 50.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £60.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-bedtime-beauty-boost-50ml::42904218304675",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Bedtime Beauty Boost 50ml",
+      "variant_title": "50ml",
+      "normalized_product_key": "bedtime_beauty_boost",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-bedtime-beauty-boost-50ml",
+      "sku_code": "5032410040319",
+      "current_price": 79.17,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £95.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 95.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-get-up-and-glow-serum-30ml::42904218042531",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Get Up And Glow Serum 30ml",
+      "variant_title": "30ml",
+      "normalized_product_key": "get_up_and_glow_serum",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-get-up-and-glow-serum-30ml",
+      "sku_code": "5032410042719",
+      "current_price": 62.5,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £75.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-micro-exfoliating-balm-50ml::42904217911459",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Micro Exfoliating Balm 50ml",
+      "variant_title": "50ml",
+      "normalized_product_key": "micro_exfoliating_balm",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-micro-exfoliating-balm-50ml",
+      "sku_code": "5032410040517",
+      "current_price": 50.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £60.00)",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "⚠️ FACTORY SHORTAGE (Also OOS on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-nutri-bronze-adaptive-sheer-tinted-serum-30ml::42904280826019",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Nutri-Bronze Adaptive Sheer Tinted Serum 30ml",
+      "variant_title": "30ml",
+      "normalized_product_key": "nutri_bronze_tinted_serum",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-nutri-bronze-adaptive-sheer-tinted-serum-30ml",
+      "sku_code": "5032410042139",
+      "current_price": 54.17,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £65.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-renaissance-brightlight-serum-30ml::42904218173603",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Renaissance Brightlight Serum 30ml",
+      "variant_title": "30ml",
+      "normalized_product_key": "renaissance_brightlight_serum",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-renaissance-brightlight-serum-30ml",
+      "sku_code": "5032410042429",
+      "current_price": 79.17,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £95.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 95.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-renaissance-cleansing-gel-100ml::42904217878691",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Renaissance Cleansing Gel 100ml",
+      "variant_title": "100ml",
+      "normalized_product_key": "renaissance_cleansing_gel_100ml",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-renaissance-cleansing-gel-100ml",
+      "sku_code": "5032410041743",
+      "current_price": 34.17,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £41.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 41.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-renaissance-cleansing-gel-35ml::42904258216099",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Renaissance Cleansing Gel 35ml",
+      "variant_title": "35ml",
+      "normalized_product_key": "renaissance_cleansing_gel_35ml",
+      "product_url": "https://www.alyaka.com/products/oskia-renaissance-cleansing-gel-35ml",
+      "sku_code": "5032410041170",
+      "current_price": 15.83,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £19.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 19.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-renaissance-mask-50ml::42904218402979",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Renaissance Mask 50ml",
+      "variant_title": "50ml",
+      "normalized_product_key": "renaissance_mask",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-renaissance-mask-50ml",
+      "sku_code": "5032410040715",
+      "current_price": 62.5,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £75.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-restoration-oil-30ml::42904218435747",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Restoration Oil 30ml",
+      "variant_title": "30ml",
+      "normalized_product_key": "restoration_oil",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-restoration-oil-30ml",
+      "sku_code": "5032410041927",
+      "current_price": 67.5,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -16% (DTC £80.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 80.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-super-16-procollagen-serum-30ml::42904218140835",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Super 16 ProCollagen Serum 30ml",
+      "variant_title": "30ml",
+      "normalized_product_key": "super_16_pro_collagen_serum",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-super-16-procollagen-serum-30ml",
+      "sku_code": "5032410042016",
+      "current_price": 83.33,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £100.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 100.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "alyaka.com::oskia::oskia-skincare-super-c-smart-nutrient-beauty-capsules::43206157336739",
+      "domain": "alyaka.com",
+      "brand": "Oskia",
+      "product_title": "Oskia Skincare Super С Smart Nutrient Beauty Capsules",
+      "variant_title": "Standard",
+      "normalized_product_key": "super_c_beauty_capsules",
+      "product_url": "https://www.alyaka.com/products/oskia-skincare-super-c-smart-nutrient-beauty-capsules",
+      "sku_code": "5032410042061",
+      "current_price": 62.5,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_at": "2026-10-26T16:25:17+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:17+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Below DTC RRP -17% (DTC £75.00)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "bathandunwind.com::oskia::oskia-cleansing-gel-duo-worth-76",
+      "domain": "bathandunwind.com",
+      "brand": "Oskia",
+      "product_title": "OSKIA Cleansing Gel Duo (Worth £76)",
+      "variant_title": "Standard",
+      "normalized_product_key": "renaissance_cleansing_gel_duo",
+      "product_url": "https://www.bathandunwind.com/oskia-cleansing-gel-duo-worth-76/",
+      "sku_code": "oskia-cleansing-gel-duo-worth-76",
+      "current_price": 64.6,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:36+00:00",
+      "last_seen_at": "2026-10-26T17:05:23+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:36+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk"
+      ]
+    },
+    {
+      "sku_key": "facethefuture.co.uk::oskia::oskia-adaptive-tan-drops::36275093635234",
+      "domain": "facethefuture.co.uk",
+      "brand": "Oskia",
+      "product_title": "OSKIA Adaptive Tan Tri-Phase Self-Tanning Drops",
+      "variant_title": "Standard",
+      "normalized_product_key": "adaptive_tan_drops",
+      "product_url": "https://row.facethefuture.store/products/oskia-adaptive-tan-drops",
+      "sku_code": "PCOD5957",
+      "current_price": 75.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:54+00:00",
+      "last_seen_at": "2026-10-26T16:25:54+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:54+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 4 other retailers)",
+      "in_stock_elsewhere": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "facethefuture.co.uk::oskia::oskia-citylife-facial-mist::36274985992354",
+      "domain": "facethefuture.co.uk",
+      "brand": "Oskia",
+      "product_title": "OSKIA Citylife Facial Mist Anti-Pollution Beautifying Mist",
+      "variant_title": "Standard",
+      "normalized_product_key": "citylife_facial_mist",
+      "product_url": "https://row.facethefuture.store/products/oskia-citylife-facial-mist",
+      "sku_code": "PCOD3362",
+      "current_price": 47.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T16:25:54+00:00",
+      "last_seen_at": "2026-10-26T16:25:54+00:00",
+      "first_seen_oos_at": "2026-10-26T16:25:54+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-26 16:25 UTC)",
+      "days_oos": 0.03,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 3 other retailers)",
+      "in_stock_elsewhere": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    },
+    {
+      "sku_key": "spacenk.com::oskia::adaptive-tan-tri-phase-self-tanning-drops-MUK200049855",
+      "domain": "spacenk.com",
+      "brand": "Oskia",
+      "product_title": "Adaptive Tan Tri-Phase Self-Tanning Drops",
+      "variant_title": "Standard",
+      "normalized_product_key": "adaptive_tan_drops",
+      "product_url": "https://www.spacenk.com/uk/sun-tan/tanning/self-tanning/adaptive-tan-tri-phase-self-tanning-drops-MUK200049855.html",
+      "sku_code": "adaptive-tan-tri-phase-self-tanning-drops-MUK200049855",
+      "current_price": 75.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_at": "2026-10-26T17:07:13+00:00",
+      "first_seen_oos_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:34 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 4 other retailers)",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    },
+    {
+      "sku_key": "spacenk.com::oskia::msm-bio-plus-supplement-MUK200023519",
+      "domain": "spacenk.com",
+      "brand": "Oskia",
+      "product_title": "MSM Bio-Plus Supplement",
+      "variant_title": "Standard",
+      "normalized_product_key": "msm_bio_plus_supplement",
+      "product_url": "https://www.spacenk.com/uk/bath-body/wellness-gifts/supplements/msm-bio-plus-supplement-MUK200023519.html",
+      "sku_code": "msm-bio-plus-supplement-MUK200023519",
+      "current_price": null,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_at": "2026-10-26T17:07:13+00:00",
+      "first_seen_oos_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:34 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 70.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ]
+    },
+    {
+      "sku_key": "spacenk.com::oskia::micro-exfoliating-balm-MUK200012768",
+      "domain": "spacenk.com",
+      "brand": "Oskia",
+      "product_title": "Micro Exfoliating Balm",
+      "variant_title": "Standard",
+      "normalized_product_key": "micro_exfoliating_balm",
+      "product_url": "https://www.spacenk.com/uk/skincare/cleansers/scrubs-exfoliants/micro-exfoliating-balm-MUK200012768.html",
+      "sku_code": "micro-exfoliating-balm-MUK200012768",
+      "current_price": 60.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_at": "2026-10-26T17:07:13+00:00",
+      "first_seen_oos_at": "2026-10-26T15:34:21+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:34 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "⚠️ FACTORY SHORTAGE (Also OOS on DTC)",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    }
+  ],
+  "dtc_out_of_stock": [
+    {
+      "sku_key": "oskiaskincare.com::oskia::lactoferrin::48343960813890",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Lactoferrin +",
+      "variant_title": "Lactoferrin (60 capsules)",
+      "normalized_product_key": "lactoferrin_plus_supplement",
+      "product_url": "https://www.oskiaskincare.com/products/lactoferrin",
+      "sku_code": "OS194",
+      "current_price": 70.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 70.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::lactoferrin::48344113119554",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Lactoferrin +",
+      "variant_title": "Lactoferrin Refill (60 capsules)",
+      "normalized_product_key": "lactoferrin_plus_supplement",
+      "product_url": "https://www.oskiaskincare.com/products/lactoferrin",
+      "sku_code": "OS181",
+      "current_price": 62.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 62.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::micro-exfoliating-balm-50ml::45990684688706",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Micro Exfoliating Balm",
+      "variant_title": "Standard",
+      "normalized_product_key": "micro_exfoliating_balm",
+      "product_url": "https://www.oskiaskincare.com/products/micro-exfoliating-balm-50ml",
+      "sku_code": "OS105",
+      "current_price": 60.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 60.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ]
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::nutri-active-day-cream-40ml::56794424148349",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Nutri-Active Day Cream",
+      "variant_title": "Travel size - 10ml",
+      "normalized_product_key": "nutri_active_day_cream",
+      "product_url": "https://www.oskiaskincare.com/products/nutri-active-day-cream-40ml",
+      "sku_code": "OS238.BOX",
+      "current_price": 21.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 21.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "alyaka.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::oskia-vanity-case::53499299463549",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "OSKIA Vanity Case",
+      "variant_title": "Standard",
+      "normalized_product_key": "vanity_case",
+      "product_url": "https://www.oskiaskincare.com/products/oskia-vanity-case",
+      "sku_code": "OS522",
+      "current_price": 65.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 65.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::red-mirror::57222089933181",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Red Mirror",
+      "variant_title": "Standard",
+      "normalized_product_key": "red_mirror",
+      "product_url": "https://www.oskiaskincare.com/products/red-mirror",
+      "sku_code": "OS524",
+      "current_price": 18.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 18.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::renaissance-360-40ml::56794422182269",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Renaissance 360",
+      "variant_title": "Travel size - 10ml",
+      "normalized_product_key": "renaissance_360",
+      "product_url": "https://www.oskiaskincare.com/products/renaissance-360-40ml",
+      "sku_code": "OS239.BOX",
+      "current_price": 24.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 24.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::renaissance-body-treatment-milk-150ml::56794423755133",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Renaissance Body Treatment Milk",
+      "variant_title": "Travel Size - 30ml",
+      "normalized_product_key": "renaissance_body_treatment_milk",
+      "product_url": "https://www.oskiaskincare.com/products/renaissance-body-treatment-milk-150ml",
+      "sku_code": "OS254",
+      "current_price": 16.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 16.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::restoration-oil-30ml::56794434961789",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Restoration Oil",
+      "variant_title": "Travel size - 5.5ml",
+      "normalized_product_key": "restoration_oil",
+      "product_url": "https://www.oskiaskincare.com/products/restoration-oil-30ml",
+      "sku_code": "OS235.BOX",
+      "current_price": 22.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 22.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::rose-de-mai-massage-candle::46233258918210",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Rose de Mai Treatment Candle",
+      "variant_title": "Standard",
+      "normalized_product_key": "rose_de_mai_treatment_candle",
+      "product_url": "https://www.oskiaskincare.com/products/rose-de-mai-massage-candle",
+      "sku_code": "OS408",
+      "current_price": 58.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 58.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::super-c-capsules::55785120366973",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Super C Beauty Capsules",
+      "variant_title": "Travel Size Duo - 14 Capsules",
+      "normalized_product_key": "super_c_super_r_duo",
+      "product_url": "https://www.oskiaskincare.com/products/super-c-capsules",
+      "sku_code": "OS258",
+      "current_price": 21.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 21.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ]
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::super-skin-set::57366327132541",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Super Skin Set",
+      "variant_title": "Standard",
+      "normalized_product_key": "super_skin_set",
+      "product_url": "https://www.oskiaskincare.com/products/super-skin-set",
+      "sku_code": "OS550",
+      "current_price": 66.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 66.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "oskiaskincare.com::oskia::theraface-pro::46233494323522",
+      "domain": "oskiaskincare.com",
+      "brand": "Oskia",
+      "product_title": "Theraface Pro Hot & Cold Attachment",
+      "variant_title": "Standard",
+      "normalized_product_key": "theraface_pro_hot_cold_attachment",
+      "product_url": "https://www.oskiaskincare.com/products/theraface-pro",
+      "sku_code": "OS504",
+      "current_price": 79.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_at": "2026-10-26T15:32:43+00:00",
+      "first_seen_oos_at": "2026-10-26T15:32:43+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "1h (first detected 2026-10-26 15:32 UTC)",
+      "days_oos": 0.07,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 79.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    }
+  ],
+  "hero_benchmarks": [
+    {
+      "normalized_key": "nutri_bronze_tinted_serum",
+      "product_family": "Oskia Nutri-Bronze Adaptive Tinted Serum",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "stores_carrying": 10,
+      "total_stores": 10,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [],
+      "undercut_alerts": [
+        "`alyaka.com` £54.17 (-17% vs RRP)",
+        "`lookfantastic.com` £48.75 (-25% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "renaissance_mask",
+      "product_family": "Renaissance Mask",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "stores_carrying": 10,
+      "total_stores": 10,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [],
+      "undercut_alerts": [
+        "`alyaka.com` £62.50 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "super_16_pro_collagen_serum",
+      "product_family": "Super 16",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 100.0,
+      "stores_carrying": 10,
+      "total_stores": 10,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [],
+      "undercut_alerts": [
+        "`alyaka.com` £83.33 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "super_c_beauty_capsules",
+      "product_family": "Super C Beauty Capsules",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "stores_carrying": 10,
+      "total_stores": 10,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [],
+      "undercut_alerts": [
+        "`alyaka.com` £62.50 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "isotonic_hydra_serum",
+      "product_family": "Isotonic Electrolyte Hydra-Serum",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "stores_carrying": 9,
+      "total_stores": 10,
+      "penetration_pct": 90,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "renaissance_cleansing_gel_100ml",
+      "product_family": "Renaissance Cleansing Gel (100ml)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 41.0,
+      "stores_carrying": 9,
+      "total_stores": 10,
+      "penetration_pct": 90,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [
+        "houseoffraser.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £34.17 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "restoration_oil",
+      "product_family": "Restoration Oil",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 80.0,
+      "stores_carrying": 9,
+      "total_stores": 10,
+      "penetration_pct": 90,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £67.50 (-16% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "super_r_retinoid_capsules",
+      "product_family": "Super-R Retinoid Capsules 0.5% HRP",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 80.0,
+      "stores_carrying": 9,
+      "total_stores": 10,
+      "penetration_pct": 90,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "houseoffraser.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £53.33 (-33% vs RRP)",
+        "`facethefuture.co.uk` £63.99 (-20% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "bedtime_beauty_boost",
+      "product_family": "Bedtime Beauty Boost",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 95.0,
+      "stores_carrying": 8,
+      "total_stores": 10,
+      "penetration_pct": 80,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [
+        "bathandunwind.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £79.17 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "liquid_mask_lactic_acid",
+      "product_family": "Liquid Mask 10% Lactic Acid Overnight Peel",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 70.0,
+      "stores_carrying": 8,
+      "total_stores": 10,
+      "penetration_pct": 80,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "msm_bio_plus_supplement",
+      "product_family": "MSM Bio-Plus Supplement",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 70.0,
+      "stores_carrying": 8,
+      "total_stores": 10,
+      "penetration_pct": 80,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "oos_in": [
+        "spacenk.com"
+      ],
+      "missing_in": [
+        "alyaka.com",
+        "facethefuture.co.uk"
+      ],
+      "undercut_alerts": [
+        "`lookfantastic.com` £63.00 (-10% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "nutri_active_day_cream",
+      "product_family": "Nutri-Active Day Cream",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 70.0,
+      "stores_carrying": 8,
+      "total_stores": 10,
+      "penetration_pct": 80,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "bathandunwind.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £46.67 (-33% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "renaissance_360",
+      "product_family": "Renaissance 360",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 80.0,
+      "stores_carrying": 8,
+      "total_stores": 10,
+      "penetration_pct": 80,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "eye_wonder_serum",
+      "product_family": "Eye Wonder",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 60.0,
+      "stores_carrying": 7,
+      "total_stores": 10,
+      "penetration_pct": 70,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £40.00 (-33% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "micro_exfoliating_balm",
+      "product_family": "Micro Exfoliating Balm",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 60.0,
+      "stores_carrying": 7,
+      "total_stores": 10,
+      "penetration_pct": 70,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [
+        "alyaka.com",
+        "spacenk.com"
+      ],
+      "missing_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £50.00 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "midnight_elixir_serum",
+      "product_family": "Midnight Elixir",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 165.0,
+      "stores_carrying": 7,
+      "total_stores": 10,
+      "penetration_pct": 70,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "houseoffraser.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "midnight_eye_q",
+      "product_family": "Midnight Eye-Q",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 90.0,
+      "stores_carrying": 7,
+      "total_stores": 10,
+      "penetration_pct": 70,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com"
+      ],
+      "undercut_alerts": [
+        "`bathandunwind.com` £70.00 (-22% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "rest_day_comfort_cream",
+      "product_family": "Rest Day Comfort Cream",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "stores_carrying": 7,
+      "total_stores": 10,
+      "penetration_pct": 70,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "floral_water_toner",
+      "product_family": "Floral Water - Organic Rose Water + MSM Toner",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 59.0,
+      "stores_carrying": 6,
+      "total_stores": 10,
+      "penetration_pct": 60,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`lookfantastic.com` £12.60 (-79% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "renaissance_body_scrub",
+      "product_family": "Oskia Renaissance Body Scrub",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 48.0,
+      "stores_carrying": 6,
+      "total_stores": 10,
+      "penetration_pct": 60,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "renaissance_body_treatment_milk",
+      "product_family": "Renaissance Body Treatment Milk",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 48.0,
+      "stores_carrying": 6,
+      "total_stores": 10,
+      "penetration_pct": 60,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "renaissance_brightlight_serum",
+      "product_family": "Oskia Renaissance Brightlight",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 95.0,
+      "stores_carrying": 6,
+      "total_stores": 10,
+      "penetration_pct": 60,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £79.17 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "renaissance_cleansing_gel_35ml",
+      "product_family": "Renaissance Cleansing Gel (35ml Travel)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 19.0,
+      "stores_carrying": 6,
+      "total_stores": 10,
+      "penetration_pct": 60,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £15.83 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "adaptive_tan_drops",
+      "product_family": "Oskia Adaptive Tan Drops",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "citylife_cleansing_concentrate",
+      "product_family": "Oskia CityLife Cleansing Concentrate",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 39.0,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "get_up_and_glow_serum",
+      "product_family": "Oskia Get Up & Glow",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 75.0,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £62.50 (-17% vs RRP)",
+        "`facethefuture.co.uk` £48.74 (-35% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "perfect_cleanser",
+      "product_family": "Perfect Cleanser",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 41.0,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £26.67 (-35% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "renaissance_cleansing_gel_200ml",
+      "product_family": "Renaissance Cleansing Gel (200ml Supersize)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 69.0,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "rest_day_cleansing_milk",
+      "product_family": "Rest Day Cleansing Milk",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 41.0,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £26.67 (-35% vs RRP)",
+        "`facethefuture.co.uk` £26.64 (-35% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "universal_hyaluronic_acid_serum",
+      "product_family": "Universal Hyaluronic Acid Serum",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "violet_water_bha_tonic",
+      "product_family": "Violet Water Treatment Tonic",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 40.0,
+      "stores_carrying": 5,
+      "total_stores": 10,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "bathandunwind.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £26.67 (-33% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "adaptive_tan_mist",
+      "product_family": "Oskia Adaptive Tan Mist",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 60.0,
+      "stores_carrying": 4,
+      "total_stores": 10,
+      "penetration_pct": 40,
+      "is_hero": true,
+      "in_stock_in": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [
+        "alyaka.com"
+      ],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £50.00 (-17% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "citylife_defence_concentrate",
+      "product_family": "Oskia CityLife Intense Anti-Pollution Defence Concentrate",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 120.0,
+      "stores_carrying": 4,
+      "total_stores": 10,
+      "penetration_pct": 40,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £80.00 (-33% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "citylife_eye_balm",
+      "product_family": "Oskia CityLife I-Zone Balm",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 52.0,
+      "stores_carrying": 4,
+      "total_stores": 10,
+      "penetration_pct": 40,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`facethefuture.co.uk` £33.79 (-35% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "citylife_facial_mist",
+      "product_family": "Oskia CityLife Facial Mist",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 4,
+      "total_stores": 10,
+      "penetration_pct": 40,
+      "is_hero": true,
+      "in_stock_in": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [
+        "facethefuture.co.uk"
+      ],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "moon_salts",
+      "product_family": "Moon Salts",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 70.0,
+      "stores_carrying": 4,
+      "total_stores": 10,
+      "penetration_pct": 40,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "spf30_vitamin_face_cream",
+      "product_family": "Oskia SPF30 Vitamin Face Cream",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "stores_carrying": 4,
+      "total_stores": 10,
+      "penetration_pct": 40,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`facethefuture.co.uk` £51.99 (-20% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "violet_water_clearing_cleanser",
+      "product_family": "Violet Water Clearing Cleanser",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 36.0,
+      "stores_carrying": 4,
+      "total_stores": 10,
+      "penetration_pct": 40,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "bathandunwind.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £23.33 (-35% vs RRP)",
+        "`facethefuture.co.uk` £23.39 (-35% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "cupid_s_bow_lip_balm",
+      "product_family": "Oskia Cupid's Bow Lip Balm",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 10,
+      "penetration_pct": 30,
+      "is_hero": true,
+      "in_stock_in": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "h2glow_serum",
+      "product_family": "H2Glow",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 65.0,
+      "stores_carrying": 3,
+      "total_stores": 10,
+      "penetration_pct": 30,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "renaissance_hand_cream",
+      "product_family": "Renaissance Hand Cream",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 32.0,
+      "stores_carrying": 3,
+      "total_stores": 10,
+      "penetration_pct": 30,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "facethefuture.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £20.83 (-35% vs RRP)",
+        "`bathandunwind.com` £26.00 (-19% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "retinoid_sleep_serum",
+      "product_family": "Oskia Retinoid Sleep Serum",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 10,
+      "penetration_pct": 30,
+      "is_hero": true,
+      "in_stock_in": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "retinoid_sleep_serum_level_1",
+      "product_family": "Oskia Retinoid Sleep Serum Level 1",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 10,
+      "penetration_pct": 30,
+      "is_hero": true,
+      "in_stock_in": [
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "violet_water_hydra_gel",
+      "product_family": "Violet Water Hydra-Gel",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 55.0,
+      "stores_carrying": 3,
+      "total_stores": 10,
+      "penetration_pct": 30,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "vitamin_e_bath_oil",
+      "product_family": "Vitamin E Bath Oil",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 80.0,
+      "stores_carrying": 3,
+      "total_stores": 10,
+      "penetration_pct": 30,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`facethefuture.co.uk` £67.99 (-15% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "deeper_sleep_body_oil",
+      "product_family": "Deeper Sleep Body Oil",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 42.0,
+      "stores_carrying": 2,
+      "total_stores": 10,
+      "penetration_pct": 20,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "renaissance_cleansing_gel_duo",
+      "product_family": "OSKIA Cleansing Gel Duo (Worth £76)",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 10,
+      "penetration_pct": 20,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "facethefuture.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "rest_day_barrier_repair_balm",
+      "product_family": "Rest Day Barrier Repair Balm",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 70.0,
+      "stores_carrying": 2,
+      "total_stores": 10,
+      "penetration_pct": 20,
+      "is_hero": true,
+      "in_stock_in": [
+        "bathandunwind.com",
+        "facethefuture.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "spf30_vitamin_milk_sunscreen",
+      "product_family": "SPF 30 Vitamin Milk Sunscreen",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 50.0,
+      "stores_carrying": 2,
+      "total_stores": 10,
+      "penetration_pct": 20,
+      "is_hero": true,
+      "in_stock_in": [
+        "alyaka.com",
+        "facethefuture.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": [
+        "`alyaka.com` £33.33 (-33% vs RRP)",
+        "`facethefuture.co.uk` £34.29 (-31% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "super_c_super_r_duo",
+      "product_family": "Super C Beauty Capsules",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 21.0,
+      "stores_carrying": 2,
+      "total_stores": 10,
+      "penetration_pct": 20,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "facethefuture.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "violet_water_d_spot",
+      "product_family": "Violet Water D-Spot",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 28.0,
+      "stores_carrying": 2,
+      "total_stores": 10,
+      "penetration_pct": 20,
+      "is_hero": true,
+      "in_stock_in": [
+        "facethefuture.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "cultbeauty.co.uk",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "vitamin_eye_makeup_remover",
+      "product_family": "Vitamin Eye Make Up Remover",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 44.0,
+      "stores_carrying": 2,
+      "total_stores": 10,
+      "penetration_pct": 20,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "facethefuture.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "alyaka.com",
+        "bathandunwind.com",
+        "flannels.com",
+        "harveynichols.com",
+        "houseoffraser.co.uk",
+        "lookfantastic.com",
+        "ohmycream.co.uk",
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
     }
   ],
   "silent_removals": [],
   "recent_events": [
+    {
+      "id": 2711,
+      "occurred_at": "2026-10-26T17:07:13+00:00",
+      "domain": "spacenk.com",
+      "brand": "Oskia",
+      "sku_key": "spacenk.com::oskia::renaissance-cleansing-gel-MUK200013165",
+      "product_title": "Renaissance Cleansing Gel",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 69.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T15:34:21+00:00)"
+    },
+    {
+      "id": 2710,
+      "occurred_at": "2026-10-26T17:07:13+00:00",
+      "domain": "spacenk.com",
+      "brand": "Oskia",
+      "sku_key": "spacenk.com::oskia::UK200029391",
+      "product_title": "Oskia Renaissance Cleansing Gel Illuminating Vitamin Melting Cleanser 200ml",
+      "variant_title": "200ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 69.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 2709,
+      "occurred_at": "2026-10-26T17:07:13+00:00",
+      "domain": "spacenk.com",
+      "brand": "Oskia",
+      "sku_key": "spacenk.com::oskia::UK200021613",
+      "product_title": "Oskia Renaissance Cleansing Gel Illuminating Vitamin Melting Cleanser 35ml",
+      "variant_title": "35ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 19.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 2708,
+      "occurred_at": "2026-10-26T17:07:13+00:00",
+      "domain": "spacenk.com",
+      "brand": "Oskia",
+      "sku_key": "spacenk.com::oskia::UK200013165",
+      "product_title": "Oskia Renaissance Cleansing Gel 100ml",
+      "variant_title": "100ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 41.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 2707,
+      "occurred_at": "2026-10-26T17:06:36+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Oskia",
+      "sku_key": "lookfantastic.com::oskia::p_oskia-restoration-oil-5.5ml_13321558",
+      "product_title": "OSKIA Restoration Oil 5.5ml",
+      "variant_title": "5ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 80.0,
+      "new_price": 22.0,
+      "details": "Price changed 80.0 -> 22"
+    },
+    {
+      "id": 2706,
+      "occurred_at": "2026-10-26T17:06:36+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Oskia",
+      "sku_key": "lookfantastic.com::oskia::p_oskia-renaissance-cleansing-gel-200ml_11568780",
+      "product_title": "OSKIA Renaissance Cleansing Gel (200ml)",
+      "variant_title": "200ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 41.0,
+      "new_price": 69.0,
+      "details": "Price changed 41.0 -> 69"
+    },
+    {
+      "id": 2705,
+      "occurred_at": "2026-10-26T17:05:52+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Oskia",
+      "sku_key": "cultbeauty.co.uk::oskia::p_beauty-box_the-cult-beauty-advent-calendar-special-edition-worth-over-1-100_17921439",
+      "product_title": "Oskia Renaissance Cleansing Gel Illuminating Vitamin Melting Cleanser 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 145.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T15:33:11+00:00)"
+    },
+    {
+      "id": 2704,
+      "occurred_at": "2026-10-26T17:05:52+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Oskia",
+      "sku_key": "cultbeauty.co.uk::oskia::p_oskia-restoration-oil-5.5ml_13321558",
+      "product_title": "OSKIA Restoration Oil 5.5ml",
+      "variant_title": "5ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 80.0,
+      "new_price": 22.0,
+      "details": "Price changed 80.0 -> 22"
+    },
+    {
+      "id": 2703,
+      "occurred_at": "2026-10-26T17:05:52+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Oskia",
+      "sku_key": "cultbeauty.co.uk::oskia::p_oskia-renaissance-cleansing-gel-200ml_11568780",
+      "product_title": "Oskia Renaissance Cleansing Gel Illuminating Vitamin Melting Cleanser 200ml",
+      "variant_title": "200ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 41.0,
+      "new_price": 69.0,
+      "details": "Price changed 41.0 -> 69"
+    },
+    {
+      "id": 2702,
+      "occurred_at": "2026-10-26T17:05:23+00:00",
+      "domain": "bathandunwind.com",
+      "brand": "Oskia",
+      "sku_key": "bathandunwind.com::oskia::oskia-renaissance-cleansing-gel-1",
+      "product_title": "OSKIA Renaissance Cleansing Gel",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 61.2,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T16:25:36+00:00)"
+    },
+    {
+      "id": 2701,
+      "occurred_at": "2026-10-26T17:05:23+00:00",
+      "domain": "bathandunwind.com",
+      "brand": "Oskia",
+      "sku_key": "bathandunwind.com::oskia::oskia-renaissance-cleansing-gel-1::2-x-100ml-20-off",
+      "product_title": "OSKIA Renaissance Cleansing Gel (2 x 100ml (20% off))",
+      "variant_title": "2 x 100ml (20% off)",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 61.2,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 2700,
+      "occurred_at": "2026-10-26T17:05:23+00:00",
+      "domain": "bathandunwind.com",
+      "brand": "Oskia",
+      "sku_key": "bathandunwind.com::oskia::oskia-renaissance-cleansing-gel-1::100ml",
+      "product_title": "OSKIA Renaissance Cleansing Gel (100ml)",
+      "variant_title": "100ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 41.0,
+      "details": "Initial discovery"
+    },
     {
       "id": 2699,
       "occurred_at": "2026-10-26T16:27:11+00:00",
@@ -1249,162 +4164,6 @@
       "event_type": "NEW_IN_STOCK",
       "old_price": null,
       "new_price": 68.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2661,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-rest-day-comfort-cream-716054",
-      "product_title": "Oskia Rest Day Comfort Cream",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 62.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2660,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-perfect-cleanser-774525",
-      "product_title": "Oskia Perfect Cleanser",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 39.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2659,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-citylife-cleansing-concentrate-774526",
-      "product_title": "Oskia CityLife Cleansing Concentrate",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 38.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2658,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-rest-day-cleansing-milk-774527",
-      "product_title": "Oskia Rest Day Cleansing Milk",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 39.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2657,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-super-16-774530",
-      "product_title": "Oskia Super 16",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 97.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2656,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-renaissance-brightlight-774531",
-      "product_title": "Oskia Renaissance Brightlight",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 97.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2655,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-nutri-active-day-cream-774535",
-      "product_title": "Oskia Nutri-Active Day Cream",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 72.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2654,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-bedtime-beauty-boost-774536",
-      "product_title": "Oskia Bedtime Beauty Boost",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 96.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2653,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-renaissance-360-774537",
-      "product_title": "Oskia Renaissance 360",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 80.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2652,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-adaptive-tan-mist-774538",
-      "product_title": "Oskia Adaptive Tan Mist",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 60.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2651,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-adaptive-tan-drops-774539",
-      "product_title": "Oskia Adaptive Tan Drops",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 76.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 2650,
-      "occurred_at": "2026-10-26T16:26:48+00:00",
-      "domain": "harveynichols.com",
-      "brand": "Oskia",
-      "sku_key": "harveynichols.com::oskia::oskia-spf30-vitamin-mist-774541",
-      "product_title": "Oskia SPF30 Vitamin Mist",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 49.0,
       "details": "Initial discovery"
     }
   ]
