@@ -567,7 +567,7 @@ export default function BrandClient({ initialData }) {
         </div>
       </header>
 
-      {/* MODE 1: PRODUCT-CENTERED LIST VIEW */}
+      {/* MODE 1: FLAT ZERO-CLICK LIST VIEW */}
       {displayMode === 'list' && (
         <div className="list-scroll-body">
           {oosProductGroups.length === 0 && totalRetailStores > 0 && (
@@ -577,186 +577,51 @@ export default function BrandClient({ initialData }) {
           )}
 
           {oosProductGroups.length > 0 && (
-            <div className="list-toolbar">
-              <span className="list-toolbar-label">
-                Out-of-Stock Products ({oosProductGroups.length}) — Ordered by OOS Duration
-              </span>
-              <button className="list-expand-btn" onClick={toggleExpandAll}>
-                {allOosExpanded ? 'Collapse all ▴' : 'Expand all ▾'}
-              </button>
-            </div>
-          )}
-
-          {oosProductGroups.map(grp => {
-            const isExpanded = expandedProducts.has(grp.productKey);
-            const storeListPreview = Array.from(grp.oosStores).join(', ');
-            const storeCount = grp.oosStores.size;
-
-            return (
-              <section key={grp.productKey} className={`store-group ${isExpanded ? 'expanded' : ''}`}>
-                <div className="store-group-header" onClick={() => toggleProduct(grp.productKey)}>
-                  <div className="store-header-left">
-                    <span className="store-chevron">{isExpanded ? '▾' : '▸'}</span>
-                    <span className="list-duration-lead">{calcOutOfStockBadge(grp.oldestOosAt)}</span>
+            <ul className="flat-oos-list">
+              {oosProductGroups
+                .flatMap(grp => grp.consolidatedOosStores.map(stRow => ({ grp, stRow })))
+                .sort((a, b) => {
+                  const aTs = a.stRow.oldestOosAt || '9999';
+                  const bTs = b.stRow.oldestOosAt || '9999';
+                  if (aTs !== bTs) return aTs.localeCompare(bTs);
+                  return a.grp.displayName.localeCompare(b.grp.displayName);
+                })
+                .map(({ grp, stRow }) => (
+                  <li key={`${grp.productKey}__${stRow.domain}`} className="flat-oos-row">
+                    <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
                     <span className="store-domain">{grp.displayName}</span>
-                    {!isExpanded && (
-                      <span className="collapsed-preview">— {storeListPreview}</span>
-                    )}
-                  </div>
 
-                  <div className="store-meta" onClick={e => e.stopPropagation()}>
-                    <span
-                      className="store-oos-count"
-                      style={{ cursor: 'pointer' }}
-                      onClick={() => toggleProduct(grp.productKey)}
-                    >
-                      {storeCount}/{grp.allRetailStores.size} stockists
-                    </span>
-                    <button className="btn-plain btn-xs" onClick={() => copyList(grp.productKey)}>
-                      Copy
-                    </button>
-                  </div>
-                </div>
+                    {stRow.variants.map(v => {
+                      const hasNamedSize =
+                        v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
+                      const numP =
+                        v.current_price !== null && v.current_price !== undefined
+                          ? Number(v.current_price)
+                          : null;
+                      const price = numP !== null ? `£${numP.toFixed(2)}` : '';
 
-                {isExpanded && (
-                  <ul className="sku-list">
-                    {grp.consolidatedOosStores.map(stRow => {
+                      if (!hasNamedSize && !price) return null;
                       return (
-                        <li key={stRow.domain} className="sku-item">
-                          <span className="sku-store-domain">{stRow.domain}</span>
-
-                          {stRow.variants.map(v => {
-                            const hasNamedSize =
-                              v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
-                            const numP =
-                              v.current_price !== null && v.current_price !== undefined
-                                ? Number(v.current_price)
-                                : null;
-                            const price = numP !== null ? `£${numP.toFixed(2)}` : '';
-
-                            if (!hasNamedSize && !price) return null;
-                            return (
-                              <span key={v.sku_key} className="var-pill">
-                                {hasNamedSize && <span>{v.variant_title}</span>}
-                                {price && <span className="var-pill-price">{price}</span>}
-                              </span>
-                            );
-                          })}
-
-                          <span className="sku-oos-age">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
-
-                          <a
-                            href={stRow.primaryUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="sku-open"
-                            title="Open product page on stockist"
-                          >
-                            ↗
-                          </a>
-                        </li>
+                        <span key={v.sku_key} className="var-pill">
+                          {hasNamedSize && <span>{v.variant_title}</span>}
+                          {price && <span className="var-pill-price">{price}</span>}
+                        </span>
                       );
                     })}
-                    <li className="sku-item sku-item-instock">
-                      <span>
-                        {grp.inStockStores.size > 0 ? (
-                          <>
-                            <strong style={{ color: 'var(--green)' }}>
-                              In stock at {grp.inStockStores.size}/{grp.allRetailStores.size} stockists:
-                            </strong>{' '}
-                            {Array.from(grp.inStockStores).join(', ')}
-                          </>
-                        ) : (
-                          <strong style={{ color: 'var(--red)' }}>Out of stock at all tracked retail stockists</strong>
-                        )}
-                        {grp.dtcStatus !== 'RETAIL_ONLY' && (
-                          <>
-                            {' · '}
-                            <strong>Official DTC:</strong>{' '}
-                            <span style={{ color: grp.dtcStatus === 'IN_STOCK' ? 'var(--green)' : 'var(--red)', fontWeight: 600 }}>
-                              {grp.dtcStatus === 'IN_STOCK'
-                                ? `In Stock${grp.dtcRrp ? ` (£${grp.dtcRrp.toFixed(2)})` : ''}`
-                                : 'OOS'}
-                            </span>
-                          </>
-                        )}
-                      </span>
-                    </li>
-                  </ul>
-                )}
-              </section>
-            );
-          })}
 
-          {healthyProductGroups.length > 0 && (
-            <div className="healthy-section">
-              <button
-                className="healthy-toggle"
-                onClick={() => setShowHealthyProducts(v => !v)}
-              >
-                <span>
-                  {showHealthyProducts ? '▾' : '▸'} {healthyProductGroups.length} other {brand.name} product
-                  {healthyProductGroups.length === 1 ? ' has' : 's have'} 0 retail OOS — 100% in stock at their listed UK stockists
-                </span>
-                <span style={{ fontSize: '0.78rem', color: 'var(--subtle)' }}>
-                  {showHealthyProducts ? 'Hide stockist & RRP matrix' : 'View stockist & RRP matrix'}
-                </span>
-              </button>
-
-              {showHealthyProducts && (
-                <div className="healthy-rows">
-                  {healthyProductGroups.map(g => (
-                    <div key={g.productKey} className="healthy-row">
-                      <div className="healthy-prod-name">
-                        {g.displayName}
-                        {g.dtcRrp && (
-                          <span className="sku-variant" style={{ marginLeft: 6 }}>
-                            (DTC RRP £{g.dtcRrp.toFixed(2)})
-                          </span>
-                        )}
-                      </div>
-
-                      <div className="healthy-pills">
-                        {g.consolidatedInStockStores.map(st => {
-                          const firstVar = st.variants[0];
-                          const numP =
-                            firstVar?.current_price !== null && firstVar?.current_price !== undefined
-                              ? Number(firstVar.current_price)
-                              : null;
-                          const undercutPct =
-                            numP !== null && g.dtcRrp && numP < g.dtcRrp * 0.92
-                              ? Math.round(100 * (1 - numP / g.dtcRrp))
-                              : 0;
-                          const priceStr =
-                            numP !== null
-                              ? `£${numP.toFixed(2)}${undercutPct > 0 ? ` (-${undercutPct}%)` : ''}`
-                              : '';
-
-                          return (
-                            <a
-                              key={st.domain}
-                              href={st.primaryUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="healthy-store-pill"
-                              title={`${st.domain}: In Stock (${formatVariantList(st.variants, g.dtcRrp)})`}
-                            >
-                              <span>{st.domain}</span>
-                              {priceStr && <span className="healthy-pill-meta">{priceStr}</span>}
-                              <span className="healthy-pill-meta">↗</span>
-                            </a>
-                          );
-                        })}
-                      </div>
-
-                      <div className="healthy-coverage">
-                        ✓ {g.allRetailStores.size} / {totalRetailStores} stockists
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+                    <span className="flat-oos-at">at</span>
+                    <a
+                      href={stRow.primaryUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flat-oos-store-link"
+                      title="Open product page on stockist"
+                    >
+                      {stRow.domain} <span className="sku-open">↗</span>
+                    </a>
+                  </li>
+                ))}
+            </ul>
           )}
         </div>
       )}

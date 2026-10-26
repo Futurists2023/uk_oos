@@ -319,6 +319,43 @@ a:hover {
 }
 
 /* Consolidated Stockist Rows inside a Product Group */
+.flat-oos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flat-oos-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.flat-oos-row:hover {
+  background: rgba(0, 0, 0, 0.018);
+}
+
+.flat-oos-at {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.flat-oos-store-link {
+  color: var(--ink);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.flat-oos-store-link:hover {
+  text-decoration: underline;
+}
+
 .sku-list {
   list-style: none;
   padding-left: 24px;
