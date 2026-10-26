@@ -556,7 +556,7 @@ export default function BrandClient({ initialData }) {
   const parentSiteDomain = dtcStoreColumn?.domain || (brand?.dtcDomains || [])[0] || null;
 
   return (
-    <div className="sheet sheet-matrix">
+    <div className="sheet">
       <header className="sheet-header">
         <div>
           <h1 className="sheet-title">{brand.name} — UK Retail Stockist Report</h1>
@@ -582,23 +582,6 @@ export default function BrandClient({ initialData }) {
         </div>
 
         <div className="sheet-actions">
-          <div className="view-segmented" role="tablist" aria-label="View mode">
-            <button
-              className={`view-tab ${displayMode === 'matrix' ? 'active' : ''}`}
-              onClick={() => setDisplayMode('matrix')}
-            >
-              Compact Overview
-            </button>
-            <button
-              className={`view-tab ${displayMode === 'list' ? 'active' : ''}`}
-              onClick={() => setDisplayMode('list')}
-            >
-              List View
-            </button>
-          </div>
-
-          <span className="actions-divider" aria-hidden="true" />
-
           <button
             className="btn-action"
             onClick={() => copyList(null)}
@@ -616,392 +599,142 @@ export default function BrandClient({ initialData }) {
         </div>
       </header>
 
-      {/* MODE 1: RETAILER-FIRST ZERO-CLICK LIST VIEW */}
-      {displayMode === 'list' && (
-        <div className="list-scroll-body">
-          {oosProductGroups.length === 0 && totalRetailStores > 0 && (
-            <p style={{ padding: '16px 0', color: 'var(--green)', fontWeight: 500 }}>
-              All tracked {brand.name} products across all {totalRetailStores} UK retail stockists are currently in stock.
-            </p>
-          )}
+      {/* RETAILER-FIRST ZERO-CLICK REPORT */}
+      <div>
+        {oosProductGroups.length === 0 && totalRetailStores > 0 && (
+          <p style={{ padding: '16px 0', color: 'var(--green)', fontWeight: 500 }}>
+            All tracked {brand.name} products across all {totalRetailStores} UK retail stockists are currently in stock.
+          </p>
+        )}
 
-          {oosProductGroups.length > 0 && (() => {
-            const retailersWithOos = sortedStoreColumns
-              .filter(col => col.oosProductCount > 0)
-              .map(col => {
-                const items = [];
-                for (const grp of oosProductGroups) {
-                  const stRow = grp.oosByStore.get(col.domain);
-                  if (stRow) {
-                    items.push({ grp, stRow });
-                  }
+        {oosProductGroups.length > 0 && (() => {
+          const retailersWithOos = sortedStoreColumns
+            .filter(col => col.oosProductCount > 0)
+            .map(col => {
+              const items = [];
+              for (const grp of oosProductGroups) {
+                const stRow = grp.oosByStore.get(col.domain);
+                if (stRow) {
+                  items.push({ grp, stRow });
                 }
-                items.sort((a, b) => {
-                  const aTs = a.stRow.oldestOosAt || '9999';
-                  const bTs = b.stRow.oldestOosAt || '9999';
-                  if (aTs !== bTs) return aTs.localeCompare(bTs);
-                  return a.grp.displayName.localeCompare(b.grp.displayName);
-                });
-                return {
-                  domain: col.domain,
-                  oosCount: items.length,
-                  priorityRank: getRetailerPriorityRank(col.domain, isTier1),
-                  items
-                };
-              })
-              .sort((a, b) => {
-                if (a.priorityRank !== b.priorityRank) return a.priorityRank - b.priorityRank;
-                if (b.oosCount !== a.oosCount) return b.oosCount - a.oosCount;
-                return a.domain.localeCompare(b.domain);
+              }
+              items.sort((a, b) => {
+                const aTs = a.stRow.oldestOosAt || '9999';
+                const bTs = b.stRow.oldestOosAt || '9999';
+                if (aTs !== bTs) return aTs.localeCompare(bTs);
+                return a.grp.displayName.localeCompare(b.grp.displayName);
               });
+              return {
+                domain: col.domain,
+                oosCount: items.length,
+                priorityRank: getRetailerPriorityRank(col.domain, isTier1),
+                items
+              };
+            })
+            .sort((a, b) => {
+              if (a.priorityRank !== b.priorityRank) return a.priorityRank - b.priorityRank;
+              if (b.oosCount !== a.oosCount) return b.oosCount - a.oosCount;
+              return a.domain.localeCompare(b.domain);
+            });
 
-            const healthyRetailers = sortedStoreColumns
-              .filter(col => col.oosProductCount === 0)
-              .map(col => col.domain)
-              .sort((a, b) => a.localeCompare(b));
+          const healthyRetailers = sortedStoreColumns
+            .filter(col => col.oosProductCount === 0)
+            .map(col => col.domain)
+            .sort((a, b) => a.localeCompare(b));
 
-            return (
-              <div className="retailer-feed">
-                {retailersWithOos.map(ret => (
-                  <section key={ret.domain} className="retailer-block">
-                    <div className="retailer-block-header">
-                      <div className="retailer-block-title">
-                        <span className="retailer-domain-name">{ret.domain}</span>
-                        <span className="retailer-oos-summary">
-                          — {ret.oosCount} product{ret.oosCount === 1 ? '' : 's'} out of stock
-                        </span>
-                      </div>
-                      <button
-                        className="btn-plain btn-xs"
-                        onClick={() => copyStoreOosList(ret.domain)}
-                      >
-                        Copy {shortStoreLabel(ret.domain)}
-                      </button>
+          return (
+            <div className="retailer-feed">
+              {retailersWithOos.map(ret => (
+                <section key={ret.domain} className="retailer-block">
+                  <div className="retailer-block-header">
+                    <div className="retailer-block-title">
+                      <span className="retailer-domain-name">{ret.domain}</span>
+                      <span className="retailer-oos-summary">
+                        — {ret.oosCount} product{ret.oosCount === 1 ? '' : 's'} out of stock
+                      </span>
                     </div>
-
-                    <ul className="flat-oos-list">
-                      {ret.items.map(({ grp, stRow }) => {
-                        const firstVar = stRow.variants?.[0];
-                        const hasNamedSize =
-                          firstVar?.variant_title &&
-                          firstVar.variant_title !== 'Default' &&
-                          firstVar.variant_title !== 'Standard';
-                        const rawPrice =
-                          firstVar?.current_price !== null && firstVar?.current_price !== undefined
-                            ? Number(firstVar.current_price)
-                            : grp.dtcRrp;
-                        const priceStr =
-                          rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
-
-                        const inStockList = [];
-                        if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
-                          inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
-                        }
-                        for (const dom of grp.inStockStores) {
-                          inStockList.push(dom);
-                        }
-
-                        return (
-                          <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
-                            <div className="flat-oos-main">
-                              <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
-                              <span className="store-domain">{grp.displayName}</span>
-
-                              {(hasNamedSize || priceStr) && (
-                                <span className="var-pill">
-                                  {hasNamedSize && <span>{firstVar.variant_title}</span>}
-                                  {priceStr && <span className="var-pill-price">{priceStr}</span>}
-                                </span>
-                              )}
-
-                              <a
-                                href={stRow.primaryUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flat-oos-store-link"
-                                title={`Open ${grp.displayName} on ${ret.domain}`}
-                              >
-                                <span className="sku-open">↗</span>
-                              </a>
-                            </div>
-
-                            <div className="flat-oos-sub">
-                              {inStockList.length > 0 ? (
-                                <>
-                                  <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
-                                </>
-                              ) : (
-                                <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
-                              )}
-                            </div>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </section>
-                ))}
-
-                {healthyRetailers.length > 0 && (
-                  <div className="retailer-healthy-footer">
-                    <strong style={{ color: 'var(--green)' }}>
-                      ✓ 100% in stock at ({healthyRetailers.length}):
-                    </strong>{' '}
-                    {healthyRetailers.join(', ')}
+                    <button
+                      className="btn-plain btn-xs"
+                      onClick={() => copyStoreOosList(ret.domain)}
+                    >
+                      Copy {shortStoreLabel(ret.domain)}
+                    </button>
                   </div>
-                )}
-              </div>
-            );
-          })()}
-        </div>
-      )}
 
-      {/* MODE 2: COMPACT OVERVIEW MATRIX (PRODUCT x OFFICIAL DTC RRP + STOCKIST GRID) */}
-      {displayMode === 'matrix' && totalRetailStores > 0 && (
-        <div className="matrix-container">
-          <div className="matrix-wrap" onScroll={hideCellPopover}>
-            <table className="matrix-table">
-              <thead>
-                <tr>
-                  <th className="col-product">
-                    Product ({allProductGroups.length})
-                  </th>
-                  {dtcStoreColumn && (
-                    <th
-                      style={{ background: '#f1f5f9', borderRight: '2px solid var(--border)' }}
-                      title={`${dtcStoreColumn.domain} (Official Brand DTC Master Catalog & RRP Reference)`}
-                    >
-                      <span>{dtcStoreColumn.shortLabel}</span>
-                      <span className="matrix-store-sub" style={{ color: 'var(--subtle)' }}>
-                        Master RRP
-                      </span>
-                    </th>
-                  )}
-                  {sortedStoreColumns.map(col => (
-                    <th
-                      key={col.domain}
-                      className={col.oosProductCount > 0 ? 'matrix-th-clickable' : ''}
-                      onClick={() => col.oosProductCount > 0 && copyStoreOosList(col.domain)}
-                      title={
-                        col.oosProductCount > 0
-                          ? `Click to copy ${col.domain}'s ${col.oosProductCount} OOS product${col.oosProductCount === 1 ? '' : 's'}`
-                          : `${col.domain} (100% In Stock)`
+                  <ul className="flat-oos-list">
+                    {ret.items.map(({ grp, stRow }) => {
+                      const firstVar = stRow.variants?.[0];
+                      const hasNamedSize =
+                        firstVar?.variant_title &&
+                        firstVar.variant_title !== 'Default' &&
+                        firstVar.variant_title !== 'Standard';
+                      const rawPrice =
+                        firstVar?.current_price !== null && firstVar?.current_price !== undefined
+                          ? Number(firstVar.current_price)
+                          : grp.dtcRrp;
+                      const priceStr =
+                        rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
+
+                      const inStockList = [];
+                      if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
+                        inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
                       }
-                    >
-                      <span>{col.shortLabel}</span>
-                      <span
-                        className="matrix-store-sub"
-                        style={{ color: col.oosProductCount > 0 ? 'var(--red)' : 'var(--green)' }}
-                      >
-                        {col.oosProductCount > 0 ? `${col.oosProductCount} OOS` : '100% In'}
-                      </span>
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {allProductGroups.map(grp => {
-                  const isFactory = grp.diagnosisType === 'FACTORY_SHORTAGE';
-                  return (
-                    <tr key={grp.productKey}>
-                      <td className="col-product">
-                        <a
-                          href="#"
-                          onClick={e => {
-                            e.preventDefault();
-                            setExpandedProducts(new Set([grp.productKey]));
-                            setDisplayMode('list');
-                          }}
-                          title={grp.diagnosisLabel || 'Click to inspect product in List View'}
-                        >
-                          {grp.displayName}
-                          {isFactory && (
-                            <span
-                              style={{
-                                marginLeft: 6,
-                                fontSize: '0.7rem',
-                                color: '#92400e',
-                                background: '#fef3c7',
-                                padding: '1px 5px',
-                                borderRadius: 4
-                              }}
-                            >
-                              DTC OOS
-                            </span>
-                          )}
-                        </a>
-                      </td>
+                      for (const dom of grp.inStockStores) {
+                        inStockList.push(dom);
+                      }
 
-                      {dtcStoreColumn && (
-                        <td style={{ background: '#f8fafc', borderRight: '2px solid var(--border)' }}>
-                          {grp.dtcStatus === 'IN_STOCK' ? (
+                      return (
+                        <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
+                          <div className="flat-oos-main">
+                            <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
+                            <span className="store-domain">{grp.displayName}</span>
+
+                            {(hasNamedSize || priceStr) && (
+                              <span className="var-pill">
+                                {hasNamedSize && <span>{firstVar.variant_title}</span>}
+                                {priceStr && <span className="var-pill-price">{priceStr}</span>}
+                              </span>
+                            )}
+
                             <a
-                              href={grp.dtcUrl}
+                              href={stRow.primaryUrl}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="cell-in"
-                              style={{ fontSize: '0.76rem', fontWeight: 600 }}
-                              onMouseEnter={e =>
-                                showCellPopover(e, {
-                                  title: `${grp.displayName} · Official DTC (${dtcStoreColumn.domain})`,
-                                  detail: `In Stock on Brand DTC${grp.dtcRrp ? ` · Official RRP £${grp.dtcRrp.toFixed(2)}` : ''}`,
-                                  isOos: false
-                                })
-                              }
-                              onMouseLeave={hideCellPopover}
+                              className="flat-oos-store-link"
+                              title={`Open ${grp.displayName} on ${ret.domain}`}
                             >
-                              {grp.dtcRrp ? `✓ £${Math.round(grp.dtcRrp)}` : '✓'}
+                              <span className="sku-open">↗</span>
                             </a>
-                          ) : grp.dtcStatus === 'OOS' ? (
-                            <a
-                              href={grp.dtcUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="cell-oos"
-                              style={{ background: '#fef3c7', color: '#92400e' }}
-                              onMouseEnter={e =>
-                                showCellPopover(e, {
-                                  title: `${grp.displayName} · Official DTC (${dtcStoreColumn.domain})`,
-                                  detail: `Out of Stock on Brand DTC (Factory / Warehouse Shortage)${grp.dtcRrp ? ` · RRP £${grp.dtcRrp.toFixed(2)}` : ''}`,
-                                  isOos: true
-                                })
-                              }
-                              onMouseLeave={hideCellPopover}
-                            >
-                              DTC OOS
-                            </a>
-                          ) : (
-                            <span
-                              className="cell-none"
-                              title="Discontinued or not listed on Brand DTC storefront"
-                            >
-                              —
-                            </span>
-                          )}
-                        </td>
-                      )}
+                          </div>
 
-                      {sortedStoreColumns.map(col => {
-                        const oosCell = grp.oosByStore.get(col.domain);
-                        const inCell = grp.inStockByStore.get(col.domain);
+                          <div className="flat-oos-sub">
+                            {inStockList.length > 0 ? (
+                              <>
+                                <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
+                              </>
+                            ) : (
+                              <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
+                            )}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </section>
+              ))}
 
-                        if (oosCell) {
-                          const vCount = oosCell.variants.length;
-                          const label = vCount > 1 ? `${vCount} OOS` : 'OOS';
-                          const varSummary = formatVariantList(oosCell.variants, grp.dtcRrp);
-                          const age = calcOosAge(oosCell.oldestOosAt);
-
-                          return (
-                            <td key={col.domain}>
-                              <a
-                                href={oosCell.primaryUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cell-oos"
-                                onMouseEnter={e =>
-                                  showCellPopover(e, {
-                                    title: `${grp.displayName} · ${col.domain}`,
-                                    detail: `${varSummary} — ${age} · ${grp.diagnosisLabel}`,
-                                    isOos: true
-                                  })
-                                }
-                                onMouseLeave={hideCellPopover}
-                              >
-                                {label}
-                              </a>
-                            </td>
-                          );
-                        }
-
-                        if (inCell) {
-                          const varSummary = formatVariantList(inCell.variants, grp.dtcRrp);
-                          const firstP = inCell.variants[0]?.current_price;
-                          const isUndercut =
-                            firstP && grp.dtcRrp && Number(firstP) < grp.dtcRrp * 0.92;
-
-                          return (
-                            <td key={col.domain}>
-                              <a
-                                href={inCell.primaryUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cell-in"
-                                style={isUndercut ? { color: '#b45309', fontWeight: 700 } : undefined}
-                                onMouseEnter={e =>
-                                  showCellPopover(e, {
-                                    title: `${grp.displayName} · ${col.domain}`,
-                                    detail: `In Stock (${varSummary})`,
-                                    isOos: false
-                                  })
-                                }
-                                onMouseLeave={hideCellPopover}
-                              >
-                                {isUndercut ? '✓↓' : '✓'}
-                              </a>
-                            </td>
-                          );
-                        }
-
-                        return (
-                          <td key={col.domain}>
-                            <span
-                              className="cell-none"
-                              onMouseEnter={e =>
-                                showCellPopover(e, {
-                                  title: `${grp.displayName} · ${col.domain}`,
-                                  detail: 'Assortment Gap — Not stocked by this retailer',
-                                  isOos: false
-                                })
-                              }
-                              onMouseLeave={hideCellPopover}
-                            >
-                              ·
-                            </span>
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-
-          <div className="matrix-legend">
-            <span>
-              <strong style={{ color: 'var(--red)' }}>OOS</strong> = Retail Out of Stock
-            </span>
-            <span>
-              <strong style={{ color: '#92400e' }}>DTC OOS</strong> = Also OOS on Brand DTC (Factory Shortage)
-            </span>
-            <span>
-              <strong style={{ color: 'var(--green)' }}>✓</strong> = In Stock at RRP
-            </span>
-            <span>
-              <strong style={{ color: '#b45309' }}>✓↓</strong> = In Stock (&gt;8% below DTC RRP)
-            </span>
-            <span>
-              <strong>·</strong> = Assortment Gap (Not stocked)
-            </span>
-            <span style={{ marginLeft: 'auto' }}>
-              Tip: Click any stockist header to copy its OOS list
-            </span>
-          </div>
-        </div>
-      )}
-
-      {hoverPopover && (
-        <div
-          className="cell-popover"
-          style={{
-            left: hoverPopover.x,
-            top: hoverPopover.y,
-            transform: hoverPopover.flipBelow ? 'translate(-50%, 0)' : 'translate(-50%, -100%)'
-          }}
-        >
-          <div className="cell-popover-title">{hoverPopover.title}</div>
-          <div className="cell-popover-sub">{hoverPopover.detail}</div>
-        </div>
-      )}
+              {healthyRetailers.length > 0 && (
+                <div className="retailer-healthy-footer">
+                  <strong style={{ color: 'var(--green)' }}>
+                    ✓ 100% in stock at ({healthyRetailers.length}):
+                  </strong>{' '}
+                  {healthyRetailers.join(', ')}
+                </div>
+              )}
+            </div>
+          );
+        })()}
+      </div>
 
       {toastMsg && <div className="toast">{toastMsg}</div>}
     </div>
