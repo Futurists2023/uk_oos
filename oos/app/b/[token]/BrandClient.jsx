@@ -578,49 +578,72 @@ export default function BrandClient({ initialData }) {
 
           {oosProductGroups.length > 0 && (
             <ul className="flat-oos-list">
-              {oosProductGroups
-                .flatMap(grp => grp.consolidatedOosStores.map(stRow => ({ grp, stRow })))
-                .sort((a, b) => {
-                  const aTs = a.stRow.oldestOosAt || '9999';
-                  const bTs = b.stRow.oldestOosAt || '9999';
-                  if (aTs !== bTs) return aTs.localeCompare(bTs);
-                  return a.grp.displayName.localeCompare(b.grp.displayName);
-                })
-                .map(({ grp, stRow }) => (
-                  <li key={`${grp.productKey}__${stRow.domain}`} className="flat-oos-row">
-                    <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
-                    <span className="store-domain">{grp.displayName}</span>
+              {oosProductGroups.map(grp => {
+                // Pick representative variant size & price for this product
+                const firstVar = grp.consolidatedOosStores[0]?.variants?.[0];
+                const hasNamedSize =
+                  firstVar?.variant_title &&
+                  firstVar.variant_title !== 'Default' &&
+                  firstVar.variant_title !== 'Standard';
+                const rawPrice =
+                  firstVar?.current_price !== null && firstVar?.current_price !== undefined
+                    ? Number(firstVar.current_price)
+                    : grp.dtcRrp;
+                const priceStr = rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
 
-                    {stRow.variants.map(v => {
-                      const hasNamedSize =
-                        v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard';
-                      const numP =
-                        v.current_price !== null && v.current_price !== undefined
-                          ? Number(v.current_price)
-                          : null;
-                      const price = numP !== null ? `£${numP.toFixed(2)}` : '';
+                const inStockList = [];
+                if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
+                  inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
+                }
+                for (const dom of grp.inStockStores) {
+                  inStockList.push(dom);
+                }
 
-                      if (!hasNamedSize && !price) return null;
-                      return (
-                        <span key={v.sku_key} className="var-pill">
-                          {hasNamedSize && <span>{v.variant_title}</span>}
-                          {price && <span className="var-pill-price">{price}</span>}
+                return (
+                  <li key={grp.productKey} className="flat-oos-entry">
+                    <div className="flat-oos-main">
+                      <span className="list-duration-lead">{calcOutOfStockBadge(grp.oldestOosAt)}</span>
+                      <span className="store-domain">{grp.displayName}</span>
+
+                      {(hasNamedSize || priceStr) && (
+                        <span className="var-pill">
+                          {hasNamedSize && <span>{firstVar.variant_title}</span>}
+                          {priceStr && <span className="var-pill-price">{priceStr}</span>}
                         </span>
-                      );
-                    })}
+                      )}
 
-                    <span className="flat-oos-at">at</span>
-                    <a
-                      href={stRow.primaryUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flat-oos-store-link"
-                      title="Open product page on stockist"
-                    >
-                      {stRow.domain} <span className="sku-open">↗</span>
-                    </a>
+                      <span className="flat-oos-at">at</span>
+
+                      <span className="flat-oos-stores">
+                        {grp.consolidatedOosStores.map((stRow, idx) => (
+                          <React.Fragment key={stRow.domain}>
+                            {idx > 0 && <span className="flat-oos-comma">, </span>}
+                            <a
+                              href={stRow.primaryUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flat-oos-store-link"
+                              title={`Open ${grp.displayName} on ${stRow.domain}`}
+                            >
+                              {stRow.domain} <span className="sku-open">↗</span>
+                            </a>
+                          </React.Fragment>
+                        ))}
+                      </span>
+                    </div>
+
+                    <div className="flat-oos-sub">
+                      {inStockList.length > 0 ? (
+                        <>
+                          <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
+                        </>
+                      ) : (
+                        <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
+                      )}
+                    </div>
                   </li>
-                ))}
+                );
+              })}
             </ul>
           )}
         </div>
