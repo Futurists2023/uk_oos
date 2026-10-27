@@ -68,9 +68,7 @@ function decodeHtmlEntities(str) {
 }
 
 function cleanProductDisplayName(rawTitle, brandName, normKey = '') {
-  if (normKey === 'renaissance_cleansing_gel_200ml') return 'Renaissance Cleansing Gel (200ml Supersize)';
-  if (normKey === 'renaissance_cleansing_gel_35ml') return 'Renaissance Cleansing Gel (35ml Travel)';
-  if (normKey === 'renaissance_cleansing_gel_100ml') return 'Renaissance Cleansing Gel (100ml)';
+  if (normKey.startsWith('renaissance_cleansing_gel')) return 'Renaissance Cleansing Gel';
 
   let t = decodeHtmlEntities(rawTitle).split('|')[0].trim();
   if (/\.(?:html?|aspx|php)$/i.test(t) || (t.includes('-') && !t.includes(' '))) {
@@ -85,22 +83,43 @@ function cleanProductDisplayName(rawTitle, brandName, normKey = '') {
     t = t.replace(new RegExp(`\\s*[-–—:]\\s*${escaped}$`, 'i'), '').trim();
   }
   t = t.replace(/\(\s*worth\s*£?\s*\d+(?:\.\d{2})?\s*\)/gi, '').trim();
-  t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
-  const base = t || decodeHtmlEntities(rawTitle).trim();
+  t = t.replace(/\(\s*\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)(?:\s*(?:refill|supersize|travel))?\s*\)/gi, '').trim();
+  t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)(?:\s*refill)?\b\s*$/i, '').trim();
+  return t || decodeHtmlEntities(rawTitle).trim();
+}
 
-  if (normKey.endsWith('_1000ml_refill') && !/\brefill\b/i.test(base)) return `${base} (1000ml Refill)`;
-  if (normKey.endsWith('_refill') && !/\brefill\b/i.test(base)) return `${base} (Refill)`;
-  if (normKey.endsWith('_1000ml_duo') && !/\bduo\b/i.test(base)) return `${base} (1000ml Duo)`;
-  if (normKey.endsWith('_duo') && !/\b(?:duo|twin)\b/i.test(base)) return `${base} (Duo)`;
-  if (normKey.endsWith('_1000ml') && !/\b1000\s*ml\b/i.test(base)) return `${base} (1000ml)`;
-  if (normKey.endsWith('_500ml') && !/\b500\s*ml\b/i.test(base)) return `${base} (500ml)`;
-  if (normKey.endsWith('_75ml') && !/\b75\s*ml\b/i.test(base)) return `${base} (75ml)`;
-  if (normKey.endsWith('_60ml') && !/\b60\s*ml\b/i.test(base)) return `${base} (60ml)`;
-  if (normKey.endsWith('_40ml') && !/\b40\s*ml\b/i.test(base)) return `${base} (40ml)`;
-  if (normKey.endsWith('_35ml') && !/\b35\s*ml\b/i.test(base)) return `${base} (35ml)`;
-  if (normKey.endsWith('_supersize') && !/\b(?:supersize|jumbo)\b/i.test(base)) return `${base} (Supersize)`;
-  if (normKey.endsWith('_travel') && !/\b(?:travel|mini)\b/i.test(base)) return `${base} (Travel)`;
-  return base;
+function extractCleanSizeLabel(firstVar, normKey = '') {
+  const vtRaw = String(firstVar?.variant_title || '').trim();
+  if (vtRaw && !/^(?:default|default title|standard|0|os|one size|no size|n\/a)$/i.test(vtRaw)) {
+    return vtRaw.replace(/(\d+)\s+(ml|g|kg|oz)\b/gi, '$1$2');
+  }
+  const ptRaw = String(firstVar?.product_title || '');
+  const mTitle = ptRaw.match(/\b(\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)(?:\s*refill)?)\b/i);
+  if (mTitle && mTitle[1]) {
+    return mTitle[1].replace(/(\d+)\s+(ml|g|kg|oz)\b/gi, '$1$2');
+  }
+  if (normKey.endsWith('_1000ml_refill')) return '1000ml Refill';
+  if (normKey.endsWith('_refill')) return 'Refill';
+  const mKey = normKey.match(/_(\d+(?:ml|g|caps))$/i);
+  if (mKey && mKey[1]) return mKey[1];
+  return '';
+}
+
+function isSeasonalOrBundleSku(s) {
+  const text = `${s.product_title || ''} ${s.variant_title || ''} ${s.normalized_product_key || ''}`.toLowerCase();
+  return /\b(?:gift[\s_-]*set|stocking[\s_-]*filler|discovery[\s_-]*collection|discovery[\s_-]*set|jet[\s_-]*set|regime[\s_-]*kit|starter[\s_-]*kit|travel[\s_-]*set|trio|duo|twin[\s_-]*pack|bundle|worth[\s_-]*£?\d+|advent|cracker|bauble|christmas|bluebell[\s_-]*woods|honey[\s_-]*nectar|elderflower|mayan[\s_-]*vanilla)\b/i.test(
+    text
+  );
+}
+
+function isClearanceExitSku(s) {
+  const price = s.current_price !== null && s.current_price !== undefined ? Number(s.current_price) : null;
+  const comp = s.compare_at_price !== null && s.compare_at_price !== undefined ? Number(s.compare_at_price) : null;
+  if (price !== null && comp !== null && comp > price && comp > 0) {
+    const discountRatio = (comp - price) / comp;
+    if (discountRatio >= 0.25) return true;
+  }
+  return false;
 }
 
 function isJunkProductRow(s, brandName, brandSlug) {
@@ -228,6 +247,8 @@ export default function BrandClient({ initialData }) {
       }
     }
 
+    const dtcInStockBaseKeys = new Set();
+
     for (const s of activeSkus) {
       if (isJunkProductRow(s, brand.name, brand.slug)) continue;
       const domIsDtc = isDtc(s.domain);
@@ -235,9 +256,12 @@ export default function BrandClient({ initialData }) {
         storeOosCounter.set(s.domain, 0);
       }
       const pKey = s.normalized_product_key || cleanProductDisplayName(s.product_title, brand.name).toLowerCase();
+      const baseKey = pKey.replace(/_(?:1000ml_refill|refill|1000ml_duo|duo|\d+(?:ml|g|caps)|supersize|travel)$/i, '');
+
       if (!byProdKey.has(pKey)) {
         byProdKey.set(pKey, {
           productKey: pKey,
+          baseKey,
           displayName: cleanProductDisplayName(s.product_title, brand.name, pKey),
           dtcVariants: [],
           oosByStore: new Map(),
@@ -260,17 +284,24 @@ export default function BrandClient({ initialData }) {
         grp.displayName = candName;
       }
 
-      const vTitle = s.variant_title && s.variant_title !== 'Default' && s.variant_title !== 'Standard' ? s.variant_title : '';
+      const vTitle = extractCleanSizeLabel(s, pKey);
       if (vTitle) grp.distinctSizes.add(vTitle);
 
       if (domIsDtc) {
         grp.dtcVariants.push(s);
+        if (s.is_available === 1) {
+          dtcInStockBaseKeys.add(baseKey);
+        }
         continue;
       }
 
       grp.allRetailStores.add(s.domain);
 
       if (s.is_available === 0) {
+        // Gate 1 (No Gift Sets/Bundles/Seasonal Scents) & Gate 2 (No >=25% Clearance Exits)
+        if (isSeasonalOrBundleSku(s) || isClearanceExitSku(s)) {
+          continue;
+        }
         grp.oosItems.push(s);
         grp.oosStores.add(s.domain);
         if (!grp.oosByStore.has(s.domain)) {
@@ -329,19 +360,19 @@ export default function BrandClient({ initialData }) {
         grp.dtcUrl = dtcDomainFound ? `https://${dtcDomainFound}` : '#';
       }
 
+      // Gate 3: Active Supply Chain Verification
+      // Exclude Factory Shortages (OOS on Official DTC) & retired 1-store ghost listings not in DTC base family
       if (grp.oosItems.length > 0) {
-        if (grp.dtcStatus === 'OOS') {
-          grp.diagnosisType = 'FACTORY_SHORTAGE';
-          grp.diagnosisLabel = '⚠️ Factory Shortage (Also OOS on DTC)';
-          factoryCnt += 1;
-        } else if (grp.dtcStatus === 'IN_STOCK') {
-          grp.diagnosisType = 'UNFORCED_OUTAGE';
-          grp.diagnosisLabel = `🚨 Unforced Outage (In Stock on DTC${grp.dtcRrp ? ` · £${grp.dtcRrp.toFixed(2)}` : ''})`;
-          unforcedCnt += 1;
-        } else {
-          grp.diagnosisType = 'UNFORCED_OUTAGE';
-          grp.diagnosisLabel = `🚨 Retail Outage (In Stock at ${grp.inStockStores.size} other stockist${grp.inStockStores.size === 1 ? '' : 's'})`;
-          unforcedCnt += 1;
+        const isFactoryShortage = grp.dtcStatus === 'OOS';
+        const isSingleStoreGhost =
+          grp.dtcStatus === 'RETAIL_ONLY' &&
+          grp.allRetailStores.size < 2 &&
+          !dtcInStockBaseKeys.has(grp.baseKey);
+
+        if (isFactoryShortage || isSingleStoreGhost) {
+          grp.oosItems = [];
+          grp.oosStores.clear();
+          grp.oosByStore.clear();
         }
       }
 
@@ -409,6 +440,27 @@ export default function BrandClient({ initialData }) {
 
   const retailersWithOosCount = sortedStoreColumns.filter(col => col.oosProductCount > 0).length;
 
+  const restockedLast7Days = useMemo(() => {
+    const sevenDaysAgoMs = Date.now() - 7 * 24 * 3600000;
+    const wins = [];
+    const seenWinKey = new Set();
+    for (const ev of data.events || []) {
+      if (ev.event_type !== 'BACK_IN_STOCK') continue;
+      if (isDtc(ev.domain)) continue;
+      const evMs = new Date(ev.occurred_at || '').getTime();
+      if (isNaN(evMs) || evMs < sevenDaysAgoMs) continue;
+      const wKey = `${ev.domain}::${ev.sku_key}`;
+      if (seenWinKey.has(wKey)) continue;
+      seenWinKey.add(wKey);
+      wins.push({
+        domain: ev.domain,
+        title: cleanProductDisplayName(ev.product_title, brand.name),
+        occurredAt: ev.occurred_at
+      });
+    }
+    return wins;
+  }, [data.events, brand]);
+
   const { retailersWithOos, healthyRetailers } = useMemo(() => {
     const withOos = sortedStoreColumns
       .filter(col => col.oosProductCount > 0)
@@ -459,36 +511,33 @@ export default function BrandClient({ initialData }) {
     return { retailersWithOos: withOos, healthyRetailers: healthy };
   }, [sortedStoreColumns, oosProductGroups]);
 
-  function formatVariantList(variants) {
-    return variants
-      .map(v => {
-        const vt = String(v.variant_title || '').trim();
-        const sz =
-          vt && !/^(?:default|default title|standard|0|os|one size|no size|n\/a)$/i.test(vt)
-            ? vt
-            : '';
-        const numP = v.current_price !== null && v.current_price !== undefined ? Number(v.current_price) : null;
-        const compP = v.compare_at_price !== null && v.compare_at_price !== undefined ? Number(v.compare_at_price) : null;
-        const hasMarkdown = numP !== null && compP !== null && compP > numP;
-        const pr =
-          numP !== null
-            ? `£${numP.toFixed(2)}${hasMarkdown ? ` (was £${compP.toFixed(2)})` : ''}`
-            : '';
-        if (sz && pr) return `${sz} ${pr}`;
-        return sz || pr || 'Standard';
-      })
-      .join(', ');
+  function formatSinglePillText(firstVar, normKey = '') {
+    const sz = extractCleanSizeLabel(firstVar, normKey);
+    const rawPrice =
+      firstVar?.current_price !== null && firstVar?.current_price !== undefined
+        ? Number(firstVar.current_price)
+        : null;
+    const compPrice =
+      firstVar?.compare_at_price !== null && firstVar?.compare_at_price !== undefined
+        ? Number(firstVar.compare_at_price)
+        : null;
+    const hasMarkdown = rawPrice !== null && compPrice !== null && compPrice > rawPrice;
+    const priceStr =
+      rawPrice !== null
+        ? `£${rawPrice.toFixed(2)}${hasMarkdown ? ` (was £${compPrice.toFixed(2)})` : ''}`
+        : '';
+    return { sz, priceStr, combined: [sz, priceStr].filter(Boolean).join(' · ') };
   }
 
   function copyList() {
     if (retailersWithOos.length === 0) {
-      showToast('All tracked products are currently in stock.');
+      showToast('All tracked core products are currently in stock.');
       return;
     }
 
     const lines = [
-      `${brand.name} — UK Retail Stockist Report`,
-      `${oosProductGroups.length} product${oosProductGroups.length === 1 ? '' : 's'} out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists · Checked ${fmtShortTime(latestCheck)}`,
+      `${brand.name} — UK Retail Stockist Anomaly Report`,
+      `${oosProductGroups.length} core product${oosProductGroups.length === 1 ? '' : 's'} out of stock (3d+) at ${retailersWithOosCount} of ${totalRetailStores} UK stockists · Checked ${fmtShortTime(latestCheck)}`,
       ''
     ];
 
@@ -498,8 +547,8 @@ export default function BrandClient({ initialData }) {
       );
       for (const { grp, stRow } of ret.items) {
         const badge = calcOutOfStockBadge(stRow.oldestOosAt);
-        const varText = formatVariantList(stRow.variants);
-        lines.push(`• [${badge}] ${grp.displayName} (${varText})`);
+        const { combined } = formatSinglePillText(stRow.variants?.[0], grp.productKey);
+        lines.push(`• [${badge}] ${grp.displayName}${combined ? ` (${combined})` : ''}`);
       }
       lines.push('');
     }
@@ -511,31 +560,42 @@ export default function BrandClient({ initialData }) {
     }
 
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-      showToast('Copied retailer-first OOS report');
+      showToast('Copied full UK stockist anomaly report');
     });
   }
 
   function copyStoreOosList(domain) {
     const ret = retailersWithOos.find(r => r.domain === domain);
     if (!ret || ret.oosCount === 0) {
-      showToast(`All ${brand.name} products at ${domain} are in stock.`);
+      showToast(`All ${brand.name} core products at ${domain} are in stock.`);
       return;
     }
 
     const lines = [
-      `${brand.name} — ${ret.domain} — ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock (${ret.offlinePct}% of shelf offline)`,
-      `Checked: ${fmtShortTime(latestCheck)}`,
+      `Subject: ${brand.name} — Out-of-Stock Replenishment Check (${ret.domain})`,
+      '',
+      `Hi team,`,
+      '',
+      `Our retail shelf monitor flagged ${ret.oosCount} core ${brand.name} SKU${ret.oosCount === 1 ? '' : 's'} currently out of stock for 3+ days on ${ret.domain} (${ret.offlinePct}% of shelf offline as of ${fmtShortTime(latestCheck)}):`,
       ''
     ];
 
     for (const { grp, stRow } of ret.items) {
       const badge = calcOutOfStockBadge(stRow.oldestOosAt);
-      const varText = formatVariantList(stRow.variants);
-      lines.push(`• [${badge}] ${grp.displayName} (${varText})`);
+      const { combined } = formatSinglePillText(stRow.variants?.[0], grp.productKey);
+      lines.push(`• ${grp.displayName}${combined ? ` (${combined})` : ''} — ${badge}`);
     }
 
+    lines.push(
+      '',
+      'Could you please check if open POs or warehouse intake are pending for these lines?',
+      '',
+      'Best regards,',
+      `${brand.name} Account Team`
+    );
+
     navigator.clipboard.writeText(lines.join('\n').trim()).then(() => {
-      showToast(`Copied ${domain} OOS list (${ret.oosCount} of ${ret.totalCount})`);
+      showToast(`Copied ready-to-send buyer chase note for ${domain}`);
     });
   }
 
@@ -604,24 +664,8 @@ export default function BrandClient({ initialData }) {
       // Items inside Retailer Block
       ret.items.forEach(({ grp, stRow }, idx) => {
         const badgeText = calcOutOfStockBadge(stRow.oldestOosAt);
-        const firstVar = stRow.variants?.[0];
-        const vtRaw = String(firstVar?.variant_title || '').trim();
-        const hasNamedSize =
-          vtRaw && !/^(?:default|default title|standard|0|os|one size|no size|n\/a)$/i.test(vtRaw);
-        const rawPrice =
-          firstVar?.current_price !== null && firstVar?.current_price !== undefined
-            ? Number(firstVar.current_price)
-            : null;
-        const compPrice =
-          firstVar?.compare_at_price !== null && firstVar?.compare_at_price !== undefined
-            ? Number(firstVar.compare_at_price)
-            : null;
-        const hasMarkdown = rawPrice !== null && compPrice !== null && compPrice > rawPrice;
-        const priceStr =
-          rawPrice !== null
-            ? `£${rawPrice.toFixed(2)}${hasMarkdown ? ` (was £${compPrice.toFixed(2)})` : ''}`
-            : '';
-        const pillText = [hasNamedSize ? firstVar.variant_title : '', priceStr].filter(Boolean).join(' ');
+        const { sz, priceStr } = formatSinglePillText(stRow.variants?.[0], grp.productKey);
+        const pillText = [sz, priceStr].filter(Boolean).join(' ');
 
         ensureSpace(9.5);
 
@@ -651,7 +695,7 @@ export default function BrandClient({ initialData }) {
         }
         curX += prodW + 2.8;
 
-        // 3. Variant / Price Pill (including (was £XX.XX) when on markdown)
+        // 3. Variant / Price Pill (single clean size + price, never duplicated)
         if (pillText) {
           doc.setFont('helvetica', 'normal');
           doc.setFontSize(8);
@@ -707,10 +751,10 @@ export default function BrandClient({ initialData }) {
 
   function downloadFullReportPDF() {
     if (retailersWithOos.length === 0) {
-      showToast('All tracked products are currently in stock.');
+      showToast('All tracked core products are currently in stock.');
       return;
     }
-    const subtitle = `${oosProductGroups.length} product${oosProductGroups.length === 1 ? '' : 's'} out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists · Checked ${fmtShortTime(latestCheck)}`;
+    const subtitle = `${oosProductGroups.length} core product${oosProductGroups.length === 1 ? '' : 's'} out of stock (3d+) at ${retailersWithOosCount} of ${totalRetailStores} UK stockists · Checked ${fmtShortTime(latestCheck)}`;
 
     renderAndSavePDF({
       title: `${brand.name} — UK Retail Stockist Report`,
@@ -745,7 +789,7 @@ export default function BrandClient({ initialData }) {
             ) : (
               <>
                 <strong>
-                  {oosProductGroups.length} product{oosProductGroups.length === 1 ? '' : 's'} out of stock
+                  {oosProductGroups.length} core product{oosProductGroups.length === 1 ? '' : 's'} out of stock
                 </strong>{' '}
                 at <strong>{retailersWithOosCount} of {totalRetailStores}</strong> UK stockists · Checked{' '}
                 {fmtShortTime(latestCheck)}
@@ -776,7 +820,7 @@ export default function BrandClient({ initialData }) {
       <div>
         {oosProductGroups.length === 0 && totalRetailStores > 0 && (
           <p style={{ padding: '16px 0', color: 'var(--green)', fontWeight: 500 }}>
-            All tracked {brand.name} products across all {totalRetailStores} UK retail stockists are currently in stock.
+            All tracked {brand.name} core products across all {totalRetailStores} UK retail stockists are currently in stock.
           </p>
         )}
 
@@ -795,7 +839,7 @@ export default function BrandClient({ initialData }) {
                     <button
                       className="btn-plain btn-xs"
                       onClick={() => copyStoreOosList(ret.domain)}
-                      title={`Copy ${ret.domain} OOS list`}
+                      title={`Copy ready-to-send buyer chase note for ${ret.domain}`}
                     >
                       Copy
                     </button>
@@ -811,23 +855,7 @@ export default function BrandClient({ initialData }) {
 
                 <ul className="flat-oos-list">
                   {ret.items.map(({ grp, stRow }) => {
-                    const firstVar = stRow.variants?.[0];
-                    const vtRaw = String(firstVar?.variant_title || '').trim();
-                    const hasNamedSize =
-                      vtRaw && !/^(?:default|default title|standard|0|os|one size|no size|n\/a)$/i.test(vtRaw);
-                    const rawPrice =
-                      firstVar?.current_price !== null && firstVar?.current_price !== undefined
-                        ? Number(firstVar.current_price)
-                        : null;
-                    const compPrice =
-                      firstVar?.compare_at_price !== null && firstVar?.compare_at_price !== undefined
-                        ? Number(firstVar.compare_at_price)
-                        : null;
-                    const hasMarkdown = rawPrice !== null && compPrice !== null && compPrice > rawPrice;
-                    const priceStr =
-                      rawPrice !== null
-                        ? `£${rawPrice.toFixed(2)}${hasMarkdown ? ` (was £${compPrice.toFixed(2)})` : ''}`
-                        : '';
+                    const { sz, priceStr } = formatSinglePillText(stRow.variants?.[0], grp.productKey);
 
                     return (
                       <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
@@ -835,9 +863,9 @@ export default function BrandClient({ initialData }) {
                           <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
                           <span className="store-domain">{grp.displayName}</span>
 
-                          {(hasNamedSize || priceStr) && (
+                          {(sz || priceStr) && (
                             <span className="var-pill">
-                              {hasNamedSize && <span>{firstVar.variant_title}</span>}
+                              {sz && <span>{sz}</span>}
                               {priceStr && <span className="var-pill-price">{priceStr}</span>}
                             </span>
                           )}
@@ -858,6 +886,15 @@ export default function BrandClient({ initialData }) {
                 </ul>
               </section>
             ))}
+
+            {restockedLast7Days.length > 0 && (
+              <div className="retailer-healthy-footer" style={{ marginBottom: '10px' }}>
+                <strong style={{ color: 'var(--green)' }}>
+                  ↺ Restocked in last 7 days ({restockedLast7Days.length}):
+                </strong>{' '}
+                {restockedLast7Days.map(w => `${w.title} at ${w.domain}`).join(', ')}
+              </div>
+            )}
 
             {healthyRetailers.length > 0 && (
               <div className="retailer-healthy-footer">
