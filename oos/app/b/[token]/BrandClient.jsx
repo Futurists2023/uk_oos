@@ -511,14 +511,84 @@ export default function BrandClient({ initialData }) {
     });
   }
 
-  function downloadCSV() {
-    const headers = ['Stockist', 'Stockist_OOS_Ratio', 'OOS_Duration', 'Product', 'Variations_OOS', 'DTC_RRP', 'In_Stock_At', 'First_Seen_OOS_UTC', 'URL'];
-    const rows = [headers.join(',')];
+  async function renderAndSavePDF({ title, subtitle, blocks, includeHealthyFooter, filename, toastLabel }) {
+    const { jsPDF } = await import('jspdf');
+    const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+    const pageW = doc.internal.pageSize.getWidth();
+    const pageH = doc.internal.pageSize.getHeight();
+    const marginX = 16;
+    const contentW = pageW - marginX * 2;
+    let y = 18;
 
-    for (const ret of retailersWithOos) {
-      for (const { grp, stRow } of ret.items) {
-        const varDesc = formatVariantList(stRow.variants, grp.dtcRrp);
-        const age = calcOutOfStockBadge(stRow.oldestOosAt);
+    function ensureSpace(neededMm) {
+      if (y + neededMm > pageH - 16) {
+        doc.addPage();
+        y = 18;
+      }
+    }
+
+    // Header Title
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(15);
+    doc.setTextColor(28, 25, 23);
+    doc.text(title, marginX, y);
+    y += 6.5;
+
+    // Header Subtitle
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9.5);
+    doc.setTextColor(87, 83, 78);
+    const subLines = doc.splitTextToSize(subtitle, contentW);
+    doc.text(subLines, marginX, y);
+    y += subLines.length * 4.5 + 2.5;
+
+    // Header Divider Line
+    doc.setDrawColor(28, 25, 23);
+    doc.setLineWidth(0.5);
+    doc.line(marginX, y, pageW - marginX, y);
+    y += 8;
+
+    // Retailer Blocks
+    for (const ret of blocks) {
+      ensureSpace(24);
+
+      // Retailer Block Header
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(11.5);
+      doc.setTextColor(28, 25, 23);
+      doc.text(ret.domain, marginX, y);
+      const domW = doc.getTextWidth(ret.domain);
+
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(9.5);
+      doc.setTextColor(220, 38, 38);
+      const ratioStr =
+        ret.headerSummary ||
+        `  —  ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock`;
+      doc.text(ratioStr, marginX + domW + 1, y);
+      y += 2.8;
+
+      doc.setDrawColor(28, 25, 23);
+      doc.setLineWidth(0.35);
+      doc.line(marginX, y, pageW - marginX, y);
+      y += 6.5;
+
+      // Items inside Retailer Block
+      ret.items.forEach(({ grp, stRow }, idx) => {
+        const badgeText = calcOutOfStockBadge(stRow.oldestOosAt);
+        const firstVar = stRow.variants?.[0];
+        const hasNamedSize =
+          firstVar?.variant_title &&
+          firstVar.variant_title !== 'Default' &&
+          firstVar.variant_title !== 'Standard';
+        const rawPrice =
+          firstVar?.current_price !== null && firstVar?.current_price !== undefined
+            ? Number(firstVar.current_price)
+            : grp.dtcRrp;
+        const priceStr =
+          rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
+        const pillText = [hasNamedSize ? firstVar.variant_title : '', priceStr].filter(Boolean).join(' ');
+
         const inStockList = [];
         if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
           inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
@@ -526,27 +596,152 @@ export default function BrandClient({ initialData }) {
         for (const dom of grp.inStockStores) {
           inStockList.push(dom);
         }
+        const subText =
+          inStockList.length > 0
+            ? `In stock at: ${inStockList.join(', ')}`
+            : 'Out of stock across all tracked stockists';
 
-        const vals = [
-          ret.domain,
-          `${ret.oosCount} of ${ret.totalCount}`,
-          age,
-          grp.displayName,
-          varDesc,
-          grp.dtcRrp ? `£${grp.dtcRrp.toFixed(2)}` : '',
-          inStockList.join(' | '),
-          stRow.oldestOosAt || '',
-          stRow.primaryUrl || ''
-        ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`);
-        rows.push(vals.join(','));
-      }
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(8.2);
+        const wrappedSub = doc.splitTextToSize(subText, contentW - 4);
+        const entryHeight = 7 + wrappedSub.length * 3.8 + 5;
+        ensureSpace(entryHeight);
+
+        let curX = marginX;
+
+        // 1. Red [xh Out of stock] badge
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(8);
+        const badgeW = doc.getTextWidth(badgeText) + 4.4;
+        doc.setFillColor(250, 234, 234);
+        doc.setDrawColor(254, 202, 202);
+        doc.setLineWidth(0.2);
+        doc.roundedRect(curX, y - 3.8, badgeW, 5.2, 1, 1, 'FD');
+        doc.setTextColor(220, 38, 38);
+        doc.text(badgeText, curX + 2.2, y);
+        curX += badgeW + 3;
+
+        // 2. Product Name (clickable link to retailer product URL)
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(10);
+        doc.setTextColor(28, 25, 23);
+        const prodName = grp.displayName;
+        doc.text(prodName, curX, y);
+        const prodW = doc.getTextWidth(prodName);
+        if (stRow.primaryUrl && stRow.primaryUrl.startsWith('http')) {
+          doc.link(curX, y - 4, prodW, 5, { url: stRow.primaryUrl });
+        }
+        curX += prodW + 2.8;
+
+        // 3. Variant / Price Pill
+        if (pillText) {
+          doc.setFont('helvetica', 'normal');
+          doc.setFontSize(8);
+          const pillW = doc.getTextWidth(pillText) + 4.2;
+          doc.setFillColor(243, 244, 246);
+          doc.setDrawColor(229, 231, 235);
+          doc.setLineWidth(0.2);
+          doc.roundedRect(curX, y - 3.7, pillW, 5, 1, 1, 'FD');
+          doc.setTextColor(55, 65, 81);
+          doc.text(pillText, curX + 2.1, y);
+        }
+
+        // 4. Subtle "In stock at:" subline
+        y += 4.8;
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(8.2);
+        doc.setTextColor(120, 113, 108);
+        doc.text(wrappedSub, marginX + 1, y);
+        y += wrappedSub.length * 3.8 + 2.2;
+
+        // Subtle divider between entries
+        if (idx < ret.items.length - 1) {
+          doc.setDrawColor(228, 226, 220);
+          doc.setLineWidth(0.2);
+          doc.line(marginX, y - 1.2, pageW - marginX, y - 1.2);
+          y += 3.5;
+        } else {
+          y += 5.5;
+        }
+      });
     }
 
-    const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = `${brand.slug}-oos-report.csv`;
-    link.click();
+    // Healthy Retailers Footer
+    if (includeHealthyFooter && healthyRetailers.length > 0) {
+      const footerStr = `100% in stock at (${healthyRetailers.length}): ${healthyRetailers
+        .map(h => `${h.domain} (${h.totalCount})`)
+        .join(', ')}`;
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8.5);
+      const footerLines = doc.splitTextToSize(footerStr, contentW - 8);
+      const boxH = footerLines.length * 4.2 + 6;
+      ensureSpace(boxH + 4);
+
+      doc.setFillColor(248, 250, 252);
+      doc.setDrawColor(228, 226, 220);
+      doc.setLineWidth(0.25);
+      doc.roundedRect(marginX, y - 3.5, contentW, boxH, 1.5, 1.5, 'FD');
+      doc.setTextColor(21, 128, 61);
+      doc.setFont('helvetica', 'bold');
+      doc.text(footerLines, marginX + 4, y + 1);
+    }
+
+    doc.save(filename);
+    if (toastLabel) showToast(toastLabel);
+  }
+
+  function downloadFullReportPDF() {
+    if (retailersWithOos.length === 0) {
+      showToast('All tracked products are currently in stock.');
+      return;
+    }
+    const subtitle = `${oosProductGroups.length} product${oosProductGroups.length === 1 ? '' : 's'} out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists${
+      parentSiteDomain && inStockOnParentCount > 0
+        ? ` (${inStockOnParentCount} in stock at ${parentSiteDomain})`
+        : ''
+    } · Checked ${fmtShortTime(latestCheck)}`;
+
+    renderAndSavePDF({
+      title: `${brand.name} — UK Retail Stockist Report`,
+      subtitle,
+      blocks: retailersWithOos,
+      includeHealthyFooter: true,
+      filename: `${brand.slug}-uk-retail-stockist-report.pdf`,
+      toastLabel: `Downloaded ${brand.name} full PDF report`
+    });
+  }
+
+  function downloadRetailerPDF(ret) {
+    const subtitle = `${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock at ${ret.domain} · Checked ${fmtShortTime(latestCheck)}`;
+    renderAndSavePDF({
+      title: `${brand.name} — ${ret.domain} Stockist Report`,
+      subtitle,
+      blocks: [ret],
+      includeHealthyFooter: false,
+      filename: `${brand.slug}-${shortStoreLabel(ret.domain)}-oos-report.pdf`,
+      toastLabel: `Downloaded ${ret.domain} PDF report`
+    });
+  }
+
+  function downloadSingleEntryPDF(ret, grp, stRow) {
+    const badge = calcOutOfStockBadge(stRow.oldestOosAt);
+    const subtitle = `${grp.displayName} — ${badge} at ${ret.domain} · Checked ${fmtShortTime(latestCheck)}`;
+    renderAndSavePDF({
+      title: `${brand.name} — Single Product Out-of-Stock Report`,
+      subtitle,
+      blocks: [
+        {
+          domain: ret.domain,
+          oosCount: 1,
+          totalCount: ret.totalCount,
+          headerSummary: `  —  Out-of-Stock Product Entry (${ret.oosCount} of ${ret.totalCount} OOS at ${ret.domain})`,
+          items: [{ grp, stRow }]
+        }
+      ],
+      includeHealthyFooter: false,
+      filename: `${brand.slug}-${grp.productKey.replace(/_/g, '-')}-${shortStoreLabel(ret.domain)}.pdf`,
+      toastLabel: `Downloaded ${grp.displayName} (${ret.domain}) PDF`
+    });
   }
 
   return (
@@ -585,10 +780,10 @@ export default function BrandClient({ initialData }) {
           </button>
           <button
             className="btn-action"
-            onClick={downloadCSV}
-            title="Download CSV spreadsheet"
+            onClick={downloadFullReportPDF}
+            title="Download full UK Retail Stockist Report as PDF"
           >
-            CSV
+            PDF
           </button>
         </div>
       </header>
@@ -612,12 +807,21 @@ export default function BrandClient({ initialData }) {
                       — {ret.oosCount} of {ret.totalCount} product{ret.totalCount === 1 ? '' : 's'} out of stock
                     </span>
                   </div>
-                  <button
-                    className="btn-plain btn-xs"
-                    onClick={() => copyStoreOosList(ret.domain)}
-                  >
-                    Copy {shortStoreLabel(ret.domain)}
-                  </button>
+                  <div className="retailer-block-actions">
+                    <button
+                      className="btn-plain btn-xs"
+                      onClick={() => copyStoreOosList(ret.domain)}
+                    >
+                      Copy {shortStoreLabel(ret.domain)}
+                    </button>
+                    <button
+                      className="btn-plain btn-xs"
+                      onClick={() => downloadRetailerPDF(ret)}
+                      title={`Download ${ret.domain} OOS report as PDF`}
+                    >
+                      PDF
+                    </button>
+                  </div>
                 </div>
 
                 <ul className="flat-oos-list">
@@ -644,36 +848,48 @@ export default function BrandClient({ initialData }) {
 
                     return (
                       <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
-                        <div className="flat-oos-main">
-                          <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
-                          <span className="store-domain">{grp.displayName}</span>
+                        <div className="flat-oos-entry-row">
+                          <div className="flat-oos-entry-body">
+                            <div className="flat-oos-main">
+                              <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
+                              <span className="store-domain">{grp.displayName}</span>
 
-                          {(hasNamedSize || priceStr) && (
-                            <span className="var-pill">
-                              {hasNamedSize && <span>{firstVar.variant_title}</span>}
-                              {priceStr && <span className="var-pill-price">{priceStr}</span>}
-                            </span>
-                          )}
+                              {(hasNamedSize || priceStr) && (
+                                <span className="var-pill">
+                                  {hasNamedSize && <span>{firstVar.variant_title}</span>}
+                                  {priceStr && <span className="var-pill-price">{priceStr}</span>}
+                                </span>
+                              )}
 
-                          <a
-                            href={stRow.primaryUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flat-oos-store-link"
-                            title={`Open ${grp.displayName} on ${ret.domain}`}
+                              <a
+                                href={stRow.primaryUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flat-oos-store-link"
+                                title={`Open ${grp.displayName} on ${ret.domain}`}
+                              >
+                                <span className="sku-open">↗</span>
+                              </a>
+                            </div>
+
+                            <div className="flat-oos-sub">
+                              {inStockList.length > 0 ? (
+                                <>
+                                  <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
+                                </>
+                              ) : (
+                                <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
+                              )}
+                            </div>
+                          </div>
+
+                          <button
+                            className="btn-plain btn-xs entry-pdf-btn"
+                            onClick={() => downloadSingleEntryPDF(ret, grp, stRow)}
+                            title={`Download ${grp.displayName} (${ret.domain}) as PDF`}
                           >
-                            <span className="sku-open">↗</span>
-                          </a>
-                        </div>
-
-                        <div className="flat-oos-sub">
-                          {inStockList.length > 0 ? (
-                            <>
-                              <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
-                            </>
-                          ) : (
-                            <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
-                          )}
+                            PDF
+                          </button>
                         </div>
                       </li>
                     );

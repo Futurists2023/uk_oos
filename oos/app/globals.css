@@ -348,6 +348,13 @@ a:hover {
   gap: 8px;
 }
 
+.retailer-block-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
 .retailer-domain-name {
   font-size: 1.08rem;
   font-weight: 700;
@@ -388,6 +395,22 @@ a:hover {
 
 .flat-oos-entry:hover {
   background: rgba(0, 0, 0, 0.016);
+}
+
+.flat-oos-entry-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.flat-oos-entry-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.entry-pdf-btn {
+  flex-shrink: 0;
 }
 
 .flat-oos-main {
