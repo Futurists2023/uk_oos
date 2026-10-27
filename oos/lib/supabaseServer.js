@@ -17,6 +17,28 @@ function normalizeSkuRow(s) {
 }
 
 /**
+ * Paginates a Supabase PostgREST endpoint in 1,000-row chunks so it never truncates at PostgREST's 1,000-row cap.
+ */
+async function fetchAllPages(baseEndpoint, headers, maxPages = 50) {
+  const pageSize = 1000;
+  const allRows = [];
+  for (let page = 0; page < maxPages; page++) {
+    const offset = page * pageSize;
+    const sep = baseEndpoint.includes('?') ? '&' : '?';
+    const res = await fetch(`${baseEndpoint}${sep}limit=${pageSize}&offset=${offset}`, {
+      headers,
+      cache: 'no-store'
+    });
+    if (!res.ok) break;
+    const batch = await res.json();
+    if (!Array.isArray(batch) || batch.length === 0) break;
+    allRows.push(...batch);
+    if (batch.length < pageSize) break;
+  }
+  return allRows;
+}
+
+/**
  * Fetches global data for the Master Admin Panel (`/admin`).
  * Runs exclusively on the server so `SUPABASE_SERVICE_ROLE_KEY` is never exposed to the client.
  */
@@ -40,14 +62,12 @@ export async function fetchAllAdminData() {
     Authorization: `Bearer ${key}`
   };
 
-  const [stRes, skRes, evRes] = await Promise.all([
-    fetch(`${url}/rest/v1/stores?select=*&order=brand.asc,domain.asc&limit=5000`, { headers, cache: 'no-store' }),
-    fetch(`${url}/rest/v1/skus?select=*&order=brand.asc,domain.asc,product_title.asc&limit=10000`, { headers, cache: 'no-store' }),
+  const [stores, rawSkus, evRes] = await Promise.all([
+    fetchAllPages(`${url}/rest/v1/stores?select=*&order=brand.asc,domain.asc`, headers, 10),
+    fetchAllPages(`${url}/rest/v1/skus?select=*&order=sku_key.asc`, headers, 50),
     fetch(`${url}/rest/v1/stock_events?select=*&order=occurred_at.desc&limit=300`, { headers, cache: 'no-store' })
   ]);
 
-  const stores = stRes.ok ? await stRes.json() : [];
-  const rawSkus = skRes.ok ? await skRes.json() : [];
   const events = evRes.ok ? await evRes.json() : [];
 
   return {
@@ -84,14 +104,12 @@ export async function fetchSingleBrandData(brandObj) {
     Authorization: `Bearer ${key}`
   };
 
-  const [stRes, skRes, evRes] = await Promise.all([
-    fetch(`${url}/rest/v1/stores?select=*&brand=eq.${encodedBrand}&order=domain.asc&limit=1000`, { headers, cache: 'no-store' }),
-    fetch(`${url}/rest/v1/skus?select=*&brand=eq.${encodedBrand}&order=domain.asc,product_title.asc&limit=5000`, { headers, cache: 'no-store' }),
+  const [stores, rawSkus, evRes] = await Promise.all([
+    fetchAllPages(`${url}/rest/v1/stores?select=*&brand=eq.${encodedBrand}&order=domain.asc`, headers, 5),
+    fetchAllPages(`${url}/rest/v1/skus?select=*&brand=eq.${encodedBrand}&order=sku_key.asc`, headers, 10),
     fetch(`${url}/rest/v1/stock_events?select=*&brand=eq.${encodedBrand}&order=occurred_at.desc&limit=150`, { headers, cache: 'no-store' })
   ]);
 
-  const stores = stRes.ok ? await stRes.json() : [];
-  const rawSkus = skRes.ok ? await skRes.json() : [];
   const events = evRes.ok ? await evRes.json() : [];
 
   return {

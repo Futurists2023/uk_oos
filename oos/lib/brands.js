@@ -70,7 +70,6 @@ export const TIER_1_MAJOR_UK_RETAILERS = [
   'cultbeauty.com',
   'lookfantastic.com',
   'ohmycream.co.uk',
-  'sephora.co.uk',
   'planetorganic.com',
   'healf.com',
   'selfridges.com',
@@ -95,9 +94,7 @@ export const TIER_1_MAJOR_UK_RETAILERS = [
   'well.co.uk',
   'beautybay.com',
   'escentual.com',
-  'feelunique.com',
-  'asos.com',
-  'next.co.uk'
+  'asos.com'
 ];
 
 export function isTier1Domain(domain) {

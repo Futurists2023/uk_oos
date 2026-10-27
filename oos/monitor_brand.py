@@ -182,6 +182,8 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
         if variants:
             for v in variants:
                 v_title = (v.get("title") or "Default").strip()
+                if re.search(r"\b(?:5\s*litre|5\s*l|salon\s*size|professional\s*only|tester)\b", v_title, re.I):
+                    continue
                 if v_title.lower() == "default title":
                     m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
                     v_title = m_size.group(1) if m_size else "Standard"
@@ -206,7 +208,7 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
                     "sku_key": sku_key,
                     "product_title": title,
                     "variant_title": v_title,
-                    "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title),
+                    "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title, v_title),
                     "product_url": prod_url,
                     "sku_code": v.get("sku") or "",
                     "price": price_val,

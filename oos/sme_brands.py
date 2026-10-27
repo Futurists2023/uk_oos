@@ -393,7 +393,7 @@ SME_BRANDS: list[dict] = [
         "category": "Skincare & Facial Botanicals",
         "aliases": ["Pai Skincare", "Pai", "Pai Organic"],
         "dtc_domains": ["paiskincare.com", "paiskincare.co.uk"],
-        "verified_retailers": ["cultbeauty.co.uk", "ohmycream.co.uk", "lookfantastic.com", "sephora.co.uk"],
+        "verified_retailers": ["cultbeauty.co.uk", "ohmycream.co.uk", "lookfantastic.com"],
         "search_hint": '"Pai Skincare" ("Rosehip BioRegenerate" OR "Middlemist Seven" OR "The Impossible Glow")',
     },
     {
@@ -512,17 +512,15 @@ SME_BRANDS: list[dict] = [
 
 BRANDS_BY_SLUG = {b["slug"]: b for b in SME_BRANDS}
 
-# Tier 1: Major & Prestige UK National Retailers (captured & tagged distinctly from Tier 2 Independents)
+# Tier 1: Major & Prestige UK National Retailers (32 verified large external UK online retail stockists)
 TIER_1_MAJOR_UK_RETAILERS = {
     "boots.com",
     "hollandandbarrett.com",
     "superdrug.com",
     "spacenk.com",
     "cultbeauty.co.uk",
-    "cultbeauty.com",
     "lookfantastic.com",
     "ohmycream.co.uk",
-    "sephora.co.uk",
     "planetorganic.com",
     "healf.com",
     "selfridges.com",
@@ -547,9 +545,7 @@ TIER_1_MAJOR_UK_RETAILERS = {
     "well.co.uk",
     "beautybay.com",
     "escentual.com",
-    "feelunique.com",
     "asos.com",
-    "next.co.uk",
 }
 
 
@@ -622,13 +618,23 @@ def matches_brand(brand: dict, vendor: str, title: str) -> bool:
     return False
 
 
-def normalize_product_family_key(brand: dict, title: str) -> str:
+def normalize_product_family_key(brand: dict, title: str, variant_title: str = "") -> str:
     """Create a cross-store canonical product key for any of the UK Scale-Up brands.
 
     Decodes HTML entities, strips file extensions (.html/.aspx), brand names/aliases,
-    conjunctions ('and'/'&'/'plus'), sizes/weights/counts (e.g. 50ml, 100g, 60 caps),
-    and punctuation so the same SKU across different UK retailers groups together.
+    conjunctions ('and'/'&'/'plus'), standard sizes/weights/counts (e.g. 50ml, 100g, 60 caps),
+    and punctuation so the same SKU across different UK retailers groups together, while
+    automatically preserving distinct format/size tiers (_refill, _duo, _supersize, _travel).
     """
+    combined_raw = f"{title or ''} {variant_title or ''}".strip()
+    raw_low = html.unescape(combined_raw).lower()
+
+    # Detect universal format/size tier qualifiers before stripping numbers/units
+    is_refill = bool(re.search(r"\b(?:refill|pouch|eco\s*refill)\b", raw_low))
+    is_duo = bool(re.search(r"\b(?:duo|twin|double\s*pack|2\s*x\s*\d+)\b", raw_low))
+    is_supersize = bool(re.search(r"\b(?:supersize|super\s*size|jumbo|value\s*size|1000\s*ml|500\s*ml|1\s*l|1\s*litre)\b", raw_low))
+    is_travel = bool(re.search(r"\b(?:travel|mini|discovery\s*size|deluxe\s*size)\b", raw_low))
+
     low = html.unescape(title or "").lower()
     low = re.sub(r"\.(?:html?|aspx|php)$", "", low)
     low = low.replace("-", " ")
@@ -639,10 +645,10 @@ def normalize_product_family_key(brand: dict, title: str) -> str:
     for al in sorted(brand["aliases"], key=len, reverse=True):
         low = re.sub(r"\b" + re.escape(al.lower().replace("-", " ")) + r"\b", " ", low)
 
-    # Strip sizes, weights, capsule/tablet counts, pack sizes, prices
+    # Strip sizes, weights, capsule/tablet counts, pack sizes, prices, and format words (re-appended canonically below)
     low = re.sub(r"£\d+(?:\.\d{2})?", " ", low)
     low = re.sub(r"\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|fl\s*oz|l|caps|capsules|tablets|tabs|sachets|pieces|pcs|pack|pk|m)\b", " ", low, flags=re.I)
-    low = re.sub(r"\b(?:pack\s+of\s+\d+|size|default\s+title|standard|incl\s+vat|new|organic|natural|and|plus|with|for)\b", " ", low, flags=re.I)
+    low = re.sub(r"\b(?:pack\s+of\s+\d+|size|default\s+title|standard|incl\s+vat|new|organic|natural|and|plus|with|for|refill|pouch|supersize|jumbo|travel|mini)\b", " ", low, flags=re.I)
     low = re.sub(r"[^a-z0-9]+", " ", low).strip()
     low = re.sub(r"\s+", "_", low)
 
@@ -700,13 +706,13 @@ def normalize_product_family_key(brand: dict, title: str) -> str:
         if "life_soul" in low:
             return "life_soul_omega_3_capsules"
     elif brand["slug"] == "oskia":
-        raw_t = (title or "").lower()
-        if "cleansing_gel" in low and ("duo" in low or "double" in low or "2 x 100" in raw_t):
+        raw_t = raw_low
+        if "cleansing_gel" in low and ("duo" in low or "double" in low or "2 x 100" in raw_t or is_duo):
             return "renaissance_cleansing_gel_duo"
         if "renaissance" in low and "cleansing_gel" in low:
-            if "200" in raw_t or "supersize" in raw_t:
+            if "200" in raw_t or "supersize" in raw_t or is_supersize:
                 return "renaissance_cleansing_gel_200ml"
-            if "35" in raw_t or "travel" in raw_t:
+            if "35" in raw_t or "travel" in raw_t or is_travel:
                 return "renaissance_cleansing_gel_35ml"
             return "renaissance_cleansing_gel_100ml"
         if "renaissance_mask" in low:
@@ -798,4 +804,13 @@ def normalize_product_family_key(brand: dict, title: str) -> str:
         if "spf30" in low or "spf_30" in low:
             return "spf30_vitamin_face_cream"
 
-    return low or f"{brand['slug']}_sku"
+    base_key = low or f"{brand['slug']}_sku"
+    if is_refill and not base_key.endswith("_refill"):
+        base_key = f"{base_key}_refill"
+    elif is_duo and not base_key.endswith("_duo"):
+        base_key = f"{base_key}_duo"
+    elif is_supersize and not base_key.endswith("_supersize"):
+        base_key = f"{base_key}_supersize"
+    elif is_travel and not base_key.endswith("_travel"):
+        base_key = f"{base_key}_travel"
+    return base_key

@@ -80,11 +80,17 @@ function cleanProductDisplayName(rawTitle, brandName, normKey = '') {
   }
   if (brandName) {
     const escaped = brandName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    t = t.replace(new RegExp(`^${escaped}\\s*(?:skincare|london)?\\s*[-–—:]?\\s*`, 'i'), '').trim();
+    t = t.replace(new RegExp(`^${escaped}\\s*(?:skincare|london|wellbeing|organic\\s+beauty)?\\s*[-–—:]?\\s*`, 'i'), '').trim();
     t = t.replace(new RegExp(`\\s*[-–—:]\\s*${escaped}$`, 'i'), '').trim();
   }
   t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
-  return t || decodeHtmlEntities(rawTitle).trim();
+  const base = t || decodeHtmlEntities(rawTitle).trim();
+
+  if (normKey.endsWith('_refill') && !/\brefill\b/i.test(base)) return `${base} (Refill)`;
+  if (normKey.endsWith('_duo') && !/\b(?:duo|twin)\b/i.test(base)) return `${base} (Duo)`;
+  if (normKey.endsWith('_supersize') && !/\b(?:supersize|jumbo)\b/i.test(base)) return `${base} (Supersize)`;
+  if (normKey.endsWith('_travel') && !/\b(?:travel|mini)\b/i.test(base)) return `${base} (Travel)`;
+  return base;
 }
 
 function isJunkProductRow(s, brandName, brandSlug) {

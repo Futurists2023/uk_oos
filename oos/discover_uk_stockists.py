@@ -37,11 +37,12 @@ ALL_DTC_DOMAINS = {
 }
 
 EXCLUDED_CHAINS_AND_MARKETPLACES = ALL_DTC_DOMAINS | {
-    # Marketplaces & Grey-Market Reseller Platforms (Excluded)
+    # Marketplaces, Grey-Market Reseller Platforms & Excluded Retailers
     "amazon.co.uk", "amazon.com", "ebay.co.uk", "ebay.com", "etsy.com",
     "onbuy.com", "fruugo.co.uk", "fruugo.com", "aliexpress.com", "temu.com",
     "notonthehighstreet.com", "ebay.ie", "ubuy.co.uk", "desertcart.co.uk",
     "tkmaxx.com", "very.co.uk", "argos.co.uk",
+    "sephora.co.uk", "sephora.com", "feelunique.com", "next.co.uk",
 }
 
 EXCLUDED_NON_RETAIL = {
@@ -65,45 +66,9 @@ EXCLUDED_NON_RETAIL = {
     "britishbeautycouncil.com", "cewuk.co.uk", "diarydirectory.com",
 }
 
-# Master pool of known UK independent clean beauty, apothecary, eco & health retailers
-UK_INDEPENDENT_RETAILER_POOL = [
-    "contentbeautywellbeing.com",
-    "bodykind.com",
-    "mypure.co.uk",
-    "biggreensmile.com",
-    "onlynaturals.co.uk",
-    "expresschemist.co.uk",
-    "planetorganic.com",
-    "quickvit.co.uk",
-    "baldwins.co.uk",
-    "dulwichhealth.co.uk",
-    "johnandginger.co.uk",
-    "naturisimo.com",
-    "gloworganic.co.uk",
-    "plasticfreedom.co.uk",
-    "allnaturalme.co.uk",
-    "ohmycream.co.uk",
-    "liveinthelight.co.uk",
-    "blommabeauty.com",
-    "victoriahealth.com",
-    "ziracle.com",
-    "justbeyoutiful.co.uk",
-    "ethicalhouse.co.uk",
-    "peacewiththewild.co.uk",
-    "ethicalsuperstore.com",
-    "babipur.co.uk",
-    "ecco-verde.co.uk",
-    "regn.co.uk",
-    "riverandpark.co.uk",
-    "therapyorganics.co.uk",
-    "citysurvivor.co.uk",
-    "naturedoc.shop",
-    "thelighttechnique.com",
-    "elysiantheory.co.uk",
-    "supplementhub.co.uk",
-    "shop.zenhealthcare.co.uk",
-    "yourhealthbasket.co.uk",
-]
+# Master pool strictly locked to the 32 Large External UK Online Retail Stockists
+UK_LARGE_RETAILER_POOL = sorted(sme_brands.TIER_1_MAJOR_UK_RETAILERS)
+UK_INDEPENDENT_RETAILER_POOL = UK_LARGE_RETAILER_POOL
 
 
 def clean_domain(url_or_domain: str) -> str:
@@ -515,7 +480,7 @@ async def discover_for_brand(context, brand: dict, skip_search: bool = False) ->
         await s_page.close()
 
     all_candidates: dict[str, dict] = {}
-    for dom in UK_INDEPENDENT_RETAILER_POOL:
+    for dom in UK_LARGE_RETAILER_POOL:
         c_dom = clean_domain(dom)
         excluded, _ = is_excluded_domain(c_dom)
         if not excluded:
@@ -527,25 +492,49 @@ async def discover_for_brand(context, brand: dict, skip_search: bool = False) ->
                 if u not in all_candidates[dom]["hints"]:
                     all_candidates[dom]["hints"].append(u)
             all_candidates[dom]["source"] = "seed_pool+search"
-        else:
-            all_candidates[dom] = {"hints": urls, "source": "web_search"}
 
-    print(f"\n=== STEP 2 ({name}): Verifying {len(all_candidates)} Candidate Independent UK Stores ===")
+    print(f"\n=== STEP 2 ({name}): Verifying {len(all_candidates)} Large UK Online Retail Stockists ===")
     verified_stockists = []
     checked_all = []
 
+    # 1. Always verify and prepend the brand's primary Official Brand DTC domain
+    dtc_domains = brand.get("dtc_domains", [])
+    if dtc_domains:
+        primary_dtc = clean_domain(dtc_domains[0])
+        print(f"  [DTC] Checking Official Brand DTC {primary_dtc} for {name}...")
+        dtc_res = await check_storefront_for_brand(
+            context,
+            primary_dtc,
+            brand,
+            [f"https://{primary_dtc}/collections/all", f"https://{primary_dtc}"],
+            "Official Brand DTC",
+        )
+        dtc_res["source"] = "Official Brand DTC"
+        dtc_res["stocks_brand"] = True
+        dtc_res["is_uk"] = True
+        dtc_res["is_ecommerce"] = True
+        if not dtc_res.get("brand_url"):
+            dtc_res["brand_url"] = f"https://{primary_dtc}"
+        verified_stockists.append(dtc_res)
+
+    # 2. Verify across the 32 Large UK Online Retail Stockists
     for idx, (dom, info) in enumerate(all_candidates.items(), 1):
         print(f"  [{idx}/{len(all_candidates)}] Checking {dom} for {name} (source: {info['source']})...")
         res = await check_storefront_for_brand(context, dom, brand, info["hints"], info["source"])
+        res["source"] = "Tier 1 (Major UK Retailer)"
         checked_all.append(res)
         if res["stocks_brand"] and res["is_uk"] and res["is_ecommerce"]:
             verified_stockists.append(res)
             print(
-                f"    -> CONFIRMED UK STOCKIST ({name}): {dom} | "
+                f"    -> CONFIRMED LARGE UK STOCKIST ({name}): {dom} | "
                 f"{res['product_count']} product(s) | {res['brand_url']}"
             )
 
-    verified_stockists.sort(key=lambda x: (-x["product_count"], x["domain"]))
+    # Keep Official Brand DTC first, then sort external stockists by product_count descending
+    dtc_entries = [s for s in verified_stockists if s.get("source") == "Official Brand DTC"]
+    ext_entries = [s for s in verified_stockists if s.get("source") != "Official Brand DTC"]
+    ext_entries.sort(key=lambda x: (-x["product_count"], x["domain"]))
+    verified_stockists = dtc_entries + ext_entries
 
     payload = {
         "brand": name,

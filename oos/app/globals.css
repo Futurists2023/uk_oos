@@ -58,10 +58,10 @@ a:hover {
 }
 
 .admin-preview-shell {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .admin-preview-bar {
@@ -75,7 +75,7 @@ a:hover {
   flex-shrink: 0;
 }
 
-.admin-preview-shell .sheet.sheet-matrix {
+.admin-preview-shell .sheet {
   flex: 1;
   height: auto;
   min-height: 0;

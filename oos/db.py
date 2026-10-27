@@ -46,7 +46,7 @@ def supabase_headers(key: str, prefer: str = "resolution=merge-duplicates") -> d
 
 
 def sync_rows_to_supabase(table: str, rows: list[dict], on_conflict: str | None = None) -> bool:
-    """Upsert/insert a batch of rows into a Supabase PostgREST table. Fails gracefully if project is paused."""
+    """Upsert/insert rows into a Supabase PostgREST table in chunks of 500. Fails gracefully if project is paused."""
     if not rows:
         return True
     url, key = supabase_credentials()
@@ -55,15 +55,20 @@ def sync_rows_to_supabase(table: str, rows: list[dict], on_conflict: str | None 
     endpoint = f"{url}/rest/v1/{table}"
     params = {"on_conflict": on_conflict} if on_conflict else None
     prefer = "resolution=merge-duplicates" if on_conflict else "return=minimal"
+    chunk_size = 500
     try:
-        resp = requests.post(
-            endpoint,
-            params=params,
-            headers=supabase_headers(key, prefer=prefer),
-            json=rows,
-            timeout=10,
-        )
-        return resp.ok
+        for i in range(0, len(rows), chunk_size):
+            chunk = rows[i : i + chunk_size]
+            resp = requests.post(
+                endpoint,
+                params=params,
+                headers=supabase_headers(key, prefer=prefer),
+                json=chunk,
+                timeout=20,
+            )
+            if not resp.ok:
+                return False
+        return True
     except Exception:
         return False
 
@@ -323,7 +328,7 @@ def record_store_snapshot(
 
 
 def pull_supabase_to_sqlite(conn: sqlite3.Connection) -> dict[str, int]:
-    """Pull latest stores and skus from Supabase into local SQLite so stateless cloud runners preserve OOS timestamps."""
+    """Pull latest stores and skus from Supabase into local SQLite using 1,000-row pagination."""
     url, key = supabase_credentials()
     if not url or not key:
         return {"stores": 0, "skus": 0}
@@ -331,10 +336,21 @@ def pull_supabase_to_sqlite(conn: sqlite3.Connection) -> dict[str, int]:
     cur = conn.cursor()
     pulled_stores = 0
     pulled_skus = 0
+    page_size = 1000
     try:
-        r_st = requests.get(f"{url}/rest/v1/stores?select=*&limit=2000", headers=supabase_headers(key), timeout=15)
-        if r_st.ok and isinstance(r_st.json(), list):
-            for s in r_st.json():
+        offset = 0
+        while True:
+            r_st = requests.get(
+                f"{url}/rest/v1/stores?select=*&order=brand.asc,domain.asc&limit={page_size}&offset={offset}",
+                headers=supabase_headers(key),
+                timeout=15,
+            )
+            if not r_st.ok or not isinstance(r_st.json(), list):
+                break
+            batch = r_st.json()
+            if not batch:
+                break
+            for s in batch:
                 cur.execute(
                     """INSERT INTO stores (domain, brand, platform, brand_url, first_seen_at, last_checked_at, last_product_count)
                        VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -349,10 +365,23 @@ def pull_supabase_to_sqlite(conn: sqlite3.Connection) -> dict[str, int]:
                     ),
                 )
                 pulled_stores += 1
+            if len(batch) < page_size:
+                break
+            offset += page_size
 
-        r_sk = requests.get(f"{url}/rest/v1/skus?select=*&limit=10000", headers=supabase_headers(key), timeout=20)
-        if r_sk.ok and isinstance(r_sk.json(), list):
-            for k in r_sk.json():
+        offset = 0
+        while True:
+            r_sk = requests.get(
+                f"{url}/rest/v1/skus?select=*&order=sku_key.asc&limit={page_size}&offset={offset}",
+                headers=supabase_headers(key),
+                timeout=20,
+            )
+            if not r_sk.ok or not isinstance(r_sk.json(), list):
+                break
+            batch = r_sk.json()
+            if not batch:
+                break
+            for k in batch:
                 cur.execute(
                     """INSERT INTO skus (
                         sku_key, domain, brand, product_title, variant_title,
@@ -381,6 +410,9 @@ def pull_supabase_to_sqlite(conn: sqlite3.Connection) -> dict[str, int]:
                     ),
                 )
                 pulled_skus += 1
+            if len(batch) < page_size:
+                break
+            offset += page_size
         conn.commit()
     except Exception:
         pass
