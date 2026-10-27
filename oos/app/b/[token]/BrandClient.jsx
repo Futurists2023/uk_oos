@@ -723,27 +723,6 @@ export default function BrandClient({ initialData }) {
     });
   }
 
-  function downloadSingleEntryPDF(ret, grp, stRow) {
-    const badge = calcOutOfStockBadge(stRow.oldestOosAt);
-    const subtitle = `${grp.displayName} — ${badge} at ${ret.domain} · Checked ${fmtShortTime(latestCheck)}`;
-    renderAndSavePDF({
-      title: `${brand.name} — Single Product Out-of-Stock Report`,
-      subtitle,
-      blocks: [
-        {
-          domain: ret.domain,
-          oosCount: 1,
-          totalCount: ret.totalCount,
-          headerSummary: `  —  Out-of-Stock Product Entry (${ret.oosCount} of ${ret.totalCount} OOS at ${ret.domain})`,
-          items: [{ grp, stRow }]
-        }
-      ],
-      includeHealthyFooter: false,
-      filename: `${brand.slug}-${grp.productKey.replace(/_/g, '-')}-${shortStoreLabel(ret.domain)}.pdf`,
-      toastLabel: `Downloaded ${grp.displayName} (${ret.domain}) PDF`
-    });
-  }
-
   return (
     <div className="sheet">
       <header className="sheet-header">
@@ -849,48 +828,36 @@ export default function BrandClient({ initialData }) {
 
                     return (
                       <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
-                        <div className="flat-oos-entry-row">
-                          <div className="flat-oos-entry-body">
-                            <div className="flat-oos-main">
-                              <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
-                              <span className="store-domain">{grp.displayName}</span>
+                        <div className="flat-oos-main">
+                          <span className="list-duration-lead">{calcOutOfStockBadge(stRow.oldestOosAt)}</span>
+                          <span className="store-domain">{grp.displayName}</span>
 
-                              {(hasNamedSize || priceStr) && (
-                                <span className="var-pill">
-                                  {hasNamedSize && <span>{firstVar.variant_title}</span>}
-                                  {priceStr && <span className="var-pill-price">{priceStr}</span>}
-                                </span>
-                              )}
+                          {(hasNamedSize || priceStr) && (
+                            <span className="var-pill">
+                              {hasNamedSize && <span>{firstVar.variant_title}</span>}
+                              {priceStr && <span className="var-pill-price">{priceStr}</span>}
+                            </span>
+                          )}
 
-                              <a
-                                href={stRow.primaryUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flat-oos-store-link"
-                                title={`Open ${grp.displayName} on ${ret.domain}`}
-                              >
-                                <span className="sku-open">↗</span>
-                              </a>
-                            </div>
-
-                            <div className="flat-oos-sub">
-                              {inStockList.length > 0 ? (
-                                <>
-                                  <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
-                                </>
-                              ) : (
-                                <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
-                              )}
-                            </div>
-                          </div>
-
-                          <button
-                            className="btn-plain btn-xs entry-pdf-btn"
-                            onClick={() => downloadSingleEntryPDF(ret, grp, stRow)}
-                            title={`Download ${grp.displayName} (${ret.domain}) as PDF`}
+                          <a
+                            href={stRow.primaryUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flat-oos-store-link"
+                            title={`Open ${grp.displayName} on ${ret.domain}`}
                           >
-                            PDF
-                          </button>
+                            <span className="sku-open">↗</span>
+                          </a>
+                        </div>
+
+                        <div className="flat-oos-sub">
+                          {inStockList.length > 0 ? (
+                            <>
+                              <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
+                            </>
+                          ) : (
+                            <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
+                          )}
                         </div>
                       </li>
                     );
