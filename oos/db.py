@@ -145,6 +145,9 @@ def record_store_snapshot(
     if not now_iso:
         now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
+    if not scraped_skus:
+        return {"seen": 0, "events": 0}
+
     cur = conn.cursor()
 
     # 1. Upsert store record

@@ -83,11 +83,20 @@ function cleanProductDisplayName(rawTitle, brandName, normKey = '') {
     t = t.replace(new RegExp(`^${escaped}\\s*(?:skincare|london|wellbeing|organic\\s+beauty)?\\s*[-–—:]?\\s*`, 'i'), '').trim();
     t = t.replace(new RegExp(`\\s*[-–—:]\\s*${escaped}$`, 'i'), '').trim();
   }
+  t = t.replace(/\(\s*worth\s*£?\s*\d+(?:\.\d{2})?\s*\)/gi, '').trim();
   t = t.replace(/[, -]*\b\d+(?:\.\d+)?\s*(?:ml|g|kg|oz|caps|capsules|tablets|sachets)\b\s*$/i, '').trim();
   const base = t || decodeHtmlEntities(rawTitle).trim();
 
+  if (normKey.endsWith('_1000ml_refill') && !/\brefill\b/i.test(base)) return `${base} (1000ml Refill)`;
   if (normKey.endsWith('_refill') && !/\brefill\b/i.test(base)) return `${base} (Refill)`;
+  if (normKey.endsWith('_1000ml_duo') && !/\bduo\b/i.test(base)) return `${base} (1000ml Duo)`;
   if (normKey.endsWith('_duo') && !/\b(?:duo|twin)\b/i.test(base)) return `${base} (Duo)`;
+  if (normKey.endsWith('_1000ml') && !/\b1000\s*ml\b/i.test(base)) return `${base} (1000ml)`;
+  if (normKey.endsWith('_500ml') && !/\b500\s*ml\b/i.test(base)) return `${base} (500ml)`;
+  if (normKey.endsWith('_75ml') && !/\b75\s*ml\b/i.test(base)) return `${base} (75ml)`;
+  if (normKey.endsWith('_60ml') && !/\b60\s*ml\b/i.test(base)) return `${base} (60ml)`;
+  if (normKey.endsWith('_40ml') && !/\b40\s*ml\b/i.test(base)) return `${base} (40ml)`;
+  if (normKey.endsWith('_35ml') && !/\b35\s*ml\b/i.test(base)) return `${base} (35ml)`;
   if (normKey.endsWith('_supersize') && !/\b(?:supersize|jumbo)\b/i.test(base)) return `${base} (Supersize)`;
   if (normKey.endsWith('_travel') && !/\b(?:travel|mini)\b/i.test(base)) return `${base} (Travel)`;
   return base;
@@ -127,21 +136,25 @@ const RETAILER_PRIORITY_ORDER = [
   'fenwick.co.uk',
   'flannels.com',
   'houseoffraser.co.uk',
+  'superdrug.com',
+  'hollandandbarrett.com',
   'facethefuture.co.uk',
+  'escentual.com',
+  'beautybay.com',
+  'asos.com',
   'bathandunwind.com',
   'ohmycream.co.uk',
-  'naturisimo.com',
+  'alyaka.com',
   'planetorganic.com',
-  'wholefoodsmarket.co.uk',
-  'hollandandbarrett.com',
-  'ocado.com',
+  'healf.com',
   'waitrose.com',
+  'ocado.com',
   'sainsburys.co.uk',
   'tesco.com',
-  'superdrug.com',
-  'victoriahealth.com',
-  'contentbeautywellbeing.com',
-  'alyaka.com'
+  'asda.com',
+  'morrisons.com',
+  'well.co.uk',
+  'lloydspharmacy.com'
 ];
 
 function getRetailerPriorityRank(domain, isMajorFn) {
@@ -446,9 +459,10 @@ export default function BrandClient({ initialData }) {
   function formatVariantList(variants, dtcRrp = null) {
     return variants
       .map(v => {
+        const vt = String(v.variant_title || '').trim();
         const sz =
-          v.variant_title && v.variant_title !== 'Default' && v.variant_title !== 'Standard'
-            ? v.variant_title
+          vt && !/^(?:default|default title|standard|0|os|one size|no size|n\/a)$/i.test(vt)
+            ? vt
             : '';
         const numP = v.current_price !== null && v.current_price !== undefined ? Number(v.current_price) : null;
         const pr = numP !== null ? `£${numP.toFixed(2)}` : '';
@@ -813,10 +827,9 @@ export default function BrandClient({ initialData }) {
                 <ul className="flat-oos-list">
                   {ret.items.map(({ grp, stRow }) => {
                     const firstVar = stRow.variants?.[0];
+                    const vtRaw = String(firstVar?.variant_title || '').trim();
                     const hasNamedSize =
-                      firstVar?.variant_title &&
-                      firstVar.variant_title !== 'Default' &&
-                      firstVar.variant_title !== 'Standard';
+                      vtRaw && !/^(?:default|default title|standard|0|os|one size|no size|n\/a)$/i.test(vtRaw);
                     const rawPrice =
                       firstVar?.current_price !== null && firstVar?.current_price !== undefined
                         ? Number(firstVar.current_price)

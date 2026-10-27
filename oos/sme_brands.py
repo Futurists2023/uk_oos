@@ -38,7 +38,17 @@ SME_BRANDS: list[dict] = [
         "category": "Bath, Body & Apothecary",
         "aliases": ["Philip Kingsley"],
         "dtc_domains": ["philipkingsley.co.uk", "philipkingsley.com"],
-        "verified_retailers": ["spacenk.com", "cultbeauty.co.uk", "lookfantastic.com", "hollandandbarrett.com", "boots.com"],
+        "verified_retailers": [
+            "spacenk.com",
+            "cultbeauty.co.uk",
+            "lookfantastic.com",
+            "hollandandbarrett.com",
+            "boots.com",
+            "facethefuture.co.uk",
+            "fenwick.co.uk",
+            "escentual.com",
+            "selfridges.com",
+        ],
         "search_hint": '"Philip Kingsley" ("Elasticizer" OR "Flaky Itchy Scalp" OR "Bond Builder" OR "Density")',
     },
     {
@@ -632,11 +642,20 @@ def normalize_product_family_key(brand: dict, title: str, variant_title: str = "
     # Detect universal format/size tier qualifiers before stripping numbers/units
     is_refill = bool(re.search(r"\b(?:refill|pouch|eco\s*refill)\b", raw_low))
     is_duo = bool(re.search(r"\b(?:duo|twin|double\s*pack|2\s*x\s*\d+)\b", raw_low))
-    is_supersize = bool(re.search(r"\b(?:supersize|super\s*size|jumbo|value\s*size|1000\s*ml|500\s*ml|1\s*l|1\s*litre)\b", raw_low))
+    is_1000ml = bool(re.search(r"\b(?:1000\s*ml|1\s*l|1\s*litre)\b", raw_low))
+    is_500ml = bool(re.search(r"\b500\s*ml\b", raw_low))
+    is_75ml = bool(re.search(r"\b75\s*ml\b", raw_low))
+    is_60ml = bool(re.search(r"\b60\s*ml\b", raw_low))
+    is_40ml = bool(re.search(r"\b40\s*ml\b", raw_low))
+    is_35ml = bool(re.search(r"\b35\s*ml\b", raw_low))
+    is_supersize = bool(re.search(r"\b(?:supersize|super\s*size|jumbo|value\s*size)\b", raw_low))
     is_travel = bool(re.search(r"\b(?:travel|mini|discovery\s*size|deluxe\s*size)\b", raw_low))
 
     low = html.unescape(title or "").lower()
     low = re.sub(r"\.(?:html?|aspx|php)$", "", low)
+    # Strip "(Worth £XX.XX)" promotional badges before splitting
+    low = re.sub(r"\(\s*worth\s*£?\s*\d+(?:\.\d{2})?\s*\)", " ", low, flags=re.I)
+    low = re.sub(r"\bworth\s*£?\s*\d+(?:\.\d{2})?\b", " ", low, flags=re.I)
     low = low.replace("-", " ")
     # Remove anything after pipe '|' or ' – ' if it's an ingredient subtitle or brand suffix
     low = low.split("|")[0].split("–")[0].split("—")[0]
@@ -803,12 +822,54 @@ def normalize_product_family_key(brand: dict, title: str, variant_title: str = "
             return "spf30_vitamin_milk_sunscreen"
         if "spf30" in low or "spf_30" in low:
             return "spf30_vitamin_face_cream"
+    elif brand["slug"] == "philip-kingsley":
+        # Unify optional haircare marketing descriptors across DTC & 9 UK retail stockists
+        low = low.replace("maximiser", "maximizer").replace("volumising", "boosting")
+        if "elasticizer_booster" in low:
+            low = "elasticizer_booster_conditioner"
+        elif "elasticizer_extreme" in low:
+            low = "elasticizer_extreme_treatment"
+        elif "elasticizer_therapies" in low or "bluebell" in low or "honey_nectar" in low or "mayan_vanilla" in low or "egyptian_jasmine" in low or "citrus_sunshine" in low:
+            pass
+        elif "elasticizer" in low and "effect" not in low and "styler" not in low and "gift" not in low and "set" not in low and "collection" not in low:
+            low = "elasticizer_treatment"
+        elif "elasti_styler" in low and "curl" not in low:
+            low = "elasti_styler_5_in_1_treatment"
+        elif "daily_damage_defence" in low:
+            low = "daily_damage_defence_spray"
+        elif "swimcap" in low:
+            low = "swimcap_mask"
+        elif "one_more_day" in low:
+            low = "one_more_day_dry_shampoo"
+        else:
+            low = re.sub(
+                r"\b(?:weightless|combination|gentle|smoothing|enriching|anti_dandruff|deep_conditioning|conditioning|intensive|preserving|hair_loss|for_hair_loss|brightening|daily|protective|protecting|hydrating|thickening|rich|hair)\b",
+                " ",
+                low.replace("_", " "),
+            )
+            low = re.sub(r"\s+", "_", low.strip())
 
     base_key = low or f"{brand['slug']}_sku"
-    if is_refill and not base_key.endswith("_refill"):
+    if is_refill and is_1000ml and not base_key.endswith("_1000ml_refill"):
+        base_key = f"{base_key}_1000ml_refill"
+    elif is_refill and not base_key.endswith("_refill"):
         base_key = f"{base_key}_refill"
+    elif is_duo and is_1000ml and not base_key.endswith("_1000ml_duo"):
+        base_key = f"{base_key}_1000ml_duo"
     elif is_duo and not base_key.endswith("_duo"):
         base_key = f"{base_key}_duo"
+    elif is_1000ml and not base_key.endswith("_1000ml"):
+        base_key = f"{base_key}_1000ml"
+    elif is_500ml and not base_key.endswith("_500ml"):
+        base_key = f"{base_key}_500ml"
+    elif is_75ml and not base_key.endswith("_75ml"):
+        base_key = f"{base_key}_75ml"
+    elif is_60ml and not base_key.endswith("_60ml"):
+        base_key = f"{base_key}_60ml"
+    elif is_40ml and not base_key.endswith("_40ml"):
+        base_key = f"{base_key}_40ml"
+    elif is_35ml and not base_key.endswith("_35ml"):
+        base_key = f"{base_key}_35ml"
     elif is_supersize and not base_key.endswith("_supersize"):
         base_key = f"{base_key}_supersize"
     elif is_travel and not base_key.endswith("_travel"):

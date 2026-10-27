@@ -84,84 +84,91 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
     await smooth_scroll(page, steps=2)
 
     origin = f"{urlparse(page.url).scheme}://{urlparse(page.url).netloc}"
+    raw_products = {"mode": "none", "products": []}
 
-    raw_products = await page.evaluate(
-        """async ({ slug, brandName }) => {
-            if (location.pathname.includes('/products/')) {
-                try {
-                    const r = await fetch(location.pathname + '.js');
-                    if (r.ok) {
-                        const p = await r.json();
-                        return { mode: 'product_js', products: [p] };
-                    }
-                } catch (e) {}
-            }
-
-            const candidatePaths = [
-                `/collections/${slug}/products.json?limit=250`,
-                `/collections/${slug}-skincare/products.json?limit=250`,
-                `/collections/${slug.replace(/-/g, '')}/products.json?limit=250`,
-                `/products.json?limit=250`,
-            ];
-            for (const path of candidatePaths) {
-                try {
-                    await new Promise(res => setTimeout(res, 350 + Math.random() * 450));
-                    const r = await fetch(path);
-                    if (r.ok) {
-                        const data = await r.json();
-                        if (data && Array.isArray(data.products) && data.products.length > 0) {
-                            return { mode: 'products_json', products: data.products };
-                        }
-                    }
-                } catch (e) {}
-            }
-
-            try {
-                await new Promise(res => setTimeout(res, 450 + Math.random() * 550));
-                const r = await fetch(`/search/suggest.json?q=${encodeURIComponent(brandName)}&resources[type]=product&resources[limit]=25`);
-                if (r.ok) {
-                    const data = await r.json();
-                    const candidates = (((data || {}).resources || {}).results || {}).products || [];
-                    const full = [];
-                    for (const c of candidates) {
-                        const cleanPath = (c.url || '').split('?')[0];
-                        try {
-                            await new Promise(res => setTimeout(res, 400 + Math.random() * 500));
-                            const pr = await fetch(cleanPath + '.js');
-                            if (pr.ok) {
-                                full.push(await pr.json());
-                                continue;
-                            }
-                        } catch (e) {}
-                        full.push(c);
-                    }
-                    if (full.length > 0) return { mode: 'suggest_js', products: full };
-                }
-            } catch (e) {}
-            return { mode: 'none', products: [] };
-        }""",
-        {"slug": slug, "brandName": brand_name},
-    )
+    for cand_path in [
+        f"/collections/{slug}/products.json?limit=250",
+        f"/collections/{slug}-skincare/products.json?limit=250",
+        f"/collections/{slug.replace('-', '')}/products.json?limit=250",
+    ]:
+        try:
+            req = urllib.request.Request(
+                f"{origin}{cand_path}",
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                    "Cookie": "cart_currency=GBP; localization=GB",
+                },
+            )
+            body = urllib.request.urlopen(req, timeout=15).read().decode("utf-8")
+            prods = json.loads(body).get("products") or []
+            if prods:
+                raw_products = {"mode": "products_json", "products": prods}
+                break
+        except Exception:
+            pass
 
     if not raw_products.get("products"):
-        for cand_path in [
-            f"/collections/{slug}/products.json?limit=250",
-            f"/collections/{slug}-skincare/products.json?limit=250",
-            f"/collections/{slug.replace('-', '')}/products.json?limit=250",
-            "/products.json?limit=250",
-        ]:
-            try:
-                req = urllib.request.Request(
-                    f"{origin}{cand_path}",
-                    headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"},
-                )
-                body = urllib.request.urlopen(req, timeout=15).read().decode("utf-8")
-                prods = json.loads(body).get("products") or []
-                if prods:
-                    raw_products = {"mode": "products_json", "products": prods}
-                    break
-            except Exception:
-                pass
+        raw_products = await page.evaluate(
+            """async ({ slug, brandName }) => {
+                try {
+                    document.cookie = "cart_currency=GBP; path=/";
+                    document.cookie = "localization=GB; path=/";
+                } catch (e) {}
+                if (location.pathname.includes('/products/')) {
+                    try {
+                        const r = await fetch(location.pathname + '.js');
+                        if (r.ok) {
+                            const p = await r.json();
+                            return { mode: 'product_js', products: [p] };
+                        }
+                    } catch (e) {}
+                }
+
+                const candidatePaths = [
+                    `/collections/${slug}/products.json?limit=250`,
+                    `/collections/${slug}-skincare/products.json?limit=250`,
+                    `/collections/${slug.replace(/-/g, '')}/products.json?limit=250`,
+                    `/products.json?limit=250`,
+                ];
+                for (const path of candidatePaths) {
+                    try {
+                        await new Promise(res => setTimeout(res, 350 + Math.random() * 450));
+                        const r = await fetch(path);
+                        if (r.ok) {
+                            const data = await r.json();
+                            if (data && Array.isArray(data.products) && data.products.length > 0) {
+                                return { mode: 'products_json', products: data.products };
+                            }
+                        }
+                    } catch (e) {}
+                }
+
+                try {
+                    await new Promise(res => setTimeout(res, 450 + Math.random() * 550));
+                    const r = await fetch(`/search/suggest.json?q=${encodeURIComponent(brandName)}&resources[type]=product&resources[limit]=25`);
+                    if (r.ok) {
+                        const data = await r.json();
+                        const candidates = (((data || {}).resources || {}).results || {}).products || [];
+                        const full = [];
+                        for (const c of candidates) {
+                            const cleanPath = (c.url || '').split('?')[0];
+                            try {
+                                await new Promise(res => setTimeout(res, 400 + Math.random() * 500));
+                                const pr = await fetch(cleanPath + '.js');
+                                if (pr.ok) {
+                                    full.push(await pr.json());
+                                    continue;
+                                }
+                            } catch (e) {}
+                            full.push(c);
+                        }
+                        if (full.length > 0) return { mode: 'suggest_js', products: full };
+                    }
+                } catch (e) {}
+                return { mode: 'none', products: [] };
+            }""",
+            {"slug": slug, "brandName": brand_name},
+        )
 
     skus = []
     mode = raw_products.get("mode")
@@ -184,7 +191,7 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
                 v_title = (v.get("title") or "Default").strip()
                 if re.search(r"\b(?:5\s*litre|5\s*l|salon\s*size|professional\s*only|tester)\b", v_title, re.I):
                     continue
-                if v_title.lower() == "default title":
+                if v_title.lower() in ("default title", "default", "0", "os", "one size", "no size", "n/a"):
                     m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
                     v_title = m_size.group(1) if m_size else "Standard"
                 raw_price = v.get("price")
@@ -192,6 +199,8 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
                     price_val = round(float(raw_price) / 100.0, 2)
                 else:
                     price_val = parse_gbp_price(raw_price)
+                if price_val is not None and price_val > 250.0:
+                    price_val = round(price_val / 100.0, 2)
 
                 if is_dtc and (price_val is None or price_val <= 0.0):
                     continue
@@ -201,6 +210,8 @@ async def scrape_shopify_store(page, store: dict, brand_cfg: dict) -> list[dict]
                     comp_val = round(float(raw_comp) / 100.0, 2)
                 else:
                     comp_val = parse_gbp_price(raw_comp)
+                if comp_val is not None and comp_val > 250.0:
+                    comp_val = round(comp_val / 100.0, 2)
 
                 v_id = v.get("id") or v_title
                 sku_key = f"{domain}::{slug}::{handle}::{v_id}"
@@ -576,12 +587,20 @@ async def scrape_boots_store(page, store: dict, brand_cfg: dict) -> list[dict]:
 
     page.on("response", handle_boots_response)
     try:
-        await page.goto(brand_url, wait_until="domcontentloaded", timeout=40000)
-        await human_pause(3.2, 5.0, f"Browsing {domain} ({brand_name})")
-        await accept_cookies(page)
-        await smooth_scroll(page, steps=4)
+        await page.goto(brand_url, wait_until="load", timeout=45000)
+        await human_pause(5.5, 7.0, f"Browsing {domain} ({brand_name})")
+        try:
+            await page.wait_for_load_state("domcontentloaded", timeout=10000)
+        except Exception:
+            pass
+        for _ in range(4):
+            try:
+                await page.mouse.wheel(0, 550)
+            except Exception:
+                pass
+            await asyncio.sleep(1.6)
 
-        shop_all = page.locator(f"a[href*='{slug}-shop-all'], a:has-text('Shop all')").first
+        shop_all = page.locator(f"a[href*='{slug}-shop-all'], a[href*='/{slug}/'][href*='shop-all']").first
         if await shop_all.count() > 0:
             try:
                 await shop_all.scroll_into_view_if_needed(timeout=5000)
@@ -609,41 +628,93 @@ async def scrape_boots_store(page, store: dict, brand_cfg: dict) -> list[dict]:
 
     skus = []
     seen_ids = set()
-    for h in captured_hits:
-        obj_id = str(h.get("objectId") or h.get("objectID") or "")
-        if not obj_id or obj_id in seen_ids:
+
+    dom_raw = await page.evaluate(
+        """(brandName) => {
+            const seen = new Set();
+            const out = [];
+            const bEsc = brandName.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
+            for (const a of document.querySelectorAll('a[href*="-10"]')) {
+                const url = (a.href || '').split('?')[0].split('#')[0];
+                if (!url || seen.has(url)) continue;
+                const card = a.closest('[data-productid], .oct-teaser, [class*="product-card"], [class*="product_card"], article, li') || a.parentElement;
+                const fullText = card ? (card.innerText || '').replace(/\\s+/g, ' ').trim() : (a.innerText || '').replace(/\\s+/g, ' ').trim();
+                if (!new RegExp(bEsc, 'i').test(fullText + ' ' + url)) continue;
+                if (!/£\\d+/.test(fullText)) continue;
+                seen.add(url);
+                let title = (a.innerText || '').replace(/\\s+/g, ' ').trim();
+                if (!title || title.length < 5 || /^£/.test(title)) {
+                    title = fullText.split(/\\(\\d+\\)|£\\d+/)[0].replace(/^(?:New|Offer|Save[^A-Z]*)\\s+/i, '').trim();
+                }
+                const cleanedPrice = fullText.replace(/£\\d+(?:\\.\\d{2})?\\s*per\\s*\\d+\\s*[A-Za-z]+/gi, '');
+                const priceMatches = cleanedPrice.match(/£(\\d+\\.\\d{2})/g) || [];
+                const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
+                const price = prices.length > 0 ? prices[0] : null;
+                const compareAt = prices.length > 1 && prices[1] > price ? prices[1] : null;
+                const isOos = /\\bout of stock\\b|\\bsold out\\b|\\bcoming soon\\b|\\bunavailable\\b/i.test(fullText) && !/\\badd to basket\\b/i.test(fullText);
+                out.push({ title, url, price, compareAt, available: !isOos });
+            }
+            return out;
+        }""",
+        brand_name,
+    )
+    for item in dom_raw:
+        title = item["title"]
+        m_id = re.search(r"-(\d{7,9})$", item["url"])
+        obj_id = m_id.group(1) if m_id else item["url"].rstrip("/").split("/")[-1]
+        if obj_id in seen_ids:
             continue
         seen_ids.add(obj_id)
-
-        title = (h.get("title") or h.get("name") or (h.get("attributes") or {}).get("name") or f"{brand_name} {obj_id}").strip()
-        pricing = h.get("pricing") or {}
-        curr_p = (pricing.get("current") or {}).get("value")
-        reg_p = (pricing.get("regular") or {}).get("value")
-        price_val = round(float(curr_p), 2) if curr_p is not None else None
-        comp_val = round(float(reg_p), 2) if (reg_p is not None and price_val is not None and float(reg_p) > price_val) else None
-
-        attrs = h.get("attributes") or {}
-        stock_msg = str(attrs.get("StockOverrideMessage") or h.get("stockDescription") or "").upper()
-        in_stock_flag = h.get("inStock", True)
-        is_avail = bool(in_stock_flag) and ("OUT_OF_STOCK" not in stock_msg and "COMING_SOON" not in stock_msg)
-
-        prod_url = (h.get("urls") or {}).get("product") or h.get("actionURL") or f"https://www.boots.com/{slug}-{obj_id}"
-        if prod_url.startswith("/"):
-            prod_url = f"https://www.boots.com{prod_url}"
-
-        v_title = str(h.get("ppuQuantity") or "Standard")
+        m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
+        v_title = m_size.group(1) if m_size else "Standard"
         skus.append({
             "sku_key": f"{domain}::{slug}::{obj_id}",
             "product_title": title,
             "variant_title": v_title,
             "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title, v_title),
-            "product_url": prod_url,
+            "product_url": item["url"],
             "sku_code": obj_id,
-            "price": price_val,
-            "compare_at_price": comp_val,
+            "price": item["price"],
+            "compare_at_price": item["compareAt"],
             "currency": "GBP",
-            "available": is_avail,
+            "available": bool(item["available"]),
         })
+
+    if not skus:
+        for h in captured_hits:
+            obj_id = str(h.get("objectId") or h.get("objectID") or "")
+            if not obj_id or obj_id in seen_ids:
+                continue
+            seen_ids.add(obj_id)
+
+            title = (h.get("title") or h.get("name") or (h.get("attributes") or {}).get("name") or f"{brand_name} {obj_id}").strip()
+            pricing = h.get("pricing") or {}
+            curr_p = (pricing.get("current") or {}).get("value")
+            reg_p = (pricing.get("regular") or {}).get("value")
+            price_val = round(float(curr_p), 2) if curr_p is not None else None
+            comp_val = round(float(reg_p), 2) if (reg_p is not None and price_val is not None and float(reg_p) > price_val) else None
+
+            attrs = h.get("attributes") or {}
+            stock_msg = str(attrs.get("StockOverrideMessage") or h.get("stockDescription") or "").upper()
+            is_avail = "OUT_OF_STOCK" not in stock_msg and "COMING_SOON" not in stock_msg and "OUT OF STOCK" not in stock_msg
+
+            prod_url = (h.get("urls") or {}).get("product") or h.get("actionURL") or f"https://www.boots.com/{slug}-{obj_id}"
+            if prod_url.startswith("/"):
+                prod_url = f"https://www.boots.com{prod_url}"
+
+            v_title = str(h.get("ppuQuantity") or "Standard")
+            skus.append({
+                "sku_key": f"{domain}::{slug}::{obj_id}",
+                "product_title": title,
+                "variant_title": v_title,
+                "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title, v_title),
+                "product_url": prod_url,
+                "sku_code": obj_id,
+                "price": price_val,
+                "compare_at_price": comp_val,
+                "currency": "GBP",
+                "available": is_avail,
+            })
     return skus
 
 
@@ -819,9 +890,205 @@ async def scrape_bathandunwind_store(page, store: dict, brand_cfg: dict) -> list
     return skus
 
 
+async def scrape_selfridges_store(page, store: dict, brand_cfg: dict) -> list[dict]:
+    """Calibrated Selfridges Engine: extracts `/product/` cards and stock/price data."""
+    domain = store["domain"]
+    brand_url = store["brand_url"]
+    slug = brand_cfg["slug"]
+    brand_name = brand_cfg["name"]
+
+    await page.goto(brand_url, wait_until="domcontentloaded", timeout=35000)
+    await human_pause(2.8, 4.5, f"Browsing {domain} ({brand_name})")
+    await accept_cookies(page)
+    await smooth_scroll(page, steps=5)
+
+    raw = await page.evaluate(
+        """() => {
+            const seen = new Set();
+            const out = [];
+            for (const a of document.querySelectorAll('a[href*="/product/"]')) {
+                const url = (a.href || '').split('?')[0].split('#')[0];
+                const title = (a.innerText || '').replace(/\\s+/g, ' ').trim();
+                if (!url || !title || title.length < 4 || seen.has(url)) continue;
+                seen.add(url);
+                const card = a.closest('article, [class*="Card"], [class*="card"], li') || a.parentElement;
+                const cardText = card ? (card.innerText || '').replace(/\\s+/g, ' ').trim() : title;
+                const priceMatches = cardText.match(/£(\\d+(?:\\.\\d{2})?)/g) || [];
+                const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
+                const price = prices.length > 0 ? prices[prices.length - 1] : null;
+                const compareAt = prices.length > 1 && prices[0] > price ? prices[0] : null;
+                const isOos = /\\bout of stock\\b|\\bsold out\\b|\\bunavailable\\b/i.test(cardText);
+                out.push({ title, url, price, compareAt, available: !isOos });
+            }
+            return out;
+        }"""
+    )
+
+    skus = []
+    for item in raw:
+        title = item["title"]
+        m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
+        v_title = m_size.group(1) if m_size else "Standard"
+        path_slug = item["url"].rstrip("/").split("/")[-1]
+        skus.append({
+            "sku_key": f"{domain}::{slug}::{path_slug}",
+            "product_title": title,
+            "variant_title": v_title,
+            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title, v_title),
+            "product_url": item["url"],
+            "sku_code": path_slug,
+            "price": item["price"],
+            "compare_at_price": item["compareAt"],
+            "currency": "GBP",
+            "available": bool(item["available"]),
+        })
+    return skus
+
+
+async def scrape_philipkingsley_dtc_store(page, store: dict, brand_cfg: dict) -> list[dict]:
+    """Calibrated Philip Kingsley Official DTC (Magento 2) Engine: extracts full catalog & multi-size variants."""
+    domain = store["domain"]
+    slug = brand_cfg["slug"]
+    brand_name = brand_cfg["name"]
+    catalog_url = "https://www.philipkingsley.co.uk/product-type/shop-all-haircare-products.html?product_list_limit=all"
+
+    await page.goto(catalog_url, wait_until="domcontentloaded", timeout=35000)
+    await human_pause(2.5, 4.0, f"Browsing {domain} full DTC catalog ({brand_name})")
+    await accept_cookies(page)
+    await smooth_scroll(page, steps=4)
+
+    raw_cards = await page.evaluate(
+        """() => {
+            const seen = new Set();
+            const out = [];
+            for (const card of document.querySelectorAll('.product-item-info, li.product-item')) {
+                const a = card.querySelector('a.product-item-link') || card.querySelector('a[href*=".html"]');
+                if (!a) continue;
+                const url = (a.href || '').split('#')[0].split('?')[0];
+                if (!url || seen.has(url)) continue;
+                seen.add(url);
+                const fullText = (card.innerText || '').replace(/\\s+/g, ' ').trim();
+                const titleEl = card.querySelector('.product-item-link, .product-item-name, h2, h3, strong');
+                let title = titleEl ? titleEl.innerText.replace(/\\s+/g, ' ').trim() : fullText.split('£')[0].trim();
+                title = title.replace(/\\bTM\\b/g, '').replace(/\\s+/g, ' ').trim();
+                const hasRange = /£\\d+(?:\\.\\d{2})?\\s*-\\s*£\\d+(?:\\.\\d{2})?/i.test(fullText) || /select size/i.test(fullText);
+                const priceMatches = fullText.match(/£(\\d+(?:\\.\\d{2})?)/g) || [];
+                const prices = priceMatches.map(p => parseFloat(p.replace('£', '')));
+                const price = prices.length > 0 ? prices[prices.length - 1] : null;
+                const compareAt = (!hasRange && prices.length > 1 && prices[0] > price) ? prices[0] : null;
+                const isOos = /\\bout of stock\\b|\\bsold out\\b|\\bunavailable\\b/i.test(fullText);
+                out.push({ title, url, price, compareAt, available: !isOos, hasRange });
+            }
+            return out;
+        }"""
+    )
+
+    skus = []
+    for item in raw_cards:
+        title = item["title"]
+        if re.search(r"\b(?:gift\s+card|e-gift|voucher|sample\s+sachet)\b", title, re.I):
+            continue
+        path_slug = item["url"].rstrip("/").split("/")[-1].replace(".html", "")
+        if item.get("hasRange"):
+            try:
+                await page.goto(item["url"], wait_until="domcontentloaded", timeout=25000)
+                await human_pause(1.8, 2.5, f"Expanding multi-size DTC options on {domain}: {title}")
+                pdp_data = await page.evaluate(
+                    r"""() => {
+                        const rawEls = Array.from(document.querySelectorAll('select option, [class*="swatch"], [data-option-label], button, label'));
+                        const opts = [];
+                        for (const el of rawEls) {
+                            const txt = (el.innerText || el.textContent || '').replace(/\s+/g, ' ').trim();
+                            if (txt.length > 50) continue;
+                            const m = txt.match(/^(\d+\s*(?:ml|g|l|litre|caps|capsules|tablets)(?:\s*refill)?)\s*(?:\(|$)/i);
+                            if (m && m[1]) {
+                                const cleanOpt = m[1].replace(/\s+/g, '');
+                                const label = /refill/i.test(m[1]) ? cleanOpt.replace(/refill/i, ' Refill') : cleanOpt;
+                                if (!opts.includes(label)) opts.push(label);
+                            }
+                        }
+                        let offers = [];
+                        for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+                            try {
+                                const j = JSON.parse(s.innerText);
+                                const me = j.mainEntity || j;
+                                if (Array.isArray(me.offers)) {
+                                    offers = me.offers
+                                        .filter(o => !o.name || !/subscribe/i.test(o.name))
+                                        .map(o => ({
+                                            price: o.price ? parseFloat(o.price) : null,
+                                            avail: /InStock/i.test(o.availability || '')
+                                        }));
+                                }
+                            } catch (e) {}
+                        }
+                        return { opts, offers };
+                    }"""
+                )
+                opts = pdp_data.get("opts") or []
+                offers = pdp_data.get("offers") or []
+                if not opts and len(offers) >= 2:
+                    t_low = title.lower()
+                    if "elasticizer" in t_low:
+                        std_sizes = ["75ml", "150ml", "500ml", "1000ml", "1000ml Refill"]
+                    elif "conditioner" in t_low:
+                        std_sizes = ["75ml", "200ml", "500ml", "1000ml", "1000ml Refill"]
+                    elif "toner" in t_low:
+                        std_sizes = ["150ml", "250ml"] if len(offers) == 2 else ["75ml", "150ml", "250ml"]
+                    else:
+                        std_sizes = ["75ml", "250ml", "500ml", "1000ml", "1000ml Refill"]
+                    opts = std_sizes[:len(offers)]
+                if opts and offers:
+                    def _opt_sort_key(o_str: str) -> tuple[int, int]:
+                        m_num = re.search(r"(\d+)", o_str)
+                        ml_val = int(m_num.group(1)) if m_num else 0
+                        return (ml_val, 0 if "refill" in o_str.lower() else 1)
+
+                    opts_sorted = sorted(opts, key=_opt_sort_key)
+                    offers_sorted = sorted(offers, key=lambda x: float(x.get("price") or 0.0))
+                    for idx_o, opt_txt in enumerate(opts_sorted):
+                        if re.search(r"\b(?:5\s*litre|5\s*l|salon\s*size|professional\s*only|tester)\b", opt_txt, re.I):
+                            continue
+                        off = offers_sorted[idx_o] if idx_o < len(offers_sorted) else offers_sorted[-1]
+                        opt_slug = re.sub(r"[^a-z0-9]+", "-", opt_txt.lower()).strip("-")
+                        skus.append({
+                            "sku_key": f"{domain}::{slug}::{path_slug}::{opt_slug}",
+                            "product_title": f"{title} {opt_txt}",
+                            "variant_title": opt_txt,
+                            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title, opt_txt),
+                            "product_url": item["url"],
+                            "sku_code": f"{path_slug}-{opt_slug}",
+                            "price": off.get("price") or item["price"],
+                            "compare_at_price": None,
+                            "currency": "GBP",
+                            "available": bool(off.get("avail", True)),
+                        })
+                    continue
+            except Exception:
+                pass
+
+        m_size = re.search(r"(\d+\s*(?:ml|g|caps|capsules|tablets|sachets))\b", title, re.I)
+        v_title = m_size.group(1) if m_size else "Standard"
+        skus.append({
+            "sku_key": f"{domain}::{slug}::{path_slug}",
+            "product_title": title,
+            "variant_title": v_title,
+            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title, v_title),
+            "product_url": item["url"],
+            "sku_code": path_slug,
+            "price": item["price"],
+            "compare_at_price": item["compareAt"],
+            "currency": "GBP",
+            "available": bool(item["available"]),
+        })
+    return skus
+
+
 async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
     """Dispatch to calibrated Major UK Retailer engine or generic custom UK store scraper."""
     domain = store["domain"].lower().removeprefix("www.")
+    if domain == "philipkingsley.co.uk":
+        return await scrape_philipkingsley_dtc_store(page, store, brand_cfg)
     if domain == "spacenk.com":
         return await scrape_spacenk_store(page, store, brand_cfg)
     if domain in ("cultbeauty.co.uk", "cultbeauty.com", "lookfantastic.com"):
@@ -834,6 +1101,8 @@ async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
         return await scrape_frasers_store(page, store, brand_cfg)
     if domain == "bathandunwind.com":
         return await scrape_bathandunwind_store(page, store, brand_cfg)
+    if domain == "selfridges.com":
+        return await scrape_selfridges_store(page, store, brand_cfg)
 
     brand_url = store["brand_url"]
     slug = brand_cfg["slug"]
@@ -929,7 +1198,7 @@ async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
                 const text = (a.innerText || a.getAttribute('title') || '').replace(/\\s+/g, ' ').trim();
                 if (!text || seen.has(url)) continue;
                 seen.add(url);
-                const card = a.closest('td, li, .product, article, div') || a.parentElement;
+                const card = a.closest('td, li, .product, .product-item, .product-card, article, [class*="card"], [class*="Card"], [class*="item"]') || a.parentElement;
                 const cardText = card ? card.innerText.replace(/\\s+/g, ' ').trim() : text;
                 const outOfStock = /out of stock|sold out|unavailable|discontinued/i.test(cardText);
                 out.push({ title: text, url, text: cardText.slice(0, 300), available: !outOfStock });
@@ -938,9 +1207,10 @@ async def scrape_custom_store(page, store: dict, brand_cfg: dict) -> list[dict]:
         }""")
 
     skus = []
+    is_dtc = domain in {d.lower().removeprefix("www.") for d in brand_cfg.get("dtc_domains", [])}
     for item in items:
         raw_title = html.unescape(re.sub(r"^£\d+\.\d{2}\s*\(incl VAT\)\s*", "", item["title"])).strip()
-        if not sme_brands.matches_brand(brand_cfg, "", f"{raw_title} {item['url']}"):
+        if not is_dtc and not sme_brands.matches_brand(brand_cfg, "", f"{raw_title} {item['url']}"):
             continue
         # Reject brand collection pages, pagination links, or generic navigation links
         if re.search(r"/(?:brands|collections|category|categories)/", item["url"], re.I):
@@ -1438,10 +1708,7 @@ async def run_cli(args) -> None:
             "--disable-blink-features=AutomationControlled",
             "--window-size=1440,900",
         ]
-        try:
-            browser = await p.chromium.launch(channel="chrome", headless=True, args=launch_args)
-        except Exception:
-            browser = await p.chromium.launch(headless=True, args=launch_args)
+        browser = await p.chromium.launch(headless=True, args=launch_args)
         context = await browser.new_context(
             viewport={"width": 1440, "height": 900},
             locale="en-GB",
@@ -1454,13 +1721,6 @@ async def run_cli(args) -> None:
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                 "Chrome/131.0.0.0 Safari/537.36"
             ),
-        )
-        await context.add_init_script(
-            """
-            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
-            Object.defineProperty(navigator, 'languages', {get: () => ['en-GB', 'en']});
-            window.chrome = window.chrome || { runtime: {} };
-            """
         )
 
         for idx, b in enumerate(target_brands, 1):

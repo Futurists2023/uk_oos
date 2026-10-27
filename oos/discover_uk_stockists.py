@@ -202,16 +202,56 @@ async def discover_from_search(page, brand: dict) -> dict[str, list[str]]:
 
 
 def build_store_hint_urls(domain: str, brand: dict, search_hints: list[str]) -> list[str]:
-    """Generate brand-specific candidate URLs on a given UK retailer domain."""
+    """Generate brand-specific candidate URLs on each of the 32 Large UK Online Retail Stockists."""
     slug = brand["slug"]
+    first_char = slug[0] if slug else "a"
     name_q = quote_plus(brand["name"])
     urls = list(search_hints)
-    if domain == "biggreensmile.com":
-        urls.append(f"https://www.biggreensmile.com/brands/{slug}.aspx?brand={name_q}")
-    elif domain == "expresschemist.co.uk":
-        urls.append(f"https://www.expresschemist.co.uk/{slug}.html")
-    elif domain == "bodykind.com":
-        urls.append(f"https://www.bodykind.com/search/?q={name_q}")
+    direct_map = {
+        "spacenk.com": [f"https://www.spacenk.com/uk/brands/{first_char}/{slug}"],
+        "cultbeauty.co.uk": [
+            f"https://www.cultbeauty.co.uk/c/brands/{slug}/",
+            f"https://www.cultbeauty.co.uk/brands/{slug}.list",
+        ],
+        "lookfantastic.com": [
+            f"https://www.lookfantastic.com/c/brands/{slug}/",
+            f"https://www.lookfantastic.com/brands/{slug}.list",
+        ],
+        "boots.com": [
+            f"https://www.boots.com/{slug}",
+            f"https://www.boots.com/sitesearch?searchTerm={name_q}",
+        ],
+        "hollandandbarrett.com": [f"https://www.hollandandbarrett.com/shop/brands/{slug}/"],
+        "superdrug.com": [f"https://www.superdrug.com/search?text={name_q}"],
+        "harveynichols.com": [f"https://www.harveynichols.com/brand/{slug}"],
+        "flannels.com": [f"https://www.flannels.com/{slug}"],
+        "houseoffraser.co.uk": [f"https://www.houseoffraser.co.uk/brand/{slug}"],
+        "selfridges.com": [f"https://www.selfridges.com/GB/en/cat/{slug}/"],
+        "johnlewis.com": [f"https://www.johnlewis.com/search?search-term={name_q}"],
+        "marksandspencer.com": [f"https://www.marksandspencer.com/l/brands/{slug}"],
+        "libertylondon.com": [f"https://www.libertylondon.com/uk/brands/{first_char}/{slug}/"],
+        "harrods.com": [f"https://www.harrods.com/en-gb/shopping/{slug}"],
+        "fenwick.co.uk": [f"https://www.fenwick.co.uk/brands/{slug}"],
+        "facethefuture.co.uk": [f"https://www.facethefuture.co.uk/collections/{slug}"],
+        "ohmycream.co.uk": [f"https://www.ohmycream.co.uk/collections/{slug}"],
+        "bathandunwind.com": [f"https://www.bathandunwind.com/{slug}/"],
+        "alyaka.com": [f"https://www.alyaka.com/collections/{slug}"],
+        "beautybay.com": [f"https://www.beautybay.com/l/{slug}/"],
+        "escentual.com": [
+            f"https://www.escentual.com/collections/{slug}",
+            f"https://www.escentual.com/brands/{slug}",
+            f"https://www.escentual.com/{slug}/",
+        ],
+        "asos.com": [f"https://www.asos.com/search/?q={name_q}"],
+        "planetorganic.com": [f"https://www.planetorganic.com/collections/{slug}"],
+        "healf.com": [f"https://healf.com/collections/{slug}"],
+        "waitrose.com": [f"https://www.waitrose.com/ecom/shop/search?searchTerm={name_q}"],
+        "ocado.com": [f"https://www.ocado.com/search?entry={name_q}"],
+        "sainsburys.co.uk": [f"https://www.sainsburys.co.uk/gol-ui/SearchResults/{name_q}"],
+    }
+    for u in direct_map.get(domain, []):
+        if u not in urls:
+            urls.append(u)
     return urls
 
 
@@ -266,11 +306,12 @@ async def check_storefront_for_brand(
             return result
 
         final_domain = clean_domain(page.url)
-        excluded, ex_reason = is_excluded_domain(final_domain)
-        if excluded:
-            result["notes"] = f"Redirected to excluded domain {final_domain} ({ex_reason})"
-            await page.close()
-            return result
+        if source != "Official Brand DTC":
+            excluded, ex_reason = is_excluded_domain(final_domain)
+            if excluded:
+                result["notes"] = f"Redirected to excluded domain {final_domain} ({ex_reason})"
+                await page.close()
+                return result
 
         await human_pause(1.8, 3.2, f"Browsing {domain} for {brand['name']}")
         await smooth_scroll(page, steps=2)
@@ -425,11 +466,13 @@ async def check_storefront_for_brand(
                     if (!href.startsWith(location.origin)) continue;
                     const path = new URL(href).pathname.replace(/\\/+$/, '').toLowerCase();
                     if (!path || path === '/' || path === currentPath) continue;
-                    if (/\\/(cart|basket|checkout|login|account|contact|about|terms|privacy|blog|news|brands)\\b/.test(path)) continue;
+                    if (/\\/(cart|basket|checkout|login|account|contact|about|terms|privacy|blog|news|brands|customer-services|help-centre)\\b/.test(path)) continue;
                     const text = ((a.innerText || a.getAttribute('title') || '')).replace(/\\s+/g, ' ').trim();
+                    const card = a.closest('.product-tile, .product-card, .product-item, .product-item-info, article, [data-pid], [class*="productCard"], li') || a.parentElement;
+                    const cardText = card ? (card.innerText || '').replace(/\\s+/g, ' ').trim().slice(0, 260) : text;
                     if (!seen.has(href)) {
                         seen.add(href);
-                        out.push({ title: text, path, url: href });
+                        out.push({ title: text, cardText, path, url: href });
                     }
                 }
                 const h1 = document.querySelector('h1') ? document.querySelector('h1').innerText.replace(/\\s+/g, ' ').trim() : '';
@@ -441,13 +484,16 @@ async def check_storefront_for_brand(
         matched_dom = []
         for item in dom_links["links"]:
             t = item["title"]
+            c_txt = item.get("cardText") or ""
             p_path = item["path"]
             last_seg = p_path.split("/")[-1]
             if last_seg in (slug, f"{slug}.html", f"{slug}.aspx") or re.match(rf"^{re.escape(slug)}-m\d+$", last_seg):
                 continue
             if t.lower() in (brand["name"].lower(), f"› {brand['name'].lower()}", f"see all {brand['name'].lower()} products"):
                 continue
-            if sme_brands.matches_brand(brand, "", f"{t} {p_path.replace('-', ' ')}"):
+            if source == "Official Brand DTC" and "£" in c_txt:
+                matched_dom.append(item)
+            elif sme_brands.matches_brand(brand, "", f"{t} {c_txt} {p_path.replace('-', ' ')}"):
                 matched_dom.append(item)
 
         if not matched_dom and sme_brands.matches_brand(brand, "", dom_links["h1"]):
@@ -502,11 +548,16 @@ async def discover_for_brand(context, brand: dict, skip_search: bool = False) ->
     if dtc_domains:
         primary_dtc = clean_domain(dtc_domains[0])
         print(f"  [DTC] Checking Official Brand DTC {primary_dtc} for {name}...")
+        dtc_hints = [
+            f"https://www.{primary_dtc}/product-type/shop-all-haircare-products.html?product_list_limit=all" if primary_dtc == "philipkingsley.co.uk" else f"https://{primary_dtc}/collections/all",
+            f"https://www.{primary_dtc}/collections/all",
+            f"https://{primary_dtc}",
+        ]
         dtc_res = await check_storefront_for_brand(
             context,
             primary_dtc,
             brand,
-            [f"https://{primary_dtc}/collections/all", f"https://{primary_dtc}"],
+            dtc_hints,
             "Official Brand DTC",
         )
         dtc_res["source"] = "Official Brand DTC"

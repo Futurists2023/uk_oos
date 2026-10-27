@@ -1,0 +1,277 @@
+{
+  "brand": "Philip Kingsley",
+  "brand_slug": "philip-kingsley",
+  "generated_at": "2026-10-27T14:16:23+00:00",
+  "total_candidates_checked": 32,
+  "verified_uk_independent_stockists_count": 10,
+  "verified_stockists": [
+    {
+      "domain": "philipkingsley.co.uk",
+      "tier": "Official Brand DTC (Master Catalog)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Official Brand DTC",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.philipkingsley.co.uk/product-type/shop-all-haircare-products.html?product_list_limit=all",
+      "product_count": 93,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Elasticizer Deep-Conditioning Treatment",
+        "Flaky/Itchy Scalp Anti-Dandruff Shampoo"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "spacenk.com",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.spacenk.com/uk/brands/p/philip-kingsley",
+      "product_count": 25,
+      "in_stock_count": 24,
+      "out_of_stock_count": 1,
+      "sample_products": [
+        "Elasticizer Deep-Conditioning Treatment",
+        "Flaky/Itchy Scalp Anti-Dandruff Shampoo"
+      ],
+      "platform": "Salesforce Commerce Cloud",
+      "notes": ""
+    },
+    {
+      "domain": "facethefuture.co.uk",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://row.facethefuture.store/collections/philip-kingsley",
+      "product_count": 83,
+      "in_stock_count": 71,
+      "out_of_stock_count": 12,
+      "sample_products": [
+        "Philip Kingsley Hair Goal: Big Volume Gift Set (Worth £48.50)",
+        "Philip Kingsley Hair Goal: No More Frizz Gift Set (Worth £37.50)",
+        "Philip Kingsley Nourish & Volume Jet Set (worth £48)",
+        "Philip Kingsley Body & Volume Jet Set (worth £48)",
+        "Philip Kingsley Smooth & Shiny Jet Set (worth £48)"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "fenwick.co.uk",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://fenwick.co.uk/collections/philip-kingsley",
+      "product_count": 77,
+      "in_stock_count": 55,
+      "out_of_stock_count": 22,
+      "sample_products": [
+        "Flaky Itchy Scalp Anti-Dandruff Shampoo 250 ml",
+        "Body Building Weightless Shampoo 250 ml",
+        "Elasticizer Deep-Conditioning Treatment 150 ml",
+        "Body Building Conditioner 200ml",
+        "Elasticizer Deep-Conditioning Treatment 75 ml"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "escentual.com",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://escentual.com/collections/philip-kingsley",
+      "product_count": 49,
+      "in_stock_count": 49,
+      "out_of_stock_count": 0,
+      "sample_products": [
+        "Philip Kingsley Overnight Scalp Barrier Serum",
+        "Philip Kingsley The Icons Collection Gift Set",
+        "Philip Kingsley Little Luxuries Stocking Filler",
+        "Philip Kingsley Elasti-Styler Extreme Curl Cream",
+        "Philip Kingsley Flaky/Itchy Scalp Curl Shampoo"
+      ],
+      "platform": "Shopify",
+      "notes": ""
+    },
+    {
+      "domain": "selfridges.com",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.selfridges.com/GB/en/cat/philip-kingsley/",
+      "product_count": 42,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Beauty 41",
+        "Elasticizer Deep Conditioning Treatment 150ml",
+        "Elasti-Styler Extreme Curl Cream 150ml",
+        "Body Building Shampoo 250ml",
+        "Moisture Balancing Shampoo 250ml"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "hollandandbarrett.com",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.hollandandbarrett.com/shop/brands/philip-kingsley/",
+      "product_count": 16,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Philip Kingsley Moisture Extreme Shampoo 250ml (64) 30% Off £20.30 £29.00 £81.20/1 l Add to basket",
+        "Philip Kingsley Density Scalp Drops 85ml (22) £55.00 £647.06/1 l Add to basket",
+        "Philip Kingsley Body Building Conditioner 200ml (408) £29.00 £145.00/1 l Add to basket",
+        "Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml (134) £26.00 £520.00/1 l Add to basket",
+        "Philip Kingsley Density Shampoo 200ml (203) £32.00 £160.00/1 l Add to basket"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "lookfantastic.com",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.lookfantastic.com/c/brands/philip-kingsley/",
+      "product_count": 14,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "https://www.lookfantastic.com/p/philip-kingsley-flaky-itchy-scalp-shampoo-250ml-and-conditioner-200ml-duo/14362088/",
+        "https://www.lookfantastic.com/p/philip-kingsley-body-building-shampoo-250ml-and-conditioner-200ml-duo/14362089/",
+        "https://www.lookfantastic.com/p/philip-kingsley-elasticizer-deep-conditioning-treatment-150ml/10305894/",
+        "https://www.lookfantastic.com/p/philip-kingsley-density-preserving-scalp-drops-85ml/13647201/",
+        "https://www.lookfantastic.com/p/philip-kingsley-elasticizer-deep-conditioning-treatment-eco-refill-pouch-1000ml/15416112/"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "cultbeauty.co.uk",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        ".co.uk/.uk TLD",
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.cultbeauty.co.uk/c/brands/philip-kingsley/",
+      "product_count": 9,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "https://www.cultbeauty.co.uk/p/philip-kingsley-hair-mail-little-luxuries-stocking-filler/17897677/",
+        "https://www.cultbeauty.co.uk/p/philip-kingsley-hair-mail-the-icons/17897676/",
+        "https://www.cultbeauty.co.uk/p/philip-kingsley-elasticizer-deep-conditioning-treatment-150ml/10305894/",
+        "https://www.cultbeauty.co.uk/p/philip-kingsley-flaky-itchy-scalp-anti-dandruff-shampoo-1000ml/10304260/",
+        "https://www.cultbeauty.co.uk/p/philip-kingsley-flaky-itchy-scalp-anti-dandruff-shampoo-250ml/10302904/"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    },
+    {
+      "domain": "boots.com",
+      "tier": "Tier 1 (Major UK Retailer)",
+      "brand": "Philip Kingsley",
+      "brand_slug": "philip-kingsley",
+      "source": "Tier 1 (Major UK Retailer)",
+      "is_uk": true,
+      "uk_signals": [
+        "£ GBP currency",
+        "UK address/shipping/VAT/locale"
+      ],
+      "is_ecommerce": true,
+      "stocks_brand": true,
+      "brand_url": "https://www.boots.com/philip-kingsley",
+      "product_count": 5,
+      "in_stock_count": null,
+      "out_of_stock_count": null,
+      "sample_products": [
+        "Treatments",
+        "Fine textured hair",
+        "Shampoo & conditioner",
+        "Scalp care",
+        "Curls"
+      ],
+      "platform": "Magento",
+      "notes": ""
+    }
+  ]
+}

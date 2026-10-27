@@ -25,7 +25,7 @@ For 6 days, 5 of your core lines have been out of stock on Boots.com:
 
 All 5 are in stock on faithinnature.co.uk, Lookfantastic and Holland & Barrett today.
 
-Should I alert you when a core line stays dark for over 3 days?
+While your team investigates, should I alert you when a core line stays dark for over 3 days?
 
 Best,
 [Your Name]
