@@ -3,57 +3,6 @@
   "brand_slug": "skin-sapiens",
   "generated_at": "2026-10-25T13:17:24+00:00",
   "total_candidates_checked": 40,
-  "verified_uk_independent_stockists_count": 2,
-  "verified_stockists": [
-    {
-      "domain": "caara.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Skin Sapiens",
-      "brand_slug": "skin-sapiens",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.caara.co.uk/collections/skin-sapiens",
-      "product_count": 3,
-      "in_stock_count": 3,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Skin Sapiens Baby Bath Gel",
-        "Skin Sapiens Baby Lotion",
-        "Skin Sapiens Baby Balm"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "luxplus.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Skin Sapiens",
-      "brand_slug": "skin-sapiens",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.luxplus.co.uk/product/skin-sapiens-facial-cleansing-gel-150-ml",
-      "product_count": 1,
-      "in_stock_count": null,
-      "out_of_stock_count": null,
-      "sample_products": [
-        "Skin Sapiens Facial Cleansing Gel"
-      ],
-      "platform": "Magento",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

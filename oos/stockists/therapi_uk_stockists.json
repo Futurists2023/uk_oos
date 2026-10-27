@@ -3,61 +3,6 @@
   "brand_slug": "therapi",
   "generated_at": "2026-10-25T22:39:49+00:00",
   "total_candidates_checked": 40,
-  "verified_uk_independent_stockists_count": 2,
-  "verified_stockists": [
-    {
-      "domain": "puresourceonline.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Therapi",
-      "brand_slug": "therapi",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.puresourceonline.com/search?q=Therapi",
-      "product_count": 7,
-      "in_stock_count": 0,
-      "out_of_stock_count": 7,
-      "sample_products": [
-        "Therapi Event Saturday Oct 3rd 2026",
-        "Propolis+ Biome Restore Facial Oil 30ml",
-        "Honey Lip Nectar 7ml",
-        "Propolis+ Ultra Radiance Cream 50ml",
-        "Rose Otto Hydrating Toner 100ml"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "contentbeautywellbeing.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Therapi",
-      "brand_slug": "therapi",
-      "source": "seed_pool+search",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/search?q=Therapi",
-      "product_count": 5,
-      "in_stock_count": 0,
-      "out_of_stock_count": 5,
-      "sample_products": [
-        "Therapi Rose Otto Honey Moisturiser",
-        "Therapi Orange Blossom Honey Moisturiser",
-        "Therapi Propolis+ Ultra Radiance Cream",
-        "Therapi Rose Otto Honey Hydrating Toner",
-        "Therapi Propolis+ Biome Restore Facial Oil"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

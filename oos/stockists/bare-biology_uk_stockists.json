@@ -3,35 +3,8 @@
   "brand_slug": "bare-biology",
   "generated_at": "2026-10-21T14:07:49+00:00",
   "total_candidates_checked": 38,
-  "verified_uk_independent_stockists_count": 6,
+  "verified_uk_independent_stockists_count": 1,
   "verified_stockists": [
-    {
-      "domain": "supplementhub.co.uk",
-      "brand": "Bare Biology",
-      "brand_slug": "bare-biology",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://supplementhub.co.uk/collections/bare-biology",
-      "product_count": 15,
-      "in_stock_count": 15,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Life & Soul High Strength Omega-3 Fish Oil - 60 Capsules | Bare Biology",
-        "Life & Soul High Strength Omega-3 Fish Oil - 150ml | Bare Biology",
-        "Mum's & Bumps Omega-3 Fish Oil For Pregnancy - 30 Capsules | Bare Biology",
-        "Life & Soul High Strength Omega-3 Fish Oil Mini Capsules - 120 Capsules | Bare Biology",
-        "Action Heroes Omega-3 Fish Oil for Kids - 100ml | Bare Biology"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
     {
       "domain": "planetorganic.com",
       "brand": "Bare Biology",
@@ -54,113 +27,6 @@
         "Bare Biology Skinful Pure Marine Collagen 300g",
         "Bare Biology Life & Soul Liquid Pure Omega-3 150ml",
         "Bare Biology Mums & Bumps Pure Omega 30 Caps"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "shop.zenhealthcare.co.uk",
-      "brand": "Bare Biology",
-      "brand_slug": "bare-biology",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://shop.zenhealthcare.co.uk/collections/bare-biology",
-      "product_count": 9,
-      "in_stock_count": 7,
-      "out_of_stock_count": 2,
-      "sample_products": [
-        "Bare Biology Life & Soul Omega 3, 60 Capsules",
-        "Bare Biology Skinful Pure Marine Collagen Powder 300g",
-        "Bare Biology Ready And Rested Magnesium Bisglycinate, 180 Capsules",
-        "Bare Biology Rise & Shine Omega 3 + Vitamin D3, 60 Capsules",
-        "Bare Biology Action Heroes Kids Omega 3 Liquid DHA 100 ml"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "yourhealthbasket.co.uk",
-      "brand": "Bare Biology",
-      "brand_slug": "bare-biology",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://yourhealthbasket.co.uk/?s=Bare+Biology&post_type=product",
-      "product_count": 9,
-      "in_stock_count": 9,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Vegan Omega-3 &#038; Astaxanthin (60 capsules) &#8211; Bare Biology",
-        "Beam &#038; Balance Vitamins D3 + K2 Unflavoured (RED) 25ml &#8211; Bare Biology",
-        "Beam &#038; Balance Vitamins D3 + K2 Peppermint (BLUE) 25ml &#8211; Bare Biology",
-        "Life &amp; Soul Pure Omega-3 60 capsules &#8211; Bare Biology",
-        "Life &#038; Soul Pure Omega-3 120 Mini Capsules &#8211; Bare Biology"
-      ],
-      "platform": "WooCommerce",
-      "notes": ""
-    },
-    {
-      "domain": "contentbeautywellbeing.com",
-      "brand": "Bare Biology",
-      "brand_slug": "bare-biology",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/collections/bare-biology",
-      "product_count": 7,
-      "in_stock_count": 3,
-      "out_of_stock_count": 4,
-      "sample_products": [
-        "Bare Biology High Flyer Creatine Monohydrate",
-        "Bare Biology Skinful Pure Marine Collagen Powder",
-        "Bare Biology Ready & Rested Magnesium",
-        "Bare Biology Beam & Balance Unflavoured - Vitamin D3 & K2 Spray",
-        "Bare Biology Mums & Bumps Omega 3 Fish Oil Capsules"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "citysurvivor.co.uk",
-      "brand": "Bare Biology",
-      "brand_slug": "bare-biology",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://citysurvivor.co.uk/collections/bare-biology",
-      "product_count": 6,
-      "in_stock_count": 5,
-      "out_of_stock_count": 1,
-      "sample_products": [
-        "Life & Soul Omega-3 Fish Oil capsules",
-        "Bare Biology Skinful Pure Marine Collagen Powder",
-        "Vim & Vigour Vegan Omega-3 Capsules",
-        "Bare Biology Pure Bovine Collagen Powder",
-        "Life & Soul Pure Omega-3 Liquid"
       ],
       "platform": "Shopify",
       "notes": ""

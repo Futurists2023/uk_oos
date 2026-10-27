@@ -3,60 +3,6 @@
   "brand_slug": "corinne-taylor",
   "generated_at": "2026-10-22T23:38:23+00:00",
   "total_candidates_checked": 36,
-  "verified_uk_independent_stockists_count": 2,
-  "verified_stockists": [
-    {
-      "domain": "plasticfreedom.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Corinne Taylor",
-      "brand_slug": "corinne-taylor",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://plasticfreedom.co.uk/collections/corinne-taylor",
-      "product_count": 4,
-      "in_stock_count": 4,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Corinne Taylor Dry Shampoo - 85g",
-        "Corinne Taylor Talc Free Body Powder - 85g",
-        "Corinne Taylor Chafe Away Balm - 50g",
-        "Corinne Taylor Argan Hair Oil - 100ml"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "regn.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Corinne Taylor",
-      "brand_slug": "corinne-taylor",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.regn.co.uk/search?q=Corinne%20Taylor",
-      "product_count": 3,
-      "in_stock_count": 0,
-      "out_of_stock_count": 3,
-      "sample_products": [
-        "Corinne Taylor Dark Dry Shampoo Powder 85g | 100% Natural Talc-Free Dry Shampoo for Brunettes & Dark Hair",
-        "Corinne Taylor Dry Shampoo Powder 85g | 100% Natural Talc-Free Dry Shampoo | Vegan Volumising Hair Powder",
-        "Body Powder | 100% Talc-Free Natural Body Powder | Chamomile & Lavender | 85g"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

@@ -3,62 +3,6 @@
   "brand_slug": "lily-lolo",
   "generated_at": "2026-10-23T20:08:20+00:00",
   "total_candidates_checked": 36,
-  "verified_uk_independent_stockists_count": 2,
-  "verified_stockists": [
-    {
-      "domain": "onlynaturals.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Lily Lolo",
-      "brand_slug": "lily-lolo",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://onlynaturals.co.uk/collections/lily-lolo",
-      "product_count": 45,
-      "in_stock_count": 38,
-      "out_of_stock_count": 7,
-      "sample_products": [
-        "Lily Lolo Makeup Mist 50ml",
-        "Lily Lolo BB Cream 40ml",
-        "Lily Lolo Cream Foundation 7g",
-        "Lily Lolo Mineral Foundation SPF15 10g",
-        "Lily Lolo Mineral Foundation SPF15 Refill 10g"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "contentbeautywellbeing.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Lily Lolo",
-      "brand_slug": "lily-lolo",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/collections/lily-lolo",
-      "product_count": 26,
-      "in_stock_count": 23,
-      "out_of_stock_count": 3,
-      "sample_products": [
-        "Lily Lolo BB Cream",
-        "Lily Lolo Mineral Foundation SPF15",
-        "Lily Lolo Lip & Cheek Cream",
-        "Lily Lolo Pressed Bronzer",
-        "Lily Lolo Flawless Matte Powder"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

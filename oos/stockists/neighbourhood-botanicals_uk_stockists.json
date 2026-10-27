@@ -3,35 +3,6 @@
   "brand_slug": "neighbourhood-botanicals",
   "generated_at": "2026-10-24T12:51:50+00:00",
   "total_candidates_checked": 36,
-  "verified_uk_independent_stockists_count": 1,
-  "verified_stockists": [
-    {
-      "domain": "plasticfreedom.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Neighbourhood Botanicals",
-      "brand_slug": "neighbourhood-botanicals",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://plasticfreedom.co.uk/collections/neighbourhood-botanicals",
-      "product_count": 10,
-      "in_stock_count": 10,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Neighbourhood Botanicals 'acid Washed' Foaming 5% Aha Gel Cleanser - 120ml",
-        "Neighbourhood Botanicals Mild Mannered Hydrating Facial Lotion - 60ml",
-        "Neighbourhood Botanicals Superorganism Hyaluronic Bioferment Tonic - 30ml",
-        "Neighbourhood Botanicals Dream Dream Dream Night Facial Oil - 30ml",
-        "Neighbourhood Botanicals Face Off Oil To Milk Cleanser - 120ml"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

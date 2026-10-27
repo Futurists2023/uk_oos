@@ -3,34 +3,6 @@
   "brand_slug": "this-is-silk",
   "generated_at": "2026-10-26T04:54:34+00:00",
   "total_candidates_checked": 42,
-  "verified_uk_independent_stockists_count": 1,
-  "verified_stockists": [
-    {
-      "domain": "contentbeautywellbeing.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "This Is Silk",
-      "brand_slug": "this-is-silk",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/collections/this-is-silk",
-      "product_count": 6,
-      "in_stock_count": 0,
-      "out_of_stock_count": 6,
-      "sample_products": [
-        "This Is Silk Nighttime Repair Ritual (Worth £227)",
-        "This Is Silk DayTime Duo (Worth £141)",
-        "This Is Silk Cream Cleanser",
-        "This Is Silk Power Up Concentrate",
-        "This Is Silk Face Oil"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

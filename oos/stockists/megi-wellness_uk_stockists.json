@@ -3,35 +3,8 @@
   "brand_slug": "megi-wellness",
   "generated_at": "2026-10-23T23:21:17+00:00",
   "total_candidates_checked": 36,
-  "verified_uk_independent_stockists_count": 2,
+  "verified_uk_independent_stockists_count": 1,
   "verified_stockists": [
-    {
-      "domain": "contentbeautywellbeing.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Megi Wellness",
-      "brand_slug": "megi-wellness",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/collections/megi-wellness",
-      "product_count": 8,
-      "in_stock_count": 6,
-      "out_of_stock_count": 2,
-      "sample_products": [
-        "Megi Wellness Scalp Activation Duo (Worth £57.98)",
-        "Megi Wellness Scalp Derma Roller",
-        "Megi Wellness Ultimate Hair Growth Set (Worth £118.96)",
-        "Megi Wellness Growth Stimulating Set (Worth £86.67)",
-        "Megi Wellness Growth Stimulating Shampoo"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
     {
       "domain": "planetorganic.com",
       "tier": "Tier 2 (Independent Stockist)",

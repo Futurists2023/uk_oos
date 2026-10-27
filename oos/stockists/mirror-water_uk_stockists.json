@@ -3,87 +3,8 @@
   "brand_slug": "mirror-water",
   "generated_at": "2026-10-24T04:43:34+00:00",
   "total_candidates_checked": 38,
-  "verified_uk_independent_stockists_count": 5,
+  "verified_uk_independent_stockists_count": 1,
   "verified_stockists": [
-    {
-      "domain": "contentbeautywellbeing.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Mirror Water",
-      "brand_slug": "mirror-water",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/collections/mirror-water",
-      "product_count": 10,
-      "in_stock_count": 10,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Mirror Water Discovery Set (Worth £58)",
-        "Mirror Water Buff & Smooth Set (Worth £66)",
-        "Mirror Water Cleanse Ritual Set (Worth £80)",
-        "Mirror Water Bathing Ritual Set (Worth £92)",
-        "Mirror Water Buff Body Dry Brush"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "w-wellness.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Mirror Water",
-      "brand_slug": "mirror-water",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://w-wellness.co.uk/collections/mirror-water",
-      "product_count": 5,
-      "in_stock_count": 5,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Mirror Water Ultra-Soft Buff Body Dry Brush",
-        "Mirror Water Smooth Body Oil",
-        "Mirror Water Shea Butter Brick Face & Body Cleanser",
-        "Mirror Water Rub Solid Balm",
-        "Mirror Water Sun Through Trees Candle"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "naturisimo.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Mirror Water",
-      "brand_slug": "mirror-water",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://ohmycream.co.uk/collections/mirror-water",
-      "product_count": 2,
-      "in_stock_count": 2,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Smooth Body Oil",
-        "Rub Solid Balm"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
     {
       "domain": "ohmycream.co.uk",
       "tier": "Tier 2 (Independent Stockist)",
@@ -105,31 +26,6 @@
       "sample_products": [
         "Smooth Body Oil",
         "Rub Solid Balm"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "studioshy.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Mirror Water",
-      "brand_slug": "mirror-water",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.studioshy.co.uk/search?q=Mirror%20Water",
-      "product_count": 2,
-      "in_stock_count": 0,
-      "out_of_stock_count": 2,
-      "sample_products": [
-        "MIRROR WATER Shea Butter Brick — Face + Body Cleanser",
-        "MIRROR WATER BUFF Body Dry Brush"
       ],
       "platform": "Shopify",
       "notes": ""

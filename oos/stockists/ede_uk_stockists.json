@@ -3,60 +3,6 @@
   "brand_slug": "ede",
   "generated_at": "2026-10-23T04:56:18+00:00",
   "total_candidates_checked": 41,
-  "verified_uk_independent_stockists_count": 2,
-  "verified_stockists": [
-    {
-      "domain": "bellwoodslifestylestore.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Ede",
-      "brand_slug": "ede",
-      "source": "web_search",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://bellwoodslifestylestore.co.uk/search?q=Ede",
-      "product_count": 4,
-      "in_stock_count": 0,
-      "out_of_stock_count": 4,
-      "sample_products": [
-        "Best Day Ever Aromatherapy Roll On Therapist",
-        "Press Pause Aromatherapy Roll On Therapist",
-        "Morning Brew Aromatherapy Roll On Therapist",
-        "Burn Out Aromatherapy Roll On Therapist"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "contentbeautywellbeing.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Ede",
-      "brand_slug": "ede",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/collections/ede",
-      "product_count": 4,
-      "in_stock_count": 4,
-      "out_of_stock_count": 0,
-      "sample_products": [
-        "Ede Best Day Ever Roll On Therapist - Feel Confident",
-        "Ede Press Pause Roll On Therapist - Feel Present",
-        "Ede Burnout Roll On Therapist - Feel Grounded",
-        "Ede Morning Brew Roll On Therapist - Feel Energised"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

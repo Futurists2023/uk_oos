@@ -374,7 +374,7 @@ async def scrape_spacenk_store(page, store: dict, brand_cfg: dict) -> list[dict]
                             "sku_key": f"{domain}::{slug}::{v_code}",
                             "product_title": v_name,
                             "variant_title": v_size,
-                            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, v_name),
+                            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, v_name, v_size),
                             "product_url": v["url"],
                             "sku_code": v_code,
                             "price": v["price"],
@@ -636,7 +636,7 @@ async def scrape_boots_store(page, store: dict, brand_cfg: dict) -> list[dict]:
             "sku_key": f"{domain}::{slug}::{obj_id}",
             "product_title": title,
             "variant_title": v_title,
-            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title),
+            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, title, v_title),
             "product_url": prod_url,
             "sku_code": obj_id,
             "price": price_val,
@@ -789,7 +789,7 @@ async def scrape_bathandunwind_store(page, store: dict, brand_cfg: dict) -> list
                             "sku_key": f"{domain}::{slug}::{path_slug}::{opt_slug}",
                             "product_title": f"{item['title']} ({opt_txt})",
                             "variant_title": opt_txt,
-                            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, item["title"]),
+                            "normalized_product_key": sme_brands.normalize_product_family_key(brand_cfg, item["title"], opt_txt),
                             "product_url": item["url"],
                             "sku_code": f"{path_slug}-{opt_slug}",
                             "price": opt_price,
@@ -1335,7 +1335,12 @@ async def audit_single_brand(
                 return generate_intelligence_report_for_brand(conn, brand_cfg)
 
         dtc_set = {d.lower().removeprefix("www.") for d in brand_cfg.get("dtc_domains", [])}
-        targets = [s for s in stockists if not only_domains or s["domain"] in only_domains]
+        allowed_domains = dtc_set | sme_brands.TIER_1_MAJOR_UK_RETAILERS
+        targets = [
+            s for s in stockists
+            if s["domain"].lower().removeprefix("www.") in allowed_domains
+            and (not only_domains or s["domain"] in only_domains)
+        ]
         # Enforce Step 1A (DTC Master Catalog First) -> Step 1B (Major UK Retailers)
         targets.sort(key=lambda s: (0 if s["domain"].lower().removeprefix("www.") in dtc_set else 1, s["domain"]))
 

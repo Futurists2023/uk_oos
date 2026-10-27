@@ -3,34 +3,6 @@
   "brand_slug": "nini-organics",
   "generated_at": "2026-10-24T19:01:24+00:00",
   "total_candidates_checked": 38,
-  "verified_uk_independent_stockists_count": 1,
-  "verified_stockists": [
-    {
-      "domain": "contentbeautywellbeing.com",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Nini Organics",
-      "brand_slug": "nini-organics",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://www.contentbeautywellbeing.com/collections/nini-organics",
-      "product_count": 18,
-      "in_stock_count": 8,
-      "out_of_stock_count": 10,
-      "sample_products": [
-        "NiNi Organics Siempre Viva: Marine Bio-Retinoid Rejuvenating Serum",
-        "NiNi Organics JuiCy Multi-C Bio Brightening Serum",
-        "NiNi Organics Crimson Beauty Hyaluronic Acid Serum",
-        "NiNi Organics Treatment Serum Trio",
-        "NiNi Organics Nourishing Duo (Worth £165)"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }

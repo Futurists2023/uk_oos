@@ -3,63 +3,6 @@
   "brand_slug": "nourish-london",
   "generated_at": "2026-10-24T19:05:54+00:00",
   "total_candidates_checked": 36,
-  "verified_uk_independent_stockists_count": 2,
-  "verified_stockists": [
-    {
-      "domain": "quickvit.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Nourish London",
-      "brand_slug": "nourish-london",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://quickvit.co.uk/collections/nourish-london",
-      "product_count": 20,
-      "in_stock_count": 13,
-      "out_of_stock_count": 7,
-      "sample_products": [
-        "Nourish London Probiotic Multi-Mineral Repair Mask 5 ml (SA Approved)",
-        "Nourish London Antioxidant Super Balm 50ml",
-        "Nourish London Retinal Resilence Serum 30ml",
-        "Nourish London Relaxing Shower Cream 300ml",
-        "Nourish London Lemon & Black Pepper Lotion 300ml"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    },
-    {
-      "domain": "onlynaturals.co.uk",
-      "tier": "Tier 2 (Independent Stockist)",
-      "brand": "Nourish London",
-      "brand_slug": "nourish-london",
-      "source": "seed_pool",
-      "is_uk": true,
-      "uk_signals": [
-        ".co.uk/.uk TLD",
-        "£ GBP currency",
-        "UK address/shipping/VAT/locale"
-      ],
-      "is_ecommerce": true,
-      "stocks_brand": true,
-      "brand_url": "https://onlynaturals.co.uk/collections/nourish-london",
-      "product_count": 10,
-      "in_stock_count": 9,
-      "out_of_stock_count": 1,
-      "sample_products": [
-        "Nourish London Kale 3D Cleanse 100ml",
-        "Nourish London Skin Renew Cleanser 100ml",
-        "Nourish London Probiotic Multi-Mineral Repair Mask",
-        "Nourish London Argan Skin Renew Moisturiser 50ml",
-        "Nourish London T.S.L. Tighten, Sculpt and Lift Neck Elixir 30ml"
-      ],
-      "platform": "Shopify",
-      "notes": ""
-    }
-  ]
+  "verified_uk_independent_stockists_count": 0,
+  "verified_stockists": []
 }
