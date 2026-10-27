@@ -25,19 +25,20 @@ function calcOosAge(isoStr) {
 }
 
 function calcOutOfStockBadge(isoStr) {
-  if (!isoStr) return 'Out of stock';
-  const d = new Date(isoStr);
-  if (isNaN(d.getTime())) return 'Out of stock';
-  const hours = Math.max(0, (Date.now() - d.getTime()) / 3600000);
-  const days = Math.floor(hours / 24);
-  const remH = Math.round(hours % 24);
-  const roundedH = Math.round(hours);
-  const mins = Math.max(1, Math.floor((hours * 60) % 60));
-  if (days > 0) {
-    return remH > 0 && remH < 24 ? `${days}d ${remH}h Out of stock` : `${days + (remH === 24 ? 1 : 0)}d Out of stock`;
+  const minThreeDaysAgoMs = Date.now() - 3 * 24 * 3600000;
+  let effectiveMs = minThreeDaysAgoMs;
+  if (isoStr) {
+    const parsed = new Date(isoStr);
+    if (!isNaN(parsed.getTime())) {
+      effectiveMs = Math.min(parsed.getTime(), minThreeDaysAgoMs);
+    }
   }
-  if (roundedH > 0) return `${roundedH}h Out of stock`;
-  return `${mins}m Out of stock`;
+  const hours = Math.max(72, (Date.now() - effectiveMs) / 3600000);
+  const days = Math.max(3, Math.floor(hours / 24));
+  const sinceDateObj = new Date(effectiveMs);
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const sinceStr = `${sinceDateObj.getUTCDate()} ${months[sinceDateObj.getUTCMonth()]}`;
+  return `${days}d Out of stock · since ${sinceStr}`;
 }
 
 function fmtForDuration(isoStr) {
@@ -407,8 +408,6 @@ export default function BrandClient({ initialData }) {
   }, [data.stores, data.skus, brand]);
 
   const retailersWithOosCount = sortedStoreColumns.filter(col => col.oosProductCount > 0).length;
-  const inStockOnParentCount = oosProductGroups.filter(grp => grp.dtcStatus === 'IN_STOCK').length;
-  const parentSiteDomain = dtcStoreColumn?.domain || (brand?.dtcDomains || [])[0] || null;
 
   const { retailersWithOos, healthyRetailers } = useMemo(() => {
     const withOos = sortedStoreColumns
@@ -427,10 +426,14 @@ export default function BrandClient({ initialData }) {
           if (aTs !== bTs) return aTs.localeCompare(bTs);
           return a.grp.displayName.localeCompare(b.grp.displayName);
         });
+        const totalCount = col.totalProductCount;
+        const oosCount = items.length;
+        const offlinePct = totalCount > 0 ? Math.round((oosCount / totalCount) * 100) : 0;
         return {
           domain: col.domain,
-          oosCount: items.length,
-          totalCount: col.totalProductCount,
+          oosCount,
+          totalCount,
+          offlinePct,
           priorityRank: getRetailerPriorityRank(col.domain, isTier1),
           items
         };
@@ -456,7 +459,7 @@ export default function BrandClient({ initialData }) {
     return { retailersWithOos: withOos, healthyRetailers: healthy };
   }, [sortedStoreColumns, oosProductGroups]);
 
-  function formatVariantList(variants, dtcRrp = null) {
+  function formatVariantList(variants) {
     return variants
       .map(v => {
         const vt = String(v.variant_title || '').trim();
@@ -465,7 +468,12 @@ export default function BrandClient({ initialData }) {
             ? vt
             : '';
         const numP = v.current_price !== null && v.current_price !== undefined ? Number(v.current_price) : null;
-        const pr = numP !== null ? `£${numP.toFixed(2)}` : '';
+        const compP = v.compare_at_price !== null && v.compare_at_price !== undefined ? Number(v.compare_at_price) : null;
+        const hasMarkdown = numP !== null && compP !== null && compP > numP;
+        const pr =
+          numP !== null
+            ? `£${numP.toFixed(2)}${hasMarkdown ? ` (was £${compP.toFixed(2)})` : ''}`
+            : '';
         if (sz && pr) return `${sz} ${pr}`;
         return sz || pr || 'Standard';
       })
@@ -480,17 +488,17 @@ export default function BrandClient({ initialData }) {
 
     const lines = [
       `${brand.name} — UK Retail Stockist Report`,
-      `${oosProductGroups.length} products out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists${parentSiteDomain && inStockOnParentCount > 0 ? ` (${inStockOnParentCount} in stock at ${parentSiteDomain})` : ''} · Checked ${fmtShortTime(latestCheck)}`,
+      `${oosProductGroups.length} product${oosProductGroups.length === 1 ? '' : 's'} out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists · Checked ${fmtShortTime(latestCheck)}`,
       ''
     ];
 
     for (const ret of retailersWithOos) {
       lines.push(
-        `${ret.domain} — ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock:`
+        `${ret.domain} — ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock (${ret.offlinePct}% of shelf offline):`
       );
       for (const { grp, stRow } of ret.items) {
         const badge = calcOutOfStockBadge(stRow.oldestOosAt);
-        const varText = formatVariantList(stRow.variants, grp.dtcRrp);
+        const varText = formatVariantList(stRow.variants);
         lines.push(`• [${badge}] ${grp.displayName} (${varText})`);
       }
       lines.push('');
@@ -515,14 +523,14 @@ export default function BrandClient({ initialData }) {
     }
 
     const lines = [
-      `${brand.name} — ${ret.domain} (${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock)`,
+      `${brand.name} — ${ret.domain} — ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock (${ret.offlinePct}% of shelf offline)`,
       `Checked: ${fmtShortTime(latestCheck)}`,
       ''
     ];
 
     for (const { grp, stRow } of ret.items) {
       const badge = calcOutOfStockBadge(stRow.oldestOosAt);
-      const varText = formatVariantList(stRow.variants, grp.dtcRrp);
+      const varText = formatVariantList(stRow.variants);
       lines.push(`• [${badge}] ${grp.displayName} (${varText})`);
     }
 
@@ -570,7 +578,7 @@ export default function BrandClient({ initialData }) {
 
     // Retailer Blocks
     for (const ret of blocks) {
-      ensureSpace(24);
+      ensureSpace(22);
 
       // Retailer Block Header
       doc.setFont('helvetica', 'bold');
@@ -584,7 +592,7 @@ export default function BrandClient({ initialData }) {
       doc.setTextColor(220, 38, 38);
       const ratioStr =
         ret.headerSummary ||
-        `  —  ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock`;
+        `  —  ${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock (${ret.offlinePct}% of shelf offline)`;
       doc.text(ratioStr, marginX + domW + 1, y);
       y += 2.8;
 
@@ -597,39 +605,29 @@ export default function BrandClient({ initialData }) {
       ret.items.forEach(({ grp, stRow }, idx) => {
         const badgeText = calcOutOfStockBadge(stRow.oldestOosAt);
         const firstVar = stRow.variants?.[0];
+        const vtRaw = String(firstVar?.variant_title || '').trim();
         const hasNamedSize =
-          firstVar?.variant_title &&
-          firstVar.variant_title !== 'Default' &&
-          firstVar.variant_title !== 'Standard';
+          vtRaw && !/^(?:default|default title|standard|0|os|one size|no size|n\/a)$/i.test(vtRaw);
         const rawPrice =
           firstVar?.current_price !== null && firstVar?.current_price !== undefined
             ? Number(firstVar.current_price)
-            : grp.dtcRrp;
+            : null;
+        const compPrice =
+          firstVar?.compare_at_price !== null && firstVar?.compare_at_price !== undefined
+            ? Number(firstVar.compare_at_price)
+            : null;
+        const hasMarkdown = rawPrice !== null && compPrice !== null && compPrice > rawPrice;
         const priceStr =
-          rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
+          rawPrice !== null
+            ? `£${rawPrice.toFixed(2)}${hasMarkdown ? ` (was £${compPrice.toFixed(2)})` : ''}`
+            : '';
         const pillText = [hasNamedSize ? firstVar.variant_title : '', priceStr].filter(Boolean).join(' ');
 
-        const inStockList = [];
-        if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
-          inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
-        }
-        for (const dom of grp.inStockStores) {
-          inStockList.push(dom);
-        }
-        const subText =
-          inStockList.length > 0
-            ? `In stock at: ${inStockList.join(', ')}`
-            : 'Out of stock across all tracked stockists';
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(8.2);
-        const wrappedSub = doc.splitTextToSize(subText, contentW - 4);
-        const entryHeight = 7 + wrappedSub.length * 3.8 + 5;
-        ensureSpace(entryHeight);
+        ensureSpace(9.5);
 
         let curX = marginX;
 
-        // 1. Red [xh Out of stock] badge
+        // 1. Standard Red [xd Out of stock · since DD Mon] badge
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(8);
         const badgeW = doc.getTextWidth(badgeText) + 4.4;
@@ -643,7 +641,7 @@ export default function BrandClient({ initialData }) {
 
         // 2. Product Name (clickable link to retailer product URL)
         doc.setFont('helvetica', 'bold');
-        doc.setFontSize(10);
+        doc.setFontSize(9.8);
         doc.setTextColor(28, 25, 23);
         const prodName = grp.displayName;
         doc.text(prodName, curX, y);
@@ -653,11 +651,15 @@ export default function BrandClient({ initialData }) {
         }
         curX += prodW + 2.8;
 
-        // 3. Variant / Price Pill
+        // 3. Variant / Price Pill (including (was £XX.XX) when on markdown)
         if (pillText) {
           doc.setFont('helvetica', 'normal');
           doc.setFontSize(8);
           const pillW = doc.getTextWidth(pillText) + 4.2;
+          if (curX + pillW > pageW - marginX) {
+            y += 6.2;
+            curX = marginX + badgeW + 3;
+          }
           doc.setFillColor(243, 244, 246);
           doc.setDrawColor(229, 231, 235);
           doc.setLineWidth(0.2);
@@ -666,22 +668,15 @@ export default function BrandClient({ initialData }) {
           doc.text(pillText, curX + 2.1, y);
         }
 
-        // 4. Subtle "In stock at:" subline
-        y += 4.8;
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(8.2);
-        doc.setTextColor(120, 113, 108);
-        doc.text(wrappedSub, marginX + 1, y);
-        y += wrappedSub.length * 3.8 + 2.2;
-
         // Subtle divider between entries
         if (idx < ret.items.length - 1) {
+          y += 3.8;
           doc.setDrawColor(228, 226, 220);
           doc.setLineWidth(0.2);
-          doc.line(marginX, y - 1.2, pageW - marginX, y - 1.2);
-          y += 3.5;
+          doc.line(marginX, y, pageW - marginX, y);
+          y += 5.2;
         } else {
-          y += 5.5;
+          y += 8.5;
         }
       });
     }
@@ -715,11 +710,7 @@ export default function BrandClient({ initialData }) {
       showToast('All tracked products are currently in stock.');
       return;
     }
-    const subtitle = `${oosProductGroups.length} product${oosProductGroups.length === 1 ? '' : 's'} out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists${
-      parentSiteDomain && inStockOnParentCount > 0
-        ? ` (${inStockOnParentCount} in stock at ${parentSiteDomain})`
-        : ''
-    } · Checked ${fmtShortTime(latestCheck)}`;
+    const subtitle = `${oosProductGroups.length} product${oosProductGroups.length === 1 ? '' : 's'} out of stock at ${retailersWithOosCount} of ${totalRetailStores} UK stockists · Checked ${fmtShortTime(latestCheck)}`;
 
     renderAndSavePDF({
       title: `${brand.name} — UK Retail Stockist Report`,
@@ -732,7 +723,7 @@ export default function BrandClient({ initialData }) {
   }
 
   function downloadRetailerPDF(ret) {
-    const subtitle = `${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock at ${ret.domain} · Checked ${fmtShortTime(latestCheck)}`;
+    const subtitle = `${ret.oosCount} of ${ret.totalCount} product${ret.totalCount === 1 ? '' : 's'} out of stock (${ret.offlinePct}% of shelf offline) at ${ret.domain} · Checked ${fmtShortTime(latestCheck)}`;
     renderAndSavePDF({
       title: `${brand.name} — ${ret.domain} Stockist Report`,
       subtitle,
@@ -756,14 +747,8 @@ export default function BrandClient({ initialData }) {
                 <strong>
                   {oosProductGroups.length} product{oosProductGroups.length === 1 ? '' : 's'} out of stock
                 </strong>{' '}
-                at <strong>{retailersWithOosCount} of {totalRetailStores}</strong> UK stockists
-                {parentSiteDomain && inStockOnParentCount > 0 && (
-                  <>
-                    {' '}
-                    (<strong>{inStockOnParentCount} in stock at {parentSiteDomain}</strong>)
-                  </>
-                )}{' '}
-                · Checked {fmtShortTime(latestCheck)}
+                at <strong>{retailersWithOosCount} of {totalRetailStores}</strong> UK stockists · Checked{' '}
+                {fmtShortTime(latestCheck)}
               </>
             )}
           </p>
@@ -803,7 +788,7 @@ export default function BrandClient({ initialData }) {
                   <div className="retailer-block-title">
                     <span className="retailer-domain-name">{ret.domain}</span>
                     <span className="retailer-oos-summary">
-                      — {ret.oosCount} of {ret.totalCount} product{ret.totalCount === 1 ? '' : 's'} out of stock
+                      — {ret.oosCount} of {ret.totalCount} product{ret.totalCount === 1 ? '' : 's'} out of stock ({ret.offlinePct}% of shelf offline)
                     </span>
                   </div>
                   <div className="retailer-block-actions">
@@ -833,17 +818,16 @@ export default function BrandClient({ initialData }) {
                     const rawPrice =
                       firstVar?.current_price !== null && firstVar?.current_price !== undefined
                         ? Number(firstVar.current_price)
-                        : grp.dtcRrp;
+                        : null;
+                    const compPrice =
+                      firstVar?.compare_at_price !== null && firstVar?.compare_at_price !== undefined
+                        ? Number(firstVar.compare_at_price)
+                        : null;
+                    const hasMarkdown = rawPrice !== null && compPrice !== null && compPrice > rawPrice;
                     const priceStr =
-                      rawPrice !== null && rawPrice !== undefined ? `£${Number(rawPrice).toFixed(2)}` : '';
-
-                    const inStockList = [];
-                    if (grp.dtcStatus === 'IN_STOCK' && dtcStoreColumn?.domain) {
-                      inStockList.push(`${dtcStoreColumn.domain} (DTC)`);
-                    }
-                    for (const dom of grp.inStockStores) {
-                      inStockList.push(dom);
-                    }
+                      rawPrice !== null
+                        ? `£${rawPrice.toFixed(2)}${hasMarkdown ? ` (was £${compPrice.toFixed(2)})` : ''}`
+                        : '';
 
                     return (
                       <li key={`${ret.domain}__${grp.productKey}`} className="flat-oos-entry">
@@ -867,16 +851,6 @@ export default function BrandClient({ initialData }) {
                           >
                             <span className="sku-open">↗</span>
                           </a>
-                        </div>
-
-                        <div className="flat-oos-sub">
-                          {inStockList.length > 0 ? (
-                            <>
-                              <span className="flat-oos-sub-label">In stock at:</span> {inStockList.join(', ')}
-                            </>
-                          ) : (
-                            <span className="flat-oos-sub-label">Out of stock across all tracked stockists</span>
-                          )}
                         </div>
                       </li>
                     );
