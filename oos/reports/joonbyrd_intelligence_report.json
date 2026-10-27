@@ -1,0 +1,1451 @@
+{
+  "brand": "Joonbyrd",
+  "brand_slug": "joonbyrd",
+  "generated_at": "2026-10-27T05:14:20+00:00",
+  "summary": {
+    "monitored_uk_stores": 4,
+    "monitored_retail_stockists": 3,
+    "total_listed_skus_variants": 195,
+    "in_stock_skus_variants": 191,
+    "out_of_stock_skus_variants": 4,
+    "retail_out_of_stock_variants": 2,
+    "unforced_retail_outages": 2,
+    "factory_shortages_on_dtc": 0,
+    "silent_removed_skus": 0
+  },
+  "out_of_stock_alerts": [
+    {
+      "sku_key": "joonbyrd.com::joonbyrd::bright-side-body-skincare-travel-bag::49705726050609",
+      "domain": "joonbyrd.com",
+      "brand": "Joonbyrd",
+      "product_title": "Bright Side",
+      "variant_title": "Purple",
+      "normalized_product_key": "bright_side_purple",
+      "product_url": "https://www.joonbyrd.com/products/bright-side-body-skincare-travel-bag",
+      "sku_code": "JB-HOJ-034",
+      "current_price": 25.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_at": "2026-10-27T05:12:31+00:00",
+      "first_seen_oos_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:12 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 25.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "joonbyrd.com::joonbyrd::natural-marine-collagen-sachets-original::57495236378997",
+      "domain": "joonbyrd.com",
+      "brand": "Joonbyrd",
+      "product_title": "Natural Marine Collagen - Original",
+      "variant_title": "Standard",
+      "normalized_product_key": "marine_collagen_original",
+      "product_url": "https://www.joonbyrd.com/products/natural-marine-collagen-sachets-original",
+      "sku_code": "MCS0001",
+      "current_price": 10.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_at": "2026-10-27T05:12:31+00:00",
+      "first_seen_oos_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:12 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Below DTC RRP -39% (DTC £16.50)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 16.5,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "spacenk.com::joonbyrd::3-little-byrds-mini-trio-MUK200057283",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "product_title": "3 Little Byrds Mini Trio",
+      "variant_title": "Standard",
+      "normalized_product_key": "3_little_byrds_mini_trio",
+      "product_url": "https://www.spacenk.com/uk/bath-body/bath-body-gift-sets/bath-body-sets/3-little-byrds-mini-trio-MUK200057283.html",
+      "sku_code": "3-little-byrds-mini-trio-MUK200057283",
+      "current_price": 19.0,
+      "compare_at_price": 38.0,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_at": "2026-10-27T05:14:18+00:00",
+      "first_seen_oos_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:14 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Discounted -50% (was £38.00)",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "lookfantastic.com"
+      ]
+    },
+    {
+      "sku_key": "spacenk.com::joonbyrd::UK200050702",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "product_title": "Joonbyrd Daydreamer Body Serum 100ml",
+      "variant_title": "100ML",
+      "normalized_product_key": "daydreamer_body_serum",
+      "product_url": "https://www.spacenk.com/uk/bath-body/body-treatment/body-treatments/daydreamer-body-serum-UK200050702.html",
+      "sku_code": "UK200050702",
+      "current_price": 78.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_at": "2026-10-27T05:14:18+00:00",
+      "first_seen_oos_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:14 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk"
+      ]
+    }
+  ],
+  "retail_out_of_stock_alerts": [
+    {
+      "sku_key": "spacenk.com::joonbyrd::3-little-byrds-mini-trio-MUK200057283",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "product_title": "3 Little Byrds Mini Trio",
+      "variant_title": "Standard",
+      "normalized_product_key": "3_little_byrds_mini_trio",
+      "product_url": "https://www.spacenk.com/uk/bath-body/bath-body-gift-sets/bath-body-sets/3-little-byrds-mini-trio-MUK200057283.html",
+      "sku_code": "3-little-byrds-mini-trio-MUK200057283",
+      "current_price": 19.0,
+      "compare_at_price": 38.0,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_at": "2026-10-27T05:14:18+00:00",
+      "first_seen_oos_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:14 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Discounted -50% (was £38.00)",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "lookfantastic.com"
+      ]
+    },
+    {
+      "sku_key": "spacenk.com::joonbyrd::UK200050702",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "product_title": "Joonbyrd Daydreamer Body Serum 100ml",
+      "variant_title": "100ML",
+      "normalized_product_key": "daydreamer_body_serum",
+      "product_url": "https://www.spacenk.com/uk/bath-body/body-treatment/body-treatments/daydreamer-body-serum-UK200050702.html",
+      "sku_code": "UK200050702",
+      "current_price": 78.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_at": "2026-10-27T05:14:18+00:00",
+      "first_seen_oos_at": "2026-10-27T05:14:18+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:14 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk"
+      ]
+    }
+  ],
+  "dtc_out_of_stock": [
+    {
+      "sku_key": "joonbyrd.com::joonbyrd::bright-side-body-skincare-travel-bag::49705726050609",
+      "domain": "joonbyrd.com",
+      "brand": "Joonbyrd",
+      "product_title": "Bright Side",
+      "variant_title": "Purple",
+      "normalized_product_key": "bright_side_purple",
+      "product_url": "https://www.joonbyrd.com/products/bright-side-body-skincare-travel-bag",
+      "sku_code": "JB-HOJ-034",
+      "current_price": 25.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_at": "2026-10-27T05:12:31+00:00",
+      "first_seen_oos_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:12 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 25.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "joonbyrd.com::joonbyrd::natural-marine-collagen-sachets-original::57495236378997",
+      "domain": "joonbyrd.com",
+      "brand": "Joonbyrd",
+      "product_title": "Natural Marine Collagen - Original",
+      "variant_title": "Standard",
+      "normalized_product_key": "marine_collagen_original",
+      "product_url": "https://www.joonbyrd.com/products/natural-marine-collagen-sachets-original",
+      "sku_code": "MCS0001",
+      "current_price": 10.0,
+      "compare_at_price": null,
+      "last_in_stock_price": null,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_at": "2026-10-27T05:12:31+00:00",
+      "first_seen_oos_at": "2026-10-27T05:12:31+00:00",
+      "last_seen_in_stock_at": null,
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-27 05:12 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Below DTC RRP -39% (DTC £16.50)",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 16.5,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    }
+  ],
+  "hero_benchmarks": [
+    {
+      "normalized_key": "better_together_body_essentials_kit",
+      "product_family": "Joonbyrd Better Together Body Essentials Kit",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "confetti_sky_hand_treatment",
+      "product_family": "Joonbyrd Confetti Sky Hand Treatment 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "future_romance_body_glaze",
+      "product_family": "Joonbyrd Future Romance Body Glaze",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "kaleidoscope_smoothing_body_serum",
+      "product_family": "Joonbyrd Kaleidoscope Smoothing Body Serum 100ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "little_love_body_lotion",
+      "product_family": "Joonbyrd Little Love Body Lotion 300ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "moon_swim_body_wash",
+      "product_family": "Joonbyrd Moon Swim Body Wash 350ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "palm_wild_hand_wash",
+      "product_family": "Joonbyrd Palm Wild Hand Wash 300ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "sunday_sofa_body_butter",
+      "product_family": "Joonbyrd Sunday Sofa Body Butter 200ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "violet_haze_body_scrub",
+      "product_family": "Joonbyrd Violet Haze Body Scrub 200ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "wonder_land_hand_lotion",
+      "product_family": "Joonbyrd Wonder.Land Hand Lotion 300ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "3_little_byrds_mini_trio",
+      "product_family": "Joonbyrd 3 Little Byrds Mini Trio",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "lookfantastic.com"
+      ],
+      "oos_in": [
+        "spacenk.com"
+      ],
+      "missing_in": [
+        "cultbeauty.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "big_time_longevity_body_wash",
+      "product_family": "Joonbyrd Big Time Longevity Body Wash",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "bliss_mood_jelly",
+      "product_family": "Bliss Mood Jelly",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 28.0,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "lookfantastic.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "confidence_mood_jelly",
+      "product_family": "Confidence Mood Jelly",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 28.0,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "lookfantastic.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "daydreamer_body_serum",
+      "product_family": "Joonbyrd Daydreamer Body Serum 100ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "lookfantastic.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "daydreamer_body_serum_mini",
+      "product_family": "Joonbyrd Daydreamer Body Serum Mini 15ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "future_romance_body_glaze_mini",
+      "product_family": "Joonbyrd Future Romance Body Glaze Mini 30ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "heartwarmer_body_gua_sha",
+      "product_family": "Joonbyrd Heartwarmer Body Gua Sha",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "kaleidoscope_body_serum_mini",
+      "product_family": "Joonbyrd Kaleidoscope Body Serum Mini 15ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "little_love_body_lotion_mini",
+      "product_family": "Joonbyrd Little Love Body Lotion Mini 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "little_love_body_lotion_refill",
+      "product_family": "Joonbyrd Little Love Body Lotion Refill 500ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "lookfantastic.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "moon_swim_body_wash_mini",
+      "product_family": "Joonbyrd Moon Swim Body Wash Mini 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "moon_swim_body_wash_refill",
+      "product_family": "Joonbyrd Moon Swim Body Wash Refill 500ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "lookfantastic.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "palm_wild_hand_wash_mini",
+      "product_family": "Joonbyrd Palm Wild Hand Wash Mini 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "peace_mood_jelly",
+      "product_family": "Peace Mood Jelly",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 28.0,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "lookfantastic.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "sunday_sofa_body_butter_mini",
+      "product_family": "Joonbyrd Sunday Sofa Body Butter Mini 30ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "violet_haze_body_scrub_mini",
+      "product_family": "Joonbyrd Violet Haze Body Scrub Mini 30ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "we_belong_together_hand_body_essentials_kit",
+      "product_family": "Joonbyrd We Belong Together Hand & Body Essentials Kit",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "cultbeauty.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "wonder_land_hand_lotion_mini",
+      "product_family": "Joonbyrd Wonder.Land Hand Lotion Mini 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    }
+  ],
+  "silent_removals": [],
+  "recent_events": [
+    {
+      "id": 3866,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::3-little-byrds-mini-trio-MUK200057283",
+      "product_title": "3 Little Byrds Mini Trio",
+      "variant_title": "Standard",
+      "event_type": "NEW_OOS",
+      "old_price": null,
+      "new_price": 19.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3865,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::we-belong-together-hand-body-essentials-kit-MUK200052740",
+      "product_title": "We Belong Together Hand & Body Essentials Kit",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 80.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3864,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::better-together-body-essentials-kit-MUK200051053",
+      "product_title": "Better Together Body Essentials Kit",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 82.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3863,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200051052",
+      "product_title": "Joonbyrd Sunday Sofa Body Butter 30ml",
+      "variant_title": "30ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 14.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3862,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200050709",
+      "product_title": "Joonbyrd Sunday Sofa Body Butter 200ml",
+      "variant_title": "200ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 52.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3861,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::bliss-mood-jelly-MUK200068120",
+      "product_title": "Bliss Mood Jelly",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 28.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3860,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200060256",
+      "product_title": "Joonbyrd Confetti Sky Hand Treatment 25ml",
+      "variant_title": "25ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 20.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3859,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200052728",
+      "product_title": "Joonbyrd Confetti Sky Hand Treatment 50ml",
+      "variant_title": "50ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 50.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3858,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::just-peachy-body-heroes-kit-MUK200056547",
+      "product_title": "Just Peachy Body Heroes Kit",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 46.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3857,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::peace-mood-jelly-MUK200068119",
+      "product_title": "Peace Mood Jelly",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 28.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3856,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::alphabet-lucky-bracelet-charm-MUK200053273",
+      "product_title": "Alphabet Lucky Bracelet Charm",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 6.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3855,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::confidence-mood-jelly-MUK200068121",
+      "product_title": "Confidence Mood Jelly",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 28.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3854,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::joonbyrd-x-space-nk-lovebyrds-mini-duo-MUK200057284",
+      "product_title": "Joonbyrd X Space NK Lovebyrds Mini Duo",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 10.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3853,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::heartwarmer-body-gua-sha-tool-MUK200050710",
+      "product_title": "Heartwarmer Body Gua Sha Tool",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 80.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3852,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200052719",
+      "product_title": "Joonbyrd Palm Wild Hand Wash 50ml",
+      "variant_title": "50ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3851,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200052716",
+      "product_title": "Joonbyrd Palm Wild Hand Wash 300ml",
+      "variant_title": "300ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 42.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3850,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200051051",
+      "product_title": "Joonbyrd Violet Haze Body Scrub 30ml",
+      "variant_title": "30ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3849,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200050703",
+      "product_title": "Joonbyrd Violet Haze Body Scrub 200ml",
+      "variant_title": "200ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 45.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3848,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200052724",
+      "product_title": "Joonbyrd Wonder·land Hand Lotion 50ml",
+      "variant_title": "50ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 14.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3847,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200052721",
+      "product_title": "Joonbyrd Wonder·land Hand Lotion 300ml",
+      "variant_title": "300ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 55.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3846,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200055846",
+      "product_title": "Joonbyrd Kaleidoscope Smoothing Body Serum 15ml",
+      "variant_title": "15ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 18.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3845,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200055845",
+      "product_title": "Joonbyrd Kaleidoscope Smoothing Body Serum 100ml",
+      "variant_title": "100ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 78.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3844,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::little-love-body-lotion-refill-MUK200061862",
+      "product_title": "Little Love Body Lotion Refill",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 50.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3843,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::moon-swim-body-wash-refill-MUK200061865",
+      "product_title": "Moon Swim Body Wash Refill",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 35.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3842,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200050711",
+      "product_title": "Joonbyrd Daydreamer Body Serum 15ml",
+      "variant_title": "15ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 18.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3841,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200050702",
+      "product_title": "Joonbyrd Daydreamer Body Serum 100ml",
+      "variant_title": "100ML",
+      "event_type": "NEW_OOS",
+      "old_price": null,
+      "new_price": 78.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3840,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200051050",
+      "product_title": "Joonbyrd Little Love Body Lotion 50ml",
+      "variant_title": "50ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 14.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3839,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200050701",
+      "product_title": "Joonbyrd Little Love Body Lotion 300ml",
+      "variant_title": "300ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 56.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3838,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200051049",
+      "product_title": "Joonbyrd Moon Swim Body Wash 50ml",
+      "variant_title": "50ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3837,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200050700",
+      "product_title": "Joonbyrd Moon Swim Body Wash 350ml",
+      "variant_title": "350ML",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 38.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3836,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::future-romance-body-glaze-MUK200063126",
+      "product_title": "Future Romance Body Glaze",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 62.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3835,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::big-time-body-wash-MUK200063124",
+      "product_title": "Big Time Body Wash",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 39.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3834,
+      "occurred_at": "2026-10-27T05:14:18+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::body-language-set-MUK200066164",
+      "product_title": "Body Language Set",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 80.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3833,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-we-belong-together-hand-body-essentials-kit_16583172",
+      "product_title": "Joonbyrd We Belong Together Hand & Body Essentials Kit",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 64.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3832,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-wonder.land-hand-lotion-300ml_16583161",
+      "product_title": "Joonbyrd Wonder.Land Hand Lotion 300ml",
+      "variant_title": "300ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 44.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3831,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-heartwarmer-body-gua-sha_16583168",
+      "product_title": "Joonbyrd Heartwarmer Body Gua Sha",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 64.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3830,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-body-language-hydrating-body-wash-lotion-duo_17966286",
+      "product_title": "Joonbyrd Body Language Set (Worth £94)",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 80.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3829,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-young-at-heart-longevity-body-wash-glaze-duo_17966287",
+      "product_title": "Joonbyrd Young At Heart Set (Worth £101)",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 85.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3828,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-big-time-longevity-body-wash_17748739",
+      "product_title": "Joonbyrd Big Time Longevity Body Wash",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 39.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3827,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-future-romance-body-glaze_17748738",
+      "product_title": "Joonbyrd Future Romance Body Glaze",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 62.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3826,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-future-romance-body-glaze-mini-30ml_17782587",
+      "product_title": "Joonbyrd Future Romance Body Glaze Mini 30ml",
+      "variant_title": "30ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3825,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-better-together-body-essentials-kit_16583170",
+      "product_title": "Joonbyrd Better Together Body Essentials Kit",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 65.6,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3824,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-daydreamer-body-serum-mini-15ml_16583164",
+      "product_title": "Joonbyrd Daydreamer Body Serum Mini 15ml",
+      "variant_title": "15ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 14.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3823,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-violet-haze-body-scrub-200ml_16583173",
+      "product_title": "Joonbyrd Violet Haze Body Scrub 200ml",
+      "variant_title": "200ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 36.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3822,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-kaleidoscope-body-serum-mini-15ml_16583178",
+      "product_title": "Joonbyrd Kaleidoscope Body Serum Mini 15ml",
+      "variant_title": "15ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 14.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3821,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-palm-wild-hand-wash-mini-50ml_16583166",
+      "product_title": "Joonbyrd Palm Wild Hand Wash Mini 50ml",
+      "variant_title": "50ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 9.6,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3820,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-kaleidoscope-smoothing-body-serum-100ml_16583165",
+      "product_title": "Joonbyrd Kaleidoscope Smoothing Body Serum 100ml",
+      "variant_title": "100ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 62.4,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3819,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-little-love-body-lotion-mini-50ml_16583158",
+      "product_title": "Joonbyrd Little Love Body Lotion Mini 50ml",
+      "variant_title": "50ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 11.2,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3818,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-palm-wild-hand-wash-300ml_16583159",
+      "product_title": "Joonbyrd Palm Wild Hand Wash 300ml",
+      "variant_title": "300ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 33.6,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 3817,
+      "occurred_at": "2026-10-27T05:13:14+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-moon-swim-body-wash-mini-50ml_16583167",
+      "product_title": "Joonbyrd Moon Swim Body Wash Mini 50ml",
+      "variant_title": "50ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 9.6,
+      "details": "Initial discovery"
+    }
+  ]
+}

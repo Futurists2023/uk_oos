@@ -1,17 +1,172 @@
 {
   "brand": "Mirror Water",
   "brand_slug": "mirror-water",
-  "generated_at": "2026-10-24T04:44:38+00:00",
+  "generated_at": "2026-10-27T05:18:38+00:00",
   "summary": {
-    "monitored_uk_stores": 5,
+    "monitored_uk_stores": 8,
+    "monitored_retail_stockists": 7,
     "total_listed_skus_variants": 24,
     "in_stock_skus_variants": 24,
     "out_of_stock_skus_variants": 0,
+    "retail_out_of_stock_variants": 0,
+    "unforced_retail_outages": 0,
+    "factory_shortages_on_dtc": 0,
     "silent_removed_skus": 0
   },
   "out_of_stock_alerts": [],
+  "retail_out_of_stock_alerts": [],
+  "dtc_out_of_stock": [],
+  "hero_benchmarks": [
+    {
+      "normalized_key": "rub_solid_balm",
+      "product_family": "Mirror Water Rub Solid Balm",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 4,
+      "total_stores": 7,
+      "penetration_pct": 57,
+      "is_hero": true,
+      "in_stock_in": [
+        "contentbeautywellbeing.com",
+        "naturisimo.com",
+        "ohmycream.co.uk",
+        "w-wellness.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com",
+        "studioshy.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "smooth_body_oil",
+      "product_family": "Smooth Body Oil",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 4,
+      "total_stores": 7,
+      "penetration_pct": 57,
+      "is_hero": true,
+      "in_stock_in": [
+        "contentbeautywellbeing.com",
+        "naturisimo.com",
+        "ohmycream.co.uk",
+        "w-wellness.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "cultbeauty.co.uk",
+        "spacenk.com",
+        "studioshy.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "buff_body_dry_brush",
+      "product_family": "Mirror Water Buff Body Dry Brush",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 7,
+      "penetration_pct": 29,
+      "is_hero": true,
+      "in_stock_in": [
+        "contentbeautywellbeing.com",
+        "studioshy.co.uk"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "cultbeauty.co.uk",
+        "naturisimo.com",
+        "ohmycream.co.uk",
+        "spacenk.com",
+        "w-wellness.co.uk"
+      ],
+      "undercut_alerts": []
+    }
+  ],
   "silent_removals": [],
   "recent_events": [
+    {
+      "id": 4232,
+      "occurred_at": "2026-10-27T05:18:37+00:00",
+      "domain": "w-wellness.co.uk",
+      "brand": "Mirror Water",
+      "sku_key": "w-wellness.co.uk::mirror-water::mirror-water-smooth-body-oil::56889314312574",
+      "product_title": "Mirror Water Smooth Body Oil",
+      "variant_title": "100ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 51.0,
+      "new_price": 50.0,
+      "details": "Price changed 51.0 -> 50.0"
+    },
+    {
+      "id": 4231,
+      "occurred_at": "2026-10-27T05:18:37+00:00",
+      "domain": "w-wellness.co.uk",
+      "brand": "Mirror Water",
+      "sku_key": "w-wellness.co.uk::mirror-water::mirror-water-ultra-soft-buff-body-dry-brush::56889301205374",
+      "product_title": "Mirror Water Ultra-Soft Buff Body Dry Brush",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 26.0,
+      "new_price": 25.0,
+      "details": "Price changed 26.0 -> 25.0"
+    },
+    {
+      "id": 4230,
+      "occurred_at": "2026-10-27T05:17:57+00:00",
+      "domain": "naturisimo.com",
+      "brand": "Mirror Water",
+      "sku_key": "naturisimo.com::mirror-water::mirror-water-rub-solid-balm::43633880072364",
+      "product_title": "Rub Solid Balm",
+      "variant_title": "50 ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 32.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 4229,
+      "occurred_at": "2026-10-27T05:17:57+00:00",
+      "domain": "naturisimo.com",
+      "brand": "Mirror Water",
+      "sku_key": "naturisimo.com::mirror-water::mirror-water-smooth-body-oil::43634139332780",
+      "product_title": "Smooth Body Oil",
+      "variant_title": "50 ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 27.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 4228,
+      "occurred_at": "2026-10-27T05:17:57+00:00",
+      "domain": "naturisimo.com",
+      "brand": "Mirror Water",
+      "sku_key": "naturisimo.com::mirror-water::mirror-water-smooth-body-oil::43634139365548",
+      "product_title": "Smooth Body Oil",
+      "variant_title": "100 ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 44.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 4227,
+      "occurred_at": "2026-10-27T05:17:42+00:00",
+      "domain": "contentbeautywellbeing.com",
+      "brand": "Mirror Water",
+      "sku_key": "contentbeautywellbeing.com::mirror-water::mirror-water-bathing-ritual-set::55756956926333",
+      "product_title": "Mirror Water Bathing Ritual Set (Worth £92)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 94.0,
+      "new_price": 93.0,
+      "details": "Price changed 94.0 -> 93.0"
+    },
     {
       "id": 1337,
       "occurred_at": "2026-10-24T04:44:37+00:00",
