@@ -811,8 +811,9 @@ export default function BrandClient({ initialData }) {
                     <button
                       className="btn-plain btn-xs"
                       onClick={() => copyStoreOosList(ret.domain)}
+                      title={`Copy ${ret.domain} OOS list`}
                     >
-                      Copy {shortStoreLabel(ret.domain)}
+                      Copy
                     </button>
                     <button
                       className="btn-plain btn-xs"
