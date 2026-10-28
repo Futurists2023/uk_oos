@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: FACEGYM
 
-- **Generated:** 2026-10-26 21:08 UTC
+- **Generated:** 2026-10-28 21:17 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 71 (70 In Stock | **1 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | FaceGym Signature Skin Mini Kit (Worth £82.00) | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-26 21:07 UTC)** |
+| `cultbeauty.co.uk` | FaceGym Signature Skin Mini Kit (Worth £82.00) | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 6h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
