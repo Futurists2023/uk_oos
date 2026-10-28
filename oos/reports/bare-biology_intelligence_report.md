@@ -1,29 +1,31 @@
-# UK Stockist Out-of-Stock (OOS) Report: Bare Biology
+# UK Stockist Out-of-Stock (OOS) Intelligence Report: Bare Biology
 
-- **Generated:** 2026-10-22 20:52 UTC
-- **Monitored UK Stockists:** 6
-- **Total Tracked Variants:** 57
-- **In Stock Variants:** 50
-- **Out-of-Stock (OOS) Variants:** **7**
-- **Removed / Unlisted Variants:** **0**
-
----
-
-## 1. Out-of-Stock (OOS) Variants
-
-| Store | Tier | Product | Size / Variant | Shelf Price | First Seen OOS | Time OOS | Price Note |
-|---|---|---|---|---|---|---|---|
-| `citysurvivor.co.uk` | Tier 2 (Independent Stockist) | Life & Soul Pure Omega-3 Liquid | Standard | £51.95 | 2026-10-21T14:08:36+00:00 | **1d 6h (since 2026-10-21 14:08 UTC)** | Full Price |
-| `contentbeautywellbeing.com` | Tier 2 (Independent Stockist) | Bare Biology Life & Soul Pure Omega 3 Daily Capsules | Standard | £32.95 | 2026-10-21T14:08:30+00:00 | **1d 6h (since 2026-10-21 14:08 UTC)** | Full Price |
-| `contentbeautywellbeing.com` | Tier 2 (Independent Stockist) | Bare Biology Life & Soul Pure Omega 3 Liquid | Standard | £51.95 | 2026-10-21T14:08:30+00:00 | **1d 6h (since 2026-10-21 14:08 UTC)** | Full Price |
-| `contentbeautywellbeing.com` | Tier 2 (Independent Stockist) | Bare Biology Ready & Rested Magnesium | Standard | £34.99 | 2026-10-21T14:08:30+00:00 | **1d 6h (since 2026-10-21 14:08 UTC)** | Full Price |
-| `contentbeautywellbeing.com` | Tier 2 (Independent Stockist) | Bare Biology Skinful Pure Marine Collagen Powder | Standard | £39.95 | 2026-10-21T14:08:30+00:00 | **1d 6h (since 2026-10-21 14:08 UTC)** | Full Price |
-| `shop.zenhealthcare.co.uk` | Tier 2 (Independent Stockist) | Bare Biology Beam & Balance, Vitamin D3 + K2 Peppermint Spray 25 ml | 25 ml | £17.99 | 2026-10-21T14:08:09+00:00 | **1d 6h (since 2026-10-21 14:08 UTC)** | Discounted -22% (was £22.99) |
-| `shop.zenhealthcare.co.uk` | Tier 2 (Independent Stockist) | Bare Biology Pure Marine Collagen Powder 300g | 300g | £40.00 | 2026-10-21T14:08:09+00:00 | **1d 6h (since 2026-10-21 14:08 UTC)** | Full Price |
+- **Generated:** 2026-10-28 15:17 UTC
+- **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
+- **Total Tracked Variants:** 11 (11 In Stock | **0 OOS**)
+- **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **0**
 
 ---
 
-## 2. Removed / Delisted Variants (Diffed Against Previous Scans)
+## 1A. Major UK Retailer Out-of-Stock Alerts (Cross-Checked Against Official DTC)
+
+_All tracked variants across monitored UK retail stockists are currently In Stock._
+
+### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
+
+_100% of active products on the official Brand DTC storefront are currently In Stock._
+
+---
+
+## 2. Cross-Retailer Hero Assortment & RRP Price Comparison Matrix
+
+| Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
+|---|---|---|---|---|---|---|
+
+---
+
+## 3. Removed / Delisted Variants (Diffed Against Previous Scans)
 
 _No removed variants detected yet._
 
@@ -33,9 +35,7 @@ _No removed variants detected yet._
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `citysurvivor.co.uk` | Tier 2 (Independent Stockist) | Shopify | 6 | 5 | **1** | https://citysurvivor.co.uk/collections/bare-biology |
-| `contentbeautywellbeing.com` | Tier 2 (Independent Stockist) | Shopify | 7 | 3 | **4** | https://www.contentbeautywellbeing.com/collections/bare-biology |
-| `planetorganic.com` | Tier 2 (Independent Stockist) | Shopify | 11 | 11 | **0** | https://www.planetorganic.com/collections/bare-biology |
-| `shop.zenhealthcare.co.uk` | Tier 2 (Independent Stockist) | Shopify | 9 | 7 | **2** | https://shop.zenhealthcare.co.uk/collections/bare-biology |
-| `supplementhub.co.uk` | Tier 2 (Independent Stockist) | Shopify | 15 | 15 | **0** | https://supplementhub.co.uk/collections/bare-biology |
-| `yourhealthbasket.co.uk` | Tier 2 (Independent Stockist) | WooCommerce | 9 | 9 | **0** | https://yourhealthbasket.co.uk/?s=Bare+Biology&post_type=product |
+| `barebiology.com` | Official Brand DTC (Master Catalog) | Shopify | 0 | 0 | **0** | https://barebiology.com |
+| `healf.com` | Tier 1 (Major UK Retailer) | Shopify | 0 | 0 | **0** | https://healf.com/collections/bare-biology |
+| `ohmycream.co.uk` | Tier 1 (Major UK Retailer) | Shopify | 0 | 0 | **0** | https://www.ohmycream.co.uk/collections/bare-biology |
+| `planetorganic.com` | Tier 1 (Major UK Retailer) | Shopify | 11 | 11 | **0** | https://www.planetorganic.com/collections/bare-biology |
