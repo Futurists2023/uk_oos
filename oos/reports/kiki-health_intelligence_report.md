@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Kiki Health
 
-- **Generated:** 2026-10-27 20:49 UTC
+- **Generated:** 2026-10-29 21:19 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 40 (39 In Stock | **1 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `planetorganic.com` | KIKI Health Organic Beetroot Powder 200g | 42745 | £13.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 7h (since 2026-10-23 13:48 UTC)** |
+| `planetorganic.com` | KIKI Health Organic Beetroot Powder 200g | 42745 | £10.13 (Discounted -25% (was £13.50)) | - | **Retail Exclusive OOS** | _None_ | **6d 7h (since 2026-10-23 13:48 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 

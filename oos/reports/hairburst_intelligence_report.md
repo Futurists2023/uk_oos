@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Hairburst
 
-- **Generated:** 2026-10-27 20:45 UTC
+- **Generated:** 2026-10-29 21:15 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 151 (140 In Stock | **11 OOS**)
+- **Total Tracked Variants:** 149 (138 In Stock | **11 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **0**
+- **Removed / Delisted Variants:** **4**
 
 ---
 
@@ -12,8 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | Hairburst Healthy Hair Vitamins for New Mums 30 Capsules | 30 Capsules | £13.00 (Discounted -35% (was £20.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-27 20:45 UTC)** |
-| `hollandandbarrett.com` | Hairburst Scalp Massage Brush | Standard | £5.85 (Discounted -35% (was £9.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-27 20:45 UTC)** |
+| `hollandandbarrett.com` | Hairburst Healthy Hair Vitamins for New Mums 30 Capsules | 30 Capsules | £13.00 (Discounted -35% (was £20.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 0h (since 2026-10-27 20:45 UTC)** |
+| `hollandandbarrett.com` | Hairburst Scalp Massage Brush | Standard | £5.85 (Discounted -35% (was £9.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 0h (since 2026-10-27 20:45 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -48,7 +48,12 @@
 
 ## 3. Removed / Delisted Variants (Diffed Against Previous Scans)
 
-_No removed variants detected yet._
+| Store | Product | Variant | Last Seen Price | Removed At |
+|---|---|---|---|---|
+| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper | Standard | £4.99 | 2026-10-29T21:15:18+00:00 |
+| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 25% Off | 567g | £37.49 | 2026-10-29T21:15:18+00:00 |
+| `hollandandbarrett.com` | 4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-10-29T21:15:18+00:00 |
+| `hollandandbarrett.com` | 5 Miniml Clarifying Shampoo for Oily Hair Refreshing Tea Tree & Mint 400ml | 400ml | £4.49 | 2026-10-29T21:15:18+00:00 |
 
 ---
 
@@ -58,6 +63,6 @@ _No removed variants detected yet._
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/hairburst |
 | `hairburst.com` | Official Brand DTC (Master Catalog) | Shopify | 89 | 80 | **9** | https://hairburst.com |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 36 | 34 | **2** | https://www.hollandandbarrett.com/shop/brands/hairburst/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 34 | 32 | **2** | https://www.hollandandbarrett.com/shop/brands/hairburst/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 26 | 26 | **0** | https://www.lookfantastic.com/c/brands/hairburst/ |
 | `superdrug.com` | Tier 1 (Major UK Retailer) | Custom | 0 | 0 | **0** | https://www.superdrug.com/brand/hairburst |

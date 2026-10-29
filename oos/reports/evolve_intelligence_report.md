@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Evolve Organic Beauty
 
-- **Generated:** 2026-10-27 20:43 UTC
+- **Generated:** 2026-10-29 21:13 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 12 (10 In Stock | **2 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,8 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `planetorganic.com` | Evolve JOYFUL LIGHT ESSENCE 10ml | 47493 | £24.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 15h (since 2026-10-23 05:06 UTC)** |
-| `planetorganic.com` | Evolve Superfood Shine Shampoo with Baobab and Pomegranate 250ml | 26729 | £16.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 15h (since 2026-10-23 05:06 UTC)** |
+| `planetorganic.com` | Evolve JOYFUL LIGHT ESSENCE 10ml | 47493 | £24.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 16h (since 2026-10-23 05:06 UTC)** |
+| `planetorganic.com` | Evolve Superfood Shine Shampoo with Baobab and Pomegranate 250ml | 26729 | £16.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 16h (since 2026-10-23 05:06 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
