@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Isle of Paradise
 
-- **Generated:** 2026-10-27 05:12 UTC
+- **Generated:** 2026-10-29 05:53 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 90 (82 In Stock | **8 OOS**)
+- **Total Tracked Variants:** 90 (81 In Stock | **9 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
@@ -12,19 +12,20 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £5.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-27 05:11 UTC)** |
+| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £5.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 14h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
-| `theisleofparadise.com` | Daily Defense Body Mist | SPF 30 | £29.00 | 2026-10-27T05:10:47+00:00 |
-| `theisleofparadise.com` | Daily Defense Face Mist | Standard | £28.00 | 2026-10-27T05:10:47+00:00 |
-| `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Medium | £35.00 | 2026-10-27T05:10:47+00:00 |
-| `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Dark | £35.00 | 2026-10-27T05:10:47+00:00 |
-| `theisleofparadise.com` | Self-Tanning Water | Light | £35.00 | 2026-10-27T05:10:47+00:00 |
-| `theisleofparadise.com` | Self-Tanning Water | Medium | £35.00 | 2026-10-27T05:10:47+00:00 |
-| `theisleofparadise.com` | Sunny Serum Bronzing Setting Mist | Golden Hour | £24.00 | 2026-10-27T05:10:47+00:00 |
+| `theisleofparadise.com` | Daily Defense Body Mist | SPF 30 | £29.00 | 2026-10-24T15:04:38+00:00 |
+| `theisleofparadise.com` | Daily Defense Face Mist | Standard | £28.00 | 2026-10-24T15:04:38+00:00 |
+| `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Medium | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Dark | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `theisleofparadise.com` | Self-Tanning Drops | Dark | £30.00 | 2026-10-29T05:52:12+00:00 |
+| `theisleofparadise.com` | Self-Tanning Water | Light | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `theisleofparadise.com` | Self-Tanning Water | Medium | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `theisleofparadise.com` | Sunny Serum Bronzing Setting Mist | Golden Hour | £24.00 | 2026-10-24T15:04:38+00:00 |
 
 ---
 
@@ -72,4 +73,4 @@ _No removed variants detected yet._
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 31 | 30 | **1** | https://www.cultbeauty.co.uk/c/brands/isle-of-paradise/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/isle-of-paradise/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 5 | 5 | **0** | https://www.spacenk.com/uk/brands/i/isle-of-paradise |
-| `theisleofparadise.com` | Official Brand DTC (Master Catalog) | Shopify | 27 | 20 | **7** | https://theisleofparadise.com |
+| `theisleofparadise.com` | Official Brand DTC (Master Catalog) | Shopify | 27 | 19 | **8** | https://theisleofparadise.com |

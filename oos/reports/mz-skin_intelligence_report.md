@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: MZ SKIN
 
-- **Generated:** 2026-10-27 05:17 UTC
+- **Generated:** 2026-10-29 05:58 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 173 (145 In Stock | **28 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,39 +12,39 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Hyaluronic Acid Hydrating Serum | Standard | £62.50 (Discounted -50% (was £125.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **0h (first detected 2026-10-27 05:17 UTC)** |
-| `spacenk.com` | LightMAX Hydracolloidal Patch | Standard | £28.00 (Discounted -30% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-27 05:17 UTC)** |
+| `spacenk.com` | Hyaluronic Acid Hydrating Serum | Standard | £62.50 (Discounted -50% (was £125.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **4d 14h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | LightMAX Hydracolloidal Patch | Standard | £28.00 (Discounted -30% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **4d 14h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
-| `mzskin.com` | Anti-Pollution Hydrating Face Mask | Pack of 5 | £135.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Anti-Pollution Hydrating Face Mask | Single | £35.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Anti-Pollution Illuminating Eye Mask | Pack of 5 | £105.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Anti-Pollution Illuminating Eye Mask | Single | £30.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Bio-Placenta Peptide Illuminating Hydrogel Eye Mask | Pack of 5 | £135.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Bio-Placenta Peptide Reviving Hydrogel Face Mask | Pack of 5 | £160.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Brighten & Perfect 10% Vitamin C Corrective Serum | 5 ML | £53.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Cleanse & Clarify Dual Action AHA Cleanser & Mask | 100 ML | £90.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Hydra-Bright Gold Eye Treatment Mask | Pack of 5 | £105.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Hydra-Bright Gold Eye Treatment Mask | Single | £30.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Hydra-Lift Gold Facial Treatment Mask | Pack of 5 | £135.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Hydrate & Nourish Hyaluronic & Retinol Day Moisturiser SPF30 | 10 ML | £45.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Intensive Bio-Placenta Eye Cream | Standard | £240.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Knitted Cosmetic Pouch | Standard | £41.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Medium Plush Cosmetic Bag | Standard | £35.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Natural Konjac Sponges | Standard | £65.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Nylon Cosmetic Bag | Standard | £35.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Pink Quilted Cosmetic Pouch | Standard | £41.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Radiance & Renewal Instant Clarity Refining Mask | 20ml | £41.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Reviving Antioxidant Facial Oil | 30ml | £215.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Sculpting Rose Quartz Gua Sha | Standard | £65.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Soothe & Smooth Hyaluronic Brightening Eye Complex | 3 ML | £32.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | The Calming Discovery Set | Standard | £255.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Tone & Lift Germanium Contouring Facial Roller | Standard | £95.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | Vitamin-Infused Meso Eye Mask | Pack of 5 | £105.00 | 2026-10-27T05:16:15+00:00 |
-| `mzskin.com` | White Quilted Cosmetic Pouch | Standard | £41.00 | 2026-10-27T05:16:15+00:00 |
+| `mzskin.com` | Anti-Pollution Hydrating Face Mask | Pack of 5 | £135.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Anti-Pollution Hydrating Face Mask | Single | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Anti-Pollution Illuminating Eye Mask | Pack of 5 | £105.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Anti-Pollution Illuminating Eye Mask | Single | £30.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Bio-Placenta Peptide Illuminating Hydrogel Eye Mask | Pack of 5 | £135.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Bio-Placenta Peptide Reviving Hydrogel Face Mask | Pack of 5 | £160.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Brighten & Perfect 10% Vitamin C Corrective Serum | 5 ML | £53.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Cleanse & Clarify Dual Action AHA Cleanser & Mask | 100 ML | £90.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Hydra-Bright Gold Eye Treatment Mask | Pack of 5 | £105.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Hydra-Bright Gold Eye Treatment Mask | Single | £30.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Hydra-Lift Gold Facial Treatment Mask | Pack of 5 | £135.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Hydrate & Nourish Hyaluronic & Retinol Day Moisturiser SPF30 | 10 ML | £45.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Intensive Bio-Placenta Eye Cream | Standard | £240.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Knitted Cosmetic Pouch | Standard | £41.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Medium Plush Cosmetic Bag | Standard | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Natural Konjac Sponges | Standard | £65.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Nylon Cosmetic Bag | Standard | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Pink Quilted Cosmetic Pouch | Standard | £41.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Radiance & Renewal Instant Clarity Refining Mask | 20ml | £41.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Reviving Antioxidant Facial Oil | 30ml | £215.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Sculpting Rose Quartz Gua Sha | Standard | £65.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Soothe & Smooth Hyaluronic Brightening Eye Complex | 3 ML | £32.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | The Calming Discovery Set | Standard | £255.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Tone & Lift Germanium Contouring Facial Roller | Standard | £95.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | Vitamin-Infused Meso Eye Mask | Pack of 5 | £105.00 | 2026-10-24T15:04:38+00:00 |
+| `mzskin.com` | White Quilted Cosmetic Pouch | Standard | £41.00 | 2026-10-24T15:04:38+00:00 |
 
 ---
 
