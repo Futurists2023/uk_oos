@@ -1,20 +1,78 @@
 {
   "brand": "BLEACH London",
   "brand_slug": "bleach-london",
-  "generated_at": "2026-10-27T14:42:41+00:00",
+  "generated_at": "2026-10-29T15:29:17+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
     "total_listed_skus_variants": 51,
-    "in_stock_skus_variants": 51,
-    "out_of_stock_skus_variants": 0,
-    "retail_out_of_stock_variants": 0,
+    "in_stock_skus_variants": 50,
+    "out_of_stock_skus_variants": 1,
+    "retail_out_of_stock_variants": 1,
     "unforced_retail_outages": 0,
     "factory_shortages_on_dtc": 0,
-    "silent_removed_skus": 0
+    "silent_removed_skus": 1
   },
-  "out_of_stock_alerts": [],
-  "retail_out_of_stock_alerts": [],
+  "out_of_stock_alerts": [
+    {
+      "sku_key": "cultbeauty.co.uk::bleach-london::p_bleach-london-fade-to-grey-shampoo_13309538",
+      "domain": "cultbeauty.co.uk",
+      "brand": "BLEACH London",
+      "product_title": "Bleach London Fade To Grey Shampoo",
+      "variant_title": "Standard",
+      "normalized_product_key": "fade_to_grey_shampoo",
+      "product_url": "https://www.cultbeauty.co.uk/p/bleach-london-fade-to-grey-shampoo/13309538/",
+      "sku_code": "p_bleach-london-fade-to-grey-shampoo_13309538",
+      "current_price": 8.5,
+      "compare_at_price": null,
+      "last_in_stock_price": 8.5,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T14:42:02+00:00",
+      "last_seen_at": "2026-10-29T15:28:43+00:00",
+      "first_seen_oos_at": "2026-10-29T15:28:43+00:00",
+      "last_seen_in_stock_at": "2026-10-27T14:42:02+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-29 15:28 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    }
+  ],
+  "retail_out_of_stock_alerts": [
+    {
+      "sku_key": "cultbeauty.co.uk::bleach-london::p_bleach-london-fade-to-grey-shampoo_13309538",
+      "domain": "cultbeauty.co.uk",
+      "brand": "BLEACH London",
+      "product_title": "Bleach London Fade To Grey Shampoo",
+      "variant_title": "Standard",
+      "normalized_product_key": "fade_to_grey_shampoo",
+      "product_url": "https://www.cultbeauty.co.uk/p/bleach-london-fade-to-grey-shampoo/13309538/",
+      "sku_code": "p_bleach-london-fade-to-grey-shampoo_13309538",
+      "current_price": 8.5,
+      "compare_at_price": null,
+      "last_in_stock_price": 8.5,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T14:42:02+00:00",
+      "last_seen_at": "2026-10-29T15:28:43+00:00",
+      "first_seen_oos_at": "2026-10-29T15:28:43+00:00",
+      "last_seen_in_stock_at": "2026-10-27T14:42:02+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-10-29 15:28 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    }
+  ],
   "dtc_out_of_stock": [],
   "hero_benchmarks": [
     {
@@ -38,8 +96,28 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "reincarnation_mask_supersize",
+      "normalized_key": "reincarnation_mask_500ml",
       "product_family": "Bleach London Reincarnation Mask 500ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 4,
+      "penetration_pct": 50,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "boots.com",
+        "superdrug.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "super_cool_colour_just_like_honey",
+      "product_family": "Bleach London Super Cool Colour Just Like Honey",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "stores_carrying": 2,
@@ -98,8 +176,69 @@
       "undercut_alerts": []
     }
   ],
-  "silent_removals": [],
+  "silent_removals": [
+    {
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-copper-permanent-kit_15002565",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "product_title": "BLEACH LONDON Natural Copper Permanent Kit",
+      "variant_title": "Standard",
+      "normalized_product_key": "copper_permanent_kit",
+      "product_url": "https://www.lookfantastic.com/p/bleach-london-natural-copper-permanent-kit/15002565/",
+      "sku_code": "p_bleach-london-natural-copper-permanent-kit_15002565",
+      "current_price": 12.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 12.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-27T14:42:24+00:00",
+      "last_seen_at": "2026-10-27T14:42:24+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-10-27T14:42:24+00:00",
+      "silent_removed_at": "2026-10-29T15:29:02+00:00"
+    }
+  ],
   "recent_events": [
+    {
+      "id": 11390,
+      "occurred_at": "2026-10-29T15:29:02+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-copper-permanent-kit_15002565",
+      "product_title": "BLEACH LONDON Natural Copper Permanent Kit",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 12.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-27T14:42:24+00:00)"
+    },
+    {
+      "id": 11389,
+      "occurred_at": "2026-10-29T15:29:02+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-super-cool-colour-just-like-honey_13344374",
+      "product_title": "BLEACH LONDON Super Cool Colour Just Like Honey",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 6.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 11388,
+      "occurred_at": "2026-10-29T15:28:43+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "BLEACH London",
+      "sku_key": "cultbeauty.co.uk::bleach-london::p_bleach-london-fade-to-grey-shampoo_13309538",
+      "product_title": "Bleach London Fade To Grey Shampoo",
+      "variant_title": "Standard",
+      "event_type": "WENT_OOS",
+      "old_price": 8.5,
+      "new_price": 8.5,
+      "details": "Transitioned from In Stock to OOS"
+    },
     {
       "id": 5560,
       "occurred_at": "2026-10-27T14:42:24+00:00",
@@ -709,45 +848,6 @@
       "event_type": "NEW_IN_STOCK",
       "old_price": null,
       "new_price": 10.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 5513,
-      "occurred_at": "2026-10-27T14:42:02+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "BLEACH London",
-      "sku_key": "cultbeauty.co.uk::bleach-london::p_bleach-london-rose-shampoo-250ml_11787490",
-      "product_title": "Bleach London Rose Shampoo 250ml",
-      "variant_title": "250ml",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 8.5,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 5512,
-      "occurred_at": "2026-10-27T14:42:02+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "BLEACH London",
-      "sku_key": "cultbeauty.co.uk::bleach-london::p_bleach-london-white-toner-kit_11787509",
-      "product_title": "Bleach London White Toner Kit",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 10.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 5511,
-      "occurred_at": "2026-10-27T14:42:02+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "BLEACH London",
-      "sku_key": "cultbeauty.co.uk::bleach-london::p_bleach-london-reincarnation-mask-500ml_12371575",
-      "product_title": "Bleach London Reincarnation Mask 500ml",
-      "variant_title": "500ml",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 17.0,
       "details": "Initial discovery"
     }
   ]
