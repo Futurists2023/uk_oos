@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-10-28 05:51 UTC
+- **Generated:** 2026-10-30 15:07 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 92 (80 In Stock | **12 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **0**
+- **Removed / Delisted Variants:** **1**
 
 ---
 
@@ -45,7 +45,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine B27 Angled Buffing Foundation Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine Beautcase Vanity Case with 12-piece Makeup Brush Set (Worth £129.99)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine D17 Large Duo Fibre Foundation Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections SC020 Wonder Sponge - Pink** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 
@@ -53,7 +52,9 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 ## 3. Removed / Delisted Variants (Diffed Against Previous Scans)
 
-_No removed variants detected yet._
+| Store | Product | Variant | Last Seen Price | Removed At |
+|---|---|---|---|---|
+| `lookfantastic.com` | Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush | Standard | £6.99 | 2026-10-30T15:07:32+00:00 |
 
 ---
 

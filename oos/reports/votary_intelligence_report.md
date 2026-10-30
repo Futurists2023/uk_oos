@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Votary
 
-- **Generated:** 2026-10-28 05:54 UTC
+- **Generated:** 2026-10-30 15:09 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
 - **Total Tracked Variants:** 135 (129 In Stock | **6 OOS**)
 - **Retailer Out-of-Stock Alerts:** **4** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,10 +12,10 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Blemish Rescue Oil – Tamanu and Salicylic | Standard | - (Full Price) | £36.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **0h (first detected 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Intense Eye Oil - Tuberose and Retinoid | Standard | £86.25 (Discounted -25% (was £115.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Intense Night Oil - Rosehip and Retinoid | Standard | £103.60 (Discounted -30% (was £148.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Pillow Spray Lavender and Chamomile | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Blemish Rescue Oil – Tamanu and Salicylic | Standard | - (Full Price) | £36.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **2d 9h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Intense Eye Oil - Tuberose and Retinoid | Standard | £86.25 (Discounted -25% (was £115.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 9h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Intense Night Oil - Rosehip and Retinoid | Standard | £103.60 (Discounted -30% (was £148.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 9h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Pillow Spray Lavender and Chamomile | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 9h (since 2026-10-28 05:54 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
