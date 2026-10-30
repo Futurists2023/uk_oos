@@ -1,18 +1,16 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Laboratory Perfumes
 
-- **Generated:** 2026-10-27 20:50 UTC
+- **Generated:** 2026-10-30 05:52 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 44 (43 In Stock | **1 OOS**)
-- **Retailer Out-of-Stock Alerts:** **1** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 45 (45 In Stock | **0 OOS**)
+- **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
 ---
 
 ## 1A. Major UK Retailer Out-of-Stock Alerts (Cross-Checked Against Official DTC)
 
-| Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
-|---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Laboratory Perfumes Gorse Soap 150g | 150g | £17.00 (Full Price) | £16.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **0h (first detected 2026-10-27 20:50 UTC)** |
+_All tracked variants across monitored UK retail stockists are currently In Stock._
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -43,6 +41,6 @@ _No removed variants detected yet._
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 8 | 7 | **1** | https://www.cultbeauty.co.uk/c/brands/laboratory-perfumes/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 9 | 9 | **0** | https://www.cultbeauty.co.uk/c/brands/laboratory-perfumes/ |
 | `laboratoryperfumes.com` | Official Brand DTC (Master Catalog) | Shopify | 30 | 30 | **0** | https://laboratoryperfumes.com |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 6 | 6 | **0** | https://www.lookfantastic.com/c/brands/laboratory-perfumes/ |

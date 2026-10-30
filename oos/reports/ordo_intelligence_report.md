@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: ORDO
 
-- **Generated:** 2026-10-28 05:47 UTC
+- **Generated:** 2026-10-30 05:59 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 821 (248 In Stock | **573 OOS**)
+- **Total Tracked Variants:** 817 (245 In Stock | **572 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**0 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **0**
+- **Removed / Delisted Variants:** **8**
 
 ---
 
@@ -12,9 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | ORDO Hydro Sonic Water Flosser Charcoal Grey | Standard | £59.99 (Full Price) | £49.99 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `lookfantastic.com` | **0h (first detected 2026-10-28 05:47 UTC)** |
-| `hollandandbarrett.com` | ORDO Sonic Brush Heads White Silver x 2 | Standard | £8.00 (Discounted -20% (was £10.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-28 05:47 UTC)** |
-| `hollandandbarrett.com` | ORDO Sonic Edge Paradise Pink | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-28 05:47 UTC)** |
+| `hollandandbarrett.com` | ORDO Hydro Sonic Water Flosser Charcoal Grey | Standard | £59.99 (Full Price) | £49.99 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `lookfantastic.com` | **2d 0h (since 2026-10-28 05:47 UTC)** |
+| `hollandandbarrett.com` | ORDO Sonic Brush Heads White Silver x 2 | Standard | £8.00 (Discounted -20% (was £10.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 0h (since 2026-10-28 05:47 UTC)** |
+| `hollandandbarrett.com` | ORDO Sonic Edge Paradise Pink | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 0h (since 2026-10-28 05:47 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -28,7 +28,6 @@
 | `ordolife.com` | Ordo Hydro Sonic Water Flosser - Charcoal Grey & Mouthwash Concentrate Bundle | Standard | £52.99 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic Brush Head Arctic Blue — Ocean 4x | Standard | £18.00 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic Brush Head White — Snow 1x | Standard | £5.00 | 2026-10-28T05:46:35+00:00 |
-| `ordolife.com` | Ordo Sonic Brush Head White — Snow 2x | Standard | £9.50 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic Brush Head White — Snow 4x | Standard | £18.00 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic Edge Rechargeable Toothbrush - Charcoal | Standard | £14.99 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic Edge Rechargeable Toothbrush - Paradise Pink | Standard | £14.99 | 2026-10-28T05:46:35+00:00 |
@@ -603,7 +602,16 @@
 
 ## 3. Removed / Delisted Variants (Diffed Against Previous Scans)
 
-_No removed variants detected yet._
+| Store | Product | Variant | Last Seen Price | Removed At |
+|---|---|---|---|---|
+| `hollandandbarrett.com` | 4.56 Noughty Wave Hello Curl Scrunching Jelly 200ml 25% Off | 200ml | £6.74 | 2026-10-30T05:58:46+00:00 |
+| `hollandandbarrett.com` | 4.67 Aloe Pura Aloe Vera Gel 200ml 20% Off | 200ml | £6.39 | 2026-10-30T05:58:46+00:00 |
+| `hollandandbarrett.com` | 4.67 Noughty Detox Dynamo Clarifying Shampoo 250ml 25% Off | 250ml | £6.74 | 2026-10-30T05:58:46+00:00 |
+| `hollandandbarrett.com` | 5 Nursem Unfragranced Caring Hand Cream 75ml | 75ml | £9.99 | 2026-10-30T05:58:46+00:00 |
+| `lookfantastic.com` | ORDO Sonic Brush Heads - White/Silver — Snow - 4 Pack | Standard | £18.00 | 2026-10-30T05:59:03+00:00 |
+| `lookfantastic.com` | ORDO Sonic+ Electric Toothbrush - White/Silver | Standard | £60.00 | 2026-10-30T05:59:03+00:00 |
+| `lookfantastic.com` | ORDO Sonic+ Toothbrush & Charging Travel Case - Rose Gold | Standard | £60.00 | 2026-10-30T05:59:03+00:00 |
+| `lookfantastic.com` | ORDO Sonic+ Toothbrush & Charging Travel Case - White/Silver | Standard | £62.00 | 2026-10-30T05:59:03+00:00 |
 
 ---
 
@@ -612,6 +620,6 @@ _No removed variants detected yet._
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/ordo |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 49 | 46 | **3** | https://www.hollandandbarrett.com/shop/brands/ordo/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 10 | 10 | **0** | https://www.lookfantastic.com/c/brands/ordo/ |
-| `ordolife.com` | Official Brand DTC (Master Catalog) | Shopify | 762 | 192 | **570** | https://ordolife.com |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 48 | 45 | **3** | https://www.hollandandbarrett.com/shop/brands/ordo/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 6 | 6 | **0** | https://www.lookfantastic.com/c/brands/ordo/ |
+| `ordolife.com` | Official Brand DTC (Master Catalog) | Shopify | 763 | 194 | **569** | https://ordolife.com |

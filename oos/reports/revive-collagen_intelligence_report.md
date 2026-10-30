@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Revive Collagen
 
-- **Generated:** 2026-10-28 05:48 UTC
+- **Generated:** 2026-10-30 06:00 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 177 (174 In Stock | **3 OOS**)
+- **Total Tracked Variants:** 186 (183 In Stock | **3 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **0**
+- **Removed / Delisted Variants:** **1**
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | 18+ Revive Collagen Sleep & Inner Calm Functional Mushroom & Adaptogen Blend with 6,000mg of Type 1 Hydrolysed Marine Collagen 28 x 22g Sachets | 22g | £56.15 (Discounted -28% (was £77.99)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-28 05:48 UTC)** |
+| `hollandandbarrett.com` | 18+ Revive Collagen Sleep & Inner Calm Functional Mushroom & Adaptogen Blend with 6,000mg of Type 1 Hydrolysed Marine Collagen 28 x 22g Sachets | 22g | £56.15 (Discounted -28% (was £77.99)) | - | **Retail Exclusive OOS** | _None_ | **2d 0h (since 2026-10-28 05:48 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -32,7 +32,9 @@
 
 ## 3. Removed / Delisted Variants (Diffed Against Previous Scans)
 
-_No removed variants detected yet._
+| Store | Product | Variant | Last Seen Price | Removed At |
+|---|---|---|---|---|
+| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper | Standard | £4.99 | 2026-10-30T06:00:12+00:00 |
 
 ---
 
@@ -41,6 +43,6 @@ _No removed variants detected yet._
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/revive-collagen |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 27 | 26 | **1** | https://www.hollandandbarrett.com/shop/brands/revive-collagen/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 26 | 25 | **1** | https://www.hollandandbarrett.com/shop/brands/revive-collagen/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 17 | 17 | **0** | https://www.lookfantastic.com/c/brands/revive-collagen/ |
-| `revivecollagen.com` | Official Brand DTC (Master Catalog) | Shopify | 133 | 131 | **2** | https://revivecollagen.com |
+| `revivecollagen.com` | Official Brand DTC (Master Catalog) | Shopify | 143 | 141 | **2** | https://revivecollagen.com |
