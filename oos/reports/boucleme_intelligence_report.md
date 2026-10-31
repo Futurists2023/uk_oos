@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Bouclème
 
-- **Generated:** 2026-10-29 15:30 UTC
+- **Generated:** 2026-10-31 20:06 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 116 (111 In Stock | **5 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,8 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Bouclème Curl Cream 300ml | 300ml | £22.00 (Full Price) | £22.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | Bouclème Super Volumising Foam 200ml | 200ml | £24.00 (Full Price) | £24.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Bouclème Curl Cream 300ml | 300ml | £22.00 (Full Price) | £22.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **7d 5h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Bouclème Super Volumising Foam 200ml | 200ml | £24.00 (Full Price) | £24.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **7d 5h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -52,9 +52,9 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `boucleme.co.uk` | Bodycare Duo | Standard | £24.50 | 2026-10-29T15:29:35+00:00 |
-| `boucleme.co.uk` | Invigorating Body Wash | 300ml | £14.00 | 2026-10-29T15:29:35+00:00 |
-| `boucleme.co.uk` | Nourishing Body Cream | 300ml | £15.40 | 2026-10-29T15:29:35+00:00 |
+| `boucleme.co.uk` | Bodycare Duo | Standard | £24.50 | 2026-10-31T20:05:10+00:00 |
+| `boucleme.co.uk` | Invigorating Body Wash | 300ml | £14.00 | 2026-10-31T20:05:10+00:00 |
+| `boucleme.co.uk` | Nourishing Body Cream | 300ml | £15.40 | 2026-10-31T20:05:10+00:00 |
 
 ---
 
