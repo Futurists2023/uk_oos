@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Luna Daily
 
-- **Generated:** 2026-10-29 05:56 UTC
+- **Generated:** 2026-10-31 05:56 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 194 (113 In Stock | **81 OOS**)
+- **Total Tracked Variants:** 200 (115 In Stock | **85 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **1**
+- **Removed / Delisted Variants:** **4**
 
 ---
 
@@ -25,6 +25,10 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `luna-daily.com` | Duo Daily Wash Bundle Fragrance Free | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Duo Daily Wash Bundle Hydrating Fresh Cotton | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Duo Daily Wash Bundle Jasmine + Ylang Ylang | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Cooling Water Lily + Fresh Citrus | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Fragrance Free | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Hydrating Fresh Cotton | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Jasmine + Ylang Ylang | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
 | `luna-daily.com` | Jet, Set, Refresh - Body Care Travel Essentials | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Mini + Mama Spray-To-Wipe - Fragrance Free | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Mini + Mama Spray-To-Wipe - Hydrating Fresh Cotton | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
@@ -130,7 +134,10 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-10-29T05:55:34+00:00 |
+| `hollandandbarrett.com` | 3.6 Hello Sunday The Mineral One - Lightweight Serum Spf50 30ml 30% Off | 30ml | £18.20 | 2026-10-31T05:55:46+00:00 |
+| `hollandandbarrett.com` | 4.85 Hello Sunday The One For Your Hands Spf30 30ml 15% Off | 30ml | £9.35 | 2026-10-31T05:55:46+00:00 |
+| `hollandandbarrett.com` | Frudia Coconut Honey Salve Lip Cream 10g | 10g | £8.99 | 2026-10-31T05:55:46+00:00 |
+| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-10-31T05:54:49+00:00 |
 
 ---
 
@@ -140,6 +147,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/luna-daily |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/luna-daily/ |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 15 | 15 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 17 | 17 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.lookfantastic.com/c/brands/luna-daily/ |
-| `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 123 | 42 | **81** | https://luna-daily.com |
+| `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 127 | 42 | **85** | https://luna-daily.com |

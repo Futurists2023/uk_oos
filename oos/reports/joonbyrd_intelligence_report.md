@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Joonbyrd
 
-- **Generated:** 2026-10-29 05:55 UTC
+- **Generated:** 2026-10-31 05:54 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 195 (190 In Stock | **5 OOS**)
+- **Total Tracked Variants:** 196 (190 In Stock | **6 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
@@ -12,15 +12,16 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | 3 Little Byrds Mini Trio | Standard | £19.00 (Discounted -50% (was £38.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **4d 14h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Joonbyrd Daydreamer Body Serum 100ml | 100ML | £78.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **4d 14h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Joonbyrd X Space NK Lovebyrds Mini Duo | Standard | £10.40 (Discounted -60% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-10-29 05:55 UTC)** |
+| `spacenk.com` | 3 Little Byrds Mini Trio | Standard | £19.00 (Discounted -50% (was £38.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **6d 14h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Joonbyrd Daydreamer Body Serum 100ml | 100ML | £78.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **6d 14h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Joonbyrd X Space NK Lovebyrds Mini Duo | Standard | £10.40 (Discounted -60% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **1d 23h (since 2026-10-29 05:55 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
 | `joonbyrd.com` | Bright Side | Purple | £25.00 | 2026-10-24T15:04:38+00:00 |
+| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £16.50 | 2026-10-31T05:52:56+00:00 |
 | `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £10.00 | 2026-10-24T15:04:38+00:00 |
 
 ---
@@ -73,6 +74,6 @@ _No removed variants detected yet._
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/joonbyrd/ |
-| `joonbyrd.com` | Official Brand DTC (Master Catalog) | Shopify | 104 | 102 | **2** | https://joonbyrd.com |
+| `joonbyrd.com` | Official Brand DTC (Master Catalog) | Shopify | 105 | 102 | **3** | https://joonbyrd.com |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 26 | 26 | **0** | https://www.lookfantastic.com/c/brands/joonbyrd/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 33 | 30 | **3** | https://www.spacenk.com/uk/brands/j/joonbyrd |
