@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Hairburst
 
-- **Generated:** 2026-10-29 21:15 UTC
+- **Generated:** 2026-10-31 23:27 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 149 (138 In Stock | **11 OOS**)
+- **Total Tracked Variants:** 152 (144 In Stock | **8 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **4**
+- **Removed / Delisted Variants:** **12**
 
 ---
 
@@ -12,8 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | Hairburst Healthy Hair Vitamins for New Mums 30 Capsules | 30 Capsules | £13.00 (Discounted -35% (was £20.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 0h (since 2026-10-27 20:45 UTC)** |
-| `hollandandbarrett.com` | Hairburst Scalp Massage Brush | Standard | £5.85 (Discounted -35% (was £9.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 0h (since 2026-10-27 20:45 UTC)** |
+| `hollandandbarrett.com` | Hairburst Healthy Hair Vitamins for New Mums 30 Capsules | 30 Capsules | £13.00 (Discounted -35% (was £20.00)) | - | **Retail Exclusive OOS** | _None_ | **4d 2h (since 2026-10-27 20:45 UTC)** |
+| `hollandandbarrett.com` | Hairburst Scalp Massage Brush | Standard | £5.85 (Discounted -35% (was £9.00)) | - | **Retail Exclusive OOS** | _None_ | **4d 2h (since 2026-10-27 20:45 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -25,9 +25,6 @@
 | `hairburst.com` | Mini Travel Set | Standard | £37.99 | 2026-10-27T20:44:45+00:00 |
 | `hairburst.com` | Original Conditioner Refill Pouch - 350ml | 350ml | £9.99 | 2026-10-27T20:44:45+00:00 |
 | `hairburst.com` | Pink Mesh Wash Bag | Wash bag | £12.99 | 2026-10-27T20:44:45+00:00 |
-| `hairburst.com` | Shampoo & Conditioner for Longer, Stronger Hair | For Curly and Wavy Hair | £29.99 | 2026-10-27T20:44:45+00:00 |
-| `hairburst.com` | Shampoo & Conditioner for Longer, Stronger Hair | For Dry and Damaged Hair | £29.99 | 2026-10-27T20:44:45+00:00 |
-| `hairburst.com` | Shampoo & Conditioner for Longer, Stronger Hair | For Oily Hair | £29.99 | 2026-10-27T20:44:45+00:00 |
 
 ---
 
@@ -35,14 +32,16 @@
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
+| **Hairburst Long and Healthy Hair Mask 220ml** | Retail Only | **3/4** (75%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | `superdrug.com` |
+| **Hairburst Multi-Active Scalp Serum 60ml** | Retail Only | **3/4** (75%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | `superdrug.com` |
+| **Shampoo for Dry & Damaged Hair** | ✅ £15.99 | **3/4** (75%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | `hollandandbarrett.com` £9.75 (-39% vs RRP) | `superdrug.com` |
 | **Hairburst Mini Conditioner 60ml** | Retail Only | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
 | **Conditioner for Curly and Wavy Hair** | ✅ £15.99 | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | `hollandandbarrett.com` £9.75 (-39% vs RRP) | `boots.com`, `superdrug.com` |
+| **Conditioner for Dry and Damaged Hair** | ✅ £15.99 | **2/4** (50%) | `boots.com`, `hollandandbarrett.com` | - | `hollandandbarrett.com` £9.75 (-39% vs RRP) | `lookfantastic.com`, `superdrug.com` |
 | **Hydrating & Balancing Scalp Tonic** | ✅ £25.99 | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | `hollandandbarrett.com` £16.25 (-37% vs RRP); `lookfantastic.com` £12.50 (-52% vs RRP) | `boots.com`, `superdrug.com` |
 | **Hydrating Hair Smoothing Balm** | ✅ £25.99 | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | `hollandandbarrett.com` £17.22 (-34% vs RRP) | `boots.com`, `superdrug.com` |
-| **Hairburst Long And Healthy Hair Mask 220ml** | Retail Only | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
-| **Hairburst Multi Active Scalp Serum 60ml** | Retail Only | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
 | **Shampoo for Curly and Wavy Hair** | ✅ £15.99 | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | `hollandandbarrett.com` £9.75 (-39% vs RRP) | `boots.com`, `superdrug.com` |
-| **Shampoo for Dry & Damaged Hair** | ✅ £15.99 | **2/4** (50%) | `hollandandbarrett.com`, `lookfantastic.com` | - | `hollandandbarrett.com` £9.75 (-39% vs RRP) | `boots.com`, `superdrug.com` |
+| **Hairburst Volume & Growth Elixir** | Retail Only | **2/4** (50%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com`, `superdrug.com` |
 
 ---
 
@@ -50,10 +49,18 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper | Standard | £4.99 | 2026-10-29T21:15:18+00:00 |
-| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 25% Off | 567g | £37.49 | 2026-10-29T21:15:18+00:00 |
-| `hollandandbarrett.com` | 4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-10-29T21:15:18+00:00 |
-| `hollandandbarrett.com` | 5 Miniml Clarifying Shampoo for Oily Hair Refreshing Tea Tree & Mint 400ml | 400ml | £4.49 | 2026-10-29T21:15:18+00:00 |
+| `hollandandbarrett.com` | 4.55 Fussy Refillable Natural Deodorant Wilderness 40g | 40g | £12.00 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 4.57 Fussy Natural Deodorant Refill Cloud Nine 40g | 40g | £6.00 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper | Standard | £4.99 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 4.67 DIRTEA Cacao Mushroom Super Blend 7x Sachets | Standard | £15.99 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 25% Off | 567g | £37.49 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 4.71 Heath & Heather Organic Nettle 20 Tea Bags 3 for 2 Mix & Match | Standard | £3.50 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 4.93 Fussy Natural Deodorant Refill Lavender Fields 40G 25% Off | 40G | £4.50 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 5 Fussy Natural Body Wash Refill Wide Eyed 320ml | 320ml | £6.00 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 5 Fussy Refillable Natural Body Wash Wide Eyed Starter Pack 320ml | 320ml | £15.00 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | 5 Miniml Clarifying Shampoo for Oily Hair Refreshing Tea Tree & Mint 400ml | 400ml | £4.49 | 2026-10-31T23:27:01+00:00 |
+| `hollandandbarrett.com` | Fussy Natural Deodorant Refill Wilderness 40g | 40g | £6.00 | 2026-10-31T23:27:01+00:00 |
 
 ---
 
@@ -61,8 +68,8 @@
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/hairburst |
-| `hairburst.com` | Official Brand DTC (Master Catalog) | Shopify | 89 | 80 | **9** | https://hairburst.com |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 34 | 32 | **2** | https://www.hollandandbarrett.com/shop/brands/hairburst/ |
+| `boots.com` | Tier 1 (Major UK Retailer) | Boots | 11 | 11 | **0** | https://www.boots.com/hairburst |
+| `hairburst.com` | Official Brand DTC (Master Catalog) | Shopify | 89 | 83 | **6** | https://hairburst.com |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 26 | 24 | **2** | https://www.hollandandbarrett.com/shop/brands/hairburst/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 26 | 26 | **0** | https://www.lookfantastic.com/c/brands/hairburst/ |
 | `superdrug.com` | Tier 1 (Major UK Retailer) | Custom | 0 | 0 | **0** | https://www.superdrug.com/brand/hairburst |

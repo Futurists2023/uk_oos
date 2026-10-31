@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: ICONIC LONDON
 
-- **Generated:** 2026-10-29 21:17 UTC
+- **Generated:** 2026-10-31 23:28 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 148 (120 In Stock | **28 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **1**
+- **Removed / Delisted Variants:** **2**
 
 ---
 
@@ -70,7 +70,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **ICONIC London Underglow Blurring Primer 27ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Mini Underglow Blurring Primer 10ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Velvet Blur Translucent Setting Powder** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **ICONIC London Velvet Smooth Pore Refining Primer 30ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London XL Lash Illusion Black 12ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 
 ---
@@ -79,7 +78,8 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | ICONIC London Blurring Blush Stick 6g (Various Shades) | 6g | £24.00 | 2026-10-29T21:17:11+00:00 |
+| `lookfantastic.com` | ICONIC London Blurring Blush Stick 6g (Various Shades) | 6g | £24.00 | 2026-10-31T23:28:56+00:00 |
+| `lookfantastic.com` | ICONIC London Velvet Smooth Pore Refining Primer 30ml | 30ml | £18.75 | 2026-10-31T23:28:56+00:00 |
 
 ---
 
