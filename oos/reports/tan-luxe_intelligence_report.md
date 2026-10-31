@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Tan-Luxe
 
-- **Generated:** 2026-10-29 15:21 UTC
+- **Generated:** 2026-10-31 14:44 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 97 (82 In Stock | **15 OOS**)
 - **Retailer Out-of-Stock Alerts:** **6** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,12 +12,12 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Glyco Water Exfoliating Tan Remover & Primer | Standard | £24.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Super Glow Body Hyaluronic Self-Tan Serum | Standard | £36.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Tan-Luxe Super Glow Hyaluronic Self-Tan Serum 50ml | 50ML | £45.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `lookfantastic.com` | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Tanning Mitt | Standard | £10.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Crème | Standard | £39.00 (Below DTC RRP -28% (DTC £54.00)) | £54.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Super Bundle | Standard | £60.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Glyco Water Exfoliating Tan Remover & Primer | Standard | £24.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Super Glow Body Hyaluronic Self-Tan Serum | Standard | £36.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Tan-Luxe Super Glow Hyaluronic Self-Tan Serum 50ml | 50ML | £45.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `lookfantastic.com` | **6d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Tanning Mitt | Standard | £10.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Crème | Standard | £39.00 (Below DTC RRP -28% (DTC £54.00)) | £54.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Super Bundle | Standard | £60.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 

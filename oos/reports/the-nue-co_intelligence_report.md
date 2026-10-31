@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: The Nue Co.
 
-- **Generated:** 2026-10-29 15:22 UTC
+- **Generated:** 2026-10-31 14:46 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 86 (70 In Stock | **16 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**0 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
@@ -12,9 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £38.25 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £35.00 (Full Price) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **5d 0h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £38.25 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £35.00 (Full Price) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **6d 23h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -55,8 +55,8 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-10-29T15:21:57+00:00 |
-| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-10-29T15:21:57+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-10-31T14:45:26+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-10-31T14:45:26+00:00 |
 
 ---
 
