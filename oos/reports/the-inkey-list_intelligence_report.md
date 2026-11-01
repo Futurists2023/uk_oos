@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: The INKEY List
 
-- **Generated:** 2026-10-30 20:57 UTC
+- **Generated:** 2026-11-01 20:35 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 239 (227 In Stock | **12 OOS**)
+- **Total Tracked Variants:** 239 (226 In Stock | **13 OOS**)
 - **Retailer Out-of-Stock Alerts:** **7** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **8**
 
@@ -12,19 +12,20 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Collagen Peptide Serum | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 5h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Glow Hard Or Go Home | Standard | £32.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 5h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Hyaluronic Acid Cleanser | Standard | £12.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 5h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Renewed Skin Starts Here Set | Standard | £18.55 (Discounted -30% (was £26.50)) | - | **Retail Exclusive OOS** | _None_ | **6d 5h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Retinol Serum | Standard | £9.80 (Discounted -30% (was £14.00)) | - | **Retail Exclusive OOS** | _None_ | **6d 5h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | SuperSolutions 10% Urea Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 5h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | SuperSolutions 2% Novoretin™ Blemish Clearing Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Collagen Peptide Serum | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Glow Hard Or Go Home | Standard | £32.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Hyaluronic Acid Cleanser | Standard | £12.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Renewed Skin Starts Here Set | Standard | £18.55 (Discounted -30% (was £26.50)) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Retinol Serum | Standard | £9.80 (Discounted -30% (was £14.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | SuperSolutions 10% Urea Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | SuperSolutions 2% Novoretin™ Blemish Clearing Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
 | `uk.theinkeylist.com` | 'Eleanor''s discount test product' | Standard | £25.00 | 2026-10-30T20:55:46+00:00 |
+| `uk.theinkeylist.com` | 10% Niacinamide Serum | Standard | £12.00 | 2026-11-01T20:33:47+00:00 |
 | `uk.theinkeylist.com` | 10% Niacinamide Serum Duo | Standard | £22.80 | 2026-10-28T21:08:57+00:00 |
 | `uk.theinkeylist.com` | Hydrocolloid Invisible Pimple Patches - Pack of 44 | Standard | £14.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.theinkeylist.com` | Supersize Omega Water Cream - 100ml | 100ml | £22.00 | 2026-10-24T15:04:38+00:00 |
@@ -75,14 +76,14 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | The INKEY List Bio-active Ceramide Neck Stick 20g | 20g | £28.00 | 2026-10-30T20:56:26+00:00 |
-| `cultbeauty.co.uk` | The INKEY List Brighten-I Eye Cream 15ml | 15ml | £12.00 | 2026-10-30T20:56:26+00:00 |
-| `cultbeauty.co.uk` | The INKEY List Supersize Hyaluronic Acid Serum 100ml | 100ml | £28.00 | 2026-10-30T20:56:26+00:00 |
-| `lookfantastic.com` | Discover | Standard | - | 2026-10-30T20:56:44+00:00 |
-| `lookfantastic.com` | The INKEY List Oat Balm Cleanser 150ml | 150ml | £12.00 | 2026-10-30T20:56:44+00:00 |
-| `spacenk.com` | Hyaluronic Acid Serum | Standard | £21.00 | 2026-10-30T20:57:22+00:00 |
-| `spacenk.com` | Milk Cleanser | Standard | £15.00 | 2026-10-30T20:57:22+00:00 |
-| `spacenk.com` | Oat Balm Cleanser | Standard | £15.00 | 2026-10-30T20:57:22+00:00 |
+| `cultbeauty.co.uk` | The INKEY List Bio-active Ceramide Neck Stick 20g | 20g | £28.00 | 2026-11-01T20:34:30+00:00 |
+| `cultbeauty.co.uk` | The INKEY List Brighten-I Eye Cream 15ml | 15ml | £12.00 | 2026-11-01T20:34:30+00:00 |
+| `cultbeauty.co.uk` | The INKEY List Supersize Hyaluronic Acid Serum 100ml | 100ml | £28.00 | 2026-11-01T20:34:30+00:00 |
+| `lookfantastic.com` | Discover | Standard | - | 2026-11-01T20:34:51+00:00 |
+| `lookfantastic.com` | The INKEY List Oat Balm Cleanser 150ml | 150ml | £12.00 | 2026-11-01T20:34:51+00:00 |
+| `spacenk.com` | Hyaluronic Acid Serum | Standard | £21.00 | 2026-11-01T20:35:30+00:00 |
+| `spacenk.com` | Milk Cleanser | Standard | £15.00 | 2026-11-01T20:35:30+00:00 |
+| `spacenk.com` | Oat Balm Cleanser | Standard | £15.00 | 2026-11-01T20:35:30+00:00 |
 
 ---
 
@@ -94,4 +95,4 @@
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/the-inkey-list/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.lookfantastic.com/c/brands/the-inkey-list/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 54 | 47 | **7** | https://www.spacenk.com/uk/brands/t/the-inkey-list |
-| `uk.theinkeylist.com` | Official Brand DTC (Master Catalog) | Shopify | 121 | 116 | **5** | https://uk.theinkeylist.com |
+| `uk.theinkeylist.com` | Official Brand DTC (Master Catalog) | Shopify | 121 | 115 | **6** | https://uk.theinkeylist.com |

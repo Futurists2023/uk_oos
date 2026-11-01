@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Emma Hardie
 
-- **Generated:** 2026-10-31 05:44 UTC
+- **Generated:** 2026-11-01 20:40 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 123 (117 In Stock | **6 OOS**)
 - **Retailer Out-of-Stock Alerts:** **5** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,11 +12,11 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Hydrating Balm Kit | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 14h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Iconic Duo | Standard | - (Full Price) | £68.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **6d 14h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Lift & Sculpt, Firming Neck Treatment | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 14h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Vit C Brilliance Edit | Standard | £27.00 (Discounted -40% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 8h (since 2026-10-28 21:16 UTC)** |
-| `spacenk.com` | Ultimate Hydrate & Glow Hydrogel Masks | Standard | £24.00 (Discounted -40% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **6d 14h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Hydrating Balm Kit | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Iconic Duo | Standard | - (Full Price) | £68.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Lift & Sculpt, Firming Neck Treatment | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Vit C Brilliance Edit | Standard | £27.00 (Discounted -40% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **3d 23h (since 2026-10-28 21:16 UTC)** |
+| `spacenk.com` | Ultimate Hydrate & Glow Hydrogel Masks | Standard | £24.00 (Discounted -40% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
