@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-10-30 15:07 UTC
+- **Generated:** 2026-11-01 06:14 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 92 (80 In Stock | **12 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -54,7 +54,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush | Standard | £6.99 | 2026-10-30T15:07:32+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush | Standard | £6.99 | 2026-11-01T06:14:08+00:00 |
 
 ---
 
