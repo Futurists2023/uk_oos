@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Zooki
 
-- **Generated:** 2026-10-30 15:13 UTC
+- **Generated:** 2026-11-01 15:15 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 413 (388 In Stock | **25 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **5**
+- **Removed / Delisted Variants:** **13**
 
 ---
 
@@ -48,8 +48,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **Zooki Electrolytes+ Skin Radiance, Pomegranate Flavour - 30 Sachets** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
-| **Zooki Liposomal Men’s Multivitamin And Daily Nutrient Complex Capsules 30 Day Supply** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
+| **Zooki Electrolytes+ Skin Radiance, Pomegranate Flavour - 7 Sachets** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **Zooki Liposomal Vitamin C 1,000mg, Citrus Orange Flavour - 30x15ml Liquid Sachets** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **Zooki Liposomal Women’s Multivitamin And Daily Nutrient Complex Capsules 30 Day Supply** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **Zooki Electrolytes+ Exercise & Recover, Cherry Flavour - 30 Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
@@ -59,7 +58,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **Zooki Liposomal Vitamin B12 2500mcg, Strawberry Flavour - 14x10ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **Zooki Liposomal Vitamin C 1000mg Capsules 30 Day Supply** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **Zooki Liposomal Vitamin D3 + K2 3,000iu, Mixed Berry Flavour - 14x10ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
-| **Zooki Liposomal Vitamin D3 + K2 3,000iu, Mixed Berry Flavour - 30x10ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
+| **Zooki Marine Collagen 5,000mg, Mango Peach Flavour - 14x15ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
 | **Zooki Super Strength Marine Collagen 11,000mg, Sour Cherry Flavour -14x18.5ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
 | **Zooki Super Strength Marine Collagen 11,000mg, Variety Pack - 14x18.5ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **Zooki Super Strength Marine Collagen 11,000mg, Variety Pack - 30x18.5ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
@@ -70,11 +69,19 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 30 Sachets | 30 Sachets | £39.99 | 2026-10-30T15:13:17+00:00 |
-| `hollandandbarrett.com` | Zooki Electrolytes+ Skin Radiance, Pomegranate Flavour 7 Sachets | 7 Sachets | £12.99 | 2026-10-30T15:13:17+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Glutathione 500mg Capsules 60 Capsules | 60 Capsules | £39.99 | 2026-10-30T15:13:17+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Iron 20mg Capsules - 30 Day Supply 20 mg 30 Capsules | 30 Capsules | £24.99 | 2026-10-30T15:13:17+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Vitamin C 1,000mg 14 Sachets | 14 Sachets | £24.99 | 2026-10-30T15:13:17+00:00 |
+| `boots.com` | Zooki Electrolytes+ Exercise & Recover, Cherry Flavour - 7 Sachets | 7 Sachets | £12.99 | 2026-11-01T15:14:58+00:00 |
+| `boots.com` | Zooki Electrolytes+ Skin Radiance, Pomegranate Flavour - 30 Sachets | 30 Sachets | £39.99 | 2026-11-01T15:14:58+00:00 |
+| `boots.com` | Zooki Glass Frosted Bottle 750ml | 750ml | £19.99 | 2026-11-01T15:14:58+00:00 |
+| `boots.com` | Zooki Liposomal Men’s Multivitamin And Daily Nutrient Complex Capsules 30 Day Supply | Standard | £39.99 | 2026-11-01T15:14:58+00:00 |
+| `boots.com` | Zooki Liposomal Turmeric 750mg Curcumin Tangerine Flavour - 14x15ml Liquid Sachets | 15ml | £29.99 | 2026-11-01T15:14:58+00:00 |
+| `boots.com` | Zooki Liposomal Turmeric 750mg Curcumin Tangerine Flavour - 30x15ml Liquid Sachets | 15ml | £59.99 | 2026-11-01T15:14:58+00:00 |
+| `hollandandbarrett.com` | 18+ Zooki Creatine+ For Women Powder Summer Fruits Flavour 7 Sachets | 7 Sachets | £12.99 | 2026-11-01T15:15:17+00:00 |
+| `hollandandbarrett.com` | 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 30 Sachets | 30 Sachets | £39.99 | 2026-11-01T15:15:17+00:00 |
+| `hollandandbarrett.com` | Zooki Collagen Glow Heroes - Gift Set 13% Off | Standard | £34.99 | 2026-11-01T15:15:17+00:00 |
+| `hollandandbarrett.com` | Zooki Collagen Glow Heroes - Large Gift Set 14% Off | Standard | £59.99 | 2026-11-01T15:15:17+00:00 |
+| `hollandandbarrett.com` | Zooki Electrolytes+ Skin Radiance, Pomegranate Flavour 7 Sachets | 7 Sachets | £12.99 | 2026-11-01T15:15:17+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Men’s Multivitamin + Daily Nutrient Complex Capsules - 30 Day Supply 60 Capsules | 60 Capsules | £39.99 | 2026-11-01T15:15:17+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Vitamin D3 + K2 3,000iu, Mixed Berry Flavour - 30x10ml Liquid Sachets | 10ml | £39.99 | 2026-11-01T15:15:17+00:00 |
 
 ---
 

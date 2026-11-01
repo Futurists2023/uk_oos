@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Zelens
 
-- **Generated:** 2026-10-30 15:12 UTC
+- **Generated:** 2026-11-01 15:13 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
 - **Total Tracked Variants:** 87 (59 In Stock | **28 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
