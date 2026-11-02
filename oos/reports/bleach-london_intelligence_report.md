@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: BLEACH London
 
-- **Generated:** 2026-10-31 20:04 UTC
+- **Generated:** 2026-11-02 18:38 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 51 (50 In Stock | **1 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Bleach London Fade To Grey Shampoo | Standard | £8.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 4h (since 2026-10-29 15:28 UTC)** |
+| `cultbeauty.co.uk` | Bleach London Fade To Grey Shampoo | Standard | £8.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 3h (since 2026-10-29 15:28 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -36,7 +36,7 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | BLEACH LONDON Natural Copper Permanent Kit | Standard | £12.00 | 2026-10-31T20:04:40+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Natural Copper Permanent Kit | Standard | £12.00 | 2026-11-02T18:38:43+00:00 |
 
 ---
 
