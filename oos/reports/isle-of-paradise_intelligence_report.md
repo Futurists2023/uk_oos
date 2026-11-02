@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Isle of Paradise
 
-- **Generated:** 2026-10-31 05:52 UTC
+- **Generated:** 2026-11-02 06:08 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 90 (81 In Stock | **9 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £4.76 (Discounted -20% (was £5.95)) | - | **Retail Exclusive OOS** | _None_ | **6d 14h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £4.76 (Discounted -20% (was £5.95)) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 

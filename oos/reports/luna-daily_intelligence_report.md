@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Luna Daily
 
-- **Generated:** 2026-10-31 05:56 UTC
+- **Generated:** 2026-11-02 06:11 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 200 (115 In Stock | **85 OOS**)
+- **Total Tracked Variants:** 197 (112 In Stock | **85 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **4**
+- **Removed / Delisted Variants:** **7**
 
 ---
 
@@ -134,10 +134,13 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 3.6 Hello Sunday The Mineral One - Lightweight Serum Spf50 30ml 30% Off | 30ml | £18.20 | 2026-10-31T05:55:46+00:00 |
-| `hollandandbarrett.com` | 4.85 Hello Sunday The One For Your Hands Spf30 30ml 15% Off | 30ml | £9.35 | 2026-10-31T05:55:46+00:00 |
-| `hollandandbarrett.com` | Frudia Coconut Honey Salve Lip Cream 10g | 10g | £8.99 | 2026-10-31T05:55:46+00:00 |
-| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-10-31T05:54:49+00:00 |
+| `hollandandbarrett.com` | 4.69 Hello Sunday The Everyday One Face Moisturiser Spf50 50ml | 50ml | £18.00 | 2026-11-02T06:11:39+00:00 |
+| `hollandandbarrett.com` | 5 Hair Gain Gummies Apple 60 Gummies 20% Off | Standard | £23.99 | 2026-11-02T06:11:39+00:00 |
+| `hollandandbarrett.com` | Frudia Coconut Honey Salve Lip Cream 10g | 10g | £8.99 | 2026-11-02T06:11:39+00:00 |
+| `hollandandbarrett.com` | Hair Gain Capsules 60 Capsules 20% Off | 60 Capsules | £29.59 | 2026-11-02T06:11:39+00:00 |
+| `hollandandbarrett.com` | Hair Gain Peptide Puff Dry Shampoo 5 g 20% Off | 5 g | £11.60 | 2026-11-02T06:11:39+00:00 |
+| `hollandandbarrett.com` | Hair Gain Scalp Foam 50 ml 20% Off | 50 ml | £25.60 | 2026-11-02T06:11:39+00:00 |
+| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-02T06:10:42+00:00 |
 
 ---
 
@@ -147,6 +150,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/luna-daily |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/luna-daily/ |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 17 | 17 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 14 | 14 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.lookfantastic.com/c/brands/luna-daily/ |
 | `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 127 | 42 | **85** | https://luna-daily.com |
