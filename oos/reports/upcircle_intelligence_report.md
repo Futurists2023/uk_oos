@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: UpCircle
 
-- **Generated:** 2026-11-01 15:17 UTC
+- **Generated:** 2026-11-03 19:41 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 152 (143 In Stock | **9 OOS**)
+- **Total Tracked Variants:** 153 (144 In Stock | **9 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **10**
+- **Removed / Delisted Variants:** **12**
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | UpCircle Elasticity Boosting Duo 1 Each | Standard | £46.98 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 0h (since 2026-10-28 15:13 UTC)** |
+| `hollandandbarrett.com` | UpCircle Elasticity Boosting Duo 1 Each | Standard | £46.98 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 4h (since 2026-10-28 15:13 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -40,16 +40,18 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 4.3 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £39.99 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 4.34 18+ Zooki Creatine+ For Women Powder Summer Fruits Flavour 7 Sachets 3 for 2 Mix & Match | 7 Sachets | £12.99 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 4.57 Zooki Liposomal Astaxanthin 8mg 30 Capsules 3 for 2 Mix & Match | 30 Capsules | £24.99 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 4.61 Vitabiotics Wellwoman 30 Capsules 25% Off | 30 Capsules | £6.41 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 4.77 Zooki Liposomal Magnesium Bisglycinate 840mg 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £34.99 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 4.79 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 4.79 Zooki Liposomal Vitamin B12 2500mcg Strawberry 2500 mcg 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £49.99 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 4.82 Zooki Liposomal Vitamin C 1000mg, Citrus Orange Flavour - 14 x 15ml Liquid Sachet 3 for 2 Mix & Match | 15ml | £24.99 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | 5 Zooki Liposomal NAD+ 300mg Capsules - 30 Day Supply 30 Capsules 3 for 2 Mix & Match | 30 Capsules | £39.99 | 2026-11-01T15:16:50+00:00 |
-| `hollandandbarrett.com` | UpCircle Powder to Foam Face Wash with Willow Bark + Papaya Enzymes | Standard | £17.59 | 2026-11-01T15:16:50+00:00 |
+| `hollandandbarrett.com` | 4.28 Zooki Electrolytes+ Skin Radiance, Pomegranate Flavour 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £39.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.3 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £39.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.34 18+ Zooki Creatine+ For Women Powder Summer Fruits Flavour 7 Sachets 3 for 2 Mix & Match | 7 Sachets | £12.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.57 Zooki Liposomal Astaxanthin 8mg 30 Capsules 3 for 2 Mix & Match | 30 Capsules | £24.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.61 Vitabiotics Wellwoman 30 Capsules 25% Off | 30 Capsules | £6.41 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.63 New Leaf Products Magnesium Complex 4in1 Glycinate Citrate, Malate, Oxide 120 Capsules | 120 Capsules | £14.95 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.67 Zooki Kids Immune Support Liquid Sachets - Vitamin C & Vitamin D3 + K2 Berry 14 Sachets 3 for 2 Mix & Match | 14 Sachets | £14.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.77 Zooki Liposomal Magnesium Bisglycinate 840mg 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £34.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.79 Zooki Liposomal Vitamin B12 2500mcg Strawberry 2500 mcg 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £49.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 4.82 Zooki Liposomal Vitamin C 1000mg, Citrus Orange Flavour - 14 x 15ml Liquid Sachet 3 for 2 Mix & Match | 15ml | £24.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | 5 Zooki Liposomal NAD+ 300mg Capsules - 30 Day Supply 30 Capsules 3 for 2 Mix & Match | 30 Capsules | £39.99 | 2026-11-03T19:40:56+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Hair Max Raspberry 14 Sachets Buy 1 Get 1 Half Price | 14 Sachets | £29.99 | 2026-11-03T19:40:56+00:00 |
 
 ---
 
@@ -58,6 +60,6 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/upcircle |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 39 | 38 | **1** | https://www.hollandandbarrett.com/shop/brands/upcircle/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 40 | 39 | **1** | https://www.hollandandbarrett.com/shop/brands/upcircle/ |
 | `superdrug.com` | Tier 1 (Major UK Retailer) | Custom | 0 | 0 | **0** | https://www.superdrug.com/brand/upcircle |
 | `upcirclebeauty.com` | Official Brand DTC (Master Catalog) | Shopify | 113 | 105 | **8** | https://upcirclebeauty.com |
