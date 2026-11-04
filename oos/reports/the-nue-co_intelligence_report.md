@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: The Nue Co.
 
-- **Generated:** 2026-11-02 18:31 UTC
+- **Generated:** 2026-11-04 19:58 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 86 (70 In Stock | **16 OOS**)
+- **Total Tracked Variants:** 86 (73 In Stock | **13 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**0 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **2**
 
@@ -12,9 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £38.25 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **9d 3h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **9d 3h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £35.00 (Full Price) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **9d 3h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £38.25 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £35.00 (Full Price) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -23,16 +23,13 @@
 | `uk.thenueco.com` | Barrier Culture Cleanser | 100ml | £34.00 | 2026-10-29T15:21:37+00:00 |
 | `uk.thenueco.com` | Barrier Culture Cleanser 3 Month | Standard | £102.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Defense Drops | 30ml | £45.00 | 2026-10-24T15:04:38+00:00 |
-| `uk.thenueco.com` | Forest Lungs | 10ml | £38.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Growth Phase | 90 CAPS JAR | £65.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Magnesium Ease | 60ml | £45.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Pre + Probiotic | REFILL | £75.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Pre + Probiotic 3 Month | REFILL | £144.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Sleep Drops | 30ml | £35.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | The Body Method | Standard | £125.00 | 2026-10-24T15:04:38+00:00 |
-| `uk.thenueco.com` | The Discovery Set | Standard | £45.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Us | 10ml | £38.00 | 2026-10-24T15:04:38+00:00 |
-| `uk.thenueco.com` | Water Therapy | 10ml | £38.00 | 2026-10-24T15:04:38+00:00 |
 
 ---
 
@@ -55,8 +52,8 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-11-02T18:30:52+00:00 |
-| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-11-02T18:30:52+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-11-04T19:58:18+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-11-04T19:58:18+00:00 |
 
 ---
 
@@ -67,4 +64,4 @@
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 30 | 27 | **3** | https://www.cultbeauty.co.uk/c/brands/the-nue-co/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 9 | 9 | **0** | https://www.lookfantastic.com/c/brands/the-nue-co/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 0 | 0 | **0** | https://www.spacenk.com/uk/brands/t/the-nue-co |
-| `uk.thenueco.com` | Official Brand DTC (Master Catalog) | Shopify | 47 | 34 | **13** | https://uk.thenueco.com |
+| `uk.thenueco.com` | Official Brand DTC (Master Catalog) | Shopify | 47 | 37 | **10** | https://uk.thenueco.com |
