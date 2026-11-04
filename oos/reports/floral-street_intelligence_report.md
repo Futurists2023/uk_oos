@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Floral Street
 
-- **Generated:** 2026-11-01 15:18 UTC
+- **Generated:** 2026-11-04 00:39 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 134 (131 In Stock | **3 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **7**
+- **Removed / Delisted Variants:** **8**
 
 ---
 
@@ -33,13 +33,14 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `floralstreet.com` | Berry Bloom Candle - Limited Edition | Standard | £52.00 | 2026-11-01T15:17:18+00:00 |
-| `floralstreet.com` | Iris Goddess Body Cream | Standard | £30.00 | 2026-11-01T15:17:18+00:00 |
-| `lookfantastic.com` | Floral Street Electric Rhubarb Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-01T15:18:01+00:00 |
-| `lookfantastic.com` | Floral Street Enchanted Masquerade Eau de Parfum for Bridgerton 10ml | 10ml | £23.20 | 2026-11-01T15:18:01+00:00 |
-| `lookfantastic.com` | Floral Street Sunflower Pop Eau de Parfum 50ml | 50ml | £62.40 | 2026-11-01T15:18:01+00:00 |
-| `lookfantastic.com` | Floral Street Wild Vanilla Orchid Scentstick 5.5g | 5g | £25.00 | 2026-11-01T15:18:01+00:00 |
-| `lookfantastic.com` | Floral Street Wonderland Peony Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-01T15:18:01+00:00 |
+| `floralstreet.com` | Berry Bloom Candle - Limited Edition | Standard | £52.00 | 2026-11-04T00:38:27+00:00 |
+| `floralstreet.com` | Iris Goddess Body Cream | Standard | £30.00 | 2026-11-04T00:38:27+00:00 |
+| `lookfantastic.com` | Floral Street Chypre Sublime Eau de Parfum 50ml | 50ml | £62.40 | 2026-11-04T00:39:14+00:00 |
+| `lookfantastic.com` | Floral Street Neon Rose Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-04T00:39:14+00:00 |
+| `lookfantastic.com` | Floral Street Sunflower Pop Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-04T00:39:14+00:00 |
+| `lookfantastic.com` | Floral Street Sweet Almond Blossom Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-04T00:39:14+00:00 |
+| `lookfantastic.com` | Floral Street Wonderland Peony Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-04T00:39:14+00:00 |
+| `lookfantastic.com` | Floral Street Ylang Ylang Espresso Eau de Parfum 50ml | 50ml | £62.40 | 2026-11-04T00:39:14+00:00 |
 
 ---
 
