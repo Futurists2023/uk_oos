@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Luna Daily
 
-- **Generated:** 2026-11-02 06:11 UTC
+- **Generated:** 2026-11-04 12:22 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 197 (112 In Stock | **85 OOS**)
+- **Total Tracked Variants:** 208 (123 In Stock | **85 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **7**
 
@@ -32,6 +32,9 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `luna-daily.com` | Jet, Set, Refresh - Body Care Travel Essentials | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Mini + Mama Spray-To-Wipe - Fragrance Free | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Mini + Mama Spray-To-Wipe - Hydrating Fresh Cotton | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Cooling Water Lily + Fresh Citrus | Standard | £25.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Hydrating Fresh Cotton | Standard | £25.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Jasmine + Ylang Ylang | Standard | £25.00 | 2026-11-04T12:21:39+00:00 |
 | `luna-daily.com` | Post-Birth Soothing Spray | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Post-Birth Soothing Spray | Standard | £14.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Smooth Skin Saviours - Rid Ingrowns, Redness + Bumps in 2 weeks (+FREE Lotion worth £20) | Standard | £38.00 | 2026-10-24T15:04:38+00:00 |
@@ -46,9 +49,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `luna-daily.com` | The Everything Oil - For Ingrowns & Bumps | 2 PACK | £22/EA | £44.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everything Oil - For Ingrowns & Bumps | 3 PACK | £20/EA | £60.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everything Oil Travel Mini | 10ml | £12.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe - Hydrating Soft Cotton | Standard | £18.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 30ml - Cooling Water Lily + Fresh Citrus | 1 PACK | £8/EA | £8.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 30ml - Cooling Water Lily + Fresh Citrus | 2 PACK | £7.50/EA | £15.00 | 2026-10-24T15:04:38+00:00 |
@@ -134,13 +134,13 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 4.69 Hello Sunday The Everyday One Face Moisturiser Spf50 50ml | 50ml | £18.00 | 2026-11-02T06:11:39+00:00 |
-| `hollandandbarrett.com` | 5 Hair Gain Gummies Apple 60 Gummies 20% Off | Standard | £23.99 | 2026-11-02T06:11:39+00:00 |
-| `hollandandbarrett.com` | Frudia Coconut Honey Salve Lip Cream 10g | 10g | £8.99 | 2026-11-02T06:11:39+00:00 |
-| `hollandandbarrett.com` | Hair Gain Capsules 60 Capsules 20% Off | 60 Capsules | £29.59 | 2026-11-02T06:11:39+00:00 |
-| `hollandandbarrett.com` | Hair Gain Peptide Puff Dry Shampoo 5 g 20% Off | 5 g | £11.60 | 2026-11-02T06:11:39+00:00 |
-| `hollandandbarrett.com` | Hair Gain Scalp Foam 50 ml 20% Off | 50 ml | £25.60 | 2026-11-02T06:11:39+00:00 |
-| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-02T06:10:42+00:00 |
+| `hollandandbarrett.com` | 3.6 Hello Sunday The Mineral One - Lightweight Serum Spf50 30ml 30% Off | 30ml | £18.20 | 2026-11-04T12:22:40+00:00 |
+| `hollandandbarrett.com` | 4.85 Hello Sunday The One For Your Hands Spf30 30ml 15% Off | 30ml | £9.35 | 2026-11-04T12:22:40+00:00 |
+| `hollandandbarrett.com` | Frudia Coconut Honey Salve Lip Cream 10g | 10g | £8.99 | 2026-11-04T12:22:40+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-04T12:21:39+00:00 |
 
 ---
 
@@ -150,6 +150,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/luna-daily |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/luna-daily/ |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 14 | 14 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 17 | 17 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.lookfantastic.com/c/brands/luna-daily/ |
-| `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 127 | 42 | **85** | https://luna-daily.com |
+| `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 135 | 50 | **85** | https://luna-daily.com |
