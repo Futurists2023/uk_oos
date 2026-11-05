@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: ICONIC LONDON
 
-- **Generated:** 2026-11-03 02:28 UTC
+- **Generated:** 2026-11-05 12:26 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 146 (118 In Stock | **28 OOS**)
+- **Total Tracked Variants:** 147 (119 In Stock | **28 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **5**
 
@@ -55,6 +55,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **ICONIC London Filter Fix Setting Spray 120ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Mini Filter Fix Setting Spray 30ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Illuminator 13.5ml(Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **ICONIC London Kissed by the Sun Multi-Use Cheek Glow 5g (Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Lit and Luminous Baked Highlighter 16g** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Lustre Lip Oil 6ml (Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Prep-Set-Glow** | ✅ £26.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
@@ -77,11 +78,11 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | ICONIC London Underglow Matcha Melting Cleansing Balm 16g | 16g | £16.00 | 2026-11-03T02:28:30+00:00 |
-| `lookfantastic.com` | ICONIC London Blurring Blush Stick 6g (Various Shades) | 6g | £24.00 | 2026-11-03T02:28:53+00:00 |
-| `lookfantastic.com` | ICONIC London Concealer Duo Brush | Standard | £15.00 | 2026-11-03T02:28:53+00:00 |
-| `lookfantastic.com` | ICONIC London Velvet Smooth Pore Refining Primer 30ml | 30ml | £18.75 | 2026-11-03T02:28:53+00:00 |
-| `lookfantastic.com` | ICONIC London XL Lash Illusion Black 12ml | 12ml | £25.00 | 2026-11-03T02:28:53+00:00 |
+| `cultbeauty.co.uk` | ICONIC London Multi-Use Cream Blush, Bronze and Highlight Palette | Standard | £40.00 | 2026-11-05T12:25:53+00:00 |
+| `cultbeauty.co.uk` | ICONIC London Velvet Smooth Pore Refining Primer 30ml | 30ml | £25.00 | 2026-11-05T12:25:53+00:00 |
+| `lookfantastic.com` | ICONIC London Blurring Blush Stick 6g (Various Shades) | 6g | £24.00 | 2026-11-05T12:26:14+00:00 |
+| `lookfantastic.com` | ICONIC London Concealer Duo Brush | Standard | £15.00 | 2026-11-05T12:26:14+00:00 |
+| `lookfantastic.com` | ICONIC London XL Lash Illusion Black 12ml | 12ml | £25.00 | 2026-11-05T12:26:14+00:00 |
 
 ---
 
@@ -92,4 +93,4 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/iconic-london |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/iconic-london/ |
 | `iconiclondoninc.com` | Official Brand DTC (Master Catalog) | Shopify | 84 | 56 | **28** | https://iconiclondoninc.com |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 30 | 30 | **0** | https://www.lookfantastic.com/c/brands/iconic-london/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 31 | 31 | **0** | https://www.lookfantastic.com/c/brands/iconic-london/ |
