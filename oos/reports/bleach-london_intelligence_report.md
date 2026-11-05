@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: BLEACH London
 
-- **Generated:** 2026-11-02 18:38 UTC
+- **Generated:** 2026-11-05 01:00 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 51 (50 In Stock | **1 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **1**
+- **Removed / Delisted Variants:** **4**
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Bleach London Fade To Grey Shampoo | Standard | £8.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 3h (since 2026-10-29 15:28 UTC)** |
+| `cultbeauty.co.uk` | Bleach London Fade To Grey Shampoo | Standard | £8.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 9h (since 2026-10-29 15:28 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -24,9 +24,10 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
+| **Bleach London Champagne Super Toner Kit** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
+| **Bleach London Fade To Grey Kit** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
 | **Bleach London Reincarnation Mask 200ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
 | **Bleach London Reincarnation Mask 500ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
-| **Bleach London Super Cool Colour Just Like Honey** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
 | **Bleach London Total Bleach Kit** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
 | **Bleach London White Toner Kit** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `superdrug.com` |
 
@@ -36,7 +37,10 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | BLEACH LONDON Natural Copper Permanent Kit | Standard | £12.00 | 2026-11-02T18:38:43+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Glossy Black Permanent Kit | Standard | £12.00 | 2026-11-05T00:59:54+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Natural Copper Permanent Kit | Standard | £12.00 | 2026-11-05T00:59:54+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Silver Shampoo 500ml | 500ml | £9.35 | 2026-11-05T00:59:54+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Super Cool Colour Just Like Honey | Standard | £6.00 | 2026-11-05T00:59:54+00:00 |
 
 ---
 
