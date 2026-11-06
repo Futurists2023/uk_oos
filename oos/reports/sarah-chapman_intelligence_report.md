@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Sarah Chapman
 
-- **Generated:** 2026-11-04 19:51 UTC
+- **Generated:** 2026-11-06 21:42 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 158 (131 In Stock | **27 OOS**)
-- **Retailer Out-of-Stock Alerts:** **13** (**4 Unforced Retail Outages** vs. **2 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 159 (132 In Stock | **27 OOS**)
+- **Retailer Out-of-Stock Alerts:** **14** (**4 Unforced Retail Outages** vs. **2 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **4**
 
 ---
@@ -12,19 +12,20 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Sarah Chapman Skinesis The Facialift | Standard | £38.00 (Below DTC RRP -38% (DTC £61.00)) | £61.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Facialift | Standard | £38.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Illuminating 5-Day Facial | Standard | £26.25 (Discounted -25% (was £35.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Liquid Facial Resurfacer | Standard | £54.00 (Below DTC RRP -37% (DTC £86.00)) | £86.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Overnight Miracle Duo | Standard | £26.00 (Discounted -50% (was £52.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Platinum Pep8 Stem Cell Serum | Standard | £129.50 (Discounted -30% (was £185.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Sarah Chapman Skinesis Overnight Facial 5ml | 5ML | £25.00 (Below DTC RRP -77% (DTC £108.00)) | £108.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Skinesis Morning Facial | Standard | £68.00 (Below DTC RRP -37% (DTC £108.00)) | £108.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `lookfantastic.com` | **6d 13h (since 2026-10-29 06:01 UTC)** |
-| `spacenk.com` | Skinesis Rapid Radiance Cleanse | Standard | £48.00 (Below DTC RRP -38% (DTC £77.00)) | £77.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The 24HR Facial | Standard | £68.60 (Discounted -30% (was £98.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Cleansing Trio | Standard | £64.40 (Discounted -30% (was £92.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Ultimate Cleanse | Standard | £20.00 (Below DTC RRP -79% (DTC £96.00)) | £96.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Vitamin C Power 2 | Standard | £115.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-04 19:51 UTC)** |
+| `cultbeauty.co.uk` | Sarah Chapman Skinesis The Facialift | Standard | £38.00 (Below DTC RRP -38% (DTC £61.00)) | £61.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Facialift | Standard | £38.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Illuminating 5-Day Facial | Standard | £26.25 (Discounted -25% (was £35.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Liquid Facial Resurfacer | Standard | £54.00 (Below DTC RRP -37% (DTC £86.00)) | £86.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Overnight Miracle Duo | Standard | £26.00 (Discounted -50% (was £52.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Platinum Pep8 Stem Cell Serum | Standard | £129.50 (Discounted -30% (was £185.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Sarah Chapman Skinesis Overnight Facial 5ml | 5ML | £25.00 (Below DTC RRP -77% (DTC £108.00)) | £108.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Skin Insurance SPF30 | Standard | £74.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-06 21:42 UTC)** |
+| `spacenk.com` | Skinesis Morning Facial | Standard | £68.00 (Below DTC RRP -37% (DTC £108.00)) | £108.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `lookfantastic.com` | **8d 15h (since 2026-10-29 06:01 UTC)** |
+| `spacenk.com` | Skinesis Rapid Radiance Cleanse | Standard | £48.00 (Below DTC RRP -38% (DTC £77.00)) | £77.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The 24HR Facial | Standard | £68.60 (Discounted -30% (was £98.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Cleansing Trio | Standard | £64.40 (Discounted -30% (was £92.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Ultimate Cleanse | Standard | £20.00 (Below DTC RRP -79% (DTC £96.00)) | £96.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Vitamin C Power 2 | Standard | £115.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 1h (since 2026-11-04 19:51 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -37,13 +38,12 @@
 | `sarahchapman.com` | Intense Hydrating Booster 5ml | 5ml | £24.00 | 2026-10-24T15:04:38+00:00 |
 | `sarahchapman.com` | Morning Facial | Standard | £108.00 | 2026-11-02T06:15:16+00:00 |
 | `sarahchapman.com` | Neck & Chest Rejuvenating Complex | Standard | £152.00 | 2026-10-24T15:04:38+00:00 |
-| `sarahchapman.com` | Platinum Pep⁸ Stem Cell Serum | Standard | £212.00 | 2026-10-24T15:04:38+00:00 |
+| `sarahchapman.com` | Platinum Pep⁸ Stem Cell Serum | Standard | £210.00 | 2026-10-24T15:04:38+00:00 |
 | `sarahchapman.com` | R&R Glow Recovery Cream | 30ml | £152.00 | 2026-10-24T15:04:38+00:00 |
 | `sarahchapman.com` | Rapid Radiance Cleanse | Standard | £77.00 | 2026-10-24T15:04:38+00:00 |
 | `sarahchapman.com` | Skin Insurance SPF 30 Tinted | 10ml | £29.00 | 2026-10-24T15:04:38+00:00 |
 | `sarahchapman.com` | Skin Insurance SPF 50+ Tinted | 10ml | £40.00 | 2026-10-24T15:04:38+00:00 |
 | `sarahchapman.com` | Spicule Collagen Infusion Mask | Pack of 4 | £121.00 | 2026-10-29T06:00:07+00:00 |
-| `sarahchapman.com` | Ultimate Cleanse 20ml | 20ml | £32.00 | 2026-10-24T15:04:38+00:00 |
 
 ---
 
@@ -81,10 +81,10 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Exclusive Sarah Chapman At-Home Facial Kit (Worth £203) | Standard | £94.40 | 2026-11-04T19:50:55+00:00 |
-| `lookfantastic.com` | Sarah Chapman Skinesis Icon Day Smartsome A3 X503 Cream 30ml | 30ml | £84.00 | 2026-11-04T19:50:55+00:00 |
-| `lookfantastic.com` | Sarah Chapman The Overnight Miracle Duo (Worth £65) | Standard | £52.00 | 2026-11-04T19:50:55+00:00 |
-| `lookfantastic.com` | Sarah Chapman Vitamin C Serum Power 2 30ml | 30ml | £92.00 | 2026-11-04T19:50:55+00:00 |
+| `lookfantastic.com` | Exclusive Sarah Chapman At-Home Facial Kit (Worth £203) | Standard | £94.40 | 2026-11-06T21:41:25+00:00 |
+| `lookfantastic.com` | Sarah Chapman Skinesis Icon Day Smartsome A3 X503 Cream 30ml | 30ml | £84.00 | 2026-11-06T21:41:25+00:00 |
+| `lookfantastic.com` | Sarah Chapman Skinesis Pro Pore Refiner 60g | 60g | £132.00 | 2026-11-06T21:41:25+00:00 |
+| `lookfantastic.com` | Sarah Chapman Vitamin C Serum Power 2 30ml | 30ml | £92.00 | 2026-11-06T21:41:25+00:00 |
 
 ---
 
@@ -94,5 +94,5 @@
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 23 | 22 | **1** | https://www.cultbeauty.co.uk/c/brands/sarah-chapman/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.lookfantastic.com/c/brands/sarah-chapman/ |
-| `sarahchapman.com` | Official Brand DTC (Master Catalog) | Shopify | 61 | 47 | **14** | https://sarahchapman.com |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 42 | 30 | **12** | https://www.spacenk.com/uk/brands/s/sarah-chapman |
+| `sarahchapman.com` | Official Brand DTC (Master Catalog) | Shopify | 61 | 48 | **13** | https://sarahchapman.com |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 43 | 30 | **13** | https://www.spacenk.com/uk/brands/s/sarah-chapman |

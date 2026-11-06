@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: MZ SKIN
 
-- **Generated:** 2026-11-04 19:48 UTC
+- **Generated:** 2026-11-06 21:38 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 172 (143 In Stock | **29 OOS**)
-- **Retailer Out-of-Stock Alerts:** **3** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 172 (144 In Stock | **28 OOS**)
+- **Retailer Out-of-Stock Alerts:** **2** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **3**
 
 ---
@@ -12,9 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | MZ Skin Hydra-Bright Golden Eye Treatment Mask (Pack of 5) | Standard | £80.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 13h (since 2026-11-02 06:12 UTC)** |
-| `spacenk.com` | Hyaluronic Acid Hydrating Serum | Standard | £62.50 (Discounted -50% (was £125.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **11d 4h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | LightMAX Hydracolloidal Patch | Standard | £28.00 (Discounted -30% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 4h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Hyaluronic Acid Hydrating Serum | Standard | £62.50 (Discounted -50% (was £125.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **13d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | LightMAX Hydracolloidal Patch | Standard | £28.00 (Discounted -30% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 6h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -67,6 +66,7 @@
 | **MZ Skin Expert UV Protector SPF 50 50ml** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **MZ Skin Gua Sha** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **MZ Skin Hyaluronic Acid Hydrating Serum 30ml** | Retail Only | **2/3** (67%) | `lookfantastic.com` | **`spacenk.com`** | At RRP | `cultbeauty.co.uk` |
+| **MZ Skin Hydra-Bright Golden Eye Treatment Mask (Pack of 5)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **MZ Skin Hydra-Lift Golden Facial Treatment Mask (Pack of 5)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **MZ SKIN Light Moisturiser 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Micro-Peeling Glow Essence** | ✅ £140.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £105.00 (-25% vs RRP); `lookfantastic.com` £105.00 (-25% vs RRP) | `spacenk.com` |
@@ -83,9 +83,9 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | MZ Skin Brighten & Perfect 10% Vitamin C Corrective Serum 30ml | 30ml | £159.00 | 2026-11-04T19:47:54+00:00 |
-| `lookfantastic.com` | MZ Skin Hydra-Bright Golden Eye Treatment Mask (Pack of 5) | Standard | £64.00 | 2026-11-04T19:47:54+00:00 |
-| `lookfantastic.com` | MZ Skin Hydra-Lift Golden Facial Treatment Mask | Standard | £20.00 | 2026-11-04T19:47:54+00:00 |
+| `lookfantastic.com` | MZ Skin Advanced 3% Retinol Complex Serum 30ml | 30ml | £96.60 | 2026-11-06T21:38:18+00:00 |
+| `lookfantastic.com` | MZ Skin Brighten & Perfect 10% Vitamin C Corrective Serum 30ml | 30ml | £159.00 | 2026-11-06T21:38:18+00:00 |
+| `lookfantastic.com` | MZ Skin Hydra-Lift Golden Facial Treatment Mask | Standard | £20.00 | 2026-11-06T21:38:18+00:00 |
 
 ---
 
@@ -93,7 +93,7 @@
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 23 | 22 | **1** | https://www.cultbeauty.co.uk/c/brands/mz-skin/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 23 | 23 | **0** | https://www.cultbeauty.co.uk/c/brands/mz-skin/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 29 | 29 | **0** | https://www.lookfantastic.com/c/brands/mz-skin/ |
 | `mzskin.com` | Official Brand DTC (Master Catalog) | Shopify | 85 | 59 | **26** | https://mzskin.com |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 35 | 33 | **2** | https://www.spacenk.com/uk/brands/m/mz-skin |
