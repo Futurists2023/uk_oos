@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Zelens
 
-- **Generated:** 2026-11-03 19:38 UTC
+- **Generated:** 2026-11-06 06:50 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 87 (59 In Stock | **28 OOS**)
+- **Total Tracked Variants:** 86 (59 In Stock | **27 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **0**
+- **Removed / Delisted Variants:** **1**
 
 ---
 
@@ -31,7 +31,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `zelens.com` | Melatonin B12 Travel - Advanced Repair Serum | 10ml | £73.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | PHA+ - Resurfacing Essence | Standard | £63.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | PHA+ Travel - Resurfacing Essence | 30ml | £26.00 | 2026-10-28T15:09:35+00:00 |
-| `zelens.com` | Peptide Complex - Firming Cream 30ml | 30ml | £115.00 | 2026-10-28T15:09:35+00:00 |
+| `zelens.com` | Peptide Complex - Firming Cream 30ml | 30ml | £116.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Power A Travel - Retexturising & Renewing | 10ml | £73.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Power B Travel - Revitalising & Clarifying | 10ml | £63.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Power C Travel - Collagen-boosting & Brightening | 10ml | £93.00 | 2026-10-28T15:09:35+00:00 |
@@ -42,7 +42,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `zelens.com` | THE PLUMPING SKIN SET | Standard | £83.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | THE RECOVERY SET | Standard | £83.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | The Age Defying Icons Set | Standard | £172.00 | 2026-10-28T15:09:35+00:00 |
-| `zelens.com` | The Powers Discovery Set | Standard | £160.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Z-22 Travel - Ultimate Face Oil | 10ml | £43.00 | 2026-10-28T15:09:35+00:00 |
 
 ---
@@ -56,7 +55,9 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 ## 3. Removed / Delisted Variants (Diffed Against Previous Scans)
 
-_No removed variants detected yet._
+| Store | Product | Variant | Last Seen Price | Removed At |
+|---|---|---|---|---|
+| `zelens.com` | The Powers Discovery Set | Standard | £160.00 | 2026-11-06T06:49:45+00:00 |
 
 ---
 
@@ -66,4 +67,4 @@ _No removed variants detected yet._
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 0 | 0 | **0** | https://www.cultbeauty.co.uk/c/brands/zelens/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 21 | 21 | **0** | https://www.lookfantastic.com/c/brands/zelens/ |
-| `zelens.com` | Official Brand DTC (Master Catalog) | Shopify | 66 | 38 | **28** | https://zelens.com |
+| `zelens.com` | Official Brand DTC (Master Catalog) | Shopify | 65 | 38 | **27** | https://zelens.com |

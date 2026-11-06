@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Vyrao
 
-- **Generated:** 2026-11-03 19:37 UTC
+- **Generated:** 2026-11-06 06:49 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
 - **Total Tracked Variants:** 142 (132 In Stock | **10 OOS**)
 - **Retailer Out-of-Stock Alerts:** **5** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,11 +12,11 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Vyrao Ever 11 Eau de Parfum 30ml | 30ml | £94.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 4h (since 2026-10-28 15:08 UTC)** |
-| `cultbeauty.co.uk` | Vyrao Ever 11 Eau de Parfum 50ml | 50ml | £140.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 4h (since 2026-11-01 15:11 UTC)** |
-| `spacenk.com` | Discovery Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 4h (since 2026-10-28 15:09 UTC)** |
-| `spacenk.com` | Sunny Travel Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 4h (since 2026-10-28 15:09 UTC)** |
-| `spacenk.com` | Vyrao The Sixth Eau De Parfum 10ml | 10ML | £38.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **6d 4h (since 2026-10-28 15:09 UTC)** |
+| `cultbeauty.co.uk` | Vyrao Ever 11 Eau de Parfum 30ml | 30ml | £94.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-28 15:08 UTC)** |
+| `cultbeauty.co.uk` | Vyrao Ever 11 Eau de Parfum 50ml | 50ml | £140.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 15h (since 2026-11-01 15:11 UTC)** |
+| `spacenk.com` | Discovery Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Sunny Travel Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Vyrao The Sixth Eau De Parfum 10ml | 10ML | £38.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **8d 15h (since 2026-10-28 15:09 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
