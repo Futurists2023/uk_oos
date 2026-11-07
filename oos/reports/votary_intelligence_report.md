@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Votary
 
-- **Generated:** 2026-11-05 22:09 UTC
+- **Generated:** 2026-11-07 23:46 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
 - **Total Tracked Variants:** 131 (126 In Stock | **5 OOS**)
 - **Retailer Out-of-Stock Alerts:** **4** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,10 +12,10 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Blemish Rescue Oil – Tamanu and Salicylic | Standard | - (Full Price) | £36.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **8d 16h (since 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Intense Eye Oil - Tuberose and Retinoid | Standard | £86.25 (Discounted -25% (was £115.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Intense Night Oil - Rosehip and Retinoid | Standard | £103.60 (Discounted -30% (was £148.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Pillow Spray Lavender and Chamomile | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Blemish Rescue Oil – Tamanu and Salicylic | Standard | - (Full Price) | £36.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **10d 17h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Intense Eye Oil - Tuberose and Retinoid | Standard | £86.25 (Discounted -25% (was £115.00)) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Intense Night Oil - Rosehip and Retinoid | Standard | £103.60 (Discounted -30% (was £148.00)) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Pillow Spray Lavender and Chamomile | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:54 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -37,15 +37,15 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `votary.co.uk` | Barrier Repair Protocol | Standard | £205.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | Hand Wash and Hand Milk Set | Standard | £104.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | Hotel At Home Set | Standard | £185.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | Shampoo and Conditioner Set | Standard | £96.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | Shower Gel and Body Milk Set | Standard | £104.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | Super Barrier Balm | Standard | £51.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | Ultimate Radiance Duo | Standard | £184.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | Ultimate Results Duo | Standard | £152.00 | 2026-11-05T22:09:16+00:00 |
-| `votary.co.uk` | VERDEN X BEATA HEUMAN Scented Candle | Standard | £87.00 | 2026-11-05T22:09:16+00:00 |
+| `votary.co.uk` | Barrier Repair Protocol | Standard | £205.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | Hand Wash and Hand Milk Set | Standard | £104.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | Hotel At Home Set | Standard | £185.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | Shampoo and Conditioner Set | Standard | £96.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | Shower Gel and Body Milk Set | Standard | £104.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | Super Barrier Balm | Standard | £51.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | Ultimate Radiance Duo | Standard | £184.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | Ultimate Results Duo | Standard | £152.00 | 2026-11-07T23:45:45+00:00 |
+| `votary.co.uk` | VERDEN X BEATA HEUMAN Scented Candle | Standard | £87.00 | 2026-11-07T23:45:45+00:00 |
 
 ---
 

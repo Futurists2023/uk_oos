@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-11-05 22:07 UTC
+- **Generated:** 2026-11-07 23:44 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 93 (81 In Stock | **12 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -56,7 +56,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-05T22:07:32+00:00 |
+| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-07T23:44:00+00:00 |
 
 ---
 

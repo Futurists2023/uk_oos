@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Rodial
 
-- **Generated:** 2026-11-05 22:06 UTC
+- **Generated:** 2026-11-07 23:42 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 300 (277 In Stock | **23 OOS**)
-- **Retailer Out-of-Stock Alerts:** **8** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **9**
+- **Total Tracked Variants:** 300 (276 In Stock | **24 OOS**)
+- **Retailer Out-of-Stock Alerts:** **9** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **10**
 
 ---
 
@@ -12,14 +12,15 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | At Home Facial Edit | Standard | £23.40 (Discounted -40% (was £39.00)) | £39.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
-| `spacenk.com` | Banana Makeup Kit | Standard | £31.50 (Discounted -30% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
-| `spacenk.com` | Lip Oil Edit | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
-| `spacenk.com` | Pink Diamond Magic Gel Day | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
-| `spacenk.com` | Pink Diamond Masks | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
-| `spacenk.com` | The Banana Makeup Kit | Standard | £31.50 (Discounted -30% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
-| `spacenk.com` | The Peel Liquid Peel | Standard | £45.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
-| `spacenk.com` | Vit C Brightening Pads | Standard | £52.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 16h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | At Home Facial Edit | Standard | £23.40 (Discounted -40% (was £39.00)) | £39.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | Banana Makeup Kit | Standard | £31.50 (Discounted -30% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | Lip Oil Edit | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | Pink Diamond Magic Gel Day | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | Pink Diamond Masks | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | Salicylic Acid Cleanser | Standard | £41.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-07 23:42 UTC)** |
+| `spacenk.com` | The Banana Makeup Kit | Standard | £31.50 (Discounted -30% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | The Peel Liquid Peel | Standard | £45.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
+| `spacenk.com` | Vit C Brightening Pads | Standard | £52.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 17h (since 2026-10-28 05:50 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -56,7 +57,6 @@
 | **Dragon’s Blood Hyaluronic Mask** | ✅ £55.00 | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Dragon's Blood Sculpting Gel** | ✅ £105.00 | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Glass Primer** | ✅ £39.00 | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
-| **Rodial Salicylic Acid Cleanser 145ml** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Rodial Soft Focus Glow Drops 30ml** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
 
 ---
@@ -65,15 +65,16 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Rodial Baby Teddy Brush | Standard | £32.00 | 2026-11-05T22:05:38+00:00 |
-| `lookfantastic.com` | Rodial Snake Serum O2 30ml | 30ml | £76.00 | 2026-11-05T22:05:38+00:00 |
-| `lookfantastic.com` | Rodial Vitamin C Brightening Pads (50 Pads) | Standard | £52.00 | 2026-11-05T22:05:38+00:00 |
-| `lookfantastic.com` | Rodial Vitamin C Deluxe Glow Tonic 100ml | 100ml | £30.00 | 2026-11-05T22:05:38+00:00 |
-| `lookfantastic.com` | Rodial Vitamin C Drops 30ml | 30ml | £68.00 | 2026-11-05T22:05:38+00:00 |
-| `lookfantastic.com` | Rodial Vitamin C Face Souffle 50ml | 50ml | £71.25 | 2026-11-05T22:05:38+00:00 |
-| `rodial.com` | Dragon’s Blood Hyaluronic Moisturiser SPF15 | Standard | £42.00 | 2026-11-05T22:04:52+00:00 |
-| `rodial.com` | Retinol Drops Mini | Standard | £30.00 | 2026-11-05T22:04:52+00:00 |
-| `rodial.com` | Vit C Brightening Cleansing Pads | Standard | £24.50 | 2026-11-05T22:04:52+00:00 |
+| `lookfantastic.com` | Rodial Salicylic Acid Cleanser 145ml | 145ml | £41.00 | 2026-11-07T23:41:58+00:00 |
+| `lookfantastic.com` | Rodial Snake Serum O2 30ml | 30ml | £76.00 | 2026-11-07T23:41:58+00:00 |
+| `lookfantastic.com` | Rodial The Multi-Blend Brush | Standard | £45.00 | 2026-11-07T23:41:58+00:00 |
+| `lookfantastic.com` | Rodial Vitamin C Brightening Pads (50 Pads) | Standard | £52.00 | 2026-11-07T23:41:58+00:00 |
+| `lookfantastic.com` | Rodial Vitamin C Deluxe Glow Tonic 100ml | 100ml | £30.00 | 2026-11-07T23:41:58+00:00 |
+| `lookfantastic.com` | Rodial Vitamin C Drops 30ml | 30ml | £68.00 | 2026-11-07T23:41:58+00:00 |
+| `lookfantastic.com` | Rodial Vitamin C Face Souffle 50ml | 50ml | £71.25 | 2026-11-07T23:41:58+00:00 |
+| `rodial.com` | Dragon’s Blood Hyaluronic Moisturiser SPF15 | Standard | £42.00 | 2026-11-07T23:41:10+00:00 |
+| `rodial.com` | Retinol Drops Mini | Standard | £30.00 | 2026-11-07T23:41:10+00:00 |
+| `rodial.com` | Vit C Brightening Cleansing Pads | Standard | £24.50 | 2026-11-07T23:41:10+00:00 |
 
 ---
 
@@ -84,4 +85,4 @@
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/rodial |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 30 | 30 | **0** | https://www.lookfantastic.com/c/brands/rodial/ |
 | `rodial.com` | Official Brand DTC (Master Catalog) | Shopify | 201 | 186 | **15** | https://rodial.com |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 69 | 61 | **8** | https://www.spacenk.com/uk/brands/r/rodial |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 69 | 60 | **9** | https://www.spacenk.com/uk/brands/r/rodial |
