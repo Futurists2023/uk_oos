@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Nailberry
 
-- **Generated:** 2026-11-05 12:31 UTC
+- **Generated:** 2026-11-07 20:18 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 224 (200 In Stock | **24 OOS**)
+- **Total Tracked Variants:** 224 (203 In Stock | **21 OOS**)
 - **Retailer Out-of-Stock Alerts:** **12** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **1**
 
@@ -12,18 +12,18 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Cosmic | Standard | £17.00 (Below DTC RRP -11% (DTC £19.00)) | £19.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Fuchsia In Love Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Galactic | Standard | £17.00 (Below DTC RRP -11% (DTC £19.00)) | £19.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Harmony Oxygenated Nail Lacquer by Nailberry | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Imperial Blush | Standard | £18.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Joyful Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | L'Oxygéné - Folie Douce | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Orage | Standard | £17.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Peace Oxygenated Nail Lacquer by Nailberry | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Peony Blush Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Romance Oxygenated Nail Lacquer | Standard | £16.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
-| `spacenk.com` | Spontaneous Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 15h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Cosmic | Standard | £17.00 (Below DTC RRP -11% (DTC £19.00)) | £19.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Fuchsia In Love Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Galactic | Standard | £17.00 (Below DTC RRP -11% (DTC £19.00)) | £19.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Harmony Oxygenated Nail Lacquer by Nailberry | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Imperial Blush | Standard | £18.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Joyful Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | L'Oxygéné - Folie Douce | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Orage | Standard | £17.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Peace Oxygenated Nail Lacquer by Nailberry | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Peony Blush Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Romance Oxygenated Nail Lacquer | Standard | £16.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
+| `spacenk.com` | Spontaneous Oxygenated Nail Lacquer | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-10-27 20:52 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -31,7 +31,6 @@
 |---|---|---|---|---|
 | `nailberry.co.uk` | BioGlow — Polish Remover | 100ml | £24.00 | 2026-10-31T23:33:41+00:00 |
 | `nailberry.co.uk` | Blue Moon | 15ml | £19.00 | 2026-10-27T20:52:14+00:00 |
-| `nailberry.co.uk` | Bluebell | 14ml | £19.00 | 2026-11-05T12:31:01+00:00 |
 | `nailberry.co.uk` | Boho Chic | 14ml | £19.00 | 2026-10-27T20:52:14+00:00 |
 | `nailberry.co.uk` | Extravagant | 15ml | £19.00 | 2026-10-27T20:52:14+00:00 |
 | `nailberry.co.uk` | Flapper | 15ml | £19.00 | 2026-10-27T20:52:14+00:00 |
@@ -39,8 +38,6 @@
 | `nailberry.co.uk` | Maliblue | 15ml | £19.00 | 2026-10-27T20:52:14+00:00 |
 | `nailberry.co.uk` | Serendipity | 15ml | £19.00 | 2026-10-27T20:52:14+00:00 |
 | `nailberry.co.uk` | Spiritual | 14ml | £19.00 | 2026-10-27T20:52:14+00:00 |
-| `nailberry.co.uk` | The No-Polish Polish Look | Standard | £115.00 | 2026-11-05T12:31:01+00:00 |
-| `nailberry.co.uk` | UV Gloss Top Coat | 14ml | £24.00 | 2026-11-05T12:31:01+00:00 |
 
 ---
 
@@ -59,7 +56,7 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `nailberry.co.uk` | Peace | 15ml | £12.00 | 2026-11-05T12:31:01+00:00 |
+| `nailberry.co.uk` | Peace | 15ml | £12.00 | 2026-11-07T20:18:10+00:00 |
 
 ---
 
@@ -68,5 +65,5 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 30 | 30 | **0** | https://www.lookfantastic.com/c/brands/nailberry/ |
-| `nailberry.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 143 | 131 | **12** | https://nailberry.co.uk |
+| `nailberry.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 143 | 134 | **9** | https://nailberry.co.uk |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 51 | 39 | **12** | https://www.spacenk.com/uk/brands/n/nailberry |

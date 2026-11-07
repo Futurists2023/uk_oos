@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Laboratory Perfumes
 
-- **Generated:** 2026-11-05 12:29 UTC
+- **Generated:** 2026-11-07 20:16 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
 - **Total Tracked Variants:** 45 (45 In Stock | **0 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)

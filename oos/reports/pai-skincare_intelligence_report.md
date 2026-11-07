@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Pai Skincare
 
-- **Generated:** 2026-11-05 22:03 UTC
+- **Generated:** 2026-11-07 20:23 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 43 (34 In Stock | **9 OOS**)
 - **Retailer Out-of-Stock Alerts:** **9** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,15 +12,15 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `ohmycream.co.uk` | British Summer Time SPF30 Sunscreen For Sensitive Skin | 40 ml | £17.40 (Discounted -40% (was £29.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
-| `ohmycream.co.uk` | Carbon Star Detoxifying Oil | Travel Size - 10 ml | £14.40 (Discounted -40% (was £24.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
-| `ohmycream.co.uk` | Collagen Restoring Booster | 10 ml | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
-| `ohmycream.co.uk` | Middlemist Seven Camellia & Rose Gentle Cream Cleanser | Travel Size - 50 ml | £9.50 (Discounted -50% (was £19.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
-| `ohmycream.co.uk` | Salicylic Acid Clarifying Booster | 10 ml | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 16h (since 2026-10-30 05:59 UTC)** |
-| `ohmycream.co.uk` | The Impossible Glow Illuminating Radiance Concentrate Champagne | 30 ml | £34.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
-| `ohmycream.co.uk` | The Impossible Glow Illuminating Radiance Concentrate Champagne | Travel Size - 10 ml | £11.40 (Discounted -40% (was £19.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
-| `ohmycream.co.uk` | The Impossible Glow Illuminating Radiance Concentrate Rose Gold | 30 ml | £34.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
-| `ohmycream.co.uk` | The Rosehip Ritual Kit – Regenerating Set | 56 g | £23.40 (Discounted -40% (was £39.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 6h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | British Summer Time SPF30 Sunscreen For Sensitive Skin | 40 ml | £17.40 (Discounted -40% (was £29.00)) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | Carbon Star Detoxifying Oil | Travel Size - 10 ml | £14.40 (Discounted -40% (was £24.00)) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | Collagen Restoring Booster | 10 ml | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | Middlemist Seven Camellia & Rose Gentle Cream Cleanser | Travel Size - 50 ml | £9.50 (Discounted -50% (was £19.00)) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | Salicylic Acid Clarifying Booster | 10 ml | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 14h (since 2026-10-30 05:59 UTC)** |
+| `ohmycream.co.uk` | The Impossible Glow Illuminating Radiance Concentrate Champagne | 30 ml | £34.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | The Impossible Glow Illuminating Radiance Concentrate Champagne | Travel Size - 10 ml | £11.40 (Discounted -40% (was £19.00)) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | The Impossible Glow Illuminating Radiance Concentrate Rose Gold | 30 ml | £34.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
+| `ohmycream.co.uk` | The Rosehip Ritual Kit – Regenerating Set | 56 g | £23.40 (Discounted -40% (was £39.00)) | - | **Retail Exclusive OOS** | _None_ | **14d 5h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -39,7 +39,7 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `ohmycream.co.uk` | Gentle Genius™ Barrier Care Wet Skin Moisturizer | 200 ml | £15.00 | 2026-11-05T22:03:23+00:00 |
+| `ohmycream.co.uk` | Gentle Genius™ Barrier Care Wet Skin Moisturizer | 200 ml | £15.00 | 2026-11-07T20:23:04+00:00 |
 
 ---
 
