@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Kiki Health
 
-- **Generated:** 2026-11-05 12:28 UTC
+- **Generated:** 2026-11-07 15:05 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 40 (39 In Stock | **1 OOS**)
-- **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 40 (38 In Stock | **2 OOS**)
+- **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
 ---
@@ -12,7 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `planetorganic.com` | KIKI Health Organic Beetroot Powder 200g | 42745 | £10.13 (Discounted -25% (was £13.50)) | - | **Retail Exclusive OOS** | _None_ | **12d 22h (since 2026-10-23 13:48 UTC)** |
+| `planetorganic.com` | KIKI Health Organic Beetroot Powder 200g | 42745 | £10.13 (Discounted -25% (was £13.50)) | - | **Retail Exclusive OOS** | _None_ | **15d 1h (since 2026-10-23 13:48 UTC)** |
+| `planetorganic.com` | KIKI NMN 60 caps | 45243 | £33.75 (Discounted -25% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-07 15:05 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -40,4 +41,4 @@ _No removed variants detected yet._
 | `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 0 | 0 | **0** | https://www.hollandandbarrett.com/shop/brands/kiki-health/ |
 | `kiki-health.com` | Official Brand DTC (Master Catalog) | Shopify | 0 | 0 | **0** | https://kiki-health.com |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 0 | 0 | **0** | https://www.lookfantastic.com/c/brands/kiki-health/ |
-| `planetorganic.com` | Tier 1 (Major UK Retailer) | Shopify | 40 | 39 | **1** | https://www.planetorganic.com/collections/kiki-health |
+| `planetorganic.com` | Tier 1 (Major UK Retailer) | Shopify | 40 | 38 | **2** | https://www.planetorganic.com/collections/kiki-health |
