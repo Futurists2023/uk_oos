@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Luna Daily
 
-- **Generated:** 2026-11-06 21:37 UTC
+- **Generated:** 2026-11-08 15:26 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 206 (121 In Stock | **85 OOS**)
+- **Total Tracked Variants:** 211 (126 In Stock | **85 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **9**
+- **Removed / Delisted Variants:** **4**
 
 ---
 
@@ -134,15 +134,10 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 4.6 Hello Sunday The Illuminating One Glow Primer Spf50 50ml | 50ml | £24.00 | 2026-11-06T21:37:04+00:00 |
-| `hollandandbarrett.com` | 5 Hair Gain Gummies Apple 60 Gummies 25% Off | Standard | £22.49 | 2026-11-06T21:37:04+00:00 |
-| `hollandandbarrett.com` | Hair Gain Capsules 60 Capsules 25% Off | 60 Capsules | £27.74 | 2026-11-06T21:37:04+00:00 |
-| `hollandandbarrett.com` | Hair Gain Peptide Puff Dry Shampoo 5 g 25% Off | 5 g | £10.87 | 2026-11-06T21:37:04+00:00 |
-| `hollandandbarrett.com` | Hair Gain Scalp Foam 50 ml 25% Off | 50 ml | £24.00 | 2026-11-06T21:37:04+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-11-06T21:36:09+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-11-06T21:36:09+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-11-06T21:36:09+00:00 |
-| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-06T21:36:09+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-11-08T15:25:08+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-11-08T15:25:08+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-11-08T15:25:08+00:00 |
+| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-08T15:25:08+00:00 |
 
 ---
 
@@ -152,6 +147,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/luna-daily |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/luna-daily/ |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 15 | 15 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 20 | 20 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.lookfantastic.com/c/brands/luna-daily/ |
 | `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 135 | 50 | **85** | https://luna-daily.com |
