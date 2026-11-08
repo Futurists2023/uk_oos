@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Philip Kingsley
 
-- **Generated:** 2026-11-07 06:04 UTC
+- **Generated:** 2026-11-08 20:39 UTC
 - **Monitored Storefronts:** 10 (1 Official DTC Master Catalog + 9 Major UK Stockists)
-- **Total Tracked Variants:** 507 (450 In Stock | **57 OOS**)
-- **Retailer Out-of-Stock Alerts:** **55** (**37 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **11**
+- **Total Tracked Variants:** 506 (447 In Stock | **59 OOS**)
+- **Retailer Out-of-Stock Alerts:** **57** (**39 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **12**
 
 ---
 
@@ -12,61 +12,63 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `facethefuture.co.uk` | Philip Kingsley Body Building Conditioner 75ml | 75ml | £19.00 (Full Price) | £13.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Body Building Shampoo 250ml | 250ml | £34.00 (Discounted -15% (was £40.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Body Building Shampoo 75ml | 75ml | £18.00 (Full Price) | £12.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Bond Builder Lipid Shield | Standard | £29.00 (Discounted -34% (was £44.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `fenwick.co.uk` | **4d 11h (since 2026-11-02 18:26 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Daily Damage Defence Leave-In Conditioner 250ml | 250ml | £44.00 (Full Price) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `fenwick.co.uk`, `selfridges.com` | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Density Stimulating Scalp Mask | Standard | £36.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Elasticizer Conditioning Treatment 500ml | 500ml | £109.00 (Full Price) | £77.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com`, `spacenk.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Elasticizer Deep-Conditioning Treatment Eco Refill Pouch 1000ml | 1000ml | £139.00 (Full Price) | £102.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `lookfantastic.com` | **2d 10h (since 2026-11-04 19:54 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Elasticizer Extreme Rich Deep-Conditioning Treatment 150ml | 150ml | £56.00 (Full Price) | £41.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Elasticizer Extreme Rich Deep-Conditioning Treatment 500ml | 500ml | £109.00 (Full Price) | £77.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `spacenk.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Flaky Itchy Regime Kit | Standard | £50.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 1000ml | 1000ml | £115.00 (Full Price) | £84.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk` | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 500ml | 500ml | £75.00 (Full Price) | £55.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 75ml | 75ml | £20.00 (Full Price) | £14.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Hair Goal: Defined Curls Gift Set (Worth £50) | Standard | £31.00 (Discounted -24% (was £41.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Pure Blonde/Silver Shampoo | Standard | £26.00 (Discounted -35% (was £40.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `selfridges.com` | **6d 15h (since 2026-10-31 14:41 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Pure Blonde/Silver Shampoo 250ml & Conditioner 200ml Duo | Pure Blonde/Silver | £71.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Re-Moisturizing Shampoo 250ml & Conditioner 200ml Duo | Re-Moisturizing | £71.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `facethefuture.co.uk` | Philip Kingsley Swimcap Water Resistant Hair Mask 200ml | 200ml | £55.00 (Full Price) | £40.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `fenwick.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Body Building Conditioner 200ml | 200ml | £23.20 (Discounted -20% (was £29.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **2d 10h (since 2026-11-04 19:54 UTC)** |
-| `fenwick.co.uk` | Body Building Weightless Shampoo 250 ml | 250 ml | £23.20 (Discounted -20% (was £29.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **2d 10h (since 2026-11-04 19:54 UTC)** |
-| `fenwick.co.uk` | Body Building Weightless Shampoo 75 ml | 75 ml | £9.50 (Below DTC RRP -24% (DTC £12.50)) | £12.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Bond Builder Split End Remedy 50ml | NOCOLOUR | £25.60 (Discounted -20% (was £32.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `fenwick.co.uk` | Curl Activator Curl Defining Cream 100 ml | 100 ml | £18.20 (Discounted -30% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **6d 15h (since 2026-10-31 14:41 UTC)** |
-| `fenwick.co.uk` | Daily Damage Defence Leave in Conditioner 250 ml | 250 ml | £25.60 (Discounted -20% (was £32.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `selfridges.com` | **2d 10h (since 2026-11-04 19:54 UTC)** |
-| `fenwick.co.uk` | Density Amino Acid Protein Booster 120 Capsules | 120 Capsules | £15.00 (Discounted -50% (was £30.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `escentual.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Density Thickening Conditioner 170ml | 170ml | £25.60 (Discounted -20% (was £32.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `fenwick.co.uk` | Elasti Styler 5 In 1 Treatment | Standard | £25.60 (Discounted -20% (was £32.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `selfridges.com`, `spacenk.com` | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `fenwick.co.uk` | Elasticizer Bluebell Woods Hair Treatment 75ml | 75ml | £11.50 (Discounted -50% (was £23.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Elasticizer Booster 150 ml | 150 ml | £15.00 (Discounted -50% (was £30.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `selfridges.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Elasticizer Deep-Conditioning Treatment 75 ml | 75 ml | £17.60 (Discounted -20% (was £22.00)) | £22.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `selfridges.com` | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `fenwick.co.uk` | Elasticizer Extreme Deep-Conditioning Treatment 150ml | 150ml | £32.80 (Discounted -20% (was £41.00)) | £41.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **4d 11h (since 2026-11-02 18:27 UTC)** |
-| `fenwick.co.uk` | Finishing Touch Flexible Hold Mist 200ml | 200ml | £17.50 (Discounted -30% (was £25.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Scalp Toner 250 ml | 250 ml | £20.80 (Discounted -20% (was £26.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `escentual.com` | **0h (first detected 2026-11-07 06:02 UTC)** |
-| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Scalp Toner 75 ml | 75 ml | £8.40 (Discounted -30% (was £12.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `escentual.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Shampoo 250 ml | 250 ml | £25.60 (Discounted -20% (was £32.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `spacenk.com` | **2d 10h (since 2026-11-04 19:54 UTC)** |
-| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Shampoo 75 ml | 75 ml | £11.50 (Below DTC RRP -21% (DTC £14.50)) | £14.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Flaky Itchy Scalp Soothing Dry Shampoo 200ml | 200ml | £12.00 (Discounted -61% (was £31.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Hair Goal No More Frizz Gift Set | Standard | £12.50 (Discounted -50% (was £25.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `facethefuture.co.uk` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Honey Nectar and Peach Elasticizer Deep Conditioning Treatment 150ml | 150ml | £28.70 (Discounted -30% (was £41.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Maximizer Root Volumising Spray | Standard | £8.00 (Discounted -62% (was £21.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `facethefuture.co.uk`, `selfridges.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | No Scent No Colour Conditioner 1000ml | 1000ml | £30.00 (Discounted -61% (was £76.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | One More Day Dry Shampoo 200ml | 200ml | £12.00 (Discounted -59% (was £29.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | One More Day Refreshing Dry Shampoo | Standard | £6.65 (Discounted -30% (was £9.50)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Overnight Scalp Barrier Serum with Triple Balancing Action 60ml | 60ml | £25.60 (Discounted -20% (was £32.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Pure BlondeSilver Daily Shampoo 1000ml | 1000ml | £37.00 (Discounted -50% (was £74.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Pure Colour Anti Fade Shampoo 250ml | 250ml | £12.00 (Discounted -61% (was £31.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Pure Colour Reviving Conditioner 200ml | 200ml | £12.00 (Discounted -61% (was £31.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Re-Moisturizing Smoothing Conditioner 75 ml | 75 ml | £10.50 (Below DTC RRP -22% (DTC £13.50)) | £13.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `facethefuture.co.uk` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | Stocking Filler Strength Superstars Gift Set | Standard | £9.00 (Discounted -25% (was £12.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `fenwick.co.uk` | The Hair Icons Gift Set | Standard | £27.30 (Discounted -30% (was £39.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `hollandandbarrett.com` | Philip Kingsley Flaky Itchy Scalp Shampoo 250ml | 250ml | £32.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `facethefuture.co.uk`, `selfridges.com` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `hollandandbarrett.com` | Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 (Full Price) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk` | **13d 14h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | philip kingsley Daily Damage Defence Leave-In Conditioner 250ml | 250ML | £32.00 (Full Price) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `selfridges.com` | **8d 14h (since 2026-10-29 15:19 UTC)** |
-| `spacenk.com` | philip kingsley Daily Damage Defence Leave-In Conditioner 60ml | 60ML | £12.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `facethefuture.co.uk` | **13d 14h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Body Building Conditioner 75ml | 75ml | £19.00 (Full Price) | £13.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Body Building Shampoo 250ml | 250ml | £34.00 (Discounted -15% (was £40.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Body Building Shampoo 75ml | 75ml | £18.00 (Full Price) | £12.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Bond Builder Lipid Shield | Standard | £29.00 (Discounted -34% (was £44.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `fenwick.co.uk` | **6d 2h (since 2026-11-02 18:26 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Daily Damage Defence Leave-In Conditioner 250ml | 250ml | £44.00 (Full Price) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `fenwick.co.uk`, `selfridges.com` | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Density Stimulating Scalp Mask | Standard | £36.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Elasticizer Conditioning Treatment 500ml | 500ml | £109.00 (Full Price) | £77.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com`, `spacenk.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Elasticizer Deep-Conditioning Treatment Eco Refill Pouch 1000ml | 1000ml | £139.00 (Full Price) | £102.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `lookfantastic.com` | **4d 0h (since 2026-11-04 19:54 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Elasticizer Extreme Rich Deep-Conditioning Treatment 150ml | 150ml | £56.00 (Full Price) | £41.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Elasticizer Extreme Rich Deep-Conditioning Treatment 500ml | 500ml | £109.00 (Full Price) | £77.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `spacenk.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Flaky Itchy Regime Kit | Standard | £50.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 1000ml | 1000ml | £115.00 (Full Price) | £84.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk` | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 500ml | 500ml | £75.00 (Full Price) | £55.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 75ml | 75ml | £20.00 (Full Price) | £14.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Hair Goal: Defined Curls Gift Set (Worth £50) | Standard | £31.00 (Discounted -24% (was £41.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Pure Blonde/Silver Shampoo | Standard | £26.00 (Discounted -35% (was £40.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `selfridges.com` | **8d 5h (since 2026-10-31 14:41 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Pure Blonde/Silver Shampoo 250ml & Conditioner 200ml Duo | Pure Blonde/Silver | £71.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Re-Moisturizing Shampoo 250ml & Conditioner 200ml Duo | Re-Moisturizing | £71.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `facethefuture.co.uk` | Philip Kingsley Swimcap Water Resistant Hair Mask 200ml | 200ml | £55.00 (Full Price) | £40.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `lookfantastic.com`, `selfridges.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Body Building Conditioner 200ml | 200ml | £23.20 (Discounted -20% (was £29.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **4d 0h (since 2026-11-04 19:54 UTC)** |
+| `fenwick.co.uk` | Body Building Weightless Shampoo 250 ml | 250 ml | £23.20 (Discounted -20% (was £29.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **4d 0h (since 2026-11-04 19:54 UTC)** |
+| `fenwick.co.uk` | Body Building Weightless Shampoo 75 ml | 75 ml | £9.50 (Below DTC RRP -24% (DTC £12.50)) | £12.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `selfridges.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Bond Builder Split End Remedy 50ml | NOCOLOUR | £25.60 (Discounted -20% (was £32.00)) | - | **Retail Exclusive OOS** | _None_ | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `fenwick.co.uk` | Curl Activator Curl Defining Cream 100 ml | 100 ml | £18.20 (Discounted -30% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 5h (since 2026-10-31 14:41 UTC)** |
+| `fenwick.co.uk` | Daily Damage Defence Leave in Conditioner 250 ml | 250 ml | £25.60 (Discounted -20% (was £32.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `selfridges.com` | **4d 0h (since 2026-11-04 19:54 UTC)** |
+| `fenwick.co.uk` | Density Amino Acid Protein Booster 120 Capsules | 120 Capsules | £15.00 (Discounted -50% (was £30.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `escentual.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Elasti Styler 5 In 1 Treatment | Standard | £25.60 (Discounted -20% (was £32.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `selfridges.com`, `spacenk.com` | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `fenwick.co.uk` | Elasticizer Bluebell Woods Hair Treatment 75ml | 75ml | £11.50 (Discounted -50% (was £23.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Elasticizer Booster 150 ml | 150 ml | £15.00 (Discounted -50% (was £30.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `selfridges.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Elasticizer Deep-Conditioning Treatment 150 ml | 150 ml | £32.80 (Discounted -20% (was £41.00)) | £43.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | **0h (first detected 2026-11-08 20:38 UTC)** |
+| `fenwick.co.uk` | Elasticizer Deep-Conditioning Treatment 75 ml | 75 ml | £17.60 (Discounted -20% (was £22.00)) | £22.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `selfridges.com` | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `fenwick.co.uk` | Elasticizer Extreme Deep-Conditioning Treatment 150ml | 150ml | £32.80 (Discounted -20% (was £41.00)) | £41.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **6d 2h (since 2026-11-02 18:27 UTC)** |
+| `fenwick.co.uk` | Finishing Touch Flexible Hold Mist 200ml | 200ml | £17.50 (Discounted -30% (was £25.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Scalp Toner 250 ml | 250 ml | £20.80 (Discounted -20% (was £26.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `escentual.com` | **1d 14h (since 2026-11-07 06:02 UTC)** |
+| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Scalp Toner 75 ml | 75 ml | £8.40 (Discounted -30% (was £12.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `escentual.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Shampoo 250 ml | 250 ml | £25.60 (Discounted -20% (was £32.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `spacenk.com` | **4d 0h (since 2026-11-04 19:54 UTC)** |
+| `fenwick.co.uk` | Flaky Itchy Scalp Anti-Dandruff Shampoo 75 ml | 75 ml | £11.50 (Below DTC RRP -21% (DTC £14.50)) | £14.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Flaky Itchy Scalp Soothing Dry Shampoo 200ml | 200ml | £12.00 (Discounted -61% (was £31.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Hair Goal No More Frizz Gift Set | Standard | £12.50 (Discounted -50% (was £25.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `facethefuture.co.uk` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Honey Nectar and Peach Elasticizer Deep Conditioning Treatment 150ml | 150ml | £28.70 (Discounted -30% (was £41.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Maximizer Root Volumising Spray | Standard | £8.00 (Discounted -62% (was £21.00)) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `facethefuture.co.uk`, `selfridges.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | No Scent No Colour Conditioner 1000ml | 1000ml | £30.00 (Discounted -61% (was £76.00)) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | One More Day Dry Shampoo 200ml | 200ml | £12.00 (Discounted -59% (was £29.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | One More Day Refreshing Dry Shampoo | Standard | £6.65 (Discounted -30% (was £9.50)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Overnight Scalp Barrier Serum with Triple Balancing Action 60ml | 60ml | £25.60 (Discounted -20% (was £32.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Pure BlondeSilver Daily Shampoo 1000ml | 1000ml | £37.00 (Discounted -50% (was £74.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Pure Colour Anti Fade Shampoo 250ml | 250ml | £12.00 (Discounted -61% (was £31.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Pure Colour Reviving Conditioner 200ml | 200ml | £12.00 (Discounted -61% (was £31.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Re-Moisturizing Smoothing Conditioner 75 ml | 75 ml | £10.50 (Below DTC RRP -22% (DTC £13.50)) | £13.50 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `facethefuture.co.uk` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Stocking Filler Strength Superstars Gift Set | Standard | £9.00 (Discounted -25% (was £12.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `fenwick.co.uk` | Swimcap Water-Resistant Mask 100ml | 100ml | £20.80 (Discounted -20% (was £26.00)) | £26.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | **0h (first detected 2026-11-08 20:38 UTC)** |
+| `fenwick.co.uk` | The Hair Icons Gift Set | Standard | £27.30 (Discounted -30% (was £39.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `facethefuture.co.uk` | **0h (first detected 2026-11-08 20:38 UTC)** |
+| `hollandandbarrett.com` | Philip Kingsley Flaky Itchy Scalp Shampoo 250ml | 250ml | £32.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `facethefuture.co.uk`, `selfridges.com` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `hollandandbarrett.com` | Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 (Full Price) | £29.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk` | **15d 5h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | philip kingsley Daily Damage Defence Leave-In Conditioner 250ml | 250ML | £32.00 (Full Price) | £32.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `selfridges.com` | **10d 5h (since 2026-10-29 15:19 UTC)** |
+| `spacenk.com` | philip kingsley Daily Damage Defence Leave-In Conditioner 60ml | 60ML | £12.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `facethefuture.co.uk` | **15d 5h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -83,13 +85,13 @@
 |---|---|---|---|---|---|---|
 | **Philip Kingsley Density Preserving Scalp Drops 85ml** | Retail Only | **8/9** (89%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `lookfantastic.com`, `selfridges.com`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Elasticizer Deep Conditioning Treatment Baked Pistachio & Vanilla 150ml** | ✅ £43.00 | **8/9** (89%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `lookfantastic.com`, `selfridges.com`, `spacenk.com` | - | `fenwick.co.uk` £32.80 (-24% vs RRP) | `boots.com` |
-| **Swimcap Chlorine Hair Protection Water Resistant Mask 100ml** | ✅ £40.00 | **8/9** (89%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `lookfantastic.com`, `selfridges.com`, `spacenk.com` | - | `fenwick.co.uk` £20.80 (-48% vs RRP); `hollandandbarrett.com` £26.00 (-35% vs RRP); `lookfantastic.com` £26.00 (-35% vs RRP); `selfridges.com` £26.00 (-35% vs RRP); `spacenk.com` £26.00 (-35% vs RRP) | `boots.com` |
+| **Swimcap Chlorine Hair Protection Water Resistant Mask 100ml** | ✅ £40.00 | **8/9** (89%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com`, `selfridges.com`, `spacenk.com` | **`fenwick.co.uk`** | `fenwick.co.uk` £20.80 (-48% vs RRP); `hollandandbarrett.com` £26.00 (-35% vs RRP); `lookfantastic.com` £26.00 (-35% vs RRP); `selfridges.com` £26.00 (-35% vs RRP); `spacenk.com` £26.00 (-35% vs RRP) | `boots.com` |
 | **Body Building Weightless Shampoo 250ml** | ✅ £29.00 | **7/9** (78%) | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **`facethefuture.co.uk`**, **`fenwick.co.uk`** | `fenwick.co.uk` £23.20 (-20% vs RRP) | `boots.com`, `lookfantastic.com` |
 | **Elasticizer Extreme Deep-Conditioning Treatment 150ml** | ✅ £41.00 | **7/9** (78%) | `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **`facethefuture.co.uk`**, **`fenwick.co.uk`** | `fenwick.co.uk` £32.80 (-20% vs RRP) | `boots.com`, `lookfantastic.com` |
 | **Flaky/Itchy Scalp Hydrating Conditioner 200ml** | ✅ £32.00 | **7/9** (78%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | - | `fenwick.co.uk` £25.60 (-20% vs RRP) | `boots.com`, `lookfantastic.com` |
 | **Body Building Weightless Conditioner 200ml** | ✅ £29.00 | **6/9** (67%) | `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **`fenwick.co.uk`** | `fenwick.co.uk` £23.20 (-20% vs RRP) | `boots.com`, `cultbeauty.co.uk`, `lookfantastic.com` |
 | **Daily Damage Defence Protective Priming Mist 200ml** | ✅ £32.00 | **6/9** (67%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `selfridges.com` | **`spacenk.com`** | `fenwick.co.uk` £25.60 (-20% vs RRP) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` |
-| **Density Thickening Conditioner 170ml** | ✅ £32.00 | **6/9** (67%) | `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | **`fenwick.co.uk`** | `fenwick.co.uk` £25.60 (-20% vs RRP) | `boots.com`, `cultbeauty.co.uk`, `lookfantastic.com` |
+| **Density Thickening Conditioner 170ml** | ✅ £32.00 | **6/9** (67%) | `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | - | `fenwick.co.uk` £25.60 (-20% vs RRP) | `boots.com`, `cultbeauty.co.uk`, `lookfantastic.com` |
 | **Density Hair Thickening Shampoo 200ml** | ✅ £32.00 | **6/9** (67%) | `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `selfridges.com`, `spacenk.com` | - | `fenwick.co.uk` £25.60 (-20% vs RRP) | `boots.com`, `cultbeauty.co.uk`, `lookfantastic.com` |
 | **Moisture Balancing Combination Conditioner 200ml** | ✅ £29.00 | **6/9** (67%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `selfridges.com`, `spacenk.com` | - | `fenwick.co.uk` £23.20 (-20% vs RRP) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` |
 | **Moisture Balancing Combination Shampoo 250ml** | ✅ £29.00 | **6/9** (67%) | `cultbeauty.co.uk`, `escentual.com`, `facethefuture.co.uk`, `fenwick.co.uk`, `selfridges.com`, `spacenk.com` | - | `fenwick.co.uk` £23.20 (-20% vs RRP) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` |
@@ -139,7 +141,7 @@
 | **Philip Kingsley Daily Damage Defence Leave-In Conditioner 60ml** | Retail Only | **2/9** (22%) | `facethefuture.co.uk` | **`spacenk.com`** | At RRP | `boots.com`, `cultbeauty.co.uk`, `escentual.com`, `fenwick.co.uk`, `hollandandbarrett.com` (+2 more) |
 | **Philip Kingsley Density Amino Acid Protein Booster** | Retail Only | **2/9** (22%) | `escentual.com` | **`fenwick.co.uk`** | At RRP | `boots.com`, `cultbeauty.co.uk`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
 | **Density Stimulating Scalp Mask 75ml** | ✅ £26.00 | **2/9** (22%) | `escentual.com`, `fenwick.co.uk` | - | `fenwick.co.uk` £20.80 (-20% vs RRP) | `boots.com`, `cultbeauty.co.uk`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
-| **Philip Kingsley Elasticizer Effect Discovery Collection** | Retail Only | **2/9** (22%) | `facethefuture.co.uk`, `hollandandbarrett.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk`, `escentual.com`, `fenwick.co.uk`, `lookfantastic.com` (+2 more) |
+| **Philip Kingsley Elasticizer Effect Discovery Collection** | Retail Only | **2/9** (22%) | `facethefuture.co.uk` | **`hollandandbarrett.com`** | At RRP | `boots.com`, `cultbeauty.co.uk`, `escentual.com`, `fenwick.co.uk`, `lookfantastic.com` (+2 more) |
 | **Philip Kingsley Elasticizer Effects Discovery Collection (Worth £43.50)** | Retail Only | **2/9** (22%) | `cultbeauty.co.uk`, `fenwick.co.uk` | - | At RRP | `boots.com`, `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
 | **Philip Kingsley Elasticizer Extreme Rich Deep-Conditioning Treatment Eco Refill Pouch** | Retail Only | **2/9** (22%) | `escentual.com`, `facethefuture.co.uk` | - | At RRP | `boots.com`, `cultbeauty.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
 | **Philip Kingsley Flaky/Itchy Scalp Anti-Dandruff Scalp Toner** | Retail Only | **2/9** (22%) | `escentual.com` | **`fenwick.co.uk`** | At RRP | `boots.com`, `cultbeauty.co.uk`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
@@ -155,7 +157,6 @@
 | **Philip Kingsley Overnight Scalp Barrier Serum with Triple Balancing Action 60ml** | Retail Only | **2/9** (22%) | `cultbeauty.co.uk` | **`fenwick.co.uk`** | At RRP | `boots.com`, `escentual.com`, `facethefuture.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
 | **Pure Blonde/Silver Brightening Daily Conditioner 200ml** | ✅ £29.00 | **2/9** (22%) | `escentual.com`, `selfridges.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com` (+2 more) |
 | **Re-Moisturizing Smoothing Conditioner 75ml** | ✅ £13.50 | **2/9** (22%) | `facethefuture.co.uk` | **`fenwick.co.uk`** | `fenwick.co.uk` £10.50 (-22% vs RRP) | `boots.com`, `cultbeauty.co.uk`, `escentual.com`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
-| **Re-Moisturizing Smoothing Shampoo 250ml** | ✅ £29.00 | **2/9** (22%) | `escentual.com`, `selfridges.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk`, `facethefuture.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com` (+2 more) |
 | **Re-Moisturizing Smoothing Shampoo 75ml** | ✅ £12.50 | **2/9** (22%) | `escentual.com`, `facethefuture.co.uk` | - | At RRP | `boots.com`, `cultbeauty.co.uk`, `fenwick.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` (+2 more) |
 
 ---
@@ -164,17 +165,18 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | Philip Kingsley Body Building Conditioner 200ml | 200ml | £29.00 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Body Building Discovery Collection (Worth £40.00) | Standard | £30.00 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Bond Builder Restructuring Treatment 150ml | 150ml | £32.00 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Elasticizer Booster Restoring Conditioner 150ml | 150ml | £32.00 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 250ml | 250ml | £32.00 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Moisture Extreme Enriching Conditioner 200ml | 200ml | £29.00 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Moisture Extreme Enriching Conditioner 75ml | 75ml | £13.50 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Moisture Extreme Shampoo 75ml | 75ml | £12.50 | 2026-11-07T06:01:42+00:00 |
-| `cultbeauty.co.uk` | Philip Kingsley Pure Blonde/Silver Brightening Daily Shampoo 8.45 fl. oz. | Standard | £29.00 | 2026-11-07T06:01:42+00:00 |
-| `escentual.com` | Philip Kingsley Bond Builder Restructuring Treatment | 150ml | £32.00 | 2026-11-07T06:01:55+00:00 |
-| `philipkingsley.co.uk` | Frizz-Fighting Gloss Smoothing Serum | Standard | £26.00 | 2026-11-07T06:01:00+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Body Building Conditioner 200ml | 200ml | £29.00 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Body Building Discovery Collection (Worth £40.00) | Standard | £30.00 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Bond Builder Restructuring Treatment 150ml | 150ml | £32.00 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Elasticizer Booster Restoring Conditioner 150ml | 150ml | £32.00 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Flaky/Itchy Scalp Hydrating Curl Anti-Dandruff Shampoo 250ml | 250ml | £32.00 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Moisture Extreme Enriching Conditioner 200ml | 200ml | £29.00 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Moisture Extreme Enriching Conditioner 75ml | 75ml | £13.50 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Moisture Extreme Shampoo 75ml | 75ml | £12.50 | 2026-11-08T20:37:26+00:00 |
+| `cultbeauty.co.uk` | Philip Kingsley Pure Blonde/Silver Brightening Daily Shampoo 8.45 fl. oz. | Standard | £29.00 | 2026-11-08T20:37:26+00:00 |
+| `escentual.com` | Philip Kingsley Bond Builder Restructuring Treatment | 150ml | £32.00 | 2026-11-08T20:37:38+00:00 |
+| `philipkingsley.co.uk` | Frizz-Fighting Gloss Smoothing Serum | Standard | £26.00 | 2026-11-08T20:36:40+00:00 |
+| `selfridges.com` | Re-Moisturizing Shampoo 250ml | 250ml | £29.00 | 2026-11-08T20:38:59+00:00 |
 
 ---
 
@@ -186,9 +188,9 @@
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | Magento | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/philip-kingsley/ |
 | `escentual.com` | Tier 1 (Major UK Retailer) | Shopify | 74 | 74 | **0** | https://escentual.com/collections/philip-kingsley |
 | `facethefuture.co.uk` | Tier 1 (Major UK Retailer) | Shopify | 88 | 69 | **19** | https://row.facethefuture.store/collections/philip-kingsley |
-| `fenwick.co.uk` | Tier 1 (Major UK Retailer) | Shopify | 77 | 45 | **32** | https://fenwick.co.uk/collections/philip-kingsley |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | Magento | 16 | 14 | **2** | https://www.hollandandbarrett.com/shop/brands/philip-kingsley/ |
+| `fenwick.co.uk` | Tier 1 (Major UK Retailer) | Shopify | 77 | 44 | **33** | https://fenwick.co.uk/collections/philip-kingsley |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | Magento | 16 | 13 | **3** | https://www.hollandandbarrett.com/shop/brands/philip-kingsley/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | Magento | 12 | 12 | **0** | https://www.lookfantastic.com/c/brands/philip-kingsley/ |
 | `philipkingsley.co.uk` | Official Brand DTC (Master Catalog) | Magento | 139 | 137 | **2** | https://www.philipkingsley.co.uk/product-type/shop-all-haircare-products.html?product_list_limit=all |
-| `selfridges.com` | Tier 1 (Major UK Retailer) | Magento | 44 | 44 | **0** | https://www.selfridges.com/GB/en/cat/philip-kingsley/ |
+| `selfridges.com` | Tier 1 (Major UK Retailer) | Magento | 43 | 43 | **0** | https://www.selfridges.com/GB/en/cat/philip-kingsley/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | Salesforce Commerce Cloud | 25 | 23 | **2** | https://www.spacenk.com/uk/brands/p/philip-kingsley |
