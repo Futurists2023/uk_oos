@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Artah
 
-- **Generated:** 2026-11-06 16:04 UTC
+- **Generated:** 2026-11-08 06:15 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 166 (166 In Stock | **0 OOS**)
+- **Total Tracked Variants:** 176 (176 In Stock | **0 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **22**
+- **Removed / Delisted Variants:** **12**
 
 ---
 
@@ -45,28 +45,18 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `artah.co` | Metabolism Foundations | Bundle | £82.80 | 2026-11-06T16:03:10+00:00 |
-| `artah.co` | Metabolism Foundations | Quarterly Bundle | £248.40 | 2026-11-06T16:03:10+00:00 |
-| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 3.94 Wild Nutrition Food Grown Pregnancy & New Mother Multi for Women 90 Capsules 24% Off | 90 Capsules | £31.92 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.42 Wild Nutrition Food Grown Fertility Support for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £42.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.44 Wild Nutrition Energy Support 60 Capsules 20% Off | 60 Capsules | £24.80 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.53 Wild Nutrition Food Grown Daily Multi Nutrient for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.50 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.6 Wild Nutrition Food Grown Daily Multi Nutrient 45+for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.6 Wild Nutrition Magnesium 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £21.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.7 Philip Kingsley Elasticizer Extreme 150ml | 150ml | £41.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.74 Wild Nutrition KSM-66 Ashwagandha Plus 60 Capsules 24% Off | 60 Capsules | £20.14 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.78 Philip Kingsley Elasticizer 150ml | 150ml | £41.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 5 Wild Nutrition Immune Support: 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £37.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | 5 Wild Nutrition Zinc Plus Blended with Vitamins B1, B2 & B6 30 Capsules. 24% Off | 30 Capsules | £12.54 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | Wild Nutrition Food-Grown Biotic Gummies for Children Berry 60 Gummies 3 for 2 Mix & Match | Standard | £20.00 | 2026-11-06T16:03:47+00:00 |
-| `hollandandbarrett.com` | Wild Nutrition Food-Grown Vitamin D 30 Capsules 3 for 2 Mix & Match | 30 Capsules | £18.00 | 2026-11-06T16:03:47+00:00 |
+| `artah.co` | Metabolism Foundations | Bundle | £82.80 | 2026-11-08T06:14:39+00:00 |
+| `artah.co` | Metabolism Foundations | Quarterly Bundle | £248.40 | 2026-11-08T06:14:39+00:00 |
+| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 4.7 Philip Kingsley Elasticizer Extreme 150ml | 150ml | £41.00 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 4.78 Philip Kingsley Elasticizer 150ml | 150ml | £41.00 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | 5 Wild Nutrition Zinc Plus Blended with Vitamins B1, B2 & B6 30 Capsules. 24% Off | 30 Capsules | £12.54 | 2026-11-08T06:15:17+00:00 |
+| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-08T06:15:17+00:00 |
 
 ---
 
@@ -76,5 +66,5 @@ _100% of active products on the official Brand DTC storefront are currently In S
 |---|---|---|---|---|---|---|
 | `artah.co` | Official Brand DTC (Master Catalog) | Shopify | 112 | 112 | **0** | https://artah.co |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 16 | 16 | **0** | https://www.cultbeauty.co.uk/c/brands/artah/ |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 22 | 22 | **0** | https://www.hollandandbarrett.com/shop/brands/artah/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 32 | 32 | **0** | https://www.hollandandbarrett.com/shop/brands/artah/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 16 | 16 | **0** | https://www.lookfantastic.com/c/brands/artah/ |

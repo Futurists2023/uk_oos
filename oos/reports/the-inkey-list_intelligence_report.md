@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: The INKEY List
 
-- **Generated:** 2026-11-06 16:00 UTC
+- **Generated:** 2026-11-08 06:11 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 244 (232 In Stock | **12 OOS**)
+- **Total Tracked Variants:** 243 (231 In Stock | **12 OOS**)
 - **Retailer Out-of-Stock Alerts:** **7** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **10**
+- **Removed / Delisted Variants:** **11**
 
 ---
 
@@ -12,13 +12,13 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Collagen Peptide Serum | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Glow Hard Or Go Home | Standard | £32.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Hyaluronic Acid Cleanser | Standard | £12.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Renewed Skin Starts Here Set | Standard | £18.55 (Discounted -30% (was £26.50)) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Retinol Serum | Standard | £9.80 (Discounted -30% (was £14.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | SuperSolutions 10% Urea Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | SuperSolutions 2% Novoretin™ Blemish Clearing Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Collagen Peptide Serum | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Glow Hard Or Go Home | Standard | £32.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Hyaluronic Acid Cleanser | Standard | £12.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Renewed Skin Starts Here Set | Standard | £18.55 (Discounted -30% (was £26.50)) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Retinol Serum | Standard | £9.80 (Discounted -30% (was £14.00)) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | SuperSolutions 10% Urea Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | SuperSolutions 2% Novoretin™ Blemish Clearing Moisturiser | Standard | £19.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -54,7 +54,6 @@
 | **Starter Retinol Serum** | ✅ £13.00 | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £10.40 (-20% vs RRP) | `boots.com` |
 | **Tranexamic Acid Serum** | ✅ £17.00 | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £13.60 (-20% vs RRP) | `boots.com` |
 | **The INKEY List Beta Hydroxy Acid Serum 30ml** | Retail Only | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
-| **Brighten-i Eye Cream** | ✅ £12.00 | **2/4** (50%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `boots.com`, `lookfantastic.com` |
 | **Caffeine stimulating scalp treatment** | ✅ £15.00 | **2/4** (50%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `boots.com`, `lookfantastic.com` |
 | **Fulvic Acid Cleanser - 150ml** | ✅ £13.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £9.60 (-26% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
 | **Glycerin Gentle Purifying Cleanser** | ⚠️ OOS (£14.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £11.20 (-20% vs RRP) | `boots.com`, `spacenk.com` |
@@ -76,16 +75,17 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | The INKEY List Bio-active Ceramide Neck Stick 20g | 20g | £28.00 | 2026-11-06T15:59:22+00:00 |
-| `cultbeauty.co.uk` | The INKEY List PHA Toner 100ml | 100ml | £14.00 | 2026-11-06T15:59:22+00:00 |
-| `cultbeauty.co.uk` | The INKEY List Succinic Acid Treatment 15ml | 15ml | £13.00 | 2026-11-06T15:59:22+00:00 |
-| `cultbeauty.co.uk` | The INKEY List Supersize Hyaluronic Acid Serum 100ml | 100ml | £28.00 | 2026-11-06T15:59:22+00:00 |
-| `cultbeauty.co.uk` | The INKEY List Tripeptide Plumping Lip Balm - Clear | Standard | £11.00 | 2026-11-06T15:59:22+00:00 |
-| `lookfantastic.com` | Discover | Standard | - | 2026-11-06T15:59:42+00:00 |
-| `lookfantastic.com` | The INKEY List PHA Toner 100ml | 100ml | £14.00 | 2026-11-06T15:59:42+00:00 |
-| `spacenk.com` | Hyaluronic Acid Serum | Standard | £21.00 | 2026-11-06T16:00:21+00:00 |
-| `spacenk.com` | Milk Cleanser | Standard | £15.00 | 2026-11-06T16:00:21+00:00 |
-| `spacenk.com` | Oat Balm Cleanser | Standard | £15.00 | 2026-11-06T16:00:21+00:00 |
+| `cultbeauty.co.uk` | The INKEY List Bio-active Ceramide Neck Stick 20g | 20g | £28.00 | 2026-11-08T06:10:46+00:00 |
+| `cultbeauty.co.uk` | The INKEY List Brighten-I Eye Cream 15ml | 15ml | £12.00 | 2026-11-08T06:10:46+00:00 |
+| `cultbeauty.co.uk` | The INKEY List PHA Toner 100ml | 100ml | £14.00 | 2026-11-08T06:10:46+00:00 |
+| `cultbeauty.co.uk` | The INKEY List Succinic Acid Treatment 15ml | 15ml | £13.00 | 2026-11-08T06:10:46+00:00 |
+| `cultbeauty.co.uk` | The INKEY List Tripeptide Plumping Lip Balm - Clear | Standard | £11.00 | 2026-11-08T06:10:46+00:00 |
+| `lookfantastic.com` | Discover | Standard | - | 2026-11-08T06:11:07+00:00 |
+| `lookfantastic.com` | The INKEY List PHA Toner 100ml | 100ml | £14.00 | 2026-11-08T06:11:07+00:00 |
+| `spacenk.com` | 360 Skin Clearing Serum | Standard | £16.00 | 2026-11-08T06:11:49+00:00 |
+| `spacenk.com` | Hyaluronic Acid Serum | Standard | £21.00 | 2026-11-08T06:11:49+00:00 |
+| `spacenk.com` | Milk Cleanser | Standard | £15.00 | 2026-11-08T06:11:49+00:00 |
+| `spacenk.com` | Oat Balm Cleanser | Standard | £15.00 | 2026-11-08T06:11:49+00:00 |
 
 ---
 
@@ -96,5 +96,5 @@
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/the-inkey-list |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/the-inkey-list/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.lookfantastic.com/c/brands/the-inkey-list/ |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 54 | 47 | **7** | https://www.spacenk.com/uk/brands/t/the-inkey-list |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 53 | 46 | **7** | https://www.spacenk.com/uk/brands/t/the-inkey-list |
 | `uk.theinkeylist.com` | Official Brand DTC (Master Catalog) | Shopify | 126 | 121 | **5** | https://uk.theinkeylist.com |

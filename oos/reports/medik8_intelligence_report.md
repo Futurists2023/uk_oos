@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Medik8
 
-- **Generated:** 2026-11-06 15:58 UTC
+- **Generated:** 2026-11-08 06:09 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 253 (243 In Stock | **10 OOS**)
 - **Retailer Out-of-Stock Alerts:** **9** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,15 +12,15 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Bakuchiol Peptides | Standard | - (Full Price) | £55.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Balance Moisturiser with Glycolic Acid Activator | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Copper PCA Peptides | Standard | £65.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Illuminating Eye Balm | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Illuminating Eye Balm | Standard | £25.20 (Discounted -30% (was £36.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Medik8 Press & Glow Daily Exfoliating PHA Tonic with Enzyme Activator 500ml | 500ML | £9.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 18h (since 2026-10-28 21:08 UTC)** |
-| `spacenk.com` | Peptide Boosters Kit | Standard | £85.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Sleep Glycolic | Standard | - (Full Price) | £39.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Smooth Body Exfoliating Kit | Standard | £52.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **13d 0h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Bakuchiol Peptides | Standard | - (Full Price) | £55.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Balance Moisturiser with Glycolic Acid Activator | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Copper PCA Peptides | Standard | £65.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Illuminating Eye Balm | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Illuminating Eye Balm | Standard | £25.20 (Discounted -30% (was £36.00)) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Medik8 Press & Glow Daily Exfoliating PHA Tonic with Enzyme Activator 500ml | 500ML | £9.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 9h (since 2026-10-28 21:08 UTC)** |
+| `spacenk.com` | Peptide Boosters Kit | Standard | £85.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Sleep Glycolic | Standard | - (Full Price) | £39.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Smooth Body Exfoliating Kit | Standard | £52.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **14d 15h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -65,24 +65,24 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | Medik8 Daily Radiance Vitamin C 50ml | 50ml | £62.00 | 2026-11-06T15:56:59+00:00 |
-| `cultbeauty.co.uk` | Medik8 Liquid Peptides Advanced MP 30ml & Exo-PDRN Prismatic+ Serum 30ml Bundle | 30ml | £62.00 | 2026-11-06T15:56:59+00:00 |
-| `lookfantastic.com` | Discover | Standard | - | 2026-11-06T15:57:22+00:00 |
-| `lookfantastic.com` | Medik8 Advanced Pro-Collagen+ Peptide Cream 50ml | 50ml | £82.00 | 2026-11-06T15:57:22+00:00 |
-| `lookfantastic.com` | Medik8 Crystal Retinal 20 Serum 30ml | 30ml | £104.00 | 2026-11-06T15:57:22+00:00 |
-| `lookfantastic.com` | Medik8 Hydr8 B5 Intense 30ml | 30ml | £60.00 | 2026-11-06T15:57:22+00:00 |
-| `lookfantastic.com` | Medik8 Hydr8 B5 Serum 30ml | 30ml | £45.00 | 2026-11-06T15:57:22+00:00 |
-| `lookfantastic.com` | Medik8 Niacinamide Peptides 30ml | 30ml | £49.00 | 2026-11-06T15:57:22+00:00 |
-| `lookfantastic.com` | Medik8 Surface Radiance Cleanse 40ml | 40ml | £10.00 | 2026-11-06T15:57:22+00:00 |
-| `medik8.com` | Gentle Cleanse™ | Gentle Cleanse™ | £25.00 | 2026-11-06T15:56:37+00:00 |
-| `medik8.com` | Gentle Cleanse™ | Gentle Cleanse™ (Travel Size) | £10.00 | 2026-11-06T15:56:37+00:00 |
-| `medik8.com` | Radiance & Recharge 4-Piece Gift Set | Standard | £61.00 | 2026-11-06T15:56:37+00:00 |
-| `medik8.com` | Refine & Glow 4 Piece Gift Set | Standard | £60.00 | 2026-11-06T15:56:37+00:00 |
-| `spacenk.com` | Advanced Night Restore | Standard | £62.00 | 2026-11-06T15:58:18+00:00 |
-| `spacenk.com` | Advanced Pro-Collagen+ Peptide Cream | Standard | £82.00 | 2026-11-06T15:58:18+00:00 |
-| `spacenk.com` | Daily Radiance Vitamin C SPF30 | Standard | £62.00 | 2026-11-06T15:58:18+00:00 |
-| `spacenk.com` | Hydr8 B5 Intense | Standard | £60.00 | 2026-11-06T15:58:18+00:00 |
-| `spacenk.com` | Press & Glow Daily Exfoliating PHA Tonic with Enzyme Activator | Standard | £34.00 | 2026-11-06T15:58:18+00:00 |
+| `cultbeauty.co.uk` | Medik8 Daily Radiance Vitamin C 50ml | 50ml | £62.00 | 2026-11-08T06:08:28+00:00 |
+| `cultbeauty.co.uk` | Medik8 Liquid Peptides Advanced MP 30ml & Exo-PDRN Prismatic+ Serum 30ml Bundle | 30ml | £62.00 | 2026-11-08T06:08:28+00:00 |
+| `lookfantastic.com` | Discover | Standard | - | 2026-11-08T06:08:48+00:00 |
+| `lookfantastic.com` | Medik8 Advanced Pro-Collagen+ Peptide Cream 50ml | 50ml | £82.00 | 2026-11-08T06:08:48+00:00 |
+| `lookfantastic.com` | Medik8 Crystal Retinal 20 Serum 30ml | 30ml | £104.00 | 2026-11-08T06:08:48+00:00 |
+| `lookfantastic.com` | Medik8 Hydr8 B5 Intense 30ml | 30ml | £60.00 | 2026-11-08T06:08:48+00:00 |
+| `lookfantastic.com` | Medik8 Hydr8 B5 Serum 30ml | 30ml | £45.00 | 2026-11-08T06:08:48+00:00 |
+| `lookfantastic.com` | Medik8 Niacinamide Peptides 30ml | 30ml | £49.00 | 2026-11-08T06:08:48+00:00 |
+| `lookfantastic.com` | Medik8 Surface Radiance Cleanse 40ml | 40ml | £10.00 | 2026-11-08T06:08:48+00:00 |
+| `medik8.com` | Gentle Cleanse™ | Gentle Cleanse™ | £25.00 | 2026-11-08T06:08:08+00:00 |
+| `medik8.com` | Gentle Cleanse™ | Gentle Cleanse™ (Travel Size) | £10.00 | 2026-11-08T06:08:08+00:00 |
+| `medik8.com` | Radiance & Recharge 4-Piece Gift Set | Standard | £61.00 | 2026-11-08T06:08:08+00:00 |
+| `medik8.com` | Refine & Glow 4 Piece Gift Set | Standard | £60.00 | 2026-11-08T06:08:08+00:00 |
+| `spacenk.com` | Advanced Night Restore | Standard | £62.00 | 2026-11-08T06:09:48+00:00 |
+| `spacenk.com` | Advanced Pro-Collagen+ Peptide Cream | Standard | £82.00 | 2026-11-08T06:09:48+00:00 |
+| `spacenk.com` | Daily Radiance Vitamin C SPF30 | Standard | £62.00 | 2026-11-08T06:09:48+00:00 |
+| `spacenk.com` | Hydr8 B5 Intense | Standard | £60.00 | 2026-11-08T06:09:48+00:00 |
+| `spacenk.com` | Press & Glow Daily Exfoliating PHA Tonic with Enzyme Activator | Standard | £34.00 | 2026-11-08T06:09:48+00:00 |
 
 ---
 
