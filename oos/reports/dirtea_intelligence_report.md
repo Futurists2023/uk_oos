@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: DIRTEA
 
-- **Generated:** 2026-11-07 14:58 UTC
+- **Generated:** 2026-11-09 06:42 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 162 (160 In Stock | **2 OOS**)
+- **Total Tracked Variants:** 169 (167 In Stock | **2 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **16**
+- **Removed / Delisted Variants:** **10**
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | DIRTEA Dirtea Mushroom Superblend Coffee 150g | 150g | £23.99 (Discounted -40% (was £39.99)) | - | **Retail Exclusive OOS** | _None_ | **4d 12h (since 2026-11-03 02:23 UTC)** |
+| `hollandandbarrett.com` | DIRTEA Dirtea Mushroom Superblend Coffee 150g | 150g | £23.99 (Discounted -40% (was £39.99)) | - | **Retail Exclusive OOS** | _None_ | **6d 4h (since 2026-11-03 02:23 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -33,22 +33,16 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `dirteaworld.com` | 5 x DIRTEA Coffee Travel Sachets | Standard | £13.48 | 2026-11-07T14:57:46+00:00 |
-| `hollandandbarrett.com` | 3.95 Vieve Protein Water Cherry 500 ml Buy 1 Get 1 Half Price | 500 ml | £2.59 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.24 BEAUTYPRO Beautypro Photon Led Light Therapy Mask 59% Off | Standard | £80.75 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.36 Vieve Strawberry & Rhubarb Protein Water Drinks 6x 500ml | 500ml | £13.45 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.52 Sea Magik Algimud Active Seaweed Face Mask 25g 25% Off | 25g | £4.12 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.6 BEAUTYPRO Beautypro Eye Therapy Under Eye Mask (3 Pairs) 15% Off | Standard | £5.10 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.61 Vieve Watermelon Protein Water 500ml Buy 1 Get 1 Half Price | 500ml | £2.59 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.61 Vieve Watermelon Protein Waters 6x 500ml | 500ml | £13.45 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.64 Sea Magik - Black Clay SOS Buy 1 Get 1 Half Price | Standard | £12.50 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.67 Vitaskin Vitamin C Glow Gel Mask 60ml Buy 1 Get 1 Half Price | 60ml | £15.99 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.72 FIJI Water Fiji Water 1Ltr | Standard | £2.49 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.75 Actiph ActiPH Alkaline Ionised Water 6 x 600ml | 600ml | £7.50 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 4.86 BEAUTYPRO Beautypro Warming Eye Mask (Box Of 5) | Standard | £14.00 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 7th Heaven Glow All Out Gift Set - Face Masks | Standard | £19.99 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | 7th Heaven Pamper Hamper | Standard | £10.00 | 2026-11-07T14:58:29+00:00 |
-| `hollandandbarrett.com` | Minimalist Alpha Arbutin 02% Face Serum 30ml | 30ml | £11.00 | 2026-11-07T14:58:29+00:00 |
+| `dirteaworld.com` | 5 x DIRTEA Coffee Travel Sachets | Standard | £13.48 | 2026-11-09T06:41:14+00:00 |
+| `hollandandbarrett.com` | 3.95 Vieve Protein Water Cherry 500 ml Buy 1 Get 1 Half Price | 500 ml | £2.59 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | 4.36 Vieve Strawberry & Rhubarb Protein Water Drinks 6x 500ml | 500ml | £13.45 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | 4.6 BEAUTYPRO Beautypro Eye Therapy Under Eye Mask (3 Pairs) 15% Off | Standard | £5.10 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | 4.61 Vieve Watermelon Protein Water 500ml Buy 1 Get 1 Half Price | 500ml | £2.59 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | 4.61 Vieve Watermelon Protein Waters 6x 500ml | 500ml | £13.45 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | 4.72 FIJI Water Fiji Water 1Ltr | Standard | £2.49 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | 4.75 Actiph ActiPH Alkaline Ionised Water 6 x 600ml | 600ml | £7.50 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | 4.86 BEAUTYPRO Beautypro Warming Eye Mask (Box Of 5) | Standard | £14.00 | 2026-11-09T06:41:54+00:00 |
+| `hollandandbarrett.com` | Minimalist Alpha Arbutin 02% Face Serum 30ml | 30ml | £11.00 | 2026-11-09T06:41:54+00:00 |
 
 ---
 
@@ -58,5 +52,5 @@
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/dirtea |
 | `dirteaworld.com` | Official Brand DTC (Master Catalog) | Shopify | 146 | 145 | **1** | https://dirteaworld.com |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 6 | 5 | **1** | https://www.hollandandbarrett.com/shop/brands/dirtea/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 13 | 12 | **1** | https://www.hollandandbarrett.com/shop/brands/dirtea/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 10 | 10 | **0** | https://www.lookfantastic.com/c/brands/dirtea/ |

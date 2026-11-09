@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: BLEACH London
 
-- **Generated:** 2026-11-07 06:13 UTC
+- **Generated:** 2026-11-09 06:37 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 50 (49 In Stock | **1 OOS**)
+- **Total Tracked Variants:** 51 (50 In Stock | **1 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **5**
 
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Bleach London Fade To Grey Shampoo | Standard | £8.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 14h (since 2026-10-29 15:28 UTC)** |
+| `cultbeauty.co.uk` | Bleach London Fade To Grey Shampoo | Standard | £8.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 15h (since 2026-10-29 15:28 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -36,11 +36,11 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | BLEACH LONDON Champagne Super Toner Kit | Standard | £10.00 | 2026-11-07T06:13:37+00:00 |
-| `lookfantastic.com` | BLEACH LONDON Glossy Black Permanent Kit | Standard | £12.00 | 2026-11-07T06:13:37+00:00 |
-| `lookfantastic.com` | BLEACH LONDON Natural Copper Permanent Kit | Standard | £12.00 | 2026-11-07T06:13:37+00:00 |
-| `lookfantastic.com` | BLEACH LONDON Silver Shampoo 500ml | 500ml | £9.35 | 2026-11-07T06:13:37+00:00 |
-| `lookfantastic.com` | BLEACH LONDON Super Cool Colour Just Like Honey | Standard | £6.00 | 2026-11-07T06:13:37+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Champagne Super Toner Kit | Standard | £10.00 | 2026-11-09T06:37:09+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Natural Copper Permanent Kit | Standard | £12.00 | 2026-11-09T06:37:09+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Proper Copper Boxed Scc 150ml UK | 150ml | £8.95 | 2026-11-09T06:37:09+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Super Cool Colour Just Like Honey | Standard | £6.00 | 2026-11-09T06:37:09+00:00 |
+| `lookfantastic.com` | BLEACH LONDON Super Natural Kit - Dark Brown | Standard | £10.80 | 2026-11-09T06:37:09+00:00 |
 
 ---
 
@@ -51,5 +51,5 @@ _100% of active products on the official Brand DTC storefront are currently In S
 | `bleachlondon.com` | Official Brand DTC (Master Catalog) | Shopify | 0 | 0 | **0** | https://bleachlondon.com |
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/bleach-london |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 19 | 18 | **1** | https://www.cultbeauty.co.uk/c/brands/bleach-london/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 31 | 31 | **0** | https://www.lookfantastic.com/c/brands/bleach-london/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.lookfantastic.com/c/brands/bleach-london/ |
 | `superdrug.com` | Tier 1 (Major UK Retailer) | Custom | 0 | 0 | **0** | https://www.superdrug.com/brand/bleach-london |

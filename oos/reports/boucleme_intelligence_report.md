@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Bouclème
 
-- **Generated:** 2026-11-07 06:15 UTC
+- **Generated:** 2026-11-09 06:38 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 118 (113 In Stock | **5 OOS**)
+- **Total Tracked Variants:** 118 (112 In Stock | **6 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**3 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **3**
 
@@ -12,14 +12,15 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Bouclème Curl Conditioner 100ml | 100ml | £12.00 (Full Price) | £12.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **2d 5h (since 2026-11-05 01:01 UTC)** |
-| `cultbeauty.co.uk` | Bouclème Curl Cream 300ml | 300ml | £22.00 (Full Price) | £22.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **13d 15h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | Bouclème Super Volumising Foam 200ml | 200ml | £24.00 (Full Price) | £24.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **13d 15h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Bouclème Curl Conditioner 100ml | 100ml | £12.00 (Full Price) | £12.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **4d 5h (since 2026-11-05 01:01 UTC)** |
+| `cultbeauty.co.uk` | Bouclème Curl Cream 300ml | 300ml | £22.00 (Full Price) | £22.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **15d 15h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Bouclème Super Volumising Foam 200ml | 200ml | £24.00 (Full Price) | £24.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **15d 15h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
+| `boucleme.co.uk` | Curls Routine | Standard | £86.00 | 2026-11-09T06:37:42+00:00 |
 | `boucleme.co.uk` | Silk Lined Hoodie | Black / S | £60.00 | 2026-10-24T15:04:38+00:00 |
 | `boucleme.co.uk` | Super Volumising Foam | 60ml | £13.00 | 2026-10-24T15:04:38+00:00 |
 
@@ -53,9 +54,9 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `boucleme.co.uk` | Bodycare Duo | Standard | £24.50 | 2026-11-07T06:14:07+00:00 |
-| `boucleme.co.uk` | Invigorating Body Wash | 300ml | £14.00 | 2026-11-07T06:14:07+00:00 |
-| `boucleme.co.uk` | Nourishing Body Cream | 300ml | £15.40 | 2026-11-07T06:14:07+00:00 |
+| `boucleme.co.uk` | Bodycare Duo | Standard | £24.50 | 2026-11-09T06:37:42+00:00 |
+| `boucleme.co.uk` | Invigorating Body Wash | 300ml | £14.00 | 2026-11-09T06:37:42+00:00 |
+| `boucleme.co.uk` | Nourishing Body Cream | 300ml | £15.40 | 2026-11-09T06:37:42+00:00 |
 
 ---
 
@@ -64,6 +65,6 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/boucleme |
-| `boucleme.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 77 | 75 | **2** | https://boucleme.co.uk |
+| `boucleme.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 77 | 74 | **3** | https://boucleme.co.uk |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 20 | 17 | **3** | https://www.cultbeauty.co.uk/c/brands/boucleme/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 21 | 21 | **0** | https://www.lookfantastic.com/c/brands/boucleme/ |
