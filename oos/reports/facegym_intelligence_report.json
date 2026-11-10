@@ -1,12 +1,12 @@
 {
   "brand": "FACEGYM",
   "brand_slug": "facegym",
-  "generated_at": "2026-11-08T15:16:21+00:00",
+  "generated_at": "2026-11-10T21:59:44+00:00",
   "summary": {
     "monitored_uk_stores": 4,
     "monitored_retail_stockists": 3,
-    "total_listed_skus_variants": 71,
-    "in_stock_skus_variants": 70,
+    "total_listed_skus_variants": 72,
+    "in_stock_skus_variants": 71,
     "out_of_stock_skus_variants": 1,
     "retail_out_of_stock_variants": 1,
     "unforced_retail_outages": 0,
@@ -30,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T21:07:52+00:00",
-      "last_seen_at": "2026-11-08T15:15:49+00:00",
+      "last_seen_at": "2026-11-10T21:59:11+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "15d 0h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 15.0,
+      "duration_label": "17d 6h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 17.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -60,12 +60,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T21:07:52+00:00",
-      "last_seen_at": "2026-11-08T15:15:49+00:00",
+      "last_seen_at": "2026-11-10T21:59:11+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "15d 0h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 15.0,
+      "duration_label": "17d 6h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 17.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -340,6 +340,25 @@
       "undercut_alerts": []
     },
     {
+      "normalized_key": "skin_changer_2_in_1_exfoliating_succinic_acid_pumpkin_extract_essence_toner",
+      "product_family": "FaceGym Skin Changer 2-in-1 Exfoliating Succinic Acid and Pumpkin Extract Essence Toner 100ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
       "normalized_key": "weighted_ball_tension_release_tool",
       "product_family": "FaceGym Weighted Ball Tension Release Tool",
       "dtc_status": "NOT_ON_DTC",
@@ -380,6 +399,32 @@
   ],
   "silent_removals": [],
   "recent_events": [
+    {
+      "id": 18130,
+      "occurred_at": "2026-11-10T21:59:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-skin-changer-2-in-1-exfoliating-succinic-acid-and-pumpkin-extract-essence-toner-100ml_13860382",
+      "product_title": "FaceGym Skin Changer 2-in-1 Exfoliating Succinic Acid and Pumpkin Extract Essence Toner 100ml",
+      "variant_title": "100ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 47.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 18129,
+      "occurred_at": "2026-11-10T21:59:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "FACEGYM",
+      "sku_key": "lookfantastic.com::facegym::p_facegym-lightwear-led-face-mask_17029236",
+      "product_title": "FaceGym LIGHTWEAR LED Face Mask",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 360.0,
+      "new_price": 450.0,
+      "details": "Price changed 360.0 -> 450"
+    },
     {
       "id": 14280,
       "occurred_at": "2026-11-04T12:12:32+00:00",
@@ -1002,32 +1047,6 @@
       "event_type": "NEW_IN_STOCK",
       "old_price": null,
       "new_price": 109.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 3132,
-      "occurred_at": "2026-10-26T21:08:07+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "FACEGYM",
-      "sku_key": "lookfantastic.com::facegym::p_facegym-youthful-active-roller-crystallised-microneedles-niacinamide_13903578",
-      "product_title": "FaceGym Youthful Active Roller Crystallised Microneedles - Niacinamide",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 49.5,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 3131,
-      "occurred_at": "2026-10-26T21:08:07+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "FACEGYM",
-      "sku_key": "lookfantastic.com::facegym::p_facegym-active-blast-instant-release-collagen-booster-spheres-7-days_13798786",
-      "product_title": "FaceGym Active Blast Instant Release Collagen Booster Spheres - 7 Days",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 46.4,
       "details": "Initial discovery"
     }
   ]
