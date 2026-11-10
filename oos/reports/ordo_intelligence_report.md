@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: ORDO
 
-- **Generated:** 2026-11-07 20:22 UTC
+- **Generated:** 2026-11-10 02:48 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 826 (257 In Stock | **569 OOS**)
+- **Total Tracked Variants:** 827 (256 In Stock | **571 OOS**)
 - **Retailer Out-of-Stock Alerts:** **8** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **19**
+- **Removed / Delisted Variants:** **20**
 
 ---
 
@@ -12,14 +12,14 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | ORDO Hydro Sonic Water Flosser Charcoal Grey | Standard | £59.99 (Full Price) | £37.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **10d 14h (since 2026-10-28 05:47 UTC)** |
-| `hollandandbarrett.com` | ORDO Ordo Sonic + Charcoal Grey | Standard | £59.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 8h (since 2026-11-03 12:04 UTC)** |
-| `hollandandbarrett.com` | ORDO Ordo Sonic + Rose Gold | Standard | £59.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 8h (since 2026-11-03 12:04 UTC)** |
-| `hollandandbarrett.com` | ORDO Sonic Brush Heads White Silver x 2 | Standard | £10.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 14h (since 2026-10-28 05:47 UTC)** |
-| `hollandandbarrett.com` | ORDO Sonic Brush Heads White Silver x 4 | Standard | £15.00 (Discounted -25% (was £20.00)) | - | **Retail Exclusive OOS** | _None_ | **1d 22h (since 2026-11-05 22:02 UTC)** |
-| `hollandandbarrett.com` | ORDO Sonic Edge Charcoal Grey | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 8h (since 2026-11-03 12:04 UTC)** |
-| `hollandandbarrett.com` | ORDO Sonic Edge Paradise Pink | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **10d 14h (since 2026-10-28 05:47 UTC)** |
-| `hollandandbarrett.com` | ORDO Squishmallows Sonic Kids Rechargeable Toothbrush - Patty | Standard | £29.99 (Discounted -33% (was £44.99)) | - | **Retail Exclusive OOS** | _None_ | **1d 22h (since 2026-11-05 22:02 UTC)** |
+| `hollandandbarrett.com` | ORDO Hydro Sonic Water Flosser Charcoal Grey | Standard | £59.99 (Full Price) | £37.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **12d 21h (since 2026-10-28 05:47 UTC)** |
+| `hollandandbarrett.com` | ORDO Ordo Sonic + Charcoal Grey | Standard | £59.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 14h (since 2026-11-03 12:04 UTC)** |
+| `hollandandbarrett.com` | ORDO Ordo Sonic + Rose Gold | Standard | £59.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 14h (since 2026-11-03 12:04 UTC)** |
+| `hollandandbarrett.com` | ORDO Sonic Brush Heads White Silver x 2 | Standard | £10.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **12d 21h (since 2026-10-28 05:47 UTC)** |
+| `hollandandbarrett.com` | ORDO Sonic Brush Heads White Silver x 4 | Standard | £15.00 (Discounted -25% (was £20.00)) | - | **Retail Exclusive OOS** | _None_ | **4d 4h (since 2026-11-05 22:02 UTC)** |
+| `hollandandbarrett.com` | ORDO Sonic Edge Charcoal Grey | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **6d 14h (since 2026-11-03 12:04 UTC)** |
+| `hollandandbarrett.com` | ORDO Sonic Edge Paradise Pink | Standard | £15.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **12d 21h (since 2026-10-28 05:47 UTC)** |
+| `hollandandbarrett.com` | ORDO Squishmallows Sonic Kids Rechargeable Toothbrush - Patty | Standard | £29.99 (Discounted -33% (was £44.99)) | - | **Retail Exclusive OOS** | _None_ | **4d 4h (since 2026-11-05 22:02 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -27,10 +27,12 @@
 |---|---|---|---|---|
 | `ordolife.com` | Brush + Floss Bundle: Sonic+ & Hydro Sonic Flosser, Free Heads for a Year | Rose Gold | £90.00 | 2026-11-03T12:04:15+00:00 |
 | `ordolife.com` | ORDO USB Flash Drive - 32GB | Standard | £9.99 | 2026-10-28T05:46:35+00:00 |
+| `ordolife.com` | Ordo Sonic Brush Head Charcoal Grey — Stone 4x | Standard | £10.00 | 2026-11-10T02:47:02+00:00 |
+| `ordolife.com` | Ordo Sonic Brush Head Charcoal Grey — Stone 8x | Charcoal Grey | Stone | £19.50 | 2026-11-10T02:47:02+00:00 |
 | `ordolife.com` | Ordo Sonic Brush Head White — Snow 1x | Standard | £5.00 | 2026-10-28T05:46:35+00:00 |
+| `ordolife.com` | Ordo Sonic Brush Heads - Wicked Elphaba Thropp - Sonic Lite - 4 Pack | Standard | £12.99 | 2026-11-10T02:47:02+00:00 |
 | `ordolife.com` | Ordo Sonic Edge Rechargeable Toothbrush - Charcoal | Standard | £9.99 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic Edge Rechargeable Toothbrush - Paradise Pink | Standard | £9.99 | 2026-10-28T05:46:35+00:00 |
-| `ordolife.com` | Ordo Sonic Kids Rechargeable Toothbrush - Squishmallows Zozo | Standard | £25.00 | 2026-11-07T20:21:53+00:00 |
 | `ordolife.com` | Ordo Sonic+ Toothbrush & {access}ories Handle - Apricot | Ball / Diamond / Small | £109.99 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic+ Toothbrush & {access}ories Handle - Apricot | Ball / Diamond / Medium | £109.99 | 2026-10-28T05:46:35+00:00 |
 | `ordolife.com` | Ordo Sonic+ Toothbrush & {access}ories Handle - Apricot | Ball / Diamond / Large | £109.99 | 2026-10-28T05:46:35+00:00 |
@@ -601,25 +603,26 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 4.45 Dr Organic Royal Jelly Leg & Vein Cream 200ml 30% Off | 200ml | £8.39 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 4.56 Noughty Wave Hello Curl Scrunching Jelly 200ml 25% Off | 200ml | £6.74 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper 30% Off | Standard | £3.49 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 4.67 Noughty Detox Dynamo Clarifying Shampoo 250ml 25% Off | 250ml | £6.74 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 4.68 Fushi Organic Shea Butter Original 200g | 200g | £21.00 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 4.75 Dr Organic Manuka Honey Hand Cream 125ml 30% Off | 125ml | £5.24 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 4.79 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 5 Margaret Dabbs London Crystal Nail File & Cover | Standard | £20.00 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 5 Nursem Caring Hand Cream 75ml | 75ml | £9.99 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 5 Nursem Unfragranced Caring Hand Cream 300ml | 300ml | £19.99 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | 5 Nursem Unfragranced Caring Hand Cream 75ml | 75ml | £9.99 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | Margaret Dabbs London PURE Cracked Heel Treatment Balm 45ml | 45ml | £18.00 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | Margaret Dabbs London PURE Repairing Hand Cream 75 ml | 75 ml | £18.00 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | ORDO Mega Bundle Rose Gold | Standard | £149.98 | 2026-11-07T20:22:31+00:00 |
-| `hollandandbarrett.com` | ORDO Mega Bundle White Silver | Standard | £149.98 | 2026-11-07T20:22:31+00:00 |
-| `lookfantastic.com` | ORDO Sonic Brush Heads - White/Silver — Snow - 4 Pack | Standard | £18.00 | 2026-11-07T20:22:47+00:00 |
-| `lookfantastic.com` | ORDO Sonic+ Electric Toothbrush - White/Silver | Standard | £60.00 | 2026-11-07T20:22:47+00:00 |
-| `lookfantastic.com` | ORDO Sonic+ Toothbrush & Charging Travel Case - Rose Gold | Standard | £60.00 | 2026-11-07T20:22:47+00:00 |
-| `lookfantastic.com` | ORDO Sonic+ Toothbrush & Charging Travel Case - White/Silver | Standard | £62.00 | 2026-11-07T20:22:47+00:00 |
+| `hollandandbarrett.com` | 4.54 Noughty Hello Curls Define and Reshape Curl Primer 200ml Buy 1 Get 1 Half Price | 200ml | £9.99 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.56 Noughty Wave Hello Curl Scrunching Jelly 200ml 25% Off | 200ml | £6.74 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.6 Noughty Get Set Grow Thickening Shampoo 250ml Buy 1 Get 1 Half Price | 250ml | £8.99 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper 30% Off | Standard | £3.49 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.67 Noughty Detox Dynamo Clarifying Shampoo 250ml 25% Off | 250ml | £6.74 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.68 Fushi Organic Shea Butter Original 200g | 200g | £21.00 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off | 567g | £33.49 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.75 Nature Spell Rosemary Oil for Hair 150ml Buy 1 Get 1 Half Price | 150ml | £8.00 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 4.79 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 5 Margaret Dabbs London Crystal Nail File & Cover | Standard | £20.00 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 5 Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml | 15ml | £15.00 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | 5 New Leaf Products Iodine - Potassium Iodine 500mcg per serving 180 Tablets 14% Off | 180 Tablets | £10.36 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | Margaret Dabbs London PURE Cracked Heel Treatment Balm 45ml | 45ml | £18.00 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | Margaret Dabbs London PURE Repairing Hand Cream 75 ml | 75 ml | £18.00 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | ORDO Mega Bundle Rose Gold | Standard | £149.98 | 2026-11-10T02:47:47+00:00 |
+| `hollandandbarrett.com` | ORDO Mega Bundle White Silver | Standard | £149.98 | 2026-11-10T02:47:47+00:00 |
+| `lookfantastic.com` | ORDO Sonic Brush Heads - White/Silver — Snow - 4 Pack | Standard | £18.00 | 2026-11-10T02:48:06+00:00 |
+| `lookfantastic.com` | ORDO Sonic+ Electric Toothbrush - White/Silver | Standard | £60.00 | 2026-11-10T02:48:06+00:00 |
+| `lookfantastic.com` | ORDO Sonic+ Toothbrush & Charging Travel Case - Rose Gold | Standard | £60.00 | 2026-11-10T02:48:06+00:00 |
+| `lookfantastic.com` | ORDO Sonic+ Toothbrush & Charging Travel Case - White/Silver | Standard | £62.00 | 2026-11-10T02:48:06+00:00 |
 
 ---
 
@@ -628,6 +631,6 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/ordo |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 47 | 39 | **8** | https://www.hollandandbarrett.com/shop/brands/ordo/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 48 | 40 | **8** | https://www.hollandandbarrett.com/shop/brands/ordo/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 6 | 6 | **0** | https://www.lookfantastic.com/c/brands/ordo/ |
-| `ordolife.com` | Official Brand DTC (Master Catalog) | Shopify | 773 | 212 | **561** | https://ordolife.com |
+| `ordolife.com` | Official Brand DTC (Master Catalog) | Shopify | 773 | 210 | **563** | https://ordolife.com |

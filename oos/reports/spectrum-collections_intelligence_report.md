@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-11-07 23:44 UTC
+- **Generated:** 2026-11-10 02:52 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 93 (81 In Stock | **12 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -35,7 +35,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **All About The Brush  6 Piece Flawless Face Set** | ✅ £24.99 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £19.99 (-20% vs RRP) | `boots.com` |
+| **All About The Brush  6 Piece Flawless Face Set** | ✅ £24.99 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £18.74 (-25% vs RRP) | `boots.com` |
 | **Spectrum Collections Dual Ended D02 'The Cheek' Contour and Blush Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Dual Ended D28 'The Complexion' Bronzer and Base Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Dual Ended D30 'The Air Brush' Powder and Complexion Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
@@ -56,7 +56,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-07T23:44:00+00:00 |
+| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-10T02:52:28+00:00 |
 
 ---
 
