@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Zelens
 
-- **Generated:** 2026-11-07 23:48 UTC
+- **Generated:** 2026-11-10 12:45 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 86 (58 In Stock | **28 OOS**)
+- **Total Tracked Variants:** 85 (58 In Stock | **27 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **1**
+- **Removed / Delisted Variants:** **2**
 
 ---
 
@@ -26,11 +26,10 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `zelens.com` | Hyaluron Intense Travel - Hydro-Plumping Serum | 10ml | £27.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Instant Recharge Travel - Renewal Mask | 15ml | £32.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Lens Ready 聚光全能粉底液即将上线，敬请期待 | Standard | £72.00 | 2026-10-28T15:09:35+00:00 |
-| `zelens.com` | Lip Enhancer | 5ml | £35.00 | 2026-10-28T15:09:35+00:00 |
+| `zelens.com` | Lip Enhancer with CM5S™ | 5ml | £35.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Melatonin B12 Travel - Advanced Repair Serum | 10ml | £47.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | PHA+ - Resurfacing Essence | Standard | £52.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | PHA+ Travel - Resurfacing Essence | 30ml | £17.00 | 2026-10-28T15:09:35+00:00 |
-| `zelens.com` | Peptide Complex - Firming Cream 30ml | 30ml | £84.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Power A Travel - Retexturising & Renewing | 10ml | £47.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Power B Travel - Revitalising & Clarifying | 10ml | £41.00 | 2026-10-28T15:09:35+00:00 |
 | `zelens.com` | Power C Travel - Collagen-boosting & Brightening | 10ml | £47.00 | 2026-10-28T15:09:35+00:00 |
@@ -58,7 +57,8 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `zelens.com` | The Powers Discovery Set | Standard | £160.00 | 2026-11-07T23:48:17+00:00 |
+| `lookfantastic.com` | Zelens Acqua Shiso Hydrating Gel Cream 50ml | 50ml | £52.50 | 2026-11-10T12:45:03+00:00 |
+| `zelens.com` | The Powers Discovery Set | Standard | £160.00 | 2026-11-10T12:44:23+00:00 |
 
 ---
 
@@ -67,5 +67,5 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 0 | 0 | **0** | https://www.cultbeauty.co.uk/c/brands/zelens/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 21 | 21 | **0** | https://www.lookfantastic.com/c/brands/zelens/ |
-| `zelens.com` | Official Brand DTC (Master Catalog) | Shopify | 65 | 37 | **28** | https://zelens.com |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 20 | 20 | **0** | https://www.lookfantastic.com/c/brands/zelens/ |
+| `zelens.com` | Official Brand DTC (Master Catalog) | Shopify | 65 | 38 | **27** | https://zelens.com |
