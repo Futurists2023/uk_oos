@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-11-10 02:52 UTC
+- **Generated:** 2026-11-13 01:11 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 93 (81 In Stock | **12 OOS**)
+- **Total Tracked Variants:** 93 (82 In Stock | **11 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **1**
 
@@ -19,7 +19,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `spectrumcollections.com` | Ace in Beauty 4 Piece Brush Set | Standard | £19.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Four of a Kind 4 Piece Sponge and Puff Set | Standard | £14.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Gilded Glamour 3 Piece Luxe Dual Ended Makeup Brush Set | Standard | £49.99 | 2026-10-28T05:50:59+00:00 |
-| `spectrumcollections.com` | Gilded Glamour 6 Piece Luxe Aluminium Makeup Brush Set | Standard | £59.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Grand Brush Hotel Carry on Complexion 4 Piece Puff and Sponge Set | Standard | £14.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Grand Brush Hotel Mini Bar 4 Piece Mini Brush Set | Standard | £19.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Grand Brush Hotel The Master Suite 9 Piece Brush, Sponge and Puff Set | Standard | £69.99 | 2026-10-28T05:50:59+00:00 |
@@ -56,7 +55,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-10T02:52:28+00:00 |
+| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-13T01:11:01+00:00 |
 
 ---
 
@@ -67,4 +66,4 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/spectrum-collections |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 18 | 18 | **0** | https://www.cultbeauty.co.uk/c/brands/spectrum-collections/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/spectrum-collections/ |
-| `spectrumcollections.com` | Official Brand DTC (Master Catalog) | Shopify | 48 | 36 | **12** | https://spectrumcollections.com |
+| `spectrumcollections.com` | Official Brand DTC (Master Catalog) | Shopify | 48 | 37 | **11** | https://spectrumcollections.com |

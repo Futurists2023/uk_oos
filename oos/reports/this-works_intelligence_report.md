@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: This Works
 
-- **Generated:** 2026-11-10 02:53 UTC
+- **Generated:** 2026-11-13 01:12 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 174 (169 In Stock | **5 OOS**)
+- **Total Tracked Variants:** 176 (171 In Stock | **5 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **5**
+- **Removed / Delisted Variants:** **4**
 
 ---
 
@@ -12,8 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Perfect All Over Kit | Standard | £9.00 (Discounted -40% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 21h (since 2026-10-28 05:53 UTC)** |
-| `spacenk.com` | Sleep Ritual | Standard | £18.00 (Discounted -40% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 21h (since 2026-10-28 05:53 UTC)** |
+| `spacenk.com` | Perfect All Over Kit | Standard | £9.00 (Discounted -40% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 19h (since 2026-10-28 05:53 UTC)** |
+| `spacenk.com` | Sleep Ritual | Standard | £18.00 (Discounted -40% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 19h (since 2026-10-28 05:53 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -51,11 +51,10 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | This Works Deep Sleep Beauty Oil 150ml | 150ml | £36.00 | 2026-11-10T02:53:28+00:00 |
-| `spacenk.com` | In Transit Camera Close-up | Standard | £30.40 | 2026-11-10T02:53:56+00:00 |
-| `thisworks.com` | black spice & cedar candle free gift | Standard | £28.00 | 2026-11-10T02:52:46+00:00 |
-| `thisworks.com` | neroli & sweet orange candle | Standard | £32.00 | 2026-11-10T02:52:46+00:00 |
-| `thisworks.com` | perfect all over kit | 2 x 20ml | £15.00 | 2026-11-10T02:52:46+00:00 |
+| `lookfantastic.com` | This Works Deep Sleep Beauty Oil 150ml | 150ml | £36.00 | 2026-11-13T01:11:59+00:00 |
+| `thisworks.com` | black spice & cedar candle free gift | Standard | £28.00 | 2026-11-13T01:11:17+00:00 |
+| `thisworks.com` | neroli & sweet orange candle | Standard | £32.00 | 2026-11-13T01:11:17+00:00 |
+| `thisworks.com` | perfect all over kit | 2 x 20ml | £15.00 | 2026-11-13T01:11:17+00:00 |
 
 ---
 
@@ -65,5 +64,5 @@
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/this-works |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 31 | 31 | **0** | https://www.lookfantastic.com/c/brands/this-works/ |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 36 | 34 | **2** | https://www.spacenk.com/uk/brands/t/this-works |
-| `thisworks.com` | Official Brand DTC (Master Catalog) | Shopify | 107 | 104 | **3** | https://thisworks.com |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 37 | 35 | **2** | https://www.spacenk.com/uk/brands/t/this-works |
+| `thisworks.com` | Official Brand DTC (Master Catalog) | Shopify | 108 | 105 | **3** | https://thisworks.com |
