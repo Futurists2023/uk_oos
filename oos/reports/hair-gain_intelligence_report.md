@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Hair Gain
 
-- **Generated:** 2026-11-10 22:01 UTC
+- **Generated:** 2026-11-13 20:02 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 134 (134 In Stock | **0 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **12**
+- **Removed / Delisted Variants:** **14**
 
 ---
 
@@ -45,18 +45,20 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 18+ Bloom Creatine Stick 10 Sachets | 10 Sachets | £9.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | 4.8 ARTAH Digest & Debloat 100ml | 100ml | £32.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | ARTAH Advanced Multi-Nutrient 120 Capsules | 120 Capsules | £60.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | ARTAH Core Pregnancy+ | Standard | £36.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | ARTAH Core Prenatal+ 90 Capsules | 90 Capsules | £36.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | ARTAH Essential Magnesium 60 Capsules | 60 Capsules | £24.00 | 2026-11-10T22:00:57+00:00 |
-| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-10T22:00:57+00:00 |
+| `hollandandbarrett.com` | 18+ Bloom Creatine Stick 10 Sachets | 10 Sachets | £9.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | 18+ MIYA Nutrition Purest Creatine 5000 mg 150 g | 150 g | £15.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | 4.8 ARTAH Digest & Debloat 100ml | 100ml | £32.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | ARTAH Advanced Multi-Nutrient 120 Capsules | 120 Capsules | £60.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | ARTAH Core Pregnancy+ | Standard | £36.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | ARTAH Core Prenatal+ 90 Capsules | 90 Capsules | £36.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | ARTAH Essential Magnesium 60 Capsules | 60 Capsules | £24.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | ARTAH Essential Omegas 60 Capsules | 60 Capsules | £32.00 | 2026-11-13T20:01:47+00:00 |
+| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-13T20:01:47+00:00 |
 
 ---
 

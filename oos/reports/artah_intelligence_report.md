@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Artah
 
-- **Generated:** 2026-11-10 21:56 UTC
+- **Generated:** 2026-11-13 19:57 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 166 (166 In Stock | **0 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -27,7 +27,6 @@ _100% of active products on the official Brand DTC storefront are currently In S
 | **ARTAH Core Prenatal+** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **ARTAH Deep Detox** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **Digest + Debloat** | ✅ £32.00 | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
-| **ARTAH Enhanced Synbiotic** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **ARTAH Essential Creatine 120g** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **ARTAH Essential D3/K2** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **ARTAH Essential Fibre+ 200g** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
@@ -38,6 +37,7 @@ _100% of active products on the official Brand DTC storefront are currently In S
 | **Sleep Tonic** | ✅ £32.00 | **3/3** (100%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **ARTAH Core Metabolic+** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **ARTAH Enhanced NAD+ Complex** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
+| **ARTAH Enhanced Synbiotic** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 
 ---
 
@@ -45,28 +45,28 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `artah.co` | Metabolism Foundations | Bundle | £82.80 | 2026-11-10T21:56:03+00:00 |
-| `artah.co` | Metabolism Foundations | Quarterly Bundle | £248.40 | 2026-11-10T21:56:03+00:00 |
-| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4 Wild Nutrition Food Grown Pregnancy & New Mother Multi for Women 90 Capsules 3 for 2 Mix & Match | 90 Capsules | £42.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.42 Wild Nutrition Food Grown Fertility Support for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £42.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.44 Wild Nutrition Energy Support 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £31.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.53 Wild Nutrition Food Grown Daily Multi Nutrient for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.50 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.6 Wild Nutrition Food Grown Daily Multi Nutrient 45+for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.6 Wild Nutrition Magnesium 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £21.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.7 Philip Kingsley Elasticizer Extreme 150ml | 150ml | £41.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.74 Wild Nutrition KSM-66 Ashwagandha Plus 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £26.50 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.78 Philip Kingsley Elasticizer 150ml | 150ml | £41.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 5 Wild Nutrition Immune Support: 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £37.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | 5 Wild Nutrition Zinc Plus Blended with Vitamins B1, B2 & B6 30 Capsules. 24% Off | 30 Capsules | £12.54 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | Wild Nutrition Food-Grown Biotic Gummies for Children Berry 60 Gummies 3 for 2 Mix & Match | Standard | £20.00 | 2026-11-10T21:56:40+00:00 |
-| `hollandandbarrett.com` | Wild Nutrition Food-Grown Vitamin D 30 Capsules | 30 Capsules | £18.00 | 2026-11-10T21:56:40+00:00 |
+| `artah.co` | Metabolism Foundations | Bundle | £82.80 | 2026-11-13T19:56:52+00:00 |
+| `artah.co` | Metabolism Foundations | Quarterly Bundle | £248.40 | 2026-11-13T19:56:52+00:00 |
+| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4 Wild Nutrition Food Grown Pregnancy & New Mother Multi for Women 90 Capsules 3 for 2 Mix & Match | 90 Capsules | £42.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.42 Wild Nutrition Food Grown Fertility Support for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £42.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.44 Wild Nutrition Energy Support 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £31.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.53 Wild Nutrition Food Grown Daily Multi Nutrient for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.50 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.6 Wild Nutrition Food Grown Daily Multi Nutrient 45+for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.6 Wild Nutrition Magnesium 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £21.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.7 Philip Kingsley Elasticizer Extreme 150ml | 150ml | £41.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.74 Wild Nutrition KSM-66 Ashwagandha Plus 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £26.50 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.78 Philip Kingsley Elasticizer 150ml | 150ml | £41.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 5 Wild Nutrition Immune Support: 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £37.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | 5 Wild Nutrition Zinc Plus Blended with Vitamins B1, B2 & B6 30 Capsules. 24% Off | 30 Capsules | £12.54 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | Wild Nutrition Food-Grown Biotic Gummies for Children Berry 60 Gummies 3 for 2 Mix & Match | Standard | £20.00 | 2026-11-13T19:57:30+00:00 |
+| `hollandandbarrett.com` | Wild Nutrition Food-Grown Vitamin D 30 Capsules | 30 Capsules | £18.00 | 2026-11-13T19:57:30+00:00 |
 
 ---
 

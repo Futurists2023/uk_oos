@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Hair by Sam McKnight
 
-- **Generated:** 2026-11-10 22:03 UTC
+- **Generated:** 2026-11-13 20:04 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 210 (200 In Stock | **10 OOS**)
-- **Retailer Out-of-Stock Alerts:** **5** (**3 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **16**
+- **Total Tracked Variants:** 209 (196 In Stock | **13 OOS**)
+- **Retailer Out-of-Stock Alerts:** **5** (**2 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **22**
 
 ---
 
@@ -12,21 +12,24 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Cool Girl Volume Edit | Standard | £40.00 (Below DTC RRP -27% (DTC £55.00)) | £55.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **17d 6h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Easy Up-Do Texture Spray | Standard | £29.00 (Below DTC RRP -26% (DTC £39.00)) | £39.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk` | **17d 6h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Hair by Sam McKnight Cool Girl Barely There Texture Hair Mist 50ml | 50ML | £14.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **17d 6h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Hair by Sam McKnight Lazy Girl Dry Shampoo 50ml | 50ML | £14.00 (Below DTC RRP -59% (DTC £34.00)) | £34.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **17d 6h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Perfect Mess Matt Sculpting Clay | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **17d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Cool Girl Volume Edit | Standard | £40.00 (Full Price) | £36.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **20d 4h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Easy Up-Do Texture Spray | Standard | £29.00 (Below DTC RRP -15% (DTC £34.20)) | £34.20 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk` | **20d 4h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Hair by Sam McKnight Cool Girl Barely There Texture Hair Mist 50ml | 50ML | £14.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 4h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Hair by Sam McKnight Lazy Girl Dry Shampoo 50ml | 50ML | £14.00 (Below DTC RRP -50% (DTC £28.05)) | £28.05 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk`, `lookfantastic.com` | **20d 4h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Perfect Mess Matt Sculpting Clay | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 4h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
 | `sammcknight.com` | Cool Girl Travel Bag | Large | £33.00 | 2026-10-24T15:04:38+00:00 |
-| `sammcknight.com` | Cool Girl Volume Cleanse Mini | Standard | £23.00 | 2026-10-24T15:04:38+00:00 |
-| `sammcknight.com` | Cool Girl Volume Cleanse Shampoo | 100ml | £23.00 | 2026-11-04T12:14:36+00:00 |
+| `sammcknight.com` | Cool Girl Volume Cleanse Mini | Standard | £20.70 | 2026-10-24T15:04:38+00:00 |
+| `sammcknight.com` | Cool Girl Volume Cleanse Shampoo | 100ml | £20.70 | 2026-11-04T12:14:36+00:00 |
 | `sammcknight.com` | Cool Girl Volume Cleanse Shampoo – Full & Travel Size Duo | Full & Travel Size Duo | £62.00 | 2026-10-24T15:04:38+00:00 |
+| `sammcknight.com` | Cool Girl Volume Edit | Standard | £36.00 | 2026-11-13T20:02:20+00:00 |
+| `sammcknight.com` | Super Stylers Gift Set | Standard | £44.69 | 2026-11-13T20:02:20+00:00 |
 | `sammcknight.com` | THE SKIN & HAIR HYDRATION EDIT | Hydration Edit | £86.00 | 2026-10-24T15:04:38+00:00 |
+| `sammcknight.com` | The Big Set | The Big Set | £36.80 | 2026-11-13T20:02:20+00:00 |
 
 ---
 
@@ -34,26 +37,25 @@
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **COOL CURLS REFRESH & REVIVE MIST** | ✅ £39.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £29.00 (-26% vs RRP); `lookfantastic.com` £23.20 (-41% vs RRP); `spacenk.com` £29.00 (-26% vs RRP) | _All Stockists_ |
+| **COOL CURLS REFRESH & REVIVE MIST** | ✅ £28.50 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £23.20 (-19% vs RRP) | _All Stockists_ |
 | **Hair By Sam McKnight Cool Girl Body Volumising & Plumping Cream 150ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **Hair by Sam McKnight Cool Girl Volume Blow Dry Foam 150ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
-| **Cool Girl Volume Edit** | ✅ £55.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | **`spacenk.com`** | `cultbeauty.co.uk` £40.00 (-27% vs RRP); `lookfantastic.com` £30.00 (-45% vs RRP); `spacenk.com` £40.00 (-27% vs RRP) | _All Stockists_ |
+| **Cool Girl Volume Edit** | ⚠️ OOS (£36.00) | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | **`spacenk.com`** | `lookfantastic.com` £30.00 (-17% vs RRP) | _All Stockists_ |
 | **Hair By Sam McKnight Happy Endings Nourishing Balm 80ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
-| **Lazy Girl Dry Shampoo** | ✅ £34.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £26.00 (-24% vs RRP); `lookfantastic.com` £26.00 (-24% vs RRP); `spacenk.com` £26.00 (-24% vs RRP) | _All Stockists_ |
-| **Light Cleanse Hair and Scalp Shampoo** | ✅ £39.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £29.00 (-26% vs RRP); `lookfantastic.com` £16.00 (-59% vs RRP); `spacenk.com` £16.00 (-59% vs RRP) | _All Stockists_ |
-| **Hair By Sam McKnight Love Me Do Nourishing Oil 50ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
-| **Sundaze Sea Spray** | ✅ £36.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £28.00 (-22% vs RRP); `lookfantastic.com` £22.40 (-38% vs RRP); `spacenk.com` £28.00 (-22% vs RRP) | _All Stockists_ |
+| **Lazy Girl Dry Shampoo** | ✅ £28.05 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
+| **Light Cleanse Hair and Scalp Shampoo** | ✅ £30.40 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `spacenk.com` £16.00 (-47% vs RRP) | _All Stockists_ |
+| **Hair by Sam McKnight Pure Genius 98% Natural Scalp Restoring Oil 30ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
+| **Stronger Love Rejuvenate & Repair Spray** | ✅ £33.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
+| **Sundaze Sea Spray** | ✅ £30.60 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £28.00 (-8% vs RRP); `lookfantastic.com` £22.40 (-27% vs RRP); `spacenk.com` £28.00 (-8% vs RRP) | _All Stockists_ |
 | **Hair By Sam McKnight The Big Set** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
+| **Hair by Sam McKnight Bigger Love Treatment Mask** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **Hair By Sam McKnight Cool Girl Superlift Root Boost Volumising Spray Mini 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **Easy Up-Do Texture Spray** | ✅ £39.00 | **2/3** (67%) | `cultbeauty.co.uk` | **`spacenk.com`** | `cultbeauty.co.uk` £29.00 (-26% vs RRP); `spacenk.com` £29.00 (-26% vs RRP) | `lookfantastic.com` |
+| **Easy Up-Do Texture Spray** | ✅ £34.20 | **2/3** (67%) | `cultbeauty.co.uk` | **`spacenk.com`** | `cultbeauty.co.uk` £29.00 (-15% vs RRP); `spacenk.com` £29.00 (-15% vs RRP) | `lookfantastic.com` |
 | **Hair By Sam McKnight Lazy Girl Biodegradable Hair Cleanse Cloths (20 Wipes)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
+| **Hair By Sam McKnight Love Me Do Nourishing Oil 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
 | **Hair By Sam McKnight Modern Hairspray Multi-Tasking Styling Mist 250ml** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **Hair by Sam McKnight Modern Hairspray Multi-Tasking Styling Mist Mini 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **Hair by Sam McKnight Pure Genius 98% Natural Scalp Restoring Oil 30ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **Hair By Sam McKnight Save The Do Heat Protection Spray 150ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **Stronger Love Rejuvenate & Repair Spray** | ✅ £44.00 | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £32.00 (-27% vs RRP); `spacenk.com` £32.00 (-27% vs RRP) | `cultbeauty.co.uk` |
 | **Hair By Sam McKnight The Fragrance with Benefits 75ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **The Style Edit** | ✅ £55.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £40.00 (-27% vs RRP); `lookfantastic.com` £40.00 (-27% vs RRP) | `spacenk.com` |
 
 ---
 
@@ -61,22 +63,28 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | Hair By Sam McKnight Light Nourish Conditioner 200ml | 200ml | £29.00 | 2026-11-10T22:01:49+00:00 |
-| `cultbeauty.co.uk` | Hair By Sam McKnight Rich Cleanse Nourishing Shampoo 250ml | 250ml | £29.00 | 2026-11-10T22:01:49+00:00 |
-| `cultbeauty.co.uk` | Hair By Sam McKnight Rich Nourish Conditioner 200ml | 200ml | £29.00 | 2026-11-10T22:01:49+00:00 |
-| `cultbeauty.co.uk` | Hair by Sam McKnight Deeper Love 5-minute Intense Treatment Mask 50ml | 50ml | £22.00 | 2026-11-10T22:01:49+00:00 |
-| `cultbeauty.co.uk` | Hair by Sam McKnight Light Cleanse Hair and Scalp Shampoo 100ml | 100ml | £16.00 | 2026-11-10T22:01:49+00:00 |
-| `cultbeauty.co.uk` | Hair by Sam McKnight Light Nourish Conditioner 75ml | 75ml | £16.00 | 2026-11-10T22:01:49+00:00 |
-| `cultbeauty.co.uk` | Hair by Sam McKnight Stronger Love Rejuvenate & Repair Spray | Standard | £32.00 | 2026-11-10T22:01:49+00:00 |
-| `cultbeauty.co.uk` | Hair by Sam McKnight Sundaze Sea Spray Mini 50ml | 50ml | £14.00 | 2026-11-10T22:01:49+00:00 |
-| `lookfantastic.com` | Hair By Sam McKnight Bigger Love Cool Girl Volumising Treatment Mask 50ml | 50ml | £22.00 | 2026-11-10T22:02:07+00:00 |
-| `lookfantastic.com` | Hair By Sam McKnight Cool Girl Volume Nourish Conditioner 200ml | 200ml | £29.00 | 2026-11-10T22:02:07+00:00 |
-| `lookfantastic.com` | Hair By Sam McKnight Light Cleanse Hair and Scalp Shampoo 250ml | 250ml | £29.00 | 2026-11-10T22:02:07+00:00 |
-| `lookfantastic.com` | Hair by Sam McKnight Cool Girl Volume Cleanse and Nourish Bundle (Worth £58) | Standard | £52.20 | 2026-11-10T22:02:07+00:00 |
-| `lookfantastic.com` | Hair by Sam McKnight Light Cleanse and Nourish Bundle (Worth £58) | Standard | £52.20 | 2026-11-10T22:02:07+00:00 |
-| `lookfantastic.com` | Hair by Sam McKnight Rich Cleanse Nourishing Shampoo 100ml | 100ml | £16.00 | 2026-11-10T22:02:07+00:00 |
-| `lookfantastic.com` | Hair by Sam McKnight Rich Nourish Conditioner 75ml | 75ml | £16.00 | 2026-11-10T22:02:07+00:00 |
-| `spacenk.com` | Crème Cleanse | Standard | £34.00 | 2026-11-10T22:03:16+00:00 |
+| `cultbeauty.co.uk` | Hair By Sam McKnight Light Nourish Conditioner 200ml | 200ml | £29.00 | 2026-11-13T20:02:39+00:00 |
+| `cultbeauty.co.uk` | Hair By Sam McKnight Rich Cleanse Nourishing Shampoo 250ml | 250ml | £29.00 | 2026-11-13T20:02:39+00:00 |
+| `cultbeauty.co.uk` | Hair By Sam McKnight Rich Nourish Conditioner 200ml | 200ml | £29.00 | 2026-11-13T20:02:39+00:00 |
+| `cultbeauty.co.uk` | Hair by Sam McKnight Cool Girl Volume Cleanse and Cool Girl Volume Nourish Bundle | Standard | £56.00 | 2026-11-13T20:02:39+00:00 |
+| `cultbeauty.co.uk` | Hair by Sam McKnight Deeper Love 5-minute Intense Treatment Mask 50ml | 50ml | £22.00 | 2026-11-13T20:02:39+00:00 |
+| `cultbeauty.co.uk` | Hair by Sam McKnight Light Cleanse Hair and Scalp Shampoo 100ml | 100ml | £16.00 | 2026-11-13T20:02:39+00:00 |
+| `cultbeauty.co.uk` | Hair by Sam McKnight Light Nourish Conditioner 75ml | 75ml | £16.00 | 2026-11-13T20:02:39+00:00 |
+| `cultbeauty.co.uk` | Hair by Sam McKnight Sundaze Sea Spray Mini 50ml | 50ml | £14.00 | 2026-11-13T20:02:39+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Bigger Love Cool Girl Volumising Treatment Mask 50ml | 50ml | £22.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Cool Girl Volume Nourish Conditioner 200ml | 200ml | £29.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Deeper Love Intense Treatment Mask 50ml | 50ml | £22.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Dressed to Kill Define & Defrizz Crème 50ml | 50ml | £20.25 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Love Me Do Nourishing Oil 50ml | 50ml | £34.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Rich Cleansing Colour Protecting Shampoo 250ml | 250ml | £29.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Rich Nourishing Conditioner 200ml | 200ml | £29.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight Save the Do Heat Protection Spray 150ml | 150ml | £29.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair By Sam McKnight The Style Edit | Standard | £40.00 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair by Sam McKnight Cool Girl Volume Cleanse and Nourish Bundle (Worth £58) | Standard | £52.20 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair by Sam McKnight Light Cleanse and Nourish Bundle (Worth £58) | Standard | £52.20 | 2026-11-13T20:02:59+00:00 |
+| `lookfantastic.com` | Hair by Sam McKnight Rich Nourish Conditioner 75ml | 75ml | £16.00 | 2026-11-13T20:02:59+00:00 |
+| `spacenk.com` | Hair by Sam McKnight Cool Girl Volume Cleanse 100ml | 100ML | £16.00 | 2026-11-13T20:04:05+00:00 |
+| `spacenk.com` | Hair by Sam McKnight Cool Girl Volume Cleanse 250ml | 250ML | £29.00 | 2026-11-13T20:04:05+00:00 |
 
 ---
 
@@ -86,5 +94,5 @@
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 31 | 31 | **0** | https://www.cultbeauty.co.uk/c/brands/hair-by-sam-mcknight/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 31 | 31 | **0** | https://www.lookfantastic.com/c/brands/hair-by-sam-mcknight/ |
-| `sammcknight.com` | Official Brand DTC (Master Catalog) | Shopify | 102 | 97 | **5** | https://sammcknight.com |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 46 | 41 | **5** | https://www.spacenk.com/uk/brands/h/hair-by-sam-mcknight |
+| `sammcknight.com` | Official Brand DTC (Master Catalog) | Shopify | 102 | 94 | **8** | https://sammcknight.com |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 45 | 40 | **5** | https://www.spacenk.com/uk/brands/h/hair-by-sam-mcknight |
