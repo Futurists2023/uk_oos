@@ -1,7 +1,7 @@
 {
   "brand": "Floral Street",
   "brand_slug": "floral-street",
-  "generated_at": "2026-11-10T12:49:02+00:00",
+  "generated_at": "2026-11-13T12:19:25+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
@@ -11,7 +11,7 @@
     "retail_out_of_stock_variants": 0,
     "unforced_retail_outages": 0,
     "factory_shortages_on_dtc": 0,
-    "silent_removed_skus": 22
+    "silent_removed_skus": 23
   },
   "out_of_stock_alerts": [
     {
@@ -30,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:14:18+00:00",
-      "last_seen_at": "2026-11-10T12:47:46+00:00",
+      "last_seen_at": "2026-11-13T12:18:07+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "12d 21h (since 2026-10-28 15:14 UTC)",
-      "days_oos": 12.9,
+      "duration_label": "15d 21h (since 2026-10-28 15:14 UTC)",
+      "days_oos": 15.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 19.0,
@@ -58,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:14:18+00:00",
-      "last_seen_at": "2026-11-10T12:47:46+00:00",
+      "last_seen_at": "2026-11-13T12:18:07+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "12d 21h (since 2026-10-28 15:14 UTC)",
-      "days_oos": 12.9,
+      "duration_label": "15d 21h (since 2026-10-28 15:14 UTC)",
+      "days_oos": 15.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 144.0,
@@ -86,12 +86,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:14:18+00:00",
-      "last_seen_at": "2026-11-10T12:47:46+00:00",
+      "last_seen_at": "2026-11-13T12:18:07+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "12d 21h (since 2026-10-28 15:14 UTC)",
-      "days_oos": 12.9,
+      "duration_label": "15d 21h (since 2026-10-28 15:14 UTC)",
+      "days_oos": 15.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 144.0,
@@ -119,12 +119,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:14:18+00:00",
-      "last_seen_at": "2026-11-10T12:47:46+00:00",
+      "last_seen_at": "2026-11-13T12:18:07+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "12d 21h (since 2026-10-28 15:14 UTC)",
-      "days_oos": 12.9,
+      "duration_label": "15d 21h (since 2026-10-28 15:14 UTC)",
+      "days_oos": 15.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 19.0,
@@ -147,12 +147,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:14:18+00:00",
-      "last_seen_at": "2026-11-10T12:47:46+00:00",
+      "last_seen_at": "2026-11-13T12:18:07+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "12d 21h (since 2026-10-28 15:14 UTC)",
-      "days_oos": 12.9,
+      "duration_label": "15d 21h (since 2026-10-28 15:14 UTC)",
+      "days_oos": 15.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 144.0,
@@ -175,12 +175,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:14:18+00:00",
-      "last_seen_at": "2026-11-10T12:47:46+00:00",
+      "last_seen_at": "2026-11-13T12:18:07+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "12d 21h (since 2026-10-28 15:14 UTC)",
-      "days_oos": 12.9,
+      "duration_label": "15d 21h (since 2026-10-28 15:14 UTC)",
+      "days_oos": 15.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 144.0,
@@ -211,7 +211,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::arizona-bloom-black-lotus-50ml-bundle::43993011683526",
@@ -232,7 +232,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::berry-bloom-candle-limited-edition::44104950939846",
@@ -253,7 +253,7 @@
       "last_seen_at": "2026-10-28T15:14:18+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::electric-rhubarb-ylang-ylang-espresso-50ml-bundle::43992995987654",
@@ -274,7 +274,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::electric-rhubarb-ylang-ylang-espresso-10ml-bundle::43992987828422",
@@ -295,7 +295,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::iris-goddess-body-cream::4142259208203",
@@ -316,7 +316,7 @@
       "last_seen_at": "2026-10-28T15:14:18+00:00",
       "first_seen_oos_at": "2026-10-28T15:14:18+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::london-poppy-iris-goddess-10ml-bundle::43992970821830",
@@ -337,7 +337,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::london-poppy-iris-goddess-50ml-bundle::43992976163014",
@@ -358,7 +358,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::neon-rose-chypre-sublime-10ml-bundle::43992996577478",
@@ -379,7 +379,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::neon-rose-chypre-sublime-50ml-bundle::43993001787590",
@@ -400,7 +400,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::sunflower-pop-sweet-almond-blossom-10ml-bundle::43992983142598",
@@ -421,7 +421,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::sunflower-pop-sweet-almond-blossom-50ml-bundle::43992986288326",
@@ -442,7 +442,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::wonderland-peony-wild-vanilla-orchid-10ml::43308650037446",
@@ -463,7 +463,7 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
     },
     {
       "sku_key": "floralstreet.com::floral-street::wonderland-peony-wild-vanilla-orchid::43483984363718",
@@ -484,7 +484,28 @@
       "last_seen_at": "2026-11-08T06:03:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:03:14+00:00",
-      "silent_removed_at": "2026-11-10T12:47:46+00:00"
+      "silent_removed_at": "2026-11-13T12:18:07+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-black-lotus-eau-de-parfum-10ml_13278795",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "product_title": "Floral Street Black Lotus Eau de Parfum 10ml",
+      "variant_title": "10ml",
+      "normalized_product_key": "black_lotus_eau_de_parfum",
+      "product_url": "https://www.lookfantastic.com/p/floral-street-black-lotus-eau-de-parfum-10ml/13278795/",
+      "sku_code": "p_floral-street-black-lotus-eau-de-parfum-10ml_13278795",
+      "current_price": 23.2,
+      "compare_at_price": 29.0,
+      "last_in_stock_price": 23.2,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-10T12:48:29+00:00",
+      "last_seen_at": "2026-11-10T12:48:29+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-10T12:48:29+00:00",
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     },
     {
       "sku_key": "lookfantastic.com::floral-street::p_floral-street-chypre-sublime-eau-de-parfum-50ml_13278786",
@@ -505,7 +526,7 @@
       "last_seen_at": "2026-11-01T15:18:01+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T15:18:01+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     },
     {
       "sku_key": "lookfantastic.com::floral-street::p_floral-street-electric-rhubarb-eau-de-parfum-100ml_13278809",
@@ -526,7 +547,7 @@
       "last_seen_at": "2026-11-04T00:39:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-04T00:39:14+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     },
     {
       "sku_key": "lookfantastic.com::floral-street::p_floral-street-enchanted-masquerade-eau-de-parfum-100ml_17921137",
@@ -547,7 +568,7 @@
       "last_seen_at": "2026-11-04T00:39:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-04T00:39:14+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     },
     {
       "sku_key": "lookfantastic.com::floral-street::p_floral-street-london-poppy-eau-de-parfum-10ml_13278793",
@@ -568,7 +589,28 @@
       "last_seen_at": "2026-11-06T06:54:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-06T06:54:18+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-mini-mist-trio_17277578",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "product_title": "Floral Street Mini Mist Trio (Worth £48)",
+      "variant_title": "Standard",
+      "normalized_product_key": "mist_trio_travel",
+      "product_url": "https://www.lookfantastic.com/p/floral-street-mini-mist-trio/17277578/",
+      "sku_code": "p_floral-street-mini-mist-trio_17277578",
+      "current_price": 28.0,
+      "compare_at_price": 35.0,
+      "last_in_stock_price": 28.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-28T15:15:03+00:00",
+      "last_seen_at": "2026-11-10T12:48:29+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-10T12:48:29+00:00",
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     },
     {
       "sku_key": "lookfantastic.com::floral-street::p_floral-street-neon-rose-eau-de-parfum-10ml_13278802",
@@ -589,7 +631,7 @@
       "last_seen_at": "2026-11-08T06:04:01+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:04:01+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     },
     {
       "sku_key": "lookfantastic.com::floral-street::p_floral-street-sunflower-pop-eau-de-parfum-10ml_13278848",
@@ -610,7 +652,7 @@
       "last_seen_at": "2026-11-01T15:18:01+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T15:18:01+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     },
     {
       "sku_key": "lookfantastic.com::floral-street::p_floral-street-sweet-almond-blossom-eau-de-parfum-100ml_14880535",
@@ -631,31 +673,387 @@
       "last_seen_at": "2026-11-08T06:04:01+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:04:01+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
-    },
-    {
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-wonderland-peony-eau-de-parfum-100ml_13278823",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "product_title": "Floral Street Wonderland Peony Eau de Parfum 100ml",
-      "variant_title": "100ml",
-      "normalized_product_key": "wonderland_peony_eau_de_parfum",
-      "product_url": "https://www.lookfantastic.com/p/floral-street-wonderland-peony-eau-de-parfum-100ml/13278823/",
-      "sku_code": "p_floral-street-wonderland-peony-eau-de-parfum-100ml_13278823",
-      "current_price": 92.0,
-      "compare_at_price": 115.0,
-      "last_in_stock_price": 92.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-28T15:15:03+00:00",
-      "last_seen_at": "2026-10-28T15:15:03+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-10-28T15:15:03+00:00",
-      "silent_removed_at": "2026-11-10T12:48:29+00:00"
+      "silent_removed_at": "2026-11-13T12:18:49+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 19453,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-black-lotus-eau-de-parfum-10ml_13278795",
+      "product_title": "Floral Street Black Lotus Eau de Parfum 10ml",
+      "variant_title": "10ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 23.2,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-10T12:48:29+00:00)"
+    },
+    {
+      "id": 19452,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-london-poppy-eau-de-parfum-10ml_13278793",
+      "product_title": "Floral Street London Poppy Eau de Parfum 10ml",
+      "variant_title": "10ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 23.2,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-06T06:54:18+00:00)"
+    },
+    {
+      "id": 19451,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-sunflower-pop-eau-de-parfum-10ml_13278848",
+      "product_title": "Floral Street Sunflower Pop Eau de Parfum 10ml",
+      "variant_title": "10ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 23.2,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-01T15:18:01+00:00)"
+    },
+    {
+      "id": 19450,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-sweet-almond-blossom-eau-de-parfum-100ml_14880535",
+      "product_title": "Floral Street Sweet Almond Blossom Eau de Parfum 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 92.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:04:01+00:00)"
+    },
+    {
+      "id": 19449,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-neon-rose-eau-de-parfum-10ml_13278802",
+      "product_title": "Floral Street Neon Rose Eau de Parfum 10ml",
+      "variant_title": "10ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 23.2,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:04:01+00:00)"
+    },
+    {
+      "id": 19448,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-electric-rhubarb-eau-de-parfum-100ml_13278809",
+      "product_title": "Floral Street Electric Rhubarb Eau de Parfum 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 92.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-04T00:39:14+00:00)"
+    },
+    {
+      "id": 19447,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-chypre-sublime-eau-de-parfum-50ml_13278786",
+      "product_title": "Floral Street Chypre Sublime Eau de Parfum 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 62.4,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-01T15:18:01+00:00)"
+    },
+    {
+      "id": 19446,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-enchanted-masquerade-eau-de-parfum-100ml_17921137",
+      "product_title": "Floral Street Enchanted Masquerade Eau de Parfum 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 92.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-04T00:39:14+00:00)"
+    },
+    {
+      "id": 19445,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-mini-mist-trio_17277578",
+      "product_title": "Floral Street Mini Mist Trio (Worth £48)",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 28.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-10T12:48:29+00:00)"
+    },
+    {
+      "id": 19444,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-ylang-ylang-espresso-eau-de-parfum-10ml_13278807",
+      "product_title": "Floral Street Ylang Ylang Espresso Eau de Parfum 10ml",
+      "variant_title": "10ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 23.2,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 19443,
+      "occurred_at": "2026-11-13T12:18:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Floral Street",
+      "sku_key": "lookfantastic.com::floral-street::p_floral-street-arizona-bloom-layering-bundle_17887207",
+      "product_title": "Floral Street Arizona Bloom Layering Bundle",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 71.4,
+      "new_price": 81.6,
+      "details": "Price changed 71.4 -> 81.6"
+    },
+    {
+      "id": 19442,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::wonderland-peony-wild-vanilla-orchid-10ml::43308650037446",
+      "product_title": "Wonderland Peony + Wild Vanilla Orchid 0.34oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19441,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::wonderland-peony-wild-vanilla-orchid::43483984363718",
+      "product_title": "Wonderland Peony + Wild Vanilla Orchid 1.7oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 158.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19440,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::london-poppy-iris-goddess-10ml-bundle::43992970821830",
+      "product_title": "London Poppy + Iris Goddess 0.34oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19439,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::sunflower-pop-sweet-almond-blossom-10ml-bundle::43992983142598",
+      "product_title": "Sunflower Pop + Sweet Almond Blossom 0.34oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19438,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::sunflower-pop-sweet-almond-blossom-50ml-bundle::43992986288326",
+      "product_title": "Sunflower Pop + Sweet Almond Blossom 1.7oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 158.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19437,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::electric-rhubarb-ylang-ylang-espresso-10ml-bundle::43992987828422",
+      "product_title": "Electric Rhubarb + Ylang Ylang Espresso 10ml x 2 Bundle",
+      "variant_title": "10ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19436,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::electric-rhubarb-ylang-ylang-espresso-50ml-bundle::43992995987654",
+      "product_title": "Electric Rhubarb + Ylang Ylang Espresso 1.7oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 158.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19435,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::neon-rose-chypre-sublime-10ml-bundle::43992996577478",
+      "product_title": "Neon Rose + Chypre Sublime 0.34oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19434,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::neon-rose-chypre-sublime-50ml-bundle::43993001787590",
+      "product_title": "Neon Rose + Chypre Sublime 1.7oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 158.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19433,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::arizona-bloom-black-lotus-10ml-bundle::43993010471110",
+      "product_title": "Arizona Bloom + Black Lotus 0.34oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19432,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::arizona-bloom-black-lotus-50ml-bundle::43993011683526",
+      "product_title": "Arizona Bloom + Black Lotus 1.7oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 158.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19431,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::berry-bloom-candle-limited-edition::44104950939846",
+      "product_title": "Berry Bloom Candle - Limited Edition",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 52.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-28T15:14:18+00:00)"
+    },
+    {
+      "id": 19430,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::iris-goddess-body-cream::4142259208203",
+      "product_title": "Iris Goddess Body Cream",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 30.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-28T15:14:18+00:00)"
+    },
+    {
+      "id": 19429,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::london-poppy-iris-goddess-50ml-bundle::43992976163014",
+      "product_title": "London Poppy + Iris Goddess 1.7oz x 2 Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 158.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
+    },
+    {
+      "id": 19428,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::super-gourmand-mini-mist-trio::62017101463939",
+      "product_title": "Super Gourmand Mini Mist Trio",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 57.0,
+      "new_price": 42.0,
+      "details": "Price changed 57.0 -> 42.0"
+    },
+    {
+      "id": 19427,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::wonderland-peony-layer-it-up-set::62017103495555",
+      "product_title": "Wonderland Peony Layer It Up Set",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 64.0,
+      "new_price": 48.0,
+      "details": "Price changed 64.0 -> 48.0"
+    },
+    {
+      "id": 19426,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::enchanted-masquerade-pump-it-up-set::62017103593859",
+      "product_title": "Enchanted Masquerade Pump It Up Set",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 54.0,
+      "new_price": 36.0,
+      "details": "Price changed 54.0 -> 36.0"
+    },
+    {
+      "id": 19425,
+      "occurred_at": "2026-11-13T12:18:07+00:00",
+      "domain": "floralstreet.com",
+      "brand": "Floral Street",
+      "sku_key": "floralstreet.com::floral-street::arizona-bloom-pump-it-up-set-1::62017103954307",
+      "product_title": "Arizona Bloom Pump It Up Set",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 54.0,
+      "new_price": 36.0,
+      "details": "Price changed 54.0 -> 36.0"
+    },
     {
       "id": 17839,
       "occurred_at": "2026-11-10T12:48:29+00:00",
@@ -928,383 +1326,6 @@
       "old_price": 52.0,
       "new_price": null,
       "details": "Vanished from storefront (last seen 2026-10-28T15:14:18+00:00)"
-    },
-    {
-      "id": 17818,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::iris-goddess-body-cream::4142259208203",
-      "product_title": "Iris Goddess Body Cream",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 30.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-28T15:14:18+00:00)"
-    },
-    {
-      "id": 17817,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::london-poppy-iris-goddess-50ml-bundle::43992976163014",
-      "product_title": "London Poppy + Iris Goddess 1.7oz x 2 Bundle",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 158.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:03:14+00:00)"
-    },
-    {
-      "id": 17816,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::wonderland-peony-home-and-away-gift-set::42382531625158",
-      "product_title": "Wonderland Peony Home & Away Gift Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 17815,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::wild-vanilla-orchid-home-and-away-gift-set::42390081044678",
-      "product_title": "Wild Vanilla Orchid Home & Away Gift Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 17814,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::sweet-almond-blossom-home-and-away-gift-set::43310209269958",
-      "product_title": "Sweet Almond Blossom Home & Away Gift Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 17813,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::arizona-bloom-home-and-away-gift-set::42382550532294",
-      "product_title": "Arizona Bloom Home & Away Gift Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 17812,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::dream-duo-eau-de-parfum-gift-set-limited-edition::54959726592387",
-      "product_title": "Dream Duo Eau de Parfum Gift Set - Limited Edition",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 59.0,
-      "new_price": 70.0,
-      "details": "Price changed 59.0 -> 70.0"
-    },
-    {
-      "id": 17811,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::sweet-almond-blossom-and-sunflower-pop-van-gogh-duo::42805560836294",
-      "product_title": "Sweet Almond Blossom and Sunflower Pop Van Gogh Duo",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 59.0,
-      "new_price": 70.0,
-      "details": "Price changed 59.0 -> 70.0"
-    },
-    {
-      "id": 17810,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::enchanted-masquerade-perfume-mist-50ml-eau-de-parfum-bundle::57709976748419",
-      "product_title": "Enchanted Masquerade Perfume Mist & 1.7oz Eau de Parfum Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 100.0,
-      "new_price": 127.0,
-      "details": "Price changed 100.0 -> 127.0"
-    },
-    {
-      "id": 17809,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::enchanted-masquerade-eau-de-parfum-50ml-10ml-bundle::57300631355779",
-      "product_title": "Enchanted Masquerade Eau de Parfum 1.7oz + 0.34oz Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 17808,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::sweet-almond-blossom-perfume-mist-eau-de-parfum-bundle::55153441505667",
-      "product_title": "Sweet Almond Blossom Perfume Mist & 1.7oz Eau de Parfum Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 100.0,
-      "new_price": 127.0,
-      "details": "Price changed 100.0 -> 127.0"
-    },
-    {
-      "id": 17807,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::wonderland-peony-perfume-mist-50ml-eau-de-parfum-bundle::55153472602499",
-      "product_title": "Wonderland Peony Perfume Mist &  1.7oz Eau de Parfum Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 100.0,
-      "new_price": 127.0,
-      "details": "Price changed 100.0 -> 127.0"
-    },
-    {
-      "id": 17806,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::wild-vanilla-orchid-perfume-mist-50ml-eau-de-parfum-bundle::55153481515395",
-      "product_title": "Wild Vanilla Orchid Perfume Mist & 1.7oz Eau de Parfum Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 100.0,
-      "new_price": 127.0,
-      "details": "Price changed 100.0 -> 127.0"
-    },
-    {
-      "id": 17805,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::arizona-bloom-perfume-mist-50ml-eau-de-parfum-bundle::56232582709635",
-      "product_title": "Arizona Bloom Perfume Mist & 1.7oz Eau de Parfum Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 100.0,
-      "new_price": 127.0,
-      "details": "Price changed 100.0 -> 127.0"
-    },
-    {
-      "id": 17804,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::sunflower-pop-eau-de-parfum-50ml-10ml-bundle::56072532361603",
-      "product_title": "Sunflower Pop Eau de Parfum 1.7oz + 0.34oz Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 17803,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::sunflower-pop-perfume-mist-50ml-eau-de-parfum-bundle::58175744115075",
-      "product_title": "Sunflower Pop Perfume Mist & 1.7oz Eau de Parfum Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 100.0,
-      "new_price": 127.0,
-      "details": "Price changed 100.0 -> 127.0"
-    },
-    {
-      "id": 17802,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::electric-rhubarb-eau-de-parfum-50ml-10ml-bundle::58176355697027",
-      "product_title": "Electric Rhubarb Eau de Parfum 1.7oz + 0.34oz Bundle",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 17801,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::super-gourmand-mini-mist-trio::62017101463939",
-      "product_title": "Super Gourmand Mini Mist Trio",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 42.0,
-      "new_price": 57.0,
-      "details": "Price changed 42.0 -> 57.0"
-    },
-    {
-      "id": 17800,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::wonderland-peony-layer-it-up-set::62017103495555",
-      "product_title": "Wonderland Peony Layer It Up Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 48.0,
-      "new_price": 64.0,
-      "details": "Price changed 48.0 -> 64.0"
-    },
-    {
-      "id": 17799,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::enchanted-masquerade-pump-it-up-set::62017103593859",
-      "product_title": "Enchanted Masquerade Pump It Up Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 36.0,
-      "new_price": 54.0,
-      "details": "Price changed 36.0 -> 54.0"
-    },
-    {
-      "id": 17798,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::arizona-bloom-pump-it-up-set-1::62017103954307",
-      "product_title": "Arizona Bloom Pump It Up Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 36.0,
-      "new_price": 54.0,
-      "details": "Price changed 36.0 -> 54.0"
-    },
-    {
-      "id": 17797,
-      "occurred_at": "2026-11-10T12:47:46+00:00",
-      "domain": "floralstreet.com",
-      "brand": "Floral Street",
-      "sku_key": "floralstreet.com::floral-street::sunflower-pop-home-and-away-gift-set::42640861266118",
-      "product_title": "Sunflower Pop Home & Away Gift Set",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 134.0,
-      "details": "Price changed 107.0 -> 134.0"
-    },
-    {
-      "id": 16532,
-      "occurred_at": "2026-11-08T06:04:01+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-london-poppy-eau-de-parfum-10ml_13278793",
-      "product_title": "Floral Street London Poppy Eau de Parfum 10ml",
-      "variant_title": "10ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 23.2,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-06T06:54:18+00:00)"
-    },
-    {
-      "id": 16531,
-      "occurred_at": "2026-11-08T06:04:01+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-sunflower-pop-eau-de-parfum-10ml_13278848",
-      "product_title": "Floral Street Sunflower Pop Eau de Parfum 10ml",
-      "variant_title": "10ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 23.2,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-01T15:18:01+00:00)"
-    },
-    {
-      "id": 16530,
-      "occurred_at": "2026-11-08T06:04:01+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-ylang-ylang-espresso-eau-de-parfum-50ml_13278790",
-      "product_title": "Floral Street Ylang Ylang Espresso Eau de Parfum 50ml",
-      "variant_title": "50ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 62.4,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-01T15:18:01+00:00)"
-    },
-    {
-      "id": 16529,
-      "occurred_at": "2026-11-08T06:04:01+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-electric-rhubarb-eau-de-parfum-100ml_13278809",
-      "product_title": "Floral Street Electric Rhubarb Eau de Parfum 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 92.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-04T00:39:14+00:00)"
-    },
-    {
-      "id": 16528,
-      "occurred_at": "2026-11-08T06:04:01+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-chypre-sublime-eau-de-parfum-50ml_13278786",
-      "product_title": "Floral Street Chypre Sublime Eau de Parfum 50ml",
-      "variant_title": "50ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 62.4,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-01T15:18:01+00:00)"
-    },
-    {
-      "id": 16527,
-      "occurred_at": "2026-11-08T06:04:01+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-enchanted-masquerade-eau-de-parfum-100ml_17921137",
-      "product_title": "Floral Street Enchanted Masquerade Eau de Parfum 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 92.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-04T00:39:14+00:00)"
-    },
-    {
-      "id": 16526,
-      "occurred_at": "2026-11-08T06:04:01+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Floral Street",
-      "sku_key": "lookfantastic.com::floral-street::p_floral-street-wonderland-peony-eau-de-parfum-100ml_13278823",
-      "product_title": "Floral Street Wonderland Peony Eau de Parfum 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 92.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-28T15:15:03+00:00)"
     }
   ]
 }

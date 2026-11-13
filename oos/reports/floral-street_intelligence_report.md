@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Floral Street
 
-- **Generated:** 2026-11-10 12:49 UTC
+- **Generated:** 2026-11-13 12:19 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 122 (119 In Stock | **3 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **22**
+- **Removed / Delisted Variants:** **23**
 
 ---
 
@@ -33,28 +33,29 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `floralstreet.com` | Arizona Bloom + Black Lotus 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Arizona Bloom + Black Lotus 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Berry Bloom Candle - Limited Edition | Standard | £52.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Electric Rhubarb + Ylang Ylang Espresso 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Electric Rhubarb + Ylang Ylang Espresso 10ml x 2 Bundle | 10ml | £59.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Iris Goddess Body Cream | Standard | £30.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | London Poppy + Iris Goddess 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | London Poppy + Iris Goddess 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Neon Rose + Chypre Sublime 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Neon Rose + Chypre Sublime 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Sunflower Pop + Sweet Almond Blossom 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Sunflower Pop + Sweet Almond Blossom 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Wonderland Peony + Wild Vanilla Orchid 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-10T12:47:46+00:00 |
-| `floralstreet.com` | Wonderland Peony + Wild Vanilla Orchid 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-10T12:47:46+00:00 |
-| `lookfantastic.com` | Floral Street Chypre Sublime Eau de Parfum 50ml | 50ml | £62.40 | 2026-11-10T12:48:29+00:00 |
-| `lookfantastic.com` | Floral Street Electric Rhubarb Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-10T12:48:29+00:00 |
-| `lookfantastic.com` | Floral Street Enchanted Masquerade Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-10T12:48:29+00:00 |
-| `lookfantastic.com` | Floral Street London Poppy Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-10T12:48:29+00:00 |
-| `lookfantastic.com` | Floral Street Neon Rose Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-10T12:48:29+00:00 |
-| `lookfantastic.com` | Floral Street Sunflower Pop Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-10T12:48:29+00:00 |
-| `lookfantastic.com` | Floral Street Sweet Almond Blossom Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-10T12:48:29+00:00 |
-| `lookfantastic.com` | Floral Street Wonderland Peony Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-10T12:48:29+00:00 |
+| `floralstreet.com` | Arizona Bloom + Black Lotus 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Arizona Bloom + Black Lotus 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Berry Bloom Candle - Limited Edition | Standard | £52.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Electric Rhubarb + Ylang Ylang Espresso 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Electric Rhubarb + Ylang Ylang Espresso 10ml x 2 Bundle | 10ml | £59.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Iris Goddess Body Cream | Standard | £30.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | London Poppy + Iris Goddess 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | London Poppy + Iris Goddess 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Neon Rose + Chypre Sublime 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Neon Rose + Chypre Sublime 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Sunflower Pop + Sweet Almond Blossom 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Sunflower Pop + Sweet Almond Blossom 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Wonderland Peony + Wild Vanilla Orchid 0.34oz x 2 Bundle | Standard | £59.00 | 2026-11-13T12:18:07+00:00 |
+| `floralstreet.com` | Wonderland Peony + Wild Vanilla Orchid 1.7oz x 2 Bundle | Standard | £158.00 | 2026-11-13T12:18:07+00:00 |
+| `lookfantastic.com` | Floral Street Black Lotus Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street Chypre Sublime Eau de Parfum 50ml | 50ml | £62.40 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street Electric Rhubarb Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street Enchanted Masquerade Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street London Poppy Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street Mini Mist Trio (Worth £48) | Standard | £28.00 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street Neon Rose Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street Sunflower Pop Eau de Parfum 10ml | 10ml | £23.20 | 2026-11-13T12:18:49+00:00 |
+| `lookfantastic.com` | Floral Street Sweet Almond Blossom Eau de Parfum 100ml | 100ml | £92.00 | 2026-11-13T12:18:49+00:00 |
 
 ---
 
