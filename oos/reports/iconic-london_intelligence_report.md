@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: ICONIC LONDON
 
-- **Generated:** 2026-11-12 07:20 UTC
+- **Generated:** 2026-11-14 18:13 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 147 (119 In Stock | **28 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **7**
+- **Removed / Delisted Variants:** **13**
 
 ---
 
@@ -53,14 +53,16 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 |---|---|---|---|---|---|---|
 | **ICONIC London Blurring Blush Stick 6g (Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Discovery Set (Worth £73.00)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **ICONIC London Filter Fix Setting Spray 120ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Mini Filter Fix Setting Spray 30ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Illuminator 13.5ml(Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Lit and Luminous Baked Highlighter 16g** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Lustre Lip Oil 6ml (Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **ICONIC London Multi-Use Sculpting Contour Palette** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Prep-Set-Glow** | ✅ £18.20 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Prep-Set-Glow** | ✅ £18.20 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Prep-Set-Glow Mini - Original 30ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **ICONIC London Smokey Eye Duo Kajal (Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **ICONIC London Soft Touch Blush Palette** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Soft Touch Blush 24g (Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Soft Touch Bronzer (Various Shades)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London The Espresso Eye Duo (Worth £52)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
@@ -68,6 +70,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **ICONIC London The GRWM Collection (Worth £127.00)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Triple Threat Mascara** | ✅ £16.10 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Triple Threat Mascara** | ✅ £16.10 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **ICONIC London Ultimate Brush Set** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Underglow Blurring Primer 27ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Mini Underglow Blurring Primer 10ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **ICONIC London Velvet Blur Translucent Setting Powder** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
@@ -78,13 +81,19 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | ICONIC London Kissed by the Sun Multi-Use Cheek Glow 5g (Various Shades) | 5g | £25.00 | 2026-11-12T07:20:32+00:00 |
-| `cultbeauty.co.uk` | ICONIC London Multi-Use Cream Blush, Bronze and Highlight Palette | Standard | £40.00 | 2026-11-12T07:20:32+00:00 |
-| `cultbeauty.co.uk` | ICONIC London Velvet Smooth Pore Refining Primer 30ml | 30ml | £25.00 | 2026-11-12T07:20:32+00:00 |
-| `lookfantastic.com` | ICONIC London Butter Glaze Lip Balm (Various Shades) | Standard | £19.00 | 2026-11-12T07:20:52+00:00 |
-| `lookfantastic.com` | ICONIC London Concealer Duo Brush | Standard | £15.00 | 2026-11-12T07:20:52+00:00 |
-| `lookfantastic.com` | ICONIC London Velvet Smooth Pore Refining Primer 30ml | 30ml | £25.00 | 2026-11-12T07:20:52+00:00 |
-| `lookfantastic.com` | ICONIC London XL Lash Illusion Black 12ml | 12ml | £25.00 | 2026-11-12T07:20:52+00:00 |
+| `cultbeauty.co.uk` | ICONIC London Kissed by the Sun Multi-Use Cheek Glow 5g (Various Shades) | 5g | £25.00 | 2026-11-14T18:13:31+00:00 |
+| `cultbeauty.co.uk` | ICONIC London Multi-Use Cream Blush, Bronze and Highlight Palette | Standard | £40.00 | 2026-11-14T18:13:31+00:00 |
+| `cultbeauty.co.uk` | ICONIC London Velvet Smooth Pore Refining Primer 30ml | 30ml | £25.00 | 2026-11-14T18:13:31+00:00 |
+| `lookfantastic.com` | ICONIC London Butter Glaze Lip Balm (Various Shades) | Standard | £19.00 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Concealer Duo Brush | Standard | £15.00 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Filter Fix Setting Spray 120ml | 120ml | £19.50 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Lip Plumping Gloss 5ml (Various Shades) | 5ml | £16.50 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Prep & Set Bundle | Standard | £52.00 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Prep Set Glow Home and Away Duo (Worth £40) | Standard | £29.60 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Prep Set Tan Mousse 150ml - Original | 150ml | £12.00 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Sheer Blush 12.5ml (Various Shades) | 5ml | £17.25 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London Velvet Smooth Pore Refining Primer 30ml | 30ml | £25.00 | 2026-11-14T18:13:52+00:00 |
+| `lookfantastic.com` | ICONIC London XL Lash Illusion Black 12ml | 12ml | £25.00 | 2026-11-14T18:13:52+00:00 |
 
 ---
 
