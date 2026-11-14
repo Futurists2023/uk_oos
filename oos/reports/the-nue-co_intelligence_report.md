@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: The Nue Co.
 
-- **Generated:** 2026-11-11 22:50 UTC
+- **Generated:** 2026-11-14 11:39 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 86 (73 In Stock | **13 OOS**)
-- **Retailer Out-of-Stock Alerts:** **3** (**0 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 88 (73 In Stock | **15 OOS**)
+- **Retailer Out-of-Stock Alerts:** **4** (**0 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **2**
 
 ---
@@ -12,9 +12,10 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £38.25 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 7h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 7h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £35.00 (Full Price) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **18d 7h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £38.25 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Fragrance Discovery Trial Set | Standard | £45.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-14 11:39 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £35.00 (Full Price) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -23,6 +24,7 @@
 | `uk.thenueco.com` | Barrier Culture Cleanser | 100ml | £34.00 | 2026-10-29T15:21:37+00:00 |
 | `uk.thenueco.com` | Barrier Culture Cleanser 3 Month | Standard | £102.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Defense Drops | 30ml | £45.00 | 2026-10-24T15:04:38+00:00 |
+| `uk.thenueco.com` | Forest Lungs | 10ml | £38.00 | 2026-11-14T11:38:56+00:00 |
 | `uk.thenueco.com` | Growth Phase | 90 CAPS JAR | £65.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Magnesium Ease | 60ml | £45.00 | 2026-10-24T15:04:38+00:00 |
 | `uk.thenueco.com` | Pre + Probiotic | REFILL | £75.00 | 2026-10-24T15:04:38+00:00 |
@@ -40,11 +42,13 @@
 | **The Nue Co. Barrier Culture Probiotic Cleanser 100ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **The Nue Co. Debloat (60 Capsules)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **The Nue Co. Debloat and Prebiotic Bundle** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
+| **The Nue Co. Forest Lungs Mood-Balancing Fragrance 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Magnesium Ease** | ⚠️ OOS (£45.00) | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £36.00 (-20% vs RRP) | `spacenk.com` |
 | **The Nue Co. Prebiotic + Probiotic (60 Capsules)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **The Nue Co. Skin Filter (30 capsules)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **The Nue Co. Skin Hydrator Collagen, Ceramide and Hyaluronic Acid Supplement (30 Capsules)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **The Nue Co. Topical-C Skin Brightening Serum Powder 15ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
+| **The Nue Co. Water Therapy Relaxing Fragrance 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 
 ---
 
@@ -52,8 +56,8 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-11-11T22:50:21+00:00 |
-| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-11-11T22:50:21+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-11-14T11:39:17+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-11-14T11:39:17+00:00 |
 
 ---
 
@@ -61,7 +65,7 @@
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 30 | 27 | **3** | https://www.cultbeauty.co.uk/c/brands/the-nue-co/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 9 | 9 | **0** | https://www.lookfantastic.com/c/brands/the-nue-co/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 30 | 26 | **4** | https://www.cultbeauty.co.uk/c/brands/the-nue-co/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 11 | 11 | **0** | https://www.lookfantastic.com/c/brands/the-nue-co/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 0 | 0 | **0** | https://www.spacenk.com/uk/brands/t/the-nue-co |
-| `uk.thenueco.com` | Official Brand DTC (Master Catalog) | Shopify | 47 | 37 | **10** | https://uk.thenueco.com |
+| `uk.thenueco.com` | Official Brand DTC (Master Catalog) | Shopify | 47 | 36 | **11** | https://uk.thenueco.com |
