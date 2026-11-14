@@ -1,16 +1,18 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Luna Daily
 
-- **Generated:** 2026-11-11 06:29 UTC
+- **Generated:** 2026-11-14 01:01 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 206 (121 In Stock | **85 OOS**)
-- **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **9**
+- **Total Tracked Variants:** 206 (120 In Stock | **86 OOS**)
+- **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **10**
 
 ---
 
 ## 1A. Major UK Retailer Out-of-Stock Alerts (Cross-Checked Against Official DTC)
 
-_All tracked variants across monitored UK retail stockists are currently In Stock._
+| Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
+|---|---|---|---|---|---|---|---|
+| `cultbeauty.co.uk` | Luna Daily The Everywhere Oil 10ml | 10ml | £12.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-14 01:01 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -114,7 +116,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **Luna Daily The Everywhere Body Minis Starter Set Hydrating Fresh Cotton 150ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Everywhere Body Minis Starter Set Jasmine & Ylang Ylang 150ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Everywhere Cooling Spray 80ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
-| **Luna Daily The Everywhere Oil 10ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **The Everywhere Spray-To-Wipe 30ml - Fragrance Free** | ⚠️ OOS (£21.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £8.00 (-62% vs RRP); `lookfantastic.com` £8.00 (-62% vs RRP) | `boots.com`, `hollandandbarrett.com` |
 | **The Everywhere Wash™ - Hydrating Fresh Cotton** | ⚠️ OOS (£19.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **The Everywhere Wash™ - Jasmine + Ylang Ylang** | ⚠️ OOS (£19.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
@@ -126,6 +127,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **Luna Daily The Perfect Pair - The All Over Deodorant Cooling 70g + Spray to Wipe Cooling 80ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Perfect Pair - The All Over Deodorant Hydrating 70g + Spray to Wipe Hydrating 80ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Perfect Pair - The All Over Deodorant Original 70g + Spray to Wipe Original 80ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
+| **Luna Daily The Pregnancy and New Mum kit** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Skin Support Oil for Stretch Marks and Hyperpigmentation 100ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 
 ---
@@ -134,15 +136,16 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 4.6 Hello Sunday The Illuminating One Glow Primer Spf50 50ml | 50ml | £24.00 | 2026-11-11T06:29:35+00:00 |
-| `hollandandbarrett.com` | 5 Hair Gain Gummies Apple 60 Gummies 25% Off | Standard | £22.49 | 2026-11-11T06:29:35+00:00 |
-| `hollandandbarrett.com` | Hair Gain Capsules 60 Capsules 25% Off | 60 Capsules | £27.74 | 2026-11-11T06:29:35+00:00 |
-| `hollandandbarrett.com` | Hair Gain Peptide Puff Dry Shampoo 5 g 25% Off | 5 g | £10.87 | 2026-11-11T06:29:35+00:00 |
-| `hollandandbarrett.com` | Hair Gain Scalp Foam 50 ml 25% Off | 50 ml | £24.00 | 2026-11-11T06:29:35+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-11-11T06:28:40+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-11-11T06:28:40+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-11-11T06:28:40+00:00 |
-| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-11T06:28:40+00:00 |
+| `hollandandbarrett.com` | 4.6 Hello Sunday The Illuminating One Glow Primer Spf50 50ml | 50ml | £24.00 | 2026-11-14T01:01:19+00:00 |
+| `hollandandbarrett.com` | 5 Hair Gain Gummies Apple 60 Gummies 25% Off | Standard | £22.49 | 2026-11-14T01:01:19+00:00 |
+| `hollandandbarrett.com` | Hair Gain Capsules 60 Capsules 25% Off | 60 Capsules | £27.74 | 2026-11-14T01:01:19+00:00 |
+| `hollandandbarrett.com` | Hair Gain Peptide Puff Dry Shampoo 5 g 25% Off | 5 g | £10.87 | 2026-11-14T01:01:19+00:00 |
+| `hollandandbarrett.com` | Hair Gain Scalp Foam 50 ml 25% Off | 50 ml | £24.00 | 2026-11-14T01:01:19+00:00 |
+| `lookfantastic.com` | Luna Daily The Everywhere Oil 10ml | 10ml | £12.00 | 2026-11-14T01:01:35+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-11-14T01:00:22+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-11-14T01:00:22+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-11-14T01:00:22+00:00 |
+| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-14T01:00:22+00:00 |
 
 ---
 
@@ -151,7 +154,7 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/luna-daily |
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/luna-daily/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 31 | **1** | https://www.cultbeauty.co.uk/c/brands/luna-daily/ |
 | `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 15 | 15 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.lookfantastic.com/c/brands/luna-daily/ |
 | `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 135 | 50 | **85** | https://luna-daily.com |

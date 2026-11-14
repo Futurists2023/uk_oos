@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Isle of Paradise
 
-- **Generated:** 2026-11-11 06:26 UTC
+- **Generated:** 2026-11-14 00:58 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 90 (83 In Stock | **7 OOS**)
+- **Total Tracked Variants:** 90 (82 In Stock | **8 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £5.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **17d 15h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £5.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 9h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -23,6 +23,7 @@
 | `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Medium | £35.00 | 2026-10-24T15:04:38+00:00 |
 | `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Dark | £35.00 | 2026-10-24T15:04:38+00:00 |
 | `theisleofparadise.com` | Self-Tanning Water | Light | £35.00 | 2026-11-08T15:21:37+00:00 |
+| `theisleofparadise.com` | Self-Tanning Water | Medium | £35.00 | 2026-11-14T00:56:49+00:00 |
 | `theisleofparadise.com` | Sunny Serum Bronzing Setting Mist | Golden Hour | £24.00 | 2026-10-24T15:04:38+00:00 |
 
 ---
@@ -48,7 +49,7 @@
 | **Self-Tanning Mousse** | ✅ £35.00 | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £21.95 (-37% vs RRP); `lookfantastic.com` £19.95 (-43% vs RRP) | `boots.com`, `spacenk.com` |
 | **Self-Tanning Water** | ✅ £35.00 | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £21.95 (-37% vs RRP); `lookfantastic.com` £18.95 (-46% vs RRP) | `boots.com`, `spacenk.com` |
 | **Self-Tanning Water** | ⚠️ OOS (£35.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £21.95 (-37% vs RRP); `lookfantastic.com` £18.95 (-46% vs RRP) | `boots.com`, `spacenk.com` |
-| **Self-Tanning Water** | ✅ £35.00 | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £21.95 (-37% vs RRP); `lookfantastic.com` £18.95 (-46% vs RRP) | `boots.com`, `spacenk.com` |
+| **Self-Tanning Water** | ⚠️ OOS (£35.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £21.95 (-37% vs RRP); `lookfantastic.com` £18.95 (-46% vs RRP) | `boots.com`, `spacenk.com` |
 | **Isle of Paradise SPF 30 Body Mist 177ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Isle of Paradise SPF 50 Face Fluid 50ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Isle of Paradise Sunny Serum 30ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
@@ -71,4 +72,4 @@ _No removed variants detected yet._
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 31 | 30 | **1** | https://www.cultbeauty.co.uk/c/brands/isle-of-paradise/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/isle-of-paradise/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 5 | 5 | **0** | https://www.spacenk.com/uk/brands/i/isle-of-paradise |
-| `theisleofparadise.com` | Official Brand DTC (Master Catalog) | Shopify | 27 | 21 | **6** | https://theisleofparadise.com |
+| `theisleofparadise.com` | Official Brand DTC (Master Catalog) | Shopify | 27 | 20 | **7** | https://theisleofparadise.com |
