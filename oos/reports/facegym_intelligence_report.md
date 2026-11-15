@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: FACEGYM
 
-- **Generated:** 2026-11-13 20:00 UTC
+- **Generated:** 2026-11-15 21:16 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 72 (71 In Stock | **1 OOS**)
-- **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 72 (70 In Stock | **2 OOS**)
+- **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
 ---
@@ -12,7 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | FaceGym Signature Skin Mini Kit (Worth £82.00) | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 4h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | FaceGym Signature Skin Mini Kit (Worth £82.00) | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
+| `lookfantastic.com` | FaceGym Youth Reformer Firming Vitamin C and Nootropic Oil-in-Serum 30ml | 30ml | £69.00 (Discounted -25% (was £92.00)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-15 21:16 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -55,6 +56,6 @@ _No removed variants detected yet._
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 22 | 21 | **1** | https://www.cultbeauty.co.uk/c/brands/facegym/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/facegym/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 26 | **1** | https://www.lookfantastic.com/c/brands/facegym/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 23 | 23 | **0** | https://www.spacenk.com/uk/brands/f/facegym |
 | `uk.facegym.com` | Official Brand DTC (Master Catalog) | Shopify | 0 | 0 | **0** | https://uk.facegym.com |

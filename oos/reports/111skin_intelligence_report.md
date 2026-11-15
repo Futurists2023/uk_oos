@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: 111SKIN
 
-- **Generated:** 2026-11-13 12:22 UTC
+- **Generated:** 2026-11-15 21:06 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 164 (147 In Stock | **17 OOS**)
 - **Retailer Out-of-Stock Alerts:** **9** (**1 Unforced Retail Outages** vs. **2 Brand Warehouse Shortages**)
@@ -12,15 +12,15 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | 111SKIN Celestial Black Diamond Brightening Essence 100ml | 100ML | £90.00 (Below DTC RRP -22% (DTC £115.00)) | £115.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **15d 21h (since 2026-10-28 15:18 UTC)** |
-| `spacenk.com` | All Over Radiance Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **19d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Black Diamond Vitamin C Brightening Cleanser | Standard | £65.00 (Below DTC RRP -24% (DTC £85.00)) | £85.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **19d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Celestial Black Diamond Body Cream | Standard | - (Full Price) | £170.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **19d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Face Masking Journal | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **19d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Jet Setter Passport | Standard | £21.00 (Discounted -30% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **19d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Jetsetter Set | Standard | £35.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-13 12:22 UTC)** |
-| `spacenk.com` | Repair Night Cream NAC Y2 | Standard | £195.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **19d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Rose Gold Duo | Standard | £136.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **19d 21h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | 111SKIN Celestial Black Diamond Brightening Essence 100ml | 100ML | £90.00 (Below DTC RRP -22% (DTC £115.00)) | £115.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **18d 5h (since 2026-10-28 15:18 UTC)** |
+| `spacenk.com` | All Over Radiance Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Black Diamond Vitamin C Brightening Cleanser | Standard | £65.00 (Below DTC RRP -24% (DTC £85.00)) | £85.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Celestial Black Diamond Body Cream | Standard | - (Full Price) | £170.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Face Masking Journal | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Jet Setter Passport | Standard | £21.00 (Discounted -30% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Jetsetter Set | Standard | £35.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 8h (since 2026-11-13 12:22 UTC)** |
+| `spacenk.com` | Repair Night Cream NAC Y2 | Standard | £195.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Rose Gold Duo | Standard | £136.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **22d 6h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -61,21 +61,21 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `111skin.co.uk` | Glass Skin Trio | Standard | £3.20 | 2026-11-13T12:21:11+00:00 |
-| `111skin.co.uk` | Repair Face And Eye Trio | Standard | £3.00 | 2026-11-13T12:21:11+00:00 |
-| `111skin.co.uk` | Repair Sunscreen SPF50+ | 50ml | £95.00 | 2026-11-13T12:21:11+00:00 |
-| `111skin.co.uk` | Repair Sunscreen SPF50+ | 15ml | £30.00 | 2026-11-13T12:21:11+00:00 |
-| `111skin.co.uk` | Rose Gold Radiance Booster | 20ml | £100.00 | 2026-11-13T12:21:11+00:00 |
-| `111skin.co.uk` | ULTIMATE NAC Y2™ COMPLEX | 90 capsules | £95.00 | 2026-11-13T12:21:11+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Hyaluronic Acid Aqua Booster 20ml | 20ml | £100.00 | 2026-11-13T12:21:35+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Jetsetter Wallet (Worth £41.00) | Standard | £150.00 | 2026-11-13T12:21:35+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Repair Day Cream NAC Y2 50ml | 50ml | £185.00 | 2026-11-13T12:21:35+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Wrinkle Erasing Retinol Patches 3x35g | 35g | £150.00 | 2026-11-13T12:21:35+00:00 |
-| `cultbeauty.co.uk` | 111Skin Precision Peel | Standard | £185.00 | 2026-11-13T12:21:35+00:00 |
-| `spacenk.com` | Celestial Black Diamond Brightening Essence | Standard | £90.00 | 2026-11-13T12:22:30+00:00 |
-| `spacenk.com` | Repair Day Cream NAC Y2 | Standard | £185.00 | 2026-11-13T12:22:30+00:00 |
-| `spacenk.com` | Repair Serum NAC Y2 | Standard | £260.00 | 2026-11-13T12:22:30+00:00 |
-| `spacenk.com` | Repair Sunscreen SPF50+ | Standard | £95.00 | 2026-11-13T12:22:30+00:00 |
+| `111skin.co.uk` | Glass Skin Trio | Standard | £3.20 | 2026-11-15T21:04:42+00:00 |
+| `111skin.co.uk` | Repair Face And Eye Trio | Standard | £3.00 | 2026-11-15T21:04:42+00:00 |
+| `111skin.co.uk` | Repair Sunscreen SPF50+ | 50ml | £95.00 | 2026-11-15T21:04:42+00:00 |
+| `111skin.co.uk` | Repair Sunscreen SPF50+ | 15ml | £30.00 | 2026-11-15T21:04:42+00:00 |
+| `111skin.co.uk` | Rose Gold Radiance Booster | 20ml | £100.00 | 2026-11-15T21:04:42+00:00 |
+| `111skin.co.uk` | ULTIMATE NAC Y2™ COMPLEX | 90 capsules | £95.00 | 2026-11-15T21:04:42+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Hyaluronic Acid Aqua Booster 20ml | 20ml | £100.00 | 2026-11-15T21:05:05+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Jetsetter Wallet (Worth £41.00) | Standard | £150.00 | 2026-11-15T21:05:05+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Repair Day Cream NAC Y2 50ml | 50ml | £185.00 | 2026-11-15T21:05:05+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Wrinkle Erasing Retinol Patches 3x35g | 35g | £150.00 | 2026-11-15T21:05:05+00:00 |
+| `cultbeauty.co.uk` | 111Skin Precision Peel | Standard | £185.00 | 2026-11-15T21:05:05+00:00 |
+| `spacenk.com` | Celestial Black Diamond Brightening Essence | Standard | £90.00 | 2026-11-15T21:06:09+00:00 |
+| `spacenk.com` | Repair Day Cream NAC Y2 | Standard | £185.00 | 2026-11-15T21:06:09+00:00 |
+| `spacenk.com` | Repair Serum NAC Y2 | Standard | £260.00 | 2026-11-15T21:06:09+00:00 |
+| `spacenk.com` | Repair Sunscreen SPF50+ | Standard | £95.00 | 2026-11-15T21:06:09+00:00 |
 
 ---
 
