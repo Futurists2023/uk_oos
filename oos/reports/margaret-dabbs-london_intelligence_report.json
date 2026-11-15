@@ -1,7 +1,7 @@
 {
   "brand": "Margaret Dabbs London",
   "brand_slug": "margaret-dabbs-london",
-  "generated_at": "2026-11-12T16:52:59+00:00",
+  "generated_at": "2026-11-15T00:01:05+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
@@ -30,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:18+00:00",
-      "last_seen_at": "2026-11-12T16:52:19+00:00",
+      "last_seen_at": "2026-11-15T00:00:28+00:00",
       "first_seen_oos_at": "2026-11-09T18:56:57+00:00",
       "last_seen_in_stock_at": "2026-11-07T20:17:07+00:00",
       "silent_removed_at": null,
-      "duration_label": "2d 21h (since 2026-11-09 18:56 UTC)",
-      "days_oos": 2.9,
+      "duration_label": "5d 5h (since 2026-11-09 18:56 UTC)",
+      "days_oos": 5.2,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -60,12 +60,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:54+00:00",
-      "last_seen_at": "2026-11-12T16:52:58+00:00",
+      "last_seen_at": "2026-11-15T00:01:04+00:00",
       "first_seen_oos_at": "2026-11-12T16:52:58+00:00",
       "last_seen_in_stock_at": "2026-11-09T18:57:32+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-12 16:52 UTC)",
-      "days_oos": 0.0,
+      "duration_label": "2d 7h (since 2026-11-12 16:52 UTC)",
+      "days_oos": 2.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -90,12 +90,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:18+00:00",
-      "last_seen_at": "2026-11-12T16:52:19+00:00",
+      "last_seen_at": "2026-11-15T00:00:28+00:00",
       "first_seen_oos_at": "2026-11-09T18:56:57+00:00",
       "last_seen_in_stock_at": "2026-11-07T20:17:07+00:00",
       "silent_removed_at": null,
-      "duration_label": "2d 21h (since 2026-11-09 18:56 UTC)",
-      "days_oos": 2.9,
+      "duration_label": "5d 5h (since 2026-11-09 18:56 UTC)",
+      "days_oos": 5.2,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -120,12 +120,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:54+00:00",
-      "last_seen_at": "2026-11-12T16:52:58+00:00",
+      "last_seen_at": "2026-11-15T00:01:04+00:00",
       "first_seen_oos_at": "2026-11-12T16:52:58+00:00",
       "last_seen_in_stock_at": "2026-11-09T18:57:32+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-12 16:52 UTC)",
-      "days_oos": 0.0,
+      "duration_label": "2d 7h (since 2026-11-12 16:52 UTC)",
+      "days_oos": 2.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -317,7 +317,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-for-oily-hair-350ml-6100009150",
@@ -338,7 +338,7 @@
       "last_seen_at": "2026-10-31T23:32:51+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T23:32:51+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-healthy-hair-vitamins-60-capsules-60062596",
@@ -359,7 +359,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
@@ -380,7 +380,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-220ml-6100009025",
@@ -401,7 +401,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
@@ -422,7 +422,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
@@ -443,7 +443,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
@@ -464,7 +464,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::vital-proteins-collagen-peptides-unflavoured-6100148487",
@@ -485,7 +485,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
@@ -506,7 +506,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
@@ -527,7 +527,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
@@ -548,7 +548,7 @@
       "last_seen_at": "2026-10-31T23:32:51+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T23:32:51+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-lavender-fields-40g-6100009751",
@@ -569,7 +569,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-conditioner-for-dry-damaged-hair-350ml-6100009003",
@@ -590,7 +590,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-hair-growth-essentials-6100013040",
@@ -611,7 +611,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-wilderness-40g-6100019385",
@@ -632,7 +632,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-12T16:52:19+00:00"
+      "silent_removed_at": "2026-11-15T00:00:28+00:00"
     },
     {
       "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200028811",
@@ -653,10 +653,231 @@
       "last_seen_at": "2026-10-31T23:33:24+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T23:33:24+00:00",
-      "silent_removed_at": "2026-11-12T16:52:58+00:00"
+      "silent_removed_at": "2026-11-15T00:01:04+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 20656,
+      "occurred_at": "2026-11-15T00:01:04+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200028811",
+      "product_title": "Pure Cracked Heel Treatment Balm",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 18.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T23:33:24+00:00)"
+    },
+    {
+      "id": 20655,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-mini-elixir-40ml-6100009155",
+      "product_title": "4.17 Hairburst Volume & Growth Elixir Spray 40ml 30% Off",
+      "variant_title": "40ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 6.86,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
+    {
+      "id": 20654,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-220ml-6100009025",
+      "product_title": "4.43 Hairburst Long And Healthy Hair Mask 220ml 30% Off",
+      "variant_title": "220ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 21.7,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
+    {
+      "id": 20653,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-healthy-hair-vitamins-60-capsules-60062596",
+      "product_title": "4.23 Hairburst Healthy Hair Vitamins 60 Capsules 30% Off",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 19.25,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
+    {
+      "id": 20652,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-for-oily-hair-350ml-6100009150",
+      "product_title": "4.22 Hairburst Shampoo For Oily Hair 350ml 35% Off",
+      "variant_title": "350ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 9.75,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
+    },
+    {
+      "id": 20651,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-conditioner-for-dry-damaged-hair-350ml-6100009003",
+      "product_title": "5 Hairburst Conditioner For Dry, Damaged Hair 350ml 30% Off",
+      "variant_title": "350ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 10.5,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
+    {
+      "id": 20650,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
+      "product_title": "4.38 Hairburst Shampoo x 350ml & Conditioner x 350ml Set 30% Off",
+      "variant_title": "350ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 21.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
+    {
+      "id": 20649,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
+      "product_title": "4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 60.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
+    },
+    {
+      "id": 20648,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::vital-proteins-collagen-peptides-unflavoured-6100148487",
+      "product_title": "4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off",
+      "variant_title": "567g",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 33.49,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
+    {
+      "id": 20647,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
+      "product_title": "4.62 The Humble Co Stainless Steel Tongue Scraper",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 4.99,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
+    },
+    {
+      "id": 20646,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
+      "product_title": "4.76 Wild Amber & Oud Soap Bar 125g 25% Off",
+      "variant_title": "125g",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 3.37,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
+    },
+    {
+      "id": 20645,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-hair-growth-essentials-6100013040",
+      "product_title": "5 Hairburst Hair Growth Essentials 35% Off",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 33.8,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
+    },
+    {
+      "id": 20644,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
+      "product_title": "4.43 Hairburst Long And Healthy Hair Mask 30ml 30% Off",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 4.55,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
+    {
+      "id": 20643,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-wilderness-40g-6100019385",
+      "product_title": "Fussy Natural Deodorant Refill Wilderness 40g 20% Off",
+      "variant_title": "40g",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 4.8,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
+    },
+    {
+      "id": 20642,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-lavender-fields-40g-6100009751",
+      "product_title": "4.93 Fussy Natural Deodorant Refill Lavender Fields 40G 25% Off",
+      "variant_title": "40G",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 4.5,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
+    },
+    {
+      "id": 20641,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
+      "product_title": "4.85 Hairburst Original Shampoo For Longer, Stronger Hair 350ml 35% Off",
+      "variant_title": "350ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 9.75,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
+    },
+    {
+      "id": 20640,
+      "occurred_at": "2026-11-15T00:00:28+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
+      "product_title": "4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 15.4,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
+    },
     {
       "id": 18867,
       "occurred_at": "2026-11-12T16:52:58+00:00",
@@ -1085,227 +1306,6 @@
       "old_price": 9.75,
       "new_price": null,
       "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
-    },
-    {
-      "id": 15973,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-conditioner-for-dry-damaged-hair-350ml-6100009003",
-      "product_title": "5 Hairburst Conditioner For Dry, Damaged Hair 350ml 30% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 10.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:30:10+00:00)"
-    },
-    {
-      "id": 15972,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
-      "product_title": "4.38 Hairburst Shampoo x 350ml & Conditioner x 350ml Set 30% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 21.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:30:10+00:00)"
-    },
-    {
-      "id": 15971,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
-      "product_title": "4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 60.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 15970,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::vital-proteins-collagen-peptides-unflavoured-6100148487",
-      "product_title": "4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off",
-      "variant_title": "567g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 33.49,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:30:10+00:00)"
-    },
-    {
-      "id": 15969,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
-      "product_title": "4.62 The Humble Co Stainless Steel Tongue Scraper",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 15968,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
-      "product_title": "4.76 Wild Amber & Oud Soap Bar 125g 25% Off",
-      "variant_title": "125g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 3.37,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 15967,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-hair-growth-essentials-6100013040",
-      "product_title": "5 Hairburst Hair Growth Essentials 35% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 33.8,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 15966,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
-      "product_title": "4.43 Hairburst Long And Healthy Hair Mask 30ml 30% Off",
-      "variant_title": "30ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.55,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:30:10+00:00)"
-    },
-    {
-      "id": 15965,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-wilderness-40g-6100019385",
-      "product_title": "Fussy Natural Deodorant Refill Wilderness 40g 20% Off",
-      "variant_title": "40g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.8,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 15964,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-lavender-fields-40g-6100009751",
-      "product_title": "4.93 Fussy Natural Deodorant Refill Lavender Fields 40G 25% Off",
-      "variant_title": "40G",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 15963,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
-      "product_title": "4.85 Hairburst Original Shampoo For Longer, Stronger Hair 350ml 35% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 9.75,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
-    },
-    {
-      "id": 15962,
-      "occurred_at": "2026-11-07T20:17:07+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
-      "product_title": "4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.4,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:30:10+00:00)"
-    },
-    {
-      "id": 14877,
-      "occurred_at": "2026-11-05T12:30:43+00:00",
-      "domain": "spacenk.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200028811",
-      "product_title": "Pure Cracked Heel Treatment Balm",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:33:24+00:00)"
-    },
-    {
-      "id": 14876,
-      "occurred_at": "2026-11-05T12:30:10+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-for-oily-hair-350ml-6100009150",
-      "product_title": "4.22 Hairburst Shampoo For Oily Hair 350ml 35% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 9.75,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
-    },
-    {
-      "id": 14875,
-      "occurred_at": "2026-11-05T12:30:10+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
-      "product_title": "4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 60.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 14874,
-      "occurred_at": "2026-11-05T12:30:10+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
-      "product_title": "4.62 The Humble Co Stainless Steel Tongue Scraper",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 14873,
-      "occurred_at": "2026-11-05T12:30:10+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
-      "product_title": "4.76 Wild Amber & Oud Soap Bar 125g 25% Off",
-      "variant_title": "125g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 3.37,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
     }
   ]
 }

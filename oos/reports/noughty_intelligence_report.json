@@ -1,19 +1,47 @@
 {
   "brand": "Noughty",
   "brand_slug": "noughty",
-  "generated_at": "2026-11-12T16:55:34+00:00",
+  "generated_at": "2026-11-15T00:03:37+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
     "total_listed_skus_variants": 104,
-    "in_stock_skus_variants": 102,
-    "out_of_stock_skus_variants": 2,
-    "retail_out_of_stock_variants": 0,
+    "in_stock_skus_variants": 101,
+    "out_of_stock_skus_variants": 3,
+    "retail_out_of_stock_variants": 1,
     "unforced_retail_outages": 0,
     "factory_shortages_on_dtc": 0,
     "silent_removed_skus": 19
   },
   "out_of_stock_alerts": [
+    {
+      "sku_key": "hollandandbarrett.com::noughty::noughty-microfibre-hair-towel-wrap-the-hot-pink-one-6100011490",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "product_title": "Noughty Microfibre Hair Towel Wrap The Hot Pink One",
+      "variant_title": "Standard",
+      "normalized_product_key": "microfibre_hair_towel_wrap_the_hot_pink_one",
+      "product_url": "https://www.hollandandbarrett.com/shop/product/noughty-microfibre-hair-towel-wrap-the-hot-pink-one-6100011490",
+      "sku_code": "noughty-microfibre-hair-towel-wrap-the-hot-pink-one-6100011490",
+      "current_price": 13.99,
+      "compare_at_price": null,
+      "last_in_stock_price": 13.99,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-28T05:44:27+00:00",
+      "last_seen_at": "2026-11-15T00:03:04+00:00",
+      "first_seen_oos_at": "2026-11-15T00:03:04+00:00",
+      "last_seen_in_stock_at": "2026-11-12T16:55:01+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-15 00:03 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    },
     {
       "sku_key": "lovenoughty.co.uk::noughty::howdy-curls-spring-back-gel-creme::40517559746642",
       "domain": "lovenoughty.co.uk",
@@ -30,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T05:43:46+00:00",
-      "last_seen_at": "2026-11-12T16:54:20+00:00",
+      "last_seen_at": "2026-11-15T00:02:23+00:00",
       "first_seen_oos_at": "2026-10-28T05:43:46+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "15d 11h (since 2026-10-28 05:43 UTC)",
-      "days_oos": 15.5,
+      "duration_label": "17d 18h (since 2026-10-28 05:43 UTC)",
+      "days_oos": 17.8,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 9.99,
@@ -60,12 +88,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T05:43:46+00:00",
-      "last_seen_at": "2026-11-12T16:54:20+00:00",
+      "last_seen_at": "2026-11-15T00:02:23+00:00",
       "first_seen_oos_at": "2026-10-28T05:43:46+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "15d 11h (since 2026-10-28 05:43 UTC)",
-      "days_oos": 15.5,
+      "duration_label": "17d 18h (since 2026-10-28 05:43 UTC)",
+      "days_oos": 17.8,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 7.99,
@@ -73,7 +101,36 @@
       "in_stock_elsewhere": []
     }
   ],
-  "retail_out_of_stock_alerts": [],
+  "retail_out_of_stock_alerts": [
+    {
+      "sku_key": "hollandandbarrett.com::noughty::noughty-microfibre-hair-towel-wrap-the-hot-pink-one-6100011490",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "product_title": "Noughty Microfibre Hair Towel Wrap The Hot Pink One",
+      "variant_title": "Standard",
+      "normalized_product_key": "microfibre_hair_towel_wrap_the_hot_pink_one",
+      "product_url": "https://www.hollandandbarrett.com/shop/product/noughty-microfibre-hair-towel-wrap-the-hot-pink-one-6100011490",
+      "sku_code": "noughty-microfibre-hair-towel-wrap-the-hot-pink-one-6100011490",
+      "current_price": 13.99,
+      "compare_at_price": null,
+      "last_in_stock_price": 13.99,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-28T05:44:27+00:00",
+      "last_seen_at": "2026-11-15T00:03:04+00:00",
+      "first_seen_oos_at": "2026-11-15T00:03:04+00:00",
+      "last_seen_in_stock_at": "2026-11-12T16:55:01+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-15 00:03 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    }
+  ],
   "dtc_out_of_stock": [
     {
       "sku_key": "lovenoughty.co.uk::noughty::howdy-curls-spring-back-gel-creme::40517559746642",
@@ -91,12 +148,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T05:43:46+00:00",
-      "last_seen_at": "2026-11-12T16:54:20+00:00",
+      "last_seen_at": "2026-11-15T00:02:23+00:00",
       "first_seen_oos_at": "2026-10-28T05:43:46+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "15d 11h (since 2026-10-28 05:43 UTC)",
-      "days_oos": 15.5,
+      "duration_label": "17d 18h (since 2026-10-28 05:43 UTC)",
+      "days_oos": 17.8,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 9.99,
@@ -121,12 +178,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T05:43:46+00:00",
-      "last_seen_at": "2026-11-12T16:54:20+00:00",
+      "last_seen_at": "2026-11-15T00:02:23+00:00",
       "first_seen_oos_at": "2026-10-28T05:43:46+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "15d 11h (since 2026-10-28 05:43 UTC)",
-      "days_oos": 15.5,
+      "duration_label": "17d 18h (since 2026-10-28 05:43 UTC)",
+      "days_oos": 17.8,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 7.99,
@@ -236,7 +293,7 @@
       "last_seen_at": "2026-11-05T12:32:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T12:32:47+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::holland-barrett-skin-hair-nails-formula-180-tablets-6100008961",
@@ -257,7 +314,7 @@
       "last_seen_at": "2026-11-05T12:32:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T12:32:47+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
@@ -278,7 +335,7 @@
       "last_seen_at": "2026-11-09T18:59:34+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:59:34+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
@@ -299,7 +356,7 @@
       "last_seen_at": "2026-11-09T18:59:34+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:59:34+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
@@ -320,7 +377,7 @@
       "last_seen_at": "2026-11-05T12:32:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T12:32:47+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::the-humble-co-stainless-steel-tongue-scraper-6100004232",
@@ -341,7 +398,7 @@
       "last_seen_at": "2026-11-05T12:32:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T12:32:47+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::vital-proteins-collagen-peptides-unflavoured-6100148487",
@@ -362,7 +419,7 @@
       "last_seen_at": "2026-11-09T18:59:34+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:59:34+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::beauty-advent-calendar-2026-6101407249",
@@ -383,7 +440,7 @@
       "last_seen_at": "2026-11-05T12:32:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T12:32:47+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
@@ -404,7 +461,7 @@
       "last_seen_at": "2026-10-31T23:35:19+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T23:35:19+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::foot-hygiene-cream-100g-6100020737",
@@ -425,7 +482,7 @@
       "last_seen_at": "2026-11-03T12:02:07+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-03T12:02:07+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::nourishing-nail-cuticle-serum-pen-15ml-6100020347",
@@ -446,7 +503,7 @@
       "last_seen_at": "2026-11-07T20:19:46+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-07T20:19:46+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::noughty::iodine-tablets-180-tablets-6100009124",
@@ -467,7 +524,7 @@
       "last_seen_at": "2026-11-09T18:59:34+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:59:34+00:00",
-      "silent_removed_at": "2026-11-12T16:55:01+00:00"
+      "silent_removed_at": "2026-11-15T00:03:04+00:00"
     },
     {
       "sku_key": "lookfantastic.com::noughty::p_noughty-frizz-magic-conditioner-250ml_13222544",
@@ -488,7 +545,7 @@
       "last_seen_at": "2026-10-28T05:44:51+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T05:44:51+00:00",
-      "silent_removed_at": "2026-11-12T16:55:20+00:00"
+      "silent_removed_at": "2026-11-15T00:03:24+00:00"
     },
     {
       "sku_key": "lookfantastic.com::noughty::p_noughty-hair-towel-one-size_13222538",
@@ -509,7 +566,7 @@
       "last_seen_at": "2026-11-03T12:02:29+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-03T12:02:29+00:00",
-      "silent_removed_at": "2026-11-12T16:55:20+00:00"
+      "silent_removed_at": "2026-11-15T00:03:24+00:00"
     },
     {
       "sku_key": "lookfantastic.com::noughty::p_noughty-hair-towel-green_13911561",
@@ -530,7 +587,7 @@
       "last_seen_at": "2026-11-09T18:59:54+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:59:54+00:00",
-      "silent_removed_at": "2026-11-12T16:55:20+00:00"
+      "silent_removed_at": "2026-11-15T00:03:24+00:00"
     },
     {
       "sku_key": "lookfantastic.com::noughty::p_noughty-to-the-rescue-moisture-boost-shampoo-250ml_11924130",
@@ -551,7 +608,7 @@
       "last_seen_at": "2026-10-30T05:56:13+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-30T05:56:13+00:00",
-      "silent_removed_at": "2026-11-12T16:55:20+00:00"
+      "silent_removed_at": "2026-11-15T00:03:24+00:00"
     },
     {
       "sku_key": "lookfantastic.com::noughty::p_noughty-wave-hello-curl-jelly-200ml_13222528",
@@ -572,7 +629,7 @@
       "last_seen_at": "2026-11-09T18:59:54+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:59:54+00:00",
-      "silent_removed_at": "2026-11-12T16:55:20+00:00"
+      "silent_removed_at": "2026-11-15T00:03:24+00:00"
     },
     {
       "sku_key": "lookfantastic.com::noughty::p_noughty-wave-hello-shampoo-1000ml_13875267",
@@ -593,7 +650,7 @@
       "last_seen_at": "2026-10-31T23:35:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T23:35:39+00:00",
-      "silent_removed_at": "2026-11-12T16:55:20+00:00"
+      "silent_removed_at": "2026-11-15T00:03:24+00:00"
     },
     {
       "sku_key": "lovenoughty.co.uk::noughty::sensitive-scalp-starter-bundle::40726198648914",
@@ -614,10 +671,296 @@
       "last_seen_at": "2026-10-31T23:34:39+00:00",
       "first_seen_oos_at": "2026-10-28T05:43:46+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-12T16:54:20+00:00"
+      "silent_removed_at": "2026-11-15T00:02:23+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 20683,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-wave-hello-shampoo-1000ml_13875267",
+      "product_title": "Noughty Wave Hello Shampoo 1000ml",
+      "variant_title": "1000ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 19.19,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T23:35:39+00:00)"
+    },
+    {
+      "id": 20682,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-to-the-rescue-moisture-boost-shampoo-250ml_11924130",
+      "product_title": "Noughty To the Rescue Moisture Boost Shampoo 250ml",
+      "variant_title": "250ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.99,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-30T05:56:13+00:00)"
+    },
+    {
+      "id": 20681,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-frizz-magic-conditioner-250ml_13222544",
+      "product_title": "Noughty Frizz Magic Conditioner 250ml",
+      "variant_title": "250ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 8.99,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-28T05:44:51+00:00)"
+    },
+    {
+      "id": 20680,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-wave-hello-curl-jelly-200ml_13222528",
+      "product_title": "Noughty Wave Hello Curl Jelly 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 8.99,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:59:54+00:00)"
+    },
+    {
+      "id": 20679,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-hair-towel-one-size_13222538",
+      "product_title": "Noughty Hair Towel (One Size)",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 13.99,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-03T12:02:29+00:00)"
+    },
+    {
+      "id": 20678,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-hair-towel-green_13911561",
+      "product_title": "Noughty Hair Towel Green",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 13.99,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:59:54+00:00)"
+    },
+    {
+      "id": 20677,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-detox-dynamo-clarifying-shampoo-250ml_13222537",
+      "product_title": "Noughty Detox Dynamo Clarifying Shampoo 250ml",
+      "variant_title": "250ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 6.29,
+      "new_price": 6.74,
+      "details": "Price changed 6.29 -> 6.74"
+    },
+    {
+      "id": 20676,
+      "occurred_at": "2026-11-15T00:03:24+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Noughty",
+      "sku_key": "lookfantastic.com::noughty::p_noughty-purple-reign-conditioner-250ml_13222535",
+      "product_title": "Noughty Purple Reign Conditioner 250ml",
+      "variant_title": "250ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.54,
+      "new_price": 7.64,
+      "details": "Price changed 8.54 -> 7.64"
+    },
+    {
+      "id": 20675,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::iodine-tablets-180-tablets-6100009124",
+      "product_title": "5 New Leaf Products Iodine - Potassium Iodine 500mcg per serving 180 Tablets 14% Off",
+      "variant_title": "180 Tablets",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 10.36,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:59:34+00:00)"
+    },
+    {
+      "id": 20674,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
+      "product_title": "4.38 Hairburst Shampoo x 350ml & Conditioner x 350ml Set 30% Off",
+      "variant_title": "350ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 21.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:59:34+00:00)"
+    },
+    {
+      "id": 20673,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::foot-hygiene-cream-100g-6100020737",
+      "product_title": "5 Margaret Dabbs London Foot Hygiene Cream",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-03T12:02:07+00:00)"
+    },
+    {
+      "id": 20672,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::foot-peel-socks-1pair-6100016931",
+      "product_title": "3 7th Heaven Foot peel socks",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 3.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
+    },
+    {
+      "id": 20671,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::holland-barrett-skin-hair-nails-formula-180-tablets-6100008961",
+      "product_title": "4.3 Holland & Barrett Skin, Hair & Nails Formula 180 Tablets Buy 1 Get 1 Free",
+      "variant_title": "180 Tablets",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 25.49,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
+    },
+    {
+      "id": 20670,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::beauty-advent-calendar-2026-6101407249",
+      "product_title": "4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 60.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
+    },
+    {
+      "id": 20669,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::the-humble-co-stainless-steel-tongue-scraper-6100004232",
+      "product_title": "4.62 The Humble Co Stainless Steel Tongue Scraper 33% Off",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 3.34,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
+    },
+    {
+      "id": 20668,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::vital-proteins-collagen-peptides-unflavoured-6100148487",
+      "product_title": "4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off",
+      "variant_title": "567g",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 33.49,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:59:34+00:00)"
+    },
+    {
+      "id": 20667,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
+      "product_title": "4.43 Hairburst Long And Healthy Hair Mask 30ml 30% Off",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 4.55,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T18:59:34+00:00)"
+    },
+    {
+      "id": 20666,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
+      "product_title": "4.85 Hairburst Original Shampoo For Longer, Stronger Hair 350ml 35% Off",
+      "variant_title": "350ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 9.75,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T23:35:19+00:00)"
+    },
+    {
+      "id": 20665,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
+      "product_title": "4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 15.4,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
+    },
+    {
+      "id": 20664,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::nourishing-nail-cuticle-serum-pen-15ml-6100020347",
+      "product_title": "5 Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml",
+      "variant_title": "15ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 15.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
+    },
+    {
+      "id": 20663,
+      "occurred_at": "2026-11-15T00:03:04+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Noughty",
+      "sku_key": "hollandandbarrett.com::noughty::noughty-microfibre-hair-towel-wrap-the-hot-pink-one-6100011490",
+      "product_title": "Noughty Microfibre Hair Towel Wrap The Hot Pink One",
+      "variant_title": "Standard",
+      "event_type": "WENT_OOS",
+      "old_price": 13.99,
+      "new_price": 13.99,
+      "details": "Transitioned from In Stock to OOS"
+    },
+    {
+      "id": 20662,
+      "occurred_at": "2026-11-15T00:02:23+00:00",
+      "domain": "lovenoughty.co.uk",
+      "brand": "Noughty",
+      "sku_key": "lovenoughty.co.uk::noughty::sensitive-scalp-starter-bundle::40726198648914",
+      "product_title": "Sensitive Scalp Starter Bundle",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 20.27,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T23:34:39+00:00)"
+    },
     {
       "id": 18917,
       "occurred_at": "2026-11-12T16:55:20+00:00",
@@ -981,292 +1324,6 @@
       "old_price": 8.99,
       "new_price": null,
       "details": "Vanished from storefront (last seen 2026-11-05T12:33:07+00:00)"
-    },
-    {
-      "id": 17229,
-      "occurred_at": "2026-11-09T18:59:54+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Noughty",
-      "sku_key": "lookfantastic.com::noughty::p_noughty-hair-towel-one-size_13222538",
-      "product_title": "Noughty Hair Towel (One Size)",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 13.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-03T12:02:29+00:00)"
-    },
-    {
-      "id": 17228,
-      "occurred_at": "2026-11-09T18:59:54+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Noughty",
-      "sku_key": "lookfantastic.com::noughty::p_noughty-hair-towel-pink_13911559",
-      "product_title": "Noughty Hair Towel Pink",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 10.49,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:20:04+00:00)"
-    },
-    {
-      "id": 17227,
-      "occurred_at": "2026-11-09T18:59:54+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Noughty",
-      "sku_key": "lookfantastic.com::noughty::p_noughty-purple-reign-conditioner-250ml_13222535",
-      "product_title": "Noughty Purple Reign Conditioner 250ml",
-      "variant_title": "250ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 6.74,
-      "new_price": 8.09,
-      "details": "Price changed 6.74 -> 8.09"
-    },
-    {
-      "id": 17226,
-      "occurred_at": "2026-11-09T18:59:54+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Noughty",
-      "sku_key": "lookfantastic.com::noughty::p_noughty-detox-dynamo-clarifying-shampoo-250ml_13222537",
-      "product_title": "Noughty Detox Dynamo Clarifying Shampoo 250ml",
-      "variant_title": "250ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 6.74,
-      "new_price": 6.29,
-      "details": "Price changed 6.74 -> 6.29"
-    },
-    {
-      "id": 17225,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::foot-hygiene-cream-100g-6100020737",
-      "product_title": "5 Margaret Dabbs London Foot Hygiene Cream",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-03T12:02:07+00:00)"
-    },
-    {
-      "id": 17224,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::foot-peel-socks-1pair-6100016931",
-      "product_title": "3 7th Heaven Foot peel socks",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 3.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
-    },
-    {
-      "id": 17223,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::holland-barrett-skin-hair-nails-formula-180-tablets-6100008961",
-      "product_title": "4.3 Holland & Barrett Skin, Hair & Nails Formula 180 Tablets Buy 1 Get 1 Free",
-      "variant_title": "180 Tablets",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 25.49,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
-    },
-    {
-      "id": 17222,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::beauty-advent-calendar-2026-6101407249",
-      "product_title": "4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 60.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
-    },
-    {
-      "id": 17221,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::the-humble-co-stainless-steel-tongue-scraper-6100004232",
-      "product_title": "4.62 The Humble Co Stainless Steel Tongue Scraper 33% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 3.34,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
-    },
-    {
-      "id": 17220,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
-      "product_title": "4.85 Hairburst Original Shampoo For Longer, Stronger Hair 350ml 35% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 9.75,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:35:19+00:00)"
-    },
-    {
-      "id": 17219,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
-      "product_title": "4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.4,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T12:32:47+00:00)"
-    },
-    {
-      "id": 17218,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::pure-hands-discovery-gift-set-1each-6100020433",
-      "product_title": "5 Margaret Dabbs London PURE Hands Discovery Gift Set 1 Item",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 39.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17217,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::pure-nail-strengthening-treatment-9ml-6100020351",
-      "product_title": "4.31 Margaret Dabbs London PURE Nail Strengthening Treatment 9ml",
-      "variant_title": "9ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 16.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17216,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::breathe-pulse-point-oil-frankincense-lavender-6100021000",
-      "product_title": "Margaret Dabbs London Breathe Pulse Point Oil - Frankincense & Lavender",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 19.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17215,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::crystal-nail-file-cover-1each-6100020739",
-      "product_title": "5 Margaret Dabbs London Crystal Nail File & Cover",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 20.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17214,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::nail-fungus-laser-device-1each-6100020415",
-      "product_title": "1 Margaret Dabbs London Nail Fungus Laser Device",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 95.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17213,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::astraeanatura-led-hand-mitts-1each-6100020726",
-      "product_title": "Margaret Dabbs London AstraeaNatura LED Hand Mitts",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 350.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17212,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::luxury-hemp-socks-1each-6100020736",
-      "product_title": "5 Margaret Dabbs London Luxury Hemp Socks",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 12.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17211,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::pure-cracked-heel-treatment-balm-45ml-6100020438",
-      "product_title": "Margaret Dabbs London PURE Cracked Heel Treatment Balm 45ml",
-      "variant_title": "45ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17210,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::nourishing-nail-cuticle-serum-pen-15ml-6100020347",
-      "product_title": "5 Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml",
-      "variant_title": "15ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17209,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::pure-repairing-hand-cream-75ml-6100020348",
-      "product_title": "Margaret Dabbs London PURE Repairing Hand Cream 75 ml",
-      "variant_title": "75 ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T20:19:46+00:00)"
-    },
-    {
-      "id": 17208,
-      "occurred_at": "2026-11-09T18:59:34+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Noughty",
-      "sku_key": "hollandandbarrett.com::noughty::iodine-tablets-180-tablets-6100009124",
-      "product_title": "5 New Leaf Products Iodine - Potassium Iodine 500mcg per serving 180 Tablets 14% Off",
-      "variant_title": "180 Tablets",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 10.36,
-      "details": "Initial discovery"
     }
   ]
 }

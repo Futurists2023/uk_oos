@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Jo Loves
 
-- **Generated:** 2026-11-12 07:22 UTC
+- **Generated:** 2026-11-14 23:58 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 290 (260 In Stock | **30 OOS**)
-- **Retailer Out-of-Stock Alerts:** **12** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **34**
+- **Total Tracked Variants:** 282 (249 In Stock | **33 OOS**)
+- **Retailer Out-of-Stock Alerts:** **12** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **43**
 
 ---
 
@@ -12,25 +12,25 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | A Hand Sanitiser & Hand Lotion Duo | Standard | £12.50 (Discounted -50% (was £25.00)) | - | **Retail Exclusive OOS** | _None_ | **4d 16h (since 2026-11-07 15:05 UTC)** |
-| `spacenk.com` | A Pomelo Diffuser | Standard | £100.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | Grapefruit A Fragrance Body Mist | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | Jardin De Citrus Candle | Standard | £54.00 (Discounted -40% (was £90.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | Jo By Jo Loves A Fragrance Paintbrush Gel | Standard | £42.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **9d 4h (since 2026-11-03 02:30 UTC)** |
-| `spacenk.com` | Jo Loves Amber Lime & Bergamot 15ml | 15ML | £45.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | Jo Loves Jo by Jo Loves A Fragrance 15ml | 15ML | £45.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | Maison De Jazz A Layered Candle | Standard | £54.00 (Discounted -40% (was £90.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | Pomelo Deluxe Home Candle | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | Pomelo Oud A Fragrance 100ml | 100ml | £81.00 (Discounted -40% (was £135.00)) | £135.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **9d 4h (since 2026-11-03 02:30 UTC)** |
-| `spacenk.com` | Seville Orange & Neroli A Hand Lotion | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 10h (since 2026-10-27 20:49 UTC)** |
-| `spacenk.com` | With Love From Como A Fragrance | Standard | £67.50 (Discounted -50% (was £135.00)) | - | **Retail Exclusive OOS** | _None_ | **9d 4h (since 2026-11-03 02:30 UTC)** |
+| `spacenk.com` | A Hand Sanitiser & Hand Lotion Duo | Standard | £12.50 (Discounted -50% (was £25.00)) | - | **Retail Exclusive OOS** | _None_ | **7d 8h (since 2026-11-07 15:05 UTC)** |
+| `spacenk.com` | A Pomelo Diffuser | Standard | £100.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | Grapefruit A Fragrance Body Mist | Standard | £55.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | Jardin De Citrus Candle | Standard | £54.00 (Discounted -40% (was £90.00)) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | Jo By Jo Loves A Fragrance Paintbrush Gel | Standard | £42.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **11d 21h (since 2026-11-03 02:30 UTC)** |
+| `spacenk.com` | Jo Loves Amber Lime & Bergamot 15ml | 15ML | £45.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | Jo Loves Jo by Jo Loves A Fragrance 15ml | 15ML | £45.00 (Below DTC RRP -65% (DTC £130.00)) | £130.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | Maison De Jazz A Layered Candle | Standard | £54.00 (Discounted -40% (was £90.00)) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | Pomelo Deluxe Home Candle | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | Pomelo Oud A Fragrance 100ml | 100ml | £81.00 (Discounted -40% (was £135.00)) | £135.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **11d 21h (since 2026-11-03 02:30 UTC)** |
+| `spacenk.com` | Seville Orange & Neroli A Hand Lotion | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-27 20:49 UTC)** |
+| `spacenk.com` | With Love From Como A Fragrance | Standard | £67.50 (Discounted -50% (was £135.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 21h (since 2026-11-03 02:30 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
+| `joloves.com` | Amber, Lime & Bergamot A Hand & Body Lotion (275ml) | 275ml | £48.00 | 2026-11-14T23:56:49+00:00 |
 | `joloves.com` | Amber, Lime & Bergamot Fragrance Paintbrush™ Refill (3x7ml) | 7ml | £35.00 | 2026-10-27T20:47:37+00:00 |
-| `joloves.com` | Fig Trees Diffuser Refill (200ml) | 200ml | £60.00 | 2026-11-07T15:03:39+00:00 |
 | `joloves.com` | Green Orange & Coriander Fragrance Paintbrush™ Refill (3x7ml) | 7ml | £35.00 | 2026-10-27T20:47:37+00:00 |
 | `joloves.com` | Jo by Jo Loves Bath & Shower Gel (275ml) | 275ml | £39.00 | 2026-11-03T02:29:15+00:00 |
 | `joloves.com` | Jo by Jo Loves Bath Cologne (200ml) | 200ml | £64.00 | 2026-10-27T20:47:37+00:00 |
@@ -38,13 +38,16 @@
 | `joloves.com` | Log Fires Home Candle (185g) | 185g | £55.00 | 2026-10-27T20:47:37+00:00 |
 | `joloves.com` | Mango Thai Lime A Bath & Shower Gel 275ml - free with SAC | 275ml | £37.00 | 2026-10-27T20:47:37+00:00 |
 | `joloves.com` | Mango Thai Lime Bath & Shower Gel (275ml) | 275ml | £39.00 | 2026-10-27T20:47:37+00:00 |
-| `joloves.com` | Mango Thai Lime Bath & Shower Gel and Lotion Set (275ml+275ml) | 275ml | £80.00 | 2026-10-27T20:47:37+00:00 |
+| `joloves.com` | No.42 The Flower Shop A Fragrance (100ml) | 100ml | £130.00 | 2026-11-14T23:56:49+00:00 |
 | `joloves.com` | Orange Butterflies Fragrance Paintbrush™ Refill (3x7ml) | 7ml | £35.00 | 2026-10-27T20:47:37+00:00 |
+| `joloves.com` | Pomelo A Fragrance (50ml) | 50ml | £90.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Pomelo Airline Travel Collection (4x75ml) | 75ml | £55.00 | 2026-11-14T23:56:49+00:00 |
 | `joloves.com` | Pomelo Bath & Shower Gel (275ml) | 275ml | £39.00 | 2026-11-07T15:03:39+00:00 |
 | `joloves.com` | Pomelo Bath & Shower Gel Refill (550ml) | 550ml | £46.00 | 2026-10-27T20:47:37+00:00 |
 | `joloves.com` | Pomelo Body Lotion Refill (550ml) | 550ml | £58.00 | 2026-10-27T20:47:37+00:00 |
 | `joloves.com` | Pomelo Fragrance Paintbrush™ Refill (3x7ml) | 7ml | £35.00 | 2026-10-27T20:47:37+00:00 |
-| `joloves.com` | Shards of Cedar & Red Thyme, A Fragance (100ml) | 100ml | £130.00 | 2026-10-29T21:17:31+00:00 |
+| `joloves.com` | Red Truffle 21 A Fragrance (50ml) | 50ml | £90.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Shards of Cedar & Red Thyme A Fragrance (100ml) | 100ml | £130.00 | 2026-10-29T21:17:31+00:00 |
 | `joloves.com` | Wedding Gift Hamper | Standard | £3.20 | 2026-11-09T18:53:15+00:00 |
 | `joloves.com` | White Rose & Lemon Leaves Body Lotion (275ml) | 275ml | £48.00 | 2026-11-09T18:53:15+00:00 |
 
@@ -62,40 +65,49 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | Jo Loves A Body Lotion Mango Thai Lime 275ml | 275ml | £48.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves A Fragrance - White Rose & Lemon Leaves 50ml | 50ml | £90.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves A Fragrance Diffuser - Pomelo | Standard | £100.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves A Fragrance Diffuser – White Rose & Lemon Leaves 200ml | 200ml | £100.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves A Fragrance – Golden Gardenia 100ml | 100ml | £135.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves A Hand Cream – Jo By Jo Loves 50ml | 50ml | £34.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves A Home Candle Jo by Jo Loves | Standard | £55.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves A Home Candle – Pomelo | Standard | £55.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves Amber Lime and Bergamot Airline Travel Collection 4x75ml | 75ml | £55.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves Black Cashmeran and Tonka a Fragrance Eau de Parfum 100ml | 100ml | £150.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves Pomelo Luxury Travel Collection | Standard | £100.00 | 2026-11-12T07:21:30+00:00 |
-| `cultbeauty.co.uk` | Jo Loves Rose & Dates A Fragrance Paintbrush 7ml | 7ml | £40.00 | 2026-11-12T07:21:30+00:00 |
-| `joloves.com` | A Going Out Set: Black Cashmeran & Tonka, A Fragrance (10ml) + Red Dot Rouge A Nail Polish (14ml) + Pink Vetiver Body Lotion (75ml) | 10ml | £55.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | A Gym Set: White Rose & Lemon Leaves Bath & Shower Gel (75ml) + Pink Vetiver Hand Sanitiser & Hand Lotion (2x25ml) + Jo by Jo Loves Body Lotion (75ml) | 75ml | £55.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | A Walk the dog Set: Pink Vetiver Hand Sanitiser & Hand Lotion (2x25ml) + Jo by Jo Loves, A Fragrance (10ml) + Mango Thai Lime Fragrance Paintbrush™ (7ml) | 25ml | £55.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Bath & Shower Gel and Lotion Set: Pomelo (275ml+275ml) | 275ml | £80.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Bathtime Bouquet Set: Rose & Dates A Bath & Shower Gel 75ml and A Body Lotion 75ml. | 75ml | £48.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Christmas Masterclass with Jo + Mystery Goody Bag | Standard | £25.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Cobalt Patchouli & Cedar Bath & Shower Gel and Lotion Set (275ml + 275ml) | 275ml | £80.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Ebony & Cassis, A Fragrance (15ml) | 15ml | £45.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Flowers for Myself Set: Rose Petal 25 A Votive 70g and No.42 The Flower Shop A Fragrance | 70g | £55.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Jardin de Citrus A Luxury Set: Green Orange & Coriander Paintbrush (2x7ml), Mango Thai Lime Body Lotion (275ml), Pomelo Bath & Shower Gel (275ml) | 7ml | £90.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Jo By Jo Loves Bath & Shower Gel and Lotion Set (275ml+275ml) | 275ml | £80.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Pink Vetiver Hand Sanitiser & Hand Lotion (2x25ml) - SAC | 25ml | £25.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | Pomelo Bath & Shower Gel (75ml) and Pomelo Oud Fragrance (10ml) | 75ml | £50.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | The Iconic Discovery Set (7x2ml) | 2ml | £35.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | The Vibrant Discovery Set (7x2ml) | 2ml | £32.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | White Rose & Lemon Leaves Bath & Shower Gel and Lotion Set (275ml+275ml) | 275ml | £80.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | White Rose & Lemon Leaves Bath Cologne & Body Crème Set (200ml+190ml) | 200ml | £120.00 | 2026-11-12T07:21:11+00:00 |
-| `joloves.com` | With Love from Italy A Fragrance Trio (3x10ml) | 10ml | £80.00 | 2026-11-12T07:21:11+00:00 |
-| `spacenk.com` | Christmas Trees A Scented Candle Green | Standard | £55.00 | 2026-11-12T07:22:45+00:00 |
-| `spacenk.com` | Christmas Trees A Scented Candle Red | Standard | £55.00 | 2026-11-12T07:22:45+00:00 |
-| `spacenk.com` | Christmas Trees Collection | Standard | £40.00 | 2026-11-12T07:22:45+00:00 |
-| `spacenk.com` | Nutmeg & Incense A Scented Candle | Standard | £55.00 | 2026-11-12T07:22:45+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Body Lotion Mango Thai Lime 275ml | 275ml | £48.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Fragrance - Mango Thai Lime 100ml | 100ml | £130.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Fragrance - White Rose & Lemon Leaves 50ml | 50ml | £90.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Fragrance Diffuser - Pomelo | Standard | £100.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Fragrance Diffuser – White Rose & Lemon Leaves 200ml | 200ml | £100.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Fragrance – Golden Gardenia 100ml | 100ml | £135.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Hand Cream – Jo By Jo Loves 50ml | 50ml | £34.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Home Candle Jo by Jo Loves | Standard | £55.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves A Luxury Travel Collection - Amber, Lime & Bergamot | Standard | £65.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves Amber Lime and Bergamot Airline Travel Collection 4x75ml | 75ml | £55.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves Pomelo Luxury Travel Collection | Standard | £100.00 | 2026-11-14T23:57:12+00:00 |
+| `cultbeauty.co.uk` | Jo Loves Rose & Dates A Fragrance Paintbrush 7ml | 7ml | £40.00 | 2026-11-14T23:57:12+00:00 |
+| `joloves.com` | A Going Out Set: Black Cashmeran & Tonka, A Fragrance (10ml) + Red Dot Rouge A Nail Polish (14ml) + Pink Vetiver Body Lotion (75ml) | 10ml | £55.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | A Gym Set: White Rose & Lemon Leaves Bath & Shower Gel (75ml) + Pink Vetiver Hand Sanitiser & Hand Lotion (2x25ml) + Jo by Jo Loves Body Lotion (75ml) | 75ml | £55.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | A Walk the dog Set: Pink Vetiver Hand Sanitiser & Hand Lotion (2x25ml) + Jo by Jo Loves, A Fragrance (10ml) + Mango Thai Lime Fragrance Paintbrush™ (7ml) | 25ml | £55.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | BC&T Airline Travel Collection (2x7ml + 1x50ml) | 7ml | £130.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Bath & Shower Gel and Lotion Set: Pomelo (275ml+275ml) | 275ml | £80.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Bathtime Bouquet Set: Rose & Dates A Bath & Shower Gel 75ml and A Body Lotion 75ml. | 75ml | £48.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Christmas Masterclass with Jo + Mystery Goody Bag | Standard | £25.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Cobalt Patchouli & Cedar Bath & Shower Gel and Lotion Set (275ml + 275ml) | 275ml | £80.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Ebony & Cassis, A Fragance (50ml) | 50ml | £95.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Ebony & Cassis, A Fragrance (15ml) | 15ml | £45.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Fig Trees Votive Candle (70g) | 70g | £35.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Flowers for Myself Set: Rose Petal 25 A Votive 70g and No.42 The Flower Shop A Fragrance | 70g | £55.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Gardenia Votive Candle (70g) | 70g | £35.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Jardin de Citrus A Luxury Set: Green Orange & Coriander Paintbrush (2x7ml), Mango Thai Lime Body Lotion (275ml), Pomelo Bath & Shower Gel (275ml) | 7ml | £90.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Jo By Jo Loves Bath & Shower Gel and Lotion Set (275ml+275ml) | 275ml | £80.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Jo by Jo Loves Votive Candle (70g) | 70g | £35.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Log Fires Votive Candle (70g) Original | 70g | £35.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Mango Thai Lime Bath & Shower Gel and Lotion Set (275ml+275ml) | 275ml | £80.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Mango Thai Lime Votive Candle (70g) | 70g | £35.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Pink Vetiver Hand Sanitiser & Hand Lotion (2x25ml) - SAC | 25ml | £25.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Pomelo Bath & Shower Gel (75ml) and Pomelo Oud Fragrance (10ml) | 75ml | £50.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | Rose Petal 25 Votive Candle (70g) | 70g | £35.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | The Iconic Discovery Set (7x2ml) | 2ml | £35.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | The Vibrant Discovery Set (7x2ml) | 2ml | £32.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | White Rose & Lemon Leaves Bath & Shower Gel and Lotion Set (275ml+275ml) | 275ml | £80.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | White Rose & Lemon Leaves Bath Cologne & Body Crème Set (200ml+190ml) | 200ml | £120.00 | 2026-11-14T23:56:49+00:00 |
+| `joloves.com` | With Love from Italy A Fragrance Trio (3x10ml) | 10ml | £80.00 | 2026-11-14T23:56:49+00:00 |
+| `spacenk.com` | Christmas Trees A Scented Candle Green | Standard | £55.00 | 2026-11-14T23:58:27+00:00 |
+| `spacenk.com` | Christmas Trees A Scented Candle Red | Standard | £55.00 | 2026-11-14T23:58:27+00:00 |
+| `spacenk.com` | Christmas Trees Collection | Standard | £40.00 | 2026-11-14T23:58:27+00:00 |
+| `spacenk.com` | Nutmeg & Incense A Scented Candle | Standard | £55.00 | 2026-11-14T23:58:27+00:00 |
 
 ---
 
@@ -104,5 +116,5 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/jo-loves/ |
-| `joloves.com` | Official Brand DTC (Master Catalog) | Shopify | 177 | 159 | **18** | https://joloves.com |
+| `joloves.com` | Official Brand DTC (Master Catalog) | Shopify | 169 | 148 | **21** | https://joloves.com |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 81 | 69 | **12** | https://www.spacenk.com/uk/brands/j/jo-loves |
