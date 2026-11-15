@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-11-13 01:11 UTC
+- **Generated:** 2026-11-15 06:40 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 93 (82 In Stock | **11 OOS**)
+- **Total Tracked Variants:** 95 (84 In Stock | **11 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **1**
+- **Removed / Delisted Variants:** **2**
 
 ---
 
@@ -55,7 +55,8 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-13T01:11:01+00:00 |
+| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-15T06:40:47+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine 6 Piece Sponges Bundle | Standard | £14.99 | 2026-11-15T06:40:47+00:00 |
 
 ---
 
@@ -64,6 +65,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/spectrum-collections |
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 18 | 18 | **0** | https://www.cultbeauty.co.uk/c/brands/spectrum-collections/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/spectrum-collections/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 19 | 19 | **0** | https://www.cultbeauty.co.uk/c/brands/spectrum-collections/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 28 | 28 | **0** | https://www.lookfantastic.com/c/brands/spectrum-collections/ |
 | `spectrumcollections.com` | Official Brand DTC (Master Catalog) | Shopify | 48 | 37 | **11** | https://spectrumcollections.com |

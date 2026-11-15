@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: This Works
 
-- **Generated:** 2026-11-13 01:12 UTC
+- **Generated:** 2026-11-15 06:42 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 176 (171 In Stock | **5 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,8 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Perfect All Over Kit | Standard | £9.00 (Discounted -40% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 19h (since 2026-10-28 05:53 UTC)** |
-| `spacenk.com` | Sleep Ritual | Standard | £18.00 (Discounted -40% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **15d 19h (since 2026-10-28 05:53 UTC)** |
+| `spacenk.com` | Perfect All Over Kit | Standard | £9.00 (Discounted -40% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **18d 0h (since 2026-10-28 05:53 UTC)** |
+| `spacenk.com` | Sleep Ritual | Standard | £18.00 (Discounted -40% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **18d 0h (since 2026-10-28 05:53 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -51,10 +51,10 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | This Works Deep Sleep Beauty Oil 150ml | 150ml | £36.00 | 2026-11-13T01:11:59+00:00 |
-| `thisworks.com` | black spice & cedar candle free gift | Standard | £28.00 | 2026-11-13T01:11:17+00:00 |
-| `thisworks.com` | neroli & sweet orange candle | Standard | £32.00 | 2026-11-13T01:11:17+00:00 |
-| `thisworks.com` | perfect all over kit | 2 x 20ml | £15.00 | 2026-11-13T01:11:17+00:00 |
+| `lookfantastic.com` | This Works Deep Sleep Beauty Oil 150ml | 150ml | £36.00 | 2026-11-15T06:41:50+00:00 |
+| `thisworks.com` | black spice & cedar candle free gift | Standard | £28.00 | 2026-11-15T06:41:07+00:00 |
+| `thisworks.com` | neroli & sweet orange candle | Standard | £32.00 | 2026-11-15T06:41:07+00:00 |
+| `thisworks.com` | perfect all over kit | 2 x 20ml | £15.00 | 2026-11-15T06:41:07+00:00 |
 
 ---
 
