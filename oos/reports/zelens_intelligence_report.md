@@ -1,16 +1,19 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Zelens
 
-- **Generated:** 2026-11-13 01:15 UTC
+- **Generated:** 2026-11-15 15:43 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 85 (58 In Stock | **27 OOS**)
-- **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 85 (56 In Stock | **29 OOS**)
+- **Retailer Out-of-Stock Alerts:** **2** (**1 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **2**
 
 ---
 
 ## 1A. Major UK Retailer Out-of-Stock Alerts (Cross-Checked Against Official DTC)
 
-_All tracked variants across monitored UK retail stockists are currently In Stock._
+| Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
+|---|---|---|---|---|---|---|---|
+| `lookfantastic.com` | Zelens Emulsion D Fortifying Moisturiser 50ml | 50ml | £75.00 (Full Price) | £75.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **0h (first detected 2026-11-15 15:43 UTC)** |
+| `lookfantastic.com` | Zelens Power D Fortifying & Restoring 10ml | 10ml | £47.00 (Below DTC RRP -62% (DTC £125.00)) | £125.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **0h (first detected 2026-11-15 15:43 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -57,8 +60,8 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Zelens Acqua Shiso Hydrating Gel Cream 50ml | 50ml | £52.50 | 2026-11-13T01:15:45+00:00 |
-| `zelens.com` | The Powers Discovery Set | Standard | £160.00 | 2026-11-13T01:15:05+00:00 |
+| `lookfantastic.com` | Zelens Acqua Shiso Hydrating Gel Cream 50ml | 50ml | £52.50 | 2026-11-15T15:43:42+00:00 |
+| `zelens.com` | The Powers Discovery Set | Standard | £160.00 | 2026-11-15T15:43:02+00:00 |
 
 ---
 
@@ -67,5 +70,5 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 0 | 0 | **0** | https://www.cultbeauty.co.uk/c/brands/zelens/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 20 | 20 | **0** | https://www.lookfantastic.com/c/brands/zelens/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 20 | 18 | **2** | https://www.lookfantastic.com/c/brands/zelens/ |
 | `zelens.com` | Official Brand DTC (Master Catalog) | Shopify | 65 | 38 | **27** | https://zelens.com |
