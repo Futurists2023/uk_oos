@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Isle of Paradise
 
-- **Generated:** 2026-11-14 00:58 UTC
+- **Generated:** 2026-11-16 06:39 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 90 (82 In Stock | **8 OOS**)
-- **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 90 (77 In Stock | **13 OOS**)
+- **Retailer Out-of-Stock Alerts:** **5** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
 ---
@@ -12,7 +12,11 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £5.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 9h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Isle of Paradise Double Sided Self Tan Mitt | Standard | £5.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **22d 15h (since 2026-10-24 15:04 UTC)** |
+| `lookfantastic.com` | Isle of Paradise Exclusive Brilliantly Bright Body Moisturiser 280ml | 280ml | £17.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-16 06:38 UTC)** |
+| `lookfantastic.com` | Isle of Paradise Exclusive Brilliantly Bright Body Polish 230ml | 230ml | £18.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-16 06:38 UTC)** |
+| `lookfantastic.com` | Isle of Paradise Over it Magic Self-Tan Eraser 200ml | 200ml | £17.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-16 06:38 UTC)** |
+| `lookfantastic.com` | Isle of Paradise Pro Glow Spray Tan Mister | Standard | £10.95 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-16 06:38 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -22,6 +26,7 @@
 | `theisleofparadise.com` | Daily Defense Face Mist | Standard | £28.00 | 2026-10-24T15:04:38+00:00 |
 | `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Medium | £35.00 | 2026-10-24T15:04:38+00:00 |
 | `theisleofparadise.com` | Glow Clear Self-Tanning Mousse | Dark | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `theisleofparadise.com` | Self-Tanning Drops | Dark | £30.00 | 2026-11-16T06:37:50+00:00 |
 | `theisleofparadise.com` | Self-Tanning Water | Light | £35.00 | 2026-11-08T15:21:37+00:00 |
 | `theisleofparadise.com` | Self-Tanning Water | Medium | £35.00 | 2026-11-14T00:56:49+00:00 |
 | `theisleofparadise.com` | Sunny Serum Bronzing Setting Mist | Golden Hour | £24.00 | 2026-10-24T15:04:38+00:00 |
@@ -70,6 +75,6 @@ _No removed variants detected yet._
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/isle-of-paradise |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 31 | 30 | **1** | https://www.cultbeauty.co.uk/c/brands/isle-of-paradise/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/isle-of-paradise/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 23 | **4** | https://www.lookfantastic.com/c/brands/isle-of-paradise/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 5 | 5 | **0** | https://www.spacenk.com/uk/brands/i/isle-of-paradise |
-| `theisleofparadise.com` | Official Brand DTC (Master Catalog) | Shopify | 27 | 20 | **7** | https://theisleofparadise.com |
+| `theisleofparadise.com` | Official Brand DTC (Master Catalog) | Shopify | 27 | 19 | **8** | https://theisleofparadise.com |

@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Joonbyrd
 
-- **Generated:** 2026-11-14 01:00 UTC
+- **Generated:** 2026-11-16 06:41 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 196 (192 In Stock | **4 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,9 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | 3 Little Byrds Mini Trio | Standard | - (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **20d 9h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Joonbyrd Daydreamer Body Serum 100ml | 100ML | £78.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `lookfantastic.com` | **20d 9h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Joonbyrd X Space NK Lovebyrds Mini Duo | Standard | £10.40 (Discounted -60% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **5d 9h (since 2026-11-08 15:24 UTC)** |
+| `spacenk.com` | 3 Little Byrds Mini Trio | Standard | - (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **22d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Joonbyrd Daydreamer Body Serum 100ml | 100ML | £78.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `lookfantastic.com` | **22d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Joonbyrd X Space NK Lovebyrds Mini Duo | Standard | £10.40 (Discounted -60% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **7d 15h (since 2026-11-08 15:24 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -65,10 +65,10 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `joonbyrd.com` | Future Romance | Standard | £50.00 | 2026-11-14T00:58:31+00:00 |
-| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £16.50 | 2026-11-14T00:58:31+00:00 |
-| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £10.00 | 2026-11-14T00:58:31+00:00 |
-| `spacenk.com` | Future Romance Body Glaze | Standard | £62.00 | 2026-11-14T01:00:05+00:00 |
+| `joonbyrd.com` | Future Romance | Standard | £50.00 | 2026-11-16T06:39:21+00:00 |
+| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £16.50 | 2026-11-16T06:39:21+00:00 |
+| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £10.00 | 2026-11-16T06:39:21+00:00 |
+| `spacenk.com` | Future Romance Body Glaze | Standard | £62.00 | 2026-11-16T06:41:04+00:00 |
 
 ---
 
