@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: NEOM Wellbeing
 
-- **Generated:** 2026-11-14 01:04 UTC
+- **Generated:** 2026-11-16 18:36 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 250 (247 In Stock | **3 OOS**)
+- **Total Tracked Variants:** 249 (246 In Stock | **3 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **8**
+- **Removed / Delisted Variants:** **10**
 
 ---
 
@@ -33,14 +33,16 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `neomwellbeing.com` | 24 Days Of Wellbeing Advent Calendar (Worth £399) | Standard | £199.00 | 2026-11-14T01:03:32+00:00 |
-| `neomwellbeing.com` | Grapefruit, Mandarin & Eucalyptus Essential Oil Blend 10ml | 10ml | £30.00 | 2026-11-14T01:03:32+00:00 |
-| `neomwellbeing.com` | Great Day Essential Oil Blend 10ml | 10ml | £25.00 | 2026-11-14T01:03:32+00:00 |
-| `neomwellbeing.com` | Perfect Night's Sleep Mist 100ml | 100ml | £49.00 | 2026-11-14T01:03:32+00:00 |
-| `neomwellbeing.com` | Super Shower Power Body Polish 150ml | 150ml | £28.00 | 2026-11-14T01:03:32+00:00 |
-| `neomwellbeing.com` | The Morning Feel-Good Edit (Worth £80) | Standard | £40.00 | 2026-11-14T01:03:32+00:00 |
-| `neomwellbeing.com` | The Scent To Sleep Edit (Worth £95) | Standard | £47.00 | 2026-11-14T01:03:32+00:00 |
-| `neomwellbeing.com` | The Wellbeing Scent Edit (Worth £100) | Standard | £50.00 | 2026-11-14T01:03:32+00:00 |
+| `neomwellbeing.com` | 24 Days Of Wellbeing Advent Calendar (Worth £399) | Standard | £199.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | Grapefruit, Mandarin & Eucalyptus Essential Oil Blend 10ml | 10ml | £30.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | Great Day Essential Oil Blend 10ml | 10ml | £25.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | Perfect Night's Sleep Mist 100ml | 100ml | £49.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | Super Shower Power Body Polish 150ml | 150ml | £28.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | The Morning Feel-Good Edit (Worth £80) | Standard | £40.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | The Scent To Sleep Edit (Worth £95) | Standard | £47.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | The Wellbeing Pod & Scent Discovery Starter Pack | Standard | £115.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | The Wellbeing Pod & Scent the Season Discovery Set | Standard | £115.00 | 2026-11-16T18:35:12+00:00 |
+| `neomwellbeing.com` | The Wellbeing Scent Edit (Worth £100) | Standard | £50.00 | 2026-11-16T18:35:12+00:00 |
 
 ---
 
@@ -51,5 +53,5 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/neom-wellbeing |
 | `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 0 | 0 | **0** | https://www.hollandandbarrett.com/shop/brands/neom-wellbeing/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 0 | 0 | **0** | https://www.lookfantastic.com/c/brands/neom-wellbeing/ |
-| `neomwellbeing.com` | Official Brand DTC (Master Catalog) | Shopify | 250 | 247 | **3** | https://neomwellbeing.com |
+| `neomwellbeing.com` | Official Brand DTC (Master Catalog) | Shopify | 249 | 246 | **3** | https://neomwellbeing.com |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 0 | 0 | **0** | https://www.spacenk.com/uk/brands/n/neom-wellbeing |

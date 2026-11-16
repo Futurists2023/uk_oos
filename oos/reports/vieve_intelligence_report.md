@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: VIEVE
 
-- **Generated:** 2026-11-14 11:41 UTC
+- **Generated:** 2026-11-16 18:47 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 412 (379 In Stock | **33 OOS**)
-- **Retailer Out-of-Stock Alerts:** **23** (**3 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **28**
+- **Total Tracked Variants:** 410 (380 In Stock | **30 OOS**)
+- **Retailer Out-of-Stock Alerts:** **20** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **30**
 
 ---
 
@@ -12,29 +12,26 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Limited-Edition Modern Matte Lipstick | Standard | £13.80 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Essential Palette | Standard | £39.20 (Discounted -20% (was £49.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 12h (since 2026-11-11 22:52 UTC)** |
-| `spacenk.com` | The Heros | Standard | £29.00 (Discounted -50% (was £58.00)) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Icons | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Muse Palette | Standard | £39.20 (Discounted -20% (was £49.00)) | - | **Retail Exclusive OOS** | _None_ | **5d 14h (since 2026-11-08 20:44 UTC)** |
-| `spacenk.com` | The Ninetease Palette | Standard | £49.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Prep and Set Duo | Standard | £13.00 (Discounted -50% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Rosa Duo | Standard | £19.80 (Discounted -40% (was £33.00)) | £39.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Trinket Tin | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | VIEVE Modern Bronzer Light | Standard | £27.20 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 12h (since 2026-11-11 22:52 UTC)** |
-| `spacenk.com` | VIEVE Modern Bronzer Medium | Standard | £27.20 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 14h (since 2026-11-08 20:44 UTC)** |
-| `spacenk.com` | VIEVE Modern Bronzer Tan | Standard | £27.20 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-14 11:41 UTC)** |
-| `spacenk.com` | VIEVE Modern Lip Definer Bewitched | Standard | £11.40 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | VIEVE Modern Lip Definer Peach'd | Standard | £11.40 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | VIEVE Modern Matte Lipstick Deity | Standard | £13.80 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | VIEVE Modern Matte Lipstick Lara | Standard | £25.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 12h (since 2026-11-11 22:52 UTC)** |
-| `spacenk.com` | VIEVE Modern Matte Lipstick Pinch | Standard | £25.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **15d 20h (since 2026-10-29 15:24 UTC)** |
-| `spacenk.com` | VIEVE Modern Matte Lipstick Treasure | Standard | £13.80 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | VIEVE Modern Matte Lipstick Vieve | Standard | £13.80 (Below DTC RRP -51% (DTC £28.00)) | £28.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | VIEVE Sunset Blush Pesca | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-14 11:41 UTC)** |
-| `spacenk.com` | VIEVE Sunset Blush Piazza | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 12h (since 2026-11-11 22:52 UTC)** |
-| `spacenk.com` | VIEVE Sunset Blush Rosa | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-14 11:41 UTC)** |
-| `spacenk.com` | VIEVE Sunset Blush Sorbet | Standard | £13.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 20h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Limited-Edition Modern Matte Lipstick | Standard | £13.80 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Essential Palette | Standard | £39.20 (Discounted -20% (was £49.00)) | - | **Retail Exclusive OOS** | _None_ | **4d 19h (since 2026-11-11 22:52 UTC)** |
+| `spacenk.com` | The Heros | Standard | £29.00 (Discounted -50% (was £58.00)) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Icons | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Muse Palette | Standard | £39.20 (Discounted -20% (was £49.00)) | - | **Retail Exclusive OOS** | _None_ | **7d 22h (since 2026-11-08 20:44 UTC)** |
+| `spacenk.com` | The Ninetease Palette | Standard | £49.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Prep and Set Duo | Standard | £13.00 (Discounted -50% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Rosa Duo | Standard | £19.80 (Discounted -40% (was £33.00)) | £39.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Trinket Tin | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | VIEVE Modern Bronzer Light | Standard | £27.20 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 19h (since 2026-11-11 22:52 UTC)** |
+| `spacenk.com` | VIEVE Modern Bronzer Medium | Standard | £27.20 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **7d 22h (since 2026-11-08 20:44 UTC)** |
+| `spacenk.com` | VIEVE Modern Bronzer Tan | Standard | £27.20 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 7h (since 2026-11-14 11:41 UTC)** |
+| `spacenk.com` | VIEVE Modern Lip Definer Bewitched | Standard | £11.40 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | VIEVE Modern Lip Definer Peach'd | Standard | £11.40 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | VIEVE Modern Matte Lipstick Lara | Standard | £25.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 19h (since 2026-11-11 22:52 UTC)** |
+| `spacenk.com` | VIEVE Modern Matte Lipstick Pinch | Standard | £25.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 3h (since 2026-10-29 15:24 UTC)** |
+| `spacenk.com` | VIEVE Sunset Blush Pesca | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 7h (since 2026-11-14 11:41 UTC)** |
+| `spacenk.com` | VIEVE Sunset Blush Piazza | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **4d 19h (since 2026-11-11 22:52 UTC)** |
+| `spacenk.com` | VIEVE Sunset Blush Rosa | Standard | £27.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 7h (since 2026-11-14 11:41 UTC)** |
+| `spacenk.com` | VIEVE Sunset Blush Sorbet | Standard | £13.50 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **23d 3h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -48,7 +45,7 @@
 | `vieve.co.uk` | Hotlips x Socialite | XL | £4.05 | 2026-10-24T15:04:38+00:00 |
 | `vieve.co.uk` | Hotlips x Supermodel | XS | £4.05 | 2026-10-24T15:04:38+00:00 |
 | `vieve.co.uk` | Hotlips x Supermodel | XL | £4.05 | 2026-10-24T15:04:38+00:00 |
-| `vieve.co.uk` | Sunset Blush | Standard | £16.00 | 2026-11-11T22:51:17+00:00 |
+| `vieve.co.uk` | Lip Sync | Standard | £28.00 | 2026-11-16T18:45:57+00:00 |
 | `vieve.co.uk` | The VIEVE Cherub Keyring | Standard | £13.00 | 2026-10-24T15:04:38+00:00 |
 
 ---
@@ -74,34 +71,36 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | VIEVE Bath Salts 500g | 500g | £31.00 | 2026-11-14T11:40:29+00:00 |
-| `cultbeauty.co.uk` | VIEVE Super Skin Nova Travel Size 12g | 12g | £17.00 | 2026-11-14T11:40:29+00:00 |
-| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-14T11:40:43+00:00 |
-| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-14T11:40:43+00:00 |
-| `hollandandbarrett.com` | 4.9 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-14T11:40:43+00:00 |
-| `vieve.co.uk` | Claw Clip | Standard | £19.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | Claw Clip | Standard | £19.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | Dimension Face Palette | Standard | £24.50 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | Jamie's Tour Kit | Standard | £89.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | Modern Lip Definer | Standard | £25.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | Modern Lip Definer | Standard | £15.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | Modern Matte Lipstick | Standard | £14.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | Sunset Blush | Standard | £19.20 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | The Go-To Lip Set | Standard | £39.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | The Ninetease Sock | Standard | £5.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | The Out of Office Set | Standard | £97.00 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XS | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | S | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | M | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | L | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XL | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XXL | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XS | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | S | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | M | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | L | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XL | £23.60 | 2026-11-14T11:40:08+00:00 |
-| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XXL | £23.60 | 2026-11-14T11:40:08+00:00 |
+| `cultbeauty.co.uk` | VIEVE Bath Salts 500g | 500g | £31.00 | 2026-11-16T18:46:17+00:00 |
+| `cultbeauty.co.uk` | VIEVE Super Skin Nova Travel Size 12g | 12g | £17.00 | 2026-11-16T18:46:17+00:00 |
+| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-16T18:46:33+00:00 |
+| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-16T18:46:33+00:00 |
+| `hollandandbarrett.com` | 4.9 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-16T18:46:33+00:00 |
+| `vieve.co.uk` | Claw Clip | Standard | £19.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | Claw Clip | Standard | £19.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | Dimension Face Palette | Standard | £24.50 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | Jamie's Tour Kit | Standard | £89.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | Modern Lip Definer | Standard | £25.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | Modern Lip Definer | Standard | £15.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | Modern Matte Lipstick | Standard | £14.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | Sunset Blush | Standard | £19.20 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | The Essential+ Makeup Bag | Standard | £30.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | The Go-To Lip Set | Standard | £39.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | The Ninetease Sock | Standard | £5.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | The Out of Office Set | Standard | £97.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | The VIEVE Society Cap | Standard | £21.00 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XS | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | S | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | M | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | L | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XL | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XXL | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XS | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | S | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | M | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | L | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XL | £23.60 | 2026-11-16T18:45:57+00:00 |
+| `vieve.co.uk` | VIEVE Gratitude Attitude Hoodie | XXL | £23.60 | 2026-11-16T18:45:57+00:00 |
 
 ---
 
@@ -111,5 +110,5 @@
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/vieve/ |
 | `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 14 | 14 | **0** | https://www.hollandandbarrett.com/shop/brands/vieve/ |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 125 | 102 | **23** | https://www.spacenk.com/uk/brands/v/vieve |
-| `vieve.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 241 | 231 | **10** | https://vieve.co.uk |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 125 | 105 | **20** | https://www.spacenk.com/uk/brands/v/vieve |
+| `vieve.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 239 | 229 | **10** | https://vieve.co.uk |
