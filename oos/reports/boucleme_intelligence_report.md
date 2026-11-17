@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Bouclème
 
-- **Generated:** 2026-11-14 18:06 UTC
+- **Generated:** 2026-11-17 03:03 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 123 (117 In Stock | **6 OOS**)
-- **Retailer Out-of-Stock Alerts:** **2** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 123 (115 In Stock | **8 OOS**)
+- **Retailer Out-of-Stock Alerts:** **4** (**4 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **3**
 
 ---
@@ -12,8 +12,10 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Bouclème Curl Conditioner 100ml | 100ml | £12.00 (Full Price) | £12.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **9d 17h (since 2026-11-05 01:01 UTC)** |
-| `cultbeauty.co.uk` | Bouclème Super Volumising Foam 200ml | 200ml | £24.00 (Full Price) | £24.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **21d 3h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Bouclème Curl Conditioner 100ml | 100ml | £12.00 (Full Price) | £12.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `lookfantastic.com` | **12d 2h (since 2026-11-05 01:01 UTC)** |
+| `cultbeauty.co.uk` | Bouclème Super Volumising Foam 200ml | 200ml | £24.00 (Full Price) | £24.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **23d 11h (since 2026-10-24 15:04 UTC)** |
+| `lookfantastic.com` | Bouclème Curl Conditioner 100ml | 100ml | £12.00 (Full Price) | £12.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk` | **0h (first detected 2026-11-17 03:03 UTC)** |
+| `lookfantastic.com` | Bouclème Hydrating Hair Cleanser 100ml | 100ml | £11.00 (Full Price) | £11.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | `cultbeauty.co.uk` | **0h (first detected 2026-11-17 03:03 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -33,7 +35,7 @@
 | **Curl Cleanser** | ✅ £17.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Curl Conditioner** | ✅ £19.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Curl Cream** | ✅ £22.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **Curl Defence Spray** | ✅ £22.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £16.50 (-25% vs RRP) | `boots.com` |
+| **Curl Defence Spray** | ✅ £22.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Curl Defining Gel** | ✅ £17.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Flexible Hold Hair Spray** | ✅ £24.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Bouclème Foam to Dry Shampoo 100ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
@@ -56,9 +58,9 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `boucleme.co.uk` | Bodycare Duo | Standard | £24.50 | 2026-11-14T18:05:38+00:00 |
-| `boucleme.co.uk` | Invigorating Body Wash | 300ml | £14.00 | 2026-11-14T18:05:38+00:00 |
-| `boucleme.co.uk` | Nourishing Body Cream | 300ml | £15.40 | 2026-11-14T18:05:38+00:00 |
+| `boucleme.co.uk` | Bodycare Duo | Standard | £24.50 | 2026-11-17T03:02:42+00:00 |
+| `boucleme.co.uk` | Invigorating Body Wash | 300ml | £14.00 | 2026-11-17T03:02:42+00:00 |
+| `boucleme.co.uk` | Nourishing Body Cream | 300ml | £15.40 | 2026-11-17T03:02:42+00:00 |
 
 ---
 
@@ -69,4 +71,4 @@
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/boucleme |
 | `boucleme.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 77 | 73 | **4** | https://boucleme.co.uk |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 22 | 20 | **2** | https://www.cultbeauty.co.uk/c/brands/boucleme/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.lookfantastic.com/c/brands/boucleme/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 22 | **2** | https://www.lookfantastic.com/c/brands/boucleme/ |

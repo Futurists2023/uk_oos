@@ -1,8 +1,8 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: BYOMA
 
-- **Generated:** 2026-11-14 18:08 UTC
+- **Generated:** 2026-11-17 03:05 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 159 (143 In Stock | **16 OOS**)
+- **Total Tracked Variants:** 159 (144 In Stock | **15 OOS**)
 - **Retailer Out-of-Stock Alerts:** **6** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **2**
 
@@ -12,12 +12,12 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Best Sellers Collection Kit | Standard | £25.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **7d 3h (since 2026-11-07 14:57 UTC)** |
-| `spacenk.com` | Cosmic Glow Treat Trio | Standard | £10.50 (Discounted -30% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **21d 3h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Moisturising Gel Sunscreen | Standard | £7.50 (Discounted -50% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **21d 3h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Star Power Brightening Trio | Standard | £8.40 (Discounted -30% (was £12.00)) | - | **Retail Exclusive OOS** | _None_ | **21d 3h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Stellar Skin + Bodycare Set | Standard | £8.40 (Discounted -30% (was £12.00)) | - | **Retail Exclusive OOS** | _None_ | **21d 3h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Universal Starter Kit | Standard | £15.40 (Discounted -30% (was £22.00)) | - | **Retail Exclusive OOS** | _None_ | **21d 3h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Best Sellers Collection Kit | Standard | £25.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **9d 12h (since 2026-11-07 14:57 UTC)** |
+| `spacenk.com` | Cosmic Glow Treat Trio | Standard | £10.50 (Discounted -30% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **23d 12h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Moisturising Gel Sunscreen | Standard | £7.50 (Discounted -50% (was £15.00)) | - | **Retail Exclusive OOS** | _None_ | **23d 12h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Star Power Brightening Trio | Standard | £8.40 (Discounted -30% (was £12.00)) | - | **Retail Exclusive OOS** | _None_ | **23d 12h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Stellar Skin + Bodycare Set | Standard | £8.40 (Discounted -30% (was £12.00)) | - | **Retail Exclusive OOS** | _None_ | **23d 12h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Universal Starter Kit | Standard | £15.40 (Discounted -30% (was £22.00)) | - | **Retail Exclusive OOS** | _None_ | **23d 12h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -26,7 +26,6 @@
 | `byoma.com` | Bestsellers | Standard | £58.45 | 2026-11-12T07:13:06+00:00 |
 | `byoma.com` | Blemish | Standard | £41.20 | 2026-11-12T07:13:06+00:00 |
 | `byoma.com` | Blemish Acne Clearing Cleanser | Standard | £13.99 | 2026-11-12T07:13:06+00:00 |
-| `byoma.com` | Creamy Jelly Cleanser | Standard | £12.99 | 2026-11-12T07:13:06+00:00 |
 | `byoma.com` | Glass Skin | Standard | £53.95 | 2026-11-12T07:13:06+00:00 |
 | `byoma.com` | Hydrating Milky Toner | Standard | £14.99 | 2026-11-12T07:13:06+00:00 |
 | `byoma.com` | Hydration Head to Toe | Standard | £54.50 | 2026-11-14T18:06:59+00:00 |
@@ -45,7 +44,7 @@
 | **Brightening Serum** | ✅ £15.99 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £12.99 (-19% vs RRP); `spacenk.com` £13.00 (-19% vs RRP) | `boots.com` |
 | **Brightening Toner** | ✅ £14.99 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £11.99 (-20% vs RRP); `spacenk.com` £12.00 (-20% vs RRP) | `boots.com` |
 | **BYOMA Clarifying Starter Kit** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `boots.com` |
-| **Creamy Jelly Cleanser** | ⚠️ OOS (£12.99) | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £10.99 (-15% vs RRP); `spacenk.com` £11.00 (-15% vs RRP) | `boots.com` |
+| **Creamy Jelly Cleanser** | ✅ £12.99 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £10.99 (-15% vs RRP); `spacenk.com` £11.00 (-15% vs RRP) | `boots.com` |
 | **Foaming Rice Deep Cleanser** | ✅ £13.99 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Hydrating Body Wash** | ✅ £12.99 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £6.99 (-46% vs RRP) | `boots.com` |
 | **Hydrating Milky Toner** | ⚠️ OOS (£14.99) | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £11.99 (-20% vs RRP); `spacenk.com` £12.00 (-20% vs RRP) | `boots.com` |
@@ -65,8 +64,8 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `byoma.com` | Clarifying Serum Refill | Standard | £14.99 | 2026-11-14T18:06:59+00:00 |
-| `cultbeauty.co.uk` | BYOMA Brightening Starter Kit | Standard | £16.99 | 2026-11-14T18:07:40+00:00 |
+| `byoma.com` | Clarifying Serum Refill | Standard | £14.99 | 2026-11-17T03:04:06+00:00 |
+| `cultbeauty.co.uk` | BYOMA Brightening Starter Kit | Standard | £16.99 | 2026-11-17T03:04:51+00:00 |
 
 ---
 
@@ -75,6 +74,6 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/byoma |
-| `byoma.com` | Official Brand DTC (Master Catalog) | Shopify | 68 | 58 | **10** | https://byoma.com |
+| `byoma.com` | Official Brand DTC (Master Catalog) | Shopify | 68 | 59 | **9** | https://byoma.com |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/byoma/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 59 | 53 | **6** | https://www.spacenk.com/uk/brands/b/byoma |

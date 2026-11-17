@@ -1,17 +1,17 @@
 {
   "brand": "DIRTEA",
   "brand_slug": "dirtea",
-  "generated_at": "2026-11-14T18:09:40+00:00",
+  "generated_at": "2026-11-17T03:06:50+00:00",
   "summary": {
     "monitored_uk_stores": 4,
     "monitored_retail_stockists": 3,
-    "total_listed_skus_variants": 178,
-    "in_stock_skus_variants": 176,
+    "total_listed_skus_variants": 185,
+    "in_stock_skus_variants": 183,
     "out_of_stock_skus_variants": 2,
     "retail_out_of_stock_variants": 1,
     "unforced_retail_outages": 0,
     "factory_shortages_on_dtc": 0,
-    "silent_removed_skus": 29
+    "silent_removed_skus": 23
   },
   "out_of_stock_alerts": [
     {
@@ -30,15 +30,15 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T14:46:05+00:00",
-      "last_seen_at": "2026-11-14T18:08:37+00:00",
+      "last_seen_at": "2026-11-17T03:05:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 3h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 12h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 23.5,
       "price_note": "Full Price",
       "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 50.2,
+      "dtc_rrp": 50.08,
       "diagnosis": "Brand DTC Warehouse OOS",
       "in_stock_elsewhere": []
     },
@@ -58,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T14:46:45+00:00",
-      "last_seen_at": "2026-11-14T18:09:19+00:00",
+      "last_seen_at": "2026-11-17T03:06:26+00:00",
       "first_seen_oos_at": "2026-11-03T02:23:49+00:00",
       "last_seen_in_stock_at": "2026-10-31T20:09:16+00:00",
       "silent_removed_at": null,
-      "duration_label": "11d 15h (since 2026-11-03 02:23 UTC)",
-      "days_oos": 11.7,
+      "duration_label": "14d 0h (since 2026-11-03 02:23 UTC)",
+      "days_oos": 14.0,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -88,12 +88,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T14:46:45+00:00",
-      "last_seen_at": "2026-11-14T18:09:19+00:00",
+      "last_seen_at": "2026-11-17T03:06:26+00:00",
       "first_seen_oos_at": "2026-11-03T02:23:49+00:00",
       "last_seen_in_stock_at": "2026-10-31T20:09:16+00:00",
       "silent_removed_at": null,
-      "duration_label": "11d 15h (since 2026-11-03 02:23 UTC)",
-      "days_oos": 11.7,
+      "duration_label": "14d 0h (since 2026-11-03 02:23 UTC)",
+      "days_oos": 14.0,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -118,15 +118,15 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T14:46:05+00:00",
-      "last_seen_at": "2026-11-14T18:08:37+00:00",
+      "last_seen_at": "2026-11-17T03:05:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 3h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 12h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 23.5,
       "price_note": "Full Price",
       "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 50.2,
+      "dtc_rrp": 50.08,
       "diagnosis": "Brand DTC Warehouse OOS",
       "in_stock_elsewhere": []
     }
@@ -152,7 +152,7 @@
       "last_seen_at": "2026-11-05T01:03:53+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T01:03:53+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::coffee-with-collagen-new-template-test::59048327479677",
@@ -173,7 +173,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::coffee-with-collagen-new-template-test::59048327512445",
@@ -194,7 +194,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::coffee-with-collagen-new-template-test::59048985756029",
@@ -215,7 +215,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::coffee-with-creatine-new-template-test::59048327545213",
@@ -236,7 +236,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::coffee-with-creatine-new-template-test::59048327577981",
@@ -257,7 +257,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::coffee-with-creatine-new-template-test::59048985788797",
@@ -278,7 +278,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::matcha-with-collagen-new-template-test::59048327348605",
@@ -299,7 +299,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::matcha-with-collagen-new-template-test::59048327381373",
@@ -320,7 +320,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::matcha-with-collagen-new-template-test::59048985690493",
@@ -341,7 +341,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::matcha-with-creatine-new-template-test::59048327414141",
@@ -362,7 +362,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::matcha-with-creatine-new-template-test::59048327446909",
@@ -383,7 +383,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "dirteaworld.com::dirtea::matcha-with-creatine-new-template-test::59048985723261",
@@ -404,7 +404,7 @@
       "last_seen_at": "2026-11-09T06:41:14+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:14+00:00",
-      "silent_removed_at": "2026-11-14T18:08:37+00:00"
+      "silent_removed_at": "2026-11-17T03:05:47+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::vieve-protein-water-6100014447",
@@ -425,28 +425,7 @@
       "last_seen_at": "2026-10-27T14:46:45+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T14:46:45+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
-    },
-    {
-      "sku_key": "hollandandbarrett.com::dirtea::beautypro-photon-led-light-therapy-mask-6100011946",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "product_title": "4.24 BEAUTYPRO Beautypro Photon Led Light Therapy Mask 59% Off",
-      "variant_title": "Standard",
-      "normalized_product_key": "4_24_beautypro_beautypro_photon_led_light_therapy_mask_59_off",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/beautypro-photon-led-light-therapy-mask-6100011946",
-      "sku_code": "beautypro-photon-led-light-therapy-mask-6100011946",
-      "current_price": 80.75,
-      "compare_at_price": 195.0,
-      "last_in_stock_price": 80.75,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-27T14:46:45+00:00",
-      "last_seen_at": "2026-11-09T06:41:54+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-09T06:41:54+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::vieve-strawberry-rhubarb-protein-water-drinks-6x-500ml-6100006047",
@@ -467,28 +446,7 @@
       "last_seen_at": "2026-10-27T14:46:45+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T14:46:45+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
-    },
-    {
-      "sku_key": "hollandandbarrett.com::dirtea::sea-magik-algimud-active-seaweed-face-mask-60087999",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "product_title": "4.52 Sea Magik Algimud Active Seaweed Face Mask 25g 25% Off",
-      "variant_title": "25g",
-      "normalized_product_key": "4_52_sea_magik_algimud_active_seaweed_face_mask_25_off",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/sea-magik-algimud-active-seaweed-face-mask-60087999",
-      "sku_code": "sea-magik-algimud-active-seaweed-face-mask-60087999",
-      "current_price": 4.12,
-      "compare_at_price": 5.5,
-      "last_in_stock_price": 4.12,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-31T20:09:16+00:00",
-      "last_seen_at": "2026-11-09T06:41:54+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-09T06:41:54+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::beautypro-eye-therapy-under-eye-mask-3-pairs-6100011925",
@@ -509,7 +467,7 @@
       "last_seen_at": "2026-11-05T01:04:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T01:04:32+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::vieve-watermelon-protein-water-500ml-6100004106",
@@ -530,7 +488,7 @@
       "last_seen_at": "2026-10-27T14:46:45+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T14:46:45+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::vieve-watermelon-protein-waters-6x-500ml-6100006046",
@@ -551,49 +509,7 @@
       "last_seen_at": "2026-10-27T14:46:45+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T14:46:45+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
-    },
-    {
-      "sku_key": "hollandandbarrett.com::dirtea::sea-magik-black-clay-sos-60038004",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "product_title": "4.64 Sea Magik - Black Clay SOS Buy 1 Get 1 Half Price",
-      "variant_title": "Standard",
-      "normalized_product_key": "4_64_sea_magik_black_clay_sos_buy_1_get_1_half_price",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/sea-magik-black-clay-sos-60038004",
-      "sku_code": "sea-magik-black-clay-sos-60038004",
-      "current_price": 12.5,
-      "compare_at_price": null,
-      "last_in_stock_price": 12.5,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-31T20:09:16+00:00",
-      "last_seen_at": "2026-11-09T06:41:54+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-09T06:41:54+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
-    },
-    {
-      "sku_key": "hollandandbarrett.com::dirtea::vitaskin-vitamin-c-glow-gel-mask-60060432",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "product_title": "4.67 Vitaskin Vitamin C Glow Gel Mask 60ml Buy 1 Get 1 Half Price",
-      "variant_title": "60ml",
-      "normalized_product_key": "4_67_vitaskin_vitamin_c_glow_gel_mask_buy_1_get_1_half_price_60ml",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/vitaskin-vitamin-c-glow-gel-mask-60060432",
-      "sku_code": "vitaskin-vitamin-c-glow-gel-mask-60060432",
-      "current_price": 15.99,
-      "compare_at_price": null,
-      "last_in_stock_price": 15.99,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-31T20:09:16+00:00",
-      "last_seen_at": "2026-11-09T06:41:54+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-09T06:41:54+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::fiji-water-6100144724",
@@ -614,7 +530,7 @@
       "last_seen_at": "2026-10-27T14:46:45+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T14:46:45+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::actiph-alkaline-ionised-water-6100140314",
@@ -635,7 +551,7 @@
       "last_seen_at": "2026-10-27T14:46:45+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T14:46:45+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::beautypro-warming-eye-mask-box-of-5-6100011926",
@@ -656,7 +572,7 @@
       "last_seen_at": "2026-10-31T20:09:16+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:09:16+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::glow-all-out-gift-set-1item-6100017960",
@@ -677,28 +593,7 @@
       "last_seen_at": "2026-11-09T06:41:54+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:54+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
-    },
-    {
-      "sku_key": "hollandandbarrett.com::dirtea::pamper-hamper-1item-6100017958",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "product_title": "7th Heaven Pamper Hamper",
-      "variant_title": "Standard",
-      "normalized_product_key": "7th_heaven_pamper_hamper",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/pamper-hamper-1item-6100017958",
-      "sku_code": "pamper-hamper-1item-6100017958",
-      "current_price": 10.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 10.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-11-05T01:04:32+00:00",
-      "last_seen_at": "2026-11-09T06:41:54+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-09T06:41:54+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::dirtea::aimx-sheet-mask-with-vitamin-c-brighten-me-25ml-6100010174",
@@ -719,34 +614,13 @@
       "last_seen_at": "2026-11-09T06:41:54+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T06:41:54+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
-    },
-    {
-      "sku_key": "hollandandbarrett.com::dirtea::minimalist-alpha-arbutin-02-face-serum-30ml-6100011485",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "product_title": "Minimalist Alpha Arbutin 02% Face Serum 30ml",
-      "variant_title": "30ml",
-      "normalized_product_key": "minimalist_alpha_arbutin_02_face_serum",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/minimalist-alpha-arbutin-02-face-serum-30ml-6100011485",
-      "sku_code": "minimalist-alpha-arbutin-02-face-serum-30ml-6100011485",
-      "current_price": 11.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 11.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-31T20:09:16+00:00",
-      "last_seen_at": "2026-11-05T01:04:32+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-05T01:04:32+00:00",
-      "silent_removed_at": "2026-11-14T18:09:19+00:00"
+      "silent_removed_at": "2026-11-17T03:06:26+00:00"
     }
   ],
   "recent_events": [
     {
-      "id": 20460,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21847,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::aimx-sheet-mask-with-vitamin-c-brighten-me-25ml-6100010174",
@@ -758,34 +632,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:54+00:00)"
     },
     {
-      "id": 20459,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::pamper-hamper-1item-6100017958",
-      "product_title": "7th Heaven Pamper Hamper",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 10.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T06:41:54+00:00)"
-    },
-    {
-      "id": 20458,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::minimalist-alpha-arbutin-02-face-serum-30ml-6100011485",
-      "product_title": "Minimalist Alpha Arbutin 02% Face Serum 30ml",
-      "variant_title": "30ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 11.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T01:04:32+00:00)"
-    },
-    {
-      "id": 20457,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21846,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::glow-all-out-gift-set-1item-6100017960",
@@ -797,47 +645,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:54+00:00)"
     },
     {
-      "id": 20456,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::vitaskin-vitamin-c-glow-gel-mask-60060432",
-      "product_title": "4.67 Vitaskin Vitamin C Glow Gel Mask 60ml Buy 1 Get 1 Half Price",
-      "variant_title": "60ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T06:41:54+00:00)"
-    },
-    {
-      "id": 20455,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::sea-magik-algimud-active-seaweed-face-mask-60087999",
-      "product_title": "4.52 Sea Magik Algimud Active Seaweed Face Mask 25g 25% Off",
-      "variant_title": "25g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.12,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T06:41:54+00:00)"
-    },
-    {
-      "id": 20454,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::sea-magik-black-clay-sos-60038004",
-      "product_title": "4.64 Sea Magik - Black Clay SOS Buy 1 Get 1 Half Price",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 12.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T06:41:54+00:00)"
-    },
-    {
-      "id": 20453,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21845,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::beautypro-eye-therapy-under-eye-mask-3-pairs-6100011925",
@@ -849,8 +658,8 @@
       "details": "Vanished from storefront (last seen 2026-11-05T01:04:32+00:00)"
     },
     {
-      "id": 20452,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21844,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::beautypro-warming-eye-mask-box-of-5-6100011926",
@@ -862,8 +671,8 @@
       "details": "Vanished from storefront (last seen 2026-10-31T20:09:16+00:00)"
     },
     {
-      "id": 20451,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21843,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::fiji-water-6100144724",
@@ -875,21 +684,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T14:46:45+00:00)"
     },
     {
-      "id": 20450,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::beautypro-photon-led-light-therapy-mask-6100011946",
-      "product_title": "4.24 BEAUTYPRO Beautypro Photon Led Light Therapy Mask 59% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 80.75,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T06:41:54+00:00)"
-    },
-    {
-      "id": 20449,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21842,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::actiph-alkaline-ionised-water-6100140314",
@@ -901,8 +697,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T14:46:45+00:00)"
     },
     {
-      "id": 20448,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21841,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::vieve-watermelon-protein-waters-6x-500ml-6100006046",
@@ -914,8 +710,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T14:46:45+00:00)"
     },
     {
-      "id": 20447,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21840,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::vieve-protein-water-6100014447",
@@ -927,8 +723,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T14:46:45+00:00)"
     },
     {
-      "id": 20446,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21839,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::vieve-strawberry-rhubarb-protein-water-drinks-6x-500ml-6100006047",
@@ -940,8 +736,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T14:46:45+00:00)"
     },
     {
-      "id": 20445,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21838,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
       "sku_key": "hollandandbarrett.com::dirtea::vieve-watermelon-protein-water-500ml-6100004106",
@@ -953,99 +749,47 @@
       "details": "Vanished from storefront (last seen 2026-10-27T14:46:45+00:00)"
     },
     {
-      "id": 20444,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21837,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::dirtea-mushroom-superblend-coffee-150g-6100013489",
-      "product_title": "DIRTEA Dirtea Mushroom Superblend Coffee 150g",
-      "variant_title": "150g",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 27.99,
-      "new_price": 39.99,
-      "details": "Price changed 27.99 -> 39.99"
+      "sku_key": "hollandandbarrett.com::dirtea::aimx-sheet-mask-with-peptides-and-collagen-renew-me-5-sheets-25ml-6100010170",
+      "product_title": "AIMX Aimx Sheet Mask With Peptides And Collagen Renew Me 5 Sheets 25ml",
+      "variant_title": "25ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 32.95,
+      "details": "Initial discovery"
     },
     {
-      "id": 20443,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21836,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::matcha-blend-with-mushroom-extracts-and-added-vitamins-6100010421",
-      "product_title": "DIRTEA Matcha Mushroom Super Blend 7x Sachets",
+      "sku_key": "hollandandbarrett.com::dirtea::sea-magik-black-clay-sos-60038004",
+      "product_title": "4.64 Sea Magik - Black Clay SOS 25% Off",
       "variant_title": "Standard",
       "event_type": "PRICE_CHANGED",
-      "old_price": 13.29,
-      "new_price": 18.99,
-      "details": "Price changed 13.29 -> 18.99"
+      "old_price": 12.5,
+      "new_price": 9.37,
+      "details": "Price changed 12.5 -> 9.37"
     },
     {
-      "id": 20442,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
+      "id": 21835,
+      "occurred_at": "2026-11-17T03:06:26+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::coffee-blend-with-mushroom-extract-and-added-vitamins-6100010420",
-      "product_title": "DIRTEA Coffee Lion's Mane Mushroom Super Blend 7x Sachets",
+      "sku_key": "hollandandbarrett.com::dirtea::beautypro-photon-led-light-therapy-mask-6100011946",
+      "product_title": "4.24 BEAUTYPRO Beautypro Photon Led Light Therapy Mask",
       "variant_title": "Standard",
       "event_type": "PRICE_CHANGED",
-      "old_price": 7.79,
-      "new_price": 12.99,
-      "details": "Price changed 7.79 -> 12.99"
+      "old_price": 80.75,
+      "new_price": 95.0,
+      "details": "Price changed 80.75 -> 95"
     },
     {
-      "id": 20441,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::coffee-blend-with-mushroom-extract-and-added-vitamins-6100010420",
-      "product_title": "DIRTEA Coffee Lion's Mane Mushroom Super Blend 7x Sachets",
-      "variant_title": "Standard",
-      "event_type": "RESTOCKED",
-      "old_price": 7.79,
-      "new_price": 12.99,
-      "details": "Restocked (was OOS since 2026-11-12T07:16:01+00:00)"
-    },
-    {
-      "id": 20440,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::dirtea-mushroom-superblend-cacao-180g-6100013490",
-      "product_title": "DIRTEA Dirtea Mushroom Superblend Cacao 180g",
-      "variant_title": "180g",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 34.99,
-      "new_price": 49.99,
-      "details": "Price changed 34.99 -> 49.99"
-    },
-    {
-      "id": 20439,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::dirtea-matcha-2500mg-180g-6100013871",
-      "product_title": "DIRTEA Dirtea Matcha Mushroom Superblend 2500mg 180g",
-      "variant_title": "180g",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 33.6,
-      "new_price": 48.0,
-      "details": "Price changed 33.6 -> 48"
-    },
-    {
-      "id": 20438,
-      "occurred_at": "2026-11-14T18:09:19+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "DIRTEA",
-      "sku_key": "hollandandbarrett.com::dirtea::cacao-blend-with-mushroom-extracts-and-added-vitamins-6100010419",
-      "product_title": "DIRTEA Cacao Mushroom Super Blend 7x Sachets",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 11.19,
-      "new_price": 15.99,
-      "details": "Price changed 11.19 -> 15.99"
-    },
-    {
-      "id": 20437,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21834,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::matcha-with-collagen-new-template-test::59048985690493",
@@ -1057,8 +801,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20436,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21833,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::matcha-with-collagen-new-template-test::59048327381373",
@@ -1070,8 +814,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20435,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21832,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::matcha-with-collagen-new-template-test::59048327348605",
@@ -1083,8 +827,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20434,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21831,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::matcha-with-creatine-new-template-test::59048985723261",
@@ -1096,8 +840,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20433,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21830,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::matcha-with-creatine-new-template-test::59048327446909",
@@ -1109,8 +853,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20432,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21829,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::matcha-with-creatine-new-template-test::59048327414141",
@@ -1122,8 +866,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20431,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21828,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::coffee-with-collagen-new-template-test::59048985756029",
@@ -1135,8 +879,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20430,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21827,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::coffee-with-collagen-new-template-test::59048327512445",
@@ -1148,8 +892,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20429,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21826,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::coffee-with-collagen-new-template-test::59048327479677",
@@ -1161,8 +905,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20428,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21825,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::coffee-with-creatine-new-template-test::59048985788797",
@@ -1174,8 +918,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20427,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21824,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::coffee-with-creatine-new-template-test::59048327577981",
@@ -1187,8 +931,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20426,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21823,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::coffee-with-creatine-new-template-test::59048327545213",
@@ -1200,8 +944,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T06:41:14+00:00)"
     },
     {
-      "id": 20425,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21822,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::dirtea-coffee-copy::54836964557181",
@@ -1213,186 +957,316 @@
       "details": "Vanished from storefront (last seen 2026-11-05T01:03:53+00:00)"
     },
     {
-      "id": 20424,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21821,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::lions-mane-mushroom::55671325884797",
       "product_title": "Lion's Mane Mushroom Powder",
       "variant_title": "240g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 188.2,
-      "new_price": 187.59,
-      "details": "Price changed 188.2 -> 187.59"
+      "old_price": 187.59,
+      "new_price": 187.13,
+      "details": "Price changed 187.59 -> 187.13"
     },
     {
-      "id": 20423,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21820,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::lions-mane-mushroom::55671325852029",
       "product_title": "Lion's Mane Mushroom Powder",
       "variant_title": "60g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 50.36,
-      "new_price": 50.2,
-      "details": "Price changed 50.36 -> 50.2"
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
     },
     {
-      "id": 20422,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
-      "domain": "dirteaworld.com",
-      "brand": "DIRTEA",
-      "sku_key": "dirteaworld.com::dirtea::dirtea-coffee-super-blend-12-month-subscription::43722555064575",
-      "product_title": "DIRTEA Coffee Super Blend - 12 Month Subscription",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 3.9,
-      "new_price": 3.88,
-      "details": "Price changed 3.9 -> 3.88"
-    },
-    {
-      "id": 20421,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21819,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::the-dirtea-boxset-12-month-subscription::43722578854143",
       "product_title": "The DIRTEA Boxset - 12 Month Subscription",
       "variant_title": "Standard",
       "event_type": "PRICE_CHANGED",
-      "old_price": 16.7,
-      "new_price": 16.64,
-      "details": "Price changed 16.7 -> 16.64"
+      "old_price": 16.64,
+      "new_price": 16.6,
+      "details": "Price changed 16.64 -> 16.6"
     },
     {
-      "id": 20420,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21818,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::dirtea-cacao-super-blend-12-month-subscription::43719267221759",
+      "product_title": "DIRTEA Cacao Super Blend - 12 Month Subscription",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 4.44,
+      "new_price": 4.43,
+      "details": "Price changed 4.44 -> 4.43"
+    },
+    {
+      "id": 21817,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::boxset-4-x-60g-pouches::43913048752383",
       "product_title": "Boxset (4 x 60g pouches)",
       "variant_title": "60g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 190.8,
-      "new_price": 190.18,
-      "details": "Price changed 190.8 -> 190.18"
+      "old_price": 190.18,
+      "new_price": 189.71,
+      "details": "Price changed 190.18 -> 189.71"
     },
     {
-      "id": 20419,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21816,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::chaga-mushroom-powder-60g-pouch::43690787864831",
       "product_title": "Chaga Mushroom Powder (60g Pouch)",
       "variant_title": "60g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 33.13,
-      "new_price": 33.03,
-      "details": "Price changed 33.13 -> 33.03"
+      "old_price": 33.03,
+      "new_price": 32.95,
+      "details": "Price changed 33.03 -> 32.95"
     },
     {
-      "id": 20418,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21815,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::lions-mane-mushroom-powder-60g-pouch::43690786947327",
       "product_title": "Lion's Mane Mushroom Powder (60g Pouch)",
       "variant_title": "60g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 50.36,
-      "new_price": 50.2,
-      "details": "Price changed 50.36 -> 50.2"
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
     },
     {
-      "id": 20417,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21814,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::tremella-mushroom-powder-60g-pouch::43690787406079",
       "product_title": "Tremella Mushroom Powder (60g Pouch)",
       "variant_title": "60g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 50.36,
-      "new_price": 50.2,
-      "details": "Price changed 50.36 -> 50.2"
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
     },
     {
-      "id": 20416,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
-      "domain": "dirteaworld.com",
-      "brand": "DIRTEA",
-      "sku_key": "dirteaworld.com::dirtea::dirtea-matcha-super-blend-12-month-subscription::44094445453567",
-      "product_title": "DIRTEA Matcha Super Blend - 12 Month Subscription",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 5.01,
-      "new_price": 4.99,
-      "details": "Price changed 5.01 -> 4.99"
-    },
-    {
-      "id": 20415,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21813,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::reishi-mushroom-powder-60g-pouch::43690795368703",
       "product_title": "Reishi Mushroom Powder (60g Pouch)",
       "variant_title": "60g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 33.13,
-      "new_price": 33.03,
-      "details": "Price changed 33.13 -> 33.03"
+      "old_price": 33.03,
+      "new_price": 32.95,
+      "details": "Price changed 33.03 -> 32.95"
     },
     {
-      "id": 20414,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21812,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::mushroom-tee::44144790995199",
       "product_title": "The Mushroom Tee",
       "variant_title": "Extra Large",
       "event_type": "PRICE_CHANGED",
-      "old_price": 53.01,
-      "new_price": 52.84,
-      "details": "Price changed 53.01 -> 52.84"
+      "old_price": 52.84,
+      "new_price": 52.71,
+      "details": "Price changed 52.84 -> 52.71"
     },
     {
-      "id": 20413,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21811,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::mushroom-tee::44144790962431",
       "product_title": "The Mushroom Tee",
       "variant_title": "Large",
       "event_type": "PRICE_CHANGED",
-      "old_price": 53.01,
-      "new_price": 52.84,
-      "details": "Price changed 53.01 -> 52.84"
+      "old_price": 52.84,
+      "new_price": 52.71,
+      "details": "Price changed 52.84 -> 52.71"
     },
     {
-      "id": 20412,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21810,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::mushroom-tee::44144790929663",
       "product_title": "The Mushroom Tee",
       "variant_title": "Medium",
       "event_type": "PRICE_CHANGED",
-      "old_price": 53.01,
-      "new_price": 52.84,
-      "details": "Price changed 53.01 -> 52.84"
+      "old_price": 52.84,
+      "new_price": 52.71,
+      "details": "Price changed 52.84 -> 52.71"
     },
     {
-      "id": 20411,
-      "occurred_at": "2026-11-14T18:08:37+00:00",
+      "id": 21809,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
       "domain": "dirteaworld.com",
       "brand": "DIRTEA",
       "sku_key": "dirteaworld.com::dirtea::mushroom-tee::44144790896895",
       "product_title": "The Mushroom Tee",
       "variant_title": "Small",
       "event_type": "PRICE_CHANGED",
-      "old_price": 53.01,
-      "new_price": 52.84,
-      "details": "Price changed 53.01 -> 52.84"
+      "old_price": 52.84,
+      "new_price": 52.71,
+      "details": "Price changed 52.84 -> 52.71"
+    },
+    {
+      "id": 21808,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::turkey-tail-mushroom-powder-60g-pouch::43690788290815",
+      "product_title": "Turkey Tail Mushroom Powder (60g Pouch)",
+      "variant_title": "60g",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
+    },
+    {
+      "id": 21807,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::super-blend-set::44599278076159",
+      "product_title": "Super Blend Set",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 184.92,
+      "new_price": 184.47,
+      "details": "Price changed 184.92 -> 184.47"
+    },
+    {
+      "id": 21806,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::turkey-tail-mushroom-powder::55671813964157",
+      "product_title": "Turkey Tail Mushroom Powder",
+      "variant_title": "240g",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 187.59,
+      "new_price": 187.13,
+      "details": "Price changed 187.59 -> 187.13"
+    },
+    {
+      "id": 21805,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::turkey-tail-mushroom-powder::55671813931389",
+      "product_title": "Turkey Tail Mushroom Powder",
+      "variant_title": "60g",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
+    },
+    {
+      "id": 21804,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::tremella-filled-tin::43848952807679",
+      "product_title": "Tremella (FILLED tin)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
+    },
+    {
+      "id": 21803,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::cordyceps-filled-tin::43848947532031",
+      "product_title": "Cordyceps (FILLED tin)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
+    },
+    {
+      "id": 21802,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::reishi-filled-tin::43848950448383",
+      "product_title": "Reishi (FILLED tin)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
+    },
+    {
+      "id": 21801,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::lions-mane-filled-tin::43848893432063",
+      "product_title": "Lion's Mane (FILLED tin)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 50.2,
+      "new_price": 50.08,
+      "details": "Price changed 50.2 -> 50.08"
+    },
+    {
+      "id": 21800,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::chaga-filled-tin::43848946516223",
+      "product_title": "Chaga (FILLED tin)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 52.83,
+      "new_price": 52.7,
+      "details": "Price changed 52.83 -> 52.7"
+    },
+    {
+      "id": 21799,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::tremella-gummies-uk::56780539560317",
+      "product_title": "Tremella Gummies",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 44.92,
+      "new_price": 44.81,
+      "details": "Price changed 44.92 -> 44.81"
+    },
+    {
+      "id": 21798,
+      "occurred_at": "2026-11-17T03:05:47+00:00",
+      "domain": "dirteaworld.com",
+      "brand": "DIRTEA",
+      "sku_key": "dirteaworld.com::dirtea::chaga-gummies-uk::56780470976893",
+      "product_title": "Chaga Gummies",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 44.92,
+      "new_price": 44.81,
+      "details": "Price changed 44.92 -> 44.81"
     }
   ]
 }
