@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Vyrao
 
-- **Generated:** 2026-11-15 15:42 UTC
+- **Generated:** 2026-11-18 07:35 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 142 (132 In Stock | **10 OOS**)
-- **Retailer Out-of-Stock Alerts:** **5** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 142 (134 In Stock | **8 OOS**)
+- **Retailer Out-of-Stock Alerts:** **3** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **0**
 
 ---
@@ -12,11 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Vyrao Witchy Woo Eau de Parfum & Cream Scent Bundle (Worth £156.40) | Standard | £156.40 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-15 15:41 UTC)** |
-| `cultbeauty.co.uk` | Vyrao Witchy Woo Eau de Parfum 50ml | 50ml | £140.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-15 15:41 UTC)** |
-| `spacenk.com` | Discovery Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 0h (since 2026-10-28 15:09 UTC)** |
-| `spacenk.com` | Sunny Travel Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **18d 0h (since 2026-10-28 15:09 UTC)** |
-| `spacenk.com` | Vyrao The Sixth Eau De Parfum 10ml | 10ML | £38.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **18d 0h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Discovery Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 16h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Sunny Travel Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **20d 16h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Vyrao The Sixth Eau De Parfum 10ml | 10ML | £38.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **20d 16h (since 2026-10-28 15:09 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -52,6 +50,6 @@ _No removed variants detected yet._
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 30 | **2** | https://www.cultbeauty.co.uk/c/brands/vyrao/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/vyrao/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 38 | 35 | **3** | https://www.spacenk.com/uk/brands/v/vyrao |
 | `vyrao.com` | Official Brand DTC (Master Catalog) | Shopify | 72 | 67 | **5** | https://vyrao.com |
