@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Joonbyrd
 
-- **Generated:** 2026-11-16 06:41 UTC
+- **Generated:** 2026-11-19 02:05 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 196 (192 In Stock | **4 OOS**)
-- **Retailer Out-of-Stock Alerts:** **3** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **4**
+- **Total Tracked Variants:** 196 (194 In Stock | **2 OOS**)
+- **Retailer Out-of-Stock Alerts:** **1** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **8**
 
 ---
 
@@ -12,9 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | 3 Little Byrds Mini Trio | Standard | - (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **22d 15h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Joonbyrd Daydreamer Body Serum 100ml | 100ML | £78.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `lookfantastic.com` | **22d 15h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Joonbyrd X Space NK Lovebyrds Mini Duo | Standard | £10.40 (Discounted -60% (was £26.00)) | - | **Retail Exclusive OOS** | _None_ | **7d 15h (since 2026-11-08 15:24 UTC)** |
+| `spacenk.com` | 3 Little Byrds Mini Trio | Standard | - (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **25d 11h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -28,9 +26,7 @@
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **Joonbyrd Better Together Body Essentials Kit** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **Joonbyrd Confetti Sky Hand Treatment 50ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
-| **Joonbyrd Daydreamer Body Serum 100ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **Joonbyrd Future Romance Body Glaze** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **Joonbyrd Kaleidoscope Smoothing Body Serum 100ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **Joonbyrd Little Love Body Lotion 300ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
@@ -40,14 +36,14 @@
 | **Joonbyrd Violet Haze Body Scrub 200ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **Joonbyrd Wonder.Land Hand Lotion 300ml** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **Joonbyrd 3 Little Byrds Mini Trio** | Retail Only | **2/3** (67%) | `lookfantastic.com` | **`spacenk.com`** | At RRP | `cultbeauty.co.uk` |
+| **Joonbyrd Better Together Body Essentials Kit** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **Joonbyrd Big Time Longevity Body Wash** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Bliss Mood Jelly** | ✅ £28.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
 | **Joonbyrd Body Language Set (Worth £94)** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **Confidence Mood Jelly** | ✅ £28.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
+| **Joonbyrd Daydreamer Body Serum 100ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Joonbyrd Daydreamer Body Serum Mini 15ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Joonbyrd Future Romance Body Glaze Mini 30ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **Joonbyrd Heartwarmer Body Gua Sha** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **Joonbyrd Kaleidoscope Body Serum Mini 15ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Joonbyrd Little Love Body Lotion Refill 500ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
 | **Joonbyrd Little Love Body Lotion Mini 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Joonbyrd Moon Swim Body Wash Refill 500ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
@@ -65,10 +61,14 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `joonbyrd.com` | Future Romance | Standard | £50.00 | 2026-11-16T06:39:21+00:00 |
-| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £16.50 | 2026-11-16T06:39:21+00:00 |
-| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £10.00 | 2026-11-16T06:39:21+00:00 |
-| `spacenk.com` | Future Romance Body Glaze | Standard | £62.00 | 2026-11-16T06:41:04+00:00 |
+| `cultbeauty.co.uk` | Joonbyrd Better Together Body Essentials Kit | Standard | £82.00 | 2026-11-19T02:04:16+00:00 |
+| `cultbeauty.co.uk` | Joonbyrd Heartwarmer Body Gua Sha | Standard | £80.00 | 2026-11-19T02:04:16+00:00 |
+| `cultbeauty.co.uk` | Joonbyrd Kaleidoscope Body Serum Mini 15ml | 15ml | £18.00 | 2026-11-19T02:04:16+00:00 |
+| `joonbyrd.com` | Future Romance | Standard | £50.00 | 2026-11-19T02:03:55+00:00 |
+| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £16.50 | 2026-11-19T02:03:55+00:00 |
+| `joonbyrd.com` | Natural Marine Collagen - Original | Standard | £10.00 | 2026-11-19T02:03:55+00:00 |
+| `spacenk.com` | Future Romance Body Glaze | Standard | £62.00 | 2026-11-19T02:05:38+00:00 |
+| `spacenk.com` | Joonbyrd Daydreamer Body Serum 100ml | 100ML | £78.00 | 2026-11-19T02:05:38+00:00 |
 
 ---
 
@@ -79,4 +79,4 @@
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/joonbyrd/ |
 | `joonbyrd.com` | Official Brand DTC (Master Catalog) | Shopify | 103 | 102 | **1** | https://joonbyrd.com |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/joonbyrd/ |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 34 | 31 | **3** | https://www.spacenk.com/uk/brands/j/joonbyrd |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 34 | 33 | **1** | https://www.spacenk.com/uk/brands/j/joonbyrd |
