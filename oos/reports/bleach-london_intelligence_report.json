@@ -1,7 +1,7 @@
 {
   "brand": "BLEACH London",
   "brand_slug": "bleach-london",
-  "generated_at": "2026-11-17T03:02:25+00:00",
+  "generated_at": "2026-11-19T23:12:38+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
@@ -30,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T14:42:02+00:00",
-      "last_seen_at": "2026-11-17T03:01:46+00:00",
+      "last_seen_at": "2026-11-19T23:12:07+00:00",
       "first_seen_oos_at": "2026-10-29T15:28:43+00:00",
       "last_seen_in_stock_at": "2026-10-27T14:42:02+00:00",
       "silent_removed_at": null,
-      "duration_label": "18d 11h (since 2026-10-29 15:28 UTC)",
-      "days_oos": 18.5,
+      "duration_label": "21d 7h (since 2026-10-29 15:28 UTC)",
+      "days_oos": 21.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -60,12 +60,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T14:42:02+00:00",
-      "last_seen_at": "2026-11-17T03:01:46+00:00",
+      "last_seen_at": "2026-11-19T23:12:07+00:00",
       "first_seen_oos_at": "2026-10-29T15:28:43+00:00",
       "last_seen_in_stock_at": "2026-10-27T14:42:02+00:00",
       "silent_removed_at": null,
-      "duration_label": "18d 11h (since 2026-10-29 15:28 UTC)",
-      "days_oos": 18.5,
+      "duration_label": "21d 7h (since 2026-10-29 15:28 UTC)",
+      "days_oos": 21.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -256,7 +256,7 @@
       "last_seen_at": "2026-11-05T00:59:54+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-05T00:59:54+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-mini-reincarnation-mask-50ml_13846042",
@@ -277,7 +277,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-blonde-permanent-kit-duo_15149405",
@@ -298,7 +298,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-blonde-permanent-kit-trio_15149404",
@@ -319,7 +319,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit_15002567",
@@ -340,7 +340,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit-duo_15149406",
@@ -361,7 +361,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit-trio_15149412",
@@ -382,7 +382,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-pearlescent-3-step-routine_15211276",
@@ -403,7 +403,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-platinum-blonde-maintenance-routine_15211279",
@@ -424,7 +424,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-proper-copper-boxed-scc-150ml-uk_17452221",
@@ -445,7 +445,7 @@
       "last_seen_at": "2026-11-07T06:13:37+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-07T06:13:37+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-purple-reincarnation-shampoo-300ml_14300049",
@@ -466,7 +466,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-mask-200ml_11787500",
@@ -487,7 +487,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-mask-200ml-duo_14609400",
@@ -508,7 +508,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-mask-500ml_12371575",
@@ -529,7 +529,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-scalp-treatment-75ml_14300051",
@@ -550,7 +550,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-rich-brown-permanent-kit-duo_15149408",
@@ -571,7 +571,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-rich-brown-permanent-kit-trio_15149411",
@@ -592,7 +592,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-red-permanent-kit-duo_15149414",
@@ -613,7 +613,7 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     },
     {
       "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-red-permanent-kit-trio_15149409",
@@ -634,10 +634,413 @@
       "last_seen_at": "2026-11-11T22:57:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T22:57:31+00:00",
-      "silent_removed_at": "2026-11-17T03:02:12+00:00"
+      "silent_removed_at": "2026-11-19T23:12:26+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 23618,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-champagne-super-toner-kit_12053018",
+      "product_title": "BLEACH LONDON Champagne Super Toner Kit",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 10.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-05T00:59:54+00:00)"
+    },
+    {
+      "id": 23617,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-proper-copper-boxed-scc-150ml-uk_17452221",
+      "product_title": "BLEACH LONDON Proper Copper Boxed Scc 150ml UK",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 8.95,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-07T06:13:37+00:00)"
+    },
+    {
+      "id": 23616,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-pearlescent-3-step-routine_15211276",
+      "product_title": "BLEACH LONDON Pearlescent 3 Step Routine",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 27.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23615,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit-trio_15149412",
+      "product_title": "BLEACH LONDON Natural Brown Permanent Kit Trio",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 36.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23614,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-blonde-permanent-kit-trio_15149404",
+      "product_title": "BLEACH LONDON Natural Blonde Permanent Kit Trio",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 36.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23613,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-rich-brown-permanent-kit-trio_15149411",
+      "product_title": "BLEACH LONDON Rich Brown Permanent Kit Trio",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 36.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23612,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-scalp-treatment-75ml_14300051",
+      "product_title": "BLEACH LONDON Reincarnation Scalp Treatment 75ml",
+      "variant_title": "75ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 10.5,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23611,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-red-permanent-kit-trio_15149409",
+      "product_title": "BLEACH LONDON Vivid Red Permanent Kit Trio",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 36.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23610,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit-duo_15149406",
+      "product_title": "BLEACH LONDON Natural Brown Permanent Kit Duo",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23609,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-blonde-permanent-kit-duo_15149405",
+      "product_title": "BLEACH LONDON Natural Blonde Permanent Kit Duo",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23608,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-rich-brown-permanent-kit-duo_15149408",
+      "product_title": "BLEACH LONDON Rich Brown Permanent Kit Duo",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23607,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-red-permanent-kit-duo_15149414",
+      "product_title": "BLEACH LONDON Vivid Red Permanent Kit Duo",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23606,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-platinum-blonde-maintenance-routine_15211279",
+      "product_title": "BLEACH LONDON Platinum Blonde Maintenance Routine",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 37.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23605,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit_15002567",
+      "product_title": "BLEACH LONDON Natural Brown Permanent Kit",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 12.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23604,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-mini-reincarnation-mask-50ml_13846042",
+      "product_title": "BLEACH LONDON Mini Reincarnation Mask 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 4.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23603,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-mask-200ml-duo_14609400",
+      "product_title": "BLEACH LONDON Reincarnation Mask 200ml Duo",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 20.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23602,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-purple-reincarnation-shampoo-300ml_14300049",
+      "product_title": "BLEACH LONDON Purple Reincarnation Shampoo 300ml",
+      "variant_title": "300ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23601,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-mask-200ml_11787500",
+      "product_title": "BLEACH LONDON Reincarnation Mask 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 10.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23600,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-mask-500ml_12371575",
+      "product_title": "BLEACH LONDON Reincarnation Mask 500ml",
+      "variant_title": "500ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 18.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
+    },
+    {
+      "id": 23599,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-pearlescent-conditioner-250ml_12309596",
+      "product_title": "BLEACH LONDON Pearlescent Conditioner 250ml",
+      "variant_title": "250ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 7.1,
+      "new_price": 6.86,
+      "details": "Price changed 7.1 -> 6.86"
+    },
+    {
+      "id": 23598,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-super-natural-kit-dark-blonde_14014992",
+      "product_title": "BLEACH LONDON Super Natural Kit - Dark Blonde",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.4,
+      "new_price": 9.0,
+      "details": "Price changed 8.4 -> 9"
+    },
+    {
+      "id": 23597,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-super-natural-kit-mid-brown_14014993",
+      "product_title": "BLEACH LONDON Super Natural Kit - Mid Brown",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.4,
+      "new_price": 9.0,
+      "details": "Price changed 8.4 -> 9"
+    },
+    {
+      "id": 23596,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-white-toner-kit_11787509",
+      "product_title": "BLEACH LONDON White Toner Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 7.49,
+      "new_price": 7.0,
+      "details": "Price changed 7.49 -> 7"
+    },
+    {
+      "id": 23595,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-copper-permanent-kit_15002565",
+      "product_title": "BLEACH LONDON Natural Copper Permanent Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.4,
+      "new_price": 9.0,
+      "details": "Price changed 8.4 -> 9"
+    },
+    {
+      "id": 23594,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-copper-permanent-kit_15002561",
+      "product_title": "BLEACH LONDON Vivid Copper Permanent Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.4,
+      "new_price": 9.0,
+      "details": "Price changed 8.4 -> 9"
+    },
+    {
+      "id": 23593,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-berry-permanents-kit_17452223",
+      "product_title": "BLEACH LONDON Vivid Berry Permanents Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.4,
+      "new_price": 9.6,
+      "details": "Price changed 8.4 -> 9.6"
+    },
+    {
+      "id": 23592,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-total-bleach-kit_11787510",
+      "product_title": "BLEACH LONDON Total Bleach Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 7.49,
+      "new_price": 7.0,
+      "details": "Price changed 7.49 -> 7"
+    },
+    {
+      "id": 23591,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-cherry-cola-permanent-kit_17785329",
+      "product_title": "BLEACH LONDON Cherry Cola Permanent Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.4,
+      "new_price": 9.0,
+      "details": "Price changed 8.4 -> 9"
+    },
+    {
+      "id": 23590,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-fade-to-grey-conditioner_13309539",
+      "product_title": "BLEACH LONDON Fade To Grey Conditioner",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 6.37,
+      "new_price": 6.14,
+      "details": "Price changed 6.37 -> 6.14"
+    },
+    {
+      "id": 23589,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-silver-shampoo-500ml_11787492",
+      "product_title": "BLEACH LONDON Silver Shampoo 500ml",
+      "variant_title": "500ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.23,
+      "new_price": 7.56,
+      "details": "Price changed 8.23 -> 7.56"
+    },
+    {
+      "id": 23588,
+      "occurred_at": "2026-11-19T23:12:26+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "BLEACH London",
+      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-red-permanent-kit_15002562",
+      "product_title": "BLEACH LONDON Vivid Red Permanent Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 8.4,
+      "new_price": 9.0,
+      "details": "Price changed 8.4 -> 9"
+    },
     {
       "id": 21677,
       "occurred_at": "2026-11-17T03:02:12+00:00",
@@ -882,409 +1285,6 @@
       "variant_title": "500ml",
       "event_type": "SILENT_REMOVED",
       "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 21658,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-pearlescent-conditioner-250ml_12309596",
-      "product_title": "BLEACH LONDON Pearlescent Conditioner 250ml",
-      "variant_title": "250ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 7.12,
-      "new_price": 7.1,
-      "details": "Price changed 7.12 -> 7.1"
-    },
-    {
-      "id": 21657,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-super-natural-kit-dark-brown_14014994",
-      "product_title": "BLEACH LONDON Super Natural Kit - Dark Brown",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 12.0,
-      "new_price": 9.0,
-      "details": "Price changed 12.0 -> 9"
-    },
-    {
-      "id": 21656,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-blonde-permanent-kit_15002563",
-      "product_title": "BLEACH LONDON Natural Blonde Permanent Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 12.0,
-      "new_price": 8.99,
-      "details": "Price changed 12.0 -> 8.99"
-    },
-    {
-      "id": 21655,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-atomic-cherry-super-cool-colour_17785330",
-      "product_title": "BLEACH LONDON Atomic Cherry Super Cool Colour",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 8.95,
-      "new_price": 6.7,
-      "details": "Price changed 8.95 -> 6.7"
-    },
-    {
-      "id": 21654,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-conditioner-300ml_13841361",
-      "product_title": "BLEACH LONDON Reincarnation Conditioner 300ml",
-      "variant_title": "300ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 13.0,
-      "new_price": 9.8,
-      "details": "Price changed 13.0 -> 9.8"
-    },
-    {
-      "id": 21653,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-pearlescent-boxed-scc-150ml-uk_17452222",
-      "product_title": "BLEACH LONDON Pearlescent Boxed Scc 150ml UK",
-      "variant_title": "150ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 8.95,
-      "new_price": 6.7,
-      "details": "Price changed 8.95 -> 6.7"
-    },
-    {
-      "id": 21652,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-gobby-pink-boxed-scc-150ml-uk_17452231",
-      "product_title": "BLEACH LONDON Gobby Pink Boxed Scc 150ml UK",
-      "variant_title": "150ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 8.95,
-      "new_price": 6.7,
-      "details": "Price changed 8.95 -> 6.7"
-    },
-    {
-      "id": 21651,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-tangerine-dream-boxed-scc-150ml-uk_17452226",
-      "product_title": "BLEACH LONDON Tangerine Dream Boxed Scc 150ml UK",
-      "variant_title": "150ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 6.8,
-      "new_price": 6.0,
-      "details": "Price changed 6.8 -> 6"
-    },
-    {
-      "id": 21650,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-rich-brown-permanent-kit_15002566",
-      "product_title": "BLEACH LONDON Chocolate Chip Permanent Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 12.0,
-      "new_price": 9.0,
-      "details": "Price changed 12.0 -> 9"
-    },
-    {
-      "id": 21649,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-super-natural-kit-dark-blonde_14014992",
-      "product_title": "BLEACH LONDON Super Natural Kit - Dark Blonde",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 10.8,
-      "new_price": 8.4,
-      "details": "Price changed 10.8 -> 8.4"
-    },
-    {
-      "id": 21648,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-glossy-black-permanent-kit_15002564",
-      "product_title": "BLEACH LONDON Glossy Black Permanent Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 12.0,
-      "new_price": 9.0,
-      "details": "Price changed 12.0 -> 9"
-    },
-    {
-      "id": 21647,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-super-natural-kit-mid-brown_14014993",
-      "product_title": "BLEACH LONDON Super Natural Kit - Mid Brown",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 8.4,
-      "details": "Price changed 9.6 -> 8.4"
-    },
-    {
-      "id": 21646,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-copper-permanent-kit_15002565",
-      "product_title": "BLEACH LONDON Natural Copper Permanent Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 8.4,
-      "details": "Price changed 9.6 -> 8.4"
-    },
-    {
-      "id": 21645,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-copper-permanent-kit_15002561",
-      "product_title": "BLEACH LONDON Vivid Copper Permanent Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 10.2,
-      "new_price": 8.4,
-      "details": "Price changed 10.2 -> 8.4"
-    },
-    {
-      "id": 21644,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-berry-permanents-kit_17452223",
-      "product_title": "BLEACH LONDON Vivid Berry Permanents Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 8.4,
-      "details": "Price changed 9.6 -> 8.4"
-    },
-    {
-      "id": 21643,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-cherry-cola-permanent-kit_17785329",
-      "product_title": "BLEACH LONDON Cherry Cola Permanent Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 8.4,
-      "details": "Price changed 9.6 -> 8.4"
-    },
-    {
-      "id": 21642,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-the-big-pink-boxed-scc-150ml-uk_17452230",
-      "product_title": "BLEACH LONDON The Big Pink Boxed Scc 150ml UK",
-      "variant_title": "150ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 6.8,
-      "new_price": 6.0,
-      "details": "Price changed 6.8 -> 6"
-    },
-    {
-      "id": 21641,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-fade-to-grey-conditioner_13309539",
-      "product_title": "BLEACH LONDON Fade To Grey Conditioner",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 6.8,
-      "new_price": 6.37,
-      "details": "Price changed 6.8 -> 6.37"
-    },
-    {
-      "id": 21640,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-silver-shampoo-500ml_11787492",
-      "product_title": "BLEACH LONDON Silver Shampoo 500ml",
-      "variant_title": "500ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 8.25,
-      "new_price": 8.23,
-      "details": "Price changed 8.25 -> 8.23"
-    },
-    {
-      "id": 21639,
-      "occurred_at": "2026-11-17T03:02:12+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-red-permanent-kit_15002562",
-      "product_title": "BLEACH LONDON Vivid Red Permanent Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 8.4,
-      "details": "Price changed 9.6 -> 8.4"
-    },
-    {
-      "id": 20273,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-champagne-super-toner-kit_12053018",
-      "product_title": "BLEACH LONDON Champagne Super Toner Kit",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 10.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-05T00:59:54+00:00)"
-    },
-    {
-      "id": 20272,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-proper-copper-boxed-scc-150ml-uk_17452221",
-      "product_title": "BLEACH LONDON Proper Copper Boxed Scc 150ml UK",
-      "variant_title": "150ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 8.95,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-07T06:13:37+00:00)"
-    },
-    {
-      "id": 20271,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-pearlescent-3-step-routine_15211276",
-      "product_title": "BLEACH LONDON Pearlescent 3 Step Routine",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 27.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20270,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit-trio_15149412",
-      "product_title": "BLEACH LONDON Natural Brown Permanent Kit Trio",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 36.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20269,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-blonde-permanent-kit-trio_15149404",
-      "product_title": "BLEACH LONDON Natural Blonde Permanent Kit Trio",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 36.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20268,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-rich-brown-permanent-kit-trio_15149411",
-      "product_title": "BLEACH LONDON Rich Brown Permanent Kit Trio",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 36.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20267,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-reincarnation-scalp-treatment-75ml_14300051",
-      "product_title": "BLEACH LONDON Reincarnation Scalp Treatment 75ml",
-      "variant_title": "75ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 10.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20266,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-vivid-red-permanent-kit-trio_15149409",
-      "product_title": "BLEACH LONDON Vivid Red Permanent Kit Trio",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 36.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20265,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-brown-permanent-kit-duo_15149406",
-      "product_title": "BLEACH LONDON Natural Brown Permanent Kit Duo",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20264,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-natural-blonde-permanent-kit-duo_15149405",
-      "product_title": "BLEACH LONDON Natural Blonde Permanent Kit Duo",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
-    },
-    {
-      "id": 20263,
-      "occurred_at": "2026-11-14T18:05:08+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "BLEACH London",
-      "sku_key": "lookfantastic.com::bleach-london::p_bleach-london-rich-brown-permanent-kit-duo_15149408",
-      "product_title": "BLEACH LONDON Rich Brown Permanent Kit Duo",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
       "new_price": null,
       "details": "Vanished from storefront (last seen 2026-11-11T22:57:31+00:00)"
     }

@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Aromatherapy Associates
 
-- **Generated:** 2026-11-17 02:59 UTC
+- **Generated:** 2026-11-19 23:10 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 193 (168 In Stock | **25 OOS**)
+- **Total Tracked Variants:** 193 (166 In Stock | **27 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **25**
+- **Removed / Delisted Variants:** **26**
 
 ---
 
@@ -12,36 +12,38 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Energise & Renew Collection Gift Set | Standard | £58.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **23d 11h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Energise & Renew Collection Gift Set | Standard | £58.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **26d 8h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
-| `aromatherapyassociates.com` | De-Stress Mind Body Wash | 250ml | £39.00 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Bathroom Essentials Kit | Standard | £71.40 | 2026-11-19T23:08:21+00:00 |
+| `aromatherapyassociates.com` | De-Stress Mind Body Wash | 250ml | £27.30 | 2026-10-24T15:04:38+00:00 |
 | `aromatherapyassociates.com` | De-Stress Mind Roller Ball | 10ml | £13.50 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | De-Stress Muscle Shower Oil | 250ml | £40.60 | 2026-11-19T23:08:21+00:00 |
+| `aromatherapyassociates.com` | De-Stress Pure Essential Oil Blend | 10ml | £33.75 | 2026-11-19T23:08:21+00:00 |
 | `aromatherapyassociates.com` | Deep Relax Roller Ball | 10ml | £13.50 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Deep Relax Sleep Well Nourishing Body Treatment | 200ml | £81.00 | 2026-11-17T02:57:36+00:00 |
+| `aromatherapyassociates.com` | Deep Relax Sleep Well Nourishing Body Treatment | 200ml | £56.70 | 2026-11-17T02:57:36+00:00 |
 | `aromatherapyassociates.com` | Home Fragrancer for Essential Oils U.K | ONE | £41.50 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Home Fragrancer for Essential Oils U.S | ONE | £62.25 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Home Fragrancer for Essential Oils U.S | ONE | £58.10 | 2026-10-24T15:04:38+00:00 |
 | `aromatherapyassociates.com` | Hydra Plump Gel Cream | 50ml | £48.60 | 2026-11-17T02:57:36+00:00 |
-| `aromatherapyassociates.com` | Hydration Super Boost Facial Kit | Standard | £83.00 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Liberty Clear Mind Roller Ball | 10ml | £27.00 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Light Relax Bath & Shower Oil | 55ml | £92.00 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Oil to Foam Cleanser | 140ml | £72.00 | 2026-11-05T00:55:23+00:00 |
-| `aromatherapyassociates.com` | Relax & Restore Selfcare Gift Set | Standard | £95.00 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Replenishing Hand & Body Wash | 300ml | £33.00 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Replenishing Hand & Body Lotion | 300ml | £33.00 | 2026-11-11T22:53:16+00:00 |
-| `aromatherapyassociates.com` | Revive Candle | 200g | £76.00 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Revive Morning Body Lotion | 250ml | £55.00 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Revive Morning Body Wash | 250ml | £39.00 | 2026-11-07T06:09:17+00:00 |
+| `aromatherapyassociates.com` | Hydration Super Boost Facial Kit | Standard | £58.10 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Liberty Clear Mind Roller Ball | 10ml | £18.90 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Light Relax Bath & Shower Oil | 55ml | £64.40 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Oil to Foam Cleanser | 140ml | £50.40 | 2026-11-05T00:55:23+00:00 |
+| `aromatherapyassociates.com` | Relax & Restore Selfcare Gift Set | Standard | £66.50 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Replenishing Hand & Body Lotion | 300ml | £23.10 | 2026-11-11T22:53:16+00:00 |
+| `aromatherapyassociates.com` | Revive Candle | 200g | £53.20 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Revive Morning Body Lotion | 250ml | £38.50 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Revive Morning Body Wash | 250ml | £27.30 | 2026-11-07T06:09:17+00:00 |
 | `aromatherapyassociates.com` | Revive Morning Roller Ball | 10ml | £13.50 | 2026-10-24T15:04:38+00:00 |
-| `aromatherapyassociates.com` | Rose Candle | 200g | £76.00 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Rose Candle | 200g | £53.20 | 2026-10-24T15:04:38+00:00 |
 | `aromatherapyassociates.com` | Support Breathe Pure Essential Oil Blend | 10ml | £33.75 | 2026-10-24T15:04:38+00:00 |
 | `aromatherapyassociates.com` | Travel Forest Therapy Bath & Shower Oil | 9ml | £10.50 | 2026-10-24T15:04:38+00:00 |
 | `aromatherapyassociates.com` | Travel Revive Morning Body Wash | 50ml | £18.00 | 2026-11-05T00:55:23+00:00 |
-| `aromatherapyassociates.com` | Travel Rose Bath & Shower Oil | 9ml | £21.00 | 2026-11-17T02:57:36+00:00 |
 | `aromatherapyassociates.com` | Travel Rose Indulgent Body Cream | 50ml | £20.00 | 2026-10-24T15:04:38+00:00 |
+| `aromatherapyassociates.com` | Travel Rose Triple Exfoliator | 50ml | £20.00 | 2026-11-19T23:08:21+00:00 |
 
 ---
 
@@ -52,22 +54,22 @@
 | **A Gift of Recovery** | ✅ £68.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £45.00 (-34% vs RRP); `spacenk.com` £45.00 (-34% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
 | **A Gift of Relaxation** | ✅ £21.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £15.00 (-29% vs RRP); `spacenk.com` £15.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
 | **A Gift of Sleep** | ✅ £92.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £65.00 (-29% vs RRP); `spacenk.com` £65.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **Calm Confidence Bath & Shower Oil** | ✅ £92.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £65.00 (-29% vs RRP); `spacenk.com` £65.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **De-Stress Mind Bath & Shower Oil** | ✅ £69.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £55.25 (-20% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **De-Stress Mind Mood Mist 100ml** | ✅ £54.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £28.50 (-47% vs RRP); `spacenk.com` £38.00 (-30% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **De-Stress Muscle Bath & Shower Oil** | ✅ £92.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £65.00 (-29% vs RRP); `spacenk.com` £65.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
+| **Calm Confidence Bath & Shower Oil** | ✅ £64.40 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
+| **De-Stress Mind Bath & Shower Oil** | ✅ £69.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
+| **De-Stress Mind Mood Mist 100ml** | ✅ £37.80 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £28.50 (-25% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
+| **De-Stress Muscle Bath & Shower Oil** | ✅ £64.40 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
 | **Aromatherapy Associates De-Stress Shower Oil 250ml** | Retail Only | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
-| **Deep Relax Bath & Shower Oil** | ✅ £92.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £67.50 (-27% vs RRP); `spacenk.com` £65.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **Deep Relax Pure Essential Oil Blend 10ml** | ✅ £45.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £24.00 (-47% vs RRP); `spacenk.com` £32.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **Deep Relax Sleep Mist** | ✅ £54.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £30.40 (-44% vs RRP); `spacenk.com` £38.00 (-30% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **Desert Therapy Bath & Shower Oil 55ml** | ✅ £92.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £55.58 (-40% vs RRP); `spacenk.com` £65.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
+| **Deep Relax Bath & Shower Oil** | ✅ £64.40 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
+| **Deep Relax Pure Essential Oil Blend 10ml** | ✅ £31.50 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £24.00 (-24% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
+| **Deep Relax Sleep Mist** | ✅ £37.80 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
+| **Desert Therapy Bath & Shower Oil 55ml** | ✅ £64.40 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £55.58 (-14% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
 | **Forest Therapy Bath & Shower Oil** | ✅ £69.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £45.50 (-34% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
 | **Inner Strength Bath & Shower Oil** | ✅ £69.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £55.58 (-19% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
 | **Aromatherapy Associates Muscle Shower Oil 50ml** | Retail Only | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
 | **Aromatherapy Associates Polishing Body Brush** | Retail Only | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
-| **Revive Morning Bath & Shower Oil** | ✅ £92.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £65.00 (-29% vs RRP); `spacenk.com` £65.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **Revive Pure Essential Oil Blend** | ✅ £45.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £24.00 (-47% vs RRP); `spacenk.com` £32.00 (-29% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
-| **Revive Shower Oil** | ✅ £58.00 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £38.00 (-34% vs RRP); `spacenk.com` £38.00 (-34% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
+| **Revive Morning Bath & Shower Oil** | ✅ £64.40 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
+| **Revive Pure Essential Oil Blend** | ✅ £31.50 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £24.00 (-24% vs RRP) | `boots.com`, `cultbeauty.co.uk` |
+| **Revive Shower Oil** | ✅ £40.60 | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
 | **Aromatherapy Associates Support Breathe Shower Mist 100ml** | Retail Only | **2/4** (50%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com`, `cultbeauty.co.uk` |
 
 ---
@@ -76,31 +78,32 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `aromatherapyassociates.com` | A Gift of Energy | Standard | £21.00 | 2026-11-17T02:57:36+00:00 |
-| `aromatherapyassociates.com` | Desert Therapy Body Oil 100ml | 100ml | £91.00 | 2026-11-17T02:57:36+00:00 |
-| `aromatherapyassociates.com` | Pro Calm Face Oil | 15ml | £57.00 | 2026-11-17T02:57:36+00:00 |
-| `aromatherapyassociates.com` | The Ultimate Selfcare Heroes | Standard | £90.00 | 2026-11-17T02:57:36+00:00 |
-| `aromatherapyassociates.com` | Travel De-Stress Mind Mood Mist 10ml | 10ml | £21.00 | 2026-11-17T02:57:36+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates AM PM Shower Oil Duo | Standard | £47.47 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Breathe Pure Essential Oil Blend 10ml | 10ml | £25.60 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates De-Stress Candle 200g | 200g | £41.60 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Deep Relax Body Treatment 200ml | 200ml | £58.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Deep Relax Sleep Mist 10ml | 10ml | £22.50 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Desert Therapy Body Oil 100ml | 100ml | £62.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Desert Therapy Pure Essential Oil 10ml | 10ml | £32.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Discovery Wellbeing Bath and Shower Oil Collection | Standard | £44.20 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Essential Bath and Shower Oils | Standard | £40.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Muscle Shower Oil 250ml | 250ml | £30.40 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Perfect Partners | Standard | £20.80 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Recover and Energise Edit | Standard | £60.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Relax Body and Massage Oil | Standard | £62.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Replenishing Hand and Body Wash 300ml | 300ml | £25.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Revive AM Ritual | Standard | £38.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Revive Morning Body Wash 250ml | 250ml | £28.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Rose Body Cream 50ml | 50ml | £14.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Rose Shower Oil 50ml | 50ml | £12.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Support Breathe Bath & Shower Oil (55ml) | 55ml | £65.00 | 2026-11-17T02:58:41+00:00 |
-| `lookfantastic.com` | Aromatherapy Associates Ultimate Bath and Shower Oil Collection (Worth £110.00) | Standard | £72.25 | 2026-11-17T02:58:41+00:00 |
+| `aromatherapyassociates.com` | A Gift of Energy | Standard | £21.00 | 2026-11-19T23:08:21+00:00 |
+| `aromatherapyassociates.com` | Deep Relax Pure Essential Oil Blend 10ml | 10ml | £45.00 | 2026-11-19T23:08:21+00:00 |
+| `aromatherapyassociates.com` | Desert Therapy Body Oil 100ml | 100ml | £91.00 | 2026-11-19T23:08:21+00:00 |
+| `aromatherapyassociates.com` | Pro Calm Face Oil | 15ml | £57.00 | 2026-11-19T23:08:21+00:00 |
+| `aromatherapyassociates.com` | The Ultimate Selfcare Heroes | Standard | £90.00 | 2026-11-19T23:08:21+00:00 |
+| `aromatherapyassociates.com` | Travel De-Stress Mind Mood Mist 10ml | 10ml | £21.00 | 2026-11-19T23:08:21+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates AM PM Shower Oil Duo | Standard | £47.47 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Breathe Pure Essential Oil Blend 10ml | 10ml | £25.60 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates De-Stress Candle 200g | 200g | £41.60 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Deep Relax Body Treatment 200ml | 200ml | £58.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Deep Relax Sleep Mist 10ml | 10ml | £22.50 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Desert Therapy Body Oil 100ml | 100ml | £62.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Desert Therapy Pure Essential Oil 10ml | 10ml | £32.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Discovery Wellbeing Bath and Shower Oil Collection | Standard | £44.20 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Essential Bath and Shower Oils | Standard | £40.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Muscle Shower Oil 250ml | 250ml | £30.40 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Perfect Partners | Standard | £20.80 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Recover and Energise Edit | Standard | £60.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Relax Body and Massage Oil | Standard | £62.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Replenishing Hand and Body Wash 300ml | 300ml | £25.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Revive AM Ritual | Standard | £38.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Revive Morning Body Wash 250ml | 250ml | £28.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Revive Morning Massage & Body Oil | Standard | £62.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Rose Body Cream 50ml | 50ml | £14.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Rose Shower Oil 50ml | 50ml | £12.00 | 2026-11-19T23:09:17+00:00 |
+| `lookfantastic.com` | Aromatherapy Associates Support Breathe Bath & Shower Oil (55ml) | 55ml | £65.00 | 2026-11-19T23:09:17+00:00 |
 
 ---
 
@@ -108,7 +111,7 @@
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `aromatherapyassociates.com` | Official Brand DTC (Master Catalog) | Shopify | 110 | 86 | **24** | https://aromatherapyassociates.com |
+| `aromatherapyassociates.com` | Official Brand DTC (Master Catalog) | Shopify | 110 | 84 | **26** | https://aromatherapyassociates.com |
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/aromatherapy-associates |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 0 | 0 | **0** | https://www.cultbeauty.co.uk/c/brands/aromatherapy-associates/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.lookfantastic.com/c/brands/aromatherapy-associates/ |
