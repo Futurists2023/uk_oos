@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Luna Daily
 
-- **Generated:** 2026-11-16 06:42 UTC
+- **Generated:** 2026-11-19 13:11 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 208 (122 In Stock | **86 OOS**)
+- **Total Tracked Variants:** 192 (112 In Stock | **80 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **8**
+- **Removed / Delisted Variants:** **27**
 
 ---
 
@@ -12,38 +12,31 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Luna Daily The Everywhere Oil 10ml | 10ml | £12.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **2d 5h (since 2026-11-14 01:01 UTC)** |
+| `cultbeauty.co.uk` | Luna Daily The Everywhere Oil 10ml | 10ml | £12.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 12h (since 2026-11-14 01:01 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
-| `luna-daily.com` | 3-Steps To All-Day Fresh Bundle (Jasmine + Ylang Ylang) | Standard | £35.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | 3-Steps To All-Day Fresh Hydrating Bundle (Fresh Cotton) | Standard | £35.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Body Odor Besties - The Hydrating All Over Deodorant™ + Hydrating Spray-To-Wipe | Standard | £35.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | 3-Steps To All-Day Fresh Bundle (Jasmine + Ylang Ylang) | Standard | £41.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | Body Odor Besties - The Hydrating All Over Deodorant™ + Hydrating Spray-To-Wipe | Standard | £38.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Body Odour Besties - The All Over Deodorant™ + Spray-To-Wipe | Standard | £25.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Body Odour Besties - The Hydrating All Over Deodorant™ + Hydrating Spray-To-Wipe | Standard | £25.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Cool, Soothe & Cleanse - Water Lily + Fresh Citrus | Standard | £30.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Duo Daily Wash Bundle Fragrance Free | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Duo Daily Wash Bundle Hydrating Fresh Cotton | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Duo Daily Wash Bundle Jasmine + Ylang Ylang | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Cooling Water Lily + Fresh Citrus | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
-| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Fragrance Free | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
-| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Hydrating Fresh Cotton | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
-| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Jasmine + Ylang Ylang | Standard | £15.00 | 2026-10-31T05:54:49+00:00 |
-| `luna-daily.com` | Jet, Set, Refresh - Body Care Travel Essentials | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Mini + Mama Spray-To-Wipe - Fragrance Free | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | Cool, Soothe & Cleanse - Water Lily + Fresh Citrus | Standard | £34.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | Duo Daily Wash Bundle Fragrance Free | Standard | £38.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | Duo Daily Wash Bundle Hydrating Fresh Cotton | Standard | £38.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | Duo Daily Wash Bundle Jasmine + Ylang Ylang | Standard | £38.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | FREE GIFT – The Everywhere Spray-To-Wipe 80ml – Jasmine + Ylang Ylang | 80ml | £12.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Jasmine + Ylang Ylang | Standard | £16.00 | 2026-10-31T05:54:49+00:00 |
+| `luna-daily.com` | Jet, Set, Refresh - Body Care Travel Essentials | Standard | £44.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Mini + Mama Spray-To-Wipe - Hydrating Fresh Cotton | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Cooling Water Lily + Fresh Citrus | Standard | £25.00 | 2026-11-04T12:21:39+00:00 |
-| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Hydrating Fresh Cotton | Standard | £25.00 | 2026-11-04T12:21:39+00:00 |
-| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Jasmine + Ylang Ylang | Standard | £25.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Cooling Water Lily + Fresh Citrus | Standard | £28.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Hydrating Fresh Cotton | Standard | £28.00 | 2026-11-04T12:21:39+00:00 |
+| `luna-daily.com` | NO BO Deo Duo - 4 month supply - Jasmine + Ylang Ylang | Standard | £28.00 | 2026-11-04T12:21:39+00:00 |
 | `luna-daily.com` | Post-Birth Soothing Spray | Standard | £20.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | Post-Birth Soothing Spray | Standard | £14.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | Smooth Skin Saviours - Rid Ingrowns, Redness + Bumps in 2 weeks (+FREE Lotion worth £20) | Standard | £38.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The 24/7 Constantly Clean Bundle (Fragrance Free) | Standard | £25.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The 24/7 Constantly Clean Bundle (Jasmine + Ylang Ylang) | Standard | £25.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The 24/7 Constantly Clean Hydrating Bundle (Fresh Cotton) | Standard | £25.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The All Over Deodorant™ Duo - 4 month supply | Standard | £25.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | The 24/7 Constantly Clean Bundle (Jasmine + Ylang Ylang) | Standard | £27.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | The All Over Deodorant™ Duo - 4 month supply | Standard | £28.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The All Over Deodorant™- Cooling Water Lily + Fresh Citrus | Standard | £14.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The All Over Deodorant™- Hydrating Fresh Cotton | Standard | £14.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The All Over Deodorant™- Jasmine + Ylang Ylang | Standard | £14.00 | 2026-10-24T15:04:38+00:00 |
@@ -61,6 +54,7 @@
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 30ml - Hydrating Fresh Cotton | 1 PACK | £8/EA | £8.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 30ml - Hydrating Fresh Cotton | 2 PACK | £7.50/EA | £15.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 30ml - Hydrating Fresh Cotton | 3 PACK | £7/EA | £21.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | The Everywhere Spray-To-Wipe 30ml - Hydrating Fresh Cotton - Limited Edition Pouch | 30ml | £8.00 | 2026-11-19T13:10:14+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 80ml - Cooling Water Lily + Fresh Citrus | 80ml | £12.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 80ml - Fragrance Free | 80ml | £12.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-To-Wipe 80ml - Hydrating Fresh Cotton | 80ml | £12.00 | 2026-10-24T15:04:38+00:00 |
@@ -71,7 +65,7 @@
 | `luna-daily.com` | The Everywhere Spray-To-Wipe™ Discovery Gift Set | Standard | £23.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-to-Wipe - Holiday Trio Kit | Standard | £26.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Spray-to-Wipe - Holiday Trio Kit | Standard | £26.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The Everywhere Spray-to-Wipe - Holiday Trio Kit | Standard | £21.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | The Everywhere Spray-to-Wipe - Holiday Trio Kit | Standard | £24.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Wash™ - Fragrance-Free | Standard | £19.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Wash™ - Hydrating Fresh Cotton | Standard | £19.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Everywhere Wash™ - Jasmine + Ylang Ylang | Standard | £19.00 | 2026-10-24T15:04:38+00:00 |
@@ -99,7 +93,7 @@
 | `luna-daily.com` | The Skin Support Oil - For Stretch Marks, Hyperpigmentation + Uneven Skin Texture | 2 PACK | £29/EA | £58.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Skin Support Oil - For Stretch Marks, Hyperpigmentation + Uneven Skin Texture | 3 PACK | £26.66/EA | £80.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | The Skin Treatment Duo - Stretch Marks + Scars | Standard | £64.00 | 2026-10-24T15:04:38+00:00 |
-| `luna-daily.com` | The Spray-to-Wipe Discovery Set - The Cleanse Collective | Standard | £28.00 | 2026-10-24T15:04:38+00:00 |
+| `luna-daily.com` | The Spray-to-Wipe Discovery Set - The Cleanse Collective | Standard | £32.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | US The Everywhere Spray-To-Wipe + Lanyard - Fragrance Free | Standard | £26.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | US The Everywhere Spray-To-Wipe + Lanyard - Hydrating Fresh Cotton | Standard | £26.00 | 2026-10-24T15:04:38+00:00 |
 | `luna-daily.com` | US The Everywhere Spray-To-Wipe™ Discovery Gift Set | Standard | £29.00 | 2026-10-24T15:04:38+00:00 |
@@ -112,6 +106,7 @@
 |---|---|---|---|---|---|---|
 | **Luna Daily The Everywhere Wash Fragrance Free 400ml** | ⚠️ OOS (£19.00) | **3/4** (75%) | `cultbeauty.co.uk`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Luna Daily Spray-to-Wipe - Pomelo & Patchouli 30ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
+| **Luna Daily The All Over Deodorant™- Extra-strength, Natural, Non-Staining Body Deodorant Stick- Cooling** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Discovery Set** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Everywhere Body Minis Starter Set Hydrating Fresh Cotton 150ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
 | **Luna Daily The Everywhere Body Minis Starter Set Jasmine & Ylang Ylang 150ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `hollandandbarrett.com` |
@@ -136,14 +131,33 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 3.6 Hello Sunday The Mineral One - Lightweight Serum Spf50 30ml | 30ml | £26.00 | 2026-11-16T06:42:23+00:00 |
-| `hollandandbarrett.com` | 4.85 Hello Sunday The One For Your Hands Spf30 30ml | 30ml | £11.00 | 2026-11-16T06:42:23+00:00 |
-| `hollandandbarrett.com` | Frudia Coconut Honey Salve Lip Cream 10g | 10g | £8.99 | 2026-11-16T06:42:23+00:00 |
-| `lookfantastic.com` | Luna Daily The Everywhere Oil 10ml | 10ml | £12.00 | 2026-11-16T06:42:40+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-11-16T06:41:21+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-11-16T06:41:21+00:00 |
-| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-11-16T06:41:21+00:00 |
-| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-16T06:41:21+00:00 |
+| `hollandandbarrett.com` | 3.6 Hello Sunday The Mineral One - Lightweight Serum Spf50 30ml | 30ml | £26.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 4.1 Hello Sunday The Mauve One - Tinted Lip Balm Spf50 15ml | 15ml | £11.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 4.33 Hello Sunday The One For Your Body Spf 30 Body Lotion 150ml | 150ml | £18.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 4.38 Hello Sunday The Rose One - Tinted Lip Balm Spf50 15ml | 15ml | £11.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 4.6 Hello Sunday The Illuminating One Glow Primer Spf50 50ml | 50ml | £24.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 4.69 Hello Sunday The Everyday One Face Moisturiser Spf50 50ml | 50ml | £18.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 4.83 Hello Sunday The One For Your Lips Spf50 Lip Balm 15ml | 15ml | £9.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 4.85 Hello Sunday The One For Your Hands Spf30 30ml | 30ml | £11.00 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | 5 Hair Gain Gummies Apple 60 Gummies 25% Off | Standard | £22.49 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | Frudia Coconut Honey Salve Lip Cream 10g | 10g | £8.99 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | Hair Gain Capsules 60 Capsules 25% Off | 60 Capsules | £27.74 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | Hair Gain Peptide Puff Dry Shampoo 5 g 25% Off | 5 g | £10.87 | 2026-11-19T13:11:19+00:00 |
+| `hollandandbarrett.com` | Hair Gain Scalp Foam 50 ml 25% Off | 50 ml | £24.00 | 2026-11-19T13:11:19+00:00 |
+| `lookfantastic.com` | Luna Daily The Everywhere Oil 10ml | 10ml | £12.00 | 2026-11-19T13:11:39+00:00 |
+| `luna-daily.com` | 3-Steps To All-Day Fresh Hydrating Bundle (Fresh Cotton) | Standard | £35.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Cooling Water Lily + Fresh Citrus | Standard | £15.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Fragrance Free | Standard | £15.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | Forever Fresh 200 Wipes Bundle - Hydrating Fresh Cotton | Standard | £15.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | Mini + Mama Spray-To-Wipe - Fragrance Free | Standard | £20.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | Smooth Skin Saviours - Rid Ingrowns, Redness + Bumps in 2 weeks (+FREE Lotion worth £20) | Standard | £38.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | The 24/7 Constantly Clean Bundle (Fragrance Free) | Standard | £25.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | The 24/7 Constantly Clean Hydrating Bundle (Fresh Cotton) | Standard | £25.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 1 PACK | £20/EA | £20.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 2 PACK | £18/EA | £36.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | The Everywhere Lotion | 3 PACK | £16/EA | £48.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | The Everywhere Wash - Fragrance Free | Standard | £24.00 | 2026-11-19T13:10:14+00:00 |
+| `luna-daily.com` | The Fragrance Free Everywhere Spray-To-Wipe | Standard | £18.00 | 2026-11-19T13:10:14+00:00 |
 
 ---
 
@@ -153,6 +167,6 @@
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/luna-daily |
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 31 | **1** | https://www.cultbeauty.co.uk/c/brands/luna-daily/ |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 17 | 17 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.lookfantastic.com/c/brands/luna-daily/ |
-| `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 135 | 50 | **85** | https://luna-daily.com |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 7 | 7 | **0** | https://www.hollandandbarrett.com/shop/brands/luna-daily/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 25 | 25 | **0** | https://www.lookfantastic.com/c/brands/luna-daily/ |
+| `luna-daily.com` | Official Brand DTC (Master Catalog) | Shopify | 128 | 49 | **79** | https://luna-daily.com |
