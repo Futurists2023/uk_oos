@@ -1,7 +1,7 @@
 {
   "brand": "Laboratory Perfumes",
   "brand_slug": "laboratory-perfumes",
-  "generated_at": "2026-11-17T13:34:56+00:00",
+  "generated_at": "2026-11-20T07:27:51+00:00",
   "summary": {
     "monitored_uk_stores": 3,
     "monitored_retail_stockists": 2,
@@ -52,7 +52,8 @@
       "oos_in": [],
       "missing_in": [],
       "undercut_alerts": [
-        "`lookfantastic.com` £24.00 (-40% vs RRP)"
+        "`cultbeauty.co.uk` £24.00 (-40% vs RRP)",
+        "`lookfantastic.com` £16.00 (-60% vs RRP)"
       ]
     },
     {
@@ -128,6 +129,32 @@
   ],
   "silent_removals": [],
   "recent_events": [
+    {
+      "id": 23994,
+      "occurred_at": "2026-11-20T07:27:49+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "lookfantastic.com::laboratory-perfumes::p_laboratory-perfumes-gorse-cream-200ml_13887893",
+      "product_title": "Laboratory Perfumes Gorse Cream 200ml",
+      "variant_title": "200ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 24.0,
+      "new_price": 16.0,
+      "details": "Price changed 24.0 -> 16"
+    },
+    {
+      "id": 23993,
+      "occurred_at": "2026-11-20T07:27:27+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-gorse-cream-200ml_13887893",
+      "product_title": "Laboratory Perfumes Gorse Cream 200ml",
+      "variant_title": "200ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 40.0,
+      "new_price": 24.0,
+      "details": "Price changed 40.0 -> 24"
+    },
     {
       "id": 21978,
       "occurred_at": "2026-11-17T13:34:55+00:00",
