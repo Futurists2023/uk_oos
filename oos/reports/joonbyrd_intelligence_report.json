@@ -1,17 +1,17 @@
 {
   "brand": "Joonbyrd",
   "brand_slug": "joonbyrd",
-  "generated_at": "2026-11-19T02:05:39+00:00",
+  "generated_at": "2026-11-21T21:51:57+00:00",
   "summary": {
     "monitored_uk_stores": 4,
     "monitored_retail_stockists": 3,
-    "total_listed_skus_variants": 196,
-    "in_stock_skus_variants": 194,
+    "total_listed_skus_variants": 195,
+    "in_stock_skus_variants": 193,
     "out_of_stock_skus_variants": 2,
     "retail_out_of_stock_variants": 1,
     "unforced_retail_outages": 1,
     "factory_shortages_on_dtc": 0,
-    "silent_removed_skus": 8
+    "silent_removed_skus": 9
   },
   "out_of_stock_alerts": [
     {
@@ -30,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T05:12:31+00:00",
-      "last_seen_at": "2026-11-19T02:03:55+00:00",
+      "last_seen_at": "2026-11-21T21:50:16+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 11h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.5,
+      "duration_label": "28d 6h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 28.3,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 25.0,
@@ -58,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T05:14:18+00:00",
-      "last_seen_at": "2026-11-19T02:05:38+00:00",
+      "last_seen_at": "2026-11-21T21:51:56+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 11h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.5,
+      "duration_label": "28d 6h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 28.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -90,12 +90,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T05:14:18+00:00",
-      "last_seen_at": "2026-11-19T02:05:38+00:00",
+      "last_seen_at": "2026-11-21T21:51:56+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 11h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.5,
+      "duration_label": "28d 6h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 28.3,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -122,12 +122,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T05:12:31+00:00",
-      "last_seen_at": "2026-11-19T02:03:55+00:00",
+      "last_seen_at": "2026-11-21T21:50:16+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 11h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.5,
+      "duration_label": "28d 6h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 28.3,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 25.0,
@@ -136,6 +136,24 @@
     }
   ],
   "hero_benchmarks": [
+    {
+      "normalized_key": "better_together_body_essentials_kit",
+      "product_family": "Joonbyrd Better Together Body Essentials Kit",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 3,
+      "penetration_pct": 100,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [],
+      "undercut_alerts": []
+    },
     {
       "normalized_key": "confetti_sky_hand_treatment",
       "product_family": "Joonbyrd Confetti Sky Hand Treatment 50ml",
@@ -319,25 +337,6 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "better_together_body_essentials_kit",
-      "product_family": "Joonbyrd Better Together Body Essentials Kit",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "stores_carrying": 2,
-      "total_stores": 3,
-      "penetration_pct": 67,
-      "is_hero": true,
-      "in_stock_in": [
-        "lookfantastic.com",
-        "spacenk.com"
-      ],
-      "oos_in": [],
-      "missing_in": [
-        "cultbeauty.co.uk"
-      ],
-      "undercut_alerts": []
-    },
-    {
       "normalized_key": "big_time_longevity_body_wash",
       "product_family": "Joonbyrd Big Time Longevity Body Wash",
       "dtc_status": "NOT_ON_DTC",
@@ -454,6 +453,25 @@
     {
       "normalized_key": "future_romance_body_glaze_travel",
       "product_family": "Joonbyrd Future Romance Body Glaze Mini 30ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "kaleidoscope_body_serum_travel",
+      "product_family": "Joonbyrd Kaleidoscope Body Serum Mini 15ml",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "stores_carrying": 2,
@@ -640,48 +658,29 @@
         "cultbeauty.co.uk"
       ],
       "undercut_alerts": []
-    },
-    {
-      "normalized_key": "wonder_land_hand_lotion_travel",
-      "product_family": "Joonbyrd Wonder.Land Hand Lotion Mini 50ml",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "stores_carrying": 2,
-      "total_stores": 3,
-      "penetration_pct": 67,
-      "is_hero": true,
-      "in_stock_in": [
-        "cultbeauty.co.uk",
-        "lookfantastic.com"
-      ],
-      "oos_in": [],
-      "missing_in": [
-        "spacenk.com"
-      ],
-      "undercut_alerts": []
     }
   ],
   "silent_removals": [
     {
-      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-better-together-body-essentials-kit_16583170",
+      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-functional-fragrance-trio_18114103",
       "domain": "cultbeauty.co.uk",
       "brand": "Joonbyrd",
-      "product_title": "Joonbyrd Better Together Body Essentials Kit",
+      "product_title": "Joonbyrd Functional Fragrance Trio",
       "variant_title": "Standard",
-      "normalized_product_key": "better_together_body_essentials_kit",
-      "product_url": "https://www.cultbeauty.co.uk/p/joonbyrd-better-together-body-essentials-kit/16583170/",
-      "sku_code": "p_joonbyrd-better-together-body-essentials-kit_16583170",
-      "current_price": 82.0,
+      "normalized_product_key": "functional_fragrance_trio",
+      "product_url": "https://www.cultbeauty.co.uk/p/joonbyrd-functional-fragrance-trio/18114103/",
+      "sku_code": "p_joonbyrd-functional-fragrance-trio_18114103",
+      "current_price": 75.0,
       "compare_at_price": null,
-      "last_in_stock_price": 82.0,
+      "last_in_stock_price": 75.0,
       "currency": "GBP",
       "is_available": 1,
       "is_listed": 0,
-      "first_seen_at": "2026-10-27T05:12:52+00:00",
-      "last_seen_at": "2026-11-16T06:39:40+00:00",
+      "first_seen_at": "2026-11-19T02:04:16+00:00",
+      "last_seen_at": "2026-11-19T02:04:16+00:00",
       "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-16T06:39:40+00:00",
-      "silent_removed_at": "2026-11-19T02:04:16+00:00"
+      "last_seen_in_stock_at": "2026-11-19T02:04:16+00:00",
+      "silent_removed_at": "2026-11-21T21:50:37+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-heartwarmer-body-gua-sha_16583168",
@@ -702,28 +701,28 @@
       "last_seen_at": "2026-11-16T06:39:40+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-16T06:39:40+00:00",
-      "silent_removed_at": "2026-11-19T02:04:16+00:00"
+      "silent_removed_at": "2026-11-21T21:50:37+00:00"
     },
     {
-      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-kaleidoscope-body-serum-mini-15ml_16583178",
+      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-wonder.land-hand-lotion-mini-50ml_16583174",
       "domain": "cultbeauty.co.uk",
       "brand": "Joonbyrd",
-      "product_title": "Joonbyrd Kaleidoscope Body Serum Mini 15ml",
-      "variant_title": "15ml",
-      "normalized_product_key": "kaleidoscope_body_serum_travel",
-      "product_url": "https://www.cultbeauty.co.uk/p/joonbyrd-kaleidoscope-body-serum-mini-15ml/16583178/",
-      "sku_code": "p_joonbyrd-kaleidoscope-body-serum-mini-15ml_16583178",
-      "current_price": 18.0,
+      "product_title": "Joonbyrd Wonder.Land Hand Lotion Mini 50ml",
+      "variant_title": "50ml",
+      "normalized_product_key": "wonder_land_hand_lotion_travel",
+      "product_url": "https://www.cultbeauty.co.uk/p/joonbyrd-wonder.land-hand-lotion-mini-50ml/16583174/",
+      "sku_code": "p_joonbyrd-wonder.land-hand-lotion-mini-50ml_16583174",
+      "current_price": 14.0,
       "compare_at_price": null,
-      "last_in_stock_price": 18.0,
+      "last_in_stock_price": 14.0,
       "currency": "GBP",
       "is_available": 1,
       "is_listed": 0,
       "first_seen_at": "2026-10-27T05:12:52+00:00",
-      "last_seen_at": "2026-11-16T06:39:40+00:00",
+      "last_seen_at": "2026-11-19T02:04:16+00:00",
       "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-16T06:39:40+00:00",
-      "silent_removed_at": "2026-11-19T02:04:16+00:00"
+      "last_seen_in_stock_at": "2026-11-19T02:04:16+00:00",
+      "silent_removed_at": "2026-11-21T21:50:37+00:00"
     },
     {
       "sku_key": "joonbyrd.com::joonbyrd::future-romance::57685665743221",
@@ -744,7 +743,7 @@
       "last_seen_at": "2026-11-11T06:26:37+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-11T06:26:37+00:00",
-      "silent_removed_at": "2026-11-19T02:03:55+00:00"
+      "silent_removed_at": "2026-11-21T21:50:16+00:00"
     },
     {
       "sku_key": "joonbyrd.com::joonbyrd::natural-marine-collagen-mixed-trial-pack::57495243063669",
@@ -765,7 +764,7 @@
       "last_seen_at": "2026-11-02T06:08:55+00:00",
       "first_seen_oos_at": "2026-10-31T05:52:56+00:00",
       "last_seen_in_stock_at": "2026-10-29T05:53:46+00:00",
-      "silent_removed_at": "2026-11-19T02:03:55+00:00"
+      "silent_removed_at": "2026-11-21T21:50:16+00:00"
     },
     {
       "sku_key": "joonbyrd.com::joonbyrd::natural-marine-collagen-sachets-original::57495236378997",
@@ -786,7 +785,28 @@
       "last_seen_at": "2026-11-02T06:08:55+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-19T02:03:55+00:00"
+      "silent_removed_at": "2026-11-21T21:50:16+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-wonder.land-hand-lotion-mini-50ml_16583174",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "product_title": "Joonbyrd Wonder.Land Hand Lotion Mini 50ml",
+      "variant_title": "50ml",
+      "normalized_product_key": "wonder_land_hand_lotion_travel",
+      "product_url": "https://www.lookfantastic.com/p/joonbyrd-wonder.land-hand-lotion-mini-50ml/16583174/",
+      "sku_code": "p_joonbyrd-wonder.land-hand-lotion-mini-50ml_16583174",
+      "current_price": 14.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 14.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-27T05:13:14+00:00",
+      "last_seen_at": "2026-11-19T02:04:35+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-19T02:04:35+00:00",
+      "silent_removed_at": "2026-11-21T21:50:58+00:00"
     },
     {
       "sku_key": "spacenk.com::joonbyrd::future-romance-body-glaze-MUK200063126",
@@ -807,7 +827,7 @@
       "last_seen_at": "2026-11-02T06:10:25+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-02T06:10:25+00:00",
-      "silent_removed_at": "2026-11-19T02:05:38+00:00"
+      "silent_removed_at": "2026-11-21T21:51:56+00:00"
     },
     {
       "sku_key": "spacenk.com::joonbyrd::UK200050702",
@@ -828,10 +848,140 @@
       "last_seen_at": "2026-11-16T06:41:04+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-19T02:05:38+00:00"
+      "silent_removed_at": "2026-11-21T21:51:56+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 25134,
+      "occurred_at": "2026-11-21T21:51:56+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::UK200050702",
+      "product_title": "Joonbyrd Daydreamer Body Serum 100ml",
+      "variant_title": "100ML",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 78.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-16T06:41:04+00:00)"
+    },
+    {
+      "id": 25133,
+      "occurred_at": "2026-11-21T21:51:56+00:00",
+      "domain": "spacenk.com",
+      "brand": "Joonbyrd",
+      "sku_key": "spacenk.com::joonbyrd::future-romance-body-glaze-MUK200063126",
+      "product_title": "Future Romance Body Glaze",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 62.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-02T06:10:25+00:00)"
+    },
+    {
+      "id": 25132,
+      "occurred_at": "2026-11-21T21:50:58+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Joonbyrd",
+      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-wonder.land-hand-lotion-mini-50ml_16583174",
+      "product_title": "Joonbyrd Wonder.Land Hand Lotion Mini 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-19T02:04:35+00:00)"
+    },
+    {
+      "id": 25131,
+      "occurred_at": "2026-11-21T21:50:37+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Joonbyrd",
+      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-functional-fragrance-trio_18114103",
+      "product_title": "Joonbyrd Functional Fragrance Trio",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 75.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-19T02:04:16+00:00)"
+    },
+    {
+      "id": 25130,
+      "occurred_at": "2026-11-21T21:50:37+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Joonbyrd",
+      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-heartwarmer-body-gua-sha_16583168",
+      "product_title": "Joonbyrd Heartwarmer Body Gua Sha",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 80.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-16T06:39:40+00:00)"
+    },
+    {
+      "id": 25129,
+      "occurred_at": "2026-11-21T21:50:37+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Joonbyrd",
+      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-wonder.land-hand-lotion-mini-50ml_16583174",
+      "product_title": "Joonbyrd Wonder.Land Hand Lotion Mini 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-19T02:04:16+00:00)"
+    },
+    {
+      "id": 25128,
+      "occurred_at": "2026-11-21T21:50:37+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Joonbyrd",
+      "sku_key": "cultbeauty.co.uk::joonbyrd::p_joonbyrd-byrds-of-a-feather-trip-holiday-pouch_16988337",
+      "product_title": "Joonbyrd Byrds Of A Feather Trip Pouch (Worth £53)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 38.0,
+      "new_price": 22.8,
+      "details": "Price changed 38.0 -> 22.8"
+    },
+    {
+      "id": 25127,
+      "occurred_at": "2026-11-21T21:50:16+00:00",
+      "domain": "joonbyrd.com",
+      "brand": "Joonbyrd",
+      "sku_key": "joonbyrd.com::joonbyrd::future-romance::57685665743221",
+      "product_title": "Future Romance",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 50.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-11T06:26:37+00:00)"
+    },
+    {
+      "id": 25126,
+      "occurred_at": "2026-11-21T21:50:16+00:00",
+      "domain": "joonbyrd.com",
+      "brand": "Joonbyrd",
+      "sku_key": "joonbyrd.com::joonbyrd::natural-marine-collagen-sachets-original::57495236378997",
+      "product_title": "Natural Marine Collagen - Original",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 10.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-02T06:08:55+00:00)"
+    },
+    {
+      "id": 25125,
+      "occurred_at": "2026-11-21T21:50:16+00:00",
+      "domain": "joonbyrd.com",
+      "brand": "Joonbyrd",
+      "sku_key": "joonbyrd.com::joonbyrd::natural-marine-collagen-mixed-trial-pack::57495243063669",
+      "product_title": "Natural Marine Collagen - Original",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 16.5,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-02T06:08:55+00:00)"
+    },
     {
       "id": 22996,
       "occurred_at": "2026-11-19T02:05:38+00:00",
@@ -1351,136 +1501,6 @@
       "old_price": 64.0,
       "new_price": 80.0,
       "details": "Price changed 64.0 -> 80"
-    },
-    {
-      "id": 14404,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-wonder.land-hand-lotion-300ml_16583161",
-      "product_title": "Joonbyrd Wonder.Land Hand Lotion 300ml",
-      "variant_title": "300ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 44.0,
-      "new_price": 55.0,
-      "details": "Price changed 44.0 -> 55"
-    },
-    {
-      "id": 14403,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-palm-wild-hand-wash-mini-50ml_16583166",
-      "product_title": "Joonbyrd Palm Wild Hand Wash Mini 50ml",
-      "variant_title": "50ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 12.0,
-      "details": "Price changed 9.6 -> 12"
-    },
-    {
-      "id": 14402,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-daydreamer-body-serum-mini-15ml_16583164",
-      "product_title": "Joonbyrd Daydreamer Body Serum Mini 15ml",
-      "variant_title": "15ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 14.4,
-      "new_price": 18.0,
-      "details": "Price changed 14.4 -> 18"
-    },
-    {
-      "id": 14401,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-we-belong-together-hand-body-essentials-kit_16583172",
-      "product_title": "Joonbyrd We Belong Together Hand & Body Essentials Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 64.0,
-      "new_price": 80.0,
-      "details": "Price changed 64.0 -> 80"
-    },
-    {
-      "id": 14400,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-kaleidoscope-body-serum-mini-15ml_16583178",
-      "product_title": "Joonbyrd Kaleidoscope Body Serum Mini 15ml",
-      "variant_title": "15ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 14.4,
-      "new_price": 18.0,
-      "details": "Price changed 14.4 -> 18"
-    },
-    {
-      "id": 14399,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-sunday-sofa-body-butter-mini-30ml_16583162",
-      "product_title": "Joonbyrd Sunday Sofa Body Butter Mini 30ml",
-      "variant_title": "30ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 11.2,
-      "new_price": 14.0,
-      "details": "Price changed 11.2 -> 14"
-    },
-    {
-      "id": 14398,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-violet-haze-body-scrub-mini-30ml_16583160",
-      "product_title": "Joonbyrd Violet Haze Body Scrub Mini 30ml",
-      "variant_title": "30ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 12.0,
-      "details": "Price changed 9.6 -> 12"
-    },
-    {
-      "id": 14397,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-confetti-sky-hand-treatment-50ml_16583163",
-      "product_title": "Joonbyrd Confetti Sky Hand Treatment 50ml",
-      "variant_title": "50ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 40.0,
-      "new_price": 50.0,
-      "details": "Price changed 40.0 -> 50"
-    },
-    {
-      "id": 14396,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-moon-swim-body-wash-mini-50ml_16583167",
-      "product_title": "Joonbyrd Moon Swim Body Wash Mini 50ml",
-      "variant_title": "50ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.6,
-      "new_price": 12.0,
-      "details": "Price changed 9.6 -> 12"
-    },
-    {
-      "id": 14395,
-      "occurred_at": "2026-11-04T12:20:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Joonbyrd",
-      "sku_key": "lookfantastic.com::joonbyrd::p_joonbyrd-kaleidoscope-smoothing-body-serum-100ml_16583165",
-      "product_title": "Joonbyrd Kaleidoscope Smoothing Body Serum 100ml",
-      "variant_title": "100ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 62.4,
-      "new_price": 78.0,
-      "details": "Price changed 62.4 -> 78"
     }
   ]
 }

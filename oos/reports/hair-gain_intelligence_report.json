@@ -1,7 +1,7 @@
 {
   "brand": "Hair Gain",
   "brand_slug": "hair-gain",
-  "generated_at": "2026-11-19T01:58:23+00:00",
+  "generated_at": "2026-11-21T21:44:43+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
@@ -40,6 +40,26 @@
     {
       "normalized_key": "hydrating_shampoo_starter_kit",
       "product_family": "Hair Gain Hydrating Shampoo 250ml - Starter Kit",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 3,
+      "total_stores": 4,
+      "penetration_pct": 75,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "hollandandbarrett.com",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "boots.com"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "peptide_puff_dry_shampoo",
+      "product_family": "Hair Gain Peptide Puff Dry Shampoo 7ml",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "stores_carrying": 3,
@@ -280,26 +300,6 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "peptide_puff_dry_shampoo",
-      "product_family": "Hair Gain Peptide Puff Dry Shampoo 7ml",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "stores_carrying": 2,
-      "total_stores": 4,
-      "penetration_pct": 50,
-      "is_hero": true,
-      "in_stock_in": [
-        "cultbeauty.co.uk",
-        "lookfantastic.com"
-      ],
-      "oos_in": [],
-      "missing_in": [
-        "boots.com",
-        "hollandandbarrett.com"
-      ],
-      "undercut_alerts": []
-    },
-    {
       "normalized_key": "scalp_foam",
       "product_family": "Hair Gain Scalp Foam 50ml",
       "dtc_status": "NOT_ON_DTC",
@@ -362,7 +362,7 @@
       "last_seen_at": "2026-10-28T21:18:27+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T21:18:27+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::miya-nutrition-purest-creatine-5000-mg-150-g-6102014521",
@@ -383,7 +383,7 @@
       "last_seen_at": "2026-11-10T22:00:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T22:00:57+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-density-scalp-drops-85ml-6100007106",
@@ -404,7 +404,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-digest-debloat-100ml-6102036561",
@@ -425,7 +425,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-swimcap-water-resistant-mask-100ml-6100007092",
@@ -446,7 +446,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-finishing-touch-frizz-fighting-gloss-50ml-6100007105",
@@ -467,7 +467,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-moisture-extreme-shampoo-250ml-6100007112",
@@ -488,7 +488,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-moisture-extreme-conditioner-200ml-6100007110",
@@ -509,7 +509,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-advanced-multi-nutrient-120-capsules-6102111115",
@@ -530,7 +530,7 @@
       "last_seen_at": "2026-11-01T20:43:10+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T20:43:10+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-biome-restore-30-capsules-6100029088",
@@ -551,7 +551,7 @@
       "last_seen_at": "2026-11-13T20:01:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-13T20:01:47+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-cellular-hydration-250g-6102036552",
@@ -572,7 +572,7 @@
       "last_seen_at": "2026-11-13T20:01:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-13T20:01:47+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-core-pregnancy-6102036600",
@@ -593,7 +593,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-core-prenatal-90-capsules-6100029089",
@@ -614,7 +614,7 @@
       "last_seen_at": "2026-11-01T20:43:10+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T20:43:10+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-creatine-200g-6102036540",
@@ -635,7 +635,7 @@
       "last_seen_at": "2026-11-13T20:01:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-13T20:01:47+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-magnesium-60-capsules-6102036580",
@@ -656,7 +656,7 @@
       "last_seen_at": "2026-11-01T20:43:10+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T20:43:10+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-omegas-60-capsules-6102036523",
@@ -677,7 +677,7 @@
       "last_seen_at": "2026-11-10T22:00:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T22:00:57+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-g-i-cleanse-60-capsules-6100029090",
@@ -698,7 +698,7 @@
       "last_seen_at": "2026-11-13T20:01:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-13T20:01:47+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::artah-skin-clinic-90-capsules-6102036548",
@@ -719,7 +719,7 @@
       "last_seen_at": "2026-11-13T20:01:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-13T20:01:47+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-elasticizer-effect-discovery-collection-6100007114",
@@ -740,7 +740,7 @@
       "last_seen_at": "2026-10-26T21:09:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:09:39+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::hair-gain::the-ten-percent-club-electrolytes-mixed-berry-28-sachet-6100025709",
@@ -761,10 +761,361 @@
       "last_seen_at": "2026-11-13T20:01:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-13T20:01:47+00:00",
-      "silent_removed_at": "2026-11-19T01:58:06+00:00"
+      "silent_removed_at": "2026-11-21T21:44:26+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 25034,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::the-ten-percent-club-electrolytes-mixed-berry-28-sachet-6100025709",
+      "product_title": "The Ten Percent Club Electrolytes Mixed Berry 28 Sachet",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 35.99,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
+    },
+    {
+      "id": 25033,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-biome-restore-30-capsules-6100029088",
+      "product_title": "ARTAH Biome Restore 30 Capsules",
+      "variant_title": "30 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 45.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
+    },
+    {
+      "id": 25032,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::miya-nutrition-purest-creatine-5000-mg-150-g-6102014521",
+      "product_title": "18+ MIYA Nutrition Purest Creatine 5000 mg 150 g",
+      "variant_title": "150 g",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 15.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-10T22:00:57+00:00)"
+    },
+    {
+      "id": 25031,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::bloom-creatine-stick-10-sachets-6100029277",
+      "product_title": "18+ Bloom Creatine Stick 10 Sachets",
+      "variant_title": "10 Sachets",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 9.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-28T21:18:27+00:00)"
+    },
+    {
+      "id": 25030,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-advanced-multi-nutrient-120-capsules-6102111115",
+      "product_title": "ARTAH Advanced Multi-Nutrient 120 Capsules",
+      "variant_title": "120 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 60.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-01T20:43:10+00:00)"
+    },
+    {
+      "id": 25029,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-magnesium-60-capsules-6102036580",
+      "product_title": "ARTAH Essential Magnesium 60 Capsules",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-01T20:43:10+00:00)"
+    },
+    {
+      "id": 25028,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-skin-clinic-90-capsules-6102036548",
+      "product_title": "ARTAH Skin Clinic 90 Capsules",
+      "variant_title": "90 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 45.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
+    },
+    {
+      "id": 25027,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-creatine-200g-6102036540",
+      "product_title": "ARTAH Essential Creatine 200g",
+      "variant_title": "200g",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 28.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
+    },
+    {
+      "id": 25026,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-core-prenatal-90-capsules-6100029089",
+      "product_title": "ARTAH Core Prenatal+ 90 Capsules",
+      "variant_title": "90 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 36.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-01T20:43:10+00:00)"
+    },
+    {
+      "id": 25025,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-omegas-60-capsules-6102036523",
+      "product_title": "ARTAH Essential Omegas 60 Capsules",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 32.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-10T22:00:57+00:00)"
+    },
+    {
+      "id": 25024,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-g-i-cleanse-60-capsules-6100029090",
+      "product_title": "ARTAH G.I. Cleanse 60 Capsules",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 38.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
+    },
+    {
+      "id": 25023,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-cellular-hydration-250g-6102036552",
+      "product_title": "ARTAH Cellular Hydration 250g",
+      "variant_title": "250g",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 32.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
+    },
+    {
+      "id": 25022,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-finishing-touch-frizz-fighting-gloss-50ml-6100007105",
+      "product_title": "4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 26.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25021,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-swimcap-water-resistant-mask-100ml-6100007092",
+      "product_title": "4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 26.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25020,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-moisture-extreme-conditioner-200ml-6100007110",
+      "product_title": "4.92 Philip Kingsley Moisture Extreme Conditioner 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 29.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25019,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-density-scalp-drops-85ml-6100007106",
+      "product_title": "3.59 Philip Kingsley Density Scalp Drops 85ml",
+      "variant_title": "85ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 55.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25018,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-moisture-extreme-shampoo-250ml-6100007112",
+      "product_title": "4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off",
+      "variant_title": "250ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 20.3,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25017,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-core-pregnancy-6102036600",
+      "product_title": "ARTAH Core Pregnancy+",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 36.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25016,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::artah-digest-debloat-100ml-6102036561",
+      "product_title": "4.8 ARTAH Digest & Debloat 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 32.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25015,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-elasticizer-effect-discovery-collection-6100007114",
+      "product_title": "Philip Kingsley Elasticizer Effect Discovery Collection",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 26.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
+    },
+    {
+      "id": 25014,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::hair-gain-hydrating-conditioner-starter-kit-250-ml-6100028532",
+      "product_title": "Hair Gain Hydrating Conditioner Starter Kit 250 ml",
+      "variant_title": "250 ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 23.0,
+      "new_price": 14.62,
+      "details": "Price changed 23.0 -> 14.62"
+    },
+    {
+      "id": 25013,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::hair-gain-hydrating-shampoo-refill-250-ml-6100021697",
+      "product_title": "Hair Gain Hydrating Shampoo Refill 250 ml 25% Off",
+      "variant_title": "250 ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 17.5,
+      "new_price": 13.12,
+      "details": "Price changed 17.5 -> 13.12"
+    },
+    {
+      "id": 25012,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::hair-gain-hydrating-shampoo-starter-kit-250ml-6100021999",
+      "product_title": "Hair Gain Hydrating Shampoo Starter Kit 250ml",
+      "variant_title": "250ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 23.0,
+      "new_price": 17.25,
+      "details": "Price changed 23.0 -> 17.25"
+    },
+    {
+      "id": 25011,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::hair-gain-hydrating-conditioner-refill-250-ml-6100021696",
+      "product_title": "Hair Gain Hydrating Conditioner Refill 250 ml 25% Off",
+      "variant_title": "250 ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 17.5,
+      "new_price": 13.12,
+      "details": "Price changed 17.5 -> 13.12"
+    },
+    {
+      "id": 25010,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::hair-gain-capsules-60-capsules-6100029460",
+      "product_title": "Hair Gain Capsules 60 Capsules 30% Off",
+      "variant_title": "60 Capsules",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 27.74,
+      "new_price": 25.89,
+      "details": "Price changed 27.74 -> 25.89"
+    },
+    {
+      "id": 25009,
+      "occurred_at": "2026-11-21T21:44:26+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Hair Gain",
+      "sku_key": "hollandandbarrett.com::hair-gain::hair-gain-gummies-apple-60-gummies-6100024403",
+      "product_title": "Hair Gain Gummies Apple 60 Gummies",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 22.49,
+      "new_price": 20.99,
+      "details": "Price changed 22.49 -> 20.99"
+    },
+    {
+      "id": 25008,
+      "occurred_at": "2026-11-21T21:44:10+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Hair Gain",
+      "sku_key": "cultbeauty.co.uk::hair-gain::p_hair-gain-peptide-puff-dry-shampoo-7ml_15008629",
+      "product_title": "Hair Gain Peptide Puff Dry Shampoo 7ml",
+      "variant_title": "7ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 9.0,
+      "details": "Price changed 15.0 -> 9"
+    },
     {
       "id": 22909,
       "occurred_at": "2026-11-19T01:58:22+00:00",
@@ -1061,357 +1412,6 @@
       "variant_title": "Standard",
       "event_type": "SILENT_REMOVED",
       "old_price": 36.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 22886,
-      "occurred_at": "2026-11-19T01:58:06+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-digest-debloat-100ml-6102036561",
-      "product_title": "4.8 ARTAH Digest & Debloat 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 32.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 22885,
-      "occurred_at": "2026-11-19T01:58:06+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-elasticizer-effect-discovery-collection-6100007114",
-      "product_title": "Philip Kingsley Elasticizer Effect Discovery Collection",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 26.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 21148,
-      "occurred_at": "2026-11-16T06:33:42+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Hair Gain",
-      "sku_key": "lookfantastic.com::hair-gain::p_hair-gain-holiday-hair-kit_17780716",
-      "product_title": "Hair Gain Holiday Hair Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 49.5,
-      "new_price": 37.13,
-      "details": "Price changed 49.5 -> 37.13"
-    },
-    {
-      "id": 21147,
-      "occurred_at": "2026-11-16T06:33:42+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Hair Gain",
-      "sku_key": "lookfantastic.com::hair-gain::p_hair-gain-hydrating-conditioner-250ml-starter-kit_17355972",
-      "product_title": "Hair Gain Hydrating Conditioner 250ml - Starter Kit",
-      "variant_title": "250ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 14.62,
-      "new_price": 14.63,
-      "details": "Price changed 14.62 -> 14.63"
-    },
-    {
-      "id": 21146,
-      "occurred_at": "2026-11-16T06:33:42+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Hair Gain",
-      "sku_key": "lookfantastic.com::hair-gain::p_hair-gain-hydrating-shampoo-250ml-starter-kit_17355975",
-      "product_title": "Hair Gain Hydrating Shampoo 250ml - Starter Kit",
-      "variant_title": "250ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 14.62,
-      "new_price": 14.63,
-      "details": "Price changed 14.62 -> 14.63"
-    },
-    {
-      "id": 21145,
-      "occurred_at": "2026-11-16T06:33:42+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Hair Gain",
-      "sku_key": "lookfantastic.com::hair-gain::p_hair-gain-scalp-foam-50ml_14235209",
-      "product_title": "Hair Gain Scalp Foam 50ml",
-      "variant_title": "50ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 27.2,
-      "new_price": 24.0,
-      "details": "Price changed 27.2 -> 24"
-    },
-    {
-      "id": 21144,
-      "occurred_at": "2026-11-16T06:33:42+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Hair Gain",
-      "sku_key": "lookfantastic.com::hair-gain::p_hair-gain-hydrating-conditioner-250ml-refill_17355974",
-      "product_title": "Hair Gain Hydrating Conditioner 250ml - Refill",
-      "variant_title": "250ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 10.87,
-      "new_price": 10.88,
-      "details": "Price changed 10.87 -> 10.88"
-    },
-    {
-      "id": 21143,
-      "occurred_at": "2026-11-16T06:33:42+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Hair Gain",
-      "sku_key": "lookfantastic.com::hair-gain::p_hair-gain-hydrating-shampoo-250ml-refill_17355977",
-      "product_title": "Hair Gain Hydrating Shampoo 250ml - Refill",
-      "variant_title": "250ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 10.87,
-      "new_price": 10.88,
-      "details": "Price changed 10.87 -> 10.88"
-    },
-    {
-      "id": 21142,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::the-ten-percent-club-electrolytes-mixed-berry-28-sachet-6100025709",
-      "product_title": "The Ten Percent Club Electrolytes Mixed Berry 28 Sachet",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 35.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
-    },
-    {
-      "id": 21141,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-biome-restore-30-capsules-6100029088",
-      "product_title": "ARTAH Biome Restore 30 Capsules",
-      "variant_title": "30 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 45.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
-    },
-    {
-      "id": 21140,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::miya-nutrition-purest-creatine-5000-mg-150-g-6102014521",
-      "product_title": "18+ MIYA Nutrition Purest Creatine 5000 mg 150 g",
-      "variant_title": "150 g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T22:00:57+00:00)"
-    },
-    {
-      "id": 21139,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::bloom-creatine-stick-10-sachets-6100029277",
-      "product_title": "18+ Bloom Creatine Stick 10 Sachets",
-      "variant_title": "10 Sachets",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 9.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-28T21:18:27+00:00)"
-    },
-    {
-      "id": 21138,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-advanced-multi-nutrient-120-capsules-6102111115",
-      "product_title": "ARTAH Advanced Multi-Nutrient 120 Capsules",
-      "variant_title": "120 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 60.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-01T20:43:10+00:00)"
-    },
-    {
-      "id": 21137,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-magnesium-60-capsules-6102036580",
-      "product_title": "ARTAH Essential Magnesium 60 Capsules",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-01T20:43:10+00:00)"
-    },
-    {
-      "id": 21136,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-skin-clinic-90-capsules-6102036548",
-      "product_title": "ARTAH Skin Clinic 90 Capsules",
-      "variant_title": "90 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 45.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
-    },
-    {
-      "id": 21135,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-creatine-200g-6102036540",
-      "product_title": "ARTAH Essential Creatine 200g",
-      "variant_title": "200g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 28.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
-    },
-    {
-      "id": 21134,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-core-prenatal-90-capsules-6100029089",
-      "product_title": "ARTAH Core Prenatal+ 90 Capsules",
-      "variant_title": "90 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 36.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-01T20:43:10+00:00)"
-    },
-    {
-      "id": 21133,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-essential-omegas-60-capsules-6102036523",
-      "product_title": "ARTAH Essential Omegas 60 Capsules",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 32.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T22:00:57+00:00)"
-    },
-    {
-      "id": 21132,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-g-i-cleanse-60-capsules-6100029090",
-      "product_title": "ARTAH G.I. Cleanse 60 Capsules",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 38.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
-    },
-    {
-      "id": 21131,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-cellular-hydration-250g-6102036552",
-      "product_title": "ARTAH Cellular Hydration 250g",
-      "variant_title": "250g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 32.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-13T20:01:47+00:00)"
-    },
-    {
-      "id": 21130,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-finishing-touch-frizz-fighting-gloss-50ml-6100007105",
-      "product_title": "4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml",
-      "variant_title": "50ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 26.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 21129,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-swimcap-water-resistant-mask-100ml-6100007092",
-      "product_title": "4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 26.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 21128,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-moisture-extreme-conditioner-200ml-6100007110",
-      "product_title": "4.92 Philip Kingsley Moisture Extreme Conditioner 200ml",
-      "variant_title": "200ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 29.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 21127,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-density-scalp-drops-85ml-6100007106",
-      "product_title": "3.59 Philip Kingsley Density Scalp Drops 85ml",
-      "variant_title": "85ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 55.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 21126,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::philip-kingsley-moisture-extreme-shampoo-250ml-6100007112",
-      "product_title": "4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off",
-      "variant_title": "250ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 20.3,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 21125,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-core-pregnancy-6102036600",
-      "product_title": "ARTAH Core Pregnancy+",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 36.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
-    },
-    {
-      "id": 21124,
-      "occurred_at": "2026-11-16T06:33:23+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Hair Gain",
-      "sku_key": "hollandandbarrett.com::hair-gain::artah-digest-debloat-100ml-6102036561",
-      "product_title": "4.8 ARTAH Digest & Debloat 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 32.0,
       "new_price": null,
       "details": "Vanished from storefront (last seen 2026-10-26T21:09:39+00:00)"
     }
