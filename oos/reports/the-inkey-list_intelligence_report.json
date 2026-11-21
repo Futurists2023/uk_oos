@@ -1,17 +1,17 @@
 {
   "brand": "The INKEY List",
   "brand_slug": "the-inkey-list",
-  "generated_at": "2026-11-18T17:28:11+00:00",
+  "generated_at": "2026-11-21T12:48:48+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
     "total_listed_skus_variants": 243,
-    "in_stock_skus_variants": 231,
-    "out_of_stock_skus_variants": 12,
-    "retail_out_of_stock_variants": 8,
-    "unforced_retail_outages": 0,
+    "in_stock_skus_variants": 228,
+    "out_of_stock_skus_variants": 15,
+    "retail_out_of_stock_variants": 9,
+    "unforced_retail_outages": 1,
     "factory_shortages_on_dtc": 0,
-    "silent_removed_skus": 20
+    "silent_removed_skus": 26
   },
   "out_of_stock_alerts": [
     {
@@ -30,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -58,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -86,16 +86,44 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "spacenk.com::the-inkey-list::pha-toner-MUK200055196",
+      "domain": "spacenk.com",
+      "brand": "The INKEY List",
+      "product_title": "PHA Toner",
+      "variant_title": "Standard",
+      "normalized_product_key": "pha_toner",
+      "product_url": "https://www.spacenk.com/uk/skincare/toner/toners/pha-toner-MUK200055196.html",
+      "sku_code": "pha-toner-MUK200055196",
+      "current_price": 14.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 14.0,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:40:04+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
+      "first_seen_oos_at": "2026-11-21T12:48:47+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:28:09+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-21 12:48 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 14.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
       "in_stock_elsewhere": []
     },
     {
@@ -114,12 +142,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Discounted -30% (was £26.50)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -142,12 +170,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Discounted -30% (was £14.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -170,12 +198,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -198,12 +226,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -226,12 +254,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-11-18T17:28:09+00:00",
       "last_seen_in_stock_at": "2026-11-15T21:09:57+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-18 17:28 UTC)",
-      "days_oos": 0.0,
+      "duration_label": "2d 19h (since 2026-11-18 17:28 UTC)",
+      "days_oos": 2.8,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -254,17 +282,75 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-30T20:55:46+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
       "first_seen_oos_at": "2026-10-30T20:55:46+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "18d 20h (since 2026-10-30 20:55 UTC)",
-      "days_oos": 18.9,
+      "duration_label": "21d 15h (since 2026-10-30 20:55 UTC)",
+      "days_oos": 21.7,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 25.0,
       "diagnosis": "Brand DTC Warehouse OOS",
       "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "uk.theinkeylist.com::the-inkey-list::3-month-hair-growth-trio::43219924910243",
+      "domain": "uk.theinkeylist.com",
+      "brand": "The INKEY List",
+      "product_title": "3 Month Hair Growth Trio",
+      "variant_title": "Standard",
+      "normalized_product_key": "3_month_hair_growth_trio",
+      "product_url": "https://uk.theinkeylist.com/products/3-month-hair-growth-trio",
+      "sku_code": "BUNTILUK067",
+      "current_price": 40.5,
+      "compare_at_price": 45.0,
+      "last_in_stock_price": 40.5,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:38:11+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
+      "first_seen_oos_at": "2026-11-21T12:47:05+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:26:22+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-21 12:47 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Discounted -10% (was £45.00)",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 40.5,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "uk.theinkeylist.com::the-inkey-list::caffeine-stimulating-scalp-treatment-150ml::41331098452131",
+      "domain": "uk.theinkeylist.com",
+      "brand": "The INKEY List",
+      "product_title": "Caffeine stimulating scalp treatment",
+      "variant_title": "Standard",
+      "normalized_product_key": "caffeine_stimulating_scalp_treatment",
+      "product_url": "https://uk.theinkeylist.com/products/caffeine-stimulating-scalp-treatment-150ml",
+      "sku_code": "IH006KM",
+      "current_price": 15.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 15.0,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:38:11+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
+      "first_seen_oos_at": "2026-11-21T12:47:05+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:26:22+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-21 12:47 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 15.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "uk.theinkeylist.com::the-inkey-list::glycerin-gentle-purifying-cleanser::45989553897635",
@@ -282,20 +368,17 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:38:11+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
       "first_seen_oos_at": "2026-11-06T15:58:39+00:00",
       "last_seen_in_stock_at": "2026-11-04T00:45:26+00:00",
       "silent_removed_at": null,
-      "duration_label": "12d 1h (since 2026-11-06 15:58 UTC)",
-      "days_oos": 12.1,
+      "duration_label": "14d 20h (since 2026-11-06 15:58 UTC)",
+      "days_oos": 14.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 14.0,
       "diagnosis": "Brand DTC Warehouse OOS",
-      "in_stock_elsewhere": [
-        "cultbeauty.co.uk",
-        "lookfantastic.com"
-      ]
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "uk.theinkeylist.com::the-inkey-list::supersize-hydrocolloid-invisible-pimple-patches::45989616189603",
@@ -313,12 +396,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:38:11+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Discounted -22% (was £18.00)",
       "dtc_status": "IN_STOCK_ON_DTC",
       "dtc_rrp": 14.0,
@@ -328,32 +411,36 @@
       ]
     },
     {
-      "sku_key": "uk.theinkeylist.com::the-inkey-list::sensitive-blemish-prone-skin-routine::46101460713635",
+      "sku_key": "uk.theinkeylist.com::the-inkey-list::retinol-eye-cream::33619378733191",
       "domain": "uk.theinkeylist.com",
       "brand": "The INKEY List",
-      "product_title": "Sensitive Blemish-Prone Skin Routine",
+      "product_title": "Retinol Eye Cream",
       "variant_title": "Standard",
-      "normalized_product_key": "sensitive_blemish_prone_skin_routine",
-      "product_url": "https://uk.theinkeylist.com/products/sensitive-blemish-prone-skin-routine",
-      "sku_code": "BUNTILUK221",
-      "current_price": 45.9,
-      "compare_at_price": 54.0,
-      "last_in_stock_price": 45.9,
+      "normalized_product_key": "retinol_eye_cream",
+      "product_url": "https://uk.theinkeylist.com/products/retinol-eye-cream",
+      "sku_code": "IF022KE",
+      "current_price": 13.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 13.0,
       "currency": "GBP",
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:38:11+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
-      "first_seen_oos_at": "2026-11-06T15:58:39+00:00",
-      "last_seen_in_stock_at": "2026-11-04T00:45:26+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
+      "first_seen_oos_at": "2026-11-21T12:47:05+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:26:22+00:00",
       "silent_removed_at": null,
-      "duration_label": "12d 1h (since 2026-11-06 15:58 UTC)",
-      "days_oos": 12.1,
-      "price_note": "Discounted -15% (was £54.00)",
+      "duration_label": "0h (first detected 2026-11-21 12:47 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
-      "dtc_rrp": 45.9,
+      "dtc_rrp": 13.0,
       "diagnosis": "Brand DTC Warehouse OOS",
-      "in_stock_elsewhere": []
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
     }
   ],
   "retail_out_of_stock_alerts": [
@@ -373,12 +460,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -401,12 +488,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -429,16 +516,44 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "spacenk.com::the-inkey-list::pha-toner-MUK200055196",
+      "domain": "spacenk.com",
+      "brand": "The INKEY List",
+      "product_title": "PHA Toner",
+      "variant_title": "Standard",
+      "normalized_product_key": "pha_toner",
+      "product_url": "https://www.spacenk.com/uk/skincare/toner/toners/pha-toner-MUK200055196.html",
+      "sku_code": "pha-toner-MUK200055196",
+      "current_price": 14.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 14.0,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:40:04+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
+      "first_seen_oos_at": "2026-11-21T12:48:47+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:28:09+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-21 12:48 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 14.0,
+      "diagnosis": "🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)",
       "in_stock_elsewhere": []
     },
     {
@@ -457,12 +572,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Discounted -30% (was £26.50)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -485,12 +600,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Discounted -30% (was £14.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -513,12 +628,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -541,12 +656,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -569,12 +684,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:40:04+00:00",
-      "last_seen_at": "2026-11-18T17:28:09+00:00",
+      "last_seen_at": "2026-11-21T12:48:47+00:00",
       "first_seen_oos_at": "2026-11-18T17:28:09+00:00",
       "last_seen_in_stock_at": "2026-11-15T21:09:57+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-18 17:28 UTC)",
-      "days_oos": 0.0,
+      "duration_label": "2d 19h (since 2026-11-18 17:28 UTC)",
+      "days_oos": 2.8,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -599,17 +714,75 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-30T20:55:46+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
       "first_seen_oos_at": "2026-10-30T20:55:46+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "18d 20h (since 2026-10-30 20:55 UTC)",
-      "days_oos": 18.9,
+      "duration_label": "21d 15h (since 2026-10-30 20:55 UTC)",
+      "days_oos": 21.7,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 25.0,
       "diagnosis": "Brand DTC Warehouse OOS",
       "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "uk.theinkeylist.com::the-inkey-list::3-month-hair-growth-trio::43219924910243",
+      "domain": "uk.theinkeylist.com",
+      "brand": "The INKEY List",
+      "product_title": "3 Month Hair Growth Trio",
+      "variant_title": "Standard",
+      "normalized_product_key": "3_month_hair_growth_trio",
+      "product_url": "https://uk.theinkeylist.com/products/3-month-hair-growth-trio",
+      "sku_code": "BUNTILUK067",
+      "current_price": 40.5,
+      "compare_at_price": 45.0,
+      "last_in_stock_price": 40.5,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:38:11+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
+      "first_seen_oos_at": "2026-11-21T12:47:05+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:26:22+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-21 12:47 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Discounted -10% (was £45.00)",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 40.5,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "uk.theinkeylist.com::the-inkey-list::caffeine-stimulating-scalp-treatment-150ml::41331098452131",
+      "domain": "uk.theinkeylist.com",
+      "brand": "The INKEY List",
+      "product_title": "Caffeine stimulating scalp treatment",
+      "variant_title": "Standard",
+      "normalized_product_key": "caffeine_stimulating_scalp_treatment",
+      "product_url": "https://uk.theinkeylist.com/products/caffeine-stimulating-scalp-treatment-150ml",
+      "sku_code": "IH006KM",
+      "current_price": 15.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 15.0,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:38:11+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
+      "first_seen_oos_at": "2026-11-21T12:47:05+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:26:22+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-21 12:47 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 15.0,
+      "diagnosis": "Brand DTC Warehouse OOS",
+      "in_stock_elsewhere": [
+        "spacenk.com"
+      ]
     },
     {
       "sku_key": "uk.theinkeylist.com::the-inkey-list::glycerin-gentle-purifying-cleanser::45989553897635",
@@ -627,20 +800,17 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:38:11+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
       "first_seen_oos_at": "2026-11-06T15:58:39+00:00",
       "last_seen_in_stock_at": "2026-11-04T00:45:26+00:00",
       "silent_removed_at": null,
-      "duration_label": "12d 1h (since 2026-11-06 15:58 UTC)",
-      "days_oos": 12.1,
+      "duration_label": "14d 20h (since 2026-11-06 15:58 UTC)",
+      "days_oos": 14.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 14.0,
       "diagnosis": "Brand DTC Warehouse OOS",
-      "in_stock_elsewhere": [
-        "cultbeauty.co.uk",
-        "lookfantastic.com"
-      ]
+      "in_stock_elsewhere": []
     },
     {
       "sku_key": "uk.theinkeylist.com::the-inkey-list::supersize-hydrocolloid-invisible-pimple-patches::45989616189603",
@@ -658,12 +828,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:38:11+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "25d 2h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 25.1,
+      "duration_label": "27d 21h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 27.9,
       "price_note": "Discounted -22% (was £18.00)",
       "dtc_status": "IN_STOCK_ON_DTC",
       "dtc_rrp": 14.0,
@@ -673,32 +843,36 @@
       ]
     },
     {
-      "sku_key": "uk.theinkeylist.com::the-inkey-list::sensitive-blemish-prone-skin-routine::46101460713635",
+      "sku_key": "uk.theinkeylist.com::the-inkey-list::retinol-eye-cream::33619378733191",
       "domain": "uk.theinkeylist.com",
       "brand": "The INKEY List",
-      "product_title": "Sensitive Blemish-Prone Skin Routine",
+      "product_title": "Retinol Eye Cream",
       "variant_title": "Standard",
-      "normalized_product_key": "sensitive_blemish_prone_skin_routine",
-      "product_url": "https://uk.theinkeylist.com/products/sensitive-blemish-prone-skin-routine",
-      "sku_code": "BUNTILUK221",
-      "current_price": 45.9,
-      "compare_at_price": 54.0,
-      "last_in_stock_price": 45.9,
+      "normalized_product_key": "retinol_eye_cream",
+      "product_url": "https://uk.theinkeylist.com/products/retinol-eye-cream",
+      "sku_code": "IF022KE",
+      "current_price": 13.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 13.0,
       "currency": "GBP",
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:38:11+00:00",
-      "last_seen_at": "2026-11-18T17:26:22+00:00",
-      "first_seen_oos_at": "2026-11-06T15:58:39+00:00",
-      "last_seen_in_stock_at": "2026-11-04T00:45:26+00:00",
+      "last_seen_at": "2026-11-21T12:47:05+00:00",
+      "first_seen_oos_at": "2026-11-21T12:47:05+00:00",
+      "last_seen_in_stock_at": "2026-11-18T17:26:22+00:00",
       "silent_removed_at": null,
-      "duration_label": "12d 1h (since 2026-11-06 15:58 UTC)",
-      "days_oos": 12.1,
-      "price_note": "Discounted -15% (was £54.00)",
+      "duration_label": "0h (first detected 2026-11-21 12:47 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
-      "dtc_rrp": 45.9,
+      "dtc_rrp": 13.0,
       "diagnosis": "Brand DTC Warehouse OOS",
-      "in_stock_elsewhere": []
+      "in_stock_elsewhere": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ]
     }
   ],
   "hero_benchmarks": [
@@ -720,7 +894,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £12.80 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "advanced_retinal_serum",
@@ -760,7 +936,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £12.00 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "bio_active_ceramide_neck_stick",
@@ -780,7 +958,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £12.00 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "caffeine_eye_cream",
@@ -822,7 +1002,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £12.80 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "glycolic_acid_exfoliating_body_stick",
@@ -842,7 +1024,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £12.00 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "glycolic_acid_exfoliating_body_wash",
@@ -862,7 +1046,31 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £9.60 (-20% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "glycolic_acid_exfoliating_scalp_scrub",
+      "product_family": "Glycolic Acid Exfoliating Scalp Scrub",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 14.0,
+      "stores_carrying": 3,
+      "total_stores": 4,
+      "penetration_pct": 75,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "boots.com"
+      ],
+      "undercut_alerts": [
+        "`lookfantastic.com` £11.20 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "hyaluronic_acid_serum",
@@ -902,7 +1110,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £16.80 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "milk_cleanser",
@@ -922,7 +1132,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £12.00 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "niacinamide_serum",
@@ -945,10 +1157,10 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "pha_toner",
-      "product_family": "PHA Toner",
-      "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 14.0,
+      "normalized_key": "retinol_eye_cream",
+      "product_family": "Retinol Eye Cream",
+      "dtc_status": "OOS_ON_DTC",
+      "dtc_rrp": 13.0,
       "stores_carrying": 3,
       "total_stores": 4,
       "penetration_pct": 75,
@@ -982,7 +1194,9 @@
       "missing_in": [
         "boots.com"
       ],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`lookfantastic.com` £11.20 (-20% vs RRP)"
+      ]
     },
     {
       "normalized_key": "salicylic_acid_exfoliating_scalp_treatment",
@@ -1007,6 +1221,28 @@
     {
       "normalized_key": "starter_retinol_serum",
       "product_family": "Starter Retinol Serum",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 13.0,
+      "stores_carrying": 3,
+      "total_stores": 4,
+      "penetration_pct": 75,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com",
+        "spacenk.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "boots.com"
+      ],
+      "undercut_alerts": [
+        "`lookfantastic.com` £10.40 (-20% vs RRP)"
+      ]
+    },
+    {
+      "normalized_key": "succinic_acid_treatment",
+      "product_family": "Succinic Acid Treatment",
       "dtc_status": "IN_STOCK_ON_DTC",
       "dtc_rrp": 13.0,
       "stores_carrying": 3,
@@ -1054,21 +1290,21 @@
       "penetration_pct": 50,
       "is_hero": true,
       "in_stock_in": [
-        "lookfantastic.com",
+        "cultbeauty.co.uk",
         "spacenk.com"
       ],
       "oos_in": [],
       "missing_in": [
         "boots.com",
-        "cultbeauty.co.uk"
+        "lookfantastic.com"
       ],
       "undercut_alerts": []
     },
     {
-      "normalized_key": "caffeine_stimulating_scalp_treatment",
-      "product_family": "Caffeine stimulating scalp treatment",
+      "normalized_key": "brighten_i_eye_cream",
+      "product_family": "Brighten-i Eye Cream",
       "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 15.0,
+      "dtc_rrp": 12.0,
       "stores_carrying": 2,
       "total_stores": 4,
       "penetration_pct": 50,
@@ -1082,9 +1318,7 @@
         "boots.com",
         "cultbeauty.co.uk"
       ],
-      "undercut_alerts": [
-        "`lookfantastic.com` £11.25 (-25% vs RRP)"
-      ]
+      "undercut_alerts": []
     },
     {
       "normalized_key": "exosome_hydro_glow_complex",
@@ -1107,10 +1341,10 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "fulvic_acid_cleanser",
-      "product_family": "Fulvic Acid Cleanser - 150ml",
+      "normalized_key": "glycolic_acid_toner",
+      "product_family": "Glycolic Acid Toner",
       "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 13.0,
+      "dtc_rrp": 14.0,
       "stores_carrying": 2,
       "total_stores": 4,
       "penetration_pct": 50,
@@ -1127,10 +1361,10 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "glycerin_gentle_purifying_cleanser",
-      "product_family": "Glycerin Gentle Purifying Cleanser",
-      "dtc_status": "OOS_ON_DTC",
-      "dtc_rrp": 14.0,
+      "normalized_key": "hyaluronic_acid_serum_supersize",
+      "product_family": "Supersize Hyaluronic Acid Serum - 100ml",
+      "dtc_status": "IN_STOCK_ON_DTC",
+      "dtc_rrp": 28.0,
       "stores_carrying": 2,
       "total_stores": 4,
       "penetration_pct": 50,
@@ -1147,30 +1381,28 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "glycolic_acid_exfoliating_scalp_scrub",
-      "product_family": "Glycolic Acid Exfoliating Scalp Scrub",
-      "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 14.0,
+      "normalized_key": "hydrocolloid_invisible_pimple_patches_22_patches",
+      "product_family": "The INKEY List Hydrocolloid Invisible Pimple Patches (22 patches)",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
       "stores_carrying": 2,
       "total_stores": 4,
       "penetration_pct": 50,
       "is_hero": true,
       "in_stock_in": [
-        "lookfantastic.com",
-        "spacenk.com"
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
       ],
       "oos_in": [],
       "missing_in": [
         "boots.com",
-        "cultbeauty.co.uk"
+        "spacenk.com"
       ],
-      "undercut_alerts": [
-        "`lookfantastic.com` £11.20 (-20% vs RRP)"
-      ]
+      "undercut_alerts": []
     },
     {
-      "normalized_key": "hydrocolloid_invisible_pimple_patches_22_patches",
-      "product_family": "The INKEY List Hydrocolloid Invisible Pimple Patches (22 patches)",
+      "normalized_key": "hydrocolloid_invisible_pimple_patches_44_units_supersize",
+      "product_family": "The INKEY List Hydrocolloid Invisible Pimple Patches Supersize 44 units",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "stores_carrying": 2,
@@ -1229,42 +1461,22 @@
       "undercut_alerts": []
     },
     {
-      "normalized_key": "retinol_eye_cream",
-      "product_family": "Retinol Eye Cream",
-      "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 13.0,
+      "normalized_key": "peptide_moisturizer",
+      "product_family": "The INKEY List Peptide Moisturizer 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
       "stores_carrying": 2,
       "total_stores": 4,
       "penetration_pct": 50,
       "is_hero": true,
       "in_stock_in": [
         "cultbeauty.co.uk",
-        "spacenk.com"
+        "lookfantastic.com"
       ],
       "oos_in": [],
       "missing_in": [
         "boots.com",
-        "lookfantastic.com"
-      ],
-      "undercut_alerts": []
-    },
-    {
-      "normalized_key": "succinic_acid_treatment",
-      "product_family": "Succinic Acid Treatment",
-      "dtc_status": "IN_STOCK_ON_DTC",
-      "dtc_rrp": 13.0,
-      "stores_carrying": 2,
-      "total_stores": 4,
-      "penetration_pct": 50,
-      "is_hero": true,
-      "in_stock_in": [
-        "cultbeauty.co.uk",
         "spacenk.com"
-      ],
-      "oos_in": [],
-      "missing_in": [
-        "boots.com",
-        "lookfantastic.com"
       ],
       "undercut_alerts": []
     },
@@ -1309,7 +1521,7 @@
       "last_seen_at": "2026-11-15T21:09:00+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T21:09:00+00:00",
-      "silent_removed_at": "2026-11-18T17:27:03+00:00"
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_beauty-box_the-cult-beauty-advent-calendar-special-edition-worth-over-1-100_17921439",
@@ -1330,7 +1542,7 @@
       "last_seen_at": "2026-10-26T15:39:06+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:39:06+00:00",
-      "silent_removed_at": "2026-11-18T17:27:03+00:00"
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-brighten-i-eye-cream-15ml_12276071",
@@ -1351,7 +1563,7 @@
       "last_seen_at": "2026-11-06T15:59:22+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-06T15:59:22+00:00",
-      "silent_removed_at": "2026-11-18T17:27:03+00:00"
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-caffeine-stimulating-scalp-treatment-150ml_13228956",
@@ -1372,7 +1584,7 @@
       "last_seen_at": "2026-11-08T06:10:46+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:10:46+00:00",
-      "silent_removed_at": "2026-11-18T17:27:03+00:00"
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-hydro-surge-dewy-face-mist-75ml_16345571",
@@ -1393,7 +1605,28 @@
       "last_seen_at": "2026-11-10T21:52:10+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T21:52:10+00:00",
-      "silent_removed_at": "2026-11-18T17:27:03+00:00"
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
+    },
+    {
+      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-pha-toner-100ml_12276070",
+      "domain": "cultbeauty.co.uk",
+      "brand": "The INKEY List",
+      "product_title": "The INKEY List PHA Toner 100ml",
+      "variant_title": "100ml",
+      "normalized_product_key": "pha_toner",
+      "product_url": "https://www.cultbeauty.co.uk/p/the-inkey-list-pha-toner-100ml/12276070/",
+      "sku_code": "p_the-inkey-list-pha-toner-100ml_12276070",
+      "current_price": 14.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 14.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-26T15:39:06+00:00",
+      "last_seen_at": "2026-11-18T17:27:03+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:27:03+00:00",
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-tripeptide-plumping-lip-balm-clear_14895554",
@@ -1414,7 +1647,28 @@
       "last_seen_at": "2026-11-01T20:34:30+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T20:34:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:03+00:00"
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
+    },
+    {
+      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-glycerin-gentle-purifying-cleanser-180ml_17879360",
+      "domain": "cultbeauty.co.uk",
+      "brand": "The INKEY List",
+      "product_title": "The Inkey List Glycerin Gentle Purifying Cleanser 180ml",
+      "variant_title": "180ml",
+      "normalized_product_key": "glycerin_gentle_purifying_cleanser",
+      "product_url": "https://www.cultbeauty.co.uk/p/the-inkey-list-glycerin-gentle-purifying-cleanser-180ml/17879360/",
+      "sku_code": "p_the-inkey-list-glycerin-gentle-purifying-cleanser-180ml_17879360",
+      "current_price": 14.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 14.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-26T15:39:06+00:00",
+      "last_seen_at": "2026-11-18T17:27:03+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:27:03+00:00",
+      "silent_removed_at": "2026-11-21T12:47:50+00:00"
     },
     {
       "sku_key": "lookfantastic.com::the-inkey-list::p_beauty-box_the-grooming-advent-calendar-worth-over-469_17691385",
@@ -1435,7 +1689,28 @@
       "last_seen_at": "2026-10-26T15:39:31+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:39:31+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-360-skin-clearing-serum-30ml_17073580",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "product_title": "The INKEY List 360 Skin Clearing Serum 30ml",
+      "variant_title": "30ml",
+      "normalized_product_key": "360_skin_clearing_serum",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-360-skin-clearing-serum-30ml/17073580/",
+      "sku_code": "p_the-inkey-list-360-skin-clearing-serum-30ml_17073580",
+      "current_price": 16.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 16.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-13T19:53:17+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-beta-hydroxy-acid-serum-30ml_12208003",
@@ -1456,28 +1731,49 @@
       "last_seen_at": "2026-11-10T21:52:30+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycolic-acid-toner-100ml_14272889",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-caffeine-stimulating-scalp-treatment-150ml_13228956",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "product_title": "The INKEY List Glycolic Acid Toner 100ml",
-      "variant_title": "100ml",
-      "normalized_product_key": "glycolic_acid_toner",
-      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-glycolic-acid-toner-100ml/14272889/",
-      "sku_code": "p_the-inkey-list-glycolic-acid-toner-100ml_14272889",
-      "current_price": 14.0,
+      "product_title": "The INKEY List Caffeine Stimulating Scalp Treatment 150ml",
+      "variant_title": "150ml",
+      "normalized_product_key": "caffeine_stimulating_scalp_treatment",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-caffeine-stimulating-scalp-treatment-150ml/13228956/",
+      "sku_code": "p_the-inkey-list-caffeine-stimulating-scalp-treatment-150ml_13228956",
+      "current_price": 11.25,
+      "compare_at_price": 15.0,
+      "last_in_stock_price": 11.25,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-13T19:53:17+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-fulvic-acid-cleanser-150ml_15446547",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "product_title": "The INKEY List Fulvic Acid Cleanser 150ml",
+      "variant_title": "150ml",
+      "normalized_product_key": "fulvic_acid_cleanser",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-fulvic-acid-cleanser-150ml/15446547/",
+      "sku_code": "p_the-inkey-list-fulvic-acid-cleanser-150ml_15446547",
+      "current_price": 12.0,
       "compare_at_price": null,
-      "last_in_stock_price": 14.0,
+      "last_in_stock_price": 12.0,
       "currency": "GBP",
       "is_available": 1,
       "is_listed": 0,
       "first_seen_at": "2026-10-26T15:39:31+00:00",
-      "last_seen_at": "2026-11-10T21:52:30+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
       "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hydro-surge-dewy-face-mist-75ml_16345571",
@@ -1498,28 +1794,7 @@
       "last_seen_at": "2026-11-10T21:52:30+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
-    },
-    {
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hydrocolloid-invisible-pimple-patches-supersize-44-units_17879361",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "product_title": "The INKEY List Hydrocolloid Invisible Pimple Patches Supersize 44 units",
-      "variant_title": "Standard",
-      "normalized_product_key": "hydrocolloid_invisible_pimple_patches_44_units_supersize",
-      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-hydrocolloid-invisible-pimple-patches-supersize-44-units/17879361/",
-      "sku_code": "p_the-inkey-list-hydrocolloid-invisible-pimple-patches-supersize-44-units_17879361",
-      "current_price": 14.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 14.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-26T15:39:31+00:00",
-      "last_seen_at": "2026-11-10T21:52:30+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-pha-exfoliating-and-hydrating-body-water-cream-150ml_15209895",
@@ -1540,28 +1815,28 @@
       "last_seen_at": "2026-11-10T21:52:30+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-peptide-moisturizer-50ml_12435692",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-pha-toner-100ml_12276070",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "product_title": "The INKEY List Peptide Moisturizer 50ml",
-      "variant_title": "50ml",
-      "normalized_product_key": "peptide_moisturizer",
-      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-peptide-moisturizer-50ml/12435692/",
-      "sku_code": "p_the-inkey-list-peptide-moisturizer-50ml_12435692",
-      "current_price": 16.0,
+      "product_title": "The INKEY List PHA Toner 100ml",
+      "variant_title": "100ml",
+      "normalized_product_key": "pha_toner",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-pha-toner-100ml/12276070/",
+      "sku_code": "p_the-inkey-list-pha-toner-100ml_12276070",
+      "current_price": 14.0,
       "compare_at_price": null,
-      "last_in_stock_price": 16.0,
+      "last_in_stock_price": 14.0,
       "currency": "GBP",
       "is_available": 1,
       "is_listed": 0,
       "first_seen_at": "2026-10-26T15:39:31+00:00",
-      "last_seen_at": "2026-11-10T21:52:30+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
       "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-polyglutamic-acid-serum-30ml_12211787",
@@ -1582,28 +1857,91 @@
       "last_seen_at": "2026-11-10T21:52:30+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-retinol-eye-cream-15ml_12435689",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-tripeptide-plumping-lip-balm-clear_14895554",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "product_title": "The INKEY List Retinol Eye Cream 15ml",
-      "variant_title": "15ml",
-      "normalized_product_key": "retinol_eye_cream",
-      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-retinol-eye-cream-15ml/12435689/",
-      "sku_code": "p_the-inkey-list-retinol-eye-cream-15ml_12435689",
-      "current_price": 13.0,
+      "product_title": "The INKEY List Tripeptide Plumping Lip Balm - Clear",
+      "variant_title": "Standard",
+      "normalized_product_key": "tripeptide_plumping_lip_balm_clear",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-tripeptide-plumping-lip-balm-clear/14895554/",
+      "sku_code": "p_the-inkey-list-tripeptide-plumping-lip-balm-clear_14895554",
+      "current_price": 11.0,
       "compare_at_price": null,
-      "last_in_stock_price": 13.0,
+      "last_in_stock_price": 11.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-13T19:53:17+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-vitamin-b-c-and-e-moisturizer-50ml_12435691",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "product_title": "The INKEY List Vitamin B, C and E Moisturizer 50ml",
+      "variant_title": "50ml",
+      "normalized_product_key": "vitamin_b_c_e_moisturizer",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-vitamin-b-c-and-e-moisturizer-50ml/12435691/",
+      "sku_code": "p_the-inkey-list-vitamin-b-c-and-e-moisturizer-50ml_12435691",
+      "current_price": 12.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 12.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-13T19:53:17+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-biome-balancing-moisturizer-50ml_17879359",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "product_title": "The Inkey List Biome Balancing Moisturizer 50ml",
+      "variant_title": "50ml",
+      "normalized_product_key": "biome_balancing_moisturizer",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-biome-balancing-moisturizer-50ml/17879359/",
+      "sku_code": "p_the-inkey-list-biome-balancing-moisturizer-50ml_17879359",
+      "current_price": 12.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 12.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-13T19:53:17+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycerin-gentle-purifying-cleanser-180ml_17879360",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "product_title": "The Inkey List Glycerin Gentle Purifying Cleanser 180ml",
+      "variant_title": "180ml",
+      "normalized_product_key": "glycerin_gentle_purifying_cleanser",
+      "product_url": "https://www.lookfantastic.com/p/the-inkey-list-glycerin-gentle-purifying-cleanser-180ml/17879360/",
+      "sku_code": "p_the-inkey-list-glycerin-gentle-purifying-cleanser-180ml_17879360",
+      "current_price": 14.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 14.0,
       "currency": "GBP",
       "is_available": 1,
       "is_listed": 0,
       "first_seen_at": "2026-10-26T15:39:31+00:00",
-      "last_seen_at": "2026-11-10T21:52:30+00:00",
+      "last_seen_at": "2026-11-18T17:27:25+00:00",
       "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-10T21:52:30+00:00",
-      "silent_removed_at": "2026-11-18T17:27:25+00:00"
+      "last_seen_in_stock_at": "2026-11-18T17:27:25+00:00",
+      "silent_removed_at": "2026-11-21T12:48:10+00:00"
     },
     {
       "sku_key": "spacenk.com::the-inkey-list::hyaluronic-acid-serum-MUK200055103",
@@ -1624,7 +1962,7 @@
       "last_seen_at": "2026-10-26T15:40:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:40:04+00:00",
-      "silent_removed_at": "2026-11-18T17:28:09+00:00"
+      "silent_removed_at": "2026-11-21T12:48:47+00:00"
     },
     {
       "sku_key": "spacenk.com::the-inkey-list::milk-cleanser-MUK200056641",
@@ -1645,7 +1983,7 @@
       "last_seen_at": "2026-10-26T15:40:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:40:04+00:00",
-      "silent_removed_at": "2026-11-18T17:28:09+00:00"
+      "silent_removed_at": "2026-11-21T12:48:47+00:00"
     },
     {
       "sku_key": "spacenk.com::the-inkey-list::oat-balm-cleanser-MUK200064371",
@@ -1666,7 +2004,7 @@
       "last_seen_at": "2026-10-26T15:40:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:40:04+00:00",
-      "silent_removed_at": "2026-11-18T17:28:09+00:00"
+      "silent_removed_at": "2026-11-21T12:48:47+00:00"
     },
     {
       "sku_key": "uk.theinkeylist.com::the-inkey-list::hydrating-cleanser-oil-free-moisturiser-duo::45910218113187",
@@ -1687,7 +2025,7 @@
       "last_seen_at": "2026-11-15T21:08:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T21:08:18+00:00",
-      "silent_removed_at": "2026-11-18T17:26:22+00:00"
+      "silent_removed_at": "2026-11-21T12:47:05+00:00"
     },
     {
       "sku_key": "uk.theinkeylist.com::the-inkey-list::hyperpigmentation-scar-solution-routine::42881772093603",
@@ -1708,13 +2046,13 @@
       "last_seen_at": "2026-11-15T21:08:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T21:08:18+00:00",
-      "silent_removed_at": "2026-11-18T17:26:22+00:00"
+      "silent_removed_at": "2026-11-21T12:47:05+00:00"
     }
   ],
   "recent_events": [
     {
-      "id": 22754,
-      "occurred_at": "2026-11-18T17:28:09+00:00",
+      "id": 24805,
+      "occurred_at": "2026-11-21T12:48:47+00:00",
       "domain": "spacenk.com",
       "brand": "The INKEY List",
       "sku_key": "spacenk.com::the-inkey-list::hyaluronic-acid-serum-MUK200055103",
@@ -1726,8 +2064,8 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
     },
     {
-      "id": 22753,
-      "occurred_at": "2026-11-18T17:28:09+00:00",
+      "id": 24804,
+      "occurred_at": "2026-11-21T12:48:47+00:00",
       "domain": "spacenk.com",
       "brand": "The INKEY List",
       "sku_key": "spacenk.com::the-inkey-list::milk-cleanser-MUK200056641",
@@ -1739,8 +2077,8 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
     },
     {
-      "id": 22752,
-      "occurred_at": "2026-11-18T17:28:09+00:00",
+      "id": 24803,
+      "occurred_at": "2026-11-21T12:48:47+00:00",
       "domain": "spacenk.com",
       "brand": "The INKEY List",
       "sku_key": "spacenk.com::the-inkey-list::oat-balm-cleanser-MUK200064371",
@@ -1752,47 +2090,112 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
     },
     {
-      "id": 22751,
-      "occurred_at": "2026-11-18T17:28:09+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::you-need-to-build-barriers-MUK200057280",
-      "product_title": "You Need to Build Barriers",
-      "variant_title": "Standard",
-      "event_type": "WENT_OOS",
-      "old_price": 30.0,
-      "new_price": 30.0,
-      "details": "Transitioned from In Stock to OOS"
-    },
-    {
-      "id": 22750,
-      "occurred_at": "2026-11-18T17:28:09+00:00",
+      "id": 24802,
+      "occurred_at": "2026-11-21T12:48:47+00:00",
       "domain": "spacenk.com",
       "brand": "The INKEY List",
       "sku_key": "spacenk.com::the-inkey-list::pha-toner-MUK200055196",
       "product_title": "PHA Toner",
       "variant_title": "Standard",
-      "event_type": "RESTOCKED",
+      "event_type": "WENT_OOS",
       "old_price": 14.0,
       "new_price": 14.0,
-      "details": "Restocked (was OOS since 2026-11-13T19:53:59+00:00)"
+      "details": "Transitioned from In Stock to OOS"
     },
     {
-      "id": 22749,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24801,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hydrocolloid-invisible-pimple-patches-supersize-44-units_17879361",
-      "product_title": "The INKEY List Hydrocolloid Invisible Pimple Patches Supersize 44 units",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-tripeptide-plumping-lip-balm-clear_14895554",
+      "product_title": "The INKEY List Tripeptide Plumping Lip Balm - Clear",
       "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 11.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
+    },
+    {
+      "id": 24800,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-biome-balancing-moisturizer-50ml_17879359",
+      "product_title": "The Inkey List Biome Balancing Moisturizer 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 12.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
+    },
+    {
+      "id": 24799,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-360-skin-clearing-serum-30ml_17073580",
+      "product_title": "The INKEY List 360 Skin Clearing Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 16.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
+    },
+    {
+      "id": 24798,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-vitamin-b-c-and-e-moisturizer-50ml_12435691",
+      "product_title": "The INKEY List Vitamin B, C and E Moisturizer 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 12.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
+    },
+    {
+      "id": 24797,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-caffeine-stimulating-scalp-treatment-150ml_13228956",
+      "product_title": "The INKEY List Caffeine Stimulating Scalp Treatment 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 11.25,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
+    },
+    {
+      "id": 24796,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycerin-gentle-purifying-cleanser-180ml_17879360",
+      "product_title": "The Inkey List Glycerin Gentle Purifying Cleanser 180ml",
+      "variant_title": "180ml",
       "event_type": "SILENT_REMOVED",
       "old_price": 14.0,
       "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
     },
     {
-      "id": 22748,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24795,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-fulvic-acid-cleanser-150ml_15446547",
+      "product_title": "The INKEY List Fulvic Acid Cleanser 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 12.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
+    },
+    {
+      "id": 24794,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-beta-hydroxy-acid-serum-30ml_12208003",
@@ -1804,8 +2207,8 @@
       "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
     },
     {
-      "id": 22747,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24793,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-polyglutamic-acid-serum-30ml_12211787",
@@ -1817,47 +2220,21 @@
       "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
     },
     {
-      "id": 22746,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24792,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-retinol-eye-cream-15ml_12435689",
-      "product_title": "The INKEY List Retinol Eye Cream 15ml",
-      "variant_title": "15ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 13.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 22745,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-peptide-moisturizer-50ml_12435692",
-      "product_title": "The INKEY List Peptide Moisturizer 50ml",
-      "variant_title": "50ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 16.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 22744,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycolic-acid-toner-100ml_14272889",
-      "product_title": "The INKEY List Glycolic Acid Toner 100ml",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-pha-toner-100ml_12276070",
+      "product_title": "The INKEY List PHA Toner 100ml",
       "variant_title": "100ml",
       "event_type": "SILENT_REMOVED",
       "old_price": 14.0,
       "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:25+00:00)"
     },
     {
-      "id": 22743,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24791,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-pha-exfoliating-and-hydrating-body-water-cream-150ml_15209895",
@@ -1869,8 +2246,8 @@
       "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
     },
     {
-      "id": 22742,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24790,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
       "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hydro-surge-dewy-face-mist-75ml_16345571",
@@ -1882,8 +2259,8 @@
       "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
     },
     {
-      "id": 22741,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24789,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
       "sku_key": "lookfantastic.com::the-inkey-list::p_beauty-box_the-grooming-advent-calendar-worth-over-469_17691385",
@@ -1895,60 +2272,255 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:39:31+00:00)"
     },
     {
-      "id": 22740,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24788,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycolic-acid-exfoliating-scalp-scrub-150ml_13228958",
-      "product_title": "The INKEY List Glycolic Acid Exfoliating Scalp Scrub 150ml",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-succinic-acid-treatment-15ml_12806730",
+      "product_title": "The INKEY List Succinic Acid Treatment 15ml",
+      "variant_title": "15ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 13.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 24787,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-brighten-i-eye-cream-15ml_12276071",
+      "product_title": "The INKEY List Brighten-I Eye Cream 15ml",
+      "variant_title": "15ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 12.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 24786,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-supersize-hyaluronic-acid-serum-100ml_14199575",
+      "product_title": "The INKEY List Supersize Hyaluronic Acid Serum 100ml (Worth £26.63)",
+      "variant_title": "100ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 28.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 24785,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-polyglutamic-acid-dewy-sunscreen-spf30-50ml_14289955",
+      "product_title": "The INKEY List Polyglutamic Acid Dewy Sunscreen SPF30 50ml",
+      "variant_title": "50ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 15.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 24784,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-bio-active-ceramide-neck-stick-20g_17945185",
+      "product_title": "The INKEY List Bio-active Ceramide Neck Stick 20g",
+      "variant_title": "20g",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 12.0,
+      "details": "Price changed 15.0 -> 12"
+    },
+    {
+      "id": 24783,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-milk-cleanser-180ml_16345570",
+      "product_title": "The INKEY List Milk Cleanser 180ml",
+      "variant_title": "180ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 12.0,
+      "details": "Price changed 15.0 -> 12"
+    },
+    {
+      "id": 24782,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-bio-active-ceramide-eye-cream-18ml_17945184",
+      "product_title": "The INKEY List Bio-active Ceramide Eye Cream 18ml",
+      "variant_title": "18ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 12.0,
+      "details": "Price changed 15.0 -> 12"
+    },
+    {
+      "id": 24781,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hyaluronic-acid-serum-60ml_15312300",
+      "product_title": "The INKEY List Hyaluronic Acid Serum 60ml",
+      "variant_title": "60ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 21.0,
+      "new_price": 16.8,
+      "details": "Price changed 21.0 -> 16.8"
+    },
+    {
+      "id": 24780,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-salicylic-acid-cleanser-150ml_14272893",
+      "product_title": "The INKEY List Salicylic Acid Cleanser 150ml",
       "variant_title": "150ml",
       "event_type": "PRICE_CHANGED",
-      "old_price": 10.5,
+      "old_price": 14.0,
       "new_price": 11.2,
-      "details": "Price changed 10.5 -> 11.2"
+      "details": "Price changed 14.0 -> 11.2"
     },
     {
-      "id": 22739,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24779,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-exosome-hydro-glow-complex-30ml_15948389",
-      "product_title": "The INKEY List Exosome Glow + Hydration Serum 30ml",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-15-vitamin-c-and-egf-serum-30ml_12435690",
+      "product_title": "The INKEY List- 15% Vitamin C and EGF Serum 30ml",
       "variant_title": "30ml",
       "event_type": "PRICE_CHANGED",
-      "old_price": 20.0,
-      "new_price": 16.0,
-      "details": "Price changed 20.0 -> 16"
+      "old_price": 16.0,
+      "new_price": 12.8,
+      "details": "Price changed 16.0 -> 12.8"
     },
     {
-      "id": 22738,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
+      "id": 24778,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
       "domain": "lookfantastic.com",
       "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-caffeine-eye-cream-15ml_14272888",
-      "product_title": "The INKEY List Caffeine Eye Cream 15ml",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-oat-balm-cleanser-150ml_17748683",
+      "product_title": "The INKEY List Oat Makeup Removing Cleansing Balm 150ml",
+      "variant_title": "150ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 12.0,
+      "details": "Price changed 15.0 -> 12"
+    },
+    {
+      "id": 24777,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-super-solutions-10-azelaic-acid-serum-30ml_14219137",
+      "product_title": "The INKEY List Super Solutions 10% Azelaic Acid Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.8,
+      "details": "Price changed 16.0 -> 12.8"
+    },
+    {
+      "id": 24776,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-advanced-retinal-serum-15ml_17538830",
+      "product_title": "The INKEY List Advanced Retinal Serum 15ml",
       "variant_title": "15ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 18.0,
+      "new_price": 14.4,
+      "details": "Price changed 18.0 -> 14.4"
+    },
+    {
+      "id": 24775,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hydrocolloid-invisible-pimple-patches-22-patches_15312297",
+      "product_title": "The INKEY List Hydrocolloid Invisible Pimple Patches (22 patches)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 9.0,
+      "new_price": 7.2,
+      "details": "Price changed 9.0 -> 7.2"
+    },
+    {
+      "id": 24774,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycolic-acid-exfoliating-body-stick-45g_15209894",
+      "product_title": "The INKEY List Glycolic Acid Exfoliating Body Stick 45g",
+      "variant_title": "45g",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 12.0,
+      "details": "Price changed 15.0 -> 12"
+    },
+    {
+      "id": 24773,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-omega-water-cream-moisturizer-50ml_13493315",
+      "product_title": "The INKEY List Omega Water Cream Moisturizer 50ml",
+      "variant_title": "50ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 12.0,
+      "new_price": 11.4,
+      "details": "Price changed 12.0 -> 11.4"
+    },
+    {
+      "id": 24772,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-ectoin-hydro-barrier-serum-30ml_15752394",
+      "product_title": "The INKEY List Ectoin Hydro-Barrier Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.8,
+      "details": "Price changed 16.0 -> 12.8"
+    },
+    {
+      "id": 24771,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-starter-retinol-serum-30ml_17538813",
+      "product_title": "The INKEY List Starter Retinol Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 13.0,
+      "new_price": 10.4,
+      "details": "Price changed 13.0 -> 10.4"
+    },
+    {
+      "id": 24770,
+      "occurred_at": "2026-11-21T12:48:10+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "The INKEY List",
+      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycolic-acid-exfoliating-body-wash-250ml_17935055",
+      "product_title": "The INKEY List Glycolic Acid Exfoliating Body Wash 250ml",
+      "variant_title": "250ml",
       "event_type": "PRICE_CHANGED",
       "old_price": 12.0,
       "new_price": 9.6,
       "details": "Price changed 12.0 -> 9.6"
     },
     {
-      "id": 22737,
-      "occurred_at": "2026-11-18T17:27:25+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-bio-active-ceramide-moisturizer-50ml_14992375",
-      "product_title": "The INKEY List Bio-Active Ceramide Moisturizer 50ml",
-      "variant_title": "50ml",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 20.0,
-      "new_price": 16.0,
-      "details": "Price changed 20.0 -> 16"
-    },
-    {
-      "id": 22736,
-      "occurred_at": "2026-11-18T17:27:03+00:00",
+      "id": 24769,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
       "domain": "cultbeauty.co.uk",
       "brand": "The INKEY List",
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-beta-hydroxy-acid-serum-30ml_12208003",
@@ -1960,8 +2532,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T21:09:00+00:00)"
     },
     {
-      "id": 22735,
-      "occurred_at": "2026-11-18T17:27:03+00:00",
+      "id": 24768,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
       "domain": "cultbeauty.co.uk",
       "brand": "The INKEY List",
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-hydro-surge-dewy-face-mist-75ml_16345571",
@@ -1973,8 +2545,8 @@
       "details": "Vanished from storefront (last seen 2026-11-10T21:52:10+00:00)"
     },
     {
-      "id": 22734,
-      "occurred_at": "2026-11-18T17:27:03+00:00",
+      "id": 24767,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
       "domain": "cultbeauty.co.uk",
       "brand": "The INKEY List",
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-caffeine-stimulating-scalp-treatment-150ml_13228956",
@@ -1986,8 +2558,8 @@
       "details": "Vanished from storefront (last seen 2026-11-08T06:10:46+00:00)"
     },
     {
-      "id": 22733,
-      "occurred_at": "2026-11-18T17:27:03+00:00",
+      "id": 24766,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
       "domain": "cultbeauty.co.uk",
       "brand": "The INKEY List",
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-brighten-i-eye-cream-15ml_12276071",
@@ -1999,8 +2571,8 @@
       "details": "Vanished from storefront (last seen 2026-11-06T15:59:22+00:00)"
     },
     {
-      "id": 22732,
-      "occurred_at": "2026-11-18T17:27:03+00:00",
+      "id": 24765,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
       "domain": "cultbeauty.co.uk",
       "brand": "The INKEY List",
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-tripeptide-plumping-lip-balm-clear_14895554",
@@ -2012,8 +2584,34 @@
       "details": "Vanished from storefront (last seen 2026-11-01T20:34:30+00:00)"
     },
     {
-      "id": 22731,
-      "occurred_at": "2026-11-18T17:27:03+00:00",
+      "id": 24764,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "The INKEY List",
+      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-pha-toner-100ml_12276070",
+      "product_title": "The INKEY List PHA Toner 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:03+00:00)"
+    },
+    {
+      "id": 24763,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "The INKEY List",
+      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-glycerin-gentle-purifying-cleanser-180ml_17879360",
+      "product_title": "The Inkey List Glycerin Gentle Purifying Cleanser 180ml",
+      "variant_title": "180ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:27:03+00:00)"
+    },
+    {
+      "id": 24762,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
       "domain": "cultbeauty.co.uk",
       "brand": "The INKEY List",
       "sku_key": "cultbeauty.co.uk::the-inkey-list::p_beauty-box_the-cult-beauty-advent-calendar-special-edition-worth-over-1-100_17921439",
@@ -2025,8 +2623,34 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:39:06+00:00)"
     },
     {
-      "id": 22730,
-      "occurred_at": "2026-11-18T17:26:22+00:00",
+      "id": 24761,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "The INKEY List",
+      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-glycolic-acid-exfoliating-scalp-scrub-150ml_13228958",
+      "product_title": "The INKEY List Glycolic Acid Exfoliating Scalp Scrub 150ml",
+      "variant_title": "150ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 14.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 24760,
+      "occurred_at": "2026-11-21T12:47:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "The INKEY List",
+      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-360-skin-clearing-serum-30ml_17073580",
+      "product_title": "The INKEY List 360 Skin Clearing Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 16.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 24759,
+      "occurred_at": "2026-11-21T12:47:05+00:00",
       "domain": "uk.theinkeylist.com",
       "brand": "The INKEY List",
       "sku_key": "uk.theinkeylist.com::the-inkey-list::hyperpigmentation-scar-solution-routine::42881772093603",
@@ -2038,8 +2662,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T21:08:18+00:00)"
     },
     {
-      "id": 22729,
-      "occurred_at": "2026-11-18T17:26:22+00:00",
+      "id": 24758,
+      "occurred_at": "2026-11-21T12:47:05+00:00",
       "domain": "uk.theinkeylist.com",
       "brand": "The INKEY List",
       "sku_key": "uk.theinkeylist.com::the-inkey-list::hydrating-cleanser-oil-free-moisturiser-duo::45910218113187",
@@ -2051,315 +2675,29 @@
       "details": "Vanished from storefront (last seen 2026-11-15T21:08:18+00:00)"
     },
     {
-      "id": 22728,
-      "occurred_at": "2026-11-18T17:26:22+00:00",
+      "id": 24757,
+      "occurred_at": "2026-11-21T12:47:05+00:00",
+      "domain": "uk.theinkeylist.com",
+      "brand": "The INKEY List",
+      "sku_key": "uk.theinkeylist.com::the-inkey-list::retinol-eye-cream::33619378733191",
+      "product_title": "Retinol Eye Cream",
+      "variant_title": "Standard",
+      "event_type": "WENT_OOS",
+      "old_price": 13.0,
+      "new_price": 13.0,
+      "details": "Transitioned from In Stock to OOS"
+    },
+    {
+      "id": 24756,
+      "occurred_at": "2026-11-21T12:47:05+00:00",
       "domain": "uk.theinkeylist.com",
       "brand": "The INKEY List",
       "sku_key": "uk.theinkeylist.com::the-inkey-list::caffeine-stimulating-scalp-treatment-150ml::41331098452131",
       "product_title": "Caffeine stimulating scalp treatment",
       "variant_title": "Standard",
-      "event_type": "RESTOCKED",
+      "event_type": "WENT_OOS",
       "old_price": 15.0,
       "new_price": 15.0,
-      "details": "Restocked (was OOS since 2026-11-13T19:52:11+00:00)"
-    },
-    {
-      "id": 22727,
-      "occurred_at": "2026-11-18T17:26:22+00:00",
-      "domain": "uk.theinkeylist.com",
-      "brand": "The INKEY List",
-      "sku_key": "uk.theinkeylist.com::the-inkey-list::3-month-hair-growth-trio::43219924910243",
-      "product_title": "3 Month Hair Growth Trio",
-      "variant_title": "Standard",
-      "event_type": "RESTOCKED",
-      "old_price": 40.5,
-      "new_price": 40.5,
-      "details": "Restocked (was OOS since 2026-11-06T15:58:39+00:00)"
-    },
-    {
-      "id": 21037,
-      "occurred_at": "2026-11-15T21:09:57+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::hyaluronic-acid-serum-MUK200055103",
-      "product_title": "Hyaluronic Acid Serum",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 21.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
-    },
-    {
-      "id": 21036,
-      "occurred_at": "2026-11-15T21:09:57+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::milk-cleanser-MUK200056641",
-      "product_title": "Milk Cleanser",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
-    },
-    {
-      "id": 21035,
-      "occurred_at": "2026-11-15T21:09:57+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::oat-balm-cleanser-MUK200064371",
-      "product_title": "Oat Balm Cleanser",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
-    },
-    {
-      "id": 21034,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hydrocolloid-invisible-pimple-patches-supersize-44-units_17879361",
-      "product_title": "The INKEY List Hydrocolloid Invisible Pimple Patches Supersize 44 units",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 14.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21033,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-beta-hydroxy-acid-serum-30ml_12208003",
-      "product_title": "The INKEY List Beta Hydroxy Acid Serum 30ml",
-      "variant_title": "30ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 12.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21032,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-polyglutamic-acid-serum-30ml_12211787",
-      "product_title": "The INKEY List Polyglutamic Acid Serum 30ml",
-      "variant_title": "30ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21031,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-retinol-eye-cream-15ml_12435689",
-      "product_title": "The INKEY List Retinol Eye Cream 15ml",
-      "variant_title": "15ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 13.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21030,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-peptide-moisturizer-50ml_12435692",
-      "product_title": "The INKEY List Peptide Moisturizer 50ml",
-      "variant_title": "50ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 16.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21029,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-glycolic-acid-toner-100ml_14272889",
-      "product_title": "The INKEY List Glycolic Acid Toner 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 14.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21028,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-pha-exfoliating-and-hydrating-body-water-cream-150ml_15209895",
-      "product_title": "The INKEY List PHA Exfoliating and Hydrating Body Water Cream 150ml",
-      "variant_title": "150ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 13.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21027,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_the-inkey-list-hydro-surge-dewy-face-mist-75ml_16345571",
-      "product_title": "The INKEY List Hydro-Surge Dewy Face Mist 75ml",
-      "variant_title": "75ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 12.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:30+00:00)"
-    },
-    {
-      "id": 21026,
-      "occurred_at": "2026-11-15T21:09:19+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "The INKEY List",
-      "sku_key": "lookfantastic.com::the-inkey-list::p_beauty-box_the-grooming-advent-calendar-worth-over-469_17691385",
-      "product_title": "Discover",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": null,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:39:31+00:00)"
-    },
-    {
-      "id": 21025,
-      "occurred_at": "2026-11-15T21:09:00+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "The INKEY List",
-      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-hydro-surge-dewy-face-mist-75ml_16345571",
-      "product_title": "The INKEY List Hydro-Surge Dewy Face Mist 75ml",
-      "variant_title": "75ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 12.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-10T21:52:10+00:00)"
-    },
-    {
-      "id": 21024,
-      "occurred_at": "2026-11-15T21:09:00+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "The INKEY List",
-      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-succinic-acid-treatment-15ml_12806730",
-      "product_title": "The INKEY List Succinic Acid Treatment 15ml",
-      "variant_title": "15ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 13.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-04T00:46:07+00:00)"
-    },
-    {
-      "id": 21023,
-      "occurred_at": "2026-11-15T21:09:00+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "The INKEY List",
-      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-caffeine-stimulating-scalp-treatment-150ml_13228956",
-      "product_title": "The INKEY List Caffeine Stimulating Scalp Treatment 150ml",
-      "variant_title": "150ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:10:46+00:00)"
-    },
-    {
-      "id": 21022,
-      "occurred_at": "2026-11-15T21:09:00+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "The INKEY List",
-      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-brighten-i-eye-cream-15ml_12276071",
-      "product_title": "The INKEY List Brighten-I Eye Cream 15ml",
-      "variant_title": "15ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 12.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-06T15:59:22+00:00)"
-    },
-    {
-      "id": 21021,
-      "occurred_at": "2026-11-15T21:09:00+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "The INKEY List",
-      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_the-inkey-list-tripeptide-plumping-lip-balm-clear_14895554",
-      "product_title": "The INKEY List Tripeptide Plumping Lip Balm - Clear",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 11.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-01T20:34:30+00:00)"
-    },
-    {
-      "id": 21020,
-      "occurred_at": "2026-11-15T21:09:00+00:00",
-      "domain": "cultbeauty.co.uk",
-      "brand": "The INKEY List",
-      "sku_key": "cultbeauty.co.uk::the-inkey-list::p_beauty-box_the-cult-beauty-advent-calendar-special-edition-worth-over-1-100_17921439",
-      "product_title": "The INKEY List Bio-active Ceramide Neck Stick 20g",
-      "variant_title": "20g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 28.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:39:06+00:00)"
-    },
-    {
-      "id": 19668,
-      "occurred_at": "2026-11-13T19:53:59+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::hyaluronic-acid-serum-MUK200055103",
-      "product_title": "Hyaluronic Acid Serum",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 21.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
-    },
-    {
-      "id": 19667,
-      "occurred_at": "2026-11-13T19:53:59+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::milk-cleanser-MUK200056641",
-      "product_title": "Milk Cleanser",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
-    },
-    {
-      "id": 19666,
-      "occurred_at": "2026-11-13T19:53:59+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::oat-balm-cleanser-MUK200064371",
-      "product_title": "Oat Balm Cleanser",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T15:40:04+00:00)"
-    },
-    {
-      "id": 19665,
-      "occurred_at": "2026-11-13T19:53:59+00:00",
-      "domain": "spacenk.com",
-      "brand": "The INKEY List",
-      "sku_key": "spacenk.com::the-inkey-list::pha-toner-MUK200055196",
-      "product_title": "PHA Toner",
-      "variant_title": "Standard",
-      "event_type": "WENT_OOS",
-      "old_price": 14.0,
-      "new_price": 14.0,
       "details": "Transitioned from In Stock to OOS"
     }
   ]

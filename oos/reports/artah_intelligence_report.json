@@ -1,7 +1,7 @@
 {
   "brand": "Artah",
   "brand_slug": "artah",
-  "generated_at": "2026-11-18T17:31:59+00:00",
+  "generated_at": "2026-11-21T12:52:26+00:00",
   "summary": {
     "monitored_uk_stores": 4,
     "monitored_retail_stockists": 3,
@@ -11,7 +11,7 @@
     "retail_out_of_stock_variants": 0,
     "unforced_retail_outages": 0,
     "factory_shortages_on_dtc": 0,
-    "silent_removed_skus": 15
+    "silent_removed_skus": 16
   },
   "out_of_stock_alerts": [
     {
@@ -30,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T21:04:53+00:00",
-      "last_seen_at": "2026-11-18T17:31:03+00:00",
+      "last_seen_at": "2026-11-21T12:51:34+00:00",
       "first_seen_oos_at": "2026-11-15T21:12:51+00:00",
       "last_seen_in_stock_at": "2026-11-13T19:56:52+00:00",
       "silent_removed_at": null,
-      "duration_label": "2d 20h (since 2026-11-15 21:12 UTC)",
-      "days_oos": 2.8,
+      "duration_label": "5d 15h (since 2026-11-15 21:12 UTC)",
+      "days_oos": 5.7,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 4.59,
@@ -58,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T21:04:53+00:00",
-      "last_seen_at": "2026-11-18T17:31:03+00:00",
+      "last_seen_at": "2026-11-21T12:51:34+00:00",
       "first_seen_oos_at": "2026-11-15T21:12:51+00:00",
       "last_seen_in_stock_at": "2026-11-13T19:56:52+00:00",
       "silent_removed_at": null,
-      "duration_label": "2d 20h (since 2026-11-15 21:12 UTC)",
-      "days_oos": 2.8,
+      "duration_label": "5d 15h (since 2026-11-15 21:12 UTC)",
+      "days_oos": 5.7,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 244.8,
@@ -89,12 +89,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T21:04:53+00:00",
-      "last_seen_at": "2026-11-18T17:31:03+00:00",
+      "last_seen_at": "2026-11-21T12:51:34+00:00",
       "first_seen_oos_at": "2026-11-15T21:12:51+00:00",
       "last_seen_in_stock_at": "2026-11-13T19:56:52+00:00",
       "silent_removed_at": null,
-      "duration_label": "2d 20h (since 2026-11-15 21:12 UTC)",
-      "days_oos": 2.8,
+      "duration_label": "5d 15h (since 2026-11-15 21:12 UTC)",
+      "days_oos": 5.7,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 4.59,
@@ -117,12 +117,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T21:04:53+00:00",
-      "last_seen_at": "2026-11-18T17:31:03+00:00",
+      "last_seen_at": "2026-11-21T12:51:34+00:00",
       "first_seen_oos_at": "2026-11-15T21:12:51+00:00",
       "last_seen_in_stock_at": "2026-11-13T19:56:52+00:00",
       "silent_removed_at": null,
-      "duration_label": "2d 20h (since 2026-11-15 21:12 UTC)",
-      "days_oos": 2.8,
+      "duration_label": "5d 15h (since 2026-11-15 21:12 UTC)",
+      "days_oos": 5.7,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 244.8,
@@ -448,7 +448,7 @@
       "last_seen_at": "2026-11-01T20:38:15+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T20:38:15+00:00",
-      "silent_removed_at": "2026-11-18T17:31:03+00:00"
+      "silent_removed_at": "2026-11-21T12:51:34+00:00"
     },
     {
       "sku_key": "artah.co::artah::metabolism-foundations::54927274049914",
@@ -469,7 +469,7 @@
       "last_seen_at": "2026-11-01T20:38:15+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T20:38:15+00:00",
-      "silent_removed_at": "2026-11-18T17:31:03+00:00"
+      "silent_removed_at": "2026-11-21T12:51:34+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-density-scalp-drops-85ml-6100007106",
@@ -490,7 +490,28 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
+    },
+    {
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-energy-support-60-capsules-6100006098",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "product_title": "4.44 Wild Nutrition Energy Support 60 Capsules 3 for 2 Mix & Match",
+      "variant_title": "60 Capsules",
+      "normalized_product_key": "4_44_wild_nutrition_energy_support_3_2_mix_match",
+      "product_url": "https://www.hollandandbarrett.com/shop/product/wild-nutrition-energy-support-60-capsules-6100006098",
+      "sku_code": "wild-nutrition-energy-support-60-capsules-6100006098",
+      "current_price": 31.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 31.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-30T21:00:49+00:00",
+      "last_seen_at": "2026-11-18T17:31:40+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:31:40+00:00",
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-density-shampoo-200ml-6100007107",
@@ -511,7 +532,7 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-daily-multi-nutrient-for-women-60-capsules-6100002054",
@@ -532,7 +553,7 @@
       "last_seen_at": "2026-11-08T06:15:17+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:15:17+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-daily-multi-nutrient-45for-women-60-capsules-6100002058",
@@ -553,7 +574,7 @@
       "last_seen_at": "2026-11-08T06:15:17+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:15:17+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-extreme-150ml-6100007358",
@@ -574,7 +595,7 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-150ml-6100007087",
@@ -595,7 +616,28 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
+    },
+    {
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-vitamin-c-plus-60-capsules-6100004874",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "product_title": "4.8 Wild Nutrition Vitamin C Plus 60 Capsules 3 for 2 Mix & Match",
+      "variant_title": "60 Capsules",
+      "normalized_product_key": "4_8_wild_nutrition_vitamin_c_3_2_mix_match",
+      "product_url": "https://www.hollandandbarrett.com/shop/product/wild-nutrition-vitamin-c-plus-60-capsules-6100004874",
+      "sku_code": "wild-nutrition-vitamin-c-plus-60-capsules-6100004874",
+      "current_price": 26.5,
+      "compare_at_price": null,
+      "last_in_stock_price": 26.5,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-18T17:31:40+00:00",
+      "last_seen_at": "2026-11-18T17:31:40+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-18T17:31:40+00:00",
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-swimcap-water-resistant-mask-100ml-6100007092",
@@ -616,7 +658,7 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-finishing-touch-frizz-fighting-gloss-50ml-6100007105",
@@ -637,7 +679,7 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-moisture-extreme-shampoo-250ml-6100007112",
@@ -658,7 +700,7 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-moisture-extreme-conditioner-200ml-6100007110",
@@ -679,7 +721,7 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::wild-nutrition-immune-support-food-supplement-with-vitamins-minerals-and-mushroom-powders-60-capsules-6100005408",
@@ -700,7 +742,7 @@
       "last_seen_at": "2026-11-08T06:15:17+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:15:17+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-effect-discovery-collection-6100007114",
@@ -721,31 +763,244 @@
       "last_seen_at": "2026-10-26T21:05:32+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T21:05:32+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
-    },
-    {
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-biotic-gummies-for-children-berry-60-gummies-6102159302",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "product_title": "Wild Nutrition Food-Grown Biotic Gummies for Children Berry 60 Gummies 3 for 2 Mix & Match",
-      "variant_title": "Standard",
-      "normalized_product_key": "wild_nutrition_food_grown_biotic_gummies_children_berry_60_gummies_3_2_mix_match",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/wild-nutrition-food-grown-biotic-gummies-for-children-berry-60-gummies-6102159302",
-      "sku_code": "wild-nutrition-food-grown-biotic-gummies-for-children-berry-60-gummies-6102159302",
-      "current_price": 20.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 20.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-11-04T00:50:35+00:00",
-      "last_seen_at": "2026-11-08T06:15:17+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-08T06:15:17+00:00",
-      "silent_removed_at": "2026-11-18T17:31:40+00:00"
+      "silent_removed_at": "2026-11-21T12:52:11+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 24981,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-vitamin-c-plus-60-capsules-6100004874",
+      "product_title": "4.8 Wild Nutrition Vitamin C Plus 60 Capsules 3 for 2 Mix & Match",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 26.5,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:31:40+00:00)"
+    },
+    {
+      "id": 24980,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-daily-multi-nutrient-45for-women-60-capsules-6100002058",
+      "product_title": "4.6 Wild Nutrition Food Grown Daily Multi Nutrient 45+for Women 60 Capsules 3 for 2 Mix & Match",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 39.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
+    },
+    {
+      "id": 24979,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-immune-support-food-supplement-with-vitamins-minerals-and-mushroom-powders-60-capsules-6100005408",
+      "product_title": "5 Wild Nutrition Immune Support: 60 Capsules 3 for 2 Mix & Match",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 37.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
+    },
+    {
+      "id": 24978,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-energy-support-60-capsules-6100006098",
+      "product_title": "4.44 Wild Nutrition Energy Support 60 Capsules 3 for 2 Mix & Match",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 31.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-18T17:31:40+00:00)"
+    },
+    {
+      "id": 24977,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-daily-multi-nutrient-for-women-60-capsules-6100002054",
+      "product_title": "4.53 Wild Nutrition Food Grown Daily Multi Nutrient for Women 60 Capsules 3 for 2 Mix & Match",
+      "variant_title": "60 Capsules",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 39.5,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
+    },
+    {
+      "id": 24976,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-finishing-touch-frizz-fighting-gloss-50ml-6100007105",
+      "product_title": "4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 26.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24975,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-extreme-150ml-6100007358",
+      "product_title": "4.7 Philip Kingsley Elasticizer Extreme 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 41.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24974,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-150ml-6100007087",
+      "product_title": "4.78 Philip Kingsley Elasticizer 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 41.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24973,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-swimcap-water-resistant-mask-100ml-6100007092",
+      "product_title": "4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml",
+      "variant_title": "100ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 26.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24972,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-density-shampoo-200ml-6100007107",
+      "product_title": "4.45 Philip Kingsley Density Shampoo 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 32.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24971,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-moisture-extreme-conditioner-200ml-6100007110",
+      "product_title": "4.92 Philip Kingsley Moisture Extreme Conditioner 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 29.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24970,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-density-scalp-drops-85ml-6100007106",
+      "product_title": "3.59 Philip Kingsley Density Scalp Drops 85ml",
+      "variant_title": "85ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 55.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24969,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-moisture-extreme-shampoo-250ml-6100007112",
+      "product_title": "4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off",
+      "variant_title": "250ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 20.3,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24968,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-effect-discovery-collection-6100007114",
+      "product_title": "Philip Kingsley Elasticizer Effect Discovery Collection",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 26.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
+    },
+    {
+      "id": 24967,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-bone-muscle-support-90-capsules-6100005095",
+      "product_title": "4 Wild Nutrition Bone + Muscle Support 90 Capsules 3 for 2 Mix & Match",
+      "variant_title": "90 Capsules",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 36.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 24966,
+      "occurred_at": "2026-11-21T12:52:11+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Artah",
+      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-biotic-gummies-for-children-berry-60-gummies-6102159302",
+      "product_title": "Wild Nutrition Food-Grown Biotic Gummies for Children Berry 60 Gummies 25% Off",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 20.0,
+      "new_price": 15.0,
+      "details": "Price changed 20.0 -> 15"
+    },
+    {
+      "id": 24965,
+      "occurred_at": "2026-11-21T12:51:34+00:00",
+      "domain": "artah.co",
+      "brand": "Artah",
+      "sku_key": "artah.co::artah::metabolism-foundations::54927274049914",
+      "product_title": "Metabolism Foundations",
+      "variant_title": "Quarterly Bundle",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 248.4,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-01T20:38:15+00:00)"
+    },
+    {
+      "id": 24964,
+      "occurred_at": "2026-11-21T12:51:34+00:00",
+      "domain": "artah.co",
+      "brand": "Artah",
+      "sku_key": "artah.co::artah::metabolism-foundations::54927274017146",
+      "product_title": "Metabolism Foundations",
+      "variant_title": "Bundle",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 82.8,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-01T20:38:15+00:00)"
+    },
     {
       "id": 22842,
       "occurred_at": "2026-11-18T17:31:57+00:00",
@@ -1161,240 +1416,6 @@
       "old_price": null,
       "new_price": 183.6,
       "details": "Initial discovery"
-    },
-    {
-      "id": 21098,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-biotic-gummies-for-children-berry-60-gummies-6102159302",
-      "product_title": "Wild Nutrition Food-Grown Biotic Gummies for Children Berry 60 Gummies 3 for 2 Mix & Match",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 20.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21097,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-daily-multi-nutrient-45for-women-60-capsules-6100002058",
-      "product_title": "4.6 Wild Nutrition Food Grown Daily Multi Nutrient 45+for Women 60 Capsules 3 for 2 Mix & Match",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 39.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21096,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-immune-support-food-supplement-with-vitamins-minerals-and-mushroom-powders-60-capsules-6100005408",
-      "product_title": "5 Wild Nutrition Immune Support: 60 Capsules 3 for 2 Mix & Match",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 37.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21095,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-energy-support-60-capsules-6100006098",
-      "product_title": "4.44 Wild Nutrition Energy Support 60 Capsules 3 for 2 Mix & Match",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 31.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21094,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-fertility-support-for-women-60-capsules-6100002044",
-      "product_title": "4.42 Wild Nutrition Food Grown Fertility Support for Women 60 Capsules 3 for 2 Mix & Match",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 42.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21093,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-zinc-plus-blended-with-vitamins-b1-b2-b6-30-capsules-6100005097",
-      "product_title": "5 Wild Nutrition Zinc Plus Blended with Vitamins B1, B2 & B6 30 Capsules. 24% Off",
-      "variant_title": "30 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 12.54,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-30T21:00:49+00:00)"
-    },
-    {
-      "id": 21092,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-magnesium-60-capsules-6100004875",
-      "product_title": "4.6 Wild Nutrition Magnesium 60 Capsules 3 for 2 Mix & Match",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 21.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21091,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-ksm-66-ashwagandha-plus-60-capsules-6100004514",
-      "product_title": "4.74 Wild Nutrition KSM-66 Ashwagandha Plus 60 Capsules 3 for 2 Mix & Match",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 26.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21090,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-vitamin-d-30-capsules-6102172340",
-      "product_title": "Wild Nutrition Food-Grown Vitamin D 30 Capsules",
-      "variant_title": "30 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21089,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-daily-multi-nutrient-for-women-60-capsules-6100002054",
-      "product_title": "4.53 Wild Nutrition Food Grown Daily Multi Nutrient for Women 60 Capsules 3 for 2 Mix & Match",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 39.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21088,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::wild-nutrition-food-grown-pregnancy-new-mother-multi-for-women-90-capsules-6100002053",
-      "product_title": "4 Wild Nutrition Food Grown Pregnancy & New Mother Multi for Women 90 Capsules 3 for 2 Mix & Match",
-      "variant_title": "90 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 42.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-08T06:15:17+00:00)"
-    },
-    {
-      "id": 21087,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-finishing-touch-frizz-fighting-gloss-50ml-6100007105",
-      "product_title": "4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml",
-      "variant_title": "50ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 26.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
-    },
-    {
-      "id": 21086,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-extreme-150ml-6100007358",
-      "product_title": "4.7 Philip Kingsley Elasticizer Extreme 150ml",
-      "variant_title": "150ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 41.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
-    },
-    {
-      "id": 21085,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-elasticizer-150ml-6100007087",
-      "product_title": "4.78 Philip Kingsley Elasticizer 150ml",
-      "variant_title": "150ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 41.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
-    },
-    {
-      "id": 21084,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-swimcap-water-resistant-mask-100ml-6100007092",
-      "product_title": "4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml",
-      "variant_title": "100ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 26.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
-    },
-    {
-      "id": 21083,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-density-shampoo-200ml-6100007107",
-      "product_title": "4.45 Philip Kingsley Density Shampoo 200ml",
-      "variant_title": "200ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 32.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
-    },
-    {
-      "id": 21082,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-moisture-extreme-conditioner-200ml-6100007110",
-      "product_title": "4.92 Philip Kingsley Moisture Extreme Conditioner 200ml",
-      "variant_title": "200ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 29.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
-    },
-    {
-      "id": 21081,
-      "occurred_at": "2026-11-15T21:13:28+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Artah",
-      "sku_key": "hollandandbarrett.com::artah::philip-kingsley-density-scalp-drops-85ml-6100007106",
-      "product_title": "3.59 Philip Kingsley Density Scalp Drops 85ml",
-      "variant_title": "85ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 55.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-26T21:05:32+00:00)"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Wild Nutrition
 
-- **Generated:** 2026-11-18 17:22 UTC
+- **Generated:** 2026-11-21 12:43 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 259 (250 In Stock | **9 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `ohmycream.co.uk` | Food-Grown® Multi Strain Biotic | 30 capsules | £40.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-18 17:22 UTC)** |
+| `ohmycream.co.uk` | Food-Grown® Multi Strain Biotic | 30 capsules | £32.00 (Discounted -20% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **2d 19h (since 2026-11-18 17:22 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -40,30 +40,30 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 4.3 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £39.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.3 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 7 Sachets 3 for 2 Mix & Match | 7 Sachets | £12.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.43 UpCircle Conditioner Crème with Rosemary Oil, Bamboo Extract + Vitamin E 100ml 25% Off | 100ml | £14.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.46 Novomins Kids Night-Time Raspberry Flavoured 30 Gummies 3 for 2 Mix & Match | Standard | £9.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.47 Bioglan SmartMinds Magnesium Night-Time 60 Gummies 3 for 2 Mix & Match | Standard | £14.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.53 UpCircle Eye Cream with Hyaluronic Acid + Coffee 15ml Buy 1 Get 1 Half Price | 15ml | £21.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.55 UpCircle Shampoo Crème with Coconut and Rosemary Oil 100ml Buy 1 Get 1 Half Price | 100ml | £19.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.61 Vitabiotics Wellwoman 30 Capsules 25% Off | 30 Capsules | £6.41 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.65 New Leaf Products Magnesium Complex 4in1 Glycinate Citrate, Malate, Oxide 120 Capsules 25% Off | 120 Capsules | £11.21 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.67 Zooki Liposomal Vitamin C 1000mg Capsules 30 Servings 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £24.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off | 567g | £33.49 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.69 UpCircle Upcircle Peptide Serum With Upcycled Custard Apple + Blood Orange 30ml 20% Off | 30ml | £19.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.73 BetterYou Vitamin D + K2 Oral Spray 12ml 20% Off | 12ml | £9.19 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.73 Zooki Super Strength Marine Collagen 11,000mg 14 Sachets 3 for 2 Mix & Match | 14 Sachets | £39.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.74 Vitabiotics Wellwoman Max 84 Tablets 3 for 2 Mix & Match | 84 Tablets | £22.50 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.76 Holland & Barrett Multivitamin Effervescent 20 Tablets 3 for 2 Mix & Match | 20 Tablets | £2.69 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.8 Spatone Apple Liquid Iron Supplement 28 x 25ml Sachets 33% Off | 25ml | £11.38 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.82 Zooki Liposomal Vitamin C 1000mg, Citrus Orange Flavour - 14 x 15ml Liquid Sachet 3 for 2 Mix & Match | 15ml | £24.99 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 4.89 New Leaf Products Chlorophyll Liquid Drops - Natural Mint Flavour 100ml 38% Off | 100ml | £9.96 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 5 New Leaf Products Vitamin D3 4000iu & K2 100mcg - High Strength Vegetarian 365 Tablets 20% Off | 365 Tablets | £13.56 | 2026-11-18T17:22:11+00:00 |
-| `hollandandbarrett.com` | 5 Zooki Liposomal Hair Max Raspberry 14 Sachets 3 for 2 Mix & Match | 14 Sachets | £29.99 | 2026-11-18T17:22:11+00:00 |
-| `ohmycream.co.uk` | Food-Grown® Vitamin D | 30 capsules | £18.00 | 2026-11-18T17:22:22+00:00 |
-| `ohmycream.co.uk` | Wild Nutrition Food-Grown® Organic Protein + Superfood Powder | 370 g - 14 day supply | £42.00 | 2026-11-18T17:22:22+00:00 |
+| `hollandandbarrett.com` | 4.3 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £39.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.3 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 7 Sachets 3 for 2 Mix & Match | 7 Sachets | £12.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.43 UpCircle Conditioner Crème with Rosemary Oil, Bamboo Extract + Vitamin E 100ml 25% Off | 100ml | £14.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.46 Novomins Kids Night-Time Raspberry Flavoured 30 Gummies 3 for 2 Mix & Match | Standard | £9.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.47 Bioglan SmartMinds Magnesium Night-Time 60 Gummies 3 for 2 Mix & Match | Standard | £14.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.53 UpCircle Eye Cream with Hyaluronic Acid + Coffee 15ml Buy 1 Get 1 Half Price | 15ml | £21.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.55 UpCircle Shampoo Crème with Coconut and Rosemary Oil 100ml Buy 1 Get 1 Half Price | 100ml | £19.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.61 Vitabiotics Wellwoman 30 Capsules 25% Off | 30 Capsules | £6.41 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.65 New Leaf Products Magnesium Complex 4in1 Glycinate Citrate, Malate, Oxide 120 Capsules 25% Off | 120 Capsules | £11.21 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.67 Zooki Liposomal Vitamin C 1000mg Capsules 30 Servings 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £24.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off | 567g | £33.49 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.69 UpCircle Upcircle Peptide Serum With Upcycled Custard Apple + Blood Orange 30ml 20% Off | 30ml | £19.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.73 BetterYou Vitamin D + K2 Oral Spray 12ml 20% Off | 12ml | £9.19 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.73 Zooki Super Strength Marine Collagen 11,000mg 14 Sachets 3 for 2 Mix & Match | 14 Sachets | £39.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.74 Vitabiotics Wellwoman Max 84 Tablets 3 for 2 Mix & Match | 84 Tablets | £22.50 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.76 Holland & Barrett Multivitamin Effervescent 20 Tablets 3 for 2 Mix & Match | 20 Tablets | £2.69 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.8 Spatone Apple Liquid Iron Supplement 28 x 25ml Sachets 33% Off | 25ml | £11.38 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.82 Zooki Liposomal Vitamin C 1000mg, Citrus Orange Flavour - 14 x 15ml Liquid Sachet 3 for 2 Mix & Match | 15ml | £24.99 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 4.89 New Leaf Products Chlorophyll Liquid Drops - Natural Mint Flavour 100ml 38% Off | 100ml | £9.96 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 5 New Leaf Products Vitamin D3 4000iu & K2 100mcg - High Strength Vegetarian 365 Tablets 20% Off | 365 Tablets | £13.56 | 2026-11-21T12:43:04+00:00 |
+| `hollandandbarrett.com` | 5 Zooki Liposomal Hair Max Raspberry 14 Sachets 3 for 2 Mix & Match | 14 Sachets | £29.99 | 2026-11-21T12:43:04+00:00 |
+| `ohmycream.co.uk` | Food-Grown® Vitamin D | 30 capsules | £18.00 | 2026-11-21T12:43:17+00:00 |
+| `ohmycream.co.uk` | Wild Nutrition Food-Grown® Organic Protein + Superfood Powder | 370 g - 14 day supply | £42.00 | 2026-11-21T12:43:17+00:00 |
 
 ---
 

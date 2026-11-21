@@ -1,7 +1,7 @@
 {
   "brand": "Wild Nutrition",
   "brand_slug": "wild-nutrition",
-  "generated_at": "2026-11-18T17:22:24+00:00",
+  "generated_at": "2026-11-21T12:43:18+00:00",
   "summary": {
     "monitored_uk_stores": 4,
     "monitored_retail_stockists": 3,
@@ -23,20 +23,20 @@
       "normalized_product_key": "food_grown_multi_strain_biotic",
       "product_url": "https://ohmycream.co.uk/products/wild-nutrition-food-grown-multi-strain-biotic",
       "sku_code": "5060968690250",
-      "current_price": 40.0,
-      "compare_at_price": null,
+      "current_price": 32.0,
+      "compare_at_price": 40.0,
       "last_in_stock_price": 40.0,
       "currency": "GBP",
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:51+00:00",
-      "last_seen_at": "2026-11-18T17:22:22+00:00",
+      "last_seen_at": "2026-11-21T12:43:17+00:00",
       "first_seen_oos_at": "2026-11-18T17:22:22+00:00",
       "last_seen_in_stock_at": "2026-11-15T15:48:45+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-18 17:22 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price",
+      "duration_label": "2d 19h (since 2026-11-18 17:22 UTC)",
+      "days_oos": 2.8,
+      "price_note": "Discounted -20% (was £40.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
@@ -58,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 5.5,
@@ -86,12 +86,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 157.0,
@@ -114,12 +114,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 125.0,
@@ -142,12 +142,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 169.0,
@@ -170,12 +170,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 55.0,
@@ -198,12 +198,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 149.0,
@@ -226,12 +226,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 107.0,
@@ -254,12 +254,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 47.0,
@@ -277,20 +277,20 @@
       "normalized_product_key": "food_grown_multi_strain_biotic",
       "product_url": "https://ohmycream.co.uk/products/wild-nutrition-food-grown-multi-strain-biotic",
       "sku_code": "5060968690250",
-      "current_price": 40.0,
-      "compare_at_price": null,
+      "current_price": 32.0,
+      "compare_at_price": 40.0,
       "last_in_stock_price": 40.0,
       "currency": "GBP",
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:51+00:00",
-      "last_seen_at": "2026-11-18T17:22:22+00:00",
+      "last_seen_at": "2026-11-21T12:43:17+00:00",
       "first_seen_oos_at": "2026-11-18T17:22:22+00:00",
       "last_seen_in_stock_at": "2026-11-15T15:48:45+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-18 17:22 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price",
+      "duration_label": "2d 19h (since 2026-11-18 17:22 UTC)",
+      "days_oos": 2.8,
+      "price_note": "Discounted -20% (was £40.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
@@ -314,12 +314,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 5.5,
@@ -342,12 +342,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 157.0,
@@ -370,12 +370,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 125.0,
@@ -398,12 +398,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 169.0,
@@ -426,12 +426,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 55.0,
@@ -454,12 +454,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 149.0,
@@ -482,12 +482,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 107.0,
@@ -510,12 +510,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T15:16:00+00:00",
-      "last_seen_at": "2026-11-18T17:21:31+00:00",
+      "last_seen_at": "2026-11-21T12:42:23+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:00+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "21d 2h (since 2026-10-28 15:16 UTC)",
-      "days_oos": 21.1,
+      "duration_label": "23d 21h (since 2026-10-28 15:16 UTC)",
+      "days_oos": 23.9,
       "price_note": "Full Price",
       "dtc_status": "OOS_ON_DTC",
       "dtc_rrp": 47.0,
@@ -544,7 +544,7 @@
       "last_seen_at": "2026-10-28T15:16:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T15:16:39+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::energy-focus-peach-flavour-7-sachets-6100006280",
@@ -565,7 +565,7 @@
       "last_seen_at": "2026-11-06T06:55:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-06T06:55:47+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-conditioner-creme-with-rosemary-oil-bamboo-extract-vitamin-e-100ml-6100008146",
@@ -586,7 +586,7 @@
       "last_seen_at": "2026-11-01T15:19:34+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T15:19:34+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::novomins-kids-night-time-30-gummies-6100004528",
@@ -607,7 +607,7 @@
       "last_seen_at": "2026-11-01T15:19:34+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-01T15:19:34+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::bioglan-smartminds-magnesium-night-time-60-gummies-6100006091",
@@ -628,7 +628,7 @@
       "last_seen_at": "2026-10-28T15:16:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T15:16:39+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-eye-cream-with-cucumber-hyaluronic-acid-coffee-60062671",
@@ -649,7 +649,7 @@
       "last_seen_at": "2026-10-28T15:16:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T15:16:39+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-shampoo-creme-with-coconut-and-rosemary-oil-100ml-6100007878",
@@ -670,7 +670,7 @@
       "last_seen_at": "2026-10-28T15:16:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T15:16:39+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::vitabiotics-wellwoman-capsules-60088966",
@@ -691,7 +691,7 @@
       "last_seen_at": "2026-10-28T15:16:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T15:16:39+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::magnesium-complex-4in1-glycinate-citrate-malate-oxide-120-capsules-6100025544",
@@ -712,7 +712,7 @@
       "last_seen_at": "2026-11-15T15:48:33+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:33+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-liposomal-vitamin-c-1000mg-capsules-60-capsules-6100004524",
@@ -733,7 +733,7 @@
       "last_seen_at": "2026-11-15T15:48:33+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:33+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::vital-proteins-collagen-peptides-unflavoured-6100148487",
@@ -754,7 +754,7 @@
       "last_seen_at": "2026-11-10T12:49:59+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T12:49:59+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-peptide-serum-with-upcycled-custard-apple-blood-orange-30ml-6100009043",
@@ -775,7 +775,7 @@
       "last_seen_at": "2026-11-15T15:48:33+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:33+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::betteryou-vitamin-d-k2-spray-12ml-60017826",
@@ -796,7 +796,7 @@
       "last_seen_at": "2026-11-15T15:48:33+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:33+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-super-strength-marine-collagen-11000mg-14-sachets-6100014357",
@@ -817,7 +817,7 @@
       "last_seen_at": "2026-11-15T15:48:33+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:33+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::vitabiotics-wellwoman-max-60014246",
@@ -838,7 +838,7 @@
       "last_seen_at": "2026-11-06T06:55:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-06T06:55:47+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::h-b-abc-to-z-multi-effervesce-20-6100005256",
@@ -859,7 +859,7 @@
       "last_seen_at": "2026-11-15T15:48:33+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:33+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::beauty-advent-calendar-2026-6101407249",
@@ -880,7 +880,7 @@
       "last_seen_at": "2026-10-28T15:16:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T15:16:39+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::spatone-apple-liquid-iron-supplement-60007026",
@@ -901,7 +901,7 @@
       "last_seen_at": "2026-11-06T06:55:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-06T06:55:47+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-liposomaal-vitamin-c-1000-mg-6100004522",
@@ -922,7 +922,7 @@
       "last_seen_at": "2026-10-28T15:16:39+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T15:16:39+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::chlorophyll-liquid-drops-100ml-6100009145",
@@ -943,7 +943,7 @@
       "last_seen_at": "2026-11-13T12:20:22+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-13T12:20:22+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::vitamin-d3-k2-tablets-6100017116",
@@ -964,7 +964,7 @@
       "last_seen_at": "2026-11-06T06:55:47+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-06T06:55:47+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-liposomal-hair-max-raspberry-14-sachets-6102209429",
@@ -985,7 +985,7 @@
       "last_seen_at": "2026-11-15T15:48:33+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:33+00:00",
-      "silent_removed_at": "2026-11-18T17:22:11+00:00"
+      "silent_removed_at": "2026-11-21T12:43:04+00:00"
     },
     {
       "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-vitamin-d::55084716589436",
@@ -1006,7 +1006,7 @@
       "last_seen_at": "2026-11-04T00:41:09+00:00",
       "first_seen_oos_at": "2026-10-28T15:16:51+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-18T17:22:22+00:00"
+      "silent_removed_at": "2026-11-21T12:43:17+00:00"
     },
     {
       "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-organic-protein-superfood-powder::55084798771580",
@@ -1027,13 +1027,13 @@
       "last_seen_at": "2026-11-15T15:48:45+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T15:48:45+00:00",
-      "silent_removed_at": "2026-11-18T17:22:22+00:00"
+      "silent_removed_at": "2026-11-21T12:43:17+00:00"
     }
   ],
   "recent_events": [
     {
-      "id": 22591,
-      "occurred_at": "2026-11-18T17:22:22+00:00",
+      "id": 24700,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
       "domain": "ohmycream.co.uk",
       "brand": "Wild Nutrition",
       "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-vitamin-d::55084716589436",
@@ -1045,8 +1045,8 @@
       "details": "Vanished from storefront (last seen 2026-11-04T00:41:09+00:00)"
     },
     {
-      "id": 22590,
-      "occurred_at": "2026-11-18T17:22:22+00:00",
+      "id": 24699,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
       "domain": "ohmycream.co.uk",
       "brand": "Wild Nutrition",
       "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-organic-protein-superfood-powder::55084798771580",
@@ -1058,21 +1058,99 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:45+00:00)"
     },
     {
-      "id": 22589,
-      "occurred_at": "2026-11-18T17:22:22+00:00",
+      "id": 24698,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
       "domain": "ohmycream.co.uk",
       "brand": "Wild Nutrition",
       "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-multi-strain-biotic::55084799066492",
       "product_title": "Food-Grown® Multi Strain Biotic",
       "variant_title": "30 capsules",
-      "event_type": "WENT_OOS",
+      "event_type": "PRICE_CHANGED",
       "old_price": 40.0,
-      "new_price": 40.0,
-      "details": "Transitioned from In Stock to OOS"
+      "new_price": 32.0,
+      "details": "Price changed 40.0 -> 32.0"
     },
     {
-      "id": 22588,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24697,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Wild Nutrition",
+      "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-magnesium::55084687098236",
+      "product_title": "Food-Grown® Magnesium",
+      "variant_title": "60 capsules",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 20.0,
+      "new_price": 16.0,
+      "details": "Price changed 20.0 -> 16.0"
+    },
+    {
+      "id": 24696,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Wild Nutrition",
+      "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-vitamin-c-plus::55084716523900",
+      "product_title": "Food-Grown® Vitamin C Plus",
+      "variant_title": "60 capsules",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 25.0,
+      "new_price": 20.0,
+      "details": "Price changed 25.0 -> 20.0"
+    },
+    {
+      "id": 24695,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Wild Nutrition",
+      "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-zinc-plus::55084797952380",
+      "product_title": "Food-Grown® Zinc Plus",
+      "variant_title": "30 capsules",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.8,
+      "details": "Price changed 16.0 -> 12.8"
+    },
+    {
+      "id": 24694,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Wild Nutrition",
+      "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-ksm-66-ashwagandha-plus::55084798181756",
+      "product_title": "Food-Grown® KSM-66 Ashwagandha Plus",
+      "variant_title": "60 capsules",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 25.0,
+      "new_price": 20.0,
+      "details": "Price changed 25.0 -> 20.0"
+    },
+    {
+      "id": 24693,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Wild Nutrition",
+      "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-women-daily-multi-nutrient::55084686311804",
+      "product_title": "Food-Grown® Women's Daily Multi Nutrient",
+      "variant_title": "60 capsules",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 37.0,
+      "new_price": 29.6,
+      "details": "Price changed 37.0 -> 29.6"
+    },
+    {
+      "id": 24692,
+      "occurred_at": "2026-11-21T12:43:17+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Wild Nutrition",
+      "sku_key": "ohmycream.co.uk::wild-nutrition::wild-nutrition-food-grown-women-45-daily-multi-nutrient::55084686573948",
+      "product_title": "Food-Grown® Women's 45+ Daily Multi Nutrient",
+      "variant_title": "60 capsules",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 37.0,
+      "new_price": 29.6,
+      "details": "Price changed 37.0 -> 29.6"
+    },
+    {
+      "id": 24691,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::chlorophyll-liquid-drops-100ml-6100009145",
@@ -1084,8 +1162,8 @@
       "details": "Vanished from storefront (last seen 2026-11-13T12:20:22+00:00)"
     },
     {
-      "id": 22587,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24690,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::betteryou-vitamin-d-k2-spray-12ml-60017826",
@@ -1097,8 +1175,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:33+00:00)"
     },
     {
-      "id": 22586,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24689,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::h-b-abc-to-z-multi-effervesce-20-6100005256",
@@ -1110,8 +1188,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:33+00:00)"
     },
     {
-      "id": 22585,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24688,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::vital-proteins-collagen-peptides-unflavoured-6100148487",
@@ -1123,8 +1201,8 @@
       "details": "Vanished from storefront (last seen 2026-11-10T12:49:59+00:00)"
     },
     {
-      "id": 22584,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24687,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::energy-focus-peach-flavour-7-sachets-6100006280",
@@ -1136,8 +1214,8 @@
       "details": "Vanished from storefront (last seen 2026-11-06T06:55:47+00:00)"
     },
     {
-      "id": 22583,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24686,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::vitamin-d3-k2-tablets-6100017116",
@@ -1149,8 +1227,8 @@
       "details": "Vanished from storefront (last seen 2026-11-06T06:55:47+00:00)"
     },
     {
-      "id": 22582,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24685,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::novomins-kids-night-time-30-gummies-6100004528",
@@ -1162,8 +1240,8 @@
       "details": "Vanished from storefront (last seen 2026-11-01T15:19:34+00:00)"
     },
     {
-      "id": 22581,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24684,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::spatone-apple-liquid-iron-supplement-60007026",
@@ -1175,8 +1253,8 @@
       "details": "Vanished from storefront (last seen 2026-11-06T06:55:47+00:00)"
     },
     {
-      "id": 22580,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24683,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::vitabiotics-wellwoman-max-60014246",
@@ -1188,8 +1266,8 @@
       "details": "Vanished from storefront (last seen 2026-11-06T06:55:47+00:00)"
     },
     {
-      "id": 22579,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24682,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-conditioner-creme-with-rosemary-oil-bamboo-extract-vitamin-e-100ml-6100008146",
@@ -1201,8 +1279,8 @@
       "details": "Vanished from storefront (last seen 2026-11-01T15:19:34+00:00)"
     },
     {
-      "id": 22578,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24681,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-liposomal-vitamin-c-1000mg-capsules-60-capsules-6100004524",
@@ -1214,8 +1292,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:33+00:00)"
     },
     {
-      "id": 22577,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24680,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-liposomal-hair-max-raspberry-14-sachets-6102209429",
@@ -1227,8 +1305,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:33+00:00)"
     },
     {
-      "id": 22576,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24679,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::vitabiotics-wellwoman-capsules-60088966",
@@ -1240,8 +1318,8 @@
       "details": "Vanished from storefront (last seen 2026-10-28T15:16:39+00:00)"
     },
     {
-      "id": 22575,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24678,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-eye-cream-with-cucumber-hyaluronic-acid-coffee-60062671",
@@ -1253,8 +1331,8 @@
       "details": "Vanished from storefront (last seen 2026-10-28T15:16:39+00:00)"
     },
     {
-      "id": 22574,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24677,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::bioglan-smartminds-magnesium-night-time-60-gummies-6100006091",
@@ -1266,8 +1344,8 @@
       "details": "Vanished from storefront (last seen 2026-10-28T15:16:39+00:00)"
     },
     {
-      "id": 22573,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24676,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::magnesium-complex-4in1-glycinate-citrate-malate-oxide-120-capsules-6100025544",
@@ -1279,8 +1357,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:33+00:00)"
     },
     {
-      "id": 22572,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24675,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-liposomaal-vitamin-c-1000-mg-6100004522",
@@ -1292,8 +1370,8 @@
       "details": "Vanished from storefront (last seen 2026-10-28T15:16:39+00:00)"
     },
     {
-      "id": 22571,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24674,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-shampoo-creme-with-coconut-and-rosemary-oil-100ml-6100007878",
@@ -1305,8 +1383,8 @@
       "details": "Vanished from storefront (last seen 2026-10-28T15:16:39+00:00)"
     },
     {
-      "id": 22570,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24673,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::beauty-advent-calendar-2026-6101407249",
@@ -1318,8 +1396,8 @@
       "details": "Vanished from storefront (last seen 2026-10-28T15:16:39+00:00)"
     },
     {
-      "id": 22569,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24672,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::energy-focus-peach-flavour-30-sachets-6100006281",
@@ -1331,8 +1409,8 @@
       "details": "Vanished from storefront (last seen 2026-10-28T15:16:39+00:00)"
     },
     {
-      "id": 22568,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24671,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::zooki-super-strength-marine-collagen-11000mg-14-sachets-6100014357",
@@ -1344,8 +1422,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:33+00:00)"
     },
     {
-      "id": 22567,
-      "occurred_at": "2026-11-18T17:22:11+00:00",
+      "id": 24670,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
       "sku_key": "hollandandbarrett.com::wild-nutrition::upcircle-peptide-serum-with-upcycled-custard-apple-blood-orange-30ml-6100009043",
@@ -1357,311 +1435,90 @@
       "details": "Vanished from storefront (last seen 2026-11-15T15:48:33+00:00)"
     },
     {
-      "id": 22566,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
+      "id": 24669,
+      "occurred_at": "2026-11-21T12:43:04+00:00",
+      "domain": "hollandandbarrett.com",
       "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::food-grown-endo-support::44808984953021",
-      "product_title": "Endo Support",
-      "variant_title": "Refill Pouch - 30 days supply",
+      "sku_key": "hollandandbarrett.com::wild-nutrition::wild-nutrition-food-grown-high-fibre-plus-14-servings-134-4-g-6102194282",
+      "product_title": "Wild Nutrition Food-Grown High Fibre Plus - 14 servings 134.4 g 25% Off",
+      "variant_title": "4 g",
       "event_type": "PRICE_CHANGED",
-      "old_price": 56.0,
-      "new_price": 55.0,
-      "details": "Price changed 56.0 -> 55.0"
+      "old_price": 28.0,
+      "new_price": 21.0,
+      "details": "Price changed 28.0 -> 21"
     },
     {
-      "id": 22565,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
+      "id": 24668,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
       "domain": "wildnutrition.com",
       "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::food-grown-endo-support::44808984920253",
-      "product_title": "Endo Support",
-      "variant_title": "Refillable Glass Jar - 30 days supply",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 56.0,
-      "new_price": 55.0,
-      "details": "Price changed 56.0 -> 55.0"
-    },
-    {
-      "id": 22564,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::complete-beauty-support::42548697006269",
-      "product_title": "Complete Beauty Support",
-      "variant_title": "Refill Pouch - 30 days supply",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 56.0,
-      "new_price": 55.0,
-      "details": "Price changed 56.0 -> 55.0"
-    },
-    {
-      "id": 22563,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::complete-beauty-support::42548696973501",
-      "product_title": "Complete Beauty Support",
-      "variant_title": "Refillable Glass Jar - 30 days supply",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 56.0,
-      "new_price": 55.0,
-      "details": "Price changed 56.0 -> 55.0"
-    },
-    {
-      "id": 22562,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::natural-glow::40145897652413",
-      "product_title": "Natural Glow",
-      "variant_title": "Travel/Refill Pouch",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 98.0,
-      "new_price": 97.0,
-      "details": "Price changed 98.0 -> 97.0"
-    },
-    {
-      "id": 22561,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::natural-glow::39859772981437",
-      "product_title": "Natural Glow",
-      "variant_title": "Refillable Glass Jar",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 98.0,
-      "new_price": 97.0,
-      "details": "Price changed 98.0 -> 97.0"
-    },
-    {
-      "id": 22560,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::breastfeeding-support-trio-pouch-refill::43987266633917",
-      "product_title": "Breastfeeding Support Trio (Pouch Refill)",
+      "sku_key": "wildnutrition.com::wild-nutrition::breastfeeding-support-duo-1::43987292651709",
+      "product_title": "Breastfeeding Support Duo (Pouch Refill)",
       "variant_title": "Default Variant",
       "event_type": "PRICE_CHANGED",
-      "old_price": 144.0,
-      "new_price": 143.0,
-      "details": "Price changed 144.0 -> 143.0"
+      "old_price": 108.0,
+      "new_price": 107.0,
+      "details": "Price changed 108.0 -> 107.0"
     },
     {
-      "id": 22559,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
+      "id": 24667,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
       "domain": "wildnutrition.com",
       "brand": "Wild Nutrition",
       "sku_key": "wildnutrition.com::wild-nutrition::endo-support-trio-pouch-refill::44028813181117",
       "product_title": "Endo Support Trio (Pouch Refill)",
       "variant_title": "Default Variant",
       "event_type": "PRICE_CHANGED",
-      "old_price": 164.0,
-      "new_price": 163.0,
-      "details": "Price changed 164.0 -> 163.0"
+      "old_price": 163.0,
+      "new_price": 162.0,
+      "details": "Price changed 163.0 -> 162.0"
     },
     {
-      "id": 22558,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
+      "id": 24666,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
       "domain": "wildnutrition.com",
       "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::natural-energy-duo-pouch-refill::43986811650237",
-      "product_title": "Natural Energy Duo (Pouch Refill)",
+      "sku_key": "wildnutrition.com::wild-nutrition::skin-health-duo-pouch-refill::43986835931325",
+      "product_title": "Skin Health Duo (Pouch Refill)",
       "variant_title": "Default Variant",
       "event_type": "PRICE_CHANGED",
-      "old_price": 101.0,
-      "new_price": 100.0,
-      "details": "Price changed 101.0 -> 100.0"
+      "old_price": 108.0,
+      "new_price": 107.0,
+      "details": "Price changed 108.0 -> 107.0"
     },
     {
-      "id": 22557,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
+      "id": 24665,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
       "domain": "wildnutrition.com",
       "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::mental-resilience-duo-pouch-refill::43986821677245",
-      "product_title": "Mental Resilience Duo (Pouch Refill)",
+      "sku_key": "wildnutrition.com::wild-nutrition::joint-bone-support-trio-pouch-refill::43987257917629",
+      "product_title": "Joint + Bone Support Trio (Pouch Refill)",
       "variant_title": "Default Variant",
       "event_type": "PRICE_CHANGED",
-      "old_price": 89.0,
-      "new_price": 88.0,
-      "details": "Price changed 89.0 -> 88.0"
+      "old_price": 157.0,
+      "new_price": 156.0,
+      "details": "Price changed 157.0 -> 156.0"
     },
     {
-      "id": 22556,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::mens-fertility-duo-pouch-refill::43986819612861",
-      "product_title": "Men's Fertility Duo (Pouch Refill)",
-      "variant_title": "Default Variant",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 110.0,
-      "new_price": 109.0,
-      "details": "Price changed 110.0 -> 109.0"
-    },
-    {
-      "id": 22555,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::pregnancy-new-mother-duo-pouch-refill::43987284590781",
-      "product_title": "Pregnancy + New Mother Duo (Pouch Refill)",
-      "variant_title": "Default Variant",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 93.0,
-      "new_price": 92.0,
-      "details": "Price changed 93.0 -> 92.0"
-    },
-    {
-      "id": 22554,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::womens-fertility-duo-pouch-refill::43986806603965",
-      "product_title": "Women's Fertility Duo (Pouch Refill)",
-      "variant_title": "Default Variant",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 110.0,
-      "new_price": 109.0,
-      "details": "Price changed 110.0 -> 109.0"
-    },
-    {
-      "id": 22553,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
+      "id": 24664,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
       "domain": "wildnutrition.com",
       "brand": "Wild Nutrition",
       "sku_key": "wildnutrition.com::wild-nutrition::pregnancy-new-mother-support-trio-3-month-supply::44351181062333",
       "product_title": "Pregnancy + New Mother Support Trio (Pouch Refill)",
       "variant_title": "Default Variant",
       "event_type": "PRICE_CHANGED",
-      "old_price": 147.0,
-      "new_price": 146.0,
-      "details": "Price changed 147.0 -> 146.0"
+      "old_price": 146.0,
+      "new_price": 145.0,
+      "details": "Price changed 146.0 -> 145.0"
     },
     {
-      "id": 22552,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
+      "id": 24663,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
       "domain": "wildnutrition.com",
       "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::pregnancy-new-mother-duo::42825425453245",
-      "product_title": "Pregnancy + New Mother Duo",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 93.0,
-      "new_price": 92.0,
-      "details": "Price changed 93.0 -> 92.0"
-    },
-    {
-      "id": 22551,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::womens-fertility-duo::41334197944509",
-      "product_title": "Women's Fertility Duo",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 110.0,
-      "new_price": 109.0,
-      "details": "Price changed 110.0 -> 109.0"
-    },
-    {
-      "id": 22550,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::natural-energy-duo::40334823096509",
-      "product_title": "Natural Energy Duo",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 101.0,
-      "new_price": 100.0,
-      "details": "Price changed 101.0 -> 100.0"
-    },
-    {
-      "id": 22549,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::stress-support-duo::40333412171965",
-      "product_title": "Mental Resilience Duo",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 89.0,
-      "new_price": 88.0,
-      "details": "Price changed 89.0 -> 88.0"
-    },
-    {
-      "id": 22548,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::pregnancy-new-mother-support-trio::42645072249021",
-      "product_title": "Pregnancy + New Mother Support Trio",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 147.0,
-      "new_price": 146.0,
-      "details": "Price changed 147.0 -> 146.0"
-    },
-    {
-      "id": 22547,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::breastfeeding-support-trio::42645049508029",
-      "product_title": "Breastfeeding Support Trio",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 144.0,
-      "new_price": 143.0,
-      "details": "Price changed 144.0 -> 143.0"
-    },
-    {
-      "id": 22546,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::men-and-womens-fertility-duo-pouch-refill::44664276451517",
-      "product_title": "Men and Women's Fertility Duo (Pouch Refill)",
-      "variant_title": "Default Variant",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 114.0,
-      "new_price": 113.0,
-      "details": "Price changed 114.0 -> 113.0"
-    },
-    {
-      "id": 22545,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::men-womens-fertility-duo::44634305790141",
-      "product_title": "Men and Women's Fertility Duo",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 114.0,
-      "new_price": 113.0,
-      "details": "Price changed 114.0 -> 113.0"
-    },
-    {
-      "id": 22544,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::food-grown®-omega-3-3-months-supply::43214111768765",
-      "product_title": "Food-Grown® Omega 3 (3 Months Supply)",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 158.0,
-      "new_price": 157.0,
-      "details": "Price changed 158.0 -> 157.0"
-    },
-    {
-      "id": 22543,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
-      "domain": "wildnutrition.com",
-      "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::food-grown®-ashwagandha-plus-3-months-supply::43214114619581",
-      "product_title": "Food-Grown® KSM-66 Ashwagandha Plus (3 Months Supply)",
+      "sku_key": "wildnutrition.com::wild-nutrition::breastfeeding-support-duo::42825431154877",
+      "product_title": "Breastfeeding Support Duo",
       "variant_title": "Standard",
       "event_type": "PRICE_CHANGED",
       "old_price": 108.0,
@@ -1669,17 +1526,160 @@
       "details": "Price changed 108.0 -> 107.0"
     },
     {
-      "id": 22542,
-      "occurred_at": "2026-11-18T17:21:31+00:00",
+      "id": 24662,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
       "domain": "wildnutrition.com",
       "brand": "Wild Nutrition",
-      "sku_key": "wildnutrition.com::wild-nutrition::food-grown®-pregnancy-new-mother-support-3-months-supply::43214121304253",
-      "product_title": "Food-Grown® Pregnancy + New Mother Multi (3 Months Supply)",
+      "sku_key": "wildnutrition.com::wild-nutrition::skin-health-supplements-duo::42140454027453",
+      "product_title": "Skin Health Duo",
       "variant_title": "Standard",
       "event_type": "PRICE_CHANGED",
-      "old_price": 170.0,
-      "new_price": 169.0,
-      "details": "Price changed 170.0 -> 169.0"
+      "old_price": 108.0,
+      "new_price": 107.0,
+      "details": "Price changed 108.0 -> 107.0"
+    },
+    {
+      "id": 24661,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::joint-bone-support-trio::42645227045053",
+      "product_title": "Joint + Bone Support Trio",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 157.0,
+      "new_price": 156.0,
+      "details": "Price changed 157.0 -> 156.0"
+    },
+    {
+      "id": 24660,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::pregnancy-new-mother-support-trio::42645072249021",
+      "product_title": "Pregnancy + New Mother Support Trio",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 146.0,
+      "new_price": 145.0,
+      "details": "Price changed 146.0 -> 145.0"
+    },
+    {
+      "id": 24659,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::endo-support-bundle::41504455917757",
+      "product_title": "Endo Support Trio",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 163.0,
+      "new_price": 162.0,
+      "details": "Price changed 163.0 -> 162.0"
+    },
+    {
+      "id": 24658,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::future-skin::44975881683133",
+      "product_title": "Future Skin Duo",
+      "variant_title": "Default Variant",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 106.0,
+      "new_price": 105.0,
+      "details": "Price changed 106.0 -> 105.0"
+    },
+    {
+      "id": 24657,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::future-skin-duo-pouch-refill::44989133095101",
+      "product_title": "Future Skin Duo ( Pouch Refill )",
+      "variant_title": "Default Variant",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 106.0,
+      "new_price": 105.0,
+      "details": "Price changed 106.0 -> 105.0"
+    },
+    {
+      "id": 24656,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::metabolic-beauty-duo::45291588059325",
+      "product_title": "Metabolic Beauty Duo",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 114.0,
+      "new_price": 113.0,
+      "details": "Price changed 114.0 -> 113.0"
+    },
+    {
+      "id": 24655,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::metabolic-beauty-duo-pouch-refill::45291642126525",
+      "product_title": "Metabolic Beauty Duo ( Pouch Refill )",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 114.0,
+      "new_price": 113.0,
+      "details": "Price changed 114.0 -> 113.0"
+    },
+    {
+      "id": 24654,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::complete-weight-management-trio::45293834240189",
+      "product_title": "Complete Weight Management Trio",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 168.0,
+      "new_price": 167.0,
+      "details": "Price changed 168.0 -> 167.0"
+    },
+    {
+      "id": 24653,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::complete-weight-management-trio-pouch-refill::45293906591933",
+      "product_title": "Complete Weight Management Trio ( Pouch Refill )",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 168.0,
+      "new_price": 167.0,
+      "details": "Price changed 168.0 -> 167.0"
+    },
+    {
+      "id": 24652,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::complete-45-weight-management-trio::45293952729277",
+      "product_title": "Complete 45+ Weight Management Trio",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 168.0,
+      "new_price": 167.0,
+      "details": "Price changed 168.0 -> 167.0"
+    },
+    {
+      "id": 24651,
+      "occurred_at": "2026-11-21T12:42:23+00:00",
+      "domain": "wildnutrition.com",
+      "brand": "Wild Nutrition",
+      "sku_key": "wildnutrition.com::wild-nutrition::complete-45-weight-management-trio-pouch-refill::45293961380029",
+      "product_title": "Complete 45+ Weight Management Trio ( Pouch Refill )",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 168.0,
+      "new_price": 167.0,
+      "details": "Price changed 168.0 -> 167.0"
     }
   ]
 }

@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Artah
 
-- **Generated:** 2026-11-18 17:31 UTC
+- **Generated:** 2026-11-21 12:52 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 179 (177 In Stock | **2 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **15**
+- **Removed / Delisted Variants:** **16**
 
 ---
 
@@ -48,21 +48,22 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `artah.co` | Metabolism Foundations | Bundle | £82.80 | 2026-11-18T17:31:03+00:00 |
-| `artah.co` | Metabolism Foundations | Quarterly Bundle | £248.40 | 2026-11-18T17:31:03+00:00 |
-| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.53 Wild Nutrition Food Grown Daily Multi Nutrient for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.50 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.6 Wild Nutrition Food Grown Daily Multi Nutrient 45+for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.7 Philip Kingsley Elasticizer Extreme 150ml | 150ml | £41.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.78 Philip Kingsley Elasticizer 150ml | 150ml | £41.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | 5 Wild Nutrition Immune Support: 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £37.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-18T17:31:40+00:00 |
-| `hollandandbarrett.com` | Wild Nutrition Food-Grown Biotic Gummies for Children Berry 60 Gummies 3 for 2 Mix & Match | Standard | £20.00 | 2026-11-18T17:31:40+00:00 |
+| `artah.co` | Metabolism Foundations | Bundle | £82.80 | 2026-11-21T12:51:34+00:00 |
+| `artah.co` | Metabolism Foundations | Quarterly Bundle | £248.40 | 2026-11-21T12:51:34+00:00 |
+| `hollandandbarrett.com` | 3.59 Philip Kingsley Density Scalp Drops 85ml | 85ml | £55.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.44 Wild Nutrition Energy Support 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £31.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.45 Philip Kingsley Density Shampoo 200ml | 200ml | £32.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.53 Wild Nutrition Food Grown Daily Multi Nutrient for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.50 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.6 Wild Nutrition Food Grown Daily Multi Nutrient 45+for Women 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £39.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.7 Philip Kingsley Elasticizer Extreme 150ml | 150ml | £41.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.78 Philip Kingsley Elasticizer 150ml | 150ml | £41.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.8 Wild Nutrition Vitamin C Plus 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £26.50 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.81 Philip Kingsley Swimcap Water Resistant Mask 100ml | 100ml | £26.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 4.92 Philip Kingsley Moisture Extreme Conditioner 200ml | 200ml | £29.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | 5 Wild Nutrition Immune Support: 60 Capsules 3 for 2 Mix & Match | 60 Capsules | £37.00 | 2026-11-21T12:52:11+00:00 |
+| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-21T12:52:11+00:00 |
 
 ---
 
