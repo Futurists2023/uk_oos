@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Zooki
 
-- **Generated:** 2026-11-18 07:37 UTC
+- **Generated:** 2026-11-21 01:41 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 427 (388 In Stock | **39 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -19,42 +19,42 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | `yourzooki.com` | Ashwagandha, Liposomal Liquid Sachets | Passion Fruit / 30 servings (Save 7%) | £74.99 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Ashwagandha, Liposomal Liquid Sachets | Passion Fruit / 14 servings | £39.99 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Ashwagandha, Liposomal Liquid Sachets | Passion Fruit / 90 servings (Save 10%) | £231.06 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Ashwagandha, Liposomal Liquid Sachets | Passion Fruit / 180 servings (Save 25%) | £3.88 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Ashwagandha, Liposomal Liquid Sachets | Passion Fruit / 360 servings (Save 33%) | £6.92 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Creatine+ for Women | Summer fruits / 7 servings | £18.00 | 2026-11-03T19:38:40+00:00 |
-| `yourzooki.com` | Creatine+ for Women | Summer fruits / 30 servings (Save 28%) | £54.00 | 2026-11-03T19:38:40+00:00 |
-| `yourzooki.com` | Creatine+ for Women | Summer fruits / 90 servings (Save 32%) | £153.00 | 2026-11-03T19:38:40+00:00 |
-| `yourzooki.com` | Creatine+ for Women | Summer fruits / 180 servings (Save 36%) | £2.87 | 2026-11-03T19:38:40+00:00 |
-| `yourzooki.com` | Creatine+ for Women | Summer fruits / 360 servings (Save 40%) | £5.39 | 2026-11-03T19:38:40+00:00 |
+| `yourzooki.com` | Ashwagandha, Liposomal Liquid Sachets | Passion Fruit / 180 servings (Save 25%) | £3.85 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Ashwagandha, Liposomal Liquid Sachets | Passion Fruit / 360 servings (Save 33%) | £6.86 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 7 servings | £18.00 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 30 servings (Save 28%) | £54.00 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 90 servings (Save 32%) | £153.00 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 180 servings (Save 36%) | £2.87 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 360 servings (Save 40%) | £5.39 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 90 servings (Save 32%) | £152.00 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 180 servings (Save 36%) | £2.85 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Electrolytes+ Energy and Focus | Peach / 360 servings (Save 40%) | £5.34 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Electrolytes+ Exercise and Recover | Cherry / 7 servings | £18.00 | 2026-11-21T01:40:29+00:00 |
+| `yourzooki.com` | Electrolytes+ Exercise and Recover | Cherry / 30 servings (Save 28%) | £54.00 | 2026-11-21T01:40:29+00:00 |
+| `yourzooki.com` | Electrolytes+ Exercise and Recover | Cherry / 90 servings (Save 32%) | £152.00 | 2026-11-21T01:40:29+00:00 |
+| `yourzooki.com` | Electrolytes+ Exercise and Recover | Cherry / 180 servings (Save 36%) | £2.85 | 2026-11-21T01:40:29+00:00 |
+| `yourzooki.com` | Electrolytes+ Exercise and Recover | Cherry / 360 servings (Save 40%) | £5.34 | 2026-11-21T01:40:29+00:00 |
 | `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 7 servings | £18.00 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 30 servings (Save 28%) | £54.00 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 90 servings (Save 32%) | £153.00 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 180 servings (Save 36%) | £2.87 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 360 servings (Save 40%) | £5.39 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 90 servings (Save 32%) | £152.00 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 180 servings (Save 36%) | £2.85 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Electrolytes+ Liver Health | Lemon Ginger / 360 servings (Save 40%) | £5.34 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Iron, Liposomal Liquid Sachets | Pomegranate / 30 servings (Save 7%) | £59.99 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Iron, Liposomal Liquid Sachets | Pomegranate / 14 servings | £34.99 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Iron, Liposomal Liquid Sachets | Pomegranate / 90 servings (Save 10%) | £202.17 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Iron, Liposomal Liquid Sachets | Pomegranate / 180 servings (Save 25%) | £3.24 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Iron, Liposomal Liquid Sachets | Pomegranate / 360 servings (Save 33%) | £5.78 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 30 servings (Save 7%) | £108.00 | 2026-11-07T23:49:13+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 90 servings (Save 10%) | £3.09 | 2026-11-07T23:49:13+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 180 servings (Save 25%) | £5.17 | 2026-11-07T23:49:13+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 360 servings (Save 33%) | £9.20 | 2026-11-07T23:49:13+00:00 |
+| `yourzooki.com` | Iron, Liposomal Liquid Sachets | Pomegranate / 180 servings (Save 25%) | £3.21 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Iron, Liposomal Liquid Sachets | Pomegranate / 360 servings (Save 33%) | £5.74 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 30 servings (Save 7%) | £107.00 | 2026-11-07T23:49:13+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 90 servings (Save 10%) | £3.07 | 2026-11-07T23:49:13+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 180 servings (Save 25%) | £5.13 | 2026-11-07T23:49:13+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Limited Edition Coconut Lychee / 360 servings (Save 33%) | £9.12 | 2026-11-07T23:49:13+00:00 |
 | `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 14 servings | £54.00 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 30 servings (Save 7%) | £108.00 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 90 servings (Save 10%) | £3.09 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 180 servings (Save 25%) | £5.17 | 2026-10-28T15:10:38+00:00 |
-| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 360 servings (Save 33%) | £9.20 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 30 servings (Save 7%) | £107.00 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 90 servings (Save 10%) | £3.07 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 180 servings (Save 25%) | £5.13 | 2026-10-28T15:10:38+00:00 |
+| `yourzooki.com` | Super Strength Collagen, 11,000mg | Raspberry Sorbet / 360 servings (Save 33%) | £9.12 | 2026-10-28T15:10:38+00:00 |
 | `yourzooki.com` | Vitamin C, Liposomal Capsules | 30 servings | £34.99 | 2026-11-06T06:50:44+00:00 |
 | `yourzooki.com` | Vitamin C, Liposomal Capsules | 60 servings (Save 7%) | £65.08 | 2026-11-06T06:50:44+00:00 |
 | `yourzooki.com` | Vitamin C, Liposomal Capsules | 90 servings (Save 10%) | £94.47 | 2026-11-06T06:50:44+00:00 |
-| `yourzooki.com` | Vitamin C, Liposomal Capsules | 180 servings (Save 25%) | £151.00 | 2026-11-06T06:50:44+00:00 |
-| `yourzooki.com` | Vitamin C, Liposomal Capsules | 360 servings (Save 33%) | £2.70 | 2026-11-06T06:50:44+00:00 |
+| `yourzooki.com` | Vitamin C, Liposomal Capsules | 180 servings (Save 25%) | £150.00 | 2026-11-06T06:50:44+00:00 |
+| `yourzooki.com` | Vitamin C, Liposomal Capsules | 360 servings (Save 33%) | £2.68 | 2026-11-06T06:50:44+00:00 |
 
 ---
 
@@ -63,17 +63,15 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
 | **Zooki Electrolytes+ Skin Radiance, Pomegranate Flavour - 30 Sachets** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
+| **Zooki Liposomal Men’s Multivitamin And Daily Nutrient Complex Capsules 30 Day Supply** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **Zooki Liposomal Vitamin C 1,000mg, Citrus Orange Flavour - 30x15ml Liquid Sachets** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
 | **Zooki Liposomal Women’s Multivitamin And Daily Nutrient Complex Capsules 30 Day Supply** | Retail Only | **3/3** (100%) | `boots.com`, `hollandandbarrett.com`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
-| **Zooki Electrolytes+ Exercise & Recover, Cherry Flavour - 30 Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
 | **Zooki Liposomal Astaxanthin 8mg Capsules - 30 Day Supply** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **Zooki Liposomal Glutathione 500mg Capsules - 30 Day Supply** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
-| **Zooki Liposomal Men’s Multivitamin And Daily Nutrient Complex Capsules 30 Day Supply** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **Zooki Liposomal NAD+ 300mg Capsules - 30 Day Supply** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
 | **Zooki Liposomal Vitamin B12 2500mcg, Strawberry Flavour - 14x10ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **Zooki Liposomal Vitamin C 1000mg Capsules 30 Day Supply** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
 | **Zooki Liposomal Vitamin D3 + K2 3,000iu, Mixed Berry Flavour - 14x10ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
-| **Zooki Liposomal Vitamin D3 + K2 3,000iu, Mixed Berry Flavour - 30x10ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
 | **Zooki Marine Collagen 5,000mg, Mango Peach Flavour - 14x15ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
 | **Zooki Super Strength Marine Collagen 11,000mg, Sour Cherry Flavour -14x18.5ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `hollandandbarrett.com` | - | At RRP | `lookfantastic.com` |
 | **Zooki Super Strength Marine Collagen 11,000mg, Variety Pack - 14x18.5ml Liquid Sachets** | Retail Only | **2/3** (67%) | `boots.com`, `lookfantastic.com` | - | At RRP | `hollandandbarrett.com` |
@@ -85,21 +83,21 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 18+ Zooki Creatine+ For Men Powder Wild Berry Flavour 30 Sachets | 30 Sachets | £39.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 7 Sachets | 7 Sachets | £12.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Collagen Glow Heroes - Gift Set 13% Off | Standard | £34.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Kids Immune Support Liquid Sachets - Vitamin C & Vitamin D3 + K2 Berry 14 Sachets | 14 Sachets | £14.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Kids Immune Support Liquid Sachets - Vitamin C & Vitamin D3 + K2 Berry 30 Sachets 3 for 2 Mix & Match | 30 Sachets | £29.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Hair Max Raspberry 30 Sachets Buy 1 Get 1 Half Price | 30 Sachets | £59.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Hyaluronic Acid 200mg Capsules - 30 Day Supply | Standard | £19.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Men’s Multivitamin + Daily Nutrient Complex Capsules - 30 Day Supply 60 Capsules | 60 Capsules | £39.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Turmeric Curcumin Tangerine Flavour 750mg 14 Sachets | 14 Sachets | £29.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Vitamin B12 2500mcg Strawberry Flavour 14 x 10ml Liquid Sachets | 10ml | £24.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Vitamin C 1,000mg 14 Sachets | 14 Sachets | £24.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Liposomal Vitamin C 1,000mg, Watermelon Flavour - 14x15ml Liquid Sachets 20% Off | 15ml | £19.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Marine Collagen 5,000mg Berry Flavour 14 Sachets | 14 Sachets | £29.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Marine Collagen 5,000mg Berry Flavour 30 Sachets | 30 Sachets | £59.99 | 2026-11-18T07:37:35+00:00 |
-| `hollandandbarrett.com` | Zooki Super Strength Marine Collagen 11,000mg Variety Pack 30 Sachets | 30 Sachets | £79.99 | 2026-11-18T07:37:35+00:00 |
+| `hollandandbarrett.com` | 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 30 Sachets | 30 Sachets | £39.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | 18+ Zooki Electrolytes+ Energy & Focus, Peach Flavour 7 Sachets | 7 Sachets | £12.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Collagen Glow Heroes - Gift Set 13% Off | Standard | £34.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Electrolytes+ Exercise & Recover, Cherry Flavour - 30 Sachets | 30 Sachets | £39.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Frosted Glass Bottle 750ml 1 Each | 750ml | £19.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Kids Immune Support Liquid Sachets - Vitamin C & Vitamin D3 + K2 Berry 14 Sachets | 14 Sachets | £14.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Ashwagandha KSM-66 500mg 60 Capsules | 60 Capsules | £34.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Hair Max Raspberry 30 Sachets Buy 1 Get 1 Half Price | 30 Sachets | £59.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Hyaluronic Acid 200mg Capsules - 30 Day Supply | Standard | £19.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Vitamin B12 2500mcg Strawberry Flavour 14 x 10ml Liquid Sachets | 10ml | £24.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Vitamin C 1,000mg, Watermelon Flavour - 14x15ml Liquid Sachets 20% Off | 15ml | £19.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Liposomal Vitamin D3 + K2 3,000iu, Mixed Berry Flavour - 30x10ml Liquid Sachets | 10ml | £39.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Marine Collagen 5,000mg Berry Flavour 14 Sachets | 14 Sachets | £29.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Super Strength Marine Collagen 11,000mg Blackcurrant Flavour 30 Sachet | Standard | £79.99 | 2026-11-21T01:41:10+00:00 |
+| `hollandandbarrett.com` | Zooki Super Strength Marine Collagen 11,000mg Variety Pack 30 Sachets | 30 Sachets | £79.99 | 2026-11-21T01:41:10+00:00 |
 
 ---
 

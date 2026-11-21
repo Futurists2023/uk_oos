@@ -1,32 +1,28 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-11-17 23:40 UTC
+- **Generated:** 2026-11-21 01:35 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 94 (83 In Stock | **11 OOS**)
-- **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **3**
+- **Total Tracked Variants:** 95 (89 In Stock | **6 OOS**)
+- **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **6**
 
 ---
 
 ## 1A. Major UK Retailer Out-of-Stock Alerts (Cross-Checked Against Official DTC)
 
-_All tracked variants across monitored UK retail stockists are currently In Stock._
+| Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
+|---|---|---|---|---|---|---|---|
+| `cultbeauty.co.uk` | Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush | Standard | £7.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-21 01:35 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
 | Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
 |---|---|---|---|---|
-| `spectrumcollections.com` | Ace in Beauty 4 Piece Brush Set | Standard | £19.99 | 2026-10-28T05:50:59+00:00 |
-| `spectrumcollections.com` | Four of a Kind 4 Piece Sponge and Puff Set | Standard | £14.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Gilded Glamour 3 Piece Luxe Dual Ended Makeup Brush Set | Standard | £49.99 | 2026-10-28T05:50:59+00:00 |
-| `spectrumcollections.com` | Grand Brush Hotel Carry on Complexion 4 Piece Puff and Sponge Set | Standard | £14.99 | 2026-10-28T05:50:59+00:00 |
-| `spectrumcollections.com` | Grand Brush Hotel Mini Bar 4 Piece Mini Brush Set | Standard | £19.99 | 2026-10-28T05:50:59+00:00 |
-| `spectrumcollections.com` | Grand Brush Hotel The Master Suite 9 Piece Brush, Sponge and Puff Set | Standard | £69.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Little Luxuries 6 Piece Mini Brush Set | Standard | £29.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Matcha 4 Piece Sponge Set | Standard | £19.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Pink Blending Makeup Sponge | Standard | £6.99 | 2026-10-28T05:50:59+00:00 |
 | `spectrumcollections.com` | Spectrum Patisserie Box | Standard | £34.99 | 2026-10-28T05:50:59+00:00 |
-| `spectrumcollections.com` | The Full House 10 Piece Brush, Sponge and Puff Set | Standard | £69.99 | 2026-10-28T05:50:59+00:00 |
 
 ---
 
@@ -37,17 +33,18 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | **All About The Brush  6 Piece Flawless Face Set** | ✅ £24.99 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £18.74 (-25% vs RRP) | `boots.com` |
 | **Spectrum Collections Dual Ended D02 'The Cheek' Contour and Blush Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Dual Ended D28 'The Complexion' Bronzer and Base Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **Spectrum Collections Dual Ended D30 'The Air Brush' Powder and Complexion Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **Spectrum Collections KJH Number 2 Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections KJH Number 4 Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections KJH Number 8 Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine 5 Piece Face Set** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine A68 Large Angled Powder Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine B27 Angled Buffing Foundation Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine Beautcase Vanity Case with 12-piece Makeup Brush Set (Worth £129.99)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine D17 Large Duo Fibre Foundation Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections SC020 Wonder Sponge - Pink** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **Spectrum Collections Smooth & Set Dual-Texture Puff Duo** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **Spectrum Collections 'The Flawless Minis' 4-piece Brush and Powder Puff Set** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **Spectrum Collections Velvet Rose Vegan Brush and Sponge Cleaning Soap** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 
 ---
 
@@ -55,9 +52,12 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | Spectrum Collections KJH Number 2 Brush | Standard | £19.99 | 2026-11-17T23:39:50+00:00 |
-| `lookfantastic.com` | Spectrum Collections Gilded Glamour 3-Piece Luxury Dual Ended Makeup Brush Set | Standard | £34.99 | 2026-11-17T23:40:07+00:00 |
-| `lookfantastic.com` | Spectrum Collections Pantherine 6 Piece Sponges Bundle | Standard | £14.99 | 2026-11-17T23:40:07+00:00 |
+| `lookfantastic.com` | Spectrum Collections 'The Blur and Set' Luxe Foundation and Powder Brush Duo | Standard | £22.49 | 2026-11-21T01:35:28+00:00 |
+| `lookfantastic.com` | Spectrum Collections Dual Ended D27 'The Flawless Foundation' Duo Fibre Brush | Standard | £11.99 | 2026-11-21T01:35:28+00:00 |
+| `lookfantastic.com` | Spectrum Collections Dual Ended D30 'The Air Brush' Powder and Complexion Brush | Standard | £12.74 | 2026-11-21T01:35:28+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine 6 Piece Sponges Bundle | Standard | £14.99 | 2026-11-21T01:35:28+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush | Standard | £5.99 | 2026-11-21T01:35:28+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush | Standard | £7.49 | 2026-11-21T01:35:28+00:00 |
 
 ---
 
@@ -66,6 +66,6 @@ _All tracked variants across monitored UK retail stockists are currently In Stoc
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/spectrum-collections |
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 18 | 18 | **0** | https://www.cultbeauty.co.uk/c/brands/spectrum-collections/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 19 | 18 | **1** | https://www.cultbeauty.co.uk/c/brands/spectrum-collections/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 28 | 28 | **0** | https://www.lookfantastic.com/c/brands/spectrum-collections/ |
-| `spectrumcollections.com` | Official Brand DTC (Master Catalog) | Shopify | 48 | 37 | **11** | https://spectrumcollections.com |
+| `spectrumcollections.com` | Official Brand DTC (Master Catalog) | Shopify | 48 | 43 | **5** | https://spectrumcollections.com |
