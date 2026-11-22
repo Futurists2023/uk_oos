@@ -1,7 +1,7 @@
 {
   "brand": "Mirror Water",
   "brand_slug": "mirror-water",
-  "generated_at": "2026-11-19T13:13:20+00:00",
+  "generated_at": "2026-11-22T06:51:47+00:00",
   "summary": {
     "monitored_uk_stores": 4,
     "monitored_retail_stockists": 3,
@@ -19,6 +19,45 @@
   "hero_benchmarks": [],
   "silent_removals": [],
   "recent_events": [
+    {
+      "id": 25184,
+      "occurred_at": "2026-11-22T06:51:45+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Mirror Water",
+      "sku_key": "ohmycream.co.uk::mirror-water::mirror-water-rub-solid-balm::43633880072364",
+      "product_title": "Rub Solid Balm",
+      "variant_title": "50 ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 32.0,
+      "new_price": 25.6,
+      "details": "Price changed 32.0 -> 25.6"
+    },
+    {
+      "id": 25183,
+      "occurred_at": "2026-11-22T06:51:45+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Mirror Water",
+      "sku_key": "ohmycream.co.uk::mirror-water::mirror-water-smooth-body-oil::43634139332780",
+      "product_title": "Smooth Body Oil",
+      "variant_title": "50 ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 27.0,
+      "new_price": 21.6,
+      "details": "Price changed 27.0 -> 21.6"
+    },
+    {
+      "id": 25182,
+      "occurred_at": "2026-11-22T06:51:45+00:00",
+      "domain": "ohmycream.co.uk",
+      "brand": "Mirror Water",
+      "sku_key": "ohmycream.co.uk::mirror-water::mirror-water-smooth-body-oil::43634139365548",
+      "product_title": "Smooth Body Oil",
+      "variant_title": "100 ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 44.0,
+      "new_price": 35.2,
+      "details": "Price changed 44.0 -> 35.2"
+    },
     {
       "id": 1335,
       "occurred_at": "2026-10-24T04:44:22+00:00",
