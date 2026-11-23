@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Evolve Organic Beauty
 
-- **Generated:** 2026-11-20 16:59 UTC
+- **Generated:** 2026-11-23 01:00 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 3 (3 In Stock | **0 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -29,18 +29,18 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `planetorganic.com` | Evolve JOYFUL LIGHT ESSENCE 10ml | 47493 | £24.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Joyful Light Hand & Body Lotion 250ml | 47494 | £18.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Joyful Light Pulse Point Roll on 10ml | 47495 | £14.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Pure Tranquility Aromatic Hand & Body Lotion 250ml | 47496 | £18.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Pure Tranquility Aromatic Hand & Body Wash 250ml | 47497 | £16.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Superfood Shine Shampoo with Baobab and Pomegranate 250ml | 26729 | £16.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Vital Clarity Aromatic Wash 250ml | 47498 | £16.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Vital Clarity Essence 10ml | 47499 | £24.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Vital Clarity Hand & Body Lotion 250ml | 47500 | £18.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Vital Clarity Pulse Point Roll on 10ml | 47501 | £14.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Zen Whisper Essence 10ml | 47502 | £24.00 | 2026-11-20T16:59:40+00:00 |
-| `planetorganic.com` | Evolve Zen Whisper Pulse Point Roll on 10ml | 47503 | £14.00 | 2026-11-20T16:59:40+00:00 |
+| `planetorganic.com` | Evolve JOYFUL LIGHT ESSENCE 10ml | 47493 | £24.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Joyful Light Hand & Body Lotion 250ml | 47494 | £18.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Joyful Light Pulse Point Roll on 10ml | 47495 | £14.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Pure Tranquility Aromatic Hand & Body Lotion 250ml | 47496 | £18.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Pure Tranquility Aromatic Hand & Body Wash 250ml | 47497 | £16.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Superfood Shine Shampoo with Baobab and Pomegranate 250ml | 26729 | £16.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Vital Clarity Aromatic Wash 250ml | 47498 | £16.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Vital Clarity Essence 10ml | 47499 | £24.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Vital Clarity Hand & Body Lotion 250ml | 47500 | £18.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Vital Clarity Pulse Point Roll on 10ml | 47501 | £14.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Zen Whisper Essence 10ml | 47502 | £24.00 | 2026-11-23T00:59:59+00:00 |
+| `planetorganic.com` | Evolve Zen Whisper Pulse Point Roll on 10ml | 47503 | £14.00 | 2026-11-23T00:59:59+00:00 |
 
 ---
 

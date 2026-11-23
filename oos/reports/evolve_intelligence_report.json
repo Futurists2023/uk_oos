@@ -1,7 +1,7 @@
 {
   "brand": "Evolve Organic Beauty",
   "brand_slug": "evolve",
-  "generated_at": "2026-11-20T16:59:41+00:00",
+  "generated_at": "2026-11-23T01:00:00+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
@@ -37,7 +37,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": "2026-10-23T05:06:56+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evolve-joyful-light-hand-body-lotion-250ml::56384620953986",
@@ -58,7 +58,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evolve-joyful-light-pulse-point-roll-on-10ml::56384621019522",
@@ -79,7 +79,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evovle-pure-tranquility-aromatic-hand-body-lotion-250ml::56384621150594",
@@ -100,7 +100,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evovle-pure-tranquility-aromatic-hand-body-wash-250ml::56384621281666",
@@ -121,7 +121,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evolve-superfood-shine-shampoo-with-baobab-and-pomegranate-250ml::56027733983618",
@@ -142,7 +142,7 @@
       "last_seen_at": "2026-11-09T06:42:45+00:00",
       "first_seen_oos_at": "2026-10-23T05:06:56+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evolve-vital-clarity-aromatic-wash-250ml::56384621478274",
@@ -163,7 +163,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-essence-10ml::56384621511042",
@@ -184,7 +184,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-hand-body-lotion-250ml::56384621576578",
@@ -205,7 +205,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-pulse-point-roll-on-10ml::56384621609346",
@@ -226,7 +226,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evovle-zen-whisper-essence-10ml::56384621642114",
@@ -247,7 +247,7 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     },
     {
       "sku_key": "planetorganic.com::evolve::evovle-zen-whisper-pulse-point-roll-on-10ml::56384621674882",
@@ -268,10 +268,166 @@
       "last_seen_at": "2026-10-31T20:10:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T20:10:05+00:00",
-      "silent_removed_at": "2026-11-20T16:59:40+00:00"
+      "silent_removed_at": "2026-11-23T00:59:59+00:00"
     }
   ],
   "recent_events": [
+    {
+      "id": 25874,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evolve-joyful-light-essence-10ml::56384620790146",
+      "product_title": "Evolve JOYFUL LIGHT ESSENCE 10ml",
+      "variant_title": "47493",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25873,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evolve-joyful-light-hand-body-lotion-250ml::56384620953986",
+      "product_title": "Evolve Joyful Light Hand & Body Lotion 250ml",
+      "variant_title": "47494",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 18.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25872,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evolve-joyful-light-pulse-point-roll-on-10ml::56384621019522",
+      "product_title": "Evolve Joyful Light Pulse Point Roll on 10ml",
+      "variant_title": "47495",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25871,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evovle-pure-tranquility-aromatic-hand-body-lotion-250ml::56384621150594",
+      "product_title": "Evolve Pure Tranquility Aromatic Hand & Body Lotion 250ml",
+      "variant_title": "47496",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 18.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25870,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evovle-pure-tranquility-aromatic-hand-body-wash-250ml::56384621281666",
+      "product_title": "Evolve Pure Tranquility Aromatic Hand & Body Wash 250ml",
+      "variant_title": "47497",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 16.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25869,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evolve-vital-clarity-aromatic-wash-250ml::56384621478274",
+      "product_title": "Evolve Vital Clarity Aromatic Wash 250ml",
+      "variant_title": "47498",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 16.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25868,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-essence-10ml::56384621511042",
+      "product_title": "Evolve Vital Clarity Essence 10ml",
+      "variant_title": "47499",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25867,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-hand-body-lotion-250ml::56384621576578",
+      "product_title": "Evolve Vital Clarity Hand & Body Lotion 250ml",
+      "variant_title": "47500",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 18.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25866,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-pulse-point-roll-on-10ml::56384621609346",
+      "product_title": "Evolve Vital Clarity Pulse Point Roll on 10ml",
+      "variant_title": "47501",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25865,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evovle-zen-whisper-essence-10ml::56384621642114",
+      "product_title": "Evolve Zen Whisper Essence 10ml",
+      "variant_title": "47502",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 24.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25864,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evovle-zen-whisper-pulse-point-roll-on-10ml::56384621674882",
+      "product_title": "Evolve Zen Whisper Pulse Point Roll on 10ml",
+      "variant_title": "47503",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 14.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
+    },
+    {
+      "id": 25863,
+      "occurred_at": "2026-11-23T00:59:59+00:00",
+      "domain": "planetorganic.com",
+      "brand": "Evolve Organic Beauty",
+      "sku_key": "planetorganic.com::evolve::evolve-superfood-shine-shampoo-with-baobab-and-pomegranate-250ml::56027733983618",
+      "product_title": "Evolve Superfood Shine Shampoo with Baobab and Pomegranate 250ml",
+      "variant_title": "26729",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 16.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-09T06:42:45+00:00)"
+    },
     {
       "id": 24009,
       "occurred_at": "2026-11-20T16:59:40+00:00",
@@ -763,162 +919,6 @@
       "variant_title": "47493",
       "event_type": "SILENT_REMOVED",
       "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14774,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evolve-joyful-light-hand-body-lotion-250ml::56384620953986",
-      "product_title": "Evolve Joyful Light Hand & Body Lotion 250ml",
-      "variant_title": "47494",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14773,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evolve-joyful-light-pulse-point-roll-on-10ml::56384621019522",
-      "product_title": "Evolve Joyful Light Pulse Point Roll on 10ml",
-      "variant_title": "47495",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 14.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14772,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evovle-pure-tranquility-aromatic-hand-body-lotion-250ml::56384621150594",
-      "product_title": "Evolve Pure Tranquility Aromatic Hand & Body Lotion 250ml",
-      "variant_title": "47496",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14771,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evovle-pure-tranquility-aromatic-hand-body-wash-250ml::56384621281666",
-      "product_title": "Evolve Pure Tranquility Aromatic Hand & Body Wash 250ml",
-      "variant_title": "47497",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 16.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14770,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evolve-vital-clarity-aromatic-wash-250ml::56384621478274",
-      "product_title": "Evolve Vital Clarity Aromatic Wash 250ml",
-      "variant_title": "47498",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 16.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14769,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-essence-10ml::56384621511042",
-      "product_title": "Evolve Vital Clarity Essence 10ml",
-      "variant_title": "47499",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14768,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-hand-body-lotion-250ml::56384621576578",
-      "product_title": "Evolve Vital Clarity Hand & Body Lotion 250ml",
-      "variant_title": "47500",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14767,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evovle-vital-clarity-pulse-point-roll-on-10ml::56384621609346",
-      "product_title": "Evolve Vital Clarity Pulse Point Roll on 10ml",
-      "variant_title": "47501",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 14.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14766,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evovle-zen-whisper-essence-10ml::56384621642114",
-      "product_title": "Evolve Zen Whisper Essence 10ml",
-      "variant_title": "47502",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 14765,
-      "occurred_at": "2026-11-05T01:05:22+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evovle-zen-whisper-pulse-point-roll-on-10ml::56384621674882",
-      "product_title": "Evolve Zen Whisper Pulse Point Roll on 10ml",
-      "variant_title": "47503",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 14.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 13331,
-      "occurred_at": "2026-11-03T02:24:44+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evolve-joyful-light-essence-10ml::56384620790146",
-      "product_title": "Evolve JOYFUL LIGHT ESSENCE 10ml",
-      "variant_title": "47493",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 24.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
-    },
-    {
-      "id": 13330,
-      "occurred_at": "2026-11-03T02:24:44+00:00",
-      "domain": "planetorganic.com",
-      "brand": "Evolve Organic Beauty",
-      "sku_key": "planetorganic.com::evolve::evolve-joyful-light-hand-body-lotion-250ml::56384620953986",
-      "product_title": "Evolve Joyful Light Hand & Body Lotion 250ml",
-      "variant_title": "47494",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
       "new_price": null,
       "details": "Vanished from storefront (last seen 2026-10-31T20:10:05+00:00)"
     }
