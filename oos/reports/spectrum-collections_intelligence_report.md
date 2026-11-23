@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Spectrum Collections
 
-- **Generated:** 2026-11-21 01:35 UTC
+- **Generated:** 2026-11-23 14:47 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 95 (89 In Stock | **6 OOS**)
-- **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **6**
+- **Total Tracked Variants:** 94 (87 In Stock | **7 OOS**)
+- **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **7**
 
 ---
 
@@ -12,7 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush | Standard | £7.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-21 01:35 UTC)** |
+| `cultbeauty.co.uk` | Spectrum Collections Pantherine 5 Piece Face Set | Standard | £26.24 (Discounted -25% (was £34.99)) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-23 14:46 UTC)** |
+| `cultbeauty.co.uk` | Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush | Standard | £5.99 (Discounted -25% (was £7.99)) | - | **Retail Exclusive OOS** | _None_ | **2d 13h (since 2026-11-21 01:35 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -30,13 +31,13 @@
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **All About The Brush  6 Piece Flawless Face Set** | ✅ £24.99 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £18.74 (-25% vs RRP) | `boots.com` |
+| **All About The Brush  6 Piece Flawless Face Set** | ✅ £24.99 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £18.74 (-25% vs RRP); `lookfantastic.com` £18.74 (-25% vs RRP) | `boots.com` |
 | **Spectrum Collections Dual Ended D02 'The Cheek' Contour and Blush Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Dual Ended D28 'The Complexion' Bronzer and Base Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
+| **Spectrum Collections Dual Ended D30 'The Air Brush' Powder and Complexion Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections KJH Number 2 Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections KJH Number 4 Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections KJH Number 8 Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
-| **Spectrum Collections Pantherine 5 Piece Face Set** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine A68 Large Angled Powder Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine B27 Angled Buffing Foundation Makeup Brush** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
 | **Spectrum Collections Pantherine Beautcase Vanity Case with 12-piece Makeup Brush Set (Worth £129.99)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com` |
@@ -52,12 +53,13 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | Spectrum Collections 'The Blur and Set' Luxe Foundation and Powder Brush Duo | Standard | £22.49 | 2026-11-21T01:35:28+00:00 |
-| `lookfantastic.com` | Spectrum Collections Dual Ended D27 'The Flawless Foundation' Duo Fibre Brush | Standard | £11.99 | 2026-11-21T01:35:28+00:00 |
-| `lookfantastic.com` | Spectrum Collections Dual Ended D30 'The Air Brush' Powder and Complexion Brush | Standard | £12.74 | 2026-11-21T01:35:28+00:00 |
-| `lookfantastic.com` | Spectrum Collections Pantherine 6 Piece Sponges Bundle | Standard | £14.99 | 2026-11-21T01:35:28+00:00 |
-| `lookfantastic.com` | Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush | Standard | £5.99 | 2026-11-21T01:35:28+00:00 |
-| `lookfantastic.com` | Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush | Standard | £7.49 | 2026-11-21T01:35:28+00:00 |
+| `lookfantastic.com` | Spectrum Collections 'The Blur and Set' Luxe Foundation and Powder Brush Duo | Standard | £22.49 | 2026-11-23T14:47:13+00:00 |
+| `lookfantastic.com` | Spectrum Collections 10 Piece Essential Brush Set (Worth £75.00) | Standard | £33.74 | 2026-11-23T14:47:13+00:00 |
+| `lookfantastic.com` | Spectrum Collections All About the Brush D12 "The Sculpt" Duo | Standard | £9.74 | 2026-11-23T14:47:13+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine 5 Piece Face Set | Standard | £26.24 | 2026-11-23T14:47:13+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine 6 Piece Sponges Bundle | Standard | £14.99 | 2026-11-23T14:47:13+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine A70 Large Domed Shader Makeup Brush | Standard | £5.99 | 2026-11-23T14:47:13+00:00 |
+| `lookfantastic.com` | Spectrum Collections Pantherine D04 Dewy Foundation Makeup Brush | Standard | £7.49 | 2026-11-23T14:47:13+00:00 |
 
 ---
 
@@ -66,6 +68,6 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/spectrum-collections |
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 19 | 18 | **1** | https://www.cultbeauty.co.uk/c/brands/spectrum-collections/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 28 | 28 | **0** | https://www.lookfantastic.com/c/brands/spectrum-collections/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 19 | 17 | **2** | https://www.cultbeauty.co.uk/c/brands/spectrum-collections/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 27 | 27 | **0** | https://www.lookfantastic.com/c/brands/spectrum-collections/ |
 | `spectrumcollections.com` | Official Brand DTC (Master Catalog) | Shopify | 48 | 43 | **5** | https://spectrumcollections.com |
