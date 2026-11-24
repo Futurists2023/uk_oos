@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: 111SKIN
 
-- **Generated:** 2026-11-21 12:45 UTC
+- **Generated:** 2026-11-24 03:04 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 162 (151 In Stock | **11 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**1 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
@@ -12,9 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Black Diamond Vitamin C Brightening Cleanser | Standard | £65.00 (Full Price) | £65.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **27d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Celestial Black Diamond Body Cream | Standard | - (Full Price) | £135.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `cultbeauty.co.uk` | **27d 21h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Face Masking Journal | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **27d 21h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Black Diamond Vitamin C Brightening Cleanser | Standard | £48.75 (Discounted -25% (was £65.00)) | £65.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **30d 11h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Celestial Black Diamond Body Cream | Standard | - (Full Price) | £135.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **30d 11h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Face Masking Journal | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **30d 11h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -35,20 +35,19 @@
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **Black Diamond Eye Cream** | ✅ £210.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **Black Diamond Retinol Oil** | ✅ £190.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **Celestial Black Diamond Body Cream** | ⚠️ OOS (£135.00) | **2/3** (67%) | `cultbeauty.co.uk` | **`spacenk.com`** | At RRP | `lookfantastic.com` |
+| **Black Diamond Eye Cream** | ✅ £210.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £146.25 (-30% vs RRP); `spacenk.com` £157.50 (-25% vs RRP) | `lookfantastic.com` |
+| **Black Diamond Retinol Oil** | ✅ £190.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £142.50 (-25% vs RRP); `spacenk.com` £142.50 (-25% vs RRP) | `lookfantastic.com` |
 | **111SKIN Cryo De-Puffing Eye Mask (Pack of 8)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **Cryo Revitalising Moisturiser** | ✅ £155.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **Dark Spot Correcting Serum** | ✅ £240.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
+| **Cryo Revitalising Moisturiser** | ✅ £155.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £116.25 (-25% vs RRP); `spacenk.com` £112.50 (-27% vs RRP) | `lookfantastic.com` |
+| **Dark Spot Correcting Serum** | ✅ £240.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £180.00 (-25% vs RRP); `spacenk.com` £180.00 (-25% vs RRP) | `lookfantastic.com` |
 | **111SKIN Eye Lift Gel NAC Y2 15ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **111SKIN Hyaluronic Acid Aqua Booster 20ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
 | **111SKIN Jetsetter Wallet (Worth £41.00)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **Mask Discovery Collection** | ✅ £80.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **Repair & Renew Routine** | ✅ £95.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
+| **Mask Discovery Collection** | ✅ £80.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £60.00 (-25% vs RRP); `spacenk.com` £60.00 (-25% vs RRP) | `lookfantastic.com` |
+| **111Skin Precision Peel** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
+| **Repair & Renew Routine** | ✅ £95.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £71.25 (-25% vs RRP); `spacenk.com` £71.25 (-25% vs RRP) | `lookfantastic.com` |
 | **111SKIN Repair Serum NAC Y2 15ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
 | **111SKIN Rose Gold Illuminating Eye Mask Box** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
-| **111SKIN Y Theorem Repair Light Serum NAC Y2 (30ml)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | At RRP | `lookfantastic.com` |
+| **Rose Gold Radiance Body Oil** | ✅ £85.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £63.75 (-25% vs RRP); `spacenk.com` £63.75 (-25% vs RRP) | `lookfantastic.com` |
 
 ---
 
@@ -56,27 +55,27 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `111skin.co.uk` | Dark Spot Correcting Serum | 30ml | £3.50 | 2026-11-21T12:43:49+00:00 |
-| `111skin.co.uk` | Glass Skin Trio | Standard | £3.20 | 2026-11-21T12:43:49+00:00 |
-| `111skin.co.uk` | Repair Face And Eye Trio | Standard | £3.00 | 2026-11-21T12:43:49+00:00 |
-| `111skin.co.uk` | Rose Gold Radiance Booster | 20ml | £100.00 | 2026-11-21T12:43:49+00:00 |
-| `111skin.co.uk` | Sunscreen SPF50 | 50ml | £135.00 | 2026-11-21T12:43:49+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Antioxidant Essence 100ml | 100ml | £75.00 | 2026-11-21T12:44:09+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Black Diamond Contour Gel 15ml | 15ml | £110.00 | 2026-11-21T12:44:09+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Jetsetter Wallet (Worth £41.00) | Standard | £150.00 | 2026-11-21T12:44:09+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Repair Day Cream NAC Y2 50ml | 50ml | £185.00 | 2026-11-21T12:44:09+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Repair Sunscreen SPF 50+ 50ml | 50ml | £95.00 | 2026-11-21T12:44:09+00:00 |
-| `cultbeauty.co.uk` | 111SKIN Rose Gold Radiance Body Oil 100ml | 100ml | £85.00 | 2026-11-21T12:44:09+00:00 |
-| `cultbeauty.co.uk` | 111Skin Precision Peel | Standard | £185.00 | 2026-11-21T12:44:09+00:00 |
-| `spacenk.com` | All Over Radiance Set | Standard | - | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Celestial Black Diamond Brightening Essence | Standard | £90.00 | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Cleansing Oil | Standard | £65.00 | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Jet Setter Passport | Standard | £21.00 | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Jetsetter Set | Standard | £35.00 | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Repair Day Cream NAC Y2 | Standard | £185.00 | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Repair Serum NAC Y2 | Standard | £260.00 | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Repair Sunscreen SPF50+ | Standard | £95.00 | 2026-11-21T12:45:07+00:00 |
-| `spacenk.com` | Rose Gold Duo | Standard | £136.00 | 2026-11-21T12:45:07+00:00 |
+| `111skin.co.uk` | Dark Spot Correcting Serum | 30ml | £3.50 | 2026-11-24T03:03:18+00:00 |
+| `111skin.co.uk` | Glass Skin Trio | Standard | £3.20 | 2026-11-24T03:03:18+00:00 |
+| `111skin.co.uk` | Repair Face And Eye Trio | Standard | £3.00 | 2026-11-24T03:03:18+00:00 |
+| `111skin.co.uk` | Rose Gold Radiance Booster | 20ml | £100.00 | 2026-11-24T03:03:18+00:00 |
+| `111skin.co.uk` | Sunscreen SPF50 | 50ml | £135.00 | 2026-11-24T03:03:18+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Black Diamond Contour Gel 15ml | 15ml | £110.00 | 2026-11-24T03:03:37+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Celestial Black Diamond Body Cream 160ml | 160ml | £135.00 | 2026-11-24T03:03:37+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Hyaluronic Acid Aqua Booster 20ml | 20ml | £100.00 | 2026-11-24T03:03:37+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Jetsetter Wallet (Worth £41.00) | Standard | £150.00 | 2026-11-24T03:03:37+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Repair Day Cream NAC Y2 50ml | 50ml | £185.00 | 2026-11-24T03:03:37+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Wrinkle Erasing Retinol Patches 3x35g | 35g | £150.00 | 2026-11-24T03:03:37+00:00 |
+| `cultbeauty.co.uk` | 111SKIN Y Theorem Repair Light Serum NAC Y2 (30ml) | 30ml | £240.00 | 2026-11-24T03:03:37+00:00 |
+| `spacenk.com` | All Over Radiance Set | Standard | - | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Celestial Black Diamond Brightening Essence | Standard | £90.00 | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Cleansing Oil | Standard | £65.00 | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Jet Setter Passport | Standard | £21.00 | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Jetsetter Set | Standard | £35.00 | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Repair Day Cream NAC Y2 | Standard | £185.00 | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Repair Serum NAC Y2 | Standard | £260.00 | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Repair Sunscreen SPF50+ | Standard | £95.00 | 2026-11-24T03:04:35+00:00 |
+| `spacenk.com` | Rose Gold Duo | Standard | £136.00 | 2026-11-24T03:04:35+00:00 |
 
 ---
 
