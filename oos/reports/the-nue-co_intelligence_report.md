@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: The Nue Co.
 
-- **Generated:** 2026-11-22 07:01 UTC
+- **Generated:** 2026-11-25 14:31 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 94 (79 In Stock | **15 OOS**)
-- **Retailer Out-of-Stock Alerts:** **5** (**0 Unforced Retail Outages** vs. **2 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **3**
+- **Total Tracked Variants:** 95 (81 In Stock | **14 OOS**)
+- **Retailer Out-of-Stock Alerts:** **4** (**0 Unforced Retail Outages** vs. **2 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **4**
 
 ---
 
@@ -12,11 +12,10 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £38.25 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Fragrance Discovery Trial Set | Standard | £45.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **7d 19h (since 2026-11-14 11:39 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Magnesium Ease 60ml | 60ml | £45.00 (Full Price) | £45.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **2d 7h (since 2026-11-19 23:05 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
-| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £35.00 (Full Price) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | Defence Drops & Sleep Drops Bundle (15% saving) | Standard | £28.69 (Discounted -25% (was £38.25)) | - | **Retail Exclusive OOS** | _None_ | **31d 23h (since 2026-10-24 15:04 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Fragrance Discovery Trial Set | Standard | £33.75 (Discounted -25% (was £45.00)) | - | **Retail Exclusive OOS** | _None_ | **11d 2h (since 2026-11-14 11:39 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Magnesium Ease 60ml | 60ml | £33.75 (Discounted -25% (was £45.00)) | £45.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **5d 15h (since 2026-11-19 23:05 UTC)** |
+| `cultbeauty.co.uk` | The Nue Co. Sleep Drops 30g | 30g | £26.25 (Discounted -25% (was £35.00)) | £35.00 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | _None_ | **31d 23h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -55,9 +54,10 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-11-22T07:01:27+00:00 |
-| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-11-22T07:01:27+00:00 |
-| `lookfantastic.com` | The Nue Co. Magnesium Ease 60ml | 60ml | £36.00 | 2026-11-22T07:01:44+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Barrier Clear Probiotic 15g | 15g | £65.00 | 2026-11-25T14:31:04+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Defense Drops 30g | 30g | £45.00 | 2026-11-25T14:31:04+00:00 |
+| `cultbeauty.co.uk` | The Nue Co. Pre+Pro & Defence Drops | Standard | £62.05 | 2026-11-25T14:31:04+00:00 |
+| `lookfantastic.com` | The Nue Co. Magnesium Ease 60ml | 60ml | £36.00 | 2026-11-25T14:31:22+00:00 |
 
 ---
 
@@ -65,7 +65,7 @@
 
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 31 | 26 | **5** | https://www.cultbeauty.co.uk/c/brands/the-nue-co/ |
+| `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 28 | **4** | https://www.cultbeauty.co.uk/c/brands/the-nue-co/ |
 | `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 10 | 10 | **0** | https://www.lookfantastic.com/c/brands/the-nue-co/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 0 | 0 | **0** | https://www.spacenk.com/uk/brands/t/the-nue-co |
 | `uk.thenueco.com` | Official Brand DTC (Master Catalog) | Shopify | 53 | 43 | **10** | https://uk.thenueco.com |

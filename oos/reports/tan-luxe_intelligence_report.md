@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Tan-Luxe
 
-- **Generated:** 2026-11-22 07:00 UTC
+- **Generated:** 2026-11-25 14:30 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 96 (83 In Stock | **13 OOS**)
 - **Retailer Out-of-Stock Alerts:** **6** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,12 +12,12 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Glyco Water Exfoliating Tan Remover & Primer | Standard | £24.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Super Glow Body Hyaluronic Self-Tan Serum | Standard | £36.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Tan-Luxe Super Glow Hyaluronic Self-Tan Serum 50ml | 50ML | £45.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `lookfantastic.com` | **28d 15h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Tanning Mitt | Standard | £10.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Crème | Standard | £39.00 (Below DTC RRP -28% (DTC £54.00)) | £54.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Super Bundle | Standard | £60.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **28d 15h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Glyco Water Exfoliating Tan Remover & Primer | Standard | £16.80 (Discounted -30% (was £24.00)) | - | **Retail Exclusive OOS** | _None_ | **31d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Super Glow Body Hyaluronic Self-Tan Serum | Standard | £25.20 (Discounted -30% (was £36.00)) | - | **Retail Exclusive OOS** | _None_ | **31d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Tan-Luxe Super Glow Hyaluronic Self-Tan Serum 50ml | 50ML | £31.50 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 2 other retailers)** | `cultbeauty.co.uk`, `lookfantastic.com` | **31d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Tanning Mitt | Standard | £10.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **31d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Crème | Standard | £27.30 (Discounted -30% (was £39.00)) | £54.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **31d 23h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The Super Bundle | Standard | £42.00 (Discounted -30% (was £60.00)) | - | **Retail Exclusive OOS** | _None_ | **31d 23h (since 2026-10-24 15:04 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -41,19 +41,19 @@
 | **Tan-Luxe Sci Tech Sunscreen Photo-Adaptive Body Mist SPF 30 200ml** | Retail Only | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Tan-Luxe Sci Tech Sunscreen Photo-Adaptive Face Gel SPF 50 50ml** | Retail Only | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Tan-Luxe Super Glow Hyaluronic Self-Tan Serum 30ml** | Retail Only | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
-| **The Illuminator** | ✅ £38.00 | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `lookfantastic.com` £30.40 (-20% vs RRP) | `boots.com` |
+| **The Illuminator** | ✅ £38.00 | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £28.50 (-25% vs RRP); `lookfantastic.com` £30.40 (-20% vs RRP); `spacenk.com` £26.60 (-30% vs RRP) | `boots.com` |
 | **Tan Luxe The Kabuki Brush** | Retail Only | **3/4** (75%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | `boots.com` |
 | **Tan-Luxe Sci Tech Sunscreen Photo-Adaptive Face Gel SPF 30 50ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Body Illuminating Self-Tan Drops 50ml - Light/Medium** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Body Illuminating Self-Tan Drops 50ml - Medium/Dark** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
-| **The Body** | ⚠️ OOS (£66.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £19.00 (-71% vs RRP); `lookfantastic.com` £14.25 (-78% vs RRP) | `boots.com`, `spacenk.com` |
+| **The Body** | ⚠️ OOS (£66.00) | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £14.25 (-78% vs RRP); `lookfantastic.com` £14.25 (-78% vs RRP) | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Butter Illuminating Gradual Tan Butter 200ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Face Anti-Age Rejuvenating Self-Tan Drops 30ml - Light/Medium** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Face + Body Duo** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Face Illuminating Self-Tan Drops 30ml - Light/Medium** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Face Illuminating Self-Tan Drops 30ml - Medium/Dark** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
-| **The Face** | ✅ £55.00 | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £15.00 (-73% vs RRP); `lookfantastic.com` £12.00 (-78% vs RRP) | `boots.com`, `spacenk.com` |
-| **The Face** | ✅ £55.00 | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £15.00 (-73% vs RRP); `lookfantastic.com` £12.00 (-78% vs RRP) | `boots.com`, `spacenk.com` |
+| **The Face** | ✅ £55.00 | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £11.25 (-80% vs RRP); `lookfantastic.com` £11.25 (-80% vs RRP) | `boots.com`, `spacenk.com` |
+| **The Face** | ✅ £55.00 | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £11.25 (-80% vs RRP); `lookfantastic.com` £12.00 (-78% vs RRP) | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Gradual Illuminating Tanning Lotion 250ml** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Gradual + The Face Bundle** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
 | **Tan-Luxe The Tanning Mitt** | Retail Only | **2/4** (50%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `boots.com`, `spacenk.com` |
@@ -66,8 +66,8 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `cultbeauty.co.uk` | Tan-Luxe Hydra Mousse Hydrating Self-Tan Mousse 200ml - Light | 200ml | £28.80 | 2026-11-22T07:00:07+00:00 |
-| `lookfantastic.com` | Tan-Luxe Hydra Mousse Hydrating Self-Tan Mousse 200ml - Light | 200ml | £36.00 | 2026-11-22T07:00:27+00:00 |
+| `cultbeauty.co.uk` | Tan-Luxe Hydra Mousse Hydrating Self-Tan Mousse 200ml - Light | 200ml | £28.80 | 2026-11-25T14:29:44+00:00 |
+| `lookfantastic.com` | Tan-Luxe Hydra Mousse Hydrating Self-Tan Mousse 200ml - Light | 200ml | £36.00 | 2026-11-25T14:30:00+00:00 |
 
 ---
 
