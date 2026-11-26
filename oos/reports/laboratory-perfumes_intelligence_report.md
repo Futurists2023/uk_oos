@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Laboratory Perfumes
 
-- **Generated:** 2026-11-23 00:59 UTC
+- **Generated:** 2026-11-26 00:32 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
 - **Total Tracked Variants:** 45 (45 In Stock | **0 OOS**)
 - **Retailer Out-of-Stock Alerts:** **0** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -22,12 +22,12 @@ _100% of active products on the official Brand DTC storefront are currently In S
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **Amber Eau De Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £67.50 (-25% vs RRP) | _All Stockists_ |
+| **Amber Eau De Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £67.50 (-25% vs RRP); `lookfantastic.com` £76.50 (-15% vs RRP) | _All Stockists_ |
 | **Gorse Cream (200ml)** | ✅ £40.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £24.00 (-40% vs RRP); `lookfantastic.com` £16.00 (-60% vs RRP) | _All Stockists_ |
-| **Gorse Eau De Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
-| **Helios Eau de Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `lookfantastic.com` £67.50 (-25% vs RRP) | _All Stockists_ |
-| **Samphire Eau de Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
-| **Tonka Eau De Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | _All Stockists_ |
+| **Gorse Eau De Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £67.50 (-25% vs RRP) | _All Stockists_ |
+| **Helios Eau de Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £67.50 (-25% vs RRP); `lookfantastic.com` £67.50 (-25% vs RRP) | _All Stockists_ |
+| **Samphire Eau de Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £67.50 (-25% vs RRP) | _All Stockists_ |
+| **Tonka Eau De Toilette (100ml)** | ✅ £90.00 | **2/2** (100%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £67.50 (-25% vs RRP) | _All Stockists_ |
 
 ---
 

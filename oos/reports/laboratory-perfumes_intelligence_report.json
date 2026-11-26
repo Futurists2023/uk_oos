@@ -1,7 +1,7 @@
 {
   "brand": "Laboratory Perfumes",
   "brand_slug": "laboratory-perfumes",
-  "generated_at": "2026-11-23T00:59:27+00:00",
+  "generated_at": "2026-11-26T00:32:18+00:00",
   "summary": {
     "monitored_uk_stores": 3,
     "monitored_retail_stockists": 2,
@@ -33,7 +33,8 @@
       "oos_in": [],
       "missing_in": [],
       "undercut_alerts": [
-        "`lookfantastic.com` £67.50 (-25% vs RRP)"
+        "`cultbeauty.co.uk` £67.50 (-25% vs RRP)",
+        "`lookfantastic.com` £76.50 (-15% vs RRP)"
       ]
     },
     {
@@ -71,7 +72,9 @@
       ],
       "oos_in": [],
       "missing_in": [],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`cultbeauty.co.uk` £67.50 (-25% vs RRP)"
+      ]
     },
     {
       "normalized_key": "helios_eau_de_toilette",
@@ -89,6 +92,7 @@
       "oos_in": [],
       "missing_in": [],
       "undercut_alerts": [
+        "`cultbeauty.co.uk` £67.50 (-25% vs RRP)",
         "`lookfantastic.com` £67.50 (-25% vs RRP)"
       ]
     },
@@ -107,7 +111,9 @@
       ],
       "oos_in": [],
       "missing_in": [],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`cultbeauty.co.uk` £67.50 (-25% vs RRP)"
+      ]
     },
     {
       "normalized_key": "tonka_eau_de_toilette",
@@ -124,11 +130,130 @@
       ],
       "oos_in": [],
       "missing_in": [],
-      "undercut_alerts": []
+      "undercut_alerts": [
+        "`cultbeauty.co.uk` £67.50 (-25% vs RRP)"
+      ]
     }
   ],
   "silent_removals": [],
   "recent_events": [
+    {
+      "id": 29472,
+      "occurred_at": "2026-11-26T00:32:16+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "lookfantastic.com::laboratory-perfumes::p_laboratory-perfumes-amber-eau-de-toilette-100ml_12795614",
+      "product_title": "Laboratory Perfumes Amber Eau de Toilette 100ml",
+      "variant_title": "100ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 67.5,
+      "new_price": 76.5,
+      "details": "Price changed 67.5 -> 76.5"
+    },
+    {
+      "id": 29471,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-helios-eau-de-toilette-100ml_15652837",
+      "product_title": "Laboratory Perfumes Helios Eau de Toilette 100ml",
+      "variant_title": "100ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 90.0,
+      "new_price": 67.5,
+      "details": "Price changed 90.0 -> 67.5"
+    },
+    {
+      "id": 29470,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-amber-cream-200ml_13887892",
+      "product_title": "Laboratory Perfumes Amber Cream 200ml",
+      "variant_title": "200ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 40.0,
+      "new_price": 30.0,
+      "details": "Price changed 40.0 -> 30"
+    },
+    {
+      "id": 29469,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-samphire-eau-de-toilette-100ml_12795616",
+      "product_title": "Laboratory Perfumes Samphire Eau de Toilette 100ml",
+      "variant_title": "100ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 90.0,
+      "new_price": 67.5,
+      "details": "Price changed 90.0 -> 67.5"
+    },
+    {
+      "id": 29468,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-tonka-eau-de-toilette-100ml_12795617",
+      "product_title": "Laboratory Perfumes Tonka Eau de Toilette 100ml",
+      "variant_title": "100ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 90.0,
+      "new_price": 67.5,
+      "details": "Price changed 90.0 -> 67.5"
+    },
+    {
+      "id": 29467,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-amber-soap-150g_14199572",
+      "product_title": "Laboratory Perfumes Amber Soap 150g",
+      "variant_title": "150g",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 17.0,
+      "new_price": 12.75,
+      "details": "Price changed 17.0 -> 12.75"
+    },
+    {
+      "id": 29466,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-gorse-soap-150g_14199574",
+      "product_title": "Laboratory Perfumes Gorse Soap 150g",
+      "variant_title": "150g",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 17.0,
+      "new_price": 12.75,
+      "details": "Price changed 17.0 -> 12.75"
+    },
+    {
+      "id": 29465,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-gorse-eau-de-toilette-100ml_12795615",
+      "product_title": "Laboratory Perfumes Gorse Eau de Toilette 100ml",
+      "variant_title": "100ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 90.0,
+      "new_price": 67.5,
+      "details": "Price changed 90.0 -> 67.5"
+    },
+    {
+      "id": 29464,
+      "occurred_at": "2026-11-26T00:31:54+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Laboratory Perfumes",
+      "sku_key": "cultbeauty.co.uk::laboratory-perfumes::p_laboratory-perfumes-amber-eau-de-toilette-100ml_12795614",
+      "product_title": "Laboratory Perfumes Amber Eau de Toilette 100ml",
+      "variant_title": "100ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 90.0,
+      "new_price": 67.5,
+      "details": "Price changed 90.0 -> 67.5"
+    },
     {
       "id": 23994,
       "occurred_at": "2026-11-20T07:27:49+00:00",
@@ -660,110 +785,6 @@
       "event_type": "NEW_IN_STOCK",
       "old_price": null,
       "new_price": 12.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7117,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::tonka-eau-de-toilette-5ml::56201920250236",
-      "product_title": "Tonka Eau de Toilette 5ml",
-      "variant_title": "5ml",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 12.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7116,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::travel-set-150g-gorse-soap-5-x-5ml-eau-de-toilette::57183809929596",
-      "product_title": "Travel Set (150g Gorse Soap + 5 x 5ml Eau de Toilette)",
-      "variant_title": "150g",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 65.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7115,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::the-amber-ritual-set-copy::57268256113020",
-      "product_title": "The Amber Skincare Bundle",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 50.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7114,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::the-gorse-skincare-collection::57268258636156",
-      "product_title": "The Gorse Skincare Bundle",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 50.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7113,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::amber-eau-de-parfum-50ml::57199920087420",
-      "product_title": "Amber Eau De Parfum (50ml)",
-      "variant_title": "50ml",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 180.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7112,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::the-amber-collection::58022814253436",
-      "product_title": "The Amber Collection",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 2.95,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7111,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::the-amber-gift-box::58022888079740",
-      "product_title": "The Amber Gift Box",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 135.0,
-      "details": "Initial discovery"
-    },
-    {
-      "id": 7110,
-      "occurred_at": "2026-10-27T20:49:46+00:00",
-      "domain": "laboratoryperfumes.com",
-      "brand": "Laboratory Perfumes",
-      "sku_key": "laboratoryperfumes.com::laboratory-perfumes::the-winter-collection::58052057760124",
-      "product_title": "The Winter Collection",
-      "variant_title": "Standard",
-      "event_type": "NEW_IN_STOCK",
-      "old_price": null,
-      "new_price": 180.0,
       "details": "Initial discovery"
     }
   ]
