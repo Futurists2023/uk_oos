@@ -1,78 +1,20 @@
 {
   "brand": "Margaret Dabbs London",
   "brand_slug": "margaret-dabbs-london",
-  "generated_at": "2026-11-23T01:01:37+00:00",
+  "generated_at": "2026-11-26T13:57:17+00:00",
   "summary": {
     "monitored_uk_stores": 5,
     "monitored_retail_stockists": 4,
-    "total_listed_skus_variants": 38,
-    "in_stock_skus_variants": 34,
-    "out_of_stock_skus_variants": 4,
-    "retail_out_of_stock_variants": 4,
+    "total_listed_skus_variants": 40,
+    "in_stock_skus_variants": 37,
+    "out_of_stock_skus_variants": 3,
+    "retail_out_of_stock_variants": 3,
     "unforced_retail_outages": 1,
     "factory_shortages_on_dtc": 0,
     "silent_removed_skus": 19
   },
   "out_of_stock_alerts": [
     {
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::nourishing-nail-cuticle-serum-pen-15ml-6100020347",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "product_title": "Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml",
-      "variant_title": "15ml",
-      "normalized_product_key": "nourishing_nail_cuticle_serum_pen",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/nourishing-nail-cuticle-serum-pen-15ml-6100020347",
-      "sku_code": "nourishing-nail-cuticle-serum-pen-15ml-6100020347",
-      "current_price": 15.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 15.0,
-      "currency": "GBP",
-      "is_available": 0,
-      "is_listed": 1,
-      "first_seen_at": "2026-10-27T20:51:18+00:00",
-      "last_seen_at": "2026-11-23T01:01:01+00:00",
-      "first_seen_oos_at": "2026-11-09T18:56:57+00:00",
-      "last_seen_in_stock_at": "2026-11-07T20:17:07+00:00",
-      "silent_removed_at": null,
-      "duration_label": "13d 6h (since 2026-11-09 18:56 UTC)",
-      "days_oos": 13.3,
-      "price_note": "Full Price",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
-      "in_stock_elsewhere": [
-        "spacenk.com"
-      ]
-    },
-    {
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-nail-strengthening-treatment-9ml-6100020351",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "product_title": "Margaret Dabbs London PURE Nail Strengthening Treatment 9ml",
-      "variant_title": "9ml",
-      "normalized_product_key": "pure_nail_strengthening_treatment",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/pure-nail-strengthening-treatment-9ml-6100020351",
-      "sku_code": "pure-nail-strengthening-treatment-9ml-6100020351",
-      "current_price": 16.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 16.0,
-      "currency": "GBP",
-      "is_available": 0,
-      "is_listed": 1,
-      "first_seen_at": "2026-10-27T20:51:18+00:00",
-      "last_seen_at": "2026-11-23T01:01:01+00:00",
-      "first_seen_oos_at": "2026-11-23T01:01:01+00:00",
-      "last_seen_in_stock_at": "2026-11-20T17:00:41+00:00",
-      "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-23 01:01 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "diagnosis": "Retail Exclusive OOS",
-      "in_stock_elsewhere": []
-    },
-    {
       "sku_key": "lookfantastic.com::margaret-dabbs-london::p_margaret-dabbs-london-hand-sanitiser-600ml_12698713",
       "domain": "lookfantastic.com",
       "brand": "Margaret Dabbs London",
@@ -88,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:34+00:00",
-      "last_seen_at": "2026-11-23T01:01:18+00:00",
+      "last_seen_at": "2026-11-26T13:56:54+00:00",
       "first_seen_oos_at": "2026-11-17T13:36:10+00:00",
       "last_seen_in_stock_at": "2026-11-15T00:00:44+00:00",
       "silent_removed_at": null,
-      "duration_label": "5d 11h (since 2026-11-17 13:36 UTC)",
-      "days_oos": 5.5,
+      "duration_label": "9d 0h (since 2026-11-17 13:36 UTC)",
+      "days_oos": 9.0,
       "price_note": "Discounted -50% (was £75.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -109,86 +51,58 @@
       "normalized_product_key": "intensive_anti_age_hand_serum",
       "product_url": "https://www.spacenk.com/uk/bath-body/body-moisturiser-oils/hand-feet/intensive-anti-age-hand-serum-MUK200014910.html",
       "sku_code": "intensive-anti-age-hand-serum-MUK200014910",
-      "current_price": 30.0,
-      "compare_at_price": null,
+      "current_price": 22.5,
+      "compare_at_price": 30.0,
       "last_in_stock_price": 30.0,
       "currency": "GBP",
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:54+00:00",
-      "last_seen_at": "2026-11-23T01:01:37+00:00",
+      "last_seen_at": "2026-11-26T13:57:16+00:00",
       "first_seen_oos_at": "2026-11-12T16:52:58+00:00",
       "last_seen_in_stock_at": "2026-11-09T18:57:32+00:00",
       "silent_removed_at": null,
-      "duration_label": "10d 8h (since 2026-11-12 16:52 UTC)",
-      "days_oos": 10.3,
-      "price_note": "Full Price",
+      "duration_label": "13d 21h (since 2026-11-12 16:52 UTC)",
+      "days_oos": 13.9,
+      "price_note": "Discounted -25% (was £30.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
       "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "spacenk.com::margaret-dabbs-london::UK200037052",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "product_title": "Margaret Dabbs London PURE Repairing Hand Cream 75ml",
+      "variant_title": "75ML",
+      "normalized_product_key": "pure_repairing_hand_cream_75ml",
+      "product_url": "https://www.spacenk.com/uk/pure-repairing-hand-cream-UK200037052.html",
+      "sku_code": "UK200037052",
+      "current_price": 13.5,
+      "compare_at_price": null,
+      "last_in_stock_price": 13.5,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T20:51:54+00:00",
+      "last_seen_at": "2026-11-26T13:57:16+00:00",
+      "first_seen_oos_at": "2026-11-26T13:57:16+00:00",
+      "last_seen_in_stock_at": "2026-11-23T01:01:37+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-26 13:57 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "hollandandbarrett.com"
+      ]
     }
   ],
   "retail_out_of_stock_alerts": [
     {
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::nourishing-nail-cuticle-serum-pen-15ml-6100020347",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "product_title": "Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml",
-      "variant_title": "15ml",
-      "normalized_product_key": "nourishing_nail_cuticle_serum_pen",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/nourishing-nail-cuticle-serum-pen-15ml-6100020347",
-      "sku_code": "nourishing-nail-cuticle-serum-pen-15ml-6100020347",
-      "current_price": 15.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 15.0,
-      "currency": "GBP",
-      "is_available": 0,
-      "is_listed": 1,
-      "first_seen_at": "2026-10-27T20:51:18+00:00",
-      "last_seen_at": "2026-11-23T01:01:01+00:00",
-      "first_seen_oos_at": "2026-11-09T18:56:57+00:00",
-      "last_seen_in_stock_at": "2026-11-07T20:17:07+00:00",
-      "silent_removed_at": null,
-      "duration_label": "13d 6h (since 2026-11-09 18:56 UTC)",
-      "days_oos": 13.3,
-      "price_note": "Full Price",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
-      "in_stock_elsewhere": [
-        "spacenk.com"
-      ]
-    },
-    {
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-nail-strengthening-treatment-9ml-6100020351",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "product_title": "Margaret Dabbs London PURE Nail Strengthening Treatment 9ml",
-      "variant_title": "9ml",
-      "normalized_product_key": "pure_nail_strengthening_treatment",
-      "product_url": "https://www.hollandandbarrett.com/shop/product/pure-nail-strengthening-treatment-9ml-6100020351",
-      "sku_code": "pure-nail-strengthening-treatment-9ml-6100020351",
-      "current_price": 16.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 16.0,
-      "currency": "GBP",
-      "is_available": 0,
-      "is_listed": 1,
-      "first_seen_at": "2026-10-27T20:51:18+00:00",
-      "last_seen_at": "2026-11-23T01:01:01+00:00",
-      "first_seen_oos_at": "2026-11-23T01:01:01+00:00",
-      "last_seen_in_stock_at": "2026-11-20T17:00:41+00:00",
-      "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-23 01:01 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "diagnosis": "Retail Exclusive OOS",
-      "in_stock_elsewhere": []
-    },
-    {
       "sku_key": "lookfantastic.com::margaret-dabbs-london::p_margaret-dabbs-london-hand-sanitiser-600ml_12698713",
       "domain": "lookfantastic.com",
       "brand": "Margaret Dabbs London",
@@ -204,12 +118,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:34+00:00",
-      "last_seen_at": "2026-11-23T01:01:18+00:00",
+      "last_seen_at": "2026-11-26T13:56:54+00:00",
       "first_seen_oos_at": "2026-11-17T13:36:10+00:00",
       "last_seen_in_stock_at": "2026-11-15T00:00:44+00:00",
       "silent_removed_at": null,
-      "duration_label": "5d 11h (since 2026-11-17 13:36 UTC)",
-      "days_oos": 5.5,
+      "duration_label": "9d 0h (since 2026-11-17 13:36 UTC)",
+      "days_oos": 9.0,
       "price_note": "Discounted -50% (was £75.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -225,48 +139,58 @@
       "normalized_product_key": "intensive_anti_age_hand_serum",
       "product_url": "https://www.spacenk.com/uk/bath-body/body-moisturiser-oils/hand-feet/intensive-anti-age-hand-serum-MUK200014910.html",
       "sku_code": "intensive-anti-age-hand-serum-MUK200014910",
-      "current_price": 30.0,
-      "compare_at_price": null,
+      "current_price": 22.5,
+      "compare_at_price": 30.0,
       "last_in_stock_price": 30.0,
       "currency": "GBP",
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-27T20:51:54+00:00",
-      "last_seen_at": "2026-11-23T01:01:37+00:00",
+      "last_seen_at": "2026-11-26T13:57:16+00:00",
       "first_seen_oos_at": "2026-11-12T16:52:58+00:00",
       "last_seen_in_stock_at": "2026-11-09T18:57:32+00:00",
       "silent_removed_at": null,
-      "duration_label": "10d 8h (since 2026-11-12 16:52 UTC)",
-      "days_oos": 10.3,
-      "price_note": "Full Price",
+      "duration_label": "13d 21h (since 2026-11-12 16:52 UTC)",
+      "days_oos": 13.9,
+      "price_note": "Discounted -25% (was £30.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
       "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "spacenk.com::margaret-dabbs-london::UK200037052",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "product_title": "Margaret Dabbs London PURE Repairing Hand Cream 75ml",
+      "variant_title": "75ML",
+      "normalized_product_key": "pure_repairing_hand_cream_75ml",
+      "product_url": "https://www.spacenk.com/uk/pure-repairing-hand-cream-UK200037052.html",
+      "sku_code": "UK200037052",
+      "current_price": 13.5,
+      "compare_at_price": null,
+      "last_in_stock_price": 13.5,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-27T20:51:54+00:00",
+      "last_seen_at": "2026-11-26T13:57:16+00:00",
+      "first_seen_oos_at": "2026-11-26T13:57:16+00:00",
+      "last_seen_in_stock_at": "2026-11-23T01:01:37+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-26 13:57 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "🚨 RETAIL OUTAGE (In Stock at 1 other retailers)",
+      "in_stock_elsewhere": [
+        "hollandandbarrett.com"
+      ]
     }
   ],
   "dtc_out_of_stock": [],
   "hero_benchmarks": [
-    {
-      "normalized_key": "firming_leg_serum",
-      "product_family": "Margaret Dabbs London Firming Leg Serum 200 ml",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "stores_carrying": 2,
-      "total_stores": 4,
-      "penetration_pct": 50,
-      "is_hero": true,
-      "in_stock_in": [
-        "hollandandbarrett.com",
-        "spacenk.com"
-      ],
-      "oos_in": [],
-      "missing_in": [
-        "cultbeauty.co.uk",
-        "lookfantastic.com"
-      ],
-      "undercut_alerts": []
-    },
     {
       "normalized_key": "foot_hygiene_cream",
       "product_family": "Margaret Dabbs London Foot Hygiene Cream",
@@ -337,47 +261,6 @@
       "penetration_pct": 50,
       "is_hero": true,
       "in_stock_in": [
-        "spacenk.com"
-      ],
-      "oos_in": [
-        "hollandandbarrett.com"
-      ],
-      "missing_in": [
-        "cultbeauty.co.uk",
-        "lookfantastic.com"
-      ],
-      "undercut_alerts": []
-    },
-    {
-      "normalized_key": "pure_cracked_heel_treatment_balm",
-      "product_family": "Margaret Dabbs London PURE Cracked Heel Treatment Balm 45ml",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "stores_carrying": 2,
-      "total_stores": 4,
-      "penetration_pct": 50,
-      "is_hero": true,
-      "in_stock_in": [
-        "hollandandbarrett.com",
-        "spacenk.com"
-      ],
-      "oos_in": [],
-      "missing_in": [
-        "cultbeauty.co.uk",
-        "lookfantastic.com"
-      ],
-      "undercut_alerts": []
-    },
-    {
-      "normalized_key": "pure_repairing_hand_cream",
-      "product_family": "Margaret Dabbs London PURE Repairing Hand Cream 300ml",
-      "dtc_status": "NOT_ON_DTC",
-      "dtc_rrp": null,
-      "stores_carrying": 2,
-      "total_stores": 4,
-      "penetration_pct": 50,
-      "is_hero": true,
-      "in_stock_in": [
         "hollandandbarrett.com",
         "spacenk.com"
       ],
@@ -398,10 +281,11 @@
       "penetration_pct": 50,
       "is_hero": true,
       "in_stock_in": [
-        "hollandandbarrett.com",
+        "hollandandbarrett.com"
+      ],
+      "oos_in": [
         "spacenk.com"
       ],
-      "oos_in": [],
       "missing_in": [
         "cultbeauty.co.uk",
         "lookfantastic.com"
@@ -429,7 +313,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-for-oily-hair-350ml-6100009150",
@@ -450,7 +334,7 @@
       "last_seen_at": "2026-10-31T23:32:51+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T23:32:51+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-healthy-hair-vitamins-60-capsules-60062596",
@@ -471,7 +355,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
@@ -492,7 +376,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-220ml-6100009025",
@@ -513,7 +397,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
@@ -534,7 +418,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
@@ -555,7 +439,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
@@ -576,7 +460,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::vital-proteins-collagen-peptides-unflavoured-6100148487",
@@ -597,7 +481,7 @@
       "last_seen_at": "2026-11-09T18:56:57+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-09T18:56:57+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
@@ -618,7 +502,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
@@ -639,7 +523,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
@@ -660,7 +544,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-mini-shampoo-60ml-6100009149",
@@ -681,7 +565,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-lavender-fields-40g-6100009751",
@@ -702,7 +586,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-conditioner-for-dry-damaged-hair-350ml-6100009003",
@@ -723,7 +607,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-hair-growth-essentials-6100013040",
@@ -744,7 +628,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-scalp-massage-brush-6100009738",
@@ -765,7 +649,7 @@
       "last_seen_at": "2026-11-17T13:35:55+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-17T13:35:55+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-wilderness-40g-6100019385",
@@ -786,7 +670,7 @@
       "last_seen_at": "2026-10-27T20:51:18+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-27T20:51:18+00:00",
-      "silent_removed_at": "2026-11-23T01:01:01+00:00"
+      "silent_removed_at": "2026-11-26T13:56:37+00:00"
     },
     {
       "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200028811",
@@ -807,13 +691,13 @@
       "last_seen_at": "2026-10-31T23:33:24+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-31T23:33:24+00:00",
-      "silent_removed_at": "2026-11-23T01:01:37+00:00"
+      "silent_removed_at": "2026-11-26T13:57:16+00:00"
     }
   ],
   "recent_events": [
     {
-      "id": 25896,
-      "occurred_at": "2026-11-23T01:01:37+00:00",
+      "id": 29541,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
       "domain": "spacenk.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200028811",
@@ -825,34 +709,255 @@
       "details": "Vanished from storefront (last seen 2026-10-31T23:33:24+00:00)"
     },
     {
-      "id": 25895,
-      "occurred_at": "2026-11-23T01:01:37+00:00",
+      "id": 29540,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::intensive-anti-age-hand-serum-MUK200014910",
+      "product_title": "Intensive Anti-Age Hand Serum",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 30.0,
+      "new_price": 22.5,
+      "details": "Price changed 30.0 -> 22.5"
+    },
+    {
+      "id": 29539,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::firming-leg-serum-MUK200026199",
+      "product_title": "Firming Leg Serum",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 45.0,
+      "new_price": 33.75,
+      "details": "Price changed 45.0 -> 33.75"
+    },
+    {
+      "id": 29538,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::nourishing-hand-wash-MUK200014957",
+      "product_title": "Nourishing Hand Wash",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 22.0,
+      "new_price": 16.5,
+      "details": "Price changed 22.0 -> 16.5"
+    },
+    {
+      "id": 29537,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::nourishing-nail-cuticle-serum-pen-MUK200014960",
+      "product_title": "Nourishing Nail & Cuticle Serum Pen",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 11.25,
+      "details": "Price changed 15.0 -> 11.25"
+    },
+    {
+      "id": 29536,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::intensive-hydrating-foot-lotion-MUK200007296",
+      "product_title": "Intensive Hydrating Foot Lotion",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 26.0,
+      "new_price": 19.5,
+      "details": "Price changed 26.0 -> 19.5"
+    },
+    {
+      "id": 29535,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::nail-strengthening-treatment-MUK200059220",
+      "product_title": "Nail Strengthening Treatment",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.0,
+      "details": "Price changed 16.0 -> 12"
+    },
+    {
+      "id": 29534,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::miracle-foot-cream-MUK200059219",
+      "product_title": "Miracle Foot Cream",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 24.0,
+      "new_price": 18.0,
+      "details": "Price changed 24.0 -> 18"
+    },
+    {
+      "id": 29533,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::manicure-pedicure-set-MUK200018184",
+      "product_title": "Manicure & Pedicure Set",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 150.0,
+      "new_price": 112.5,
+      "details": "Price changed 150.0 -> 112.5"
+    },
+    {
+      "id": 29532,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
       "domain": "spacenk.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "spacenk.com::margaret-dabbs-london::UK200037052",
       "product_title": "Margaret Dabbs London PURE Repairing Hand Cream 75ml",
       "variant_title": "75ML",
+      "event_type": "WENT_OOS",
+      "old_price": 13.5,
+      "new_price": 13.5,
+      "details": "Transitioned from In Stock to OOS"
+    },
+    {
+      "id": 29531,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::professional-foot-file-MUK200010864",
+      "product_title": "Professional Foot File",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 30.0,
+      "new_price": 22.5,
+      "details": "Price changed 30.0 -> 22.5"
+    },
+    {
+      "id": 29530,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200064166",
+      "product_title": "Pure Cracked Heel Treatment Balm",
+      "variant_title": "Standard",
       "event_type": "PRICE_CHANGED",
       "old_price": 18.0,
       "new_price": 13.5,
       "details": "Price changed 18.0 -> 13.5"
     },
     {
-      "id": 25894,
-      "occurred_at": "2026-11-23T01:01:37+00:00",
+      "id": 29529,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
       "domain": "spacenk.com",
       "brand": "Margaret Dabbs London",
-      "sku_key": "spacenk.com::margaret-dabbs-london::UK200037050",
-      "product_title": "Margaret Dabbs London PURE Repairing Hand Cream 200ml",
-      "variant_title": "200ML",
+      "sku_key": "spacenk.com::margaret-dabbs-london::intensive-hydrating-hand-lotion-MUK200014956",
+      "product_title": "Intensive Hydrating Hand Lotion",
+      "variant_title": "Standard",
       "event_type": "PRICE_CHANGED",
-      "old_price": 29.0,
-      "new_price": 21.75,
-      "details": "Price changed 29.0 -> 21.75"
+      "old_price": 25.0,
+      "new_price": 18.75,
+      "details": "Price changed 25.0 -> 18.75"
     },
     {
-      "id": 25893,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29528,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::foot-file-replacement-pads-MUK200011692",
+      "product_title": "Foot File Replacement Pads",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.0,
+      "details": "Price changed 16.0 -> 12"
+    },
+    {
+      "id": 29527,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::crystal-nail-file-MUK200027655",
+      "product_title": "Crystal Nail File",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.0,
+      "details": "Price changed 16.0 -> 12"
+    },
+    {
+      "id": 29526,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::foot-hygiene-cream-MUK200010971",
+      "product_title": "Foot Hygiene Cream",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 24.0,
+      "new_price": 18.0,
+      "details": "Price changed 24.0 -> 18"
+    },
+    {
+      "id": 29525,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::nail-strengthening-treatment-the-kings-road-MUK200065029",
+      "product_title": "Nail Strengthening Treatment The King’s Road",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.0,
+      "details": "Price changed 16.0 -> 12"
+    },
+    {
+      "id": 29524,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::nail-strengthening-treatment-the-belgravia-MUK200065028",
+      "product_title": "Nail Strengthening Treatment The Belgravia",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.0,
+      "details": "Price changed 16.0 -> 12"
+    },
+    {
+      "id": 29523,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::nail-strengthening-treatment-the-liberty-MUK200065027",
+      "product_title": "Nail Strengthening Treatment The Liberty",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 16.0,
+      "new_price": 12.0,
+      "details": "Price changed 16.0 -> 12"
+    },
+    {
+      "id": 29522,
+      "occurred_at": "2026-11-26T13:57:16+00:00",
+      "domain": "spacenk.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "spacenk.com::margaret-dabbs-london::heroes-discovery-kit-MUK200065026",
+      "product_title": "Heroes Discovery Kit",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 62.0,
+      "new_price": 46.5,
+      "details": "Price changed 62.0 -> 46.5"
+    },
+    {
+      "id": 29521,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-scalp-massage-brush-6100009738",
@@ -864,8 +969,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25892,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29520,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-mini-shampoo-60ml-6100009149",
@@ -877,8 +982,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25891,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29519,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-mini-elixir-40ml-6100009155",
@@ -890,8 +995,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25890,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29518,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-220ml-6100009025",
@@ -903,8 +1008,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
     },
     {
-      "id": 25889,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29517,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-healthy-hair-vitamins-60-capsules-60062596",
@@ -916,8 +1021,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25888,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29516,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-for-oily-hair-350ml-6100009150",
@@ -929,8 +1034,8 @@
       "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
     },
     {
-      "id": 25887,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29515,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-conditioner-for-dry-damaged-hair-350ml-6100009003",
@@ -942,8 +1047,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25886,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29514,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
@@ -955,8 +1060,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25885,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29513,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
@@ -968,8 +1073,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
     },
     {
-      "id": 25884,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29512,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::vital-proteins-collagen-peptides-unflavoured-6100148487",
@@ -981,8 +1086,8 @@
       "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
     },
     {
-      "id": 25883,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29511,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
@@ -994,8 +1099,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
     },
     {
-      "id": 25882,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29510,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
@@ -1007,8 +1112,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
     },
     {
-      "id": 25881,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29509,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-hair-growth-essentials-6100013040",
@@ -1020,8 +1125,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
     },
     {
-      "id": 25880,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29508,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
@@ -1033,8 +1138,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25879,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29507,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-wilderness-40g-6100019385",
@@ -1046,8 +1151,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
     },
     {
-      "id": 25878,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29506,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-lavender-fields-40g-6100009751",
@@ -1059,8 +1164,8 @@
       "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
     },
     {
-      "id": 25877,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29505,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
@@ -1072,8 +1177,8 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25876,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29504,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
@@ -1085,381 +1190,160 @@
       "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
     },
     {
-      "id": 25875,
-      "occurred_at": "2026-11-23T01:01:01+00:00",
+      "id": 29503,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::breathe-pulse-point-oil-frankincense-lavender-6100021000",
+      "product_title": "Margaret Dabbs London Breathe Pulse Point Oil - Frankincense & Lavender 35% Off",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 19.0,
+      "new_price": 12.35,
+      "details": "Price changed 19.0 -> 12.35"
+    },
+    {
+      "id": 29502,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-hands-discovery-gift-set-1each-6100020433",
+      "product_title": "Margaret Dabbs London PURE Hands Discovery Gift Set 1 Item",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 39.0,
+      "new_price": 25.35,
+      "details": "Price changed 39.0 -> 25.35"
+    },
+    {
+      "id": 29501,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::intensive-anti-ageing-hand-serum-6100020727",
+      "product_title": "Margaret Dabbs London Intensive Anti-ageing Hand Serum",
+      "variant_title": "Standard",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 30.0,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 29500,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::luxury-hemp-socks-1each-6100020736",
+      "product_title": "Margaret Dabbs London Luxury Hemp Socks",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 12.0,
+      "new_price": 7.8,
+      "details": "Price changed 12.0 -> 7.8"
+    },
+    {
+      "id": 29499,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-exfoliating-hand-wash-300ml-6100020349",
+      "product_title": "Margaret Dabbs London PURE Exfoliating Hand Wash 300ml 35% Off",
+      "variant_title": "300ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 37.5,
+      "new_price": 24.37,
+      "details": "Price changed 37.5 -> 24.37"
+    },
+    {
+      "id": 29498,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-repairing-hand-cream-300ml-6100020413",
+      "product_title": "Margaret Dabbs London PURE Repairing Hand Cream 300ml 35% Off",
+      "variant_title": "300ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 43.5,
+      "new_price": 28.27,
+      "details": "Price changed 43.5 -> 28.27"
+    },
+    {
+      "id": 29497,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::crystal-nail-file-cover-1each-6100020739",
+      "product_title": "Margaret Dabbs London Crystal Nail File & Cover",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 20.0,
+      "new_price": 13.0,
+      "details": "Price changed 20.0 -> 13"
+    },
+    {
+      "id": 29496,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::firming-leg-serum-200ml-6100020352",
+      "product_title": "Margaret Dabbs London Firming Leg Serum 200 ml 35% Off",
+      "variant_title": "200 ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 45.0,
+      "new_price": 29.25,
+      "details": "Price changed 45.0 -> 29.25"
+    },
+    {
+      "id": 29495,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
       "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-nail-strengthening-treatment-9ml-6100020351",
       "product_title": "Margaret Dabbs London PURE Nail Strengthening Treatment 9ml",
       "variant_title": "9ml",
-      "event_type": "WENT_OOS",
+      "event_type": "PRICE_CHANGED",
       "old_price": 16.0,
-      "new_price": 16.0,
-      "details": "Transitioned from In Stock to OOS"
+      "new_price": 10.4,
+      "details": "Price changed 16.0 -> 10.4"
     },
     {
-      "id": 24028,
-      "occurred_at": "2026-11-20T17:01:26+00:00",
-      "domain": "spacenk.com",
+      "id": 29494,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
-      "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200028811",
-      "product_title": "Pure Cracked Heel Treatment Balm",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-nail-strengthening-treatment-9ml-6100020351",
+      "product_title": "Margaret Dabbs London PURE Nail Strengthening Treatment 9ml",
+      "variant_title": "9ml",
+      "event_type": "RESTOCKED",
+      "old_price": 16.0,
+      "new_price": 10.4,
+      "details": "Restocked (was OOS since 2026-11-23T01:01:01+00:00)"
+    },
+    {
+      "id": 29493,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
+      "domain": "hollandandbarrett.com",
+      "brand": "Margaret Dabbs London",
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::pure-repairing-hand-cream-75ml-6100020348",
+      "product_title": "Margaret Dabbs London PURE Repairing Hand Cream 75 ml",
+      "variant_title": "75 ml",
+      "event_type": "PRICE_CHANGED",
       "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:33:24+00:00)"
+      "new_price": 11.7,
+      "details": "Price changed 18.0 -> 11.7"
     },
     {
-      "id": 24027,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
+      "id": 29492,
+      "occurred_at": "2026-11-26T13:56:37+00:00",
       "domain": "hollandandbarrett.com",
       "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-scalp-massage-brush-6100009738",
-      "product_title": "5 Hairburst Scalp Massage Brush 30% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 6.3,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24026,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-mini-shampoo-60ml-6100009149",
-      "product_title": "4.86 Hairburst Original Shampoo For Longer, Stronger Hair 60ml 30% Off",
-      "variant_title": "60ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 3.85,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24025,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-mini-elixir-40ml-6100009155",
-      "product_title": "4.17 Hairburst Volume & Growth Elixir Spray 40ml 30% Off",
-      "variant_title": "40ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 6.86,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24024,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-220ml-6100009025",
-      "product_title": "4.43 Hairburst Long And Healthy Hair Mask 220ml 30% Off",
-      "variant_title": "220ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 21.7,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
-    },
-    {
-      "id": 24023,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-healthy-hair-vitamins-60-capsules-60062596",
-      "product_title": "4.23 Hairburst Healthy Hair Vitamins 60 Capsules 30% Off",
-      "variant_title": "60 Capsules",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 19.25,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24022,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-for-oily-hair-350ml-6100009150",
-      "product_title": "4.22 Hairburst Shampoo For Oily Hair 350ml 35% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 9.75,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
-    },
-    {
-      "id": 24021,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-conditioner-for-dry-damaged-hair-350ml-6100009003",
-      "product_title": "5 Hairburst Conditioner For Dry, Damaged Hair 350ml 30% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 10.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24020,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-x-350ml-conditioner-x-350ml-set-60049389",
-      "product_title": "4.38 Hairburst Shampoo x 350ml & Conditioner x 350ml Set 30% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 21.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24019,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
-      "product_title": "4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 60.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 24018,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::vital-proteins-collagen-peptides-unflavoured-6100148487",
-      "product_title": "4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off",
-      "variant_title": "567g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 33.49,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
-    },
-    {
-      "id": 24017,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
-      "product_title": "4.62 The Humble Co Stainless Steel Tongue Scraper",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 24016,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
-      "product_title": "4.76 Wild Amber & Oud Soap Bar 125g 25% Off",
-      "variant_title": "125g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 3.37,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 24015,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-hair-growth-essentials-6100013040",
-      "product_title": "5 Hairburst Hair Growth Essentials 35% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 33.8,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 24014,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-30ml-6100009295",
-      "product_title": "4.43 Hairburst Long And Healthy Hair Mask 30ml 30% Off",
-      "variant_title": "30ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.55,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24013,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-wilderness-40g-6100019385",
-      "product_title": "Fussy Natural Deodorant Refill Wilderness 40g 20% Off",
-      "variant_title": "40g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.8,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 24012,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::fussy-natural-deodorant-refill-lavender-fields-40g-6100009751",
-      "product_title": "4.93 Fussy Natural Deodorant Refill Lavender Fields 40G 25% Off",
-      "variant_title": "40G",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 24011,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-original-shampoo-for-longer-stronger-hair-350ml-6100009158",
-      "product_title": "4.86 Hairburst Original Shampoo For Longer, Stronger Hair 350ml 30% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 10.5,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 24010,
-      "occurred_at": "2026-11-20T17:00:41+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-chewable-heart-hair-vitamins-1-month-supply-60010813",
-      "product_title": "4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 15.4,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-17T13:35:55+00:00)"
-    },
-    {
-      "id": 21992,
-      "occurred_at": "2026-11-17T13:36:31+00:00",
-      "domain": "spacenk.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "spacenk.com::margaret-dabbs-london::pure-cracked-heel-treatment-balm-MUK200028811",
-      "product_title": "Pure Cracked Heel Treatment Balm",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 18.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:33:24+00:00)"
-    },
-    {
-      "id": 21991,
-      "occurred_at": "2026-11-17T13:36:10+00:00",
-      "domain": "lookfantastic.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "lookfantastic.com::margaret-dabbs-london::p_margaret-dabbs-london-hand-sanitiser-600ml_12698713",
-      "product_title": "Margaret Dabbs London Hand Sanitiser 600ml",
-      "variant_title": "600ml",
-      "event_type": "WENT_OOS",
-      "old_price": 37.5,
-      "new_price": 37.5,
-      "details": "Transitioned from In Stock to OOS"
-    },
-    {
-      "id": 21990,
-      "occurred_at": "2026-11-17T13:35:55+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-long-and-healthy-hair-mask-220ml-6100009025",
-      "product_title": "4.43 Hairburst Long And Healthy Hair Mask 220ml 30% Off",
-      "variant_title": "220ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 21.7,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
-    },
-    {
-      "id": 21989,
-      "occurred_at": "2026-11-17T13:35:55+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-shampoo-for-oily-hair-350ml-6100009150",
-      "product_title": "4.22 Hairburst Shampoo For Oily Hair 350ml 35% Off",
-      "variant_title": "350ml",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 9.75,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-31T23:32:51+00:00)"
-    },
-    {
-      "id": 21988,
-      "occurred_at": "2026-11-17T13:35:55+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::beauty-advent-calendar-2026-6101407249",
-      "product_title": "4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 60.0,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 21987,
-      "occurred_at": "2026-11-17T13:35:55+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::vital-proteins-collagen-peptides-unflavoured-6100148487",
-      "product_title": "4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off",
-      "variant_title": "567g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 33.49,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-11-09T18:56:57+00:00)"
-    },
-    {
-      "id": 21986,
-      "occurred_at": "2026-11-17T13:35:55+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::the-humble-co-stainless-steel-tongue-scraper-6100004232",
-      "product_title": "4.62 The Humble Co Stainless Steel Tongue Scraper",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 4.99,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 21985,
-      "occurred_at": "2026-11-17T13:35:55+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::wild-amber-oud-soap-bar-125g-6100006510",
-      "product_title": "4.76 Wild Amber & Oud Soap Bar 125g 25% Off",
-      "variant_title": "125g",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 3.37,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
-    },
-    {
-      "id": 21984,
-      "occurred_at": "2026-11-17T13:35:55+00:00",
-      "domain": "hollandandbarrett.com",
-      "brand": "Margaret Dabbs London",
-      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::hairburst-hair-growth-essentials-6100013040",
-      "product_title": "5 Hairburst Hair Growth Essentials 35% Off",
-      "variant_title": "Standard",
-      "event_type": "SILENT_REMOVED",
-      "old_price": 33.8,
-      "new_price": null,
-      "details": "Vanished from storefront (last seen 2026-10-27T20:51:18+00:00)"
+      "sku_key": "hollandandbarrett.com::margaret-dabbs-london::nourishing-nail-cuticle-serum-pen-15ml-6100020347",
+      "product_title": "Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml",
+      "variant_title": "15ml",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 15.0,
+      "new_price": 9.75,
+      "details": "Price changed 15.0 -> 9.75"
     }
   ]
 }

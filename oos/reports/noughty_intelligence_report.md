@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Noughty
 
-- **Generated:** 2026-11-23 01:04 UTC
+- **Generated:** 2026-11-26 13:59 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
 - **Total Tracked Variants:** 107 (96 In Stock | **11 OOS**)
 - **Retailer Out-of-Stock Alerts:** **5** (**1 Unforced Retail Outages** vs. **1 Brand Warehouse Shortages**)
@@ -12,11 +12,11 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `lookfantastic.com` | Noughty Detox Dynamo Clarifying Shampoo 250ml | 250ml | £6.29 (Discounted -30% (was £8.99)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `hollandandbarrett.com` | **5d 1h (since 2026-11-17 23:33 UTC)** |
-| `lookfantastic.com` | Noughty Get Set Grow Shampoo 250ml | 250ml | £8.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 1h (since 2026-11-17 23:33 UTC)** |
-| `lookfantastic.com` | Noughty Hair Towel Pink | Standard | £10.49 (Discounted -25% (was £13.99)) | - | **Retail Exclusive OOS** | _None_ | **5d 1h (since 2026-11-17 23:33 UTC)** |
-| `lookfantastic.com` | Noughty To The Rescue Shampoo 250ml | 250ml | £8.99 (Full Price) | £8.99 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `hollandandbarrett.com` | **5d 1h (since 2026-11-17 23:33 UTC)** |
-| `lookfantastic.com` | Noughty Wave Hello Curl Taming Cream 150ml | 150ml | £8.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **5d 1h (since 2026-11-17 23:33 UTC)** |
+| `lookfantastic.com` | Noughty Detox Dynamo Clarifying Shampoo 250ml | 250ml | £8.99 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `hollandandbarrett.com` | **8d 14h (since 2026-11-17 23:33 UTC)** |
+| `lookfantastic.com` | Noughty Get Set Grow Shampoo 250ml | 250ml | £8.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 14h (since 2026-11-17 23:33 UTC)** |
+| `lookfantastic.com` | Noughty Hair Towel Pink | Standard | £13.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 14h (since 2026-11-17 23:33 UTC)** |
+| `lookfantastic.com` | Noughty To The Rescue Shampoo 250ml | 250ml | £8.99 (Full Price) | £8.99 | **⚠️ FACTORY SHORTAGE (Also OOS on DTC)** | `hollandandbarrett.com` | **8d 14h (since 2026-11-17 23:33 UTC)** |
+| `lookfantastic.com` | Noughty Wave Hello Curl Taming Cream 150ml | 150ml | £8.99 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **8d 14h (since 2026-11-17 23:33 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -46,26 +46,26 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hollandandbarrett.com` | 3 7th Heaven Foot peel socks | Standard | £3.00 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.3 Holland & Barrett Skin, Hair & Nails Formula 180 Tablets Buy 1 Get 1 Free | 180 Tablets | £25.49 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.31 Margaret Dabbs London PURE Nail Strengthening Treatment 9ml | 9ml | £16.00 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.38 Hairburst Shampoo x 350ml & Conditioner x 350ml Set 30% Off | 350ml | £21.00 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.43 Hairburst Long And Healthy Hair Mask 30ml 30% Off | 30ml | £4.55 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off | Standard | £15.40 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper 33% Off | Standard | £3.34 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off | 567g | £33.49 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 4.85 Hairburst Original Shampoo For Longer, Stronger Hair 350ml 35% Off | 350ml | £9.75 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 5 Margaret Dabbs London Foot Hygiene Cream | Standard | £24.00 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 5 Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml | 15ml | £15.00 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | 5 New Leaf Products Iodine - Potassium Iodine 500mcg per serving 180 Tablets 14% Off | 180 Tablets | £10.36 | 2026-11-23T01:03:33+00:00 |
-| `hollandandbarrett.com` | Margaret Dabbs London Breathe Pulse Point Oil - Frankincense & Lavender | Standard | £19.00 | 2026-11-23T01:03:33+00:00 |
-| `lookfantastic.com` | Noughty Frizz Magic Conditioner 250ml | 250ml | £8.99 | 2026-11-23T01:03:54+00:00 |
-| `lookfantastic.com` | Noughty Hair Towel Green | Standard | £13.99 | 2026-11-23T01:03:54+00:00 |
-| `lookfantastic.com` | Noughty To the Rescue Moisture Boost Shampoo 250ml | 250ml | £14.99 | 2026-11-23T01:03:54+00:00 |
-| `lookfantastic.com` | Noughty Wave Hello Curl Jelly 200ml | 200ml | £8.99 | 2026-11-23T01:03:54+00:00 |
-| `lookfantastic.com` | Noughty Wave Hello Shampoo 1000ml | 1000ml | £19.19 | 2026-11-23T01:03:54+00:00 |
-| `lovenoughty.co.uk` | Sensitive Scalp Starter Bundle | Standard | £20.27 | 2026-11-23T01:02:54+00:00 |
+| `hollandandbarrett.com` | 3 7th Heaven Foot peel socks | Standard | £3.00 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.3 Holland & Barrett Skin, Hair & Nails Formula 180 Tablets Buy 1 Get 1 Free | 180 Tablets | £25.49 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.38 Hairburst Shampoo x 350ml & Conditioner x 350ml Set 30% Off | 350ml | £21.00 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.43 Hairburst Long And Healthy Hair Mask 30ml 30% Off | 30ml | £4.55 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off | Standard | £15.40 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper 33% Off | Standard | £3.34 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off | 567g | £33.49 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.78 Holland & Barrett Beauty Advent Calendar 2026 Limited Stock | Standard | £60.00 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 4.85 Hairburst Original Shampoo For Longer, Stronger Hair 350ml 35% Off | 350ml | £9.75 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 5 Margaret Dabbs London Foot Hygiene Cream | Standard | £24.00 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 5 Margaret Dabbs London Nourishing Nail & Cuticle Serum Pen 15ml | 15ml | £15.00 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | 5 New Leaf Products Iodine - Potassium Iodine 500mcg per serving 180 Tablets 14% Off | 180 Tablets | £10.36 | 2026-11-26T13:59:15+00:00 |
+| `hollandandbarrett.com` | Margaret Dabbs London PURE Exfoliating Hand Wash 300ml | 300ml | £37.50 | 2026-11-26T13:59:15+00:00 |
+| `lookfantastic.com` | Noughty Frizz Magic Conditioner 250ml | 250ml | £8.99 | 2026-11-26T13:59:34+00:00 |
+| `lookfantastic.com` | Noughty Hair Towel (One Size) | Standard | £13.99 | 2026-11-26T13:59:34+00:00 |
+| `lookfantastic.com` | Noughty Hair Towel Green | Standard | £13.99 | 2026-11-26T13:59:34+00:00 |
+| `lookfantastic.com` | Noughty To the Rescue Moisture Boost Shampoo 250ml | 250ml | £14.99 | 2026-11-26T13:59:34+00:00 |
+| `lookfantastic.com` | Noughty Wave Hello Curl Jelly 200ml | 200ml | £8.99 | 2026-11-26T13:59:34+00:00 |
+| `lookfantastic.com` | Noughty Wave Hello Shampoo 1000ml | 1000ml | £19.19 | 2026-11-26T13:59:34+00:00 |
+| `lovenoughty.co.uk` | Sensitive Scalp Starter Bundle | Standard | £20.27 | 2026-11-26T13:58:36+00:00 |
 
 ---
 
@@ -74,7 +74,7 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/noughty |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 34 | 34 | **0** | https://www.hollandandbarrett.com/shop/brands/noughty/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 12 | 7 | **5** | https://www.lookfantastic.com/c/brands/noughty/ |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 35 | 35 | **0** | https://www.hollandandbarrett.com/shop/brands/noughty/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 11 | 6 | **5** | https://www.lookfantastic.com/c/brands/noughty/ |
 | `lovenoughty.co.uk` | Official Brand DTC (Master Catalog) | Shopify | 61 | 55 | **6** | https://lovenoughty.co.uk |
 | `superdrug.com` | Tier 1 (Major UK Retailer) | Custom | 0 | 0 | **0** | https://www.superdrug.com/brand/noughty |
