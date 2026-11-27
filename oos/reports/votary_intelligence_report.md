@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Votary
 
-- **Generated:** 2026-11-23 14:49 UTC
+- **Generated:** 2026-11-27 00:41 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
 - **Total Tracked Variants:** 132 (127 In Stock | **5 OOS**)
 - **Retailer Out-of-Stock Alerts:** **4** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,10 +12,10 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Blemish Rescue Oil – Tamanu and Salicylic | Standard | - (Full Price) | £27.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **26d 8h (since 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Intense Eye Oil - Tuberose and Retinoid | Standard | £86.25 (Discounted -25% (was £115.00)) | - | **Retail Exclusive OOS** | _None_ | **26d 8h (since 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Intense Night Oil - Rosehip and Retinoid | Standard | £103.60 (Discounted -30% (was £148.00)) | - | **Retail Exclusive OOS** | _None_ | **26d 8h (since 2026-10-28 05:54 UTC)** |
-| `spacenk.com` | Pillow Spray Lavender and Chamomile | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **26d 8h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Blemish Rescue Oil – Tamanu and Salicylic | Standard | - (Full Price) | £27.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **29d 18h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Intense Eye Oil - Tuberose and Retinoid | Standard | £86.25 (Discounted -25% (was £115.00)) | - | **Retail Exclusive OOS** | _None_ | **29d 18h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Intense Night Oil - Rosehip and Retinoid | Standard | £103.60 (Discounted -30% (was £148.00)) | - | **Retail Exclusive OOS** | _None_ | **29d 18h (since 2026-10-28 05:54 UTC)** |
+| `spacenk.com` | Pillow Spray Lavender and Chamomile | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **29d 18h (since 2026-10-28 05:54 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -37,18 +37,18 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `votary.co.uk` | Antidote Bath and Body Oil | Standard | £82.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Barrier Repair Protocol | Standard | £196.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Body Scrub | Standard | £43.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Hand Wash and Hand Milk Set | Standard | £104.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Hotel At Home Set | Standard | £185.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Shampoo and Conditioner Set | Standard | £96.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Shower Gel and Body Milk Set | Standard | £104.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Super Barrier Balm | Standard | £51.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Super Seed Cleansing Oil 30ml Travel Kit | 30ml | £30.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Ultimate Radiance Duo | Standard | £184.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | Ultimate Results Duo | Standard | £152.00 | 2026-11-23T14:48:54+00:00 |
-| `votary.co.uk` | VERDEN X BEATA HEUMAN Scented Candle | Standard | £87.00 | 2026-11-23T14:48:54+00:00 |
+| `votary.co.uk` | Antidote Bath and Body Oil | Standard | £82.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Barrier Repair Protocol | Standard | £196.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Body Scrub | Standard | £43.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Hand Wash and Hand Milk Set | Standard | £104.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Hotel At Home Set | Standard | £185.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Shampoo and Conditioner Set | Standard | £96.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Shower Gel and Body Milk Set | Standard | £104.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Super Barrier Balm | Standard | £51.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Super Seed Cleansing Oil 30ml Travel Kit | 30ml | £30.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Ultimate Radiance Duo | Standard | £184.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | Ultimate Results Duo | Standard | £152.00 | 2026-11-27T00:40:53+00:00 |
+| `votary.co.uk` | VERDEN X BEATA HEUMAN Scented Candle | Standard | £87.00 | 2026-11-27T00:40:53+00:00 |
 
 ---
 

@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Vyrao
 
-- **Generated:** 2026-11-24 02:56 UTC
+- **Generated:** 2026-11-27 00:43 UTC
 - **Monitored Storefronts:** 3 (1 Official DTC Master Catalog + 2 Major UK Stockists)
-- **Total Tracked Variants:** 142 (134 In Stock | **8 OOS**)
+- **Total Tracked Variants:** 139 (130 In Stock | **9 OOS**)
 - **Retailer Out-of-Stock Alerts:** **3** (**1 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **0**
+- **Removed / Delisted Variants:** **3**
 
 ---
 
@@ -12,9 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Discovery Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **26d 11h (since 2026-10-28 15:09 UTC)** |
-| `spacenk.com` | Sunny Travel Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **26d 11h (since 2026-10-28 15:09 UTC)** |
-| `spacenk.com` | Vyrao The Sixth Eau De Parfum 10ml | 10ML | £38.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **26d 11h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Discovery Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **29d 9h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Sunny Travel Set | Standard | - (Full Price) | - | **Retail Exclusive OOS** | _None_ | **29d 9h (since 2026-10-28 15:09 UTC)** |
+| `spacenk.com` | Vyrao The Sixth Eau De Parfum 10ml | 10ML | £38.00 (Full Price) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `cultbeauty.co.uk` | **29d 9h (since 2026-10-28 15:09 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -25,6 +25,7 @@
 | `vyrao.com` | Witchy Woo Candle | Standard | £69.00 | 2026-10-28T15:07:54+00:00 |
 | `vyrao.com` | Witchy Woo Large | Standard | £165.00 | 2026-10-28T15:07:54+00:00 |
 | `vyrao.com` | Wonder Candle | Standard | £69.00 | 2026-10-28T15:07:54+00:00 |
+| `vyrao.com` | Wonder Large | Standard | £165.00 | 2026-11-27T00:41:40+00:00 |
 
 ---
 
@@ -42,7 +43,11 @@
 
 ## 3. Removed / Delisted Variants (Diffed Against Previous Scans)
 
-_No removed variants detected yet._
+| Store | Product | Variant | Last Seen Price | Removed At |
+|---|---|---|---|---|
+| `vyrao.com` | Magnetic 70 | Standard | £140.00 | 2026-11-27T00:41:40+00:00 |
+| `vyrao.com` | Magnetic 70 10ml | 10ml | £35.00 | 2026-11-27T00:41:40+00:00 |
+| `vyrao.com` | Mini Woo: Magnetic 70 | Standard | £94.00 | 2026-11-27T00:41:40+00:00 |
 
 ---
 
@@ -52,4 +57,4 @@ _No removed variants detected yet._
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 32 | 32 | **0** | https://www.cultbeauty.co.uk/c/brands/vyrao/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 38 | 35 | **3** | https://www.spacenk.com/uk/brands/v/vyrao |
-| `vyrao.com` | Official Brand DTC (Master Catalog) | Shopify | 72 | 67 | **5** | https://vyrao.com |
+| `vyrao.com` | Official Brand DTC (Master Catalog) | Shopify | 69 | 63 | **6** | https://vyrao.com |
