@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Bare Biology
 
-- **Generated:** 2026-11-24 03:02 UTC
+- **Generated:** 2026-11-27 13:56 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 11 (10 In Stock | **1 OOS**)
 - **Retailer Out-of-Stock Alerts:** **1** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,7 +12,7 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `planetorganic.com` | Bare Biology Life & Soul Pure Omega-3 60 caps | 30577 | £33.00 (Full Price) | - | **Retail Exclusive OOS** | _None_ | **0h (first detected 2026-11-24 03:02 UTC)** |
+| `planetorganic.com` | Bare Biology Life & Soul Pure Omega-3 60 caps | 30577 | £24.75 (Discounted -25% (was £33.00)) | - | **Retail Exclusive OOS** | _None_ | **3d 10h (since 2026-11-24 03:02 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 

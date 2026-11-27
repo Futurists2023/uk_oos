@@ -1,47 +1,19 @@
 {
   "brand": "Medik8",
   "brand_slug": "medik8",
-  "generated_at": "2026-11-24T14:55:44+00:00",
+  "generated_at": "2026-11-27T13:59:55+00:00",
   "summary": {
     "monitored_uk_stores": 4,
     "monitored_retail_stockists": 3,
-    "total_listed_skus_variants": 246,
-    "in_stock_skus_variants": 237,
+    "total_listed_skus_variants": 252,
+    "in_stock_skus_variants": 243,
     "out_of_stock_skus_variants": 9,
-    "retail_out_of_stock_variants": 8,
+    "retail_out_of_stock_variants": 9,
     "unforced_retail_outages": 2,
     "factory_shortages_on_dtc": 0,
     "silent_removed_skus": 74
   },
   "out_of_stock_alerts": [
-    {
-      "sku_key": "medik8.com::medik8::advanced-pro-collagen-peptide-cream::56390606520700",
-      "domain": "medik8.com",
-      "brand": "Medik8",
-      "product_title": "Advanced Pro-Collagen+ Peptide Cream",
-      "variant_title": "Advanced Pro-Collagen+ Peptide Cream Refill",
-      "normalized_product_key": "advanced_pro_collagen_peptide_cream_advanced_pro_collagen_peptide_cream_refill",
-      "product_url": "https://www.medik8.com/products/advanced-pro-collagen-peptide-cream",
-      "sku_code": "P12105",
-      "current_price": 74.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 74.0,
-      "currency": "GBP",
-      "is_available": 0,
-      "is_listed": 1,
-      "first_seen_at": "2026-10-26T15:36:19+00:00",
-      "last_seen_at": "2026-11-24T14:54:06+00:00",
-      "first_seen_oos_at": "2026-11-24T14:54:06+00:00",
-      "last_seen_in_stock_at": "2026-11-21T12:45:25+00:00",
-      "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-24 14:54 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price",
-      "dtc_status": "OOS_ON_DTC",
-      "dtc_rrp": 74.0,
-      "diagnosis": "Brand DTC Warehouse OOS",
-      "in_stock_elsewhere": []
-    },
     {
       "sku_key": "spacenk.com::medik8::bakuchiol-peptides-MUK200030048",
       "domain": "spacenk.com",
@@ -58,12 +30,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Full Price",
       "dtc_status": "IN_STOCK_ON_DTC",
       "dtc_rrp": 55.0,
@@ -86,12 +58,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Discounted -25% (was £55.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -114,12 +86,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Discounted -25% (was £65.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -142,12 +114,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -170,12 +142,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Discounted -30% (was £36.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -198,12 +170,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T21:08:36+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-11-24T14:55:42+00:00",
       "last_seen_in_stock_at": "2026-11-21T12:46:48+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-24 14:55 UTC)",
-      "days_oos": 0.0,
+      "duration_label": "2d 23h (since 2026-11-24 14:55 UTC)",
+      "days_oos": 3.0,
       "price_note": "Discounted -25% (was £107.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -226,13 +198,41 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T21:08:36+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-28T21:08:36+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "26d 17h (since 2026-10-28 21:08 UTC)",
-      "days_oos": 26.7,
+      "duration_label": "29d 16h (since 2026-10-28 21:08 UTC)",
+      "days_oos": 29.7,
       "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "spacenk.com::medik8::nighttime-nourish-kit-MUK200066183",
+      "domain": "spacenk.com",
+      "brand": "Medik8",
+      "product_title": "Nighttime Nourish Kit",
+      "variant_title": "Standard",
+      "normalized_product_key": "nighttime_nourish_kit",
+      "product_url": "https://www.spacenk.com/uk/christmas/christmas-skincare/nighttime-nourish-kit-MUK200066183.html",
+      "sku_code": "nighttime-nourish-kit-MUK200066183",
+      "current_price": 36.75,
+      "compare_at_price": 49.0,
+      "last_in_stock_price": 36.75,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:37:49+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
+      "first_seen_oos_at": "2026-11-27T13:59:54+00:00",
+      "last_seen_in_stock_at": "2026-11-24T14:55:42+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-27 13:59 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Discounted -25% (was £49.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
@@ -254,12 +254,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Full Price",
       "dtc_status": "IN_STOCK_ON_DTC",
       "dtc_rrp": 39.0,
@@ -284,12 +284,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Full Price",
       "dtc_status": "IN_STOCK_ON_DTC",
       "dtc_rrp": 55.0,
@@ -312,12 +312,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Discounted -25% (was £55.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -340,12 +340,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Discounted -25% (was £65.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -368,12 +368,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Full Price",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -396,12 +396,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Discounted -30% (was £36.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -424,12 +424,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T21:08:36+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-11-24T14:55:42+00:00",
       "last_seen_in_stock_at": "2026-11-21T12:46:48+00:00",
       "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-24 14:55 UTC)",
-      "days_oos": 0.0,
+      "duration_label": "2d 23h (since 2026-11-24 14:55 UTC)",
+      "days_oos": 3.0,
       "price_note": "Discounted -25% (was £107.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
@@ -452,13 +452,41 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-28T21:08:36+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-28T21:08:36+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "26d 17h (since 2026-10-28 21:08 UTC)",
-      "days_oos": 26.7,
+      "duration_label": "29d 16h (since 2026-10-28 21:08 UTC)",
+      "days_oos": 29.7,
       "price_note": "Full Price",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "diagnosis": "Retail Exclusive OOS",
+      "in_stock_elsewhere": []
+    },
+    {
+      "sku_key": "spacenk.com::medik8::nighttime-nourish-kit-MUK200066183",
+      "domain": "spacenk.com",
+      "brand": "Medik8",
+      "product_title": "Nighttime Nourish Kit",
+      "variant_title": "Standard",
+      "normalized_product_key": "nighttime_nourish_kit",
+      "product_url": "https://www.spacenk.com/uk/christmas/christmas-skincare/nighttime-nourish-kit-MUK200066183.html",
+      "sku_code": "nighttime-nourish-kit-MUK200066183",
+      "current_price": 36.75,
+      "compare_at_price": 49.0,
+      "last_in_stock_price": 36.75,
+      "currency": "GBP",
+      "is_available": 0,
+      "is_listed": 1,
+      "first_seen_at": "2026-10-26T15:37:49+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
+      "first_seen_oos_at": "2026-11-27T13:59:54+00:00",
+      "last_seen_in_stock_at": "2026-11-24T14:55:42+00:00",
+      "silent_removed_at": null,
+      "duration_label": "0h (first detected 2026-11-27 13:59 UTC)",
+      "days_oos": 0.0,
+      "price_note": "Discounted -25% (was £49.00)",
       "dtc_status": "NOT_ON_DTC",
       "dtc_rrp": null,
       "diagnosis": "Retail Exclusive OOS",
@@ -480,12 +508,12 @@
       "is_available": 0,
       "is_listed": 1,
       "first_seen_at": "2026-10-26T15:37:49+00:00",
-      "last_seen_at": "2026-11-24T14:55:42+00:00",
+      "last_seen_at": "2026-11-27T13:59:54+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
       "silent_removed_at": null,
-      "duration_label": "30d 23h (since 2026-10-24 15:04 UTC)",
-      "days_oos": 31.0,
+      "duration_label": "33d 22h (since 2026-10-24 15:04 UTC)",
+      "days_oos": 34.0,
       "price_note": "Full Price",
       "dtc_status": "IN_STOCK_ON_DTC",
       "dtc_rrp": 39.0,
@@ -493,36 +521,7 @@
       "in_stock_elsewhere": []
     }
   ],
-  "dtc_out_of_stock": [
-    {
-      "sku_key": "medik8.com::medik8::advanced-pro-collagen-peptide-cream::56390606520700",
-      "domain": "medik8.com",
-      "brand": "Medik8",
-      "product_title": "Advanced Pro-Collagen+ Peptide Cream",
-      "variant_title": "Advanced Pro-Collagen+ Peptide Cream Refill",
-      "normalized_product_key": "advanced_pro_collagen_peptide_cream_advanced_pro_collagen_peptide_cream_refill",
-      "product_url": "https://www.medik8.com/products/advanced-pro-collagen-peptide-cream",
-      "sku_code": "P12105",
-      "current_price": 74.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 74.0,
-      "currency": "GBP",
-      "is_available": 0,
-      "is_listed": 1,
-      "first_seen_at": "2026-10-26T15:36:19+00:00",
-      "last_seen_at": "2026-11-24T14:54:06+00:00",
-      "first_seen_oos_at": "2026-11-24T14:54:06+00:00",
-      "last_seen_in_stock_at": "2026-11-21T12:45:25+00:00",
-      "silent_removed_at": null,
-      "duration_label": "0h (first detected 2026-11-24 14:54 UTC)",
-      "days_oos": 0.0,
-      "price_note": "Full Price",
-      "dtc_status": "OOS_ON_DTC",
-      "dtc_rrp": 74.0,
-      "diagnosis": "Brand DTC Warehouse OOS",
-      "in_stock_elsewhere": []
-    }
-  ],
+  "dtc_out_of_stock": [],
   "hero_benchmarks": [
     {
       "normalized_key": "advanced_day_ultimate_protect_spf_50_moisturiser",
@@ -559,6 +558,25 @@
       "oos_in": [],
       "missing_in": [
         "cultbeauty.co.uk"
+      ],
+      "undercut_alerts": []
+    },
+    {
+      "normalized_key": "advanced_pro_collagen_peptide_cream_moisturiser",
+      "product_family": "Medik8 Advanced Pro-Collagen+ Peptide Cream, Moisturiser 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
       ],
       "undercut_alerts": []
     },
@@ -884,6 +902,25 @@
         "spacenk.com"
       ],
       "undercut_alerts": []
+    },
+    {
+      "normalized_key": "total_moisture_daily_facial_cream_moisturiser_refill",
+      "product_family": "Medik8 Total Moisture Daily Facial Cream, Moisturiser Refill 50ml",
+      "dtc_status": "NOT_ON_DTC",
+      "dtc_rrp": null,
+      "stores_carrying": 2,
+      "total_stores": 3,
+      "penetration_pct": 67,
+      "is_hero": true,
+      "in_stock_in": [
+        "cultbeauty.co.uk",
+        "lookfantastic.com"
+      ],
+      "oos_in": [],
+      "missing_in": [
+        "spacenk.com"
+      ],
+      "undercut_alerts": []
     }
   ],
   "silent_removals": [
@@ -906,7 +943,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-advanced-night-restore_11899389",
@@ -927,7 +964,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-advanced-pro-collagen-peptide-cream-50ml_16818015",
@@ -948,7 +985,28 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
+    },
+    {
+      "sku_key": "cultbeauty.co.uk::medik8::p_medik8-age-defying-essentials_17949190",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Medik8",
+      "product_title": "Medik8 Age-Defying Essentials (Worth £151.00)",
+      "variant_title": "Standard",
+      "normalized_product_key": "age_defying_essentials",
+      "product_url": "https://www.cultbeauty.co.uk/p/medik8-age-defying-essentials/17949190/",
+      "sku_code": "p_medik8-age-defying-essentials_17949190",
+      "current_price": 84.75,
+      "compare_at_price": 113.0,
+      "last_in_stock_price": 84.75,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-26T15:36:40+00:00",
+      "last_seen_at": "2026-11-24T14:54:30+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-24T14:54:30+00:00",
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-c-tetra-advanced-30ml_16288094",
@@ -969,7 +1027,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-c-tetra-luxe-30ml_11795622",
@@ -990,7 +1048,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-c-tetra-serum-30ml_11795619",
@@ -1011,7 +1069,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-crystal-retinal-1-serum-30ml_12097971",
@@ -1032,7 +1090,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-crystal-retinal-10_11899387",
@@ -1053,7 +1111,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-crystal-retinal-20-serum-30ml_15292551",
@@ -1074,7 +1132,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-crystal-retinal-3-serum-30ml_12097972",
@@ -1095,28 +1153,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
-    },
-    {
-      "sku_key": "cultbeauty.co.uk::medik8::p_medik8-crystal-retinal-3-and-advanced-night-restore_14273002",
-      "domain": "cultbeauty.co.uk",
-      "brand": "Medik8",
-      "product_title": "Medik8 Crystal Retinal 3 and Advanced Night Restore",
-      "variant_title": "Standard",
-      "normalized_product_key": "crystal_retinal_3_advanced_night_restore",
-      "product_url": "https://www.cultbeauty.co.uk/p/medik8-crystal-retinal-3-and-advanced-night-restore/14273002/",
-      "sku_code": "p_medik8-crystal-retinal-3-and-advanced-night-restore_14273002",
-      "current_price": 112.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 112.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-11-10T21:49:49+00:00",
-      "last_seen_at": "2026-11-10T21:49:49+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-10T21:49:49+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-crystal-retinal-6_11899386",
@@ -1137,7 +1174,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-daily-radiance-vitamin-c-50ml_12309453",
@@ -1158,7 +1195,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-exosome-pdrn-prismatic-serum-30ml_17777851",
@@ -1179,7 +1216,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-hydr8-b5-intense-30ml_12060781",
@@ -1200,7 +1237,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-lipid-balance-cleansing-oil-140ml_11899388",
@@ -1221,7 +1258,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-liquid-peptides-30ml_12309458",
@@ -1242,7 +1279,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-liquid-peptides-advanced-mp-30ml_15826874",
@@ -1263,7 +1300,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_beauty-box_the-cult-beauty-advent-calendar-special-edition-worth-over-1-100_17921439",
@@ -1284,7 +1321,7 @@
       "last_seen_at": "2026-10-26T15:36:40+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:36:40+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-micellar-mousse-150ml_11995329",
@@ -1305,7 +1342,28 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
+    },
+    {
+      "sku_key": "cultbeauty.co.uk::medik8::p_medik8-moisture-minis_17949197",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Medik8",
+      "product_title": "Medik8 Moisture Minis (Worth £40.00)",
+      "variant_title": "Standard",
+      "normalized_product_key": "moisture_minis",
+      "product_url": "https://www.cultbeauty.co.uk/p/medik8-moisture-minis/17949197/",
+      "sku_code": "p_medik8-moisture-minis_17949197",
+      "current_price": 21.0,
+      "compare_at_price": 28.0,
+      "last_in_stock_price": 21.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-26T15:36:40+00:00",
+      "last_seen_at": "2026-11-24T14:54:30+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-24T14:54:30+00:00",
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-niacinamide-peptides-30ml_17597888",
@@ -1326,7 +1384,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-press-and-glow-tonic-200ml_12708819",
@@ -1347,7 +1405,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-r-retinoate-intense_12053583",
@@ -1368,7 +1426,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-surface-radiance-cleanse-150ml_12201934",
@@ -1389,7 +1447,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-total-moisture-daily-cleansing-gel-145ml_17899674",
@@ -1410,7 +1468,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-ultimate-routine-bundle_15784129",
@@ -1431,7 +1489,7 @@
       "last_seen_at": "2026-11-08T06:08:28+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-08T06:08:28+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "cultbeauty.co.uk::medik8::p_medik8-r-retinoate-day-and-night-serum-50ml_11363443",
@@ -1452,7 +1510,7 @@
       "last_seen_at": "2026-11-21T12:45:43+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:43+00:00",
-      "silent_removed_at": "2026-11-24T14:54:30+00:00"
+      "silent_removed_at": "2026-11-27T13:58:50+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_beauty-box_the-grooming-advent-calendar-worth-over-469_17691385",
@@ -1473,7 +1531,7 @@
       "last_seen_at": "2026-10-26T15:37:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:37:05+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-advanced-day-ultimate-protect-spf50-50ml_13180862",
@@ -1494,7 +1552,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-advanced-night-restore_11899389",
@@ -1515,7 +1573,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-advanced-pro-collagen-peptide-cream-50ml_16818015",
@@ -1536,7 +1594,7 @@
       "last_seen_at": "2026-11-04T00:44:06+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-04T00:44:06+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-c-tetra-advanced-30ml_16288094",
@@ -1557,7 +1615,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-c-tetra-luxe-30ml_11795622",
@@ -1578,7 +1636,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-clarifying-foam-150ml_11795632",
@@ -1599,7 +1657,28 @@
       "last_seen_at": "2026-11-15T21:07:06+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-15T21:07:06+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
+    },
+    {
+      "sku_key": "lookfantastic.com::medik8::p_medik8-clarifying-foam-refreshing-aha-bha-blemish-cleanser-150ml_11795632",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "product_title": "Medik8 Clarifying Foam, Refreshing AHA/BHA Blemish Cleanser 150ml",
+      "variant_title": "150ml",
+      "normalized_product_key": "clarifying_foam_refreshing_aha_bha_blemish_cleanser",
+      "product_url": "https://www.lookfantastic.com/p/medik8-clarifying-foam-refreshing-aha-bha-blemish-cleanser-150ml/11795632/",
+      "sku_code": "p_medik8-clarifying-foam-refreshing-aha-bha-blemish-cleanser-150ml_11795632",
+      "current_price": 18.75,
+      "compare_at_price": 25.0,
+      "last_in_stock_price": 18.75,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-11-24T14:54:52+00:00",
+      "last_seen_at": "2026-11-24T14:54:52+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-24T14:54:52+00:00",
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-1-serum-30ml_12097971",
@@ -1620,7 +1699,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-10_11899387",
@@ -1641,7 +1720,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-20-serum-30ml_15292551",
@@ -1662,7 +1741,7 @@
       "last_seen_at": "2026-10-28T21:07:36+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T21:07:36+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-6_11899386",
@@ -1683,7 +1762,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-ceramide-eye-3-15ml_14271143",
@@ -1704,7 +1783,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-daily-radiance-vitamin-c-50ml_12309453",
@@ -1725,7 +1804,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-exosome-pdrn-prismatic-serum-30ml_17777851",
@@ -1746,7 +1825,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-hydr8-b5-intense-30ml_12060781",
@@ -1767,7 +1846,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-hydr8-b5-intense-8ml_12873866",
@@ -1788,7 +1867,7 @@
       "last_seen_at": "2026-10-26T15:37:05+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:37:05+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-hydr8-b5-serum-30ml_11795629",
@@ -1809,7 +1888,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-lipid-balance-cleansing-oil-140ml_11899388",
@@ -1830,7 +1909,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-liquid-peptides-30ml_12309458",
@@ -1851,7 +1930,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-liquid-peptides-advanced-mp-30ml_15826874",
@@ -1872,7 +1951,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-niacinamide-peptides-30ml_17597888",
@@ -1893,7 +1972,7 @@
       "last_seen_at": "2026-10-28T21:07:36+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-28T21:07:36+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-press-and-glow-tonic-200ml_12708819",
@@ -1914,7 +1993,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-press-and-glow-tonic-refill-200ml_12708820",
@@ -1935,7 +2014,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-surface-radiance-cleanse-150ml_12201934",
@@ -1956,7 +2035,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-surface-radiance-cleanse-40ml_14939781",
@@ -1977,7 +2056,7 @@
       "last_seen_at": "2026-11-04T00:44:06+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-04T00:44:06+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-total-moisture-daily-cleansing-gel-145ml_17899674",
@@ -1998,7 +2077,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-total-moisture-daily-facial-cream-50ml_15082444",
@@ -2019,7 +2098,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-total-moisture-daily-facial-cream-refill-50ml_15082443",
@@ -2040,7 +2119,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-travel-size-press-glow-tonic-30ml_15392153",
@@ -2061,7 +2140,7 @@
       "last_seen_at": "2026-11-10T21:50:09+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-10T21:50:09+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "lookfantastic.com::medik8::p_medik8-c-tetra-serum-30ml_11795619",
@@ -2082,28 +2161,7 @@
       "last_seen_at": "2026-11-21T12:46:04+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:46:04+00:00",
-      "silent_removed_at": "2026-11-24T14:54:52+00:00"
-    },
-    {
-      "sku_key": "medik8.com::medik8::advanced-pro-collagen-peptide-cream-refill-1::56321136099708",
-      "domain": "medik8.com",
-      "brand": "Medik8",
-      "product_title": "Advanced Pro-Collagen+ Peptide Cream Refill",
-      "variant_title": "Standard",
-      "normalized_product_key": "advanced_pro_collagen_peptide_cream_refill",
-      "product_url": "https://www.medik8.com/products/advanced-pro-collagen-peptide-cream-refill-1",
-      "sku_code": "P12105",
-      "current_price": 74.0,
-      "compare_at_price": null,
-      "last_in_stock_price": 74.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-26T15:36:19+00:00",
-      "last_seen_at": "2026-11-21T12:45:25+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-21T12:45:25+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
+      "silent_removed_at": "2026-11-27T13:59:09+00:00"
     },
     {
       "sku_key": "medik8.com::medik8::blemish-control-pads::36668821078168",
@@ -2124,7 +2182,28 @@
       "last_seen_at": "2026-11-21T12:45:25+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:25+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
+      "silent_removed_at": "2026-11-27T13:58:29+00:00"
+    },
+    {
+      "sku_key": "medik8.com::medik8::calmwise-colour-correct::36676174020760",
+      "domain": "medik8.com",
+      "brand": "Medik8",
+      "product_title": "Calmwise™ Colour Correct",
+      "variant_title": "Calmwise™ Colour Correct",
+      "normalized_product_key": "calmwise_colour_correct_calmwise_colour_correct",
+      "product_url": "https://www.medik8.com/products/calmwise-colour-correct",
+      "sku_code": "P09033",
+      "current_price": 49.0,
+      "compare_at_price": null,
+      "last_in_stock_price": 49.0,
+      "currency": "GBP",
+      "is_available": 1,
+      "is_listed": 0,
+      "first_seen_at": "2026-10-26T15:36:19+00:00",
+      "last_seen_at": "2026-11-24T14:54:06+00:00",
+      "first_seen_oos_at": null,
+      "last_seen_in_stock_at": "2026-11-24T14:54:06+00:00",
+      "silent_removed_at": "2026-11-27T13:58:29+00:00"
     },
     {
       "sku_key": "medik8.com::medik8::calmwise-serum::36676236935320",
@@ -2145,28 +2224,7 @@
       "last_seen_at": "2026-11-21T12:45:25+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-21T12:45:25+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
-    },
-    {
-      "sku_key": "medik8.com::medik8::clarity-peptides™-copy::56356550574460",
-      "domain": "medik8.com",
-      "brand": "Medik8",
-      "product_title": "Clarity Peptides™ (Outlet)",
-      "variant_title": "Standard",
-      "normalized_product_key": "clarity_peptides_outlet",
-      "product_url": "https://www.medik8.com/products/clarity-peptides™-copy",
-      "sku_code": "P08826",
-      "current_price": 27.0,
-      "compare_at_price": 45.0,
-      "last_in_stock_price": 27.0,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-26T15:36:19+00:00",
-      "last_seen_at": "2026-11-15T21:06:26+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-15T21:06:26+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
+      "silent_removed_at": "2026-11-27T13:58:29+00:00"
     },
     {
       "sku_key": "medik8.com::medik8::cryo-sculpt-facial-orb-copy::57458394988924",
@@ -2187,7 +2245,7 @@
       "last_seen_at": "2026-11-18T17:24:40+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-18T17:24:40+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
+      "silent_removed_at": "2026-11-27T13:58:29+00:00"
     },
     {
       "sku_key": "medik8.com::medik8::gentle-cleanse::36714125656216",
@@ -2208,7 +2266,7 @@
       "last_seen_at": "2026-11-04T00:43:27+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
+      "silent_removed_at": "2026-11-27T13:58:29+00:00"
     },
     {
       "sku_key": "medik8.com::medik8::gentle-cleanse::41846876405912",
@@ -2229,49 +2287,28 @@
       "last_seen_at": "2026-11-04T00:43:27+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-11-04T00:43:27+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
+      "silent_removed_at": "2026-11-27T13:58:29+00:00"
     },
     {
-      "sku_key": "medik8.com::medik8::liquid-peptides-advanced-mp-exo-pdrn-prismatic-bundle::57667534225788",
+      "sku_key": "medik8.com::medik8::clarity-firm-4-piece-gift-set::57475928883580",
       "domain": "medik8.com",
       "brand": "Medik8",
-      "product_title": "Liquid Peptides Advanced MP & Exo-PDRN Prismatic+ Bundle",
+      "product_title": "Refine & Glow 4 Piece Gift Set",
       "variant_title": "Standard",
-      "normalized_product_key": "liquid_peptides_advanced_mp_exo_pdrn_prismatic_bundle",
-      "product_url": "https://www.medik8.com/products/liquid-peptides-advanced-mp-exo-pdrn-prismatic-bundle",
-      "sku_code": "",
-      "current_price": 136.85,
-      "compare_at_price": 161.0,
-      "last_in_stock_price": 136.85,
-      "currency": "GBP",
-      "is_available": 1,
-      "is_listed": 0,
-      "first_seen_at": "2026-10-26T15:36:19+00:00",
-      "last_seen_at": "2026-11-18T17:24:40+00:00",
-      "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-18T17:24:40+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
-    },
-    {
-      "sku_key": "medik8.com::medik8::hydrate-glow-4-piece-gift-set::57475932062076",
-      "domain": "medik8.com",
-      "brand": "Medik8",
-      "product_title": "Radiance & Recharge 4-Piece Gift Set",
-      "variant_title": "Standard",
-      "normalized_product_key": "radiance_recharge_4_piece_gift_set",
-      "product_url": "https://www.medik8.com/products/hydrate-glow-4-piece-gift-set",
-      "sku_code": "P18594",
-      "current_price": 61.0,
+      "normalized_product_key": "refine_glow_4_piece_gift_set",
+      "product_url": "https://www.medik8.com/products/clarity-firm-4-piece-gift-set",
+      "sku_code": "P18592",
+      "current_price": 60.0,
       "compare_at_price": null,
-      "last_in_stock_price": 61.0,
+      "last_in_stock_price": 60.0,
       "currency": "GBP",
       "is_available": 1,
       "is_listed": 0,
-      "first_seen_at": "2026-10-30T20:53:51+00:00",
-      "last_seen_at": "2026-11-04T00:43:27+00:00",
+      "first_seen_at": "2026-10-28T21:06:52+00:00",
+      "last_seen_at": "2026-11-24T14:54:06+00:00",
       "first_seen_oos_at": null,
-      "last_seen_in_stock_at": "2026-11-04T00:43:27+00:00",
-      "silent_removed_at": "2026-11-24T14:54:06+00:00"
+      "last_seen_in_stock_at": "2026-11-24T14:54:06+00:00",
+      "silent_removed_at": "2026-11-27T13:58:29+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::advanced-night-restore-MUK200030053",
@@ -2292,7 +2329,7 @@
       "last_seen_at": "2026-10-26T15:37:49+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:37:49+00:00",
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::advanced-pro-collagen-peptide-cream-MUK200058804",
@@ -2313,7 +2350,7 @@
       "last_seen_at": "2026-10-26T15:37:49+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:37:49+00:00",
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::daily-radiance-vitamin-c-spf30-MUK200030042",
@@ -2334,7 +2371,7 @@
       "last_seen_at": "2026-10-26T15:37:49+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:37:49+00:00",
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::hydr8-b5-intense-MUK200030055",
@@ -2355,7 +2392,7 @@
       "last_seen_at": "2026-10-26T15:37:49+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:37:49+00:00",
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::peptide-boosters-kit-MUK200062919",
@@ -2376,7 +2413,7 @@
       "last_seen_at": "2026-11-15T21:08:00+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::press-glow-daily-exfoliating-pha-tonic-with-enzyme-activator-MUK200028324",
@@ -2397,7 +2434,7 @@
       "last_seen_at": "2026-10-26T15:37:49+00:00",
       "first_seen_oos_at": null,
       "last_seen_in_stock_at": "2026-10-26T15:37:49+00:00",
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::smooth-body-exfoliating-kit-MUK200030062",
@@ -2418,7 +2455,7 @@
       "last_seen_at": "2026-11-15T21:08:00+00:00",
       "first_seen_oos_at": "2026-10-24T15:04:38+00:00",
       "last_seen_in_stock_at": null,
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     },
     {
       "sku_key": "spacenk.com::medik8::summer-skin-essentials-MUK200064352",
@@ -2439,13 +2476,13 @@
       "last_seen_at": "2026-11-15T21:08:00+00:00",
       "first_seen_oos_at": "2026-11-10T21:51:10+00:00",
       "last_seen_in_stock_at": "2026-11-08T06:09:48+00:00",
-      "silent_removed_at": "2026-11-24T14:55:42+00:00"
+      "silent_removed_at": "2026-11-27T13:59:54+00:00"
     }
   ],
   "recent_events": [
     {
-      "id": 26900,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31024,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::peptide-boosters-kit-MUK200062919",
@@ -2457,8 +2494,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T21:08:00+00:00)"
     },
     {
-      "id": 26899,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31023,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::smooth-body-exfoliating-kit-MUK200030062",
@@ -2470,8 +2507,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T21:08:00+00:00)"
     },
     {
-      "id": 26898,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31022,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::press-glow-daily-exfoliating-pha-tonic-with-enzyme-activator-MUK200028324",
@@ -2483,8 +2520,8 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:37:49+00:00)"
     },
     {
-      "id": 26897,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31021,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::summer-skin-essentials-MUK200064352",
@@ -2496,8 +2533,8 @@
       "details": "Vanished from storefront (last seen 2026-11-15T21:08:00+00:00)"
     },
     {
-      "id": 26896,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31020,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::hydr8-b5-intense-MUK200030055",
@@ -2509,8 +2546,8 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:37:49+00:00)"
     },
     {
-      "id": 26895,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31019,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::advanced-pro-collagen-peptide-cream-MUK200058804",
@@ -2522,8 +2559,8 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:37:49+00:00)"
     },
     {
-      "id": 26894,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31018,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::daily-radiance-vitamin-c-spf30-MUK200030042",
@@ -2535,8 +2572,8 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:37:49+00:00)"
     },
     {
-      "id": 26893,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31017,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
       "sku_key": "spacenk.com::medik8::advanced-night-restore-MUK200030053",
@@ -2548,550 +2585,550 @@
       "details": "Vanished from storefront (last seen 2026-10-26T15:37:49+00:00)"
     },
     {
-      "id": 26892,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
+      "id": 31016,
+      "occurred_at": "2026-11-27T13:59:54+00:00",
       "domain": "spacenk.com",
       "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::balance-moisturiser-with-glycolic-acid-activator-MUK200030063",
-      "product_title": "Balance Moisturiser with Glycolic Acid Activator",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 55.0,
-      "new_price": 41.25,
-      "details": "Price changed 55.0 -> 41.25"
-    },
-    {
-      "id": 26891,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::copper-pca-peptides-MUK200030059",
-      "product_title": "Copper PCA Peptides",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 65.0,
-      "new_price": 48.75,
-      "details": "Price changed 65.0 -> 48.75"
-    },
-    {
-      "id": 26890,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::brighten-restore-duo-MUK200065332",
-      "product_title": "Brighten & Restore Duo",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 120.0,
-      "new_price": 90.0,
-      "details": "Price changed 120.0 -> 90"
-    },
-    {
-      "id": 26889,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::luminous-lift-kit-MUK200069580",
-      "product_title": "Luminous Lift Kit",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 107.0,
-      "new_price": 80.25,
-      "details": "Price changed 107.0 -> 80.25"
-    },
-    {
-      "id": 26888,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::luminous-lift-kit-MUK200069580",
-      "product_title": "Luminous Lift Kit",
+      "sku_key": "spacenk.com::medik8::nighttime-nourish-kit-MUK200066183",
+      "product_title": "Nighttime Nourish Kit",
       "variant_title": "Standard",
       "event_type": "WENT_OOS",
-      "old_price": 107.0,
-      "new_price": 80.25,
+      "old_price": 36.75,
+      "new_price": 36.75,
       "details": "Transitioned from In Stock to OOS"
     },
     {
-      "id": 26887,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
+      "id": 31015,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
       "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::calmwise-colour-correct-MUK200030065",
-      "product_title": "Calmwise Colour Correct",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 49.0,
-      "new_price": 36.75,
-      "details": "Price changed 49.0 -> 36.75"
+      "sku_key": "lookfantastic.com::medik8::p_medik8-clarifying-foam-refreshing-aha-bha-blemish-cleanser-150ml_11795632",
+      "product_title": "Medik8 Clarifying Foam, Refreshing AHA/BHA Blemish Cleanser 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 18.75,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-24T14:54:52+00:00)"
     },
     {
-      "id": 26886,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
+      "id": 31014,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
       "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::intelligent-retinol-3tr-MUK200030045",
-      "product_title": "Intelligent Retinol 3TR",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 39.0,
-      "new_price": 29.25,
-      "details": "Price changed 39.0 -> 29.25"
-    },
-    {
-      "id": 26885,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::clarity-peptides-MUK200030058",
-      "product_title": "Clarity Peptides",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 45.0,
-      "new_price": 33.75,
-      "details": "Price changed 45.0 -> 33.75"
-    },
-    {
-      "id": 26884,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::sleep-glycolic-MUK200029626",
-      "product_title": "Sleep Glycolic",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 39.0,
-      "new_price": 29.25,
-      "details": "Price changed 39.0 -> 29.25"
-    },
-    {
-      "id": 26883,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::blemish-sos-rapid-action-target-gel-MUK200028331",
-      "product_title": "Blemish SOS Rapid Action Target Gel",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 25.0,
-      "new_price": 18.75,
-      "details": "Price changed 25.0 -> 18.75"
-    },
-    {
-      "id": 26882,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::r-retinoate-day-night-MUK200029974",
-      "product_title": "R-Retinoate Day & Night",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 149.0,
-      "new_price": 111.75,
-      "details": "Price changed 149.0 -> 111.75"
-    },
-    {
-      "id": 26881,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::r-retinoate-intense-MUK200030067",
-      "product_title": "r-Retinoate Intense",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 229.0,
-      "new_price": 171.75,
-      "details": "Price changed 229.0 -> 171.75"
-    },
-    {
-      "id": 26880,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::intelligent-retinol-smoothing-night-cream-MUK200049222",
-      "product_title": "Intelligent Retinol Smoothing Night Cream",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 60.0,
-      "new_price": 45.0,
-      "details": "Price changed 60.0 -> 45"
-    },
-    {
-      "id": 26879,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::bakuchiol-peptides-MUK200054483",
-      "product_title": "Bakuchiol Peptides",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 55.0,
-      "new_price": 41.25,
-      "details": "Price changed 55.0 -> 41.25"
-    },
-    {
-      "id": 26878,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::r-retinoate-day-night-eye-serum-MUK200030066",
-      "product_title": "r-Retinoate Day & Night Eye Serum",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 99.0,
-      "new_price": 74.25,
-      "details": "Price changed 99.0 -> 74.25"
-    },
-    {
-      "id": 26877,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::intelligent-retinol-6tr-MUK200030046",
-      "product_title": "Intelligent Retinol 6TR",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 45.0,
-      "new_price": 33.75,
-      "details": "Price changed 45.0 -> 33.75"
-    },
-    {
-      "id": 26876,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::oxy-r-peptides-MUK200030317",
-      "product_title": "Oxy-R Peptides",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 65.0,
-      "new_price": 48.75,
-      "details": "Price changed 65.0 -> 48.75"
-    },
-    {
-      "id": 26875,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::h.e.o-mask-MUK200037248",
-      "product_title": "H.E.O Mask",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 60.0,
-      "new_price": 45.0,
-      "details": "Price changed 60.0 -> 45"
-    },
-    {
-      "id": 26874,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::crystal-retinal-1-MUK200030070",
-      "product_title": "Crystal Retinal 1",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 45.0,
-      "new_price": 33.75,
-      "details": "Price changed 45.0 -> 33.75"
-    },
-    {
-      "id": 26873,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::advanced-day-total-protect-spf30-MUK200030052",
-      "product_title": "Advanced Day Total Protect SPF30",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 57.0,
-      "new_price": 42.75,
-      "details": "Price changed 57.0 -> 42.75"
-    },
-    {
-      "id": 26872,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::calmwise-soothing-cleanser-MUK200030064",
-      "product_title": "Calmwise Soothing Cleanser",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 25.0,
-      "new_price": 18.75,
-      "details": "Price changed 25.0 -> 18.75"
-    },
-    {
-      "id": 26871,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::advanced-day-eye-protect-MUK200030051",
-      "product_title": "Advanced Day Eye Protect",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 42.0,
-      "new_price": 31.5,
-      "details": "Price changed 42.0 -> 31.5"
-    },
-    {
-      "id": 26870,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::super-c-ferulic-MUK200030043",
-      "product_title": "Super C Ferulic",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 69.0,
-      "new_price": 51.75,
-      "details": "Price changed 69.0 -> 51.75"
-    },
-    {
-      "id": 26869,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::eyelift-peptides-MUK200030056",
-      "product_title": "Eyelift Peptides",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 45.0,
-      "new_price": 33.75,
-      "details": "Price changed 45.0 -> 33.75"
-    },
-    {
-      "id": 26868,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::clarifying-foam-MUK200030061",
-      "product_title": "Clarifying Foam",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 25.0,
-      "new_price": 18.75,
-      "details": "Price changed 25.0 -> 18.75"
-    },
-    {
-      "id": 26867,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::micellar-mousse-MUK200030040",
-      "product_title": "Micellar Mousse",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 25.0,
-      "new_price": 18.75,
-      "details": "Price changed 25.0 -> 18.75"
-    },
-    {
-      "id": 26866,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::press-clear-MUK200035615",
-      "product_title": "Press & Clear",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 35.0,
-      "new_price": 26.25,
-      "details": "Price changed 35.0 -> 26.25"
-    },
-    {
-      "id": 26865,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::liquid-peptides-MUK200030057",
-      "product_title": "Liquid Peptides",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 59.0,
-      "new_price": 44.25,
-      "details": "Price changed 59.0 -> 44.25"
-    },
-    {
-      "id": 26864,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::UK200048814",
-      "product_title": "Medik8 MEDIK8 PRESS & GLOW 30ml",
-      "variant_title": "30ML",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.0,
-      "new_price": 6.75,
-      "details": "Price changed 9.0 -> 6.75"
-    },
-    {
-      "id": 26863,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::UK200041430",
-      "product_title": "Medik8 Press & Glow Daily Exfoliating PHA Tonic with Enzyme Activator 500ml",
-      "variant_title": "500ML",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 9.0,
-      "new_price": 6.75,
-      "details": "Price changed 9.0 -> 6.75"
-    },
-    {
-      "id": 26862,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::UK200028324",
-      "product_title": "Medik8 Press & Glow Daily Exfoliating PHA Tonic with Enzyme Activator 200ml",
-      "variant_title": "200ML",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 34.0,
-      "new_price": 25.5,
-      "details": "Price changed 34.0 -> 25.5"
-    },
-    {
-      "id": 26861,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::total-moisture-daily-cleansing-gel-MUK200066348",
-      "product_title": "Total Moisture Daily Cleansing Gel",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-total-moisture-daily-cleansing-gel-145ml_17899674",
+      "product_title": "Medik8 Total Moisture Daily Cleansing Gel 145ml",
+      "variant_title": "145ml",
+      "event_type": "SILENT_REMOVED",
       "old_price": 29.0,
-      "new_price": 21.75,
-      "details": "Price changed 29.0 -> 21.75"
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
     },
     {
-      "id": 26860,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
+      "id": 31013,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
       "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::crystal-retinal-ceramide-eye-10-MUK200038042",
-      "product_title": "Crystal Retinal Ceramide Eye 10",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 74.0,
-      "new_price": 55.5,
-      "details": "Price changed 74.0 -> 55.5"
-    },
-    {
-      "id": 26859,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::crystal-retinal-ceramide-eye-3-MUK200038040",
-      "product_title": "Crystal Retinal Ceramide Eye 3",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 42.0,
-      "new_price": 31.5,
-      "details": "Price changed 42.0 -> 31.5"
-    },
-    {
-      "id": 26858,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::hydr8-b5-liquid-rehydration-serum-MUK200028322",
-      "product_title": "Hydr8 B5 Liquid Rehydration Serum",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 45.0,
-      "new_price": 33.75,
-      "details": "Price changed 45.0 -> 33.75"
-    },
-    {
-      "id": 26857,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::press-glow-refill-MUK200028325",
-      "product_title": "Press & Glow Refill",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 29.0,
-      "new_price": 21.75,
-      "details": "Price changed 29.0 -> 21.75"
-    },
-    {
-      "id": 26856,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::UK200058805",
-      "product_title": "Medik8 Advanced Pro-Collagen+ Peptide Cream 12.5ml",
-      "variant_title": "12.5ML",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 27.0,
-      "new_price": 20.25,
-      "details": "Price changed 27.0 -> 20.25"
-    },
-    {
-      "id": 26855,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::UK200058804",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-advanced-pro-collagen-peptide-cream-50ml_16818015",
       "product_title": "Medik8 Advanced Pro-Collagen+ Peptide Cream 50ml",
-      "variant_title": "50ML",
-      "event_type": "PRICE_CHANGED",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
       "old_price": 82.0,
-      "new_price": 61.5,
-      "details": "Price changed 82.0 -> 61.5"
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-04T00:44:06+00:00)"
     },
     {
-      "id": 26854,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
+      "id": 31012,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
       "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::total-moisture-daily-facial-cream-MUK200049299",
-      "product_title": "Total Moisture Daily Facial Cream",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 50.0,
-      "new_price": 37.5,
-      "details": "Price changed 50.0 -> 37.5"
-    },
-    {
-      "id": 26853,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::crystal-retinal-ceramide-eye-6-MUK200038041",
-      "product_title": "Crystal Retinal Ceramide Eye 6",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 55.0,
-      "new_price": 41.25,
-      "details": "Price changed 55.0 -> 41.25"
-    },
-    {
-      "id": 26852,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::advanced-pro-collagen-peptide-cream-refill-MUK200063322",
-      "product_title": "Advanced Pro Collagen+ Peptide Cream Refill",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
-      "old_price": 74.0,
-      "new_price": 55.5,
-      "details": "Price changed 74.0 -> 55.5"
-    },
-    {
-      "id": 26851,
-      "occurred_at": "2026-11-24T14:55:42+00:00",
-      "domain": "spacenk.com",
-      "brand": "Medik8",
-      "sku_key": "spacenk.com::medik8::surface-radiance-cleanse-MUK200030039",
-      "product_title": "Surface Radiance Cleanse",
-      "variant_title": "Standard",
-      "event_type": "PRICE_CHANGED",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-clarifying-foam-150ml_11795632",
+      "product_title": "Medik8 Clarifying Foam 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
       "old_price": 25.0,
-      "new_price": 18.75,
-      "details": "Price changed 25.0 -> 18.75"
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-15T21:07:06+00:00)"
+    },
+    {
+      "id": 31011,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-surface-radiance-cleanse-40ml_14939781",
+      "product_title": "Medik8 Surface Radiance Cleanse 40ml",
+      "variant_title": "40ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 10.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-04T00:44:06+00:00)"
+    },
+    {
+      "id": 31010,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-press-and-glow-tonic-refill-200ml_12708820",
+      "product_title": "Medik8 Press and Glow Tonic Refill 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 29.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31009,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-press-and-glow-tonic-200ml_12708819",
+      "product_title": "Medik8 Press and Glow Tonic 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 34.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31008,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-travel-size-press-glow-tonic-30ml_15392153",
+      "product_title": "Medik8 Travel Size Press & Glow Tonic 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 9.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-10T21:50:09+00:00)"
+    },
+    {
+      "id": 31007,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-advanced-day-ultimate-protect-spf50-50ml_13180862",
+      "product_title": "Medik8 Advanced Day Ultimate Protect SPF50+ 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31006,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-daily-radiance-vitamin-c-50ml_12309453",
+      "product_title": "Medik8 Daily Radiance Vitamin C 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 62.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31005,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-niacinamide-peptides-30ml_17597888",
+      "product_title": "Medik8 Niacinamide Peptides 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 49.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-28T21:07:36+00:00)"
+    },
+    {
+      "id": 31004,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-total-moisture-daily-facial-cream-50ml_15082444",
+      "product_title": "Medik8 Total Moisture Daily Facial Cream 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 50.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31003,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-liquid-peptides-30ml_12309458",
+      "product_title": "Medik8 Liquid Peptides 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31002,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-lipid-balance-cleansing-oil-140ml_11899388",
+      "product_title": "Medik8 Lipid - Balance Cleansing Oil 140ml",
+      "variant_title": "140ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 35.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31001,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-hydr8-b5-serum-30ml_11795629",
+      "product_title": "Medik8 Hydr8 B5 Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 45.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 31000,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-20-serum-30ml_15292551",
+      "product_title": "Medik8 Crystal Retinal 20 Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 104.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-28T21:07:36+00:00)"
+    },
+    {
+      "id": 30999,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-ceramide-eye-3-15ml_14271143",
+      "product_title": "Medik8 Crystal Retinal Ceramide Eye 3 15ml",
+      "variant_title": "15ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 42.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30998,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-total-moisture-daily-facial-cream-refill-50ml_15082443",
+      "product_title": "Medik8 Total Moisture Daily Facial Cream Refill 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 43.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30997,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-surface-radiance-cleanse-150ml_12201934",
+      "product_title": "Medik8 Surface Radiance Cleanse 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 25.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30996,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-c-tetra-luxe-30ml_11795622",
+      "product_title": "Medik8 C-Tetra Luxe 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 62.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30995,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-1-serum-30ml_12097971",
+      "product_title": "Medik8 Crystal Retinal 1 Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 45.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30994,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-hydr8-b5-intense-8ml_12873866",
+      "product_title": "Medik8 Hydr8 B5 Intense 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 60.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T15:37:05+00:00)"
+    },
+    {
+      "id": 30993,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-hydr8-b5-intense-30ml_12060781",
+      "product_title": "Medik8 Hydr8 B5 Intense 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 60.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30992,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-advanced-night-restore_11899389",
+      "product_title": "Medik8 Advanced Night Restore 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 62.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30991,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-10_11899387",
+      "product_title": "Medik8 Crystal Retinal 10",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 94.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30990,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-c-tetra-advanced-30ml_16288094",
+      "product_title": "Medik8 C-Tetra Advanced 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 72.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30989,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-c-tetra-serum-30ml_11795619",
+      "product_title": "Medik8 Vitamin C Tetra Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 45.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30988,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-crystal-retinal-6_11899386",
+      "product_title": "Medik8 Crystal Retinal 6",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 69.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30987,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-exosome-pdrn-prismatic-serum-30ml_17777851",
+      "product_title": "Medik8 Exosome-PDRN Prismatic+ Serum 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 79.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30986,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-liquid-peptides-advanced-mp-30ml_15826874",
+      "product_title": "Medik8 Liquid Peptides Advanced MP 30ml",
+      "variant_title": "30ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 82.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:46:04+00:00)"
+    },
+    {
+      "id": 30985,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_beauty-box_the-grooming-advent-calendar-worth-over-469_17691385",
+      "product_title": "Discover",
+      "variant_title": "Standard",
+      "event_type": "SILENT_REMOVED",
+      "old_price": null,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-10-26T15:37:05+00:00)"
+    },
+    {
+      "id": 30984,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-hydr8-b5-liquid-rehydration-serum-with-hyaluronic-acid-30ml_11795629",
+      "product_title": "Medik8 Hydr8 B5, Liquid Rehydration Serum With Hyaluronic Acid 30ml",
+      "variant_title": "30ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 33.75,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 30983,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-advanced-pro-collagen-peptide-cream-moisturiser-50ml_16818015",
+      "product_title": "Medik8 Advanced Pro-Collagen+ Peptide Cream, Moisturiser 50ml",
+      "variant_title": "50ml",
+      "event_type": "NEW_IN_STOCK",
+      "old_price": null,
+      "new_price": 61.5,
+      "details": "Initial discovery"
+    },
+    {
+      "id": 30982,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-nighttime-nourish_17949191",
+      "product_title": "Medik8 Nighttime Nourish (Worth £70)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 36.75,
+      "new_price": 49.0,
+      "details": "Price changed 36.75 -> 49"
+    },
+    {
+      "id": 30981,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-age-defying-essentials_17949190",
+      "product_title": "Medik8 Age Defying Essential (Worth £151, Saving 25%)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 84.75,
+      "new_price": 113.0,
+      "details": "Price changed 84.75 -> 113"
+    },
+    {
+      "id": 30980,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-moisture-minis_17949197",
+      "product_title": "Medik8 Moisture Minis (Worth £40, Saving 30%)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 21.0,
+      "new_price": 28.0,
+      "details": "Price changed 21.0 -> 28"
+    },
+    {
+      "id": 30979,
+      "occurred_at": "2026-11-27T13:59:09+00:00",
+      "domain": "lookfantastic.com",
+      "brand": "Medik8",
+      "sku_key": "lookfantastic.com::medik8::p_medik8-retinal-recharge_17949193",
+      "product_title": "Medik8 Retinal Recharge (Worth £92, Saving 30%)",
+      "variant_title": "Standard",
+      "event_type": "PRICE_CHANGED",
+      "old_price": 48.0,
+      "new_price": 64.0,
+      "details": "Price changed 48.0 -> 64"
+    },
+    {
+      "id": 30978,
+      "occurred_at": "2026-11-27T13:58:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Medik8",
+      "sku_key": "cultbeauty.co.uk::medik8::p_medik8-press-and-glow-tonic-200ml_12708819",
+      "product_title": "Medik8 Press and Glow Tonic 200ml",
+      "variant_title": "200ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 34.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:45:43+00:00)"
+    },
+    {
+      "id": 30977,
+      "occurred_at": "2026-11-27T13:58:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Medik8",
+      "sku_key": "cultbeauty.co.uk::medik8::p_medik8-daily-radiance-vitamin-c-50ml_12309453",
+      "product_title": "Medik8 Daily Radiance Vitamin C 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 62.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:45:43+00:00)"
+    },
+    {
+      "id": 30976,
+      "occurred_at": "2026-11-27T13:58:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Medik8",
+      "sku_key": "cultbeauty.co.uk::medik8::p_medik8-advanced-day-ultimate-protect-spf50-50ml_13180862",
+      "product_title": "Medik8 Advanced Day Ultimate Protect SPF50+ 50ml",
+      "variant_title": "50ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 59.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:45:43+00:00)"
+    },
+    {
+      "id": 30975,
+      "occurred_at": "2026-11-27T13:58:50+00:00",
+      "domain": "cultbeauty.co.uk",
+      "brand": "Medik8",
+      "sku_key": "cultbeauty.co.uk::medik8::p_medik8-surface-radiance-cleanse-150ml_12201934",
+      "product_title": "Medik8 Surface Radiance Cleanse 150ml",
+      "variant_title": "150ml",
+      "event_type": "SILENT_REMOVED",
+      "old_price": 25.0,
+      "new_price": null,
+      "details": "Vanished from storefront (last seen 2026-11-21T12:45:43+00:00)"
     }
   ]
 }
