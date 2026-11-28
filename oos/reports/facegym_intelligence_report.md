@@ -1,6 +1,6 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: FACEGYM
 
-- **Generated:** 2026-11-24 15:04 UTC
+- **Generated:** 2026-11-28 00:06 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
 - **Total Tracked Variants:** 73 (71 In Stock | **2 OOS**)
 - **Retailer Out-of-Stock Alerts:** **2** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
@@ -12,8 +12,8 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `cultbeauty.co.uk` | FaceGym Signature Skin Mini Kit (Worth £82.00) | Standard | £44.00 (Discounted -20% (was £55.00)) | - | **Retail Exclusive OOS** | _None_ | **30d 23h (since 2026-10-24 15:04 UTC)** |
-| `lookfantastic.com` | FaceGym Youth Reformer Firming Vitamin C and Nootropic Oil-in-Serum 30ml | 30ml | £69.00 (Discounted -25% (was £92.00)) | - | **Retail Exclusive OOS** | _None_ | **8d 17h (since 2026-11-15 21:16 UTC)** |
+| `cultbeauty.co.uk` | FaceGym Signature Skin Mini Kit (Worth £82.00) | Standard | £38.50 (Discounted -30% (was £55.00)) | - | **Retail Exclusive OOS** | _None_ | **34d 9h (since 2026-10-24 15:04 UTC)** |
+| `lookfantastic.com` | FaceGym Youth Reformer Firming Vitamin C and Nootropic Oil-in-Serum 30ml | 30ml | £64.40 (Discounted -30% (was £92.00)) | - | **Retail Exclusive OOS** | _None_ | **12d 2h (since 2026-11-15 21:16 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 

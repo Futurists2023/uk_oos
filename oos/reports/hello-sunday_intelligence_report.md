@@ -1,10 +1,10 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: Hello Sunday
 
-- **Generated:** 2026-11-25 00:46 UTC
+- **Generated:** 2026-11-28 00:11 UTC
 - **Monitored Storefronts:** 5 (1 Official DTC Master Catalog + 4 Major UK Stockists)
-- **Total Tracked Variants:** 64 (59 In Stock | **5 OOS**)
-- **Retailer Out-of-Stock Alerts:** **4** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
-- **Removed / Delisted Variants:** **24**
+- **Total Tracked Variants:** 154 (151 In Stock | **3 OOS**)
+- **Retailer Out-of-Stock Alerts:** **3** (**0 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Removed / Delisted Variants:** **16**
 
 ---
 
@@ -12,16 +12,13 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `hollandandbarrett.com` | Hello Sunday The One That's A Serum Spf50 30ml | 30ml | £16.10 (Discounted -30% (was £23.00)) | - | **Retail Exclusive OOS** | _None_ | **31d 9h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The Essential One - Body Moisturiser: SPF 30 | Standard | £13.50 (Discounted -25% (was £18.00)) | - | **Retail Exclusive OOS** | _None_ | **13d 18h (since 2026-11-11 06:24 UTC)** |
-| `spacenk.com` | The Everyday Essentials | Standard | £22.50 (Discounted -25% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **31d 9h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | The One That's A Serum - Face Drops: SPF 50 | Standard | £18.00 (Discounted -25% (was £24.00)) | - | **Retail Exclusive OOS** | _None_ | **16d 9h (since 2026-11-08 15:21 UTC)** |
+| `spacenk.com` | The Essential One - Body Moisturiser: SPF 30 | Standard | £13.50 (Discounted -25% (was £18.00)) | - | **Retail Exclusive OOS** | _None_ | **16d 17h (since 2026-11-11 06:24 UTC)** |
+| `spacenk.com` | The Everyday Essentials | Standard | £22.50 (Discounted -25% (was £30.00)) | - | **Retail Exclusive OOS** | _None_ | **34d 9h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | The One That's A Serum - Face Drops: SPF 50 | Standard | £18.00 (Discounted -25% (was £24.00)) | - | **Retail Exclusive OOS** | _None_ | **19d 8h (since 2026-11-08 15:21 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
-| Official DTC Store | Product | Size / Variant | DTC RRP | First Seen OOS |
-|---|---|---|---|---|
-| `hellosundayspf.com` | Tinted Lip Balm SPF50 | rose bloom | £14.00 | 2026-10-24T15:04:38+00:00 |
+_100% of active products on the official Brand DTC storefront are currently In Stock._
 
 ---
 
@@ -38,30 +35,22 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `hellosundayspf.com` | The Glow Trio - VAT Free | Standard | £74.00 | 2026-11-25T00:45:19+00:00 |
-| `hellosundayspf.com` | The Invisible One SPF 50 Sunscreen + Primer with Hyaluronic Acid | Standard | £35.00 | 2026-11-25T00:45:19+00:00 |
-| `hollandandbarrett.com` | 4 Hair Gain Hydrating Conditioner Starter Kit 250 ml 25% Off | 250 ml | £14.62 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 4.38 Hairburst Shampoo x 350ml & Conditioner x 350ml Set 33% Off | 350ml | £20.10 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off | Standard | £15.40 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper | Standard | £4.99 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 4.68 Vital Proteins Collagen Peptides Unflavoured Powder 567g 33% Off | 567g | £33.49 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 4.8 ARTAH Digest & Debloat 100ml | 100ml | £32.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 5 Hair Gain Gummies Apple 60 Gummies 30% Off | Standard | £20.99 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | 5 Hair Gain Peptide Puff Dry Shampoo 5 g 25% Off | 5 g | £10.87 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | ARTAH Advanced Multi-Nutrient 120 Capsules | 120 Capsules | £60.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | ARTAH Cellular Hydration 250g | 250g | £32.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | ARTAH Essential Creatine 200g | 200g | £28.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Hair Gain Capsules 3 Month Supply Bundle Bundles | Standard | £110.97 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Hair Gain Capsules 60 Capsules 30% Off | 60 Capsules | £25.89 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Hair Gain Gummies 3 Month Supply Bundle Bundles | Standard | £89.97 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Hair Gain Hydrating Shampoo Refill 250 ml Buy 1 Get 1 Half Price | 250 ml | £17.50 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Hair Gain Scalp Foam 50 ml 25% Off | 50 ml | £24.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Hair Gain Shampoo & Conditioner Starter Kit Bundle Bundles | Standard | £46.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Hair Gain Topicals Trio Bundle Bundles | Standard | £61.00 | 2026-11-25T00:45:59+00:00 |
-| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-25T00:45:59+00:00 |
-| `spacenk.com` | The Recovery One: Glow Face Mask | Standard | £19.00 | 2026-11-25T00:46:39+00:00 |
+| `hellosundayspf.com` | The Glow Trio - VAT Free | Standard | £74.00 | 2026-11-28T00:10:40+00:00 |
+| `hellosundayspf.com` | The Invisible One SPF 50 Sunscreen + Primer with Hyaluronic Acid | Standard | £35.00 | 2026-11-28T00:10:40+00:00 |
+| `hellosundayspf.com` | The Matte One Sebum Control Face Moisturiser with CBD Extract | Standard | £16.00 | 2026-11-28T00:10:40+00:00 |
+| `hollandandbarrett.com` | 4.45 Hairburst Chewable Hair Vitamins 30 Day Supply 60 Pastilles 30% Off | Standard | £15.40 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | 4.62 The Humble Co Stainless Steel Tongue Scraper | Standard | £4.99 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | 4.8 ARTAH Digest & Debloat 100ml | 100ml | £32.00 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | 4.84 Philip Kingsley Finishing Touch Frizz Fighting Gloss 50ml | 50ml | £26.00 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | 4.91 Philip Kingsley Moisture Extreme Shampoo 250ml 30% Off | 250ml | £20.30 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | ARTAH Advanced Multi-Nutrient 120 Capsules | 120 Capsules | £60.00 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | ARTAH Cellular Hydration 250g | 250g | £32.00 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | ARTAH Essential Creatine 200g | 200g | £28.00 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | Hair Gain Hydrating Shampoo Refill 250 ml Buy 1 Get 1 Half Price | 250 ml | £17.50 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | Hair Gain Topicals Trio Bundle Bundles | Standard | £61.00 | 2026-11-28T00:11:18+00:00 |
+| `hollandandbarrett.com` | Philip Kingsley Elasticizer Effect Discovery Collection | Standard | £26.00 | 2026-11-28T00:11:18+00:00 |
+| `lookfantastic.com` | Hello Sunday The Everyday Essentials Bestsellers Kit (Worth £41) | Standard | £25.00 | 2026-11-28T00:11:34+00:00 |
+| `spacenk.com` | The Recovery One: Glow Face Mask | Standard | £19.00 | 2026-11-28T00:11:48+00:00 |
 
 ---
 
@@ -70,7 +59,7 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `boots.com` | Tier 1 (Major UK Retailer) | Boots | 0 | 0 | **0** | https://www.boots.com/hello-sunday |
-| `hellosundayspf.com` | Official Brand DTC (Master Catalog) | Shopify | 18 | 17 | **1** | https://hellosundayspf.com |
-| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 10 | 9 | **1** | https://www.hollandandbarrett.com/shop/brands/hello-sunday/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 20 | 20 | **0** | https://www.lookfantastic.com/c/brands/hello-sunday/ |
+| `hellosundayspf.com` | Official Brand DTC (Master Catalog) | Shopify | 17 | 17 | **0** | https://hellosundayspf.com |
+| `hollandandbarrett.com` | Tier 1 (Major UK Retailer) | HollandAndBarrett | 102 | 102 | **0** | https://www.hollandandbarrett.com/shop/brands/hello-sunday/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 19 | 19 | **0** | https://www.lookfantastic.com/c/brands/hello-sunday/ |
 | `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 16 | 13 | **3** | https://www.spacenk.com/uk/brands/h/hello-sunday |
