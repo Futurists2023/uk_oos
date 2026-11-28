@@ -1,9 +1,9 @@
 # UK Stockist Out-of-Stock (OOS) Intelligence Report: MZ SKIN
 
-- **Generated:** 2026-11-25 00:53 UTC
+- **Generated:** 2026-11-28 07:52 UTC
 - **Monitored Storefronts:** 4 (1 Official DTC Master Catalog + 3 Major UK Stockists)
-- **Total Tracked Variants:** 173 (143 In Stock | **30 OOS**)
-- **Retailer Out-of-Stock Alerts:** **4** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
+- **Total Tracked Variants:** 174 (145 In Stock | **29 OOS**)
+- **Retailer Out-of-Stock Alerts:** **3** (**2 Unforced Retail Outages** vs. **0 Brand Warehouse Shortages**)
 - **Removed / Delisted Variants:** **4**
 
 ---
@@ -12,10 +12,9 @@
 
 | Retailer | Product | Size / Variant | Shelf Price | DTC RRP | Diagnosis (Step 1A DTC Cross-Check) | Competing Retailers Currently In Stock | Time OOS |
 |---|---|---|---|---|---|---|---|
-| `spacenk.com` | Hyaluronic Acid Hydrating Serum | Standard | £62.50 (Discounted -50% (was £125.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **31d 9h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | LightMAX Hydracolloidal Patch | Standard | £28.00 (Discounted -30% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **31d 9h (since 2026-10-24 15:04 UTC)** |
-| `spacenk.com` | Radiance & Renewal Instant Clarity Refining Mask | Standard | £103.50 (Discounted -25% (was £138.00)) | £193.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **10d 23h (since 2026-11-14 01:02 UTC)** |
-| `spacenk.com` | The Starter Ritual | Standard | £37.50 (Discounted -25% (was £50.00)) | - | **Retail Exclusive OOS** | _None_ | **10d 23h (since 2026-11-14 01:02 UTC)** |
+| `spacenk.com` | Hyaluronic Acid Hydrating Serum | Standard | £62.50 (Discounted -50% (was £125.00)) | - | **🚨 RETAIL OUTAGE (In Stock at 1 other retailers)** | `lookfantastic.com` | **34d 16h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | LightMAX Hydracolloidal Patch | Standard | £28.00 (Discounted -30% (was £40.00)) | - | **Retail Exclusive OOS** | _None_ | **34d 16h (since 2026-10-24 15:04 UTC)** |
+| `spacenk.com` | Radiance & Renewal Instant Clarity Refining Mask | Standard | £103.50 (Discounted -25% (was £138.00)) | £193.00 | **🚨 UNFORCED RETAIL OUTAGE (In Stock on DTC)** | _None_ | **14d 6h (since 2026-11-14 01:02 UTC)** |
 
 ### 1B. Official Brand DTC Master Catalog Out-of-Stock Items (Reference Baseline)
 
@@ -54,27 +53,28 @@
 
 | Core Product Family | DTC Status & RRP | UK Stockists Carrying | Stockists In Stock | Stockists OOS | Price Undercutting / RRP Alerts | Missing From Stockists (Assortment Gap) |
 |---|---|---|---|---|---|---|
-| **Brighten & Perfect 10% Vitamin C Corrective Serum** | ✅ £352.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £159.00 (-55% vs RRP); `lookfantastic.com` £159.00 (-55% vs RRP); `spacenk.com` £198.75 (-44% vs RRP) | _All Stockists_ |
-| **Calming Moisturiser** | ✅ £225.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £123.75 (-45% vs RRP); `lookfantastic.com` £82.50 (-63% vs RRP); `spacenk.com` £123.75 (-45% vs RRP) | _All Stockists_ |
-| **Calming Rescue Serum** | ✅ £193.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £82.80 (-57% vs RRP); `lookfantastic.com` £69.00 (-64% vs RRP); `spacenk.com` £103.50 (-46% vs RRP) | _All Stockists_ |
-| **Cleanse & Clarify Dual Action AHA Cleanser & Mask** | ✅ £90.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £51.00 (-43% vs RRP); `lookfantastic.com` £68.00 (-24% vs RRP); `spacenk.com` £51.00 (-43% vs RRP) | _All Stockists_ |
+| **Brighten & Perfect 10% Vitamin C Corrective Serum** | ✅ £352.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £198.75 (-44% vs RRP); `lookfantastic.com` £185.50 (-47% vs RRP); `spacenk.com` £198.75 (-44% vs RRP) | _All Stockists_ |
+| **Calming Moisturiser** | ✅ £225.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £123.75 (-45% vs RRP); `lookfantastic.com` £115.50 (-49% vs RRP); `spacenk.com` £123.75 (-45% vs RRP) | _All Stockists_ |
+| **Calming Rescue Serum** | ✅ £193.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £82.80 (-57% vs RRP); `lookfantastic.com` £96.60 (-50% vs RRP); `spacenk.com` £103.50 (-46% vs RRP) | _All Stockists_ |
+| **Cleanse & Clarify Dual Action AHA Cleanser & Mask** | ✅ £90.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £51.00 (-43% vs RRP); `lookfantastic.com` £47.60 (-47% vs RRP); `spacenk.com` £51.00 (-43% vs RRP) | _All Stockists_ |
 | **MZ Skin LED 2.0 LightMAX Supercharged LED Mask** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **MZ Skin LightMAX Minipro LED** | Retail Only | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
-| **Reviving Bio-Placenta & Stem Cell Serum** | ✅ £370.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £206.25 (-44% vs RRP); `lookfantastic.com` £340.00 (-8% vs RRP); `spacenk.com` £206.25 (-44% vs RRP) | _All Stockists_ |
+| **Reviving Bio-Placenta & Stem Cell Serum** | ✅ £370.00 | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | `cultbeauty.co.uk` £206.25 (-44% vs RRP); `lookfantastic.com` £238.00 (-36% vs RRP); `spacenk.com` £206.25 (-44% vs RRP) | _All Stockists_ |
 | **Soothe & Smooth Hyaluronic Brightening Eye Complex** | ⚠️ OOS (£32.00) | **3/3** (100%) | `cultbeauty.co.uk`, `lookfantastic.com`, `spacenk.com` | - | At RRP | _All Stockists_ |
 | **MZ Skin Anti Pollution Hydrating Face Masks** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **Bio-Placenta Hyaluronic Acid Serum** | ✅ £193.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £103.50 (-46% vs RRP); `spacenk.com` £103.50 (-46% vs RRP) | `lookfantastic.com` |
-| **Bio-Placenta Peptide Illuminating Hydrogel Eye Mask** | ✅ £33.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £18.75 (-43% vs RRP); `lookfantastic.com` £25.00 (-24% vs RRP) | `spacenk.com` |
+| **Bio-Placenta Peptide Illuminating Hydrogel Eye Mask** | ✅ £33.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £18.75 (-43% vs RRP); `lookfantastic.com` £17.50 (-47% vs RRP) | `spacenk.com` |
 | **MZ Skin Expert UV Protector SPF 50 50ml** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **MZ Skin Gua Sha** | Retail Only | **2/3** (67%) | `lookfantastic.com`, `spacenk.com` | - | At RRP | `cultbeauty.co.uk` |
 | **MZ Skin Hyaluronic Acid Hydrating Serum 30ml** | Retail Only | **2/3** (67%) | `lookfantastic.com` | **`spacenk.com`** | At RRP | `cultbeauty.co.uk` |
 | **MZ Skin Hydra-Bright Golden Eye Treatment Mask (Pack of 5)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **MZ Skin Hydra-Lift Golden Facial Treatment Mask** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **Micro-Peeling Glow Essence** | ✅ £140.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £78.75 (-44% vs RRP); `lookfantastic.com` £105.00 (-25% vs RRP) | `spacenk.com` |
+| **MZ SKIN Light Moisturiser 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
+| **Micro-Peeling Glow Essence** | ✅ £140.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £78.75 (-44% vs RRP); `lookfantastic.com` £73.50 (-48% vs RRP) | `spacenk.com` |
 | **Microtox Tightening Eye Serum** | ✅ £210.00 | **2/3** (67%) | `cultbeauty.co.uk`, `spacenk.com` | - | `cultbeauty.co.uk` £116.25 (-45% vs RRP); `spacenk.com` £116.25 (-45% vs RRP) | `lookfantastic.com` |
-| **Restorative Bio-Placenta Cream** | ✅ £390.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £217.50 (-44% vs RRP); `lookfantastic.com` £217.50 (-44% vs RRP) | `spacenk.com` |
+| **Restorative Bio-Placenta Cream** | ✅ £390.00 | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £217.50 (-44% vs RRP); `lookfantastic.com` £203.00 (-48% vs RRP) | `spacenk.com` |
 | **MZ SKIN Rich Moisturiser 50ml** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
-| **Tone & Lift Germanium Contouring Facial Roller** | ⚠️ OOS (£95.00) | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £42.00 (-56% vs RRP); `lookfantastic.com` £56.00 (-41% vs RRP) | `spacenk.com` |
+| **Tone & Lift Germanium Contouring Facial Roller** | ⚠️ OOS (£95.00) | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | `cultbeauty.co.uk` £42.00 (-56% vs RRP); `lookfantastic.com` £49.00 (-48% vs RRP) | `spacenk.com` |
 | **MZ Skin Vitamin Infused Facial Treatment Mask (Pack of 5)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 | **MZ Skin Vitamin-Infused Facial Treatment Mask (1 Mask)** | Retail Only | **2/3** (67%) | `cultbeauty.co.uk`, `lookfantastic.com` | - | At RRP | `spacenk.com` |
 
@@ -84,10 +84,10 @@
 
 | Store | Product | Variant | Last Seen Price | Removed At |
 |---|---|---|---|---|
-| `lookfantastic.com` | MZ SKIN Light Moisturiser 50ml | 50ml | £165.00 | 2026-11-25T00:52:34+00:00 |
-| `lookfantastic.com` | MZ Skin Anti-Pollution Illuminating Eye Masks (5 Pack) | Standard | £32.00 | 2026-11-25T00:52:34+00:00 |
-| `lookfantastic.com` | MZ Skin Bio-Placenta Peptide Reviving Hydrogel Face Mask - Single | Standard | £30.00 | 2026-11-25T00:52:34+00:00 |
-| `lookfantastic.com` | MZ Skin Reviving Antioxidant Facial Oil 30ml | 30ml | £112.00 | 2026-11-25T00:52:34+00:00 |
+| `lookfantastic.com` | MZ Skin Anti Pollution Hydrating Face Mask (1 Mask) | Standard | £25.00 | 2026-11-28T07:52:03+00:00 |
+| `lookfantastic.com` | MZ Skin Anti-Pollution Illuminating Eye Masks (5 Pack) | Standard | £32.00 | 2026-11-28T07:52:03+00:00 |
+| `lookfantastic.com` | MZ Skin Bio-Placenta Peptide Reviving Hydrogel Face Mask - Single | Standard | £30.00 | 2026-11-28T07:52:03+00:00 |
+| `lookfantastic.com` | MZ Skin Reviving Antioxidant Facial Oil 30ml | 30ml | £112.00 | 2026-11-28T07:52:03+00:00 |
 
 ---
 
@@ -96,6 +96,6 @@
 | Store | Tier | Platform | Total Variants | In Stock | Out of Stock | Storefront URL |
 |---|---|---|---|---|---|---|
 | `cultbeauty.co.uk` | Tier 1 (Major UK Retailer) | THG | 24 | 24 | **0** | https://www.cultbeauty.co.uk/c/brands/mz-skin/ |
-| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 29 | 29 | **0** | https://www.lookfantastic.com/c/brands/mz-skin/ |
+| `lookfantastic.com` | Tier 1 (Major UK Retailer) | THG | 30 | 30 | **0** | https://www.lookfantastic.com/c/brands/mz-skin/ |
 | `mzskin.com` | Official Brand DTC (Master Catalog) | Shopify | 85 | 59 | **26** | https://mzskin.com |
-| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 35 | 31 | **4** | https://www.spacenk.com/uk/brands/m/mz-skin |
+| `spacenk.com` | Tier 1 (Major UK Retailer) | SpaceNK | 35 | 32 | **3** | https://www.spacenk.com/uk/brands/m/mz-skin |
